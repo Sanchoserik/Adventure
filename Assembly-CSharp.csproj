@@ -183,6 +183,9 @@
      <Compile Include="Assets\Code\Skills\Tactics\st_Retreat.cs" />
      <Compile Include="Assets\Code\Skills\Tactics\st_TacticalPreparation.cs" />
      <Compile Include="Assets\Code\Skills\Tactics\st_TacticalSwap.cs" />
+     <Compile Include="Assets\Code\UIScripts\ExitApp.cs" />
+     <Compile Include="Assets\Code\UIScripts\SetResolution.cs" />
+     <Compile Include="Assets\Scenes\SceneManager.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
