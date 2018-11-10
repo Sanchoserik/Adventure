@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 635
-  m_MinSize: {x: 681, y: 492}
+  m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 15203
+  controlID: 10
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,10 +130,10 @@ MonoBehaviour:
     y: 0
     width: 1089
     height: 635
-  m_MinSize: {x: 404, y: 492}
+  m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 15111
+  controlID: 11
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -154,10 +154,10 @@ MonoBehaviour:
     y: 0
     width: 1089
     height: 357
-  m_MinSize: {x: 404, y: 221}
-  m_MaxSize: {x: 8004, y: 4021}
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 15112
+  controlID: 12
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -201,8 +201,8 @@ MonoBehaviour:
     y: 0
     width: 795
     height: 357
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -255,8 +255,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 635
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -369,7 +369,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 3af1faffaaf1faffe8f2faffecf2faff1e1ffbff941ffbffd220fbffd620fbff922afbff305ffbffa25ffbff9660fbffb260fbff946ffbffe870fbff8081fbff7681fcffc88efcff4e9cfcffd2c2fcff1e7ffdffa484fdff44effdff5811feff5436feff4040feff5e47feffae9afeff4cbffeff04c6feff6ce7feff5aeafeff9efafeffac01ffffbc1cffffb41effff6820ffff0645ffff9a4bffffb84effff3e50ffffec70ffffee7bffff6082ffffe0e3ffff1afcffff000000007627000092280000962a0000f62b0000762d0000082e00003c2e0000d62f00004030000004320000923200009c320000ca380000d8380000323e00004c3e00004c400000904000000a41000024410000ea450000344800006e480000224b0000
+    m_ExpandedIDs: 0efcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -576,19 +576,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Code/UIScripts
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Code/UIScripts
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: F:\UnityProjects\Adventure
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 84}
-    m_SelectedIDs: 2a270000
-    m_LastClickedID: 10026
-    m_ExpandedIDs: 0000000010270000482700004a27000000ca9a3bffffff7f
+    m_SelectedIDs: 46270000
+    m_LastClickedID: 10054
+    m_ExpandedIDs: 0000000046270000802700008227000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -616,7 +616,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 18f2ffff
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000010270000482700004a27000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000462700008027000082270000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

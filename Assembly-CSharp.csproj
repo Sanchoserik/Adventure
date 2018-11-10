@@ -8,8 +8,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{33937CBC-456E-2B3B-AD4B-9EE246125F00}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -52,168 +51,168 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Code\C_Hero.cs" />
-    <Compile Include="Assets\Code\Effects\A_Effect.cs" />
-    <Compile Include="Assets\Code\Effects\airUp.cs" />
-    <Compile Include="Assets\Code\Effects\darknessUp.cs" />
-    <Compile Include="Assets\Code\Effects\deathUp.cs" />
-    <Compile Include="Assets\Code\Effects\earthUp.cs" />
-    <Compile Include="Assets\Code\Effects\fireUp.cs" />
-    <Compile Include="Assets\Code\Effects\lifeUp.cs" />
-    <Compile Include="Assets\Code\Effects\lightningUp.cs" />
-    <Compile Include="Assets\Code\Effects\lightUp.cs" />
-    <Compile Include="Assets\Code\Effects\physUp.cs" />
-    <Compile Include="Assets\Code\Effects\regENE.cs" />
-    <Compile Include="Assets\Code\Effects\regHP.cs" />
-    <Compile Include="Assets\Code\Effects\waterUp.cs" />
-    <Compile Include="Assets\Code\Items\A_Card.cs" />
-    <Compile Include="Assets\Code\Items\A_Item.cs" />
-    <Compile Include="Assets\Code\Items\A_Talisman.cs" />
-    <Compile Include="Assets\Code\Items\Potions\airUpMix1S.cs" />
-    <Compile Include="Assets\Code\Items\Potions\airUpMix2M.cs" />
-    <Compile Include="Assets\Code\Items\Potions\airUpMix3G.cs" />
-    <Compile Include="Assets\Code\Items\Potions\airUpMix4U.cs" />
-    <Compile Include="Assets\Code\Items\Potions\darknessUpMix1S.cs" />
-    <Compile Include="Assets\Code\Items\Potions\darknessUpMix2M.cs" />
-    <Compile Include="Assets\Code\Items\Potions\darknessUpMix3G.cs" />
-    <Compile Include="Assets\Code\Items\Potions\darknessUpMix4U.cs" />
-    <Compile Include="Assets\Code\Items\Potions\deathUpMix1S.cs" />
-    <Compile Include="Assets\Code\Items\Potions\deathUpMix2M.cs" />
-    <Compile Include="Assets\Code\Items\Potions\deathUpMix3G.cs" />
-    <Compile Include="Assets\Code\Items\Potions\deathUpMix4U.cs" />
-    <Compile Include="Assets\Code\Items\Potions\earthUpMix1S.cs" />
-    <Compile Include="Assets\Code\Items\Potions\earthUpMix2M.cs" />
-    <Compile Include="Assets\Code\Items\Potions\earthUpMix3G.cs" />
-    <Compile Include="Assets\Code\Items\Potions\earthUpMix4U.cs" />
-    <Compile Include="Assets\Code\Items\Potions\eneP1S.cs" />
-    <Compile Include="Assets\Code\Items\Potions\eneP2M.cs" />
-    <Compile Include="Assets\Code\Items\Potions\eneP3G.cs" />
-    <Compile Include="Assets\Code\Items\Potions\eneP4U.cs" />
-    <Compile Include="Assets\Code\Items\Potions\eneReP1S.cs" />
-    <Compile Include="Assets\Code\Items\Potions\eneReP2M.cs" />
-    <Compile Include="Assets\Code\Items\Potions\eneReP3G.cs" />
-    <Compile Include="Assets\Code\Items\Potions\eneReP4U.cs" />
-    <Compile Include="Assets\Code\Items\Potions\fireUpMix1S.cs" />
-    <Compile Include="Assets\Code\Items\Potions\fireUpMix2M.cs" />
-    <Compile Include="Assets\Code\Items\Potions\fireUpMix3G.cs" />
-    <Compile Include="Assets\Code\Items\Potions\fireUpMix4U.cs" />
-    <Compile Include="Assets\Code\Items\Potions\healP1S.cs" />
-    <Compile Include="Assets\Code\Items\Potions\healP2M.cs" />
-    <Compile Include="Assets\Code\Items\Potions\healP3G.cs" />
-    <Compile Include="Assets\Code\Items\Potions\healP4U.cs" />
-    <Compile Include="Assets\Code\Items\Potions\healReP1S.cs" />
-    <Compile Include="Assets\Code\Items\Potions\healReP2M.cs" />
-    <Compile Include="Assets\Code\Items\Potions\healReP3G.cs" />
-    <Compile Include="Assets\Code\Items\Potions\healReP4U.cs" />
-    <Compile Include="Assets\Code\Items\Potions\lifeUpMix1S.cs" />
-    <Compile Include="Assets\Code\Items\Potions\lifeUpMix2M.cs" />
-    <Compile Include="Assets\Code\Items\Potions\lifeUpMix3G.cs" />
-    <Compile Include="Assets\Code\Items\Potions\lifeUpMix4U.cs" />
-    <Compile Include="Assets\Code\Items\Potions\lightningUpMix1S.cs" />
-    <Compile Include="Assets\Code\Items\Potions\lightningUpMix2M.cs" />
-    <Compile Include="Assets\Code\Items\Potions\lightningUpMix3G.cs" />
-    <Compile Include="Assets\Code\Items\Potions\lightningUpMix4U.cs" />
-    <Compile Include="Assets\Code\Items\Potions\lightUpMix1S.cs" />
-    <Compile Include="Assets\Code\Items\Potions\lightUpMix2M.cs" />
-    <Compile Include="Assets\Code\Items\Potions\lightUpMix3G.cs" />
-    <Compile Include="Assets\Code\Items\Potions\lightUpMix4U.cs" />
-    <Compile Include="Assets\Code\Items\Potions\physUpMix1S.cs" />
-    <Compile Include="Assets\Code\Items\Potions\physUpMix2M.cs" />
-    <Compile Include="Assets\Code\Items\Potions\physUpMix3G.cs" />
-    <Compile Include="Assets\Code\Items\Potions\physUpMix4U.cs" />
-    <Compile Include="Assets\Code\Items\Potions\waterUpMix1S.cs" />
-    <Compile Include="Assets\Code\Items\Potions\waterUpMix2M.cs" />
-    <Compile Include="Assets\Code\Items\Potions\waterUpMix3G.cs" />
-    <Compile Include="Assets\Code\Items\Potions\waterUpMix4U.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defAir1S.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defAir2M.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defAir3G.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defAir4U.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defDarkness1S.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defDarkness2M.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defDarkness3G.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defDarkness4U.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defDeath1S.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defDeath2M.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defDeath3G.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defDeath4U.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defEarth1S.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defEarth2M.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defEarth3G.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defEarth4U.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defFire1S.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defFire2M.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defFire3G.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defFire4U.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defLife1S.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defLife2M.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defLife3G.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defLife4U.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defLight1S.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defLight2M.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defLight3G.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defLight4U.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defLightning1S.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defLightning2M.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defLightning3G.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defLightning4U.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defWater1S.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defWater2M.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defWater3G.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defWater4U.cs" />
-    <Compile Include="Assets\Code\Monsters\C_Monster.cs" />
-    <Compile Include="Assets\Code\ScriptHelper\ScriptHelper.cs" />
-    <Compile Include="Assets\Code\Skills\ActionScripts\a_AllInScript.cs" />
-    <Compile Include="Assets\Code\Skills\ActionScripts\a_ComboChargeScript.cs" />
-    <Compile Include="Assets\Code\Skills\ActionScripts\a_SynchronizationScript.cs" />
-    <Compile Include="Assets\Code\Skills\A_Skill.cs" />
-    <Compile Include="Assets\Code\Skills\ActionScripts\A_AScript.cs" />
-    <Compile Include="Assets\Code\Skills\ActionScripts\a_CounterAnalysisScript.cs" />
-    <Compile Include="Assets\Code\Skills\ActionScripts\a_CriticalBalanceScript.cs" />
-    <Compile Include="Assets\Code\Skills\ActionScripts\a_DestructionScript.cs" />
-    <Compile Include="Assets\Code\Skills\ActionScripts\a_IronDefenceScript.cs" />
-    <Compile Include="Assets\Code\Skills\ActionScripts\a_OverchargeScript.cs" />
-    <Compile Include="Assets\Code\Skills\ActionScripts\a_RechargeScript.cs" />
-    <Compile Include="Assets\Code\Skills\ActionScripts\a_RetreatScript.cs" />
-    <Compile Include="Assets\Code\Skills\ActionScripts\a_TacticalPreparationScript.cs" />
-    <Compile Include="Assets\Code\Skills\ActionScripts\a_TacticalSwapScript.cs" />
-    <Compile Include="Assets\Code\Skills\dataFileReader.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_AllIn.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_ComboCharge.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_CounterAnalysis.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_CriticalBalance.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_Destruction.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_IronDefence.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_Overcharge.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_Recharge.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_Retreat.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_Synchronization.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_TacticalPreparation.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_TacticalSwap.cs" />
-    <Compile Include="Assets\Code\UIScripts\ExitApp.cs" />
-    <Compile Include="Assets\Code\UIScripts\SetResolution.cs" />
-    <Compile Include="Assets\Scenes\SceneManager.cs" />
-    <Reference Include="UnityEngine.UI">
-      <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TestRunner">
-      <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Timeline">
-      <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.HoloLens">
-      <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
-    </Reference>
+     <Compile Include="Assets\Code\C_Hero.cs" />
+     <Compile Include="Assets\Code\Effects\A_Effect.cs" />
+     <Compile Include="Assets\Code\Effects\airUp.cs" />
+     <Compile Include="Assets\Code\Effects\darknessUp.cs" />
+     <Compile Include="Assets\Code\Effects\deathUp.cs" />
+     <Compile Include="Assets\Code\Effects\earthUp.cs" />
+     <Compile Include="Assets\Code\Effects\fireUp.cs" />
+     <Compile Include="Assets\Code\Effects\lifeUp.cs" />
+     <Compile Include="Assets\Code\Effects\lightningUp.cs" />
+     <Compile Include="Assets\Code\Effects\lightUp.cs" />
+     <Compile Include="Assets\Code\Effects\physUp.cs" />
+     <Compile Include="Assets\Code\Effects\regENE.cs" />
+     <Compile Include="Assets\Code\Effects\regHP.cs" />
+     <Compile Include="Assets\Code\Effects\waterUp.cs" />
+     <Compile Include="Assets\Code\Items\A_Card.cs" />
+     <Compile Include="Assets\Code\Items\A_Item.cs" />
+     <Compile Include="Assets\Code\Items\A_Talisman.cs" />
+     <Compile Include="Assets\Code\Items\Potions\airUpMix1S.cs" />
+     <Compile Include="Assets\Code\Items\Potions\airUpMix2M.cs" />
+     <Compile Include="Assets\Code\Items\Potions\airUpMix3G.cs" />
+     <Compile Include="Assets\Code\Items\Potions\airUpMix4U.cs" />
+     <Compile Include="Assets\Code\Items\Potions\darknessUpMix1S.cs" />
+     <Compile Include="Assets\Code\Items\Potions\darknessUpMix2M.cs" />
+     <Compile Include="Assets\Code\Items\Potions\darknessUpMix3G.cs" />
+     <Compile Include="Assets\Code\Items\Potions\darknessUpMix4U.cs" />
+     <Compile Include="Assets\Code\Items\Potions\deathUpMix1S.cs" />
+     <Compile Include="Assets\Code\Items\Potions\deathUpMix2M.cs" />
+     <Compile Include="Assets\Code\Items\Potions\deathUpMix3G.cs" />
+     <Compile Include="Assets\Code\Items\Potions\deathUpMix4U.cs" />
+     <Compile Include="Assets\Code\Items\Potions\earthUpMix1S.cs" />
+     <Compile Include="Assets\Code\Items\Potions\earthUpMix2M.cs" />
+     <Compile Include="Assets\Code\Items\Potions\earthUpMix3G.cs" />
+     <Compile Include="Assets\Code\Items\Potions\earthUpMix4U.cs" />
+     <Compile Include="Assets\Code\Items\Potions\eneP1S.cs" />
+     <Compile Include="Assets\Code\Items\Potions\eneP2M.cs" />
+     <Compile Include="Assets\Code\Items\Potions\eneP3G.cs" />
+     <Compile Include="Assets\Code\Items\Potions\eneP4U.cs" />
+     <Compile Include="Assets\Code\Items\Potions\eneReP1S.cs" />
+     <Compile Include="Assets\Code\Items\Potions\eneReP2M.cs" />
+     <Compile Include="Assets\Code\Items\Potions\eneReP3G.cs" />
+     <Compile Include="Assets\Code\Items\Potions\eneReP4U.cs" />
+     <Compile Include="Assets\Code\Items\Potions\fireUpMix1S.cs" />
+     <Compile Include="Assets\Code\Items\Potions\fireUpMix2M.cs" />
+     <Compile Include="Assets\Code\Items\Potions\fireUpMix3G.cs" />
+     <Compile Include="Assets\Code\Items\Potions\fireUpMix4U.cs" />
+     <Compile Include="Assets\Code\Items\Potions\healP1S.cs" />
+     <Compile Include="Assets\Code\Items\Potions\healP2M.cs" />
+     <Compile Include="Assets\Code\Items\Potions\healP3G.cs" />
+     <Compile Include="Assets\Code\Items\Potions\healP4U.cs" />
+     <Compile Include="Assets\Code\Items\Potions\healReP1S.cs" />
+     <Compile Include="Assets\Code\Items\Potions\healReP2M.cs" />
+     <Compile Include="Assets\Code\Items\Potions\healReP3G.cs" />
+     <Compile Include="Assets\Code\Items\Potions\healReP4U.cs" />
+     <Compile Include="Assets\Code\Items\Potions\lifeUpMix1S.cs" />
+     <Compile Include="Assets\Code\Items\Potions\lifeUpMix2M.cs" />
+     <Compile Include="Assets\Code\Items\Potions\lifeUpMix3G.cs" />
+     <Compile Include="Assets\Code\Items\Potions\lifeUpMix4U.cs" />
+     <Compile Include="Assets\Code\Items\Potions\lightningUpMix1S.cs" />
+     <Compile Include="Assets\Code\Items\Potions\lightningUpMix2M.cs" />
+     <Compile Include="Assets\Code\Items\Potions\lightningUpMix3G.cs" />
+     <Compile Include="Assets\Code\Items\Potions\lightningUpMix4U.cs" />
+     <Compile Include="Assets\Code\Items\Potions\lightUpMix1S.cs" />
+     <Compile Include="Assets\Code\Items\Potions\lightUpMix2M.cs" />
+     <Compile Include="Assets\Code\Items\Potions\lightUpMix3G.cs" />
+     <Compile Include="Assets\Code\Items\Potions\lightUpMix4U.cs" />
+     <Compile Include="Assets\Code\Items\Potions\physUpMix1S.cs" />
+     <Compile Include="Assets\Code\Items\Potions\physUpMix2M.cs" />
+     <Compile Include="Assets\Code\Items\Potions\physUpMix3G.cs" />
+     <Compile Include="Assets\Code\Items\Potions\physUpMix4U.cs" />
+     <Compile Include="Assets\Code\Items\Potions\waterUpMix1S.cs" />
+     <Compile Include="Assets\Code\Items\Potions\waterUpMix2M.cs" />
+     <Compile Include="Assets\Code\Items\Potions\waterUpMix3G.cs" />
+     <Compile Include="Assets\Code\Items\Potions\waterUpMix4U.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defAir1S.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defAir2M.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defAir3G.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defAir4U.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defDarkness1S.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defDarkness2M.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defDarkness3G.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defDarkness4U.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defDeath1S.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defDeath2M.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defDeath3G.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defDeath4U.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defEarth1S.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defEarth2M.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defEarth3G.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defEarth4U.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defFire1S.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defFire2M.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defFire3G.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defFire4U.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defLife1S.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defLife2M.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defLife3G.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defLife4U.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defLight1S.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defLight2M.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defLight3G.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defLight4U.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defLightning1S.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defLightning2M.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defLightning3G.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defLightning4U.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defWater1S.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defWater2M.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defWater3G.cs" />
+     <Compile Include="Assets\Code\Items\Talismans\defWater4U.cs" />
+     <Compile Include="Assets\Code\Monsters\C_Monster.cs" />
+     <Compile Include="Assets\Code\ScriptHelper\ScriptHelper.cs" />
+     <Compile Include="Assets\Code\Skills\A_Skill.cs" />
+     <Compile Include="Assets\Code\Skills\ActionScripts\a_AllInScript.cs" />
+     <Compile Include="Assets\Code\Skills\ActionScripts\A_AScript.cs" />
+     <Compile Include="Assets\Code\Skills\ActionScripts\a_ComboChargeScript.cs" />
+     <Compile Include="Assets\Code\Skills\ActionScripts\a_CounterAnalysisScript.cs" />
+     <Compile Include="Assets\Code\Skills\ActionScripts\a_CriticalBalanceScript.cs" />
+     <Compile Include="Assets\Code\Skills\ActionScripts\a_DestructionScript.cs" />
+     <Compile Include="Assets\Code\Skills\ActionScripts\a_IronDefenceScript.cs" />
+     <Compile Include="Assets\Code\Skills\ActionScripts\a_OverchargeScript.cs" />
+     <Compile Include="Assets\Code\Skills\ActionScripts\a_RechargeScript.cs" />
+     <Compile Include="Assets\Code\Skills\ActionScripts\a_RetreatScript.cs" />
+     <Compile Include="Assets\Code\Skills\ActionScripts\a_SynchronizationScript.cs" />
+     <Compile Include="Assets\Code\Skills\ActionScripts\a_TacticalPreparationScript.cs" />
+     <Compile Include="Assets\Code\Skills\ActionScripts\a_TacticalSwapScript.cs" />
+     <Compile Include="Assets\Code\Skills\dataFileReader.cs" />
+     <Compile Include="Assets\Code\Skills\Tactics\st_AllIn.cs" />
+     <Compile Include="Assets\Code\Skills\Tactics\st_ComboCharge.cs" />
+     <Compile Include="Assets\Code\Skills\Tactics\st_CounterAnalysis.cs" />
+     <Compile Include="Assets\Code\Skills\Tactics\st_CriticalBalance.cs" />
+     <Compile Include="Assets\Code\Skills\Tactics\st_Destruction.cs" />
+     <Compile Include="Assets\Code\Skills\Tactics\st_IronDefence.cs" />
+     <Compile Include="Assets\Code\Skills\Tactics\st_Overcharge.cs" />
+     <Compile Include="Assets\Code\Skills\Tactics\st_Recharge.cs" />
+     <Compile Include="Assets\Code\Skills\Tactics\st_Retreat.cs" />
+     <Compile Include="Assets\Code\Skills\Tactics\st_Synchronization.cs" />
+     <Compile Include="Assets\Code\Skills\Tactics\st_TacticalPreparation.cs" />
+     <Compile Include="Assets\Code\Skills\Tactics\st_TacticalSwap.cs" />
+     <Compile Include="Assets\Code\UIScripts\ExitApp.cs" />
+     <Compile Include="Assets\Code\UIScripts\SetResolution.cs" />
+     <Compile Include="Assets\Scenes\SceneManager.cs" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -223,4 +222,5 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  
 </Project>

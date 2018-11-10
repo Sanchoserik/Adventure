@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<skills>
+ <Tactics>
+   <skill name = "Tactical Swap", levels = 1>    
+	<1>
+	<Script>a_TacticalSwapScript</Script>
+	<PriceEne>0</PriceEne>
+	<PriceAP>1</PriceAP>
+	</1>	
+   </skill>    
+ 
+ </Tactics>
+ 
+ <Warrior>
+ </Warrior>
+ 
+ <Assassin>
+ </Assassin>
+ 
+ <Scythe>
+ </Scythe>
+ 
+</skills>
