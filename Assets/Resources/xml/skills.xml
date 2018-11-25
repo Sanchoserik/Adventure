@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <skills>
  <Tactics>
+   <skill name = "" levels = "1" scname = "">
+    <1 pEne = "0" pAP = "1">
+	</1>	
+   </skill>
    <skill name = "Tactical Swap" levels = "1" scname = "a_TacticalSwapScript" >    
 	<1 pEne = "0" pAP = "1">
 	</1>	
@@ -148,6 +152,160 @@
  </Tactics>
  
  <Warrior>
+ <skill name ="Counterattack" levels = "5" scname = "CounterAttackScript">
+ <1 pEne = "0" pAP = "0">
+ <v1 name = "val1">0.1</v1>
+ </1>
+ <2 pEne = "0" pAP = "0">
+ <v1 name = "val1">0.15</v1>
+ </2>
+ <3 pEne = "0" pAP = "0">
+ <v1 name = "val1">0.2</v1>
+ </3>
+ <4 pEne = "0" pAP = "0">
+ <v1 name  = "val1">0.25</v1>
+ </4>
+ <5 pEne = "0" pAP = "0">
+ <v1 name = "val1">0.3</v1>
+ </5> 
+ </skill>
+ <skill name = "TripleCut" levels = "5" scname = "TripleCutScript">
+ <1 pEne = "30" pAP = "1">
+ <v1 name = "PhysDmg">50</v1>
+ </1>
+ <2 pEne = "40" pAP = "1">
+ <v1 name = "PhysDmg">80</v1>
+ </2>
+ <3 pEne = "60" pAP = "1">
+ <v1 name = "PhysDmg">120</v1>
+ </3>
+ <4 pEne = "80" pAP = "1">
+ <v1 name = "PhysDmg">160</v1>
+ </4>
+ <5 pEne = "100" pAP = "1">
+ <v1 name = "PhysDmg">200</v1>
+ </5>
+ </skill>
+ <skill name = "FinishingBlow" levels = "4" scname = "FinishingBlowScript">
+ <1 pEne = "55" pAP = "1">
+ <v1 name = "PhysDmg">110</v1>
+ <v2 name = "AddAp">1</v2>
+ </1>
+ <2 pEne = "80" pAP = "1">
+ <v1 name = "PhysDmg">180</v1>
+ <v2 name = "AddAp">1</v2>
+ </2>
+ <3 pEne = "105" pAP = "1">
+ <v1 name = "PhysDmg">250</v1>
+ <v2 name = "AddAp">1</v2>
+ </3>
+ <4 pEne = "130" pAP = "2">
+ <v1 name = "PhysDmg">320</v1>
+ <v2 name = "AddAp">1</v2>
+ </4>
+ </skill>
+ <skill name = "CursedSign" levels = "3" scname = "CursedSignScript">
+ <1 pEne = "35" pAP = "2">
+ <v1 name = "PhysDmg">80</v1>
+ <v2 name = "CursedSigngDmgMod">0.2</v2>
+ </1>
+ <2 pEne = "50" pAP = "2">
+ <v1 name = "PhysDmg">110</v1>
+ <v2 name = "CursedSigngDmgMod">0.3</v2>
+ </2>
+ <3 pEne = "80" pAP = "2">
+ <v1 name = "PhysDmg">140</v1>
+ <v2 name = "CursedSigngDmgMod">0.4</v2>
+ </3>
+ </skill>
+ <skill name = "Ricochet" levels = "3" scname = "RicochetScript">
+ <1 pEne = "60" pAP = "1">
+ <v1 name = "RicochetChance">0.15</v1>
+ <v2 name = "RicochetCount">2</v2>
+ <v3 name = "Time">3</v3>
+ </1>
+ <2 pEne = "90" pAP = "1">
+ <v1 name = "RicochetChance">0.25</v1>
+ <v2 name = "RicochetCount">3</v2>
+ <v3 name = "Time">3</v3>
+ </2>
+ <3 pEne = "120" pAP = "1">
+ <v1 name = "RicochetChance">0.35</v1>
+ <v2 name = "RicochetCount">4</v2>
+ <v3 name = "Time">3</v3>
+ </3>
+ </skill>
+ <skill  name = "PerfectWarrior" levels = "3" scname = "PerfectWarriorScript">
+ <1 pEne = "100" pAP = "3">
+ <v1 name = "AddCounterattackChance">0.04</v1>
+ <v2 name = "DmgModPercent">0.25</v2>
+ <v3 name = "Time">3</v3>
+ </1>
+ <2 pEne = "140" pAP = "3">
+ <v1 name = "AddCounterattackChance">0.08</v1>
+ <v2 name = "DmgModPercent">0.5</v2>
+ <v3 name = "Time">3</v3>
+ </2>
+ <3 pEne = "180" pAP = "2">
+ <v1 name = "AddCounterattackChance">0.12</v1>
+ <v2 name = "DmgModPercent">0.75</v2>
+ <v3 name = "Time">3</v3>
+ </3>
+ </skill>
+ <skill name = "StoneSkin" levels = "3" scname = "StoneSkin">
+ <1 pEne = "50" pAP = "2">
+ <v1 name = "EarthDefAdd">2</v1>
+ <v1 name = "WaterDefAdd">1</v1>
+ <v1 name = "PhysDefAdd">1</v1>
+ <v1 name = "Time">2</v1>
+ </1>
+ <2 pEne = "80" pAP = "2">
+ <v1 name = "EarthDefAdd">2</v1>
+ <v1 name = "WaterDefAdd">1</v1>
+ <v1 name = "PhysDefAdd">1</v1>
+ <v1 name = "FireDefAdd">1</v1>
+ <v1 name = "DarknessDefAdd">1</v1> 
+ <v1 name = "Time">2</v1>
+ </2>
+ <3 pEne = "110" pAP = "2">
+ <v1 name = "EarthDefAdd">2</v1>
+ <v1 name = "WaterDefAdd">2</v1>
+ <v1 name = "PhysDefAdd">2</v1>
+ <v1 name = "FireDefAdd">1</v1>
+ <v1 name = "DarknessDefAdd">1</v1> 
+ <v1 name = "Time">2</v1>
+ </3>
+ </skill>
+ <skill name = "EarthDestruction" levels = "5" scname = "EarthDestructionScript">
+ <1 pEne = "70" pAP = "2">
+ <v1 name = "EarthDmg">180</v1>
+ <v2 name = "OtherTargetsDmg">0.5</v2>
+ </1>
+ <2 pEne = "100" pAP = "2">
+ <v1 name = "EarthDmg">220</v1>
+ <v2 name = "OtherTargetsDmg">0.55</v2>
+ </2>
+ <3 pEne = "130" pAP = "2">
+ <v1 name = "EarthDmg">260</v1>
+ <v2 name = "OtherTargetsDmg">0.6</v2>
+ </3>
+ <4 pEne = "160" pAP = "2">
+ <v1 name = "EarthDmg">300</v1>
+ <v2 name = "OtherTargetsDmg">0.65</v2>
+ </4>
+ <5 pEne = "190" pAP = "2">
+ <v1 name = "EarthDmg">340</v1>
+ <v2 name = "OtherTargetsDmg">0.7</v2>
+ </5>
+ </skill>
+ <skill name = "WaterPrison" levels = "3" scname = "WaterPrisonScript">
+ <1 pEne = "70" pAP = "2">
+ </1>
+ <2 pEne = "70" pAP = "2">
+ </2>
+ <3 pEne = "70" pAP = "2">
+ </3>
+ </skill>
  </Warrior>
  
  <Assassin>
