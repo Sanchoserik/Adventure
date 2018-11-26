@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Adventure.Skills.ActionScripts;
+using Assets.Skills.ActionScripts;
 
-namespace Adventure.Skills.Tactics
+namespace Assets.Skills.Tactics
 {
     class st_Synchronization : A_Skill
     {
@@ -12,7 +12,7 @@ namespace Adventure.Skills.Tactics
 
         public st_Synchronization()
         {
-            flag = 11;
+            flag = 12;
             levels = 1; // ?? 
             dfReader = new dataFileReader(); // data reader
         }

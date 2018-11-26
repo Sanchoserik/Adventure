@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Adventure.ScriptHelper;
+using Assets.ScriptHelper;
 
-namespace Adventure.Skills.ActionScripts
+namespace Assets.Skills.ActionScripts
 {
     class a_SynchronizationScript : A_AScript
     {

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
  
-using Adventure.Effects;
+using Assets.Effects;
 
-namespace Adventure.Items.Potions
+namespace Assets.Items.Potions
 {
     class airUpMix1S : A_Item
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
  
 
-namespace Adventure.Skills
+namespace Assets.Skills
 {
     public  class dataFileReader
     {

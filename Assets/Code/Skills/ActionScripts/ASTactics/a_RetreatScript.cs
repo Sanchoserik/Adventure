@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
  
 
-namespace Adventure.Skills.ActionScripts
+namespace Assets.Skills.ActionScripts
 {
     class a_RetreatScript : A_AScript
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
  
 
-namespace Adventure.Items.Potions
+namespace Assets.Items.Potions
 {
     class healP1S : A_Item
     {

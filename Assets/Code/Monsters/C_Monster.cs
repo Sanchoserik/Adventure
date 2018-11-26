@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
  
 
-namespace Adventure.Monsters
+namespace Assets.Monsters
 {
     abstract class C_Monster
     {

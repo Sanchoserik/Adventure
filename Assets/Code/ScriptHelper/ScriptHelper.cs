@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
  
-using Adventure.Items;
+using Assets.Items;
 
-namespace Adventure.ScriptHelper
+namespace Assets.ScriptHelper
 {
     public static class ScriptHelper
     {

@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Adventure.Items;
-using Adventure.Effects;
+using Assets.Items;
+using Assets.Effects;
 
-namespace Adventure
+namespace Assets
 {
     public class C_Hero
     {

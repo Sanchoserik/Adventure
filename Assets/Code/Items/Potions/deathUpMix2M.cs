@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
  
-using Adventure.Effects;
-namespace Adventure.Items.Potions
+using Assets.Effects;
+namespace Assets.Items.Potions
 {
     class deathUpMix2M : A_Item
     {

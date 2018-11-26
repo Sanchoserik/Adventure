@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
  
 
-namespace Adventure.Effects
+namespace Assets.Effects
 {
     class darknessUp : A_Effect
     {

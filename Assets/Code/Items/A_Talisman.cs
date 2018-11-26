@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
  
 
-namespace Adventure.Items
+namespace Assets.Items
 {
     public abstract class A_Talisman
     {

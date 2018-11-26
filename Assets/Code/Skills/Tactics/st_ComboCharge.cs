@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Adventure.Skills.ActionScripts;
+using Assets.Skills.ActionScripts;
 
-namespace Adventure.Skills.Tactics
+namespace Assets.Skills.Tactics
 {
     class st_ComboCharge : A_Skill
     {

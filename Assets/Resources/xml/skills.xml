@@ -299,12 +299,34 @@
  </5>
  </skill>
  <skill name = "WaterPrison" levels = "3" scname = "WaterPrisonScript">
- <1 pEne = "70" pAP = "2">
+ <1 pEne = "60" pAP = "2">
+ <v1 name = "WaterDmg">70</v1>
+ <v2 name = "Time">2</v2>
  </1>
- <2 pEne = "70" pAP = "2">
- </2>
- <3 pEne = "70" pAP = "2">
+ <2 pEne = "80" pAP = "2">
+ <v1 name = "WaterDmg">100</v1>
+ <v2 name = "Time">2</v2>
+ <3 pEne = "100" pAP = "2">
+ <v1 name = "WaterDmg">130</v1>
+ <v2 name = "Time">3</v2>
  </3>
+ </skill>
+ <skill name = "Regeneration" levels = "3" scname = "RegenerationScript">
+ <1 pEne = "75" pAP = "1">
+ <v1 name = "Healing">30</v1>
+ <v2 name = "Time">3</v2>
+ </1>
+ <2 pEne = "85" pAP = "1">
+ <v1 name = "Healing">60</v1>
+ <v2 name = "Time">3</v2>
+ </2>
+ <3 pEne = "95" pAP = "1">
+ <v1 name = "Healing">90</v1>
+ <v2 name = "Time">4</v2>
+ </3>
+ </skill>
+ <skill name = "Tsunami" levels = "5" scname = "TsunamiScript">
+ 
  </skill>
  </Warrior>
  

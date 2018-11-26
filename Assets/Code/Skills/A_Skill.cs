@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
  
-using Adventure.Monsters;
+using Assets.Monsters;
 
-namespace Adventure.Skills
+namespace Assets.Skills
 {
     public abstract class A_Skill
     {
