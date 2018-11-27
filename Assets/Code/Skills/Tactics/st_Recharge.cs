@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
- 
+using Assets.Code.Skills.ActionScripts.ASTactics;
 using Assets.Skills.ActionScripts;
 
 namespace Assets.Skills.Tactics
 {
     class st_Recharge :A_Skill
     {
-        a_RechargeScript script = new a_RechargeScript();
+        as_Recharge script = new as_Recharge();
 
         public st_Recharge()
         {
-            flag = 5;
+            flag = 8;
             levels = 1; //???
             dfReader = null; //data reader read
         }

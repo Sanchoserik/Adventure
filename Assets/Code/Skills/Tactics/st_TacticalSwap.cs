@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
- 
+using Assets.Code.Skills.ActionScripts.ASTactics;
 using Assets.Skills.ActionScripts;
 
 namespace Assets.Skills.Tactics
 {
     class st_TacticalSwap : A_Skill
     {        
-        a_TacticalSwapScript script = new a_TacticalSwapScript();
+        as_TacticalSwap script = new as_TacticalSwap();
 
         public st_TacticalSwap()
         {
-            flag = 1;
+            flag = 12;
             levels = 1;
             dfReader = null;
         }

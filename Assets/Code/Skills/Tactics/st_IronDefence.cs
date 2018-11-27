@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
- 
+using Assets.Code.Skills.ActionScripts.ASTactics;
 using Assets.Skills.ActionScripts;
 
 namespace Assets.Skills.Tactics
 {
     class st_IronDefence : A_Skill
     {
-        a_IronDefenceScript script = new a_IronDefenceScript();
+        as_IronDefence script = new as_IronDefence();
 
         public st_IronDefence()
         {
-            flag = 9;
+            flag = 5;
             levels = 1; //???
             dfReader = null; //from data reader read
         }

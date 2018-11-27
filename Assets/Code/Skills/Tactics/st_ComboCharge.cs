@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Assets.Skills.ActionScripts;
+using Assets.Code.Skills.ActionScripts.ASTactics;
 
 namespace Assets.Skills.Tactics
 {
     class st_ComboCharge : A_Skill
     {
-        a_ComboChargeScript script = new a_ComboChargeScript();
+        as_ComboCharge script = new as_ComboCharge();
 
         public st_ComboCharge()
         {
-            flag = 11;
+            flag = 2;
             levels = 1; // more than one 
             dfReader = new dataFileReader(); // data reader
         }

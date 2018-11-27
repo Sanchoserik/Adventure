@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <skills>
  <Tactics>
-   <skill name = "" levels = "1" scname = "">
+   <skill name = "Rearm" levels = "1" scname = "a_RearmScript">
     <1 pEne = "0" pAP = "1">
 	</1>	
    </skill>

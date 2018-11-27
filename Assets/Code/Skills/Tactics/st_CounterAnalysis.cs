@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
- 
+using Assets.Code.Skills.ActionScripts.ASTactics;
 using Assets.Skills.ActionScripts;
 
 
@@ -10,7 +10,7 @@ namespace Assets.Skills.Tactics
 {
     class st_CounterAnalysis : A_Skill
     {
-        a_CounterAnalysisScript script = new a_CounterAnalysisScript();
+        as_CounterAnalysis script = new as_CounterAnalysis();
 
         public st_CounterAnalysis()
         {
