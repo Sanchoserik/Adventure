@@ -548,9 +548,223 @@
  <v3 name = "Time">3</v3>
  </3>
  </skill>
+ <skill name = "PiercingLight" levels = "6" scname = "as_PiercingLight">
+ <1 pEne = "50" pAP = "1">
+ <v1 name = "Targets">One horizontal and vertical</v1>
+ <v2 name = "LightDmg">40</v2>
+ </1>
+ <2 pEne = "70" pAP = "1">
+ <v1 name = "Targets">One horizontal and vertical</v1>
+ <v2 name = "LightDmg">60</v2>
+ </2>
+ <3 pEne = "90" pAP = "1">
+ <v1 name = "Targets">One horizontal and vertical</v1>
+ <v2 name = "LightDmg">80</v2>
+ </3>
+ <4 pEne = "110" pAP = "1">
+ <v1 name = "Targets">One horizontal and vertical</v1>
+ <v2 name = "LightDmg">100</v2>
+ </4>
+ <5 pEne = "130" pAP = "1">
+ <v1 name = "Targets">One horizontal and vertical</v1>
+ <v2 name = "LightDmg">120</v2>
+ </5>
+ <6 pEne = "150" pAP = "1">
+ <v1 name = "Targets">One horizontal and vertical</v1>
+ <v2 name = "LightDmg">140</v2>
+ </6>
+ </skill>
+ <skill name = "ShiningCloak" levels = "4" scname = "as_ShiningCloak">
+ <1 pEne = "80" pAP = "1">
+ <v1 name = "LightDmgMod">0.1</v1>
+ <v2 name = "RandomDefDecr">1</v2>
+ <v3 name = "DefDecrTime">3</v3>
+ <v4 name = "Time">3</v4>
+ </1>
+ <2 pEne = "110" pAP = "1">
+ <v1 name = "LightDmgMod">0.15</v1>
+ <v2 name = "RandomDefDecr">1</v2>
+ <v3 name = "DefDecrTime">3</v3>
+ <v4 name = "Time"3</v4>
+ </2>
+ <3 pEne = "140" pAP = "1">
+ <v1 name = "LightDmgMod">0.2</v1>
+ <v2 name = "RandomDefDecr">2</v2>
+ <v3 name = "DefDecrTime">3</v3>
+ <v4 name = "Time">3</v4>
+ </3>
+ <4 pEne = "170" pAP = "2">
+ <v1 name = "LightDmgMod">0.3</v1>
+ <v2 name = "RandomDefDecr">2</v2>
+ <v3 name = "DefDecrTime">4</v3>
+ <v4 name = "Time">4</v4>
+ </4>
+ </skill>
+ <skill name = "FsterThanLight" levels = "3" scname = "as_FasterThanLight">
+ <1 pEne = "150" pAP = "2">
+ <v1 name ="AtkEvasionIncr">0.1</v1>
+ <v2 name = "SKillEvasionIncr">0.07</v2>
+ <v3 name ="AllDefDecr">3</v3>
+ <v4 name = "CrStrikeChancePlus">0.1</v4>
+ <v5 name = "Time">3</v5>
+ </1>
+ <2 pEne = "200" pAP = "2">
+ <v1 name ="AtkEvasionIncr">0.15</v1>
+ <v2 name = "SKillEvasionIncr">0.11</v2>
+ <v3 name ="AllDefDecr">3</v3>
+ <v4 name = "CrStrikeChancePlus">0.15</v4>
+ <v5 name = "Time">3</v5>
+ </2>
+ <3 pEne = "250" pAP = "2">
+ <v1 name ="AtkEvasionIncr">0.2</v1>
+ <v2 name = "SKillEvasionIncr">0.15</v2>
+ <v3 name ="AllDefDecr">2</v3>
+ <v4 name = "CrStrikeChancePlus">0.2</v4>
+ <v5 name = "Time">3</v5>
+ </3>
+ </skill>
+ <skill name = "FireClaw" levels = "5" scname  ="as_FireClaw">
+ <1 pEne = "60" pAP = "1">
+ <v1 name = "FireDmg">50</v1>
+ <v2 name = "BurningFireDmg">0.5</v2>
+ <v3 name = "Time">2</v3>
+ </1>
+ <2 pEne = "80" pAP = "1">
+ <v1 name = "FireDmg">80</v1>
+ <v2 name = "BurningFireDmg">0.6</v2>
+ <v3 name = "Time">2</v3>
+ </2>
+ <3 pEne = "100" pAP = "1">
+ <v1 name = "FireDmg">110</v1>
+ <v2 name = "BurningFireDmg">0.7</v2>
+ <v3 name = "Time">3</v3>
+ </3>
+ <4 pEne = "120" pAP = "1">
+ <v1 name = "FireDmg">140</v1>
+ <v2 name = "BurningFireDmg">0.8</v2>
+ <v3 name = "Time">3</v3>
+ </4>
+ <5 pEne = "140" pAP = "1">
+ <v1 name = "FireDmg">170</v1>
+ <v2 name = "BurningFireDmg">0.9</v2>
+ <v3 name = "Time">4</v3>
+ </5>
+ </skill>
+ <skill name = "Burnout" levels = "3" scname = "as_Burnout">
+ <1 pEne = "80" pAP = "2">
+ <v1 name ="HPDamage">0.05</v1>
+ <v2 name = "FireDmgMod">0.1</v2>
+ <v3 name = "Time">3</v3>
+ </1>
+ <2 pEne = "120" pAP = "2">
+ <v1 name ="HPDamage">0.1</v1>
+ <v2 name = "FireDmgMod">0.2</v2>
+ <v3 name = "Time">3</v3>
+ </2>
+ <3 pEne = "160" pAP = "1">
+ <v1 name ="HPDamage">0.15</v1>
+ <v2 name = "FireDmgMod">0.4</v2>
+ <v3 name = "Time">3</v3>
+ </3>
+ </skill>
+ <skill name = "Gehena" levels  = "5" scname = "as_Gehena">
+ <1 pEne = "150" pAP = "3">
+ <v1 name = "Targets">One and three vertical lines behind</v1>
+ <v2 name = "FireDmg">250</v2>
+ <v3 name = "FireDmgOthers">180</v3>
+ </1>
+ <2 pEne = "180" pAP = "3">
+ <v1 name = "Targets">One and three vertical lines behind</v1>
+ <v2 name = "FireDmg">280</v2>
+ <v3 name = "FireDmgOthers">200</v3>
+ </2>
+ <3 pEne = "210" pAP = "3">
+ <v1 name = "Targets">One and three vertical lines behind</v1>
+ <v2 name = "FireDmg">310</v2>
+ <v3 name = "FireDmgOthers">220</v3>
+ </3>
+ <4 pEne = "240" pAP = "3">
+ <v1 name = "Targets">One and three vertical lines behind</v1>
+ <v2 name = "FireDmg">360</v2>
+ <v3 name = "FireDmgOthers">260</v3>
+ </4>
+ <5 pEne = "270" pAP = "2">
+ <v1 name = "Targets">One and three vertical lines behind</v1>
+ <v2 name = "FireDmg">410</v2>
+ <v3 name = "FireDmgOthers">300</v3>
+ </5>
+ </skill>
+ <skill name = "WindBlade" levels = "5" scname = "as_WindBlade">
+ <1 pEne = "35" pAP = "1">
+ <v1 name = "AirDmgModForDef">0.1</v1>
+ <v2 name = "AirDmg">50</v2>
+ </1>
+ <2 pEne = "50" pAP = "1">
+ <v1 name = "AirDmgModForDef">0.15</v1>
+ <v2 name = "AirDmg">60</v2>
+ </2>
+ <3 pEne = "65" pAP = "1">
+ <v1 name = "AirDmgModForDef">0.2</v1>
+ <v2 name = "AirDmg">70</v2>
+ </3>
+ <4 pEne = "80" pAP = "1">
+ <v1 name = "AirDmgModForDef">0.25</v1>
+ <v2 name = "AirDmg">80</v2>
+ </4>
+ <5 pEne = "95" pAP = "1">
+ <v1 name = "AirDmgModForDef">0.3</v1>
+ <v2 name = "AirDmg">90</v2>
+ </5>
+ </skill>
+ <skill name = "Tornado" levels = "3" scname = "as_Tornado">
+ <1 pEne = "120" pAP = "3">
+ <v1 name = "Targets">Vertical line</v1>
+ <v2 name = "AirDmg">80</v2>
+ <v3 name = "Time">2</v3>
+ </1>
+ <2 pEne = "160" pAP = "3">
+ <v1 name = "Targets">Vertical line</v1>
+ <v2 name = "AirDmg">100</v2>
+ <v3 name = "Time">2</v3>
+ </2>
+ <3 pEne = "200" pAP = "2">
+ <v1 name = "Targets">Vertical line</v1>
+ <v2 name = "AirDmg">120</v2>
+ <v3 name = "Time">2</v3>
+ </3>
+ </skill>
+ <skill name = "ReleasedStream" levels = "5" scname = "as_ReleasedStream">
+ <1 pEne = "150" pAP = "3">
+ <v1 name = "RandomDefDecr">2</v1>
+ <v2 name = "AirDmg">150</v2>
+ <v3 name = "Time">3</v3>
+ </1>
+ <2 pEne = "180" pAP = "3">
+ <v1 name = "RandomDefDecr">2</v1>
+ <v2 name = "AirDmg">200</v2>
+ <v3 name = "Time">3</v3>
+ </2>
+ <3 pEne = "210" pAP = "3">
+ <v1 name = "RandomDefDecr">3</v1>
+ <v2 name = "AirDmg">250</v2>
+ <v3 name = "Time">3</v3>
+ </3>
+ <4 pEne = "240" pAP = "3">
+ <v1 name = "RandomDefDecr">3</v1>
+ <v2 name = "AirDmg">300</v2>
+ <v3 name = "Time">3</v3>
+ </4>
+ <5 pEne = "270" pAP = "2">
+ <v1 name = "RandomDefDecr">4</v1>
+ <v2 name = "AirDmg">350</v2>
+ <v3 name = "Time">4</v3>
+ </5>
+ </skill>
  </Assassin>
  
  <Scythe>
+ <skill>
+ </skill>
  </Scythe>
  
 </skills>
