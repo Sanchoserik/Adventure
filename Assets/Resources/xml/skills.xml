@@ -824,7 +824,7 @@
  <v3 name = "Time">3</v3>
  </2>
  </skill>
- <skill name = "Anarchy" levels = "3" scname = "as_Anarchy">\
+ <skill name = "Anarchy" levels = "3" scname = "as_Anarchy">
  <1 pEne = "150" pAP = "2">
  <v1 name = "CrStrikeChancePlus">0.05</v1>
  <v2 name = "CrStrikeDmgPlus">0.1</v2>

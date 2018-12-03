@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<skills>
+ <Tactics>
+  <skill name = "Rearm" locname = "" >
+  <1></1>
+  </skill>
+  <skill name = "Tactical Swap" locname = "">
+  <1></1>
+  </skill>
+  <skill name = "Tactical Retreat" locname = "">
+  <1></1>
+  <2></2>
+  <3></3>
+  <4></4>
+  </skill>
+  <skill name="Tactical Preparation" locname = "">
+  <1></1>
+  <2></2>
+  </skill>
+  <skill name = "Tactical Recharge" locname = "">
+  <1></1>
+  <2></2>
+  <3></3>
+  <4></4>
+  </skill>
+  <skill name = "Destruction" locname = "">
+  <1></1>
+  <2></2>
+  <3></3>
+  <4></4>
+  <5></5>
+  </skill>
+  <skill name = "Counter Analysis" locname = "">
+  <1></1>
+  </skill>
+  <skill name = "Critical Balance" locname = "">
+  <1></1>
+  <2></2>
+  <3></3>
+  </skill>
+  <skill name = "Overcharge" locname = "">
+  <1></1>
+  <2></2>
+  <3></3>
+  </skill>
+  <skill name = "Synchronization" locname = "">
+  <1></1>
+  <2></2>
+  <3></3>
+  <4></4>
+  </skill>
+  </skill name = "Combo Charge" locname = "">
+  <1></1>
+  </skill>
+  <skill name = "IronDefence" locname = "">
+  <1></1>
+  </skill>
+  <skill name = "All In" locname = "">
+  <1></1>
+  <2></2>
+  </skill>
+ </Tactics>
+ 
+ <Warrior>
+  <skill name ="Counterattack" locname = "">
+  <1></1>
+  <2></2>
+  <3></3>
+  <4></4>
+  <5></5>
+  </skill>
+  <skill name = "TripleCut" locname = "">
+  <1></1>
+  <2></2>
+  <3></3>
+  <4></4>
+  <5></5>
+  </skill>
+  <skill name = "FinishingBlow" locname = "">
+  <1></1>
+  <2></2>
+  <3></3>
+  <4></4>
+  </skill>
+  <skill name = "CursedSign" locname = "">
+  <1></1>
+  <2></2>
+  <3></3>
+  </skill>
+  <skill name = "Ricochet" locname = "">
+  <1></1>
+  <2></2>
+  <3></3>
+  </skill>
+  <skill  name = "PerfectWarrior" locname = "">
+  <1></1>
+  <2></2>
+  <3></3>
+  </skill>
+  <skill name = "StoneSkin" locname = "">
+  <1></1>
+  <2></2>
+  <3></3>
+  </skill>
+  <skill name = "EarthDestruction" locname = "">
+  <1></1>
+  <2></2>
+  <3></3>
+  <4></4>
+  <5></5>
+  </skill>
+  <skill name = "WaterPrison" locname = "">
+  <1></1>
+  <2></2>
+  <3></3>
+  </skill>
+  <skill name = "Regeneration" locname = "">
+  <1></1>
+  <2></2>
+  <3></3>
+  </skill>
+  <skill name = "Tsunami" locname = "">
+  <1></1>
+  <2></2>
+  <3></3>
+  <4></4>
+  <5></5>
+  </skill>
+  <skill name = "DarkVortex" locname = "">
+  <1></1>
+  <2></2>
+  <3></3>
+  <4></4>
+  <5></5>
+  </skill>
+  <skill name = "AbsoluteDarkness" locname = "">
+  <1></1>
+  <2></2>
+  <3></3>
+  </skill>
+  <skill name = "DarkDemon" locname = "">
+  <1></1>
+  <2></2>
+  <3></3>
+  <4></4>
+  <5></5>
+  </skill>
+ </Warrior>
+ 
+ <Assassin>
+ <skill name = "Evasion" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ <4></4>
+ <5></5>
+ </skill>
+ <skill name = "DoubleStrike" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ <4></4>
+ <5></5>
+ </skill>
+ <skill name = "PiercingStrike" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ </skill>
+ <skill name = "Assassination" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ <4></4>
+ <5></5>
+ </skill>
+ <skill name = "LethalTempo" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ </skill>
+ <skill name = "PiercingLight" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ <4></4>
+ <5></5>
+ <6></6>
+ </skill>
+ <skill name = "ShiningCloak" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ <4></4>
+ </skill>
+ <skill name = "FsterThanLight" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ </skill>
+ <skill name = "FireClaw" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ <4></4>
+ <5></5>
+ </skill>
+ <skill name = "Burnout" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ </skill>
+ <skill name = "Gehena" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ <4></4>
+ <5></5>
+ </skill>
+ <skill name = "WindBlade" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ <4></4>
+ <5></5>
+ </skill>
+ <skill name = "Tornado" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ </skill>
+ <skill name = "ReleasedStream" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ <4></4>
+ <5></5>
+ </skill>
+ </Assassin>
+ 
+ <Scythe>
+ <skill name = "BLocking" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ <4></4>
+ <5></5>
+ </skill>
+ <skill name = "WideSwing" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ <4></4>
+ <5></5>
+ </skill>
+ <skill name = "Devouring" locname = "">
+ <1></1>
+ <2></2>
+ </skill>
+ <skill name = "Anarchy" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ </skill>
+ <skill name = "Harvesting" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ </skill>
+ <skill name = "DeathSign" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ </skill>
+ <skill name = "DelayedDeath" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ <4></4>
+ </skill>
+ <skill name = "FaceOfDeath" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ <4></4>
+ <5></5>
+ </skill>
+ <skill name = "LightningChain" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ <4></4>
+ <5></5>
+ <6></6>
+ </skill>
+ <skill name = "Electrification" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ </skill>
+ <skill name = "ThundeStorm" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ </skill>
+ <skill name = "LifeDrain" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ <4></4>
+ </skill>
+ <skill name = "Evolution" locname = "">
+ <1></1>
+ <2></2>
+ </skill>
+ <skill name = "DeathBlossom" locname = "">
+ <1></1>
+ <2></2>
+ <3></3>
+ <4></4>
+ </skill>
+ </Scythe>
+ 
+</skills>
