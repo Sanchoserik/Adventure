@@ -277,9 +277,13 @@
      <Compile Include="Assets\Code\Skills\Warrior\sw_WaterPrison.cs" />
      <Compile Include="Assets\Code\UIScripts\ExitApp.cs" />
      <Compile Include="Assets\Code\UIScripts\SetResolution.cs" />
+     <Compile Include="Assets\Resources\xml\SkillContainer.cs" />
+     <Compile Include="Assets\Resources\xml\skillLoader.cs" />
      <Compile Include="Assets\Scenes\SceneManager.cs" />
+     <None Include="Assets\Resources\xml\skillsLocUA.xml" />
+     <None Include="Assets\Resources\xml\skillsLocENG.xml" />
      <None Include="Assets\Resources\xml\skills.xml" />
-     <None Include="Assets\Resources\xml\skillsLoc.xml" />
+     <None Include="Assets\Resources\xml\skillsLocRU.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

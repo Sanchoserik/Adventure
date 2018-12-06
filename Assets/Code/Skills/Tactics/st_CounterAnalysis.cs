@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml;
+using System.Xml.Serialization;
 using Assets.Code.Skills.ActionScripts.ASTactics;
 using Assets.Skills.ActionScripts;
 
 
-namespace Assets.Skills.Tactics
+namespace Assets.Code.Skills.Tactics
 {
     class st_CounterAnalysis : A_Skill
     {

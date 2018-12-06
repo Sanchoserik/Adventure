@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
  
 
-namespace Assets.Skills
+namespace Assets.Code.Skills
 {
     public  class dataFileReader
     {
