@@ -21,9 +21,7 @@ namespace Assets.Code.Skills.Tactics
         //
         public st_AllIn()
         {
-            flag = 1; 
-            levels = 1; // 
-            dfReader = null;
+            flag = 1;   
         }
         // only for heroes
         public void callSkill(C_Hero user)

@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{76021E92-6AEF-0A12-FC68-C65884E26AB9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
+    <UnityProjectGenerator>VSTU</UnityProjectGenerator>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>2017.1.0f3</UnityVersion>
+    <RootNamespace>
+    </RootNamespace>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_0;UNITY_2017_1;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_0;UNITY_2017_1;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEditor">
+      <HintPath>F:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Code\C_Hero.cs" />
+    <Compile Include="Assets\Code\Effects\A_Effect.cs" />
+    <Compile Include="Assets\Code\Effects\airUp.cs" />
+    <Compile Include="Assets\Code\Effects\darknessUp.cs" />
+    <Compile Include="Assets\Code\Effects\deathUp.cs" />
+    <Compile Include="Assets\Code\Effects\earthUp.cs" />
+    <Compile Include="Assets\Code\Effects\fireUp.cs" />
+    <Compile Include="Assets\Code\Effects\lifeUp.cs" />
+    <Compile Include="Assets\Code\Effects\lightningUp.cs" />
+    <Compile Include="Assets\Code\Effects\lightUp.cs" />
+    <Compile Include="Assets\Code\Effects\physUp.cs" />
+    <Compile Include="Assets\Code\Effects\regENE.cs" />
+    <Compile Include="Assets\Code\Effects\regHP.cs" />
+    <Compile Include="Assets\Code\Effects\waterUp.cs" />
+    <Compile Include="Assets\Code\Items\A_Card.cs" />
+    <Compile Include="Assets\Code\Items\A_Item.cs" />
+    <Compile Include="Assets\Code\Items\A_Talisman.cs" />
+    <Compile Include="Assets\Code\Items\Potions\airUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\airUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\airUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\airUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\darknessUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\darknessUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\darknessUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\darknessUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\deathUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\deathUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\deathUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\deathUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\earthUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\earthUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\earthUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\earthUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\eneP1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\eneP2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\eneP3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\eneP4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\eneReP1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\eneReP2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\eneReP3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\eneReP4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\fireUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\fireUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\fireUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\fireUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\healP1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\healP2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\healP3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\healP4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\healReP1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\healReP2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\healReP3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\healReP4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\lifeUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\lifeUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\lifeUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\lifeUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\lightningUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\lightningUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\lightningUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\lightningUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\lightUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\lightUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\lightUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\lightUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\physUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\physUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\physUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\physUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\waterUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\waterUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\waterUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\waterUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defAir1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defAir2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defAir3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defAir4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defDarkness1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defDarkness2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defDarkness3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defDarkness4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defDeath1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defDeath2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defDeath3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defDeath4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defEarth1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defEarth2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defEarth3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defEarth4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defFire1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defFire2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defFire3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defFire4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defLife1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defLife2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defLife3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defLife4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defLight1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defLight2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defLight3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defLight4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defLightning1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defLightning2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defLightning3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defLightning4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defWater1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defWater2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defWater3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\defWater4U.cs" />
+    <Compile Include="Assets\Code\Monsters\C_Monster.cs" />
+    <Compile Include="Assets\Code\ScriptHelper\ScriptHelper.cs" />
+    <Compile Include="Assets\Code\Skills\A_Skill.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\A_AScript.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_Assassination.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_Burnout.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_DoubleStrike.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_Evasion.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_FasterThanLight.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_FireClaw.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_Gehena.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_LethalTempo.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_PiercingLight.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_PiercingStrike.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_ReleasedStream.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_ShiningCloak.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_Tornado.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_WindBlade.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_Anarchy.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_Blocking.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_DeathBlossom.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_DeathSign.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_DelayedDeath.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_Devouring.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_Electrification.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_Evolution.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_FaceOfDeath.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_Harvesting.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_LifeDrain.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_LightningChain.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_ThunderStorm.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_WideSwing.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_AllIn.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_ComboCharge.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_CounterAnalysis.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_CriticalBalance.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_Destruction.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_IronDefence.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_Overcharge.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_Rearm.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_Recharge.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_Retreat.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_Synchronization.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_TacticalPreparation.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_TacticalSwap.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_AbsoluteDarkness.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_CounterAttack.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_CursedSign.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_DarkDemon.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_DarkVortex.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_EarthDestruction.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_FinnishingBlow.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_PerfectWarrior.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_Regeneration.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_Ricochet.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_StoneSkin.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_TripleCut.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_Tsunami.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_WaterPrison.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\sa_Assassination.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\sa_Burnout.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\sa_DoubleStrike.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\sa_Evasion.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\sa_FasterThanLight.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\sa_FireClaw.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\sa_Gehenna.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\sa_LethalTempo.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\sa_PiercingLight.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\sa_PiercingStrike.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\sa_ReleasedStream.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\sa_ShiningCloak.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\sa_Tornado.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\sa_WindBlade.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\sb_Anarchy.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\sb_Blocking.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\sb_DeathBlossom.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\sb_DeathSign.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\sb_DelayedDeath.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\sb_Devouring.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\sb_Electrification.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\sb_Evolution.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\sb_FaceOfDeath.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\sb_Harvesting.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\sb_LifeDrain.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\sb_LightningChain.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\sb_Thunderstorm.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\sb_WideSwing.cs" />
+    <Compile Include="Assets\Code\Skills\LevelData.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\st_AllIn.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\st_ComboCharge.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\st_CounterAnalysis.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\st_CriticalBalance.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\st_Destruction.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\st_IronDefence.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\st_Overcharge.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\st_Rearm.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\st_Recharge.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\st_Retreat.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\st_Synchronization.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\st_TacticalPreparation.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\st_TacticalSwap.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\sw_AbsoluteDarkness.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\sw_CounterAttack.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\sw_CursedSign.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\sw_DarkDemon.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\sw_DarkVortex.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\sw_EarthDestruction.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\sw_FinnishingBlow.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\sw_PerfectWarrior.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\sw_Regeneration.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\sw_Ricochet.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\sw_StoneSkin.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\sw_TripleCut.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\sw_Tsunami.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\sw_WaterPrison.cs" />
+    <Compile Include="Assets\Code\UIScripts\ExitApp.cs" />
+    <Compile Include="Assets\Code\UIScripts\SetResolution.cs" />
+    <Compile Include="Assets\Resources\xml\Loader.cs" />
+    <Compile Include="Assets\Resources\xml\SkillContainer.cs" />
+    <Compile Include="Assets\Resources\xml\skillLoader.cs" />
+    <Compile Include="Assets\Scenes\SceneManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Resources\xml\skills.xml" />
+    <None Include="Assets\Resources\xml\skillsLocENG.xml" />
+    <None Include="Assets\Resources\xml\skillsLocRU.xml" />
+    <None Include="Assets\Resources\xml\skillsLocUA.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>

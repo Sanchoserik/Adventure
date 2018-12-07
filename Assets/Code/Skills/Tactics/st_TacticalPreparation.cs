@@ -16,8 +16,6 @@ namespace Assets.Code.Skills.Tactics
         public st_TacticalPreparation()
         {
             flag = 11;
-            levels = 3;
-            dfReader = null; //reader read data on creation 
         }
         // only for heroes
         public void callSkill(C_Hero user) //specify data from reader

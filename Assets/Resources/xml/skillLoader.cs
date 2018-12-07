@@ -13,11 +13,13 @@ namespace Assets.Resources.xml
         void Start()
         {
             SkillContainer cs = SkillContainer.Load(path);
-
+           
             foreach (Code.Skills.A_Skill skill in cs.skills)
             {
                 print(skill.SName);
             }
+
+            int xx = 200;
         }
 
 

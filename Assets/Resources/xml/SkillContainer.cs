@@ -14,6 +14,10 @@ using Assets.Code.Skills;
         [XmlArrayItem("skill")]
         public List<A_Skill> skills = new List<A_Skill>();
 
+        [XmlArray("skill")]
+        [XmlArrayItem("l")]
+        public List<LevelData> sdata = new List<LevelData>();
+
         public static SkillContainer Load(string path)
         {
              TextAsset _xml = Resources.Load<TextAsset>(path);
@@ -22,12 +26,37 @@ using Assets.Code.Skills;
             
              StringReader reader = new StringReader(_xml.text);
         
-             SkillContainer skills = serializer.Deserialize(reader) as SkillContainer;
+             SkillContainer sc = serializer.Deserialize(reader) as SkillContainer;
 
-            reader.Close();
+             reader.Close();
 
-            return skills;
+             return sc;
         }
 
-    }
+}
+
+//[XmlRoot("SkillColection")]
+//public class SkillDataContainer
+//{
+//    [XmlArray("skill")]
+//    [XmlArrayItem("l")]
+//    public List<LevelData> sdata = new List<LevelData>();
+
+//    public static SkillDataContainer Load(string path)
+//    {
+//        TextAsset _xml = Resources.Load<TextAsset>(path);
+
+//        XmlSerializer serializer = new XmlSerializer(typeof(SkillDataContainer));
+
+//        StringReader reader = new StringReader(_xml.text);
+
+//        SkillDataContainer sdata = serializer.Deserialize(reader) as SkillDataContainer;
+
+//        reader.Close();
+
+//        return sdata;
+//    }
+
+//}
+
 

@@ -16,8 +16,6 @@ namespace Assets.Code.Skills.Tactics
         public st_ComboCharge()
         {
             flag = 2;
-            levels = 1; // more than one 
-            dfReader = new dataFileReader(); // data reader
         }
         // only for heroes
         public void callSkill(C_Hero user)

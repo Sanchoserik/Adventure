@@ -15,9 +15,7 @@ namespace Assets.Code.Skills.Tactics
 
         public st_Synchronization()
         {
-            flag = 10;
-            levels = 1; // ?? 
-            dfReader = new dataFileReader(); // data reader
+            flag = 10;      
         }
         // only for heroes
         public void callSkill(C_Hero user)

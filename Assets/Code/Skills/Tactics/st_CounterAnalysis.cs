@@ -17,8 +17,6 @@ namespace Assets.Code.Skills.Tactics
         public st_CounterAnalysis()
         {
             flag = 3;
-            levels = 1;
-            dfReader = null;
         }
         // only for heroes
         public void callSkill(C_Hero user)

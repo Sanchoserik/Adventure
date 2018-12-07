@@ -15,9 +15,7 @@ namespace Assets.Code.Skills.Tactics
 
         public st_TacticalSwap()
         {
-            flag = 12;
-            levels = 1;
-            dfReader = null;
+            flag = 12;       
         }
         // only for heroes
         public void callSkill(C_Hero user)

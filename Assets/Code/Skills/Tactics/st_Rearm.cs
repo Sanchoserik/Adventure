@@ -16,8 +16,6 @@ namespace Assets.Code.Skills.Tactics
         public st_Rearm()
         {
             flag = 7;
-            levels = 1; // ?? 
-            dfReader = new dataFileReader(); // data reader
         }
         // only for heroes
         public void callSkill(C_Hero user)

@@ -16,8 +16,6 @@ namespace Assets.Code.Skills.Tactics
         public st_CriticalBalance()
         {
             flag = 3;
-            levels = 1; //???
-            dfReader = null; //data reder read
         }
         // only for heroes
         public void callSkill(C_Hero user)

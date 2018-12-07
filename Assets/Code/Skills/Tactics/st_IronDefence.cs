@@ -16,8 +16,6 @@ namespace Assets.Code.Skills.Tactics
         public st_IronDefence()
         {
             flag = 5;
-            levels = 1; //???
-            dfReader = null; //from data reader read
         }
         // only for heroes
         public void callSkill(C_Hero user)

@@ -15,9 +15,7 @@ namespace Assets.Code.Skills.Tactics
 
         public st_Recharge()
         {
-            flag = 8;
-            levels = 1; //???
-            dfReader = null; //data reader read
+            flag = 8;      
         }
         // only for heroes
         public void callSkill(C_Hero user)

@@ -15,9 +15,7 @@ namespace Assets.Code.Skills.Tactics
 
         public st_Retreat()
         {
-            flag = 9;
-            levels = 1;
-            dfReader = null;
+            flag = 9;    
         }
         // only for heroes
         public void callSkill(C_Hero user)
