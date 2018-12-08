@@ -277,7 +277,6 @@
     <Compile Include="Assets\Code\Skills\Bruiser\sb_LightningChain.cs" />
     <Compile Include="Assets\Code\Skills\Bruiser\sb_Thunderstorm.cs" />
     <Compile Include="Assets\Code\Skills\Bruiser\sb_WideSwing.cs" />
-    <Compile Include="Assets\Code\Skills\LevelData.cs" />
     <Compile Include="Assets\Code\Skills\Tactics\st_AllIn.cs" />
     <Compile Include="Assets\Code\Skills\Tactics\st_ComboCharge.cs" />
     <Compile Include="Assets\Code\Skills\Tactics\st_CounterAnalysis.cs" />
@@ -308,8 +307,6 @@
     <Compile Include="Assets\Code\UIScripts\ExitApp.cs" />
     <Compile Include="Assets\Code\UIScripts\SetResolution.cs" />
     <Compile Include="Assets\Resources\xml\Loader.cs" />
-    <Compile Include="Assets\Resources\xml\SkillContainer.cs" />
-    <Compile Include="Assets\Resources\xml\skillLoader.cs" />
     <Compile Include="Assets\Scenes\SceneManager.cs" />
   </ItemGroup>
   <ItemGroup>
