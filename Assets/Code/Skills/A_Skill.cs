@@ -20,8 +20,6 @@ namespace Assets.Code.Skills
         public short levels; //levels count
         [XmlAttribute("scname")]
         public string ASName; // action script name
-       
-       
 
     }
 }

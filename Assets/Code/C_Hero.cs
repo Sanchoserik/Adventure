@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Assets.Items;
 using Assets.Effects;
+using Assets.Code.Skills;
 
 namespace Assets
 {
@@ -105,12 +106,15 @@ namespace Assets
 
         public List<A_Effect> global_card_stack; // global cards eff
         public List<A_Effect> eff_stack; // battle eff
-        
+
+        public List<A_Skill> skillList; //skill list
+
         public C_Hero()
         {
             inv_items = new List<A_Item>();
             inv_talismans = new List<A_Talisman>();
             eff_stack = new List<A_Effect>();
+            skillList = new List<A_Skill>();
         }
 
     }

@@ -9,13 +9,8 @@ using System.Xml.Linq; //Needed for XDocument
 public class Loader : MonoBehaviour
 {
     XDocument xmlDoc; //create Xdocument. Will be used later to read XML file 
-    IEnumerable<XElement> items; 
-                      //Create an Ienumerable list. Will be used to store XML Items.
-    List <XMLData> data = new List <XMLData>();
+    List <skillData> data = new List <skillData>();   
     //Initialize List of XMLData objects.
-    //int iteration = 0, pageNum = 0;
-    //string charText, dialogueText; // ....
-
     bool finishedLoading = false;
 
     void Start()
@@ -26,7 +21,6 @@ public class Loader : MonoBehaviour
                                        //Starts assigning XML data to data List. Code below
         LoadXML();
         int xx = 20;
-
     }
     void Update()
     {
@@ -40,58 +34,71 @@ public class Loader : MonoBehaviour
 
     void LoadXML()
     {
+        IEnumerable<XElement> items; // <skill> tag
+        //Create an Ienumerable list. Will be used to store XML Items.
+        IEnumerable<XElement> skilllevels; // <l> tag
+        IEnumerable<XElement> leveldata; // <v tag>
         //Assigning Xdocument xmlDoc. Loads the xml file from the file path listed. 
         xmlDoc = XDocument.Load("Assets/Resources/xml/skills.xml");
         //This basically breaks down the XML Document into XML Elements. Used later.
-        items = xmlDoc.Descendants("skills").Elements();
-        //this is our coroutine that will actually read and assign the XML data to our List IEnumerator AssignData()
 
-        /*foreach allows us to look at every Element of our XML file and do something with each one. 
-         * Basically, this line is saying “for each element in the xml document, do something.
-        */
-        foreach (var item in items)
-        {
-            //START READING XML
-            /*Determine if the <page number> attribute in the XML is equal to whatever our current iteration of the loop is. 
-             * If it is, then we want to assign our variables to the value of the XML Element that we need.
-            */
-           // if (item.Parent.Attribute("name").Value is string)  //== iteration.ToString()) //??? why...
-           // {
-                //got data
+        items = xmlDoc.Descendants("skills").Elements();
+        skilllevels = xmlDoc.Descendants("skill").Elements();
+        //leveldata = xmlDoc.Descendants("l").Elements();
+        //find skill data
+        foreach (XElement item in items)
+        {               
+            //get <skill> attributes
                 short _levels = short.Parse(item.Attribute("levels").Value);
                 string _name = item.Attribute("name").Value.Trim();
                 string _scname = item.Attribute("scname").Value.Trim();
-                /*Create a new Index in the List, which will be a new XMLData object and pass the previously
-                 * assigned variables as arguments so they get assigned to the new object’s variables.
-                */
-                data.Add(new XMLData(_levels, _name, _scname));
-                /*To test and make sure the data has been applied to properly, print out the musicClip name from the 
-                 * data list’s current index. This will let us know if the objects in the list have been created
-                 * successfully and if their variables have been assigned the right values.
-                */
-                Debug.Log("name =" + _name + "  levels = "+ _levels + "  scname = " + _scname);
-                //iteration++; //increment the iteration by 1
-           // }
-        }
-        finishedLoading = true; //tell the program that we’ve finished loading data.
-        //yield return null; //????
 
+            Dictionary<int, string> lDataEne = new Dictionary<int, string>();
+            Dictionary<int, string> lDataAP = new Dictionary<int, string>();
+            Dictionary<string, string> vValues = new Dictionary<string, string>();
+
+            bool moveforward = true;
+            bool firstcheck = false;
+            int levelIter = 1;
+            foreach (XElement el in item.Elements("l"))
+            {
+               firstcheck = true;
+              
+               lDataEne.Add(levelIter, el.Attribute("pEne").Value);
+               lDataAP.Add(levelIter, el.Attribute("pAP").Value);
+ 
+               foreach (XElement vTag in el.Nodes())
+               {               
+                 vValues.Add(vTag.Attribute("name").Value.Trim(), vTag.Element("v").Value.Trim());
+               }              
+               ++levelIter;
+            }
+            
+            int x = 0;
+            //item.
+
+            data.Add(new skillData(_levels, _name, _scname));     
+           // Debug.Log("name =" + _name + "  levels = "+ _levels + "  scname = " + _scname);          
+        }       
     }
 }
 // This class is used to assign our XML Data to objects in a list so we can call on them later.
-public class XMLData {
+public class skillData {
 
     public short levels;
     public string name, scname;
     // Create a constructor that will accept multiple arguments that can be assigned to our variables. 
-    public XMLData(short _levels, string _name, string _scname)
-
+    public skillData(short _levels, string _name, string _scname)
     {
          levels = _levels;
          name = _name;
-         scname = _scname;
-        //pageNum = page;
-        //charText = character;
-        //dialogueText = dialogue;
+         scname = _scname;     
     }
+
+    public void skillLevels()
+    {
+
+    }
+
+
 }
