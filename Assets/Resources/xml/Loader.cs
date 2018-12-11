@@ -9,9 +9,9 @@ using System.Xml.Linq; //Needed for XDocument
 // no namespace
 public class Loader : MonoBehaviour
 {
-    List <skillData> data = new List <skillData>();   
-    //Initialize List of XMLData objects.
-    bool finishedLoading = false;
+    public List <skillData> data = new List <skillData>();// data from xml   
+    public GameObject skillDataReader;
+
 
     void Start()
     {
@@ -19,8 +19,8 @@ public class Loader : MonoBehaviour
                                        //Loads XML File. Code below.
                                        // StartCoroutine("AssignData");         
                                        //Starts assigning XML data to data List. Code below
-        LoadXML(); 
-           int xx = 20;
+        LoadXML();
+        skillDataReader.SetActive(true);
     }
     void Update()
     {

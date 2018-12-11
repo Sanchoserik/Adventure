@@ -307,6 +307,7 @@
     <Compile Include="Assets\Code\UIScripts\SetResolution.cs" />
     <Compile Include="Assets\Resources\xml\Loader.cs" />
     <Compile Include="Assets\Scenes\SceneManager.cs" />
+    <Compile Include="Assets\Scenes\ShowSkillDescr.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\xml\skills.xml" />
