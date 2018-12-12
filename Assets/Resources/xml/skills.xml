@@ -831,19 +831,19 @@
  <l pEne = "200" pAP = "2">
  <v name = "CrStrikeChancePlus">0.1</v>
  <v name = "CrStrikeDmgPlus">0.2</v>
- <v name = "CounterattackChDecr">0.03</v>
- <v name = "AtkEvasionChDecr">0.03</v>
- <v name = "SkillEvasionChDecr">0.03</v>
- <v name = "BlockingChDecr">0.03</v>
+ <v name = "CounterattackChDecr">0.02</v>
+ <v name = "AtkEvasionChDecr">0.02</v>
+ <v name = "SkillEvasionChDecr">0.02</v>
+ <v name = "BlockingChDecr">0.02</v>
  <v name = "Time">3</v>
  </l>
  <l pEne = "250" pAP = "2">
  <v name = "CrStrikeChancePlus">0.15</v>
  <v name = "CrStrikeDmgPlus">0.3</v>
- <v name = "CounterattackChDecr">0.03</v>
- <v name = "AtkEvasionChDecr">0.03</v>
- <v name = "SkillEvasionChDecr">0.03</v>
- <v name = "BlockingChDecr">0.03</v>
+ <v name = "CounterattackChDecr">0.01</v>
+ <v name = "AtkEvasionChDecr">0.01</v>
+ <v name = "SkillEvasionChDecr">0.01</v>
+ <v name = "BlockingChDecr">0.01</v>
  <v name = "Time">3</v>
  </l>
  </skill>
@@ -1080,8 +1080,8 @@
  <v name = "Time">3</v>
  </l>
  <l pEne = "200" pAP = "3">
-  <v name = "ParalysisCh">0.14</v>
- <v name = "PoisonCh">0.14</v>
+  <v name = "ParalysisCh">0.18</v>
+ <v name = "PoisonCh">0.18</v>
  <v name = "ParalysisTime">2</v>
  <v name = "PoisonTime">2</v>
  <v name = "PoisonDmg">80</v>
@@ -1089,8 +1089,8 @@
  <v name = "Time">3</v>
  </l>
  <l pEne = "240" pAP = "3">
-  <v name = "ParalysisCh">0.14</v>
- <v name = "PoisonCh">0.14</v>
+  <v name = "ParalysisCh">0.22</v>
+ <v name = "PoisonCh">0.22</v>
  <v name = "ParalysisTime">3</v>
  <v name = "PoisonTime">2</v>
  <v name = "PoisonDmg">100</v>
