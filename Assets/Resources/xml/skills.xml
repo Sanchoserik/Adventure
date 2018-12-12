@@ -5,11 +5,11 @@
     <l pEne = "0" pAP = "1">
 	</l>	
    </skill>
-   <skill name = "Tactical Swap" levels = "1" scname = "as_TacticalSwap" >    
+   <skill name = "TacticalSwap" levels = "1" scname = "as_TacticalSwap" >    
 	<l pEne = "0" pAP = "1">
 	</l>	
    </skill>    
-   <skill name = "Tactical Retreat" levels = "4" scname = "as_Retreat">    
+   <skill name = "TacticalRetreat" levels = "4" scname = "as_Retreat">    
    <l pEne = "0" pAP = "0">   	
 	 <v name = "decreaseTpower">0.3</v>	
    </l>
@@ -23,7 +23,7 @@
 	 <v name = "decreaseTpower">0.05</v>
    </l>
    </skill>
-   <skill name="Tactical Preparation" levels = "2" scname = "as_TacticalPreparation">
+   <skill name="TacticalPreparation" levels = "2" scname = "as_TacticalPreparation">
     <l pEne = "0" pAP = "1">
 	 <v name = "nextTurnAddAP">2</v>
 	</l>
@@ -31,7 +31,7 @@
 	 <v name = "nextTurnAddAP">3</v>
 	</l>
    </skill>
-   <skill name = "Tactical Recharge" levels = "4" scname = "as_Recharge">
+   <skill name = "TacticalRecharge" levels = "4" scname = "as_Recharge">
    <l pEne = "0" pAP = "1">
     <v name = "val1">0.8</v>
 	<v name = "val2">0.2</v>
@@ -71,11 +71,11 @@
 	<v name = "Targets">All</v>
    </l>
    </skill>
-   <skill name = "Counter Analysis" levels = "1" scname = "as_CounterAnalysis">
+   <skill name = "CounterAnalysis" levels = "1" scname = "as_CounterAnalysis">
    <l pEne = "0" pAP = "1">
    </l>
    </skill>
-   <skill name = "Critical Balance" levels = "3" scname = "as_CriticalBalance">
+   <skill name = "CriticalBalance" levels = "3" scname = "as_CriticalBalance">
    <l pEne = "0" pAP = "2">
    <v name = "AllDefDecr">1</v>
    <v name = "CrStrikeChancePlus">5</v>
@@ -135,7 +135,7 @@
    <v name = "TalismanRegeneration">0.3</v>
    </l>
    </skill>
-   <skill name = "Combo Charge" levels = "1" scname = "as_ComboCharge">
+   <skill name = "ComboCharge" levels = "1" scname = "as_ComboCharge">
    <l pEne = "0" pAP = "1">
    <v name = "DamageBonusPrecentMark">0.1</v>
    <v name = "Time">4</v>

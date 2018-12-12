@@ -22,15 +22,6 @@ public class Loader : MonoBehaviour
         LoadXML();
         skillDataReader.SetActive(true);
     }
-    void Update()
-    {
-        //just why?
-        //if (finishedLoading)
-        //{
-        //    //UnityEngine.SceneManagement.SceneManager.LoadScene("Options");
-        //    //Only happens if coroutine is finished finishedLoading = false;
-        //}
-    }
 
     void LoadXML() // param localisation!
     {
@@ -98,6 +89,7 @@ public class Loader : MonoBehaviour
 
     }
 }//end class loader
+
 // This class is used to assign our XML Data to objects in a list so we can call on them later.
 public class skillData {
 
