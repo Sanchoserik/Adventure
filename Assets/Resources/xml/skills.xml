@@ -88,27 +88,27 @@
    </l>
    <l pEne = "0" pAP = "1">
    <v name = "AllDefDecr">1</v>
-   <v name = "addCrStrikeChance">11</v>
+   <v name = "CrStrikeChancePlus">11</v>
    <v name = "Time">3</v>
    </l>
    </skill>
    <skill name = "Overcharge" levels = "3" scname = "as_Overcharge">
    <l pEne = "0" pAP = "0">
    <v name = "addAPPrice">2</v>
-   <v name = "DamageBonusPrecent">0.2</v>
+   <v name = "DamageBonusPercent">0.2</v>
    <v name = "HEalingBonusPercent">0.2</v>
    <v name = "Time">1</v>
    <vx name = "TODO">LIST OF SKILLS WITH INCREASED PRICE</vx>
    </l>
    <l pEne = "0" pAP = "0">
    <v name = "addAPPrice">2</v>
-   <v name = "DamageBonusPrecent">0.4</v>
+   <v name = "DamageBonusPercent">0.4</v>
    <v name = "HEalingBonusPercent">0.4</v>
    <v name = "Time">1</v>
    </l>
    <l pEne = "0" pAP = "0">
    <v name = "addAPPrice">1</v>
-   <v name = "DamageBonusPrecent">0.6</v>
+   <v name = "DamageBonusPercent">0.6</v>
    <v name = "HEalingBonusPercent">0.6</v>
    <v name = "Time">1</v>
    </l>
@@ -116,28 +116,28 @@
    <skill name = "Synchronization" levels = "4" scname = "as_Synchronization">
    <l pEne = "0" pAP = "2">
    <v name = "addAllDef">1</v>
-   <v name = "DamageBonusPrecent">0.1</v>
+   <v name = "DamageBonusPercent">0.1</v>
    <v name = "TalismanRegeneration">0.15</v>
    </l>
    <l pEne = "0" pAP = "2">
    <v name = "addAllDef">1</v>
-   <v name = "DamageBonusPrecent">0.15</v>
+   <v name = "DamageBonusPercent">0.15</v>
    <v name = "TalismanRegeneration">0.2</v>
    </l>
    <l pEne = "0" pAP = "2">
    <v name = "addAllDef">1</v>
-   <v name = "DamageBonusPrecent">0.2</v>
+   <v name = "DamageBonusPercent">0.2</v>
    <v name = "TalismanRegeneration">0.25</v>
    </l>
    <l pEne = "0" pAP = "2">
    <v name = "addAllDef">1</v>
-   <v name = "DamageBonusPrecent">0.25</v>
+   <v name = "DamageBonusPercent">0.25</v>
    <v name = "TalismanRegeneration">0.3</v>
    </l>
    </skill>
    <skill name = "ComboCharge" levels = "1" scname = "as_ComboCharge">
    <l pEne = "0" pAP = "1">
-   <v name = "DamageBonusPrecentMark">0.1</v>
+   <v name = "DamageBonusPercentMark">0.1</v>
    <v name = "Time">4</v>
    </l>
    </skill>

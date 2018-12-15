@@ -93,15 +93,15 @@ public class Loader : MonoBehaviour
 // This class is used to assign our XML Data to objects in a list so we can call on them later.
 public class skillData {
 
-    public short levels;
-    public string name;
-    public string scName;
-    public Dictionary<int, string> lcAP;
-    public Dictionary<int, string> lcEne;
-    public List<Dictionary<string, string>> vValues;
+    public short levels; // level count
+    public string name; // skill name
+    public string scName; //scriptname
+    public Dictionary<int, string> lcAP; // ap price
+    public Dictionary<int, string> lcEne; // ene price
+    public List<Dictionary<string, string>> vValues; // level values
     //localisation
-    public string locName;
-    public List<string> locDescr;
+    public string locName; // skill localised name
+    public List<string> locDescr; // skill level description
     public string sDescr; // skil description
 
     // Create a constructor that will accept multiple arguments that can be assigned to our variables. 

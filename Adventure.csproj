@@ -314,6 +314,7 @@
     <None Include="Assets\Resources\xml\skillsLocENG.xml" />
     <None Include="Assets\Resources\xml\skillsLocRU.xml" />
     <None Include="Assets\Resources\xml\skillsLocUA.xml" />
+    <None Include="Assets\Resources\xml\skillsLocUAold.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
