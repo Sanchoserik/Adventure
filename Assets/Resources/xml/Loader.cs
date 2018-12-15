@@ -20,7 +20,7 @@ public class Loader : MonoBehaviour
                                        // StartCoroutine("AssignData");         
                                        //Starts assigning XML data to data List. Code below
         LoadXML();
-        skillDataReader.SetActive(true);
+        skillDataReader.SetActive(true); //set active skillswitcher
     }
 
     void LoadXML() // param localisation!

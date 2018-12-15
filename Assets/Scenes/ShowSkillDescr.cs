@@ -5,25 +5,33 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class ShowSkillDescr : MonoBehaviour {
-
+    //text UI objects
     public Text sName;
     public Text sDescr;
     public Text sLevelDescr;
 
+    //concrette skill loading
     bool loaded = false; // is skill loaded?]
     bool selected = false;
     string newSKill;
+    List<skillData> data; // all skills data from loader xml file
 
-    List<skillData> data; // all skills data
+    //branch switcher
+    bool tactician = true; // first to load
+    bool warrior = false;
+    bool assassin = false;
+    bool bruiser = false;
+
     // Use this for initialization
     void Start () {
         GameObject loader = GameObject.Find("SkillLoader");
         Loader _l = loader.GetComponent<Loader>();
-        data = _l.data;       
+        data = _l.data;   // get data list from loader     
     }
 	   
 	// Update is called once per frame
 	void Update () {
+        //load skills once
         if (!loaded && selected) // if skill not loaded load!
         {
             loadSkillData(newSKill);
@@ -32,7 +40,7 @@ public class ShowSkillDescr : MonoBehaviour {
         }
 	}
 
-    //button trigger
+    //button trigger on skill icon
     public void changeSkill(string _name)
     {
         selected = true;
@@ -40,7 +48,7 @@ public class ShowSkillDescr : MonoBehaviour {
         newSKill = _name;
     }
 
-    //
+    // 
     void loadSkillData(string _name)
     {
         sLevelDescr.text = ""; // cleat level data
@@ -59,7 +67,6 @@ public class ShowSkillDescr : MonoBehaviour {
                     ++_valCount;
             //
             _valCount /= 2; //divide 
-
 
             List<string> values = new List<string>(); // xml values here
             string _substr = s; // temp full string
@@ -97,6 +104,48 @@ public class ShowSkillDescr : MonoBehaviour {
             }
             sLevelDescr.text += final + "\n";
             ++sLevelIter;
+        }
+    }
+   
+    //change skillbranch 
+    public void changeSkillBranch(skillButtonChangerData data)
+    {
+
+
+        switch (data._name)
+        {
+            case "T": //tactician
+                {
+                    data._panel.SetActive(true);
+                    GameObject _w = GameObject.Find("WarriorSkills"); if (_w != null)  _w.SetActive(false);
+                    GameObject _a = GameObject.Find("AssassinSkills"); if (_a != null) _a.SetActive(false);
+                    GameObject _b = GameObject.Find("BruiserSkills"); if (_b != null)  _b.SetActive(false);
+                    break;
+                }
+            case "W": //warrior
+                {
+                    data._panel.SetActive(true);
+                    GameObject _t = GameObject.Find("TacticianSkills"); if(_t != null) _t.SetActive(false);
+                    GameObject _a = GameObject.Find("AssassinSkills"); if (_a != null) _a.SetActive(false);
+                    GameObject _b = GameObject.Find("BruiserSkills"); if (_b != null)  _b.SetActive(false);
+                    break;
+                }
+            case "A": //assassin
+                {
+                    data._panel.SetActive(true);
+                    GameObject _w = GameObject.Find("WarriorSkills"); if (_w != null) _w.SetActive(false);
+                    GameObject _t = GameObject.Find("TacticianSkills"); if (_t != null) _t.SetActive(false);
+                    GameObject _b = GameObject.Find("BruiserSkills"); if (_b != null) _b.SetActive(false);
+                    break;
+                }
+            case "B": //bruiser
+                {
+                    data._panel.SetActive(true);
+                    GameObject _w = GameObject.Find("WarriorSkills"); if (_w != null) _w.SetActive(false);
+                    GameObject _a = GameObject.Find("AssassinSkills"); if (_a != null) _a.SetActive(false);
+                    GameObject _t = GameObject.Find("TacticianSkills"); if (_t != null) _t.SetActive(false);
+                    break;
+                }
         }
     }
 }
