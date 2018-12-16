@@ -11,16 +11,16 @@
    </skill>    
    <skill name = "TacticalRetreat" levels = "4" scname = "as_Retreat">    
    <l pEne = "0" pAP = "0">   	
-	 <v name = "decreaseTpower">0.3</v>	
+	 <v name = "decreaseTpower">30</v>	
    </l>
    <l pEne = "0" pAP = "0">   
-	 <v name = "decreaseTpower">0.15</v>
+	 <v name = "decreaseTpower">15</v>
    </l>
    <l pEne = "0" pAP = "0">   
-	 <v name = "decreaseTpower">0.05</v>
+	 <v name = "decreaseTpower">5</v>
    </l>
    <l pEne = "0" pAP = "0">   
-	 <v name = "decreaseTpower">0.05</v>
+	 <v name = "decreaseTpower">5</v>
    </l>
    </skill>
    <skill name="TacticalPreparation" levels = "2" scname = "as_TacticalPreparation">
@@ -33,41 +33,41 @@
    </skill>
    <skill name = "TacticalRecharge" levels = "4" scname = "as_Recharge">
    <l pEne = "0" pAP = "1">
-    <v name = "val1">0.8</v>
-	<v name = "val2">0.2</v>
+    <v name = "val1">80</v>
+	<v name = "val2">20</v>
    </l>
    <l pEne = "0" pAP = "1">
-    <v name = "val1">0.7</v>
-	<v name = "val2">0.3</v>
+    <v name = "val1">70</v>
+	<v name = "val2">30</v>
    </l>
    <l pEne = "0" pAP = "1">
-    <v name = "val1">0.6</v>
-	<v name = "val2">0.4</v>
+    <v name = "val1">60</v>
+	<v name = "val2">40</v>
    </l>
    <l pEne = "0" pAP = "1">
-    <v name = "val1">0.5</v>
-	<v name = "val2">0.5</v>
+    <v name = "val1">50</v>
+	<v name = "val2">50</v>
    </l>
    </skill>
    <skill name = "Destruction" levels = "5" scname = "as_Destruction">
    <l pEne = "0" pAP = "2">
-    <v name = "damageMod">0.5</v>
+    <v name = "damageMod">50</v>
 	<v name = "Targets">All</v>
    </l>
    <l pEne = "0" pAP = "2">
-    <v name = "damageMod">0.7</v>
+    <v name = "damageMod">70</v>
 	<v name = "Targets">All</v>
    </l>
    <l pEne = "0" pAP = "2">
-    <v name = "damageMod">0.9</v>
+    <v name = "damageMod">90</v>
 	<v name = "Targets">All</v>
    </l>
    <l pEne = "0" pAP = "2">
-    <v name = "damageMod">1.1</v>
+    <v name = "damageMod">110</v>
 	<v name = "Targets">All</v>
    </l>
    <l pEne = "0" pAP = "2">
-    <v name = "damageMod">1.3</v>
+    <v name = "damageMod">130</v>
 	<v name = "Targets">All</v>
    </l>
    </skill>
@@ -95,49 +95,49 @@
    <skill name = "Overcharge" levels = "3" scname = "as_Overcharge">
    <l pEne = "0" pAP = "0">
    <v name = "addAPPrice">2</v>
-   <v name = "DamageBonusPercent">0.2</v>
-   <v name = "HEalingBonusPercent">0.2</v>
+   <v name = "DamageBonusPercent">20</v>
+   <v name = "HEalingBonusPercent">20</v>
    <v name = "Time">1</v>
    <vx name = "TODO">LIST OF SKILLS WITH INCREASED PRICE</vx>
    </l>
    <l pEne = "0" pAP = "0">
    <v name = "addAPPrice">2</v>
-   <v name = "DamageBonusPercent">0.4</v>
-   <v name = "HEalingBonusPercent">0.4</v>
+   <v name = "DamageBonusPercent">40</v>
+   <v name = "HEalingBonusPercent">40</v>
    <v name = "Time">1</v>
    </l>
    <l pEne = "0" pAP = "0">
    <v name = "addAPPrice">1</v>
-   <v name = "DamageBonusPercent">0.6</v>
-   <v name = "HEalingBonusPercent">0.6</v>
+   <v name = "DamageBonusPercent">60</v>
+   <v name = "HEalingBonusPercent">60</v>
    <v name = "Time">1</v>
    </l>
    </skill>
    <skill name = "Synchronization" levels = "4" scname = "as_Synchronization">
    <l pEne = "0" pAP = "2">
    <v name = "addAllDef">1</v>
-   <v name = "DamageBonusPercent">0.1</v>
-   <v name = "TalismanRegeneration">0.15</v>
+   <v name = "DamageBonusPercent">10</v>
+   <v name = "TalismanRegeneration">15</v>
    </l>
    <l pEne = "0" pAP = "2">
    <v name = "addAllDef">1</v>
-   <v name = "DamageBonusPercent">0.15</v>
-   <v name = "TalismanRegeneration">0.2</v>
+   <v name = "DamageBonusPercent">15</v>
+   <v name = "TalismanRegeneration">20</v>
    </l>
    <l pEne = "0" pAP = "2">
    <v name = "addAllDef">1</v>
-   <v name = "DamageBonusPercent">0.2</v>
-   <v name = "TalismanRegeneration">0.25</v>
+   <v name = "DamageBonusPercent">20</v>
+   <v name = "TalismanRegeneration">25</v>
    </l>
    <l pEne = "0" pAP = "2">
    <v name = "addAllDef">1</v>
-   <v name = "DamageBonusPercent">0.25</v>
-   <v name = "TalismanRegeneration">0.3</v>
+   <v name = "DamageBonusPercent">25</v>
+   <v name = "TalismanRegeneration">30</v>
    </l>
    </skill>
    <skill name = "ComboCharge" levels = "1" scname = "as_ComboCharge">
    <l pEne = "0" pAP = "1">
-   <v name = "DamageBonusPercentMark">0.1</v>
+   <v name = "DamageBonusPercentMark">10</v>
    <v name = "Time">4</v>
    </l>
    </skill>
@@ -159,19 +159,19 @@
    </skill>
  <skill name ="Counterattack" levels = "5" scname = "as_CounterAttack">
  <l pEne = "0" pAP = "0">
- <v name = "val1">0.1</v>
+ <v name = "val1">10</v>
  </l>
  <l pEne = "0" pAP = "0">
- <v name = "val1">0.15</v>
+ <v name = "val1">15</v>
  </l>
  <l pEne = "0" pAP = "0">
- <v name = "val1">0.2</v>
+ <v name = "val1">20</v>
  </l>
  <l pEne = "0" pAP = "0">
- <v name  = "val1">0.25</v>
+ <v name  = "val1">25</v>
  </l>
  <l pEne = "0" pAP = "0">
- <v name = "val1">0.3</v>
+ <v name = "val1">30</v>
  </l> 
  </skill>
  <skill name = "TripleCut" levels = "5" scname = "as_TripleCut">
@@ -217,48 +217,48 @@
  <skill name = "CursedSign" levels = "3" scname = "as_CursedSign">
  <l pEne = "35" pAP = "2">
  <v name = "PhysDmg">80</v>
- <v name = "CursedSigngDmgMod">0.2</v>
+ <v name = "CursedSigngDmgMod">20</v>
  </l>
  <l pEne = "50" pAP = "2">
  <v name = "PhysDmg">110</v>
- <v name = "CursedSigngDmgMod">0.3</v>
+ <v name = "CursedSigngDmgMod">30</v>
  </l>
  <l pEne = "80" pAP = "2">
  <v name = "PhysDmg">140</v>
- <v name = "CursedSigngDmgMod">0.4</v>
+ <v name = "CursedSigngDmgMod">40</v>
  </l>
  </skill>
  <skill name = "Ricochet" levels = "3" scname = "as_Ricochet">
  <l pEne = "60" pAP = "1">
- <v name = "RicochetChance">0.15</v>
+ <v name = "RicochetChance">15</v>
  <v name = "RicochetCount">2</v>
  <v name = "Time">3</v>
  </l>
  <l pEne = "90" pAP = "1">
- <v name = "RicochetChance">0.25</v>
+ <v name = "RicochetChance">25</v>
  <v name = "RicochetCount">3</v>
  <v name = "Time">3</v>
  </l>
  <l pEne = "120" pAP = "1">
- <v name = "RicochetChance">0.35</v>
+ <v name = "RicochetChance">35</v>
  <v name = "RicochetCount">4</v>
  <v name = "Time">3</v>
  </l>
  </skill>
  <skill  name = "PerfectWarrior" levels = "3" scname = "as_PerfectWarrior">
  <l pEne = "100" pAP = "3">
- <v name = "AddCounterattackChance">0.04</v>
- <v name = "DmgModPercent">0.25</v>
+ <v name = "AddCounterattackChance">4</v>
+ <v name = "DmgModPercent">25</v>
  <v name = "Time">3</v>
  </l>
  <l pEne = "140" pAP = "3">
- <v name = "AddCounterattackChance">0.08</v>
- <v name = "DmgModPercent">0.5</v>
+ <v name = "AddCounterattackChance">8</v>
+ <v name = "DmgModPercent">50</v>
  <v name = "Time">3</v>
  </l>
  <l pEne = "180" pAP = "2">
- <v name = "AddCounterattackChance">0.12</v>
- <v name = "DmgModPercent">0.75</v>
+ <v name = "AddCounterattackChance">12</v>
+ <v name = "DmgModPercent">75</v>
  <v name = "Time">3</v>
  </l>
  </skill>
@@ -289,23 +289,23 @@
  <skill name = "EarthDestruction" levels = "5" scname = "as_EarthDestruction">
  <l pEne = "70" pAP = "2">
  <v name = "EarthDmg">180</v>
- <v name = "OtherTargetsDmg">0.5</v>
+ <v name = "OtherTargetsDmg">50</v>
  </l>
  <l pEne = "100" pAP = "2">
  <v name = "EarthDmg">220</v>
- <v name = "OtherTargetsDmg">0.55</v>
+ <v name = "OtherTargetsDmg">55</v>
  </l>
  <l pEne = "130" pAP = "2">
  <v name = "EarthDmg">260</v>
- <v name = "OtherTargetsDmg">0.6</v>
+ <v name = "OtherTargetsDmg">60</v>
  </l>
  <l pEne = "160" pAP = "2">
  <v name = "EarthDmg">300</v>
- <v name = "OtherTargetsDmg">0.65</v>
+ <v name = "OtherTargetsDmg">65</v>
  </l>
  <l pEne = "190" pAP = "2">
  <v name = "EarthDmg">340</v>
- <v name = "OtherTargetsDmg">0.7</v>
+ <v name = "OtherTargetsDmg">70</v>
  </l>
  </skill>
  <skill name = "WaterPrison" levels = "3" scname = "as_WaterPrison">
@@ -383,7 +383,7 @@
  <skill name = "AbsoluteDarkness" levels = "3" scname = "as_AbsoluteDarkness">
  <l pEne = "120" pAP = "3">
  <v name = "Targets">All</v>
- <v name = "AttackDecrease">0.2</v>
+ <v name = "AttackDecrease">20</v>
  <v name = "DaknessDefDecr">1</v>
  <v name = "PhysDefDecr">1</v>
  <v name = "LifeDefDecr">1</v>
@@ -391,7 +391,7 @@
  </l>
  <l pEne = "160" pAP = "3">
  <v name = "Targets">All</v>
- <v name = "AttackDecrease">0.35</v>
+ <v name = "AttackDecrease">35</v>
  <v name = "DaknessDefDecr">2</v>
  <v name = "PhysDefDecr">1</v>
  <v name = "LifeDefDecr">1</v>
@@ -399,7 +399,7 @@
  </l>
  <l pEne = "200" pAP = "3">
  <v name = "Targets">All</v>
- <v name = "AttackDecrease">0.5</v>
+ <v name = "AttackDecrease">50</v>
  <v name = "DaknessDefDecr">3</v>
  <v name = "PhysDefDecr">2</v>
  <v name = "LifeDefDecr">2</v>
@@ -440,24 +440,24 @@
  </skill>
  <skill name = "Evasion" levels = "5" scname = "as_Evasion">
  <l pEne = "0" pAP = "0">
- <v name = "AtkEvasion">0.07</v>
- <v name = "SkillEvasion">0.03</v>
+ <v name = "AtkEvasion">7</v>
+ <v name = "SkillEvasion">3</v>
  </l>
  <l pEne = "0" pAP = "0">
- <v name = "AtkEvasion">0.1</v>
- <v name = "SkillEvasion">0.05</v>
+ <v name = "AtkEvasion">10</v>
+ <v name = "SkillEvasion">5</v>
  </l>
  <l pEne = "0" pAP = "0">
- <v name = "AtkEvasion">0.13</v>
- <v name = "SkillEvasion">0.07</v>
+ <v name = "AtkEvasion">13</v>
+ <v name = "SkillEvasion">7</v>
  </l>
  <l pEne = "0" pAP = "0">
- <v name = "AtkEvasion">0.16</v>
- <v name = "SkillEvasion">0.09</v>
+ <v name = "AtkEvasion">16</v>
+ <v name = "SkillEvasion">9</v>
  </l>
  <l pEne = "0" pAP = "0">
- <v name = "AtkEvasion">0.19</v>
- <v name = "SkillEvasion">0.11</v>
+ <v name = "AtkEvasion">19</v>
+ <v name = "SkillEvasion">11</v>
  </l>
  </skill>
  <skill name = "DoubleStrike" levels = "5" scname = "as_DoubleStrike">
@@ -499,49 +499,49 @@
  <skill name = "Assassination" levels = "5" scname = "as_Assassination">
  <l pEne = "90" pAP = "2">
  <v name = "PhysDmg">120</v>
- <v name = "HPrecoveryOnKill">0.3</v>
- <v name = "addDmgModOnKill">0.1</v>
+ <v name = "HPrecoveryOnKill">30</v>
+ <v name = "addDmgModOnKill">10</v>
  <v name = "Time">1</v>
  </l>
  <l pEne = "120" pAP = "2">
  <v name = "PhysDmg">150</v>
- <v name = "HPrecoveryOnKill">0.6</v>
- <v name = "addDmgModOnKill">0.15</v>
+ <v name = "HPrecoveryOnKill">60</v>
+ <v name = "addDmgModOnKill">15</v>
  <v name = "Time">1</v>
  </l>
  <l pEne = "150" pAP = "2">
  <v name = "PhysDmg">180</v>
- <v name = "HPrecoveryOnKill">0.9</v>
- <v name = "addDmgModOnKill">0.2</v>
+ <v name = "HPrecoveryOnKill">90</v>
+ <v name = "addDmgModOnKill">20</v>
  <v name = "Time">1</v>
  </l>
  <l pEne = "180" pAP = "2">
  <v name = "PhysDmg">210</v>
- <v name = "HPrecoveryOnKill">1.2</v>
- <v name = "addDmgModOnKill">0.2</v>
+ <v name = "HPrecoveryOnKill">120</v>
+ <v name = "addDmgModOnKill">20</v>
  <v name = "Time">1</v>
  </l>
  <l pEne = "210" pAP = "2">
  <v name = "PhysDmg">240</v>
- <v name = "HPrecoveryOnKill">1.5</v>
- <v name = "addDmgModOnKill">0.2</v>
+ <v name = "HPrecoveryOnKill">150</v>
+ <v name = "addDmgModOnKill">20</v>
  <v name = "Time">1</v>
  </l>
  </skill>
  <skill name = "LethalTempo" levels = "3" scname = "as_Lethaltempo" >
  <l pEne = "100" pAP = "1">
  <v name = "CombomodIncr">1</v>
- <v name = "damageToHeroIncr">0.1</v>
+ <v name = "damageToHeroIncr">10</v>
  <v name = "Time">3</v>
  </l>
  <l pEne = "120" pAP = "1">
  <v name = "CombomodIncr">2</v>
- <v name = "damageToHeroIncr">0.15</v>
+ <v name = "damageToHeroIncr">15</v>
  <v name = "Time">3</v>
  </l>
  <l pEne = "140" pAP = "1">
  <v name = "CombomodIncr">3</v>
- <v name = "damageToHeroIncr">0.2</v>
+ <v name = "damageToHeroIncr">20</v>
  <v name = "Time">3</v>
  </l>
  </skill>
@@ -573,25 +573,25 @@
  </skill>
  <skill name = "ShiningCloak" levels = "4" scname = "as_ShiningCloak">
  <l pEne = "80" pAP = "1">
- <v name = "LightDmgMod">0.1</v>
+ <v name = "LightDmgMod">10</v>
  <v name = "RandomDefDecr">1</v>
  <v name = "DefDecrTime">3</v>
  <v name = "Time">3</v>
  </l>
  <l pEne = "110" pAP = "1">
- <v name = "LightDmgMod">0.15</v>
+ <v name = "LightDmgMod">15</v>
  <v name = "RandomDefDecr">1</v>
  <v name = "DefDecrTime">3</v>
  <v name = "Time">3</v>
  </l>
  <l pEne = "140" pAP = "1">
- <v name = "LightDmgMod">0.2</v>
+ <v name = "LightDmgMod">20</v>
  <v name = "RandomDefDecr">2</v>
  <v name = "DefDecrTime">3</v>
  <v name = "Time">3</v>
  </l>
  <l pEne = "170" pAP = "2">
- <v name = "LightDmgMod">0.3</v>
+ <v name = "LightDmgMod">30</v>
  <v name = "RandomDefDecr">2</v>
  <v name = "DefDecrTime">4</v>
  <v name = "Time">4</v>
@@ -599,68 +599,68 @@
  </skill>
  <skill name = "FsterThanLight" levels = "3" scname = "as_FasterThanLight">
  <l pEne = "150" pAP = "2">
- <v name ="AtkEvasionIncr">0.1</v>
- <v name = "SKillEvasionIncr">0.07</v>
+ <v name ="AtkEvasionIncr">10</v>
+ <v name = "SKillEvasionIncr">7</v>
  <v name ="AllDefDecr">3</v>
- <v name = "CrStrikeChancePlus">0.1</v>
+ <v name = "CrStrikeChancePlus">10</v>
  <v name = "Time">3</v>
  </l>
  <l pEne = "200" pAP = "2">
- <v name ="AtkEvasionIncr">0.15</v>
- <v name = "SKillEvasionIncr">0.11</v>
+ <v name ="AtkEvasionIncr">15</v>
+ <v name = "SKillEvasionIncr">11</v>
  <v name ="AllDefDecr">3</v>
- <v name = "CrStrikeChancePlus">0.15</v>
+ <v name = "CrStrikeChancePlus">15</v>
  <v name = "Time">3</v>
  </l>
  <l pEne = "250" pAP = "2">
- <v name ="AtkEvasionIncr">0.2</v>
- <v name = "SKillEvasionIncr">0.15</v>
+ <v name ="AtkEvasionIncr">20</v>
+ <v name = "SKillEvasionIncr">15</v>
  <v name ="AllDefDecr">2</v>
- <v name = "CrStrikeChancePlus">0.2</v>
+ <v name = "CrStrikeChancePlus">20</v>
  <v name = "Time">3</v>
  </l>
  </skill>
  <skill name = "FireClaw" levels = "5" scname  ="as_FireClaw">
  <l pEne = "60" pAP = "1">
  <v name = "FireDmg">50</v>
- <v name = "BurningFireDmg">0.5</v>
+ <v name = "BurningFireDmg">50</v>
  <v name = "Time">2</v>
  </l>
  <l pEne = "80" pAP = "1">
  <v name = "FireDmg">80</v>
- <v name = "BurningFireDmg">0.6</v>
+ <v name = "BurningFireDmg">60</v>
  <v name = "Time">2</v>
  </l>
  <l pEne = "100" pAP = "1">
  <v name = "FireDmg">110</v>
- <v name = "BurningFireDmg">0.7</v>
+ <v name = "BurningFireDmg">70</v>
  <v name = "Time">3</v>
  </l>
  <l pEne = "120" pAP = "1">
  <v name = "FireDmg">140</v>
- <v name = "BurningFireDmg">0.8</v>
+ <v name = "BurningFireDmg">80</v>
  <v name = "Time">3</v>
  </l>
  <l pEne = "140" pAP = "1">
  <v name = "FireDmg">170</v>
- <v name = "BurningFireDmg">0.9</v>
+ <v name = "BurningFireDmg">90</v>
  <v name = "Time">4</v>
  </l>
  </skill>
  <skill name = "Burnout" levels = "3" scname = "as_Burnout">
  <l pEne = "80" pAP = "2">
- <v name ="HPDamage">0.05</v>
- <v name = "FireDmgMod">0.1</v>
+ <v name ="HPDamage">5</v>
+ <v name = "FireDmgMod">10</v>
  <v name = "Time">3</v>
  </l>
  <l pEne = "120" pAP = "2">
- <v name ="HPDamage">0.1</v>
- <v name = "FireDmgMod">0.2</v>
+ <v name ="HPDamage">10</v>
+ <v name = "FireDmgMod">20</v>
  <v name = "Time">3</v>
  </l>
  <l pEne = "160" pAP = "1">
- <v name ="HPDamage">0.15</v>
- <v name = "FireDmgMod">0.4</v>
+ <v name ="HPDamage">15</v>
+ <v name = "FireDmgMod">40</v>
  <v name = "Time">3</v>
  </l>
  </skill>
@@ -693,23 +693,23 @@
  </skill>
  <skill name = "WindBlade" levels = "5" scname = "as_WindBlade">
  <l pEne = "35" pAP = "1">
- <v name = "AirDmgModForDef">0.1</v>
+ <v name = "AirDmgModForDef">10</v>
  <v name = "AirDmg">50</v>
  </l>
  <l pEne = "50" pAP = "1">
- <v name = "AirDmgModForDef">0.15</v>
+ <v name = "AirDmgModForDef">15</v>
  <v name = "AirDmg">60</v>
  </l>
  <l pEne = "65" pAP = "1">
- <v name = "AirDmgModForDef">0.2</v>
+ <v name = "AirDmgModForDef">20</v>
  <v name = "AirDmg">70</v>
  </l>
  <l pEne = "80" pAP = "1">
- <v name = "AirDmgModForDef">0.25</v>
+ <v name = "AirDmgModForDef">25</v>
  <v name = "AirDmg">80</v>
  </l>
  <l pEne = "95" pAP = "1">
- <v name = "AirDmgModForDef">0.3</v>
+ <v name = "AirDmgModForDef">30</v>
  <v name = "AirDmg">90</v>
  </l>
  </skill>
@@ -759,50 +759,50 @@
  </skill>
  <skill name = "Blocking" levels = "5" scname = "as_Blocking">
  <l pEne = "0" pAP = "0">
- <v name = "val1">0.09</v>
+ <v name = "val1">9</v>
  </l>
  <l pEne = "0" pAP = "0">
- <v name = "val1">0.13</v>
+ <v name = "val1">13</v>
  </l>
  <l pEne = "0" pAP = "0">
- <v name = "val1">0.17</v>
+ <v name = "val1">17</v>
  </l>
  <l pEne = "0" pAP = "0">
- <v name = "val1">0.21</v>
+ <v name = "val1">21</v>
  </l>
  <l pEne = "0" pAP = "0">
- <v name = "val1">0.25</v>
+ <v name = "val1">25</v>
  </l>
  </skill>
  <skill name = "WideSwing" levels = "5" scname = "as_WideSwing">
  <l pEne = "40" pAP = "1">
  <v name = "Targets">3 Horizontal 2 Vertical</v>
  <v name = "PhysDmg">75</v>
- <v name = "BleedPhysDmg">0.25</v>
+ <v name = "BleedPhysDmg">25</v>
  <v name = "Time">2</v>
  </l>
  <l pEne = "70" pAP = "2">
  <v name = "Targets">3 Horizontal 2 Vertical</v>
  <v name = "PhysDmg">100</v>
- <v name = "BleedPhysDmg">0.28</v>
+ <v name = "BleedPhysDmg">28</v>
  <v name = "Time">2</v>
  </l>
  <l pEne = "100" pAP = "2">
  <v name = "Targets">3 Horizontal 2 Vertical</v>
  <v name = "PhysDmg">125</v>
- <v name = "BleedPhysDmg">0.31</v>
+ <v name = "BleedPhysDmg">31</v>
  <v name = "Time">2</v>
  </l>
  <l pEne = "130" pAP = "2">
  <v name = "Targets">3 Horizontal 2 Vertical</v>
  <v name = "PhysDmg">150</v>
- <v name = "BleedPhysDmg">0.34</v>
+ <v name = "BleedPhysDmg">34</v>
  <v name = "Time">2</v>
  </l>
  <l pEne = "160" pAP = "2">
  <v name = "Targets">3 Horizontal 2 Vertical</v>
  <v name = "PhysDmg">175</v>
- <v name = "BleedPhysDmg">0.37</v>
+ <v name = "BleedPhysDmg">37</v>
  <v name = "Time">3</v>
  </l>
  </skill>
@@ -820,30 +820,30 @@
  </skill>
  <skill name = "Anarchy" levels = "3" scname = "as_Anarchy">
  <l pEne = "150" pAP = "2">
- <v name = "CrStrikeChancePlus">0.05</v>
- <v name = "CrStrikeDmgPlus">0.1</v>
- <v name = "CounterattackChDecr">0.03</v>
- <v name = "AtkEvasionChDecr">0.03</v>
- <v name = "SkillEvasionChDecr">0.03</v>
- <v name = "BlockingChDecr">0.03</v>
+ <v name = "CrStrikeChancePlus">5</v>
+ <v name = "CrStrikeDmgPlus">10</v>
+ <v name = "CounterattackChDecr">3</v>
+ <v name = "AtkEvasionChDecr">3</v>
+ <v name = "SkillEvasionChDecr">3</v>
+ <v name = "BlockingChDecr">3</v>
  <v name = "Time">3</v>
  </l>
  <l pEne = "200" pAP = "2">
- <v name = "CrStrikeChancePlus">0.1</v>
- <v name = "CrStrikeDmgPlus">0.2</v>
- <v name = "CounterattackChDecr">0.02</v>
- <v name = "AtkEvasionChDecr">0.02</v>
- <v name = "SkillEvasionChDecr">0.02</v>
- <v name = "BlockingChDecr">0.02</v>
+ <v name = "CrStrikeChancePlus">10</v>
+ <v name = "CrStrikeDmgPlus">20</v>
+ <v name = "CounterattackChDecr">2</v>
+ <v name = "AtkEvasionChDecr">2</v>
+ <v name = "SkillEvasionChDecr">2</v>
+ <v name = "BlockingChDecr">2</v>
  <v name = "Time">3</v>
  </l>
  <l pEne = "250" pAP = "2">
- <v name = "CrStrikeChancePlus">0.15</v>
- <v name = "CrStrikeDmgPlus">0.3</v>
- <v name = "CounterattackChDecr">0.01</v>
- <v name = "AtkEvasionChDecr">0.01</v>
- <v name = "SkillEvasionChDecr">0.01</v>
- <v name = "BlockingChDecr">0.01</v>
+ <v name = "CrStrikeChancePlus">15</v>
+ <v name = "CrStrikeDmgPlus">30</v>
+ <v name = "CounterattackChDecr">1</v>
+ <v name = "AtkEvasionChDecr">1</v>
+ <v name = "SkillEvasionChDecr">1</v>
+ <v name = "BlockingChDecr">1</v>
  <v name = "Time">3</v>
  </l>
  </skill>
@@ -866,21 +866,21 @@
  </skill>
  <skill name = "DeathSign" levels = "3" scname = "as_DeathSign">
  <l pEne = "50" pAP = "1">
- <v name = "AtkDect">0.1</v>
+ <v name = "AtkDect">10</v>
  <v name = "DeathDefDecr">1</v>
  <v name = "DarknessDefDecr">1</v>
  <v name = "LightDefDecr">1</v>
  <v name = "Time">4</v>
  </l>
  <l pEne = "70" pAP = "1"> 
- <v name = "AtkDect">0.15</v>
+ <v name = "AtkDect">15</v>
  <v name = "DeathDefDecr">1</v>
  <v name = "DarknessDefDecr">1</v>
  <v name = "LightDefDecr">1</v>
  <v name = "Time">4</v>
  </l>
  <l pEne = "100" pAP = "1">
- <v name = "AtkDect">0.2</v>
+ <v name = "AtkDect">20</v>
  <v name = "DeathDefDecr">2</v>
  <v name = "DarknessDefDecr">1</v>
  <v name = "LightDefDecr">2</v>
@@ -967,48 +967,48 @@
  <l pEne = "60" pAP = "2">
  <v name = "Targets">One and 2 RandomClosest</v>
  <v name = "LightningDmg">70</v>
- <v name = "DmgDecrPerTarget">0.5</v>
+ <v name = "DmgDecrPerTarget">50</v>
  </l>
  <l pEne = "90" pAP = "2">
  <v name = "Targets">One and 2 RandomClosest</v>
  <v name = "LightningDmg">100</v>
- <v name = "DmgDecrPerTarget">0.4</v>
+ <v name = "DmgDecrPerTarget">40</v>
  </l>
  <l pEne = "120" pAP = "2">
  <v name = "Targets">One and 2 RandomClosest</v>
  <v name = "LightningDmg">130</v>
- <v name = "DmgDecrPerTarget">0.3</v>
+ <v name = "DmgDecrPerTarget">30</v>
  </l>
  <l pEne = "150" pAP = "2">
  <v name = "Targets">One and 3 RandomClosest</v>
  <v name = "LightningDmg">160</v>
- <v name = "DmgDecrPerTarget">0.3</v>
+ <v name = "DmgDecrPerTarget">30</v>
  </l>
  <l pEne = "180" pAP = "3">
  <v name = "Targets">One and 3 RandomClosest</v>
  <v name = "LightningDmg">190</v>
- <v name = "DmgDecrPerTarget">0.25</v>
+ <v name = "DmgDecrPerTarget">25</v>
  </l>
  <l pEne = "210" pAP = "3">
  <v name = "Targets">One and 4 RandomClosest</v>
  <v name = "LightningDmg">220</v>
- <v name = "DmgDecrPerTarget">0.2</v>
+ <v name = "DmgDecrPerTarget">20</v>
  </l>
  </skill>
  <skill name = "Electrification" levels  = "3" scname = "as_Electrification">
  <l pEne = "80" pAP = "2">
- <v name = "LightningDmgMod">0.1</v>
- <v name = "CrStrikeDmgPlus">0.1</v>
+ <v name = "LightningDmgMod">10</v>
+ <v name = "CrStrikeDmgPlus">10</v>
  <v name = "Time">3</v>
  </l>
  <l pEne = "110" pAP = "2">
- <v name = "LightningDmgMod">0.2</v>
- <v name = "CrStrikeDmgPlus">0.2</v>
+ <v name = "LightningDmgMod">20</v>
+ <v name = "CrStrikeDmgPlus">20</v>
  <v name = "Time">3</v>
  </l>
  <l pEne = "140" pAP = "2">
- <v name = "LightningDmgMod">0.3</v>
- <v name = "CrStrikeDmgPlus">0.3</v>
+ <v name = "LightningDmgMod">30</v>
+ <v name = "CrStrikeDmgPlus">30</v>
  <v name = "Time">3</v>
  </l>
  </skill>
@@ -1030,22 +1030,22 @@
  <l pEne = "80" pAP = "2">
  <v name = "Targets">3Hx3V</v>
  <v name = "LifeDmg">60</v>
- <v name = "Healing">0.7</v>
+ <v name = "Healing">70</v>
  </l>
  <l pEne = "100" pAP = "2">
  <v name = "Targets">3Hx3V</v>
  <v name = "LifeDmg">80</v>
- <v name = "Healing">0.8</v>
+ <v name = "Healing">80</v>
  </l>
  <l pEne = "120" pAP = "2">
  <v name = "Targets">3Hx3V</v>
  <v name = "LifeDmg">100</v>
- <v name = "Healing">0.9</v>
+ <v name = "Healing">90</v>
  </l>
  <l pEne = "140" pAP = "2">
  <v name = "Targets">3Hx3V</v>
  <v name = "LifeDmg">120</v>
- <v name = "Healing">1.0</v>
+ <v name = "Healing">100</v>
  </l>
  </skill>
  <skill name = "Evolution" levels = "2" scname  = "as_Evolution">
@@ -1062,8 +1062,8 @@
  </skill>
  <skill name = "DeathBlossom" levels = "4" scname = "as_DeathBlossom">
  <l pEne = "120" pAP = "2">
- <v name = "ParalysisCh">0.1</v>
- <v name = "PoisonCh">0.1</v>
+ <v name = "ParalysisCh">10</v>
+ <v name = "PoisonCh">10</v>
  <v name = "ParalysisTime">2</v>
  <v name = "PoisonTime">2</v>
  <v name = "PoisonDmg">40</v>
@@ -1071,8 +1071,8 @@
  <v name = "Time">3</v>
  </l>
  <l pEne = "160" pAP = "2">
-  <v name = "ParalysisCh">0.14</v>
- <v name = "PoisonCh">0.14</v>
+  <v name = "ParalysisCh">14</v>
+ <v name = "PoisonCh">14</v>
  <v name = "ParalysisTime">2</v>
  <v name = "PoisonTime">2</v>
  <v name = "PoisonDmg">60</v>
@@ -1080,8 +1080,8 @@
  <v name = "Time">3</v>
  </l>
  <l pEne = "200" pAP = "3">
-  <v name = "ParalysisCh">0.18</v>
- <v name = "PoisonCh">0.18</v>
+  <v name = "ParalysisCh">18</v>
+ <v name = "PoisonCh">18</v>
  <v name = "ParalysisTime">2</v>
  <v name = "PoisonTime">2</v>
  <v name = "PoisonDmg">80</v>
@@ -1089,8 +1089,8 @@
  <v name = "Time">3</v>
  </l>
  <l pEne = "240" pAP = "3">
-  <v name = "ParalysisCh">0.22</v>
- <v name = "PoisonCh">0.22</v>
+  <v name = "ParalysisCh">22</v>
+ <v name = "PoisonCh">22</v>
  <v name = "ParalysisTime">3</v>
  <v name = "PoisonTime">2</v>
  <v name = "PoisonDmg">100</v>

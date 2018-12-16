@@ -150,7 +150,7 @@
   descr = "Атака ворогів на одній лінії темрявою">
   <l>Пошкодження $DarknessDmg$ Темрява</l>
   <l>Пошкодження $DarknessDmg$ Темрява</l>
-  <l>Пошкодження $DarknessDmg $Темрява</l>
+  <l>Пошкодження $DarknessDmg$ Темрява</l>
   <l>Пошкодження $DarknessDmg$ Темрява</l>
   <l>Пошкодження $DarknessDmg$ Темрява</l>
   </skill>
@@ -179,7 +179,7 @@
  <skill name = "DoubleStrike" locname = "Подвійна атака" 
  descr = "Наносить два удари по одній цілі другий удар ігнорує захист">
  <l>Пошкодження  $PhysDmg$ Фізичний</l>
- <l>Пошкодження  $PhysDmg Фізичний</l>
+ <l>Пошкодження  $PhysDmg$ Фізичний</l>
  <l>Пошкодження  $PhysDmg$ Фізичний</l>
  <l>Пошкодження  $PhysDmg$ Фізичний</l>
  <l>Пошкодження  $PhysDmg$ Фізичний</l>
@@ -196,13 +196,13 @@
  <l>Пошкодження $PhysDmg$ Фізичний Відновлення $HPrecoveryOnKill$% від пошкоджень Модифікатор пошкоджень +$addDmgModOnKill$%</l>
  <l>Пошкодження $PhysDmg$ Фізичний Відновлення $HPrecoveryOnKill$% від пошкоджень Модифікатор пошкоджень +$addDmgModOnKill$%</l>
  <l>Пошкодження $PhysDmg$ Фізичний Відновлення $HPrecoveryOnKill$% від пошкоджень Модифікатор пошкоджень +$addDmgModOnKill$%</l>
- <l>Пошкодження $PhysDmg$ Фізичний Відновлення $HPrecoveryOnKill$% від пошкоджень Модифікатор пошкоджень +$addDmgModOnKill%</l>
+ <l>Пошкодження $PhysDmg$ Фізичний Відновлення $HPrecoveryOnKill$% від пошкоджень Модифікатор пошкоджень +$addDmgModOnKill$%</l>
  </skill>
  <skill name = "LethalTempo" locname = "Смертельний темп"
  descr = "Зкожним ходом пасивно росте комбомодифікатор але і вхідні пошкодження">
  <l>Комбомодифікатор +$CombomodIncr$ за хід Вхідні пошкодження +$damageToHeroIncr$% за хід</l>
  <l>Комбомодифікатор +$CombomodIncr$ за хід Вхідні пошкодження +$damageToHeroIncr$% за хід</l>
- <l>Комбомодифікатор +$CombomodIncr$ за хід Вхідні пошкодження +$damageToHeroIncr% за хід</l>
+ <l>Комбомодифікатор +$CombomodIncr$ за хід Вхідні пошкодження +$damageToHeroIncr$% за хід</l>
  </skill>
  <skill name = "PiercingLight" locname = "Пронизуюче світло" 
  descr = "Атака по горизонталі і вертикалі світлом">
@@ -223,7 +223,7 @@
  <skill name = "FsterThanLight" locname = "Швидше світла" 
  descr = "Збільшує шанс ухилення і шанс критичної атаки але зменшує всі резісти">
  <l>Ухилення від атак +$AtkEvasionIncr$% Ухилення від скілів +$SKillEvasionIncr$% Шанс критичної атаки +$AllDefDecr$% Всі резісти -$CrStrikeChancePlus$</l>
- <l>Ухилення від атак +$AtkEvasionIncr$% Ухилення від скілів +$SKillEvasionIncr$% Шанс критичної атаки +$AllDefDecr$% Всі резісти -$CrStrikeChancePlus</l>
+ <l>Ухилення від атак +$AtkEvasionIncr$% Ухилення від скілів +$SKillEvasionIncr$% Шанс критичної атаки +$AllDefDecr$% Всі резісти -$CrStrikeChancePlus$</l>
  <l>Ухилення від атак +$AtkEvasionIncr$% Ухилення від скілів +$SKillEvasionIncr$% Шанс критичної атаки +$AllDefDecr$% Всі резісти -$CrStrikeChancePlus$</l>
  </skill>
  <skill name = "FireClaw" locname = "Вогняний кіготь" 
@@ -270,7 +270,7 @@
  <l>Випадковий Резіст - $RandomDefDecr$ Пошкодження при знятті мітки  $AirDmg$ Повітря</l>
  <l>Випадковий Резіст - $RandomDefDecr$ Пошкодження при знятті мітки  $AirDmg$ Повітря</l>
  </skill>
- <skill name = "BLocking" locname = "Блокування" 
+ <skill name = "Blocking" locname = "Блокування" 
  descr = "Є шанс повністю заблокувати атаку ворога">
  <l>Шанс блоку $val1$%</l>
  <l>Шанс блоку $val1$%</l>
@@ -284,7 +284,7 @@
  <l>Пошкодження $PhysDmg$ Фізичний Кровотеча $BleedPhysDmg$% від атаки</l>
  <l>Пошкодження $PhysDmg$ Фізичний Кровотеча $BleedPhysDmg$% від атаки</l>
  <l>Пошкодження $PhysDmg$ Фізичний Кровотеча $BleedPhysDmg$% від атаки</l>
- <l>Пошкодження $PhysDmg$ Фізичний Кровотеча $BleedPhysDmg% від атаки</l>
+ <l>Пошкодження $PhysDmg$ Фізичний Кровотеча $BleedPhysDmg$% від атаки</l>
  </skill>
  <skill name = "Devouring" locname = "Пожирання"
  descr = "Якщо цією атакою добити ворога то можна приплюсувати його резісти до свої на деякий час">
@@ -294,20 +294,20 @@
  <skill name = "Anarchy" locname = "Анархія" 
  descr = "збільшується шанс критичної атаки і кожен удар збільшує критичні пошкодження але зменшує шанс контратаки блокування і ухилення">
  <l>Шанс критичної атаки +$CrStrikeChancePlus$% критичні пошкодження за удар +$CrStrikeDmgPlus$% - шанси блоку ухилення і контратаки -$CounterattackChDecr$% за удар</l>
- <l>Шанс критичної атаки +$CrStrikeChancePlus$% критичні пошкодження за удар +$CrStrikeDmgPlus$% - шанси блоку ухилення і контратаки -$CounterattackChDecr% за удар</l>
- <l>Шанс критичної атаки +$CrStrikeChancePlus$% критичні пошкодження за удар +$CrStrikeDmgPlus$% - шанси блоку ухилення і контратаки -$CounterattackChDecr% за удар</l>
+ <l>Шанс критичної атаки +$CrStrikeChancePlus$% критичні пошкодження за удар +$CrStrikeDmgPlus$% - шанси блоку ухилення і контратаки -$CounterattackChDecr$% за удар</l>
+ <l>Шанс критичної атаки +$CrStrikeChancePlus$% критичні пошкодження за удар +$CrStrikeDmgPlus$% - шанси блоку ухилення і контратаки -$CounterattackChDecr$% за удар</l>
  </skill>
  <skill name = "Harvesting" locname = "Жатва" 
  descr = "Перманентно збільшує лічильник комбо в обмін на ОД наступного ходу">
  <l>Комбо +$ComboPlus$</l>
  <l>Комбо +$ComboPlus$</l>
- <l>Комбо +$ComboPlus</l>
+ <l>Комбо +$ComboPlus$</l>
  </skill>
  <skill name = "DeathSign" locname = "Мітка смерті"
  descr = "Накладає на ворога мітку яка ослабляє його атаку і резісти">
- <l>Атака -$AtkDect$% Смерть - $DeathDefDecr$ Темрява -$DarknessDefDecr$ Світло -$LightDefDecr</l>
- <l>Атака -$AtkDect$% Смерть - $DeathDefDecr$ Темрява -$DarknessDefDecr$ Світло -$LightDefDecr</l>
- <l>Атака -$AtkDect$% Смерть - $DeathDefDecr$ Темрява -$DarknessDefDecr$ Світло -$LightDefDecr$ Фізичний -$PhysDefDecr</l>
+ <l>Атака -$AtkDect$% Смерть - $DeathDefDecr$ Темрява -$DarknessDefDecr$ Світло -$LightDefDecr$</l>
+ <l>Атака -$AtkDect$% Смерть - $DeathDefDecr$ Темрява -$DarknessDefDecr$ Світло -$LightDefDecr$</l>
+ <l>Атака -$AtkDect$% Смерть - $DeathDefDecr$ Темрява -$DarknessDefDecr$ Світло -$LightDefDecr$ Фізичний -$PhysDefDecr$</l>
  </skill>
  <skill name = "DelayedDeath" locname = "Відкладена смерть"
  descr = "Під кінець часу дії ворог вмирає атакуючи всіх навколо енергією смерті">
