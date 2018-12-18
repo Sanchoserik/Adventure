@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<skills>
+  <skill name = "Rearm" locname = "Переозброєння"
+ descr = "Можна змінити тип зброї">
+  <l lTarget = "Герой">Можна змінити зброю на катану катари або косу</l>
+  </skill>
+  <skill name = "TacticalSwap" locname = "Тактичний свап"
+  descr = "Поміняти талісман з вищого стеку на талісамн з нижчого стеку">
+  <l lTarget = "Герой">Міняється 1 талісман з вищого стеку на 1 талісман з нижчого стеку</l>
+  </skill>
+  <skill name = "TacticalRetreat" locname = "відхід"
+  descr = "Завершити бій втративши частину сили талісманів">
+  <l lTarget = "Герой">Втрачається $decreaseTpower$% сили талісманів в основному стеку</l>
+  <l lTarget = "Герой">Втрачається $decreaseTpower$% сили талісманів в основному стеку</l>
+  <l lTarget = "Герой">Втрачається $decreaseTpower$% сили талісманів в основному стеку</l>
+  <l lTarget = "Герой">Втрачається $decreaseTpower$% сили талісманів вищого стеку</l>
+  </skill>
+  <skill name="TacticalPreparation" locname = "Підготовка"
+  descr = "На наступному ході отримуються додаткові ОД">
+  <l lTarget = "Герой">Дає ОД на наступний хід $nextTurnAddAP$</l>
+  <l lTarget = "Герой">Дає ОД на наступний хід $nextTurnAddAP$</l>
+  </skill>
+  <skill name = "TacticalRecharge" locname = "Перезарядка" 
+  descr = "Перезарядити талісман з вищого стеку за рахунок енергії талісмана нижчого стеку">
+  <l lTarget = "Герой">Обмін енергії $val1$% на $val2$% </l>
+  <l lTarget = "Герой">Обмін енергії $val1$% на $val2$% </l>
+  <l lTarget = "Герой">Обмін енергії $val1$% на $val2$% </l>
+  <l lTarget = "Герой">Обмін енергії $val1$% на $val2$% </l>
+  </skill>
+  <skill name = "Destruction" locname = "Руйнування"
+ descr = "Знищити талісман з основного стеку і нанести пошкодження всім ворогам на полі в залежності від наявної енергії талісману">
+  <l lTarget = "Всі вороги">Пошкодження = наявна енергія * $damageMod$</l>
+  <l lTarget = "Всі вороги">Пошкодження = наявна енергія * $damageMod$</l>
+  <l lTarget = "Всі вороги">Пошкодження = наявна енергія * $damageMod$</l>
+  <l lTarget = "Всі вороги">Пошкодження = наявна енергія * $damageMod$</l>
+  <l lTarget = "Всі вороги">Пошкодження = наявна енергія * $damageMod$</l>
+  </skill>
+  <skill name = "CounterAnalysis" locname = "Контр Аналіз"
+  descr = "Проаналізувати параметри ворога і занести їх в енциклопедію">
+  <l lTarget = "Один ворог">Розкриває всі параметри ворога і заносить їх в бібліотеку</l>
+  </skill>
+  <skill name = "CriticalBalance" locname = "Критичний баланс"
+  descr = "Всі захисти зменшуються на 1 пункт але збільшується шанс критичного удару">
+  <l lTarget = "Герой">Зменшення всіх резістів -$AllDefDecr$ Шанс критичного удару +$CrStrikeChancePlus$%</l>
+  <l lTarget = "Герой">Зменшення всіх резістів -$AllDefDecr$ Шанс критичного удару +$CrStrikeChancePlus$%</l>
+  <l lTarget = "Герой">Зменшення всіх резістів -$AllDefDecr$ Шанс критичного удару +$CrStrikeChancePlus$%</l>
+  </skill>
+  <skill name = "Overcharge" locname = "Оверчардж" 
+  descr = "Збільшити витрату ОД але також збільшити силу здібностей">
+  <l lTarget = "Герой">Ціна ОД +$addAPPrice$ Модифікатор Пошкоджень + $DamageBonusPercent$% Модифікатор Лікування + $HEalingBonusPercent$%</l>
+  <l lTarget = "Герой">Ціна ОД +$addAPPrice$ Модифікатор Пошкоджень + $DamageBonusPercent$% Модифікатор Лікування + $HEalingBonusPercent$%</l>
+  <l lTarget = "Герой">Ціна ОД +$addAPPrice$ Модифікатор Пошкоджень + $DamageBonusPercent$% Модифікатор Лікування + $HEalingBonusPercent$%</l>
+  </skill>
+  <skill name = "Synchronization" locname = "Синхронізація" 
+  descr = "З кожною проведеною дією збільшуються модифікатори атаки і також дає додаткові захисні параметри; Тіласмани кожен хід відновлюють енергію">
+  <l lTarget = "Герой">Модифікатор Пошкоджень +$DamageBonusPercent$% За дію Всі захисти збільшуються на $addAllDef$ пункт; Талісмани відновлюються на $TalismanRegeneration$%</l>
+  <l lTarget = "Герой">Модифікатор Пошкоджень +$DamageBonusPercent$% За дію Всі захисти збільшуються на $addAllDef$ пункт; Талісмани відновлюються на $TalismanRegeneration$%</l>
+  <l lTarget = "Герой">Модифікатор Пошкоджень +$DamageBonusPercent$% За дію Всі захисти збільшуються на $addAllDef$ пункт; Талісмани відновлюються на $TalismanRegeneration$%</l>
+  <l lTarget = "Герой">Модифікатор Пошкоджень +$DamageBonusPercent$% За дію Всі захисти збільшуються на $addAllDef$ пункт; Талісмани відновлюються на $TalismanRegeneration$%</l>
+  </skill>
+  <skill name = "ComboCharge" locname = "Комбо заряд" 
+  descr = "З кожним пошкодження на монстра накладається комбо заряд який збільшує наступні пошкодження по ньому - починаючи з нового ходу комбоочки уполовинюються">
+  <l lTarget = "Герой">Збільшення пошкоджень $DamageBonusPercentMark$% За заряд</l>
+  </skill>
+  <skill name = "IronDefence" locname = "Глуха оборона" 
+  descr = "Збільшує всі захисти">
+  <l lTarget = "Герой">Збільшує всі захисти на $addAllDef$ пункт</l>
+  </skill>
+  <skill name = "AllIn"  locname = "Олл ін"
+  descr = "Збільшує ОД на цей хід але забирає ОД з наступних">
+  <l lTarget = "Герой">ОД + $addAP$ Наступні 2 Ходи ОД = 0</l>
+  <l lTarget = "Герой">ОД + $addAP$ Наступні 2 Ходи ОД = 0</l>
+  </skill>
+  <skill name ="Counterattack" locname = "Контратака" 
+  descr = "Є шанс провести контратаку по ворогу у відповіть на його атаку або скіл">
+  <l lTarget = "Герой">Шанс $val1$%</l>
+  <l lTarget = "Герой">Шанс $val1$%</l>
+  <l lTarget = "Герой">Шанс $val1$%</l>
+  <l lTarget = "Герой">Шанс $val1$%</l>
+  <l lTarget = "Герой">Шанс $val1$%</l>
+  </skill>
+  <skill name = "TripleCut" locname = "Потрійний розріз"
+  descr = "Три атаки трьох ворогів які стоять в лінію">
+  <l  lTarget = "Троє ворогів по горизонталі">Пошкодження $PhysDmg$ Фізичний</l>
+  <l  lTarget = "Троє ворогів по горизонталі">Пошкодження $PhysDmg$ Фізичний</l>
+  <l  lTarget = "Троє ворогів по горизонталі">Пошкодження $PhysDmg$ Фізичний</l>
+  <l  lTarget = "Троє ворогів по горизонталі">Пошкодження $PhysDmg$ Фізичний</l>
+  <l  lTarget = "Троє ворогів по горизонталі">Пошкодження $PhysDmg$ Фізичний</l>
+  </skill>
+  <skill name = "FinishingBlow" locname = "Добивання" 
+  descr = "Сильна атака - коли ворог помирає од неї повертається ОД">
+  <l lTarget = "Один ворог">Пошкодження $PhysDmg$ Фізичний ОД повертається $AddAp$</l>
+  <l lTarget = "Один ворог">Пошкодження $PhysDmg$ Фізичний ОД повертається $AddAp$</l>
+  <l lTarget = "Один ворог">Пошкодження $PhysDmg$ Фізичний ОД повертається $AddAp$</l>
+  <l lTarget = "Один ворог">Пошкодження $PhysDmg$ Фізичний ОД повертається $AddAp$</l>
+  </skill>
+  <skill name = "CursedSign" locname = "Проклята мітка" 
+  descr = "Атака яка помічає ціль міткою яку можна збити іншим типом зброї нанесши додаткові пошкодження">
+  <l lTarget = "Один ворог">Пошкодження $PhysDmg$ Фізичний - Додаткові пошкодження мітки $CursedSigngDmgMod$%</l>
+  <l lTarget = "Один ворог">Пошкодження $PhysDmg$ Фізичний - Додаткові пошкодження мітки $CursedSigngDmgMod$%</l>
+  <l lTarget = "Один ворог">Пошкодження $PhysDmg$ Фізичний - Додаткові пошкодження мітки $CursedSigngDmgMod$%</l>
+  </skill>
+  <skill name = "Ricochet" locname = "Рікошет" 
+  descr = "Під час дії є шанс що атака або скіл ворога зрікошетить в іншу ціль">
+  <l lTarget = "Герой">Шанс $RicochetChance$% Кількість Рікошетів $RicochetCount$</l>
+  <l lTarget = "Герой">Шанс $RicochetChance$% Кількість Рікошетів $RicochetCount$</l>
+  <l lTarget = "Герой">Шанс $RicochetChance$% Кількість Рікошетів $RicochetCount$</l>
+  </skill>
+  <skill  name = "PerfectWarrior" locname = "Ідеальний воїн" 
+  descr = "Збільшує шанс і надає контратакі додаткові пошкодження Зменшує витрату ОД на деякі вміння">
+  <l lTarget = "Герой">Шанс на контратаку +$AddCounterattackChance$% Додаткові пошкодження +$DmgModPercent$%</l>
+  <l lTarget = "Герой">Шанс на контратаку +$AddCounterattackChance$% Додаткові пошкодження +$DmgModPercent$%</l>
+  <l lTarget = "Герой">Шанс на контратаку +$AddCounterattackChance$% Додаткові пошкодження +$DmgModPercent$%</l>
+  </skill>
+  <skill name = "StoneSkin" locname = "Кам'яна шкіра"
+  descr = "Збільшує захист">
+  <l lTarget = "Герой">Земля +$EarthDefAdd$ Вода + $WaterDefAdd$ Фізичний + $PhysDefAdd$</l>
+  <l lTarget = "Герой">Земля +$EarthDefAdd$ Вода + $WaterDefAdd$ Фізичний + $PhysDefAdd$ Вогонь + $FireDefAdd$ Темрява +$DarknessDefAdd$</l>
+  <l lTarget = "Герой">Земля +$EarthDefAdd$ Вода + $WaterDefAdd$ Фізичний + $PhysDefAdd$ Вогонь + $FireDefAdd$ Темрява +$DarknessDefAdd$</l>
+  </skill>
+  <skill name = "EarthDestruction" locname = "Знищення землі" 
+  descr = "Потужна атака землею по одній цілі - всім сусіднім наноситься частина пошкодженбь">
+  <l lTarget = "Один ворог і всі вороги навколо нього">Пошкодження $EarthDmg$ Земля - $OtherTargetsDmg$% Іншим цілям</l>
+  <l lTarget = "Один ворог і всі вороги навколо нього">Пошкодження $EarthDmg$ Земля - $OtherTargetsDmg$% Іншим цілям</l>
+  <l lTarget = "Один ворог і всі вороги навколо нього">Пошкодження $EarthDmg$ Земля - $OtherTargetsDmg$% Іншим цілям</l>
+  <l lTarget = "Один ворог і всі вороги навколо нього">Пошкодження $EarthDmg$ Земля - $OtherTargetsDmg$% Іншим цілям</l>
+  <l lTarget = "Один ворог і всі вороги навколо нього">Пошкодження $EarthDmg$ Земля - $OtherTargetsDmg$% Іншим цілям</l>
+  </skill>
+  <skill name = "WaterPrison" locname = "Водяна Тюрьма" 
+  descr = "Обездвижує ворога і наносить пошкодження водою на деякий час">
+  <l lTarget = "Один ворог">Пошкодження $WaterDmg$ Вода</l>
+  <l lTarget = "Один ворог">Пошкодження $WaterDmg$ Вода</l>
+  <l lTarget = "Один ворог">Пошкодження $WaterDmg$ Вода</l>
+  </skill>
+  <skill name = "Regeneration" locname = "Регенерація"
+  descr = "Регенерує ХП під час дії">
+  <l lTarget = "Герой">ХП + $Healing$ За хід</l>
+  <l lTarget = "Герой">ХП + $Healing$ За хід</l>
+  <l lTarget = "Герой">ХП + $Healing$ За хід</l>
+  </skill>
+  <skill name = "Tsunami" locname = "Цунамі"
+  descr = "Пошкодження двом ворогам на кожній лінії">
+  <l lTarget = "Два перші два вороги на кожній лінії">Пошкодження $WaterDmg$ Вода</l>
+  <l lTarget = "Два перші два вороги на кожній лінії">Пошкодження $WaterDmg$ Вода</l>
+  <l lTarget = "Два перші два вороги на кожній лінії">Пошкодження $WaterDmg$ Вода</l>
+  <l lTarget = "Два перші два вороги на кожній лінії">Пошкодження $WaterDmg$ Вода</l>
+  <l lTarget = "Два перші два вороги на кожній лінії">Пошкодження $WaterDmg$ Вода</l>
+  </skill>
+  <skill name = "DarkVortex" locname = "Темний циклон" 
+  descr = "Атака ворогів на одній лінії темрявою">
+  <l lTarget = "Вертикальна лінія">Пошкодження $DarknessDmg$ Темрява</l>
+  <l lTarget = "Вертикальна лінія">Пошкодження $DarknessDmg$ Темрява</l>
+  <l lTarget = "Вертикальна лінія">Пошкодження $DarknessDmg$ Темрява</l>
+  <l lTarget = "Вертикальна лінія">Пошкодження $DarknessDmg$ Темрява</l>
+  <l lTarget = "Вертикальна лінія">Пошкодження $DarknessDmg$ Темрява</l>
+  </skill>
+  <skill name = "AbsoluteDarkness" locname = "Абсолютна темрява" 
+  descr = "Все поле бою покриває темрява знижуючи параметри ворогів">
+  <l lTarget = "Всі вороги">Атака -$AttackDecrease$% Захист темряви -$DaknessDefDecr$ Фз захист -$PhysDefDecr$ Захист Життя -$LifeDefDecr$</l>
+  <l lTarget = "Всі вороги">Атака -$AttackDecrease$% Захист темряви -$DaknessDefDecr$ Фз захист -$PhysDefDecr$ Захист Життя -$LifeDefDecr$</l>
+  <l lTarget = "Всі вороги">Атака -$AttackDecrease$% Захист темряви -$DaknessDefDecr$ Фз захист -$PhysDefDecr$ Захист Життя -$LifeDefDecr$</l>
+  </skill>
+  <skill name = "DarkDemon" locname = "Демон темряви" 
+  descr = "Демон темряви атакую кжен хід рандомного ворога обездвижуючи його">
+  <l lTarget = "Випадковий ворог">Пошкодження $DarknessDmg$ Обездвиження $StunTime$ хід</l>
+  <l lTarget = "Випадковий ворог">Пошкодження $DarknessDmg$ Обездвиження $StunTime$ хід</l>
+  <l lTarget = "Випадковий ворог">Пошкодження $DarknessDmg$ Обездвиження $StunTime$ хід</l>
+  <l lTarget = "Випадковий ворог">Пошкодження $DarknessDmg$ Обездвиження $StunTime$ хід</l>
+  <l lTarget = "Випадковий ворог">Пошкодження $DarknessDmg$ Обездвиження $StunTime$ ходи</l>
+  </skill>
+ <skill name = "Evasion" locname = "Ухилення"
+ descr = "Є шанс ухилитися від атаки або скіла">
+ <l lTarget = "Герой">Ухилення від атаки = $AtkEvasion$% Ухилення від скіла $SkillEvasion$%</l>
+ <l lTarget = "Герой">Ухилення від атаки = $AtkEvasion$% Ухилення від скіла $SkillEvasion$%</l>
+ <l lTarget = "Герой">Ухилення від атаки = $AtkEvasion$% Ухилення від скіла $SkillEvasion$%</l>
+ <l lTarget = "Герой">Ухилення від атаки = $AtkEvasion$% Ухилення від скіла $SkillEvasion$%</l>
+ <l lTarget = "Герой">Ухилення від атаки = $AtkEvasion$% Ухилення від скіла $SkillEvasion$%</l>
+ </skill>
+ <skill name = "DoubleStrike" locname = "Подвійна атака" 
+ descr = "Наносить два удари по одній цілі другий удар ігнорує захист">
+ <l lTarget = "Один ворог">Пошкодження  $PhysDmg$ Фізичний</l>
+ <l lTarget = "Один ворог">Пошкодження  $PhysDmg$ Фізичний</l>
+ <l lTarget = "Один ворог">Пошкодження  $PhysDmg$ Фізичний</l>
+ <l lTarget = "Один ворог">Пошкодження  $PhysDmg$ Фізичний</l>
+ <l lTarget = "Один ворог">Пошкодження  $PhysDmg$ Фізичний</l>
+ </skill>
+ <skill name = "PiercingStrike" locname = "Пробивання" 
+ descr = "Атаки ігнорують броню цілі">
+ <l lTarget = "Герой">Ігнорується $DeffIgnoreVal$ броні</l>
+ <l lTarget = "Герой">Ігнорується $DeffIgnoreVal$ броні</l>
+ <l lTarget = "Герой">Ігнорується $DeffIgnoreVal$ броні</l>
+ </skill>
+ <skill name = "Assassination" locname = "Вбивство" 
+ descr = "Потужна атака яка при вбивстві дає модифікатор пошкоджень і відновлю ХП гравця">
+ <l lTarget = "Один ворог">Пошкодження $PhysDmg$ Фізичний Відновлення $HPrecoveryOnKill$% від пошкоджень Модифікатор пошкоджень +$addDmgModOnKill$%</l>
+ <l lTarget = "Один ворог">Пошкодження $PhysDmg$ Фізичний Відновлення $HPrecoveryOnKill$% від пошкоджень Модифікатор пошкоджень +$addDmgModOnKill$%</l>
+ <l lTarget = "Один ворог">Пошкодження $PhysDmg$ Фізичний Відновлення $HPrecoveryOnKill$% від пошкоджень Модифікатор пошкоджень +$addDmgModOnKill$%</l>
+ <l lTarget = "Один ворог">Пошкодження $PhysDmg$ Фізичний Відновлення $HPrecoveryOnKill$% від пошкоджень Модифікатор пошкоджень +$addDmgModOnKill$%</l>
+ <l lTarget = "Один ворог">Пошкодження $PhysDmg$ Фізичний Відновлення $HPrecoveryOnKill$% від пошкоджень Модифікатор пошкоджень +$addDmgModOnKill$%</l>
+ </skill>
+ <skill name = "LethalTempo" locname = "Смертельний темп"
+ descr = "Зкожним ходом пасивно росте комбомодифікатор але і вхідні пошкодження">
+ <l lTarget = "Герой">Комбомодифікатор +$CombomodIncr$ за хід Вхідні пошкодження +$damageToHeroIncr$% за хід</l>
+ <l lTarget = "Герой">Комбомодифікатор +$CombomodIncr$ за хід Вхідні пошкодження +$damageToHeroIncr$% за хід</l>
+ <l lTarget = "Герой">Комбомодифікатор +$CombomodIncr$ за хід Вхідні пошкодження +$damageToHeroIncr$% за хід</l>
+ </skill>
+ <skill name = "PiercingLight" locname = "Пронизуюче світло" 
+ descr = "Атака по горизонталі і вертикалі світлом">
+ <l lTarget = "Одна горизонтальна і одна вертикальна лінія">Пошкодження $LightDmg$ Світло</l>
+ <l lTarget = "Одна горизонтальна і одна вертикальна лінія">Пошкодження $LightDmg$ Світло</l>
+ <l lTarget = "Одна горизонтальна і одна вертикальна лінія">Пошкодження $LightDmg$ Світло</l>
+ <l lTarget = "Одна горизонтальна і одна вертикальна лінія">Пошкодження $LightDmg$ Світло</l>
+ <l lTarget = "Одна горизонтальна і одна вертикальна лінія">Пошкодження $LightDmg$ Світло</l>
+ <l lTarget = "Одна горизонтальна і одна вертикальна лінія">Пошкодження $LightDmg$ Світло</l>
+ </skill>
+ <skill name = "ShiningCloak" locname = "Сяючий плащ"
+ descr = "Додає до атак пошкодження світлом і зменшує рандомно один з захистів ворога">
+ <l lTarget = "Герой">Пошкодження світлом +$LightDmgMod$% Зменшення захисту $RandomDefDecr$</l>
+ <l lTarget = "Герой">Пошкодження світлом +$LightDmgMod$% Зменшення захисту $RandomDefDecr$</l>
+ <l lTarget = "Герой">Пошкодження світлом +$LightDmgMod$% Зменшення захисту $RandomDefDecr$</l>
+ <l lTarget = "Герой">Пошкодження світлом +$LightDmgMod$% Зменшення захисту $RandomDefDecr$</l>
+ </skill>
+ <skill name = "FsterThanLight" locname = "Швидше світла" 
+ descr = "Збільшує шанс ухилення і шанс критичної атаки але зменшує всі резісти">
+ <l lTarget = "Герой">Ухилення від атак +$AtkEvasionIncr$% Ухилення від скілів +$SKillEvasionIncr$% Шанс критичної атаки +$AllDefDecr$% Всі резісти -$CrStrikeChancePlus$</l>
+ <l lTarget = "Герой">Ухилення від атак +$AtkEvasionIncr$% Ухилення від скілів +$SKillEvasionIncr$% Шанс критичної атаки +$AllDefDecr$% Всі резісти -$CrStrikeChancePlus$</l>
+ <l lTarget = "Герой">Ухилення від атак +$AtkEvasionIncr$% Ухилення від скілів +$SKillEvasionIncr$% Шанс критичної атаки +$AllDefDecr$% Всі резісти -$CrStrikeChancePlus$</l>
+ </skill>
+ <skill name = "FireClaw" locname = "Вогняний кіготь" 
+ descr = "Атака вогнем з підпалом">
+ <l lTarget = "Один ворог">Пошкодження $FireDmg$ Вогонь Підпал $BurningFireDmg$%</l>
+ <l lTarget = "Один ворог">Пошкодження $FireDmg$ Вогонь Підпал $BurningFireDmg$%</l>
+ <l lTarget = "Один ворог">Пошкодження $FireDmg$ Вогонь Підпал $BurningFireDmg$%</l>
+ <l lTarget = "Один ворог">Пошкодження $FireDmg$ Вогонь Підпал $BurningFireDmg$%</l>
+ <l lTarget = "Один ворог">Пошкодження $FireDmg$ Вогонь Підпал $BurningFireDmg$%</l>
+ </skill>
+ <skill name = "Burnout" locname = "Вигорання"
+ descr = "Кожен хід герой втрачає ХП але до його атак додаються пошкодження вогнем">
+ <l lTarget = "Герой">ХП -$HPDamage$% Кожен хід Модифікатор пошкоджень вогнем $FireDmgMod$% від атаки</l>
+ <l lTarget = "Герой">ХП -$HPDamage$% Кожен хід Модифікатор пошкоджень вогнем $FireDmgMod$% від атаки</l>
+ <l lTarget = "Герой">ХП -$HPDamage$% Кожен хід Модифікатор пошкоджень вогнем $FireDmgMod$% від атаки</l>
+ </skill>
+ <skill name = "Gehena" locname = "Гієна" 
+ descr = "Потужна атака вогнем спершу по одному ворогу а потім по всім хто в зоні за ним">
+ <l lTarget = "Один ворог і три вертикальні лінії за ним">Пошкодження $FireDmg$ Вогонь по першій цілі $FireDmgOthers$ Вогонь по іншим цілям</l>
+ <l lTarget = "Один ворог і три вертикальні лінії за ним">Пошкодження $FireDmg$ Вогонь по першій цілі $FireDmgOthers$ Вогонь по іншим цілям</l>
+ <l lTarget = "Один ворог і три вертикальні лінії за ним">Пошкодження $FireDmg$ Вогонь по першій цілі $FireDmgOthers$ Вогонь по іншим цілям</l>
+ <l lTarget = "Один ворог і три вертикальні лінії за ним">Пошкодження $FireDmg$ Вогонь по першій цілі $FireDmgOthers$ Вогонь по іншим цілям</l>
+ <l lTarget = "Один ворог і три вертикальні лінії за ним">Пошкодження $FireDmg$ Вогонь по першій цілі $FireDmgOthers$ Вогонь по іншим цілям</l>
+ </skill>
+ <skill name = "WindBlade" locname = "Лезо вітру" 
+ descr = "Атака повітрям яка збільшує свої пошкодження за фізичний захист цілі">
+ <l lTarget = "Один ворог">Пошкодження $AirDmg$ Повітря +$AirDmgModForDef$% за 1 Фізичного захисту</l>
+ <l lTarget = "Один ворог">Пошкодження $AirDmg$ Повітря +$AirDmgModForDef$% за 1 Фізичного захисту</l>
+ <l lTarget = "Один ворог">Пошкодження $AirDmg$ Повітря +$AirDmgModForDef$% за 1 Фізичного захисту</l>
+ <l lTarget = "Один ворог">Пошкодження $AirDmg$ Повітря +$AirDmgModForDef$% за 1 Фізичного захисту</l>
+ <l lTarget = "Один ворог">Пошкодження $AirDmg$ Повітря +$AirDmgModForDef$% за 1 Фізичного захисту</l>
+ </skill>
+ <skill name = "Tornado" locname = "Торнадо" 
+ descr = "Станлочить ворогів на лінії і наносить пошкодження вітром з часом">
+ <l lTarget = "Вертикальна лінія">Пошкодження $AirDmg$ Повітря</l>
+ <l lTarget = "Вертикальна лінія">Пошкодження $AirDmg$ Повітря</l>
+ <l lTarget = "Вертикальна лінія">Пошкодження $AirDmg$ Повітря</l>
+ </skill>
+ <skill name = "ReleasedStream" locname = "Вивільнений потік" 
+ descr = "На всії ворогів ставиться мітка яка повністю забирає рандомний резіст мітку можна зняти іншим типом зброї нанісши великиі пошкодження повітрям">
+ <l lTarget = "Один ворог">Випадковий Резіст - $RandomDefDecr$ Пошкодження при знятті мітки  $AirDmg$ Повітря</l>
+ <l lTarget = "Один ворог">Випадковий Резіст - $RandomDefDecr$ Пошкодження при знятті мітки  $AirDmg$ Повітря</l>
+ <l lTarget = "Один ворог">Випадковий Резіст - $RandomDefDecr$ Пошкодження при знятті мітки  $AirDmg$ Повітря</l>
+ <l lTarget = "Один ворог">Випадковий Резіст - $RandomDefDecr$ Пошкодження при знятті мітки  $AirDmg$ Повітря</l>
+ <l lTarget = "Один ворог">Випадковий Резіст - $RandomDefDecr$ Пошкодження при знятті мітки  $AirDmg$ Повітря</l>
+ </skill>
+ <skill name = "Blocking" locname = "Блокування" 
+ descr = "Є шанс повністю заблокувати атаку ворога">
+ <l lTarget = "Герой">Шанс блоку $val1$%</l>
+ <l lTarget = "Герой">Шанс блоку $val1$%</l>
+ <l lTarget = "Герой">Шанс блоку $val1$%</l>
+ <l lTarget = "Герой">Шанс блоку $val1$%</l>
+ <l lTarget = "Герой">Шанс блоку $val1$%</l>
+ </skill>
+ <skill name = "WideSwing" locname = "Широкий замах" 
+ descr = "Атака по області в 3 горизонтальних і 2  вертикальних клітинки з дебафом кровотечі">
+ <l lTarget = "Всі вороги на площі в 3х2 клітинки">Пошкодження $PhysDmg$ Фізичний Кровотеча $BleedPhysDmg$% від атаки</l>
+ <l lTarget = "Всі вороги на площі в 3х2 клітинки">Пошкодження $PhysDmg$ Фізичний Кровотеча $BleedPhysDmg$% від атаки</l>
+ <l lTarget = "Всі вороги на площі в 3х2 клітинки">Пошкодження $PhysDmg$ Фізичний Кровотеча $BleedPhysDmg$% від атаки</l>
+ <l lTarget = "Всі вороги на площі в 3х2 клітинки">Пошкодження $PhysDmg$ Фізичний Кровотеча $BleedPhysDmg$% від атаки</l>
+ <l lTarget = "Всі вороги на площі в 3х2 клітинки">Пошкодження $PhysDmg$ Фізичний Кровотеча $BleedPhysDmg$% від атаки</l>
+ </skill>
+ <skill name = "Devouring" locname = "Пожирання"
+ descr = "Якщо цією атакою добити ворога то можна приплюсувати його резісти до свої на деякий час">
+ <l lTarget = "Один ворог">Пошкодження $PhysDmg$ Фізичний</l>
+ <l lTarget = "Один ворог">Пошкодження $PhysDmg$ Фізичний</l>
+ </skill>
+ <skill name = "Anarchy" locname = "Анархія" 
+ descr = "збільшується шанс критичної атаки і кожен удар збільшує критичні пошкодження але зменшує шанс контратаки блокування і ухилення">
+ <l lTarget = "Герой">Шанс критичної атаки +$CrStrikeChancePlus$% критичні пошкодження за удар +$CrStrikeDmgPlus$% - шанси блоку ухилення і контратаки -$CounterattackChDecr$% за удар</l>
+ <l lTarget = "Герой">Шанс критичної атаки +$CrStrikeChancePlus$% критичні пошкодження за удар +$CrStrikeDmgPlus$% - шанси блоку ухилення і контратаки -$CounterattackChDecr$% за удар</l>
+ <l lTarget = "Герой">Шанс критичної атаки +$CrStrikeChancePlus$% критичні пошкодження за удар +$CrStrikeDmgPlus$% - шанси блоку ухилення і контратаки -$CounterattackChDecr$% за удар</l>
+ </skill>
+ <skill name = "Harvesting" locname = "Жатва" 
+ descr = "Перманентно збільшує лічильник комбо в обмін на ОД наступного ходу">
+ <l lTarget = "Герой">Комбо +$ComboPlus$</l>
+ <l lTarget = "Герой">Комбо +$ComboPlus$</l>
+ <l lTarget = "Герой">Комбо +$ComboPlus$</l>
+ </skill>
+ <skill name = "DeathSign" locname = "Мітка смерті"
+ descr = "Накладає на ворога мітку яка ослабляє його атаку і резісти">
+ <l lTarget = "Один ворог">Атака -$AtkDect$% Смерть - $DeathDefDecr$ Темрява -$DarknessDefDecr$ Світло -$LightDefDecr$</l>
+ <l lTarget = "Один ворог">Атака -$AtkDect$% Смерть - $DeathDefDecr$ Темрява -$DarknessDefDecr$ Світло -$LightDefDecr$</l>
+ <l lTarget = "Один ворог">Атака -$AtkDect$% Смерть - $DeathDefDecr$ Темрява -$DarknessDefDecr$ Світло -$LightDefDecr$ Фізичний -$PhysDefDecr$</l>
+ </skill>
+ <skill name = "DelayedDeath" locname = "Відкладена смерть"
+ descr = "Під кінець часу дії ворог вмирає атакуючи всіх навколо енергією смерті">
+ <l lTarget = "Один ворог і всі вороги навколо нього">Пошкодження $DeathDmg$ Смерть</l>
+ <l lTarget = "Один ворог і всі вороги навколо нього">Пошкодження $DeathDmg$ Смерть</l>
+ <l lTarget = "Один ворог і всі вороги навколо нього">Пошкодження $DeathDmg$ Смерть</l>
+ <l lTarget = "Один ворог і всі вороги навколо нього"> Пошкодження $DeathDmg$ Смерть</l>
+ </skill>
+ <skill name = "FaceOfDeath" locname = "Лик смерті" 
+ descr = "Збільшення деяких резістів регенерація і пошкодження смертю всіх ворогів протягом часу дії">
+ <l lTarget = "Герой">Пошкодження $DeathDmg$ Смерть; Смерть +$DeathDef$ Фізичний +$PhysDef$ Світло +$LihtDef$ Вода + $WaterDef$; Регенерація $Regeneration$</l>
+ <l lTarget = "Герой">Пошкодження $DeathDmg$ Смерть; Смерть +$DeathDef$ Фізичний +$PhysDef$ Світло +$LihtDef$ Вода + $WaterDef$; Регенерація $Regeneration$</l>
+ <l lTarget = "Герой">Пошкодження $DeathDmg$ Смерть; Смерть +$DeathDef$ Фізичний +$PhysDef$ Світло +$LihtDef$ Вода + $WaterDef$; Регенерація $Regeneration$</l>
+ <l lTarget = "Герой">Пошкодження $DeathDmg$ Смерть; Смерть +$DeathDef$ Фізичний +$PhysDef$ Світло +$LihtDef$ Вода + $WaterDef$; Регенерація $Regeneration$</l>
+ <l lTarget = "Герой">Пошкодження $DeathDmg$ Смерть; Смерть +$DeathDef$ Фізичний +$PhysDef$ Світло +$LihtDef$ Вода + $WaterDef$ Вогонь +$FireDef$ ; Регенерація $Regeneration$</l>
+ </skill>
+ <skill name = "LightningChain" locname = "Ланцюгова блискавка"
+ descr = "атакує декілька цілей але кожній цілі наноситься менші пошкодження">
+ <l lTarget = "Один ворог і два випадкових найближчих">Пошкодження $LightningDmg$ Блискавка Цілей 3 Зменшення пошкоджень $DmgDecrPerTarget$%</l>
+ <l lTarget = "Один ворог і два випадкових найближчих">Пошкодження $LightningDmg$ Блискавка Цілей 3 Зменшення пошкоджень $DmgDecrPerTarget$%</l>
+ <l lTarget = "Один ворог і два випадкових найближчих">Пошкодження $LightningDmg$ Блискавка Цілей 3 Зменшення пошкоджень $DmgDecrPerTarget$%</l>
+ <l lTarget = "Один ворог і три випадкових найближчих">Пошкодження $LightningDmg$ Блискавка Цілей 4 Зменшення пошкоджень $DmgDecrPerTarget$%</l>
+ <l lTarget = "Один ворог і три випадкових найближчих">Пошкодження $LightningDmg$ Блискавка Цілей 4 Зменшення пошкоджень $DmgDecrPerTarget$%</l>
+ <l lTarget = "Один ворог і чотири випадкових найближчих">Пошкодження $LightningDmg$ Блискавка Цілей 5 Зменшення пошкоджень $DmgDecrPerTarget$%</l>
+ </skill>
+ <skill name = "Electrification" locname = "Електризація" 
+descr = "Збільшуються критичні пошкодження і додається блискавка до атак">
+ <l lTarget = "Герой">Критичні пошкодження +$CrStrikeDmgPlus$% Атака блискавкою +$LightningDmgMod$% до загальної атаки</l>
+ <l lTarget = "Герой">Критичні пошкодження +$CrStrikeDmgPlus$% Атака блискавкою +$LightningDmgMod$% до загальної атаки</l>
+ <l lTarget = "Герой">Критичні пошкодження +$CrStrikeDmgPlus$% Атака блискавкою +$LightningDmgMod$% до загальної атаки</l>
+ </skill>
+ <skill name = "ThundeStorm" locname = "Гроза" 
+ descr = "Гігантські пошкодження блискавкою по всім ворогам на полі">
+ <l lTarget = "Всі вороги">Пошкодження $LightningDmg$ Блискавка</l>
+ <l lTarget = "Всі вороги">Пошкодження $LightningDmg$ Блискавка</l>
+ <l lTarget = "Всі вороги">Пошкодження $LightningDmg$ Блискавка</l>
+ </skill>
+ <skill name = "LifeDrain" locname = "Витягування життя" 
+ descr = "Атака життям по площы з выдновленням здоров'я героя Площа 9">
+ <l lTarget = "Всі вороги на площі 3x3 клітинки">Пошкодження $LifeDmg$ Життя Відхілювання $Healing$% від атаки</l>
+ <l lTarget = "Всі вороги на площі 3x3 клітинки">Пошкодження $LifeDmg$ Життя Відхілювання $Healing$% від атаки</l>
+ <l lTarget = "Всі вороги на площі 3x3 клітинки">Пошкодження $LifeDmg$ Життя Відхілювання $Healing$% від атаки</l>
+ <l lTarget = "Всі вороги на площі 3x3 клітинки">Пошкодження $LifeDmg$ Життя Відхілювання $Healing$% від атаки</l>
+ </skill>
+ <skill name = "Evolution" locname = "Еволюція"
+ descr = "Збільшує резіст до того типу пошкоджень який наноситься герою протягом часу дії">
+ <l lTarget = "Герой">Резіст +$AddDefVal$</l>
+ <l lTarget = "Герой">Резіст +$AddDefVal$</l>
+ </skill>
+ <skill name = "DeathBlossom" locname = "Смертоцвіт" 
+ descr = "Є шанс що ворог при своїй атаці отримує параліч і отруєння; Також при атаці ворог отримує пошкодженн життям">
+ <l lTarget = "Герой">Шанс на параліч і отруєння $ParalysisCh$%; Час дії паралічу $ParalysisTime$ Отруєння $PoisonDmg$ Життя на $PoisonTime$; Пошкодження $LifeDmg$ Життя</l>
+ <l lTarget = "Герой">Шанс на параліч і отруєння $ParalysisCh$%; Час дії паралічу $ParalysisTime$ Отруєння $PoisonDmg$ Життя на $PoisonTime$; Пошкодження $LifeDmg$ Життя</l>
+ <l lTarget = "Герой">Шанс на параліч і отруєння $ParalysisCh$%; Час дії паралічу $ParalysisTime$ Отруєння $PoisonDmg$ Життя на $PoisonTime$; Пошкодження $LifeDmg$ Життя</l>
+ <l lTarget = "Герой">Шанс на параліч і отруєння $ParalysisCh$%; Час дії паралічу $ParalysisTime$ Отруєння $PoisonDmg$ Життя на $PoisonTime$; Пошкодження $LifeDmg$ Життя</l>
+ </skill>
+</skills>

@@ -13,14 +13,12 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectGenerator>VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.1.0f3</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -307,17 +305,18 @@
     <Compile Include="Assets\Code\UIScripts\CameraZooming.cs" />
     <Compile Include="Assets\Code\UIScripts\ExitApp.cs" />
     <Compile Include="Assets\Code\UIScripts\SetResolution.cs" />
-    <Compile Include="Assets\Resources\xml\Loader.cs" />
+    <Compile Include="Assets\Code\UIScripts\SkillTreeScene\Loader.cs" />
+    <Compile Include="Assets\Code\UIScripts\SkillTreeScene\ShowSkillDescr.cs" />
+    <Compile Include="Assets\Code\UIScripts\SkillTreeScene\skillButtonChangerData.cs" />
+    <Compile Include="Assets\Code\UIScripts\SkillTreeScene\skillData.cs" />
     <Compile Include="Assets\Scenes\SceneManager.cs" />
-    <Compile Include="Assets\Scenes\ShowSkillDescr.cs" />
-    <Compile Include="Assets\skillButtonChangerData.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Resources\xml\skills.xml" />
-    <None Include="Assets\Resources\xml\skillsLocENG.xml" />
-    <None Include="Assets\Resources\xml\skillsLocRU.xml" />
-    <None Include="Assets\Resources\xml\skillsLocUA.xml" />
-    <None Include="Assets\Resources\xml\skillsLocUAold.xml" />
+    <None Include="Assets\Resources\xml\skills\otherslLocStringsUA.xml" />
+    <None Include="Assets\Resources\xml\skills\skills.xml" />
+    <None Include="Assets\Resources\xml\skills\skillsLocENG.xml" />
+    <None Include="Assets\Resources\xml\skills\skillsLocRU.xml" />
+    <None Include="Assets\Resources\xml\skills\skillsLocUA.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
