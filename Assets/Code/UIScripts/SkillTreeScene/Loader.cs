@@ -65,8 +65,8 @@ namespace Assets.Code.UIScripts.SkillTreeScene
                     {
                         vValues.Add(new Dictionary<string, string>());
                         foreach (XElement vTag in el.Nodes())
-                        {
-                            vValues[vValues.Count - 1].Add(vTag.Attribute("name").Value, vTag.Value);
+                        {                          
+                                vValues[vValues.Count - 1].Add(vTag.Attribute("name").Value, vTag.Value);                       
                         }
                     }
                     ++levelIter;
@@ -74,7 +74,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
                  //saving data 
                 data.Add(new skillData(_levels, _name, _scname, lDataAP, lDataEne, vValues));
             }
-
+            // get localisation
             int iter = 0; // iter
             foreach (XElement item in skillLoc)
             {

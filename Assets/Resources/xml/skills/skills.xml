@@ -1032,7 +1032,6 @@
  </skill>
  <skill name = "FaceOfDeath" levels  = "5" scname = "as_FaceOfDeath">
  <l pEne = "180" pAP = "3">
- <v name = "Targets">All</v>
  <v name = "DeathDmg">60</v>
  <v name = "Regeneration">90</v>
  <v name = "DeathDef">2</v>
@@ -1043,7 +1042,6 @@
  <v name = "Targets">Self</v>
  </l>
  <l pEne = "220" pAP = "3">
- <v name = "Targets">All</v>
  <v name = "DeathDmg">90</v>
  <v name = "Regeneration">110</v>
  <v name = "DeathDef">2</v>
@@ -1054,7 +1052,6 @@
  <v name = "Targets">Self</v>
  </l>
  <l pEne = "260" pAP = "3">
- <v name = "Targets">All</v>
  <v name = "DeathDmg">120</v>
  <v name = "Regeneration">130</v>
  <v name = "DeathDef">2</v>
@@ -1065,7 +1062,6 @@
  <v name = "Targets">Self</v>
  </l>
  <l pEne = "300" pAP = "3">
- <v name = "Targets">All</v>
  <v name = "DeathDmg">150</v>
  <v name = "Regeneration">150</v>
  <v name = "DeathDef">2</v>
@@ -1076,7 +1072,6 @@
  <v name = "Targets">Self</v>
  </l>
  <l pEne = "340" pAP = "2">
- <v name = "Targets">All</v>
  <v name = "DeathDmg">180</v>
  <v name = "Regeneration">170</v>
  <v name = "DeathDef">2</v>
