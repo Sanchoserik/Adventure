@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scenes>
+<scene name = "MainMenu">
+ <el name = "CreateCharacterBtnText">Створити персонажа</el>
+ <el name = "SkillTreeTestText">Дерево навичок</el>
+ <el name = "OptionsBtnText">Налаштування</el>
+ <el name = "ExitBtnText">Вихід</el>
+ </scene>
+ <scene name = "Options">
+ <el name = "ReturnButtonText">Повернутися</el>
+ </scene>
+ <scene name = "SkillTree">
+ <el name = "TacticianButtonText">Тактик</el>
+ <el name = "WarriorButtonText">Воїн</el>
+ <el name = "AssassinButtonText">Вбивця</el>
+ <el name = "BruiserButtonText">Громила</el>
+ <el name = "ReturnButtonText">Повернутися</el>
+ <el name = "CostAP">ֳЦіна очків дії:</el>
+ <el name = "CostEne">Ціна енергії:</el>
+ <el name = "Time">Час дії:</el>
+ <el name = "Targets">Цілі:</el>
+ </scene>
+ </scenes>

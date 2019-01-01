@@ -13,7 +13,6 @@ namespace Assets.Code.UIScripts.SkillTreeScene
         public List<skillData> data = new List<skillData>();// data from xml   
         public GameObject skillDataReader;
 
-
         void Start()
         {
             DontDestroyOnLoad(gameObject); //Allows Loader to carry over into new scene LoadXML (); 

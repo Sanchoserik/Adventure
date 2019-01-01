@@ -304,7 +304,12 @@
     <Compile Include="Assets\Code\Skills\Warrior\sw_TripleCut.cs" />
     <Compile Include="Assets\Code\Skills\Warrior\sw_Tsunami.cs" />
     <Compile Include="Assets\Code\Skills\Warrior\sw_WaterPrison.cs" />
+    <Compile Include="Assets\Code\SystemScripts\AppParameters.cs" />
+    <Compile Include="Assets\Code\SystemScripts\LoadLocalisation.cs" />
+    <Compile Include="Assets\Code\SystemScripts\LocalisationData.cs" />
+    <Compile Include="Assets\Code\SystemScripts\LocaliseScene.cs" />
     <Compile Include="Assets\Code\UIScripts\CameraZooming.cs" />
+    <Compile Include="Assets\Code\UIScripts\ChangeLanguage.cs" />
     <Compile Include="Assets\Code\UIScripts\ExitApp.cs" />
     <Compile Include="Assets\Code\UIScripts\SetResolution.cs" />
     <Compile Include="Assets\Code\UIScripts\SkillTreeScene\Loader.cs" />
@@ -314,7 +319,8 @@
     <Compile Include="Assets\Scenes\SceneManager.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Resources\xml\skills\otherslLocStringsUA.xml" />
+    <None Include="Assets\Resources\xml\interfaceLoc\ENG.xml" />
+    <None Include="Assets\Resources\xml\interfaceLoc\UA.xml" />
     <None Include="Assets\Resources\xml\skills\skills.xml" />
     <None Include="Assets\Resources\xml\skills\skillsLocENG.xml" />
     <None Include="Assets\Resources\xml\skills\skillsLocRU.xml" />
