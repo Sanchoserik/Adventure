@@ -112,21 +112,21 @@
    <l pEne = "0" pAP = "0">
    <v name = "addAPPrice">2</v>
    <v name = "DamageBonusPercent">20</v>
-   <v name = "HEalingBonusPercent">20</v>
+   <v name = "HealingBonusPercent">20</v>
    <v name = "Time">1</v>
    <v name = "Targets">Self</v>   
    </l>
    <l pEne = "0" pAP = "0">
    <v name = "addAPPrice">2</v>
    <v name = "DamageBonusPercent">40</v>
-   <v name = "HEalingBonusPercent">40</v>
+   <v name = "HealingBonusPercent">40</v>
    <v name = "Time">1</v>
    <v name = "Targets">Self</v>
    </l>
    <l pEne = "0" pAP = "0">
    <v name = "addAPPrice">1</v>
    <v name = "DamageBonusPercent">60</v>
-   <v name = "HEalingBonusPercent">60</v>
+   <v name = "HealingBonusPercent">60</v>
    <v name = "Time">1</v>
    <v name = "Targets">Self</v>
    </l>
@@ -487,7 +487,7 @@
  <v name = "Targets">One Random</v>
  <v name = "DarknessDmg">240</v>
  <v name = "StunTime">1</v>
- <v name = "Time"></v>
+ <v name = "Time">4</v>
  </l>
  <l pEne = "270" pAP = "3">
  <v name = "Targets">One Random</v>

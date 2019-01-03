@@ -47,9 +47,9 @@
   </skill>
   <skill name = "Overcharge" locname = "Оверчардж" 
   descr = "Збільшити витрату ОД але також збільшити силу здібностей">
-  <l lTarget = "Герой">Ціна ОД +$addAPPrice$ Модифікатор Пошкоджень + $DamageBonusPercent$% Модифікатор Лікування + $HEalingBonusPercent$%</l>
-  <l lTarget = "Герой">Ціна ОД +$addAPPrice$ Модифікатор Пошкоджень + $DamageBonusPercent$% Модифікатор Лікування + $HEalingBonusPercent$%</l>
-  <l lTarget = "Герой">Ціна ОД +$addAPPrice$ Модифікатор Пошкоджень + $DamageBonusPercent$% Модифікатор Лікування + $HEalingBonusPercent$%</l>
+  <l lTarget = "Герой">Ціна ОД +$addAPPrice$ Модифікатор Пошкоджень + $DamageBonusPercent$% Модифікатор Лікування + $HealingBonusPercent$%</l>
+  <l lTarget = "Герой">Ціна ОД +$addAPPrice$ Модифікатор Пошкоджень + $DamageBonusPercent$% Модифікатор Лікування + $HealingBonusPercent$%</l>
+  <l lTarget = "Герой">Ціна ОД +$addAPPrice$ Модифікатор Пошкоджень + $DamageBonusPercent$% Модифікатор Лікування + $HealingBonusPercent$%</l>
   </skill>
   <skill name = "Synchronization" locname = "Синхронізація" 
   descr = "З кожною проведеною дією збільшуються модифікатори атаки і також дає додаткові захисні параметри; Тіласмани кожен хід відновлюють енергію">

@@ -10,10 +10,12 @@ namespace Assets.Code.SystemScripts
     public class LoadLocalisation : MonoBehaviour
     {
         private string path = "";
-        public static LocalisationData localisationData = new LocalisationData(); // localisation data storage
+        public static LocalisationData localisationData; //= new LocalisationData(); // localisation data storage
 
         private void Start()
         {
+            //reset localisation data storage 
+            localisationData = new LocalisationData();
             string lang = AppParameters.localisation;
             selectLocalisation(lang);
             DontDestroyOnLoad(gameObject);
