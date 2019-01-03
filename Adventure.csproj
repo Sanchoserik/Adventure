@@ -305,9 +305,10 @@
     <Compile Include="Assets\Code\Skills\Warrior\sw_Tsunami.cs" />
     <Compile Include="Assets\Code\Skills\Warrior\sw_WaterPrison.cs" />
     <Compile Include="Assets\Code\SystemScripts\AppParameters.cs" />
+    <Compile Include="Assets\Code\SystemScripts\GetLocalisation.cs" />
     <Compile Include="Assets\Code\SystemScripts\LoadLocalisation.cs" />
     <Compile Include="Assets\Code\SystemScripts\LocalisationData.cs" />
-    <Compile Include="Assets\Code\SystemScripts\LocaliseScene.cs" />
+    <Compile Include="Assets\Code\SystemScripts\LocaliseComponents.cs" />
     <Compile Include="Assets\Code\UIScripts\CameraZooming.cs" />
     <Compile Include="Assets\Code\UIScripts\ChangeLanguage.cs" />
     <Compile Include="Assets\Code\UIScripts\ExitApp.cs" />

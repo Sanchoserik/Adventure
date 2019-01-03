@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace Assets.Code.SystemScripts
 {
-    public class LocaliseScene : MonoBehaviour
+    public class LocaliseComponents : MonoBehaviour
     {
         public void localiseScene(LocalisationData _data)
         {
@@ -16,10 +17,13 @@ namespace Assets.Code.SystemScripts
 
             foreach (string key in sceneValues.Keys)
             {
-              
+                GameObject obj = GameObject.Find(key);
+                
+
+                Text _t = obj.GetComponent<Text>();
+                _t.text = sceneValues[key];
             }
-
-
+           
         }
     }
 }

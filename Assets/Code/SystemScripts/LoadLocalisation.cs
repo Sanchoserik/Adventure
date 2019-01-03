@@ -7,17 +7,20 @@ using UnityEngine;
 
 namespace Assets.Code.SystemScripts
 {
-    class LoadLocalisation : MonoBehaviour
+    public class LoadLocalisation : MonoBehaviour
     {
         private string path = "";
-        public LocalisationData lData = new LocalisationData();
+        public static LocalisationData localisationData = new LocalisationData(); // localisation data storage
 
         private void Start()
         {
             string lang = AppParameters.localisation;
             selectLocalisation(lang);
             DontDestroyOnLoad(gameObject);
-            LoadXML();     
+            LoadXML();
+
+            LocaliseComponents lsc = new LocaliseComponents();
+            lsc.localiseScene(localisationData); // localise scene from ldata       
         }
 
         void LoadXML()
@@ -39,7 +42,7 @@ namespace Assets.Code.SystemScripts
                    
                     values.Add(el.Attribute("name").Value, el.Value);
                 }
-                lData.locValues.Add(scName, values);
+                localisationData.locValues.Add(scName, values);
             }//end foreach
             //
 

@@ -2,7 +2,7 @@
 <scenes>
 <scene name = "MainMenu">
  <el name = "CreateCharacterBtnText">Create character</el>
- <el name = "SkillTreeTestText">Skill Tree</el>
+ <el name = "SkillTreeText">Skill Tree</el>
  <el name = "OptionsBtnText">Options</el>
  <el name = "ExitBtnText">Exit</el>
  </scene>

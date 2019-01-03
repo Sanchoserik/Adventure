@@ -2,7 +2,7 @@
 <scenes>
 <scene name = "MainMenu">
  <el name = "CreateCharacterBtnText">Створити персонажа</el>
- <el name = "SkillTreeTestText">Дерево навичок</el>
+ <el name = "SkillTreeText">Дерево навичок</el>
  <el name = "OptionsBtnText">Налаштування</el>
  <el name = "ExitBtnText">Вихід</el>
  </scene>

@@ -7,10 +7,10 @@ namespace Assets.Code.SystemScripts
 {
     public static class AppParameters
     {
-        public static string localisation = "ENG";
+        public static string localisation = "UA";
         // ENG - English
         // UA - Ukrainian
-
+      
         //get lang from ini
     }
 }
