@@ -6,7 +6,7 @@ using Assets.Items;
 using Assets.Effects;
 using Assets.Code.Skills;
 
-namespace Assets
+namespace Assets.Code
 {
     public class C_Hero
     {
@@ -17,44 +17,47 @@ namespace Assets
         public int baseMaxENE; // base max
         public int maxENE; // all max
         public int currENE;
-        
-        // s-20 m-50 g-80 u-100
-        public int baseFireDef;
-        public int baseAirDef;
-        public int baseLightningDef;
-        public int baseEarthDef;
-        public int baseWaterDef;
-        public int baseLifeDef;
-        public int baseDeathDef;
-        public int baseLightDef;
-        public int baseDarknessDef;
-        //from items
-        public int bonusFireDef;
-        public int bonusAirDef;
-        public int bonusLightningDef;
-        public int bonusEarthDef;
-        public int bonusWaterDef;
-        public int bonusLifeDef;
-        public int bonusDeathDef;
-        public int bonusLightDef;
-        public int bonusDarknessDef;
-        //total
-        public int totalFireDef;
-        public int totalAirDef;
-        public int totalLightningDef;
-        public int totalEarthDef;
-        public int totalWaterDef;
-        public int totalLifeDef;
-        public int totalDeathDef;
-        public int totalLightDef;
-        public int totalDarknessDef;
+
+        //base hero defence values
+        public DefenceParam physDef;
+        public DefenceParam fireDef;
+        public DefenceParam airDef;
+        public DefenceParam lightninhDef;
+        public DefenceParam earthDef;
+        public DefenceParam waterDef;
+        public DefenceParam lifeDef;
+        public DefenceParam deathDef;
+        public DefenceParam lightDef;
+        public DefenceParam darknessDef;
+        //changing value
+        public DefenceParam chPhysDef;
+        public DefenceParam chFireDef;
+        public DefenceParam chAirDef;
+        public DefenceParam chLightninhDef;
+        public DefenceParam chEarthDef;
+        public DefenceParam chWaterDef;
+        public DefenceParam chLifeDef;
+        public DefenceParam chDeathDef;
+        public DefenceParam chLightDef;
+        public DefenceParam chDarknessDef;
+        //Total hero def values  totalDefValue = defVal + chDefVal;
+        public DefenceParam tPhysDef;
+        public DefenceParam tFireDef;
+        public DefenceParam tAirDef;
+        public DefenceParam tLightninhDef;
+        public DefenceParam tEarthDef;
+        public DefenceParam tWaterDef;
+        public DefenceParam tLifeDef;
+        public DefenceParam tDeathDef;
+        public DefenceParam tLightDef;
+        public DefenceParam tDarknessDef;
 
         //base params
         public int baseStrength;
         public int baseEndurance;
         public int baseKnowledge;
         public int baseCharisma;
-        //bonus params
+        //bonus params 
         public int bonusStrength;
         public int bonusEndurance;
         public int bonusKnowledge;
@@ -73,17 +76,6 @@ namespace Assets
         public int pbonusTalismanStrength;
         public int pbonusCritChance;
         public int pbonusAP;
-        //bonus def from params
-        public int pbonusFireDef;
-        public int pbonusAirDef;
-        public int pbonusLightningDef;
-        public int pbonusEarthDef;
-        public int pbonusWaterDef;
-        public int pbonusLifeDef;
-        public int pbonusDeathDef;
-        public int pbonusLightDef;
-        public int pbonusDarknessDef;
-        //
 
         //AP - action Points
         public int baseAP;

@@ -82,6 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Code\C_Hero.cs" />
+    <Compile Include="Assets\Code\DefenceParam.cs" />
     <Compile Include="Assets\Code\Effects\A_Effect.cs" />
     <Compile Include="Assets\Code\Effects\airUp.cs" />
     <Compile Include="Assets\Code\Effects\darknessUp.cs" />
