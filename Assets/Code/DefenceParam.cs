@@ -11,7 +11,7 @@ namespace Assets.Code
         public int intValue;   //n - 0 s - 20 m - 50 g - 80 u - 100 
         public short shortValue; //0 1 2 3 4
 
-        //init
+        //init = 0 ;
         public DefenceParam()
         {
             strValue = "n";
