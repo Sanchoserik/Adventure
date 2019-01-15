@@ -96,6 +96,7 @@
     <Compile Include="Assets\Code\Effects\regENE.cs" />
     <Compile Include="Assets\Code\Effects\regHP.cs" />
     <Compile Include="Assets\Code\Effects\waterUp.cs" />
+    <Compile Include="Assets\Code\Hero_Serialization.cs" />
     <Compile Include="Assets\Code\Items\A_Card.cs" />
     <Compile Include="Assets\Code\Items\A_Item.cs" />
     <Compile Include="Assets\Code\Items\A_Talisman.cs" />

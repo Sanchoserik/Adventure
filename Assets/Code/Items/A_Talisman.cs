@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Code;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -96,11 +97,11 @@ namespace Assets.Items
 
             }
             
-            if (hero.gold >= price)
+            if (hero.money >= price)
             {
                 hero.inv_talismans.Add(talisman);
                 findId(hero);
-                hero.gold -= price;
+                hero.money -= price;
                 return true;
             }
             return false;
@@ -121,7 +122,7 @@ namespace Assets.Items
 
             }
 
-            hero.gold += price;
+            hero.money += price;
             dell(hero, talisman);
             findId(hero);
         }

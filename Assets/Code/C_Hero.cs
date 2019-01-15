@@ -5,9 +5,11 @@ using System.Text;
 using Assets.Items;
 using Assets.Effects;
 using Assets.Code.Skills;
+using System.Xml.Serialization;
 
 namespace Assets.Code
 {
+    [Serializable]
     public class C_Hero
     {
         public int baseMaxHP; // base max
