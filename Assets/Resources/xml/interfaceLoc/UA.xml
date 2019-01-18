@@ -20,4 +20,34 @@
  <el name = "Time">Час дії:</el>
  <el name = "Targets">Цілі:</el>
  </scene>
+ <scene name = "HeroEditor">
+ <el name ="NameText">Ім'я</el>
+ 
+ <el name ="StrengthText">Сила</el>
+ <el name ="EnduranceText"></el>
+ <el name ="KnowledgeText"></el>
+ <el name ="CharismaText"></el>
+ 
+ <el name ="ResistsText"></el>
+ <el name ="PhysDefText"></el>
+ <el name ="FireDefText"></el>
+ <el name ="AirDefText"></el>
+ <el name ="LightningDefText"></el>
+ <el name ="EarthDefText"></el>
+ <el name ="WaterDefText"></el>
+ <el name ="LightDefText"></el>
+ <el name ="DarknessDefText"></el>
+ <el name ="LifeDefText"></el>
+ <el name ="DeathDefText"></el>
+ 
+ <el name ="HPText"></el>
+ <el name ="EneText"></el>
+ <el name ="APText"></el>
+ <el name ="LevelText"></el>
+ <el name ="XPText"></el>
+ <el name ="NextLevelXPText"></el>
+ <el name ="AttributePointsText"></el>
+ <el name ="SkillPointsText"></el>
+ 
+ </scene>
  </scenes>
