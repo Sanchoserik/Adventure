@@ -11,6 +11,6 @@ namespace Assets.Code.SystemScripts
         // ENG - English
         // UA - Ukrainian
       
-        //get lang from ini
+        //TODO: get lang from ini file
     }
 }

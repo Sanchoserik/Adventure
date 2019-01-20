@@ -24,22 +24,22 @@ namespace Assets.Effects
         //remove from stack by id
         public void removeEff(C_Hero h, int id)
         {
-            h.eff_stack.Remove(h.eff_stack.Find(x => x.id == id));
+            h.effectsStorage.Remove(h.effectsStorage.Find(x => x.id == id));
         }
 
         //id operations
         private void fidId(C_Hero h)
         {
-            for (int i = 0; i < h.eff_stack.Count; ++i)
+            for (int i = 0; i < h.effectsStorage.Count; ++i)
             {
-                h.eff_stack[i].id = i + 1;
+                h.effectsStorage[i].id = i + 1;
             }
         }
         protected static int returnFreeId(C_Hero h)
         {
-            if (h.eff_stack.Count != 0)
+            if (h.effectsStorage.Count != 0)
             {
-                return h.eff_stack.Count;
+                return h.effectsStorage.Count;
             }
             else
                 return 1;

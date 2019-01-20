@@ -24,7 +24,7 @@ namespace Assets.Code
                 Debug.Log("Serialization Completed");
             }
 
-                int xx = 20;
+             
         }
     }
 }

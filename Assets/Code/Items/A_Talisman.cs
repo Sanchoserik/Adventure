@@ -35,15 +35,15 @@ namespace Assets.Items
         //move from inv to tInUSe
         public static void moveToOrder(C_Hero h, int pos, A_Talisman t)
         {
-            if (h.in_useTalismans[pos] == null)
+            if (h.inUseTalismansStorage[pos] == null)
             {
-                h.in_useTalismans[pos] = t;
+                h.inUseTalismansStorage[pos] = t;
                 dell(h, t);
             }
             else
             {
-                h.inv_talismans.Add(h.inv_talismans[pos]);
-                h.in_useTalismans[pos] = t;
+                h.mainTalismansStorage.Add(h.mainTalismansStorage[pos]);
+                h.inUseTalismansStorage[pos] = t;
                 dell(h, t);
             }
             findId(h);
@@ -51,23 +51,23 @@ namespace Assets.Items
         //move from InUse to Invertory
         public static void moveToInv(C_Hero h, int pos)
         {
-                h.inv_talismans.Add(h.inv_talismans[pos]);
-                h.in_useTalismans[pos] = null;
+                h.mainTalismansStorage.Add(h.mainTalismansStorage[pos]);
+                h.inUseTalismansStorage[pos] = null;
                 findId(h);                   
         }
 
         // tInUse1 <-> tInUse2
         public static void swapPosition(C_Hero h, int posX, int posY)
         {
-            A_Talisman t = h.in_useTalismans[posY];
-            h.in_useTalismans[posY] = h.in_useTalismans[posX];
-            h.in_useTalismans[posX] = t;
+            A_Talisman t = h.inUseTalismansStorage[posY];
+            h.inUseTalismansStorage[posY] = h.inUseTalismansStorage[posX];
+            h.inUseTalismansStorage[posX] = t;
         }
       
         //dell from inv
         public static void dell(C_Hero h, A_Talisman t)
         {
-            h.inv_talismans.Remove(h.inv_talismans.Find(x => x.id == t.id));
+            h.mainTalismansStorage.Remove(h.mainTalismansStorage.Find(x => x.id == t.id));
             // findId's in inv
             findId(h);
         }
@@ -75,9 +75,9 @@ namespace Assets.Items
         //rename id in invertory
         private static void findId(C_Hero h)
         {
-            for (int i = 0; i < h.inv_talismans.Count; ++i)
+            for (int i = 0; i < h.mainTalismansStorage.Count; ++i)
             {
-                h.inv_talismans[i].id = i + 1;
+                h.mainTalismansStorage[i].id = i + 1;
             }
         }
 
@@ -99,7 +99,7 @@ namespace Assets.Items
             
             if (hero.money >= price)
             {
-                hero.inv_talismans.Add(talisman);
+                hero.mainTalismansStorage.Add(talisman);
                 findId(hero);
                 hero.money -= price;
                 return true;

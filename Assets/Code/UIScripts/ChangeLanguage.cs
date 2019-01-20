@@ -8,6 +8,6 @@ public class ChangeLanguage : MonoBehaviour {
     public void changeLang(string lang)
     {
         AppParameters.localisation = lang;
-        // perform loc
+        // TODO  do localisation
     }
 }

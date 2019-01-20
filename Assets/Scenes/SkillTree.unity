@@ -6662,13 +6662,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillTreeParent: {fileID: 327530612}
-  sName: {fileID: 429496789}
-  sDescr: {fileID: 1996849123}
-  sLevelDescr: {fileID: 862302063}
-  sAPCost: {fileID: 1636093327}
-  sEneCost: {fileID: 1703955599}
-  sTime: {fileID: 967662714}
-  sTargets: {fileID: 1344432259}
+  skillName: {fileID: 429496789}
+  skillDescription: {fileID: 1996849123}
+  skillLevelDescription: {fileID: 862302063}
+  skillAPCost: {fileID: 1636093327}
+  skillEnergyCost: {fileID: 1703955599}
+  skillDuration: {fileID: 967662714}
+  skillTargets: {fileID: 1344432259}
 --- !u!4 &721076113
 Transform:
   m_ObjectHideFlags: 0

@@ -7,8 +7,8 @@ namespace Assets.Code.SystemScripts
 {
     public class LocalisationData
     {
+        //  Dictionary<sceneName, Dictionary<gameObjectName, Value>>
         public Dictionary<string, Dictionary<string, string>> locValues;
-                         // sceneName  gameObjName  Value 
 
         public LocalisationData()
         {

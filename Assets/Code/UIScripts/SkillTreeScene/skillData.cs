@@ -5,32 +5,33 @@ using System.Text;
 
 namespace Assets.Code.UIScripts.SkillTreeScene
 {
-    public class skillData
-    {
-        public short levels; // level count
-        public short currLevel; // current level
-        public string name; // skill name
-        public string scName; //scriptname
-        public Dictionary<int, string> lcAP; // ap price
-        public Dictionary<int, string> lcEne; // ene price
-        public List<Dictionary<string, string>> vValues; // level values
 
-        //localisation
-        public string locName; // skill localised name
-        public List<string> locDescr; // skill level description
-        public string sDescr; // skil description
-        public List<string> locTargets; // localised skill targets 
+    public class skillDataStorage
+    {
+        //skill main data
+        public short skillLevels; 
+        public short skillCurentLevel; 
+        public string skillName; 
+        public string skillScriptName; 
+        public Dictionary<int, string> skillAPCost; 
+        public Dictionary<int, string> skillEneCost; 
+        public List<Dictionary<string, string>> skillValues; 
+        //skill Localisation data
+        public string skillLocalisadName; // skill localised name
+        public List<string> skillLocalisedLevelDescription; // skill level description
+        public string skillMainDescription; // skil description
+        public List<string> skillTargetsDescription; // localised skill targets 
 
         // Create a constructor that will accept multiple arguments that can be assigned to our variables. 
-        public skillData(short _levels, string _name, string _scname, Dictionary<int, string> _lcAP,
+        public skillDataStorage(short _levels, string _name, string _scname, Dictionary<int, string> _lcAP,
             Dictionary<int, string> _lcEne, List<Dictionary<string, string>> _vValues)
         {
-            levels = _levels;
-            name = _name;
-            scName = _scname;
-            lcAP = _lcAP;
-            lcEne = _lcEne;
-            vValues = _vValues;         
+            skillLevels = _levels;
+            skillName = _name;
+            skillScriptName = _scname;
+            skillAPCost = _lcAP;
+            skillEneCost = _lcEne;
+            skillValues = _vValues;         
         }//end fun
     }//end class
 }

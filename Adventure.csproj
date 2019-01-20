@@ -315,7 +315,7 @@
     <Compile Include="Assets\Code\UIScripts\ChangeLanguage.cs" />
     <Compile Include="Assets\Code\UIScripts\ExitApp.cs" />
     <Compile Include="Assets\Code\UIScripts\SetResolution.cs" />
-    <Compile Include="Assets\Code\UIScripts\SkillTreeScene\Loader.cs" />
+    <Compile Include="Assets\Code\UIScripts\SkillTreeScene\skillsLoaderFromXML.cs" />
     <Compile Include="Assets\Code\UIScripts\SkillTreeScene\ShowSkillDescr.cs" />
     <Compile Include="Assets\Code\UIScripts\SkillTreeScene\skillButtonChangerData.cs" />
     <Compile Include="Assets\Code\UIScripts\SkillTreeScene\skillData.cs" />

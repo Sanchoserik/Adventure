@@ -81,9 +81,10 @@
   <totalAP>0</totalAP>
   <currAP>0</currAP>
   <money>0</money>
-  <inv_items />
-  <inv_talismans />
-  <eff_stack />
+  <mainItemsStorage />
+  <mainTalismansStorage />
+  <inUseTalismansStorage />
+  <effectsStorage />
   <skillList />
   <skillPoints>0</skillPoints>
   <attributePoints>0</attributePoints>

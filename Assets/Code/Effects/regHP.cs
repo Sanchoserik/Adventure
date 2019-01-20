@@ -19,10 +19,10 @@ namespace Assets.Effects
             id = returnFreeId(h);           
         }
 
-        //add this to hero eff_stack
+        //add this to hero effectsStorage
         public override void addToEffStack(C_Hero h)
         {
-            h.eff_stack.Add(this);
+            h.effectsStorage.Add(this);
         }
 
         //

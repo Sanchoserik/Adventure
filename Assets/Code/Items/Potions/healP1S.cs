@@ -20,7 +20,7 @@ namespace Assets.Items.Potions
             h.currHP += Convert.ToInt32(h.maxHP * 0.3);
             if (h.currHP > h.maxHP) h.currHP = h.maxHP;
 
-            dell(h.inv_items, this.id);
+            dell(h.mainItemsStorage, this.id);
         }
 
     }

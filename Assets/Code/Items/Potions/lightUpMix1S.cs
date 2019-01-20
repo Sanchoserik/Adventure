@@ -20,7 +20,7 @@ namespace Assets.Items.Potions
             A_Effect eff = new lightUp(20, 4, h);
             eff.addToEffStack(h);
 
-            dell(h.inv_items, this.id);
+            dell(h.mainItemsStorage, this.id);
         }
     }
 }

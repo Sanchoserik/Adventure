@@ -19,7 +19,7 @@ namespace Assets.Items.Potions
             A_Effect eff = new deathUp(50, 5, h);
             eff.addToEffStack(h);
 
-            dell(h.inv_items, this.id);
+            dell(h.mainItemsStorage, this.id);
         }
     }
 }

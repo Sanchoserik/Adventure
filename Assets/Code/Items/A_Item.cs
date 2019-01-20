@@ -62,7 +62,7 @@ namespace Assets.Items
 
             if (hero.money >= price)
             {
-                hero.inv_items.Add(item);
+                hero.mainItemsStorage.Add(item);
                 findid(hero);
                 hero.money -= price;
                 return true;
@@ -112,25 +112,25 @@ namespace Assets.Items
             }
 
             hero.money += price;
-            dell(hero.inv_items, item.id);
+            dell(hero.mainItemsStorage, item.id);
             findid(hero);
         }
 
         //id funcs
         public static void findid(C_Hero h)
         {
-            for (int i = 0; i < h.inv_items.Count; ++i)
+            for (int i = 0; i < h.mainItemsStorage.Count; ++i)
             {
-                h.inv_items[i].id = i + 1;
+                h.mainItemsStorage[i].id = i + 1;
             }
             
         }
 
         protected int returnFreeId(C_Hero h)
         {
-            if (h.inv_items.Count != 0)
+            if (h.mainItemsStorage.Count != 0)
             {
-                return h.inv_items.Count;
+                return h.mainItemsStorage.Count;
             }
             else
                 return 1;

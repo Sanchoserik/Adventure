@@ -7,11 +7,10 @@ namespace Assets.Code
 {
     public class DefenceParam
     {
-        public string strValue; //n - none s - small m - medium g - greater u - ultra
-        public int intValue;   //n - 0 s - 20 m - 50 g - 80 u - 100 
+        public string strValue;  //n - none s - small m - medium g - greater u - ultra
+        public int intValue;     //n - 0 s - 20 m - 50 g - 80 u - 100 
         public short shortValue; //0 1 2 3 4
-
-        //init = 0 ;
+     
         public DefenceParam()
         {
             strValue = "n";
@@ -25,7 +24,7 @@ namespace Assets.Code
             shortValue = _shrtVal;
             intValue = _intVal;
         }
-        //restore value
+        
         public void setValue()
         {
             switch (shortValue)
@@ -37,7 +36,7 @@ namespace Assets.Code
                 case 4: { intValue = 100; strValue = "u"; break; }
             }
         }
-        //change value
+       
         public void changeValue(short _val)
         {
             shortValue += _val;

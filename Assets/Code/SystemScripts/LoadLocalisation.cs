@@ -10,19 +10,20 @@ namespace Assets.Code.SystemScripts
     public class LoadLocalisation : MonoBehaviour
     {
         private string path = "";
-        public static LocalisationData localisationData; //= new LocalisationData(); // localisation data storage
+        public static LocalisationData localisationDataStorage; 
 
         private void Start()
         {
             //reset localisation data storage 
-            localisationData = new LocalisationData();
+            localisationDataStorage = new LocalisationData();
+
             string lang = AppParameters.localisation;
-            selectLocalisation(lang);
+            selectLocalisationLanguage(lang);
             DontDestroyOnLoad(gameObject);
             LoadXML();
 
             LocaliseComponents lsc = new LocaliseComponents();
-            lsc.localiseScene(localisationData); // localise scene from ldata       
+            lsc.localiseScene(localisationDataStorage); // localise scene from ldata       
         }
 
         void LoadXML()
@@ -44,13 +45,11 @@ namespace Assets.Code.SystemScripts
                    
                     values.Add(el.Attribute("name").Value, el.Value);
                 }
-                localisationData.locValues.Add(scName, values);
-            }//end foreach
-            //
-
+                localisationDataStorage.locValues.Add(scName, values);
+            }
         }//end LoadXML
 
-        void selectLocalisation(string _lang)
+        void selectLocalisationLanguage(string _lang)
         {
             switch (_lang)
             {
