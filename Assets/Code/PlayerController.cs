@@ -8,9 +8,11 @@ namespace Assets.Code
 {
     class PlayerController : MonoBehaviour 
     {
+        public C_Hero hero;
+
         private void Start()
         {
-            C_Hero newHero = new C_Hero(); 
+            hero = new C_Hero();
         }
 
 

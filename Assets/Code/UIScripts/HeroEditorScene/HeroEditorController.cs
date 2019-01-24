@@ -8,14 +8,37 @@ namespace Assets.Code.UIScripts.HeroEditorScene
 {
     class HeroEditorController : MonoBehaviour
     {
-        private void Start()
+        public PlayerController controller;
+        interfaceCommand inputCommand;
+
+        void Start()
         {
             
         }
 
-        public void buttonInput(PlusMinusButtonInputData inputData)
+        private void Update()
         {
             
+        }
+
+      
+        public void buttonInput(PlusMinusButtonInputData commandData)
+        {
+            switchCommandType(commandData);
+            inputCommand.execute();
+        }
+        private void switchCommandType(PlusMinusButtonInputData data )
+        {
+            switch (data.commandName)
+            {
+                case "attrChange": { setCommand(new commandAttributeChange(controller.hero, data)); break; }
+                case "defValChange": { setCommand(new commandDefenceValueChange(controller.hero, data)); break; }
+                case "levelChange": { setCommand(new commandLevelChange(controller.hero, data)); break; }
+            }
+        }
+        private void setCommand(interfaceCommand command)
+        {
+            inputCommand = command;
         }
     }
 }

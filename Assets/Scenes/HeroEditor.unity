@@ -108,6 +108,49 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &2256058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2256059}
+  - component: {fileID: 2256060}
+  m_Layer: 0
+  m_Name: dAirDefP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2256059
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2256058}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2256060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2256058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 1
+  functionMessage: air
+  commandName: defValChange
 --- !u!1 &30922833
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,6 +441,49 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224710065262632108, guid: 3028071192f3d6948bf251a97ac8297e,
     type: 2}
   m_PrefabInternal: {fileID: 72258361}
+--- !u!1 &78315501
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 78315502}
+  - component: {fileID: 78315503}
+  m_Layer: 0
+  m_Name: dDarknessDefP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &78315502
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 78315501}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &78315503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 78315501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 1
+  functionMessage: darkness
+  commandName: defValChange
 --- !u!1001 &115661457
 Prefab:
   m_ObjectHideFlags: 0
@@ -512,6 +598,49 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224710065262632108, guid: 3028071192f3d6948bf251a97ac8297e,
     type: 2}
   m_PrefabInternal: {fileID: 115661457}
+--- !u!1 &193912120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 193912121}
+  - component: {fileID: 193912122}
+  m_Layer: 0
+  m_Name: aKnowledgeP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &193912121
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 193912120}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &193912122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 193912120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 1
+  functionMessage: knd
+  commandName: attrChange
 --- !u!1001 &196471505
 Prefab:
   m_ObjectHideFlags: 0
@@ -519,6 +648,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -618,6 +752,36 @@ Prefab:
       propertyPath: m_Name
       value: DarknessDefPB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 78315503}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -854,6 +1018,92 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224710065262632108, guid: 3028071192f3d6948bf251a97ac8297e,
     type: 2}
   m_PrefabInternal: {fileID: 303249638}
+--- !u!1 &305749355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 305749356}
+  - component: {fileID: 305749357}
+  m_Layer: 0
+  m_Name: aStrengthP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &305749356
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 305749355}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &305749357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 305749355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 1
+  functionMessage: str
+  commandName: attrChange
+--- !u!1 &357649407
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 357649408}
+  - component: {fileID: 357649409}
+  m_Layer: 0
+  m_Name: dLightDefM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &357649408
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 357649407}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &357649409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 357649407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 0
+  functionMessage: light
+  commandName: defValChange
 --- !u!1001 &383722231
 Prefab:
   m_ObjectHideFlags: 0
@@ -861,6 +1111,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -960,6 +1215,36 @@ Prefab:
       propertyPath: m_Name
       value: AirDefPB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2256060}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -1310,6 +1595,49 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224710065262632108, guid: 3028071192f3d6948bf251a97ac8297e,
     type: 2}
   m_PrefabInternal: {fileID: 425714094}
+--- !u!1 &433229562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 433229563}
+  - component: {fileID: 433229564}
+  m_Layer: 0
+  m_Name: aStrengthM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &433229563
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 433229562}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &433229564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 433229562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 0
+  functionMessage: str
+  commandName: attrChange
 --- !u!1001 &467366503
 Prefab:
   m_ObjectHideFlags: 0
@@ -1317,6 +1645,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -1418,6 +1751,36 @@ Prefab:
       propertyPath: m_Name
       value: ChrMinusB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 607239424}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -1770,6 +2133,49 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224710065262632108, guid: 3028071192f3d6948bf251a97ac8297e,
     type: 2}
   m_PrefabInternal: {fileID: 548080977}
+--- !u!1 &549364175
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 549364176}
+  - component: {fileID: 549364177}
+  m_Layer: 0
+  m_Name: dPhysicalDefM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &549364176
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 549364175}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &549364177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 549364175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 0
+  functionMessage: physical
+  commandName: defValChange
 --- !u!1 &552066884
 GameObject:
   m_ObjectHideFlags: 0
@@ -2141,6 +2547,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -2242,6 +2653,36 @@ Prefab:
       propertyPath: m_Name
       value: PhysicalDefMB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 549364177}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -2481,6 +2922,49 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224710065262632108, guid: 3028071192f3d6948bf251a97ac8297e,
     type: 2}
   m_PrefabInternal: {fileID: 606089752}
+--- !u!1 &607239422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 607239423}
+  - component: {fileID: 607239424}
+  m_Layer: 0
+  m_Name: aCharismaM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &607239423
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 607239422}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &607239424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 607239422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 0
+  functionMessage: chr
+  commandName: attrChange
 --- !u!1001 &612042485
 Prefab:
   m_ObjectHideFlags: 0
@@ -2711,6 +3195,49 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224710065262632108, guid: 3028071192f3d6948bf251a97ac8297e,
     type: 2}
   m_PrefabInternal: {fileID: 630383369}
+--- !u!1 &696992028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 696992029}
+  - component: {fileID: 696992030}
+  m_Layer: 0
+  m_Name: dEarthDefM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &696992029
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 696992028}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &696992030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 696992028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 0
+  functionMessage: earth
+  commandName: defValChange
 --- !u!1001 &706566997
 Prefab:
   m_ObjectHideFlags: 0
@@ -2718,6 +3245,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -2817,6 +3349,36 @@ Prefab:
       propertyPath: m_Name
       value: LightDefPB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2126855763}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -2825,6 +3387,77 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
     type: 2}
   m_PrefabInternal: {fileID: 706566997}
+--- !u!1 &731486933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 731486935}
+  - component: {fileID: 731486934}
+  m_Layer: 0
+  m_Name: HeroEditorController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &731486934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 731486933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eec4a8bf40c0f5b49a46892505005499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1308168652}
+--- !u!4 &731486935
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 731486933}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 484.81134, y: 570.7465, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 433229563}
+  - {fileID: 305749356}
+  - {fileID: 1872968379}
+  - {fileID: 1180481732}
+  - {fileID: 1584112992}
+  - {fileID: 193912121}
+  - {fileID: 607239423}
+  - {fileID: 1063577977}
+  - {fileID: 549364176}
+  - {fileID: 1107152294}
+  - {fileID: 1386818807}
+  - {fileID: 1506333114}
+  - {fileID: 1934773764}
+  - {fileID: 2256059}
+  - {fileID: 1636654331}
+  - {fileID: 1400846818}
+  - {fileID: 696992029}
+  - {fileID: 916122244}
+  - {fileID: 1635411788}
+  - {fileID: 1180146480}
+  - {fileID: 357649408}
+  - {fileID: 2126855762}
+  - {fileID: 1157394113}
+  - {fileID: 78315502}
+  - {fileID: 1871744484}
+  - {fileID: 1360884694}
+  - {fileID: 1005551424}
+  - {fileID: 1990438467}
+  - {fileID: 1418549203}
+  - {fileID: 1862316805}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &783893392
 Prefab:
   m_ObjectHideFlags: 0
@@ -2832,6 +3465,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -2931,6 +3569,36 @@ Prefab:
       propertyPath: m_Name
       value: ChrPlusB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1063577978}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -2946,6 +3614,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -3047,6 +3720,36 @@ Prefab:
       propertyPath: m_Name
       value: AirDefMB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1934773765}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -3062,6 +3765,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -3161,6 +3869,36 @@ Prefab:
       propertyPath: m_Name
       value: PhysicalDefPB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1107152295}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -3169,6 +3907,49 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
     type: 2}
   m_PrefabInternal: {fileID: 855772420}
+--- !u!1 &916122243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 916122244}
+  - component: {fileID: 916122245}
+  m_Layer: 0
+  m_Name: dEarthDefP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &916122244
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 916122243}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &916122245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 916122243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 1
+  functionMessage: earth
+  commandName: defValChange
 --- !u!1001 &932365146
 Prefab:
   m_ObjectHideFlags: 0
@@ -3176,6 +3957,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -3277,6 +4063,36 @@ Prefab:
       propertyPath: m_Name
       value: WaterDefMB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1635411789}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -3522,6 +4338,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -3623,6 +4444,36 @@ Prefab:
       propertyPath: m_Name
       value: DeathDefMB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1005551425}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -3752,6 +4603,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -3853,6 +4709,36 @@ Prefab:
       propertyPath: m_Name
       value: DarknessDefMB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1157394114}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -3861,6 +4747,49 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
     type: 2}
   m_PrefabInternal: {fileID: 997950667}
+--- !u!1 &1005551423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1005551424}
+  - component: {fileID: 1005551425}
+  m_Layer: 0
+  m_Name: dDeathDefM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1005551424
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1005551423}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1005551425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1005551423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 0
+  functionMessage: death
+  commandName: defValChange
 --- !u!1001 &1054787659
 Prefab:
   m_ObjectHideFlags: 0
@@ -3977,6 +4906,49 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224710065262632108, guid: 3028071192f3d6948bf251a97ac8297e,
     type: 2}
   m_PrefabInternal: {fileID: 1054787659}
+--- !u!1 &1063577976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1063577977}
+  - component: {fileID: 1063577978}
+  m_Layer: 0
+  m_Name: aCharismaP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1063577977
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1063577976}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1063577978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1063577976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 1
+  functionMessage: chr
+  commandName: attrChange
 --- !u!1001 &1079106682
 Prefab:
   m_ObjectHideFlags: 0
@@ -4217,6 +5189,49 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224710065262632108, guid: 3028071192f3d6948bf251a97ac8297e,
     type: 2}
   m_PrefabInternal: {fileID: 1106594062}
+--- !u!1 &1107152293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1107152294}
+  - component: {fileID: 1107152295}
+  m_Layer: 0
+  m_Name: dPhysicalDefP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1107152294
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1107152293}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1107152295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1107152293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 1
+  functionMessage: physical
+  commandName: defValChange
 --- !u!1001 &1108717521
 Prefab:
   m_ObjectHideFlags: 0
@@ -4224,6 +5239,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -4325,6 +5345,36 @@ Prefab:
       propertyPath: m_Name
       value: StrMinusB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 433229564}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -4454,6 +5504,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -4553,6 +5608,36 @@ Prefab:
       propertyPath: m_Name
       value: FireDefPB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1506333115}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -5022,6 +6107,49 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224710065262632108, guid: 3028071192f3d6948bf251a97ac8297e,
     type: 2}
   m_PrefabInternal: {fileID: 1155115655}
+--- !u!1 &1157394112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1157394113}
+  - component: {fileID: 1157394114}
+  m_Layer: 0
+  m_Name: dDarknessDefM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1157394113
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1157394112}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1157394114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1157394112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 0
+  functionMessage: darkness
+  commandName: defValChange
 --- !u!1001 &1168077896
 Prefab:
   m_ObjectHideFlags: 0
@@ -5029,6 +6157,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -5128,6 +6261,46 @@ Prefab:
       propertyPath: m_Name
       value: EndPlusB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1180481733}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -5250,6 +6423,92 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224710065262632108, guid: 3028071192f3d6948bf251a97ac8297e,
     type: 2}
   m_PrefabInternal: {fileID: 1177815319}
+--- !u!1 &1180146479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1180146480}
+  - component: {fileID: 1180146481}
+  m_Layer: 0
+  m_Name: dWaterDefP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1180146480
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1180146479}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1180146481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1180146479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 1
+  functionMessage: water
+  commandName: defValChange
+--- !u!1 &1180481731
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1180481732}
+  - component: {fileID: 1180481733}
+  m_Layer: 0
+  m_Name: aEnduranceP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1180481732
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1180481731}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1180481733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1180481731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 1
+  functionMessage: end
+  commandName: attrChange
 --- !u!1001 &1215385365
 Prefab:
   m_ObjectHideFlags: 0
@@ -5602,6 +6861,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1308168651}
+  - component: {fileID: 1308168652}
   m_Layer: 0
   m_Name: PlayerController
   m_TagString: Untagged
@@ -5622,6 +6882,54 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1308168652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1308168650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17832a3cf154c5d4cb2eb36e76bb4ffe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hero:
+    baseMaxHP: 200
+    maxHP: 0
+    currHP: 200
+    baseMaxENE: 100
+    maxENE: 0
+    currENE: 100
+    baseStrength: 1
+    baseEndurance: 1
+    baseKnowledge: 1
+    baseCharisma: 1
+    bonusStrength: 0
+    bonusEndurance: 0
+    bonusKnowledge: 0
+    bonusCharisma: 0
+    totalStrength: 0
+    totalEndurance: 0
+    totalKnowledge: 0
+    totalCharisma: 0
+    pbonusHP: 0
+    pbonusSP: 0
+    pbonusPhysAtkStrength: 0
+    pbonusMagAtkStrength: 0
+    pbonusTalismanStrength: 0
+    pbonusCritChance: 0
+    critChance: 1
+    critDamageMod: 2
+    baseAP: 4
+    bonusAP: 0
+    totalAP: 0
+    currAP: 0
+    money: 0
+    skillPoints: 0
+    attributePoints: 0
+    level: 0
+    currExp: 0
+    nextLevelExp: 100
 --- !u!1001 &1318729643
 Prefab:
   m_ObjectHideFlags: 0
@@ -5629,6 +6937,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -5730,6 +7043,36 @@ Prefab:
       propertyPath: m_Name
       value: LightningDefMB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1636654332}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -5745,6 +7088,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -5844,6 +7192,36 @@ Prefab:
       propertyPath: m_Name
       value: WaterDefPB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1180146481}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -5852,6 +7230,92 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
     type: 2}
   m_PrefabInternal: {fileID: 1344821320}
+--- !u!1 &1360884693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1360884694}
+  - component: {fileID: 1360884695}
+  m_Layer: 0
+  m_Name: dLifeDefP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1360884694
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1360884693}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1360884695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1360884693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 1
+  functionMessage: life
+  commandName: defValChange
+--- !u!1 &1386818806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1386818807}
+  - component: {fileID: 1386818808}
+  m_Layer: 0
+  m_Name: dFireDefM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1386818807
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1386818806}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1386818808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1386818806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 0
+  functionMessage: fire
+  commandName: defValChange
 --- !u!1001 &1400722953
 Prefab:
   m_ObjectHideFlags: 0
@@ -5859,6 +7323,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -5960,6 +7429,36 @@ Prefab:
       propertyPath: m_Name
       value: KndMinusB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1584112993}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -5968,6 +7467,49 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
     type: 2}
   m_PrefabInternal: {fileID: 1400722953}
+--- !u!1 &1400846817
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1400846818}
+  - component: {fileID: 1400846819}
+  m_Layer: 0
+  m_Name: dLightningDefP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1400846818
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1400846817}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1400846819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1400846817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 1
+  functionMessage: lightning
+  commandName: defValChange
 --- !u!1001 &1414920886
 Prefab:
   m_ObjectHideFlags: 0
@@ -6082,6 +7624,49 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224710065262632108, guid: 3028071192f3d6948bf251a97ac8297e,
     type: 2}
   m_PrefabInternal: {fileID: 1414920886}
+--- !u!1 &1418549202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1418549203}
+  - component: {fileID: 1418549204}
+  m_Layer: 0
+  m_Name: lcLevelM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1418549203
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1418549202}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1418549204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1418549202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 0
+  functionMessage: 
+  commandName: levelChange
 --- !u!1001 &1452187744
 Prefab:
   m_ObjectHideFlags: 0
@@ -6401,6 +7986,49 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1506333113
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1506333114}
+  - component: {fileID: 1506333115}
+  m_Layer: 0
+  m_Name: dFireDefP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1506333114
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1506333113}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1506333115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1506333113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 1
+  functionMessage: fire
+  commandName: defValChange
 --- !u!1001 &1514612351
 Prefab:
   m_ObjectHideFlags: 0
@@ -6522,6 +8150,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -6623,6 +8256,36 @@ Prefab:
       propertyPath: m_Name
       value: FireDefMB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1386818808}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -6631,6 +8294,49 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
     type: 2}
   m_PrefabInternal: {fileID: 1554339069}
+--- !u!1 &1584112991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1584112992}
+  - component: {fileID: 1584112993}
+  m_Layer: 0
+  m_Name: aKnowledgeM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1584112992
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1584112991}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1584112993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1584112991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 0
+  functionMessage: knd
+  commandName: attrChange
 --- !u!1001 &1594482654
 Prefab:
   m_ObjectHideFlags: 0
@@ -6638,6 +8344,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -6737,6 +8448,36 @@ Prefab:
       propertyPath: m_Name
       value: LifeDefPB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1360884695}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -6866,6 +8607,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -6965,6 +8711,36 @@ Prefab:
       propertyPath: m_Name
       value: LifeDefPB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1990438468}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -7087,6 +8863,92 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224710065262632108, guid: 3028071192f3d6948bf251a97ac8297e,
     type: 2}
   m_PrefabInternal: {fileID: 1615240611}
+--- !u!1 &1635411787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1635411788}
+  - component: {fileID: 1635411789}
+  m_Layer: 0
+  m_Name: dWaterDefM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1635411788
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1635411787}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1635411789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1635411787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 0
+  functionMessage: water
+  commandName: defValChange
+--- !u!1 &1636654330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1636654331}
+  - component: {fileID: 1636654332}
+  m_Layer: 0
+  m_Name: dLightningDefM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1636654331
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1636654330}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1636654332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1636654330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 0
+  functionMessage: lightning
+  commandName: defValChange
 --- !u!1001 &1655477474
 Prefab:
   m_ObjectHideFlags: 0
@@ -7566,6 +9428,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -7665,6 +9532,36 @@ Prefab:
       propertyPath: m_Name
       value: KndPlusB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 193912122}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -7680,6 +9577,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -7781,6 +9683,36 @@ Prefab:
       propertyPath: m_Name
       value: LifeDefMB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1871744485}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -7796,6 +9728,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -7897,6 +9834,36 @@ Prefab:
       propertyPath: m_Name
       value: EndMinusB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1872968380}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -7979,6 +9946,49 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1847291121}
+--- !u!1 &1862316804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1862316805}
+  - component: {fileID: 1862316806}
+  m_Layer: 0
+  m_Name: lcLevelP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1862316805
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1862316804}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1862316806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1862316804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 1
+  functionMessage: 
+  commandName: levelChange
 --- !u!1001 &1866069773
 Prefab:
   m_ObjectHideFlags: 0
@@ -7986,6 +9996,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -8085,6 +10100,36 @@ Prefab:
       propertyPath: m_Name
       value: LevelPlusB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1862316806}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -8093,6 +10138,92 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
     type: 2}
   m_PrefabInternal: {fileID: 1866069773}
+--- !u!1 &1871744483
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1871744484}
+  - component: {fileID: 1871744485}
+  m_Layer: 0
+  m_Name: dLifeDefM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1871744484
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1871744483}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1871744485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1871744483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 0
+  functionMessage: life
+  commandName: defValChange
+--- !u!1 &1872968378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1872968379}
+  - component: {fileID: 1872968380}
+  m_Layer: 0
+  m_Name: aEnduranceM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1872968379
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1872968378}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1872968380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1872968378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 0
+  functionMessage: end
+  commandName: attrChange
 --- !u!1001 &1874047252
 Prefab:
   m_ObjectHideFlags: 0
@@ -8100,6 +10231,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -8199,6 +10335,36 @@ Prefab:
       propertyPath: m_Name
       value: LightningDefPB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1400846819}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -8526,6 +10692,49 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224710065262632108, guid: 3028071192f3d6948bf251a97ac8297e,
     type: 2}
   m_PrefabInternal: {fileID: 1908450006}
+--- !u!1 &1934773763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1934773764}
+  - component: {fileID: 1934773765}
+  m_Layer: 0
+  m_Name: dAirDefM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1934773764
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1934773763}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1934773765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1934773763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 0
+  functionMessage: air
+  commandName: defValChange
 --- !u!1001 &1953486710
 Prefab:
   m_ObjectHideFlags: 0
@@ -8533,6 +10742,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -8634,6 +10848,36 @@ Prefab:
       propertyPath: m_Name
       value: LightDefMB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 357649409}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -8984,6 +11228,49 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224710065262632108, guid: 3028071192f3d6948bf251a97ac8297e,
     type: 2}
   m_PrefabInternal: {fileID: 1990117490}
+--- !u!1 &1990438466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1990438467}
+  - component: {fileID: 1990438468}
+  m_Layer: 0
+  m_Name: dDeathDefP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1990438467
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1990438466}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1990438468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1990438466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 1
+  functionMessage: death
+  commandName: defValChange
 --- !u!1001 &1997926670
 Prefab:
   m_ObjectHideFlags: 0
@@ -8991,6 +11278,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -9090,6 +11382,36 @@ Prefab:
       propertyPath: m_Name
       value: EarthDefPB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 916122245}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -9105,6 +11427,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -9206,6 +11533,36 @@ Prefab:
       propertyPath: m_Name
       value: LevelMinusB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1418549204}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -9337,6 +11694,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -9438,6 +11800,36 @@ Prefab:
       propertyPath: m_Name
       value: EarthDefMB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 696992030}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0
@@ -9446,6 +11838,49 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
     type: 2}
   m_PrefabInternal: {fileID: 2110475517}
+--- !u!1 &2126855761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2126855762}
+  - component: {fileID: 2126855763}
+  m_Layer: 0
+  m_Name: dLightDefP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2126855762
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2126855761}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731486935}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2126855763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2126855761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6b65886ed38f41847f18f975e7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 1
+  functionMessage: light
+  commandName: defValChange
 --- !u!1001 &2132413399
 Prefab:
   m_ObjectHideFlags: 0
@@ -9453,6 +11888,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1488594183}
     m_Modifications:
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224215600911357850, guid: e97a07c51d75f7a4690fe4de42d95af2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -9552,6 +11992,36 @@ Prefab:
       propertyPath: m_Name
       value: StrPlusB
       objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 731486934}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Assets.Code.UIScripts.HeroEditorScene.PlusMinusButtonInputData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133067156084024, guid: e97a07c51d75f7a4690fe4de42d95af2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 305749357}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97a07c51d75f7a4690fe4de42d95af2, type: 2}
   m_IsPrefabParent: 0

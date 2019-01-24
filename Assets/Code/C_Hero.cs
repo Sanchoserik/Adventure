@@ -10,7 +10,7 @@ using System.Xml.Serialization;
 namespace Assets.Code
 {
     [Serializable]
-    public class C_Hero
+    public class C_Hero 
     {
         public int baseMaxHP; 
         public int maxHP; 
@@ -155,7 +155,7 @@ namespace Assets.Code
 
         public void attributeMinus(string attribute)
         {
-
+          
         }
 
 
