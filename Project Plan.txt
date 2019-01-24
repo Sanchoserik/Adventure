@@ -1,0 +1,11 @@
+0.2 first Unity Build +
+0.2.1 Simple options menu +
+0.2.2 Skills.xml files +
+0.2.3 skillsTree scene & simple localisation +
+0.2.4 skillsTree scene Done +
+--->0.2.5 HeroEditorScene * IN PROGRESS 
+0.2.6 Hero Invertory
+0.2.7 Simple enemies 
+0.2.8 Battle arena test
+0.2.9 Improved AI?
+

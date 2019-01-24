@@ -193,6 +193,7 @@
     <Compile Include="Assets\Code\Items\Talismans\defWater3G.cs" />
     <Compile Include="Assets\Code\Items\Talismans\defWater4U.cs" />
     <Compile Include="Assets\Code\Monsters\C_Monster.cs" />
+    <Compile Include="Assets\Code\PlayerController.cs" />
     <Compile Include="Assets\Code\ScriptHelper\ScriptHelper.cs" />
     <Compile Include="Assets\Code\Skills\A_Skill.cs" />
     <Compile Include="Assets\Code\Skills\ActionScripts\A_AScript.cs" />
@@ -314,6 +315,12 @@
     <Compile Include="Assets\Code\UIScripts\CameraZooming.cs" />
     <Compile Include="Assets\Code\UIScripts\ChangeLanguage.cs" />
     <Compile Include="Assets\Code\UIScripts\ExitApp.cs" />
+    <Compile Include="Assets\Code\UIScripts\HeroEditorScene\commandAttributeChange.cs" />
+    <Compile Include="Assets\Code\UIScripts\HeroEditorScene\commandDefenceValueChange.cs" />
+    <Compile Include="Assets\Code\UIScripts\HeroEditorScene\commandLevelChange.cs" />
+    <Compile Include="Assets\Code\UIScripts\HeroEditorScene\HeroEditorController.cs" />
+    <Compile Include="Assets\Code\UIScripts\HeroEditorScene\interfaceCommand.cs" />
+    <Compile Include="Assets\Code\UIScripts\HeroEditorScene\PlusMinusButtonInputData.cs" />
     <Compile Include="Assets\Code\UIScripts\SetResolution.cs" />
     <Compile Include="Assets\Code\UIScripts\SkillTreeScene\skillsLoaderFromXML.cs" />
     <Compile Include="Assets\Code\UIScripts\SkillTreeScene\ShowSkillDescr.cs" />

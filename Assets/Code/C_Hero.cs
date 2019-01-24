@@ -147,5 +147,39 @@ namespace Assets.Code
             critDamageMod = 2.0f;
         }
 
+        //
+        public void attributePlus(string attribute)
+        {
+
+        }
+
+        public void attributeMinus(string attribute)
+        {
+
+        }
+
+
+        //
+        public void defenceValuePlus(string defValue)
+        {
+
+        }
+
+        public void defenceValueMinus(string defValue)
+        {
+
+        }
+
+
+        //
+        public void levelPlus()
+        {
+
+        }
+
+        public void levelMinus()
+        {
+
+        }
     }
 }

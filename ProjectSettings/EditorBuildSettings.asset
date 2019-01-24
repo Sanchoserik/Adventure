@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SkillTree.unity
     guid: 63057d33e15153b4a9f5848083ace42c
+  - enabled: 1
+    path: Assets/Scenes/HeroEditor.unity
+    guid: 8b8537cfa3a8afc459a84aec40d4d5ce
