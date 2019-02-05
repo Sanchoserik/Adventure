@@ -17,30 +17,24 @@ namespace Assets.Code
             shortValue = 0;
             intValue = 0;
         }
-        //advanved init
+        
         public DefenceParam(string _strVal, short _shrtVal, int _intVal)
         {
             strValue = _strVal;
             shortValue = _shrtVal;
             intValue = _intVal;
         }
-        
-        public void setValue()
-        {
-            switch (shortValue)
-            {
-                case 0: { intValue = 0; strValue = "n"; break; }
-                case 1: { intValue = 20; strValue = "s"; break; }
-                case 2: { intValue = 50; strValue = "m"; break; }
-                case 3: { intValue = 80; strValue = "g"; break; }
-                case 4: { intValue = 100; strValue = "u"; break; }
-            }
-        }
-       
+         
         public void changeValue(short _val)
         {
             shortValue += _val;
-            if (shortValue < 0) shortValue = 0; // cant go futher than 0
+            if (shortValue < 0) shortValue = 0; 
+            else if (shortValue > 4) shortValue = 4;
+            setValue();
+        }
+
+        private void setValue()
+        {
             switch (shortValue)
             {
                 case 0: { intValue = 0; strValue = "n"; break; }
@@ -50,6 +44,6 @@ namespace Assets.Code
                 case 4: { intValue = 100; strValue = "u"; break; }
             }
         }
-        
+
     }
 }

@@ -24,7 +24,7 @@ namespace Assets.Code
         public DefenceParam physDef;
         public DefenceParam fireDef;
         public DefenceParam airDef;
-        public DefenceParam lightninhDef;
+        public DefenceParam lightningDef;
         public DefenceParam earthDef;
         public DefenceParam waterDef;
         public DefenceParam lifeDef;
@@ -65,18 +65,23 @@ namespace Assets.Code
         public int bonusKnowledge;
         public int bonusCharisma;
         //total params
-        public int totalStrength;  // 1 str give +1 To allPhysAtkDamage 10 str give +2% to all PhysAtkDamage 
-        public int totalEndurance; // 1 end Gives 1 HP 10 end give 1% HP
-        public int totalKnowledge; // 1 kn gives +1 Talisman Power and +1 Energy 10 kn give 1% to all magical damage and + 1% Energy
-        public int totalCharisma;  // 1 Chr gives 1% to critical strike dmg 5 chr gives +1% critical strike chanse
+        public int totalStrength;  
+        public int totalEndurance; 
+        public int totalKnowledge; 
+        public int totalCharisma;  
 
-        //bonuses from params
-        public int pbonusHP;
-        public int pbonusSP;
-        public int pbonusPhysAtkStrength;
-        public int pbonusMagAtkStrength;
-        public int pbonusTalismanStrength;
-        public int pbonusCritChance;
+        //bonuses from attributes
+        public int bonusHP;
+        public int bonusHPPercent;
+        public int bonusENE;
+        public double bonusPhysAtkPercent;
+        public int bonusPhysAtkValue;
+        public double bonusMagAtkPercent;
+        public int bonusMagAtkValue;
+        public double bonusTalismanPowerPercent;
+        public int bonusTalismanPowerValue;
+        public int bonusCritDamageMod;
+        public int bonusCritChance;
         public int critChance;
         public float critDamageMod; // crit damage percent
         
@@ -132,7 +137,7 @@ namespace Assets.Code
             physDef = new DefenceParam();
             fireDef = new DefenceParam();
             airDef = new DefenceParam();
-            lightninhDef = new DefenceParam();
+            lightningDef = new DefenceParam();
             earthDef = new DefenceParam();
             waterDef = new DefenceParam();
             lifeDef = new DefenceParam();
@@ -150,24 +155,105 @@ namespace Assets.Code
         //
         public void attributePlus(string attribute)
         {
-
+            switch (attribute)
+            {
+                case "str": { baseStrength++; break; }
+                case "end": { baseEndurance++; break; }
+                case "knd": { baseKnowledge++; break; }
+                case "chr": { baseCharisma++; break; }
+            }
+            updateAttributes();
         }
 
         public void attributeMinus(string attribute)
         {
-          
+            switch (attribute)
+            {
+                case "str": { baseStrength--; break; }
+                case "end": { baseEndurance--; break; }
+                case "knd": { baseKnowledge--; break; }
+                case "chr": { baseCharisma--; break; }
+            }
+            updateAttributes();
         }
 
+        private void updateAttributes()
+        {
+            refreshTotalAttributes();
+            updateStrength();
+            updateEndurance();
+            updateKnowledge();
+            updateCharisma();
+        }
 
+        private void refreshTotalAttributes()
+        {
+            totalStrength = baseStrength + bonusStrength;
+            totalEndurance = baseEndurance + bonusEndurance;
+            totalKnowledge = baseKnowledge + bonusKnowledge;
+            totalCharisma = baseCharisma + bonusCharisma;
+        }
+
+        private void updateStrength()
+        {
+            bonusPhysAtkValue = totalStrength;
+            bonusPhysAtkPercent = totalStrength / 10 * 3 / 100;
+        }
+
+        private void updateEndurance()
+        {
+            bonusHP = totalEndurance * 5;           
+            bonusHPPercent = totalEndurance / 10 / 100;
+            bonusTalismanPowerValue = totalEndurance / 10 * 15;
+        }
+
+        private void updateKnowledge()
+        {
+            bonusMagAtkValue = totalKnowledge * 3;
+            bonusENE = totalKnowledge * 3;
+            bonusMagAtkPercent = totalKnowledge / 10 * 2 / 100;
+            bonusTalismanPowerPercent = totalKnowledge / 10 / 100;
+        }
+
+        private void updateCharisma()
+        {
+            bonusCritDamageMod = totalCharisma * 2;
+            bonusCritChance = totalCharisma / 10;
+        }
+        
         //
         public void defenceValuePlus(string defValue)
         {
-
+            switch (defValue)
+            {
+                case "Physical": { physDef.changeValue(1); break; }
+                case "Fire": { fireDef.changeValue(1); break; }
+                case "Air": { airDef.changeValue(1); break; }
+                case "Lightning": { lightningDef.changeValue(1); break; }
+                case "Earth": { earthDef.changeValue(1); break; }
+                case "Water": { waterDef.changeValue(1); break; }
+                case "Life": { lifeDef.changeValue(1); break; }
+                case "Death": { deathDef.changeValue(1); break; }
+                case "Light": { lightDef.changeValue(1); break; }
+                case "Darkness": { darknessDef.changeValue(1); break; }
+            }
         }
 
         public void defenceValueMinus(string defValue)
         {
-
+            switch (defValue)
+            {
+                case "Physical": { physDef.changeValue(-1); break; }
+                case "Fire": { fireDef.changeValue(-1); break; }
+                case "Air": { airDef.changeValue(-1); break; }
+                case "Lightning": { lightningDef.changeValue(-1); break; }
+                case "Earth": { earthDef.changeValue(-1); break; }
+                case "Water": { waterDef.changeValue(-1); break; }
+                case "Life": { lifeDef.changeValue(-1); break; }
+                case "Death": { deathDef.changeValue(-1); break; }
+                case "Light": { lightDef.changeValue(-1); break; }
+                case "Darkness": { darknessDef.changeValue(-1); break; }
+            }
         }
 
 
