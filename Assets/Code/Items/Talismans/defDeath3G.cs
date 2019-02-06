@@ -6,9 +6,9 @@ using System.Text;
 
 namespace Assets.Items.Talismans
 {
-    class defDeath3G : A_Talisman
+    class DefDeath3G : A_Talisman
     {
-        public defDeath3G(string _name)
+        public DefDeath3G(string _name)
         {
             maxEne = gEne;
             element = "death";

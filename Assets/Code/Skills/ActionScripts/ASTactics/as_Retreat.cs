@@ -6,7 +6,7 @@ using Assets.Skills.ActionScripts;
 
 namespace Assets.Code.Skills.ActionScripts.ASTactics
 {
-    class as_Retreat : A_AScript
+    class AS_Retreat : A_AScript
     {
         public void callScript(C_Hero user)
         {

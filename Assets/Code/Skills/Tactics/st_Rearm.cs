@@ -11,7 +11,7 @@ namespace Assets.Code.Skills.Tactics
 {
     class st_Rearm : A_Skill
     {
-        as_Rearm script = new as_Rearm();
+        AS_Rearm script = new AS_Rearm();
 
         public st_Rearm()
         {

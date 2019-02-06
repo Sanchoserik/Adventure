@@ -11,7 +11,7 @@ namespace Assets.Code.Skills.Tactics
 {
     class st_TacticalSwap : A_Skill
     {        
-        as_TacticalSwap script = new as_TacticalSwap();
+        AS_TacticalSwap script = new AS_TacticalSwap();
 
         public st_TacticalSwap()
         {

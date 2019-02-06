@@ -7,9 +7,9 @@ using Assets.Effects;
 
 namespace Assets.Items.Potions
 {
-    class darknessUpMix1S : A_Item
+    class DarknessUpMix1S : A_Item
     {
-        public darknessUpMix1S(string _name, C_Hero h)
+        public DarknessUpMix1S(string _name, C_Hero h)
         {
             id = returnFreeId(h);
             name = _name;
@@ -17,7 +17,7 @@ namespace Assets.Items.Potions
 
         public override void use(C_Hero h)
         {
-            A_Effect eff = new darknessUp(20, 4, h);
+            A_Effect eff = new DarknessUp(20, 4, h);
             eff.addToEffStack(h);
 
             dell(h.mainItemsStorage, this.id);

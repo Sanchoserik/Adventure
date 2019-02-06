@@ -7,9 +7,9 @@ using Assets.Effects;
 
 namespace Assets.Items.Potions
 {
-    class healReP3G : A_Item
+    class HealReP3G : A_Item
     {
-        public healReP3G(string _name, C_Hero h)
+        public HealReP3G(string _name, C_Hero h)
         {
             id = returnFreeId(h);
             name = _name;
@@ -17,7 +17,7 @@ namespace Assets.Items.Potions
 
         public override void use(C_Hero h)
         {
-            A_Effect eff = new regHP(350, 6, h);
+            A_Effect eff = new RegHP(350, 6, h);
             eff.addToEffStack(h);
 
             dell(h.mainItemsStorage, this.id);

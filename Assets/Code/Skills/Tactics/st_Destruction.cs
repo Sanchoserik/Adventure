@@ -11,7 +11,7 @@ namespace Assets.Code.Skills.Tactics
 {
     class st_Destruction : A_Skill
     {
-        as_Destruction script = new as_Destruction();
+        AS_Destruction script = new AS_Destruction();
 
         public st_Destruction()
         {

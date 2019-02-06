@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Assets.Code.UIScripts.HeroEditorScene
 {
-    interface interfaceCommand
+    interface InterfaceCommand
     {
        void execute();
     }

@@ -6,7 +6,7 @@ using Assets.Skills.ActionScripts;
 
 namespace Assets.Code.Skills.ActionScripts.ASTactics
 {
-    class as_TacticalSwap : A_AScript
+    class AS_TacticalSwap : A_AScript
     {
         //display talisman in use stack - swap 2 selected talismans 
         public void callScript(C_Hero user)

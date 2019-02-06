@@ -7,9 +7,9 @@ using System.Text;
 
 namespace Assets.Items.Potions
 {
-    class eneP4U : A_Item
+    class EneP4U : A_Item
     {
-        public eneP4U(int _id, string _name)
+        public EneP4U(int _id, string _name)
         {
             base.id = _id;
             base.name = _name;

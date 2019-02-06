@@ -7,7 +7,7 @@ using Assets.Skills.ActionScripts;
 
 namespace Assets.Code.Skills.ActionScripts.ASTactics
 {
-    class as_Synchronization : A_AScript
+    class AS_Synchronization : A_AScript
     {
         public void callScript(C_Hero user) // 
         {

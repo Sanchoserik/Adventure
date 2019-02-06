@@ -5,12 +5,12 @@ using System.Text;
 
 namespace Assets.Code.UIScripts.HeroEditorScene
 {
-    class commandLevelChange : interfaceCommand
+    class CommandLevelChange : InterfaceCommand
     {
         C_Hero hero;
         PlusMinusButtonInputData data;
 
-        public commandLevelChange(C_Hero _hero, PlusMinusButtonInputData _data)
+        public CommandLevelChange(C_Hero _hero, PlusMinusButtonInputData _data)
         {
             hero = _hero;
             data = _data;

@@ -9,7 +9,7 @@ namespace Assets.Code.UIScripts.HeroEditorScene
     class HeroEditorController : MonoBehaviour
     {
         public PlayerController controller;
-        interfaceCommand inputCommand;
+        InterfaceCommand inputCommand;
 
         void Start()
         {
@@ -31,12 +31,12 @@ namespace Assets.Code.UIScripts.HeroEditorScene
         {
             switch (data.commandName)
             {
-                case "attrChange": { setCommand(new commandAttributeChange(controller.hero, data)); break; }
-                case "defValChange": { setCommand(new commandDefenceValueChange(controller.hero, data)); break; }
-                case "levelChange": { setCommand(new commandLevelChange(controller.hero, data)); break; }
+                case "attrChange": { setCommand(new CommandAttributeChange(controller.hero, data)); break; }
+                case "defValChange": { setCommand(new CommandDefenceValueChange(controller.hero, data)); break; }
+                case "levelChange": { setCommand(new CommandLevelChange(controller.hero, data)); break; }
             }
         }
-        private void setCommand(interfaceCommand command)
+        private void setCommand(InterfaceCommand command)
         {
             inputCommand = command;
         }

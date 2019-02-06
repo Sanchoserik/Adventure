@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Assets.Code.Skills.ActionScripts.ASAssassin
 {
-    class as_FireClaw
+    class AS_FireClaw
     {
     }
 }

@@ -7,9 +7,9 @@ using Assets.Effects;
 
 namespace Assets.Items.Potions
 {
-    class airUpMix1S : A_Item
+    class AirUpMix1S : A_Item
     {
-        public airUpMix1S(string _name, C_Hero h)
+        public AirUpMix1S(string _name, C_Hero h)
         {
             id = returnFreeId(h);
             name = _name;
@@ -17,7 +17,7 @@ namespace Assets.Items.Potions
 
         public override void use(C_Hero h)
         {
-            A_Effect eff = new airUp(20, 4, h);
+            A_Effect eff = new AirUp(20, 4, h);
             eff.addToEffStack(h);
 
             dell(h.mainItemsStorage, this.id);

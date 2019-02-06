@@ -11,7 +11,7 @@ namespace Assets.Code.Skills.Tactics
 {
     class st_Overcharge : A_Skill
     {
-        as_Overcharge script = new as_Overcharge();
+        AS_Overcharge script = new AS_Overcharge();
 
         public st_Overcharge()
         {

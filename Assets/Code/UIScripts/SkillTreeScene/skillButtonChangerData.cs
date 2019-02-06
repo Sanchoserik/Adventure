@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Assets.Code.UIScripts.SkillTreeScene
 {
-    public class skillButtonChangerData : MonoBehaviour
+    public class SkillButtonChangerData : MonoBehaviour
     {
         public string _name;
         public GameObject _panel;

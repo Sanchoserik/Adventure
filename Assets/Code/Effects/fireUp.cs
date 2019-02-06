@@ -7,11 +7,11 @@ using System.Text;
 
 namespace Assets.Effects
 {
-    class fireUp : A_Effect
+    class FireUp : A_Effect
     {
         public int upValue;
 
-        public fireUp(int _val, int _time, C_Hero h)
+        public FireUp(int _val, int _time, C_Hero h)
         {
             upValue = _val;
             time = _time;

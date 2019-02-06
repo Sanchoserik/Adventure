@@ -7,11 +7,11 @@ using System.Text;
 
 namespace Assets.Effects
 {
-    class waterUp : A_Effect
+    class WaterUp : A_Effect
     {
         public int upValue;
 
-        public waterUp(int _val, int _time, C_Hero h)
+        public WaterUp(int _val, int _time, C_Hero h)
         {
             upValue = _val;
             time = _time;

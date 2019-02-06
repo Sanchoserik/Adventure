@@ -11,7 +11,7 @@ namespace Assets.Code.Skills.Tactics
 {
     class st_IronDefence : A_Skill
     {
-        as_IronDefence script = new as_IronDefence();
+        AS_IronDefence script = new AS_IronDefence();
 
         public st_IronDefence()
         {

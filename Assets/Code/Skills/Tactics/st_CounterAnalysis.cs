@@ -12,7 +12,7 @@ namespace Assets.Code.Skills.Tactics
 {
     class st_CounterAnalysis : A_Skill
     {
-        as_CounterAnalysis script = new as_CounterAnalysis();
+        AS_CounterAnalysis script = new AS_CounterAnalysis();
 
         public st_CounterAnalysis()
         {

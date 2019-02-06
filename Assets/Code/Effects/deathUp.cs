@@ -7,11 +7,11 @@ using System.Text;
 
 namespace Assets.Effects
 {
-    class deathUp : A_Effect
+    class DeathUp : A_Effect
     {
         public int upValue;
 
-        public deathUp(int _val, int _time, C_Hero h)
+        public DeathUp(int _val, int _time, C_Hero h)
         {
             upValue = _val;
             time = _time;

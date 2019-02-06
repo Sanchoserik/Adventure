@@ -7,7 +7,7 @@ using Assets.ScriptHelper;
 
 namespace Assets.Code.Skills.ActionScripts.ASTactics
 {
-    class as_CriticalBalance : A_AScript
+    class AS_CriticalBalance : A_AScript
     {
         public void callScript(C_Hero user) // info from data reader
         {

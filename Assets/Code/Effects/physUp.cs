@@ -7,11 +7,11 @@ using System.Text;
 
 namespace Assets.Effects
 {
-    class physUp : A_Effect
+    class RhysUp : A_Effect
     {
         public int upValue;
 
-        public physUp(int _val, int _time, C_Hero h)
+        public RhysUp(int _val, int _time, C_Hero h)
         {
             upValue = _val;
             time = _time;

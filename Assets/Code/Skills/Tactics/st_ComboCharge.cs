@@ -11,7 +11,7 @@ namespace Assets.Code.Skills.Tactics
 {
     class st_ComboCharge : A_Skill
     {
-        as_ComboCharge script = new as_ComboCharge();
+        AS_ComboCharge script = new AS_ComboCharge();
 
         public st_ComboCharge()
         {

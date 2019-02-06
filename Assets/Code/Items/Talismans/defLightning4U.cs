@@ -6,9 +6,9 @@ using System.Text;
 
 namespace Assets.Items.Talismans
 {
-    class defLightning4U : A_Talisman
+    class DefLightning4U : A_Talisman
     {
-        public defLightning4U(string _name)
+        public DefLightning4U(string _name)
         {
             maxEne = uEne;
             element = "lightning";

@@ -11,7 +11,7 @@ namespace Assets.Code.Skills.Tactics
 {
     class st_AllIn : A_Skill
     {
-        as_AllIn script = new as_AllIn();
+        AS_AllIn script = new AS_AllIn();
 
         //additional attributes
         [XmlElement("v1")]

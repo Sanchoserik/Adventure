@@ -11,7 +11,7 @@ namespace Assets.Code.Skills.Tactics
 {
     class st_Recharge :A_Skill
     {
-        as_Recharge script = new as_Recharge();
+        AS_Recharge script = new AS_Recharge();
 
         public st_Recharge()
         {

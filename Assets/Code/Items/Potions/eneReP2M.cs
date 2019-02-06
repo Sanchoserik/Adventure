@@ -7,9 +7,9 @@ using Assets.Effects;
 
 namespace Assets.Items.Potions
 {
-    class eneReP2M : A_Item
+    class EneReP2M : A_Item
     {
-        public eneReP2M(string _name, C_Hero h)
+        public EneReP2M(string _name, C_Hero h)
         {
             id = returnFreeId(h);
             name = _name;
@@ -17,7 +17,7 @@ namespace Assets.Items.Potions
 
         public override void use(C_Hero h)
         {
-            A_Effect eff = new regENE(100, 5, h);
+            A_Effect eff = new RegENE(100, 5, h);
             eff.addToEffStack(h);
 
             dell(h.mainItemsStorage, this.id);

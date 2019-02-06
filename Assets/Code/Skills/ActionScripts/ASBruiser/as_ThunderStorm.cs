@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Assets.Code.Skills.ActionScripts.ASBruiser
 {
-    class as_ThunderStorm
+    class AS_ThunderStorm
     {
     }
 }

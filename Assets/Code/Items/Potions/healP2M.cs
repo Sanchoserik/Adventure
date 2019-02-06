@@ -7,9 +7,9 @@ using System.Text;
 
 namespace Assets.Items.Potions
 {
-    class healP2M : A_Item
+    class HealP2M : A_Item
     {
-        public healP2M(int _id, string _name)
+        public HealP2M(int _id, string _name)
         {
             base.id = _id;
             base.name = _name;

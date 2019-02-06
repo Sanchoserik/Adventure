@@ -11,7 +11,7 @@ namespace Assets.Code.Skills.Tactics
 {
     class st_CriticalBalance : A_Skill
     {
-        as_CriticalBalance script = new as_CriticalBalance();
+        AS_CriticalBalance script = new AS_CriticalBalance();
 
         public st_CriticalBalance()
         {

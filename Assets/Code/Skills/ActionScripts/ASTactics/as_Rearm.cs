@@ -7,7 +7,7 @@ using Assets.Skills.ActionScripts;
 
 namespace Assets.Code.Skills.ActionScripts.ASTactics
 {
-    public class as_Rearm : A_AScript
+    public class AS_Rearm : A_AScript
     {
         public void callScript() // and data from reader
         {

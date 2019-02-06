@@ -7,9 +7,9 @@ using System.Text;
 
 namespace Assets.Items.Potions
 {
-    class healP3G : A_Item
+    class HealP3G : A_Item
     {
-        public healP3G(int _id, string _name)
+        public HealP3G(int _id, string _name)
         {
             base.id = _id;
             base.name = _name;

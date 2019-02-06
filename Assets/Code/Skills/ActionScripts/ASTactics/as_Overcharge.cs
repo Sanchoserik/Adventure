@@ -7,7 +7,7 @@ using Assets.ScriptHelper;
 
 namespace Assets.Code.Skills.ActionScripts.ASTactics
 {
-    class as_Overcharge : A_AScript
+    class AS_Overcharge : A_AScript
     {
         public void callScript(C_Hero user) // and data from reader
         {

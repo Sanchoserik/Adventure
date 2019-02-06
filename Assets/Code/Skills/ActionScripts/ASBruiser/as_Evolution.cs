@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Assets.Code.Skills.ActionScripts.ASBruiser
 {
-    class as_Evolution
+    class AS_Evolution
     {
     }
 }

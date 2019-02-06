@@ -6,9 +6,9 @@ using System.Text;
 
 namespace Assets.Items.Talismans
 {
-    class defEarth2M : A_Talisman
+    class DefEarth2M : A_Talisman
     {
-        public defEarth2M(string _name)
+        public DefEarth2M(string _name)
         {
             maxEne = mEne;
             element = "earth";

@@ -11,7 +11,7 @@ namespace Assets.Code.Skills.Tactics
 {
     class st_Synchronization : A_Skill
     {
-       as_Synchronization script = new as_Synchronization();
+       AS_Synchronization script = new AS_Synchronization();
 
         public st_Synchronization()
         {

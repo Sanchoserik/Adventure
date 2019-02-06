@@ -8,9 +8,9 @@ using System.Xml.Linq;
 
 namespace Assets.Code.UIScripts.SkillTreeScene
 {
-    public class skillsLoaderFromXML : MonoBehaviour
+    public class SkillsLoaderFromXML : MonoBehaviour
     {
-        public List<skillDataStorage> skillDataXML = new List<skillDataStorage>();   
+        public List<SkillDataStorage> skillDataXML = new List<SkillDataStorage>();   
         public GameObject skillDataReader;
 
         void Start()
@@ -73,7 +73,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
                     ++levelIter;
                 }
                  
-                skillDataXML.Add(new skillDataStorage(_levels, _name, _scname, lDataAP, lDataEne, vValues)); // add data to list
+                skillDataXML.Add(new SkillDataStorage(_levels, _name, _scname, lDataAP, lDataEne, vValues)); // add data to list
             }
         }
 

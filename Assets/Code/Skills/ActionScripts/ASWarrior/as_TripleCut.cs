@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Assets.Code.Skills.ActionScripts.ASWarrior
 {
-    class as_TripleCut
+    class AS_TripleCut
     {
     }
 }

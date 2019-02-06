@@ -7,12 +7,12 @@ using System.Text;
 
 namespace Assets.Effects
 {
-    //hp regeneration
-    class regHP : A_Effect
+   
+    class RegHP : A_Effect
     {
         public int regValue;
 
-        public regHP(int _val, int _time, C_Hero h)
+        public RegHP(int _val, int _time, C_Hero h)
         {
             regValue = _val;
             time = _time;

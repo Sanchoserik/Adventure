@@ -6,7 +6,7 @@ using System.Text;
 namespace Assets.Code.UIScripts.SkillTreeScene
 {
 
-    public class skillDataStorage
+    public class SkillDataStorage
     {
         //skill main data
         public short skillLevels; 
@@ -23,7 +23,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
         public List<string> skillTargetsDescription; // localised skill targets 
 
         // Create a constructor that will accept multiple arguments that can be assigned to our variables. 
-        public skillDataStorage(short _levels, string _name, string _scname, Dictionary<int, string> _lcAP,
+        public SkillDataStorage(short _levels, string _name, string _scname, Dictionary<int, string> _lcAP,
             Dictionary<int, string> _lcEne, List<Dictionary<string, string>> _vValues)
         {
             skillLevels = _levels;

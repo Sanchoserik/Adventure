@@ -6,9 +6,9 @@ using Assets.Code;
 using Assets.Effects;
 namespace Assets.Items.Potions
 {
-    class waterUpMix1S : A_Item
+    class WaterUpMix1S : A_Item
     {
-        public waterUpMix1S(string _name, C_Hero h)
+        public WaterUpMix1S(string _name, C_Hero h)
         {
             id = returnFreeId(h);
             name = _name;
@@ -16,7 +16,7 @@ namespace Assets.Items.Potions
 
         public override void use(C_Hero h)
         {
-            A_Effect eff = new waterUp(20, 4, h);
+            A_Effect eff = new WaterUp(20, 4, h);
             eff.addToEffStack(h);
 
             dell(h.mainItemsStorage, this.id);

@@ -22,12 +22,12 @@ namespace Assets.Code.UIScripts.SkillTreeScene
         bool skillLoaded = false; 
         bool skillSelected = false;
         GameObject newSkill;
-        List<skillDataStorage> data; // all skills data from loader xml file
+        List<SkillDataStorage> data; // all skills data from loader xml file
 
         void Start()
         {
             GameObject skillLoader = GameObject.Find("SkillLoader");
-            skillsLoaderFromXML loader = skillLoader.GetComponent<skillsLoaderFromXML>();
+            SkillsLoaderFromXML loader = skillLoader.GetComponent<SkillsLoaderFromXML>();
             //get loaded skill data
             data = loader.skillDataXML;   
             loadSkillLevels(skillTreeParent); // load skill levels
@@ -50,7 +50,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
             this.skillLevelDescription.text = ""; 
             skillDuration.text = ""; 
 
-            skillDataStorage _data = data.Find(x => x.skillName == _skill.name); //concrette skill storage
+            SkillDataStorage _data = data.Find(x => x.skillName == _skill.name); //concrette skill storage
 
             skillName.text = _data.skillLocalisadName;
             skillDescription.text = _data.skillMainDescription;
@@ -122,7 +122,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
             newSkill = _newSkill;
         }
         //CHANGE SKILL BRANCH
-        public void changeSkillBranch(skillButtonChangerData data)
+        public void changeSkillBranch(SkillButtonChangerData data)
         {
             switch (data._name)
             {
@@ -189,7 +189,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
         {
             string _sName = _skill.name;
             Text t = _skill.GetComponentInChildren<Text>();
-            skillDataStorage _d = data.Find(x => x.skillName == _sName);
+            SkillDataStorage _d = data.Find(x => x.skillName == _sName);
             //
             if (t != null)
             {
@@ -205,7 +205,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
         {
             string _sName = _skill.name;
             Text t = _skill.GetComponentInChildren<Text>();
-            skillDataStorage _d = data.Find(x => x.skillName == _sName);
+            SkillDataStorage _d = data.Find(x => x.skillName == _sName);
             //
             if (t != null)
             {

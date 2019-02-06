@@ -7,11 +7,11 @@ using System.Text;
 
 namespace Assets.Effects
 {
-    class regENE : A_Effect
+    class RegENE : A_Effect
     {
         public int regValue;
 
-        public regENE(int _val, int _time, C_Hero h)
+        public RegENE(int _val, int _time, C_Hero h)
         {
             regValue = _val;
             time = _time;

@@ -7,9 +7,9 @@ using System.Text;
 
 namespace Assets.Items.Potions
 {
-    class eneP2M : A_Item      
+    class EneP2M : A_Item      
     { 
-        public eneP2M(int _id, string _name)
+        public EneP2M(int _id, string _name)
         {
             base.id = _id;
             base.name = _name;

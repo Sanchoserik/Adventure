@@ -11,7 +11,7 @@ namespace Assets.Code.Skills.Tactics
 {
     class st_TacticalPreparation : A_Skill
     {
-        as_Retreat script = new as_Retreat();
+        AS_Retreat script = new AS_Retreat();
 
         public st_TacticalPreparation()
         {

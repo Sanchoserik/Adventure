@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Assets.Code.Skills.ActionScripts.ASAssassin
 {
-    class as_FasterThanLight
+    class AS_FasterThanLight
     {
     }
 }

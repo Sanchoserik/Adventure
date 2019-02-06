@@ -6,9 +6,9 @@ using System.Text;
 
 namespace Assets.Items.Talismans
 {
-    class defDarkness3G : A_Talisman
+    class DefDarkness3G : A_Talisman
     {
-        public defDarkness3G(string _name)
+        public DefDarkness3G(string _name)
         {
             maxEne = gEne;
             element = "darkness";
