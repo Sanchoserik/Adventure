@@ -108,8 +108,8 @@ namespace Assets.Code
         public int attributePoints;
         public int level;
         public int currExp; 
-        public int nextLevelExp; 
-
+        public int nextLevelExp;
+       
         //starting initialisation
         public C_Hero()
         {
@@ -169,10 +169,10 @@ namespace Assets.Code
         {
             switch (attribute)
             {
-                case "str": { baseStrength--; break; }
-                case "end": { baseEndurance--; break; }
-                case "knd": { baseKnowledge--; break; }
-                case "chr": { baseCharisma--; break; }
+                case "str": { if(baseStrength>1)baseStrength--; break; }
+                case "end": { if(baseEndurance>1)baseEndurance--; break; }
+                case "knd": { if(baseKnowledge>1)baseKnowledge--; break; }
+                case "chr": { if(baseCharisma>1)baseCharisma--; break; }
             }
             updateAttributes();
         }
@@ -226,16 +226,16 @@ namespace Assets.Code
         {
             switch (defValue)
             {
-                case "Physical": { physDef.changeValue(1); break; }
-                case "Fire": { fireDef.changeValue(1); break; }
-                case "Air": { airDef.changeValue(1); break; }
-                case "Lightning": { lightningDef.changeValue(1); break; }
-                case "Earth": { earthDef.changeValue(1); break; }
-                case "Water": { waterDef.changeValue(1); break; }
-                case "Life": { lifeDef.changeValue(1); break; }
-                case "Death": { deathDef.changeValue(1); break; }
-                case "Light": { lightDef.changeValue(1); break; }
-                case "Darkness": { darknessDef.changeValue(1); break; }
+                case "physical": { physDef.changeValue(1); break; }
+                case "fire": { fireDef.changeValue(1); break; }
+                case "air": { airDef.changeValue(1); break; }
+                case "lightning": { lightningDef.changeValue(1); break; }
+                case "earth": { earthDef.changeValue(1); break; }
+                case "water": { waterDef.changeValue(1); break; }
+                case "life": { lifeDef.changeValue(1); break; }
+                case "death": { deathDef.changeValue(1); break; }
+                case "light": { lightDef.changeValue(1); break; }
+                case "darkness": { darknessDef.changeValue(1); break; }
             }
         }
 
@@ -243,16 +243,16 @@ namespace Assets.Code
         {
             switch (defValue)
             {
-                case "Physical": { physDef.changeValue(-1); break; }
-                case "Fire": { fireDef.changeValue(-1); break; }
-                case "Air": { airDef.changeValue(-1); break; }
-                case "Lightning": { lightningDef.changeValue(-1); break; }
-                case "Earth": { earthDef.changeValue(-1); break; }
-                case "Water": { waterDef.changeValue(-1); break; }
-                case "Life": { lifeDef.changeValue(-1); break; }
-                case "Death": { deathDef.changeValue(-1); break; }
-                case "Light": { lightDef.changeValue(-1); break; }
-                case "Darkness": { darknessDef.changeValue(-1); break; }
+                case "physical": { physDef.changeValue(-1); break; }
+                case "fire": { fireDef.changeValue(-1); break; }
+                case "air": { airDef.changeValue(-1); break; }
+                case "lightning": { lightningDef.changeValue(-1); break; }
+                case "earth": { earthDef.changeValue(-1); break; }
+                case "water": { waterDef.changeValue(-1); break; }
+                case "life": { lifeDef.changeValue(-1); break; }
+                case "death": { deathDef.changeValue(-1); break; }
+                case "light": { lightDef.changeValue(-1); break; }
+                case "darkness": { darknessDef.changeValue(-1); break; }
             }
         }
 
@@ -260,12 +260,32 @@ namespace Assets.Code
         //
         public void levelPlus()
         {
-
+            level++;
+            currExp = 0;
+            nextLevelExp = (int)(nextLevelExp * 0.2) + nextLevelExp;
+            skillPoints++;
+            attributePoints += 4;
         }
 
         public void levelMinus()
         {
+            if (skillPoints >= 1 && attributePoints >= 4 && level >1)
+            {
+                nextLevelExp = 100;
+                int differenceExp = 0;
+                for (int i = 2; i <= level; ++i)
+                {
+                    differenceExp = (int)(nextLevelExp * 0.2);
+                    nextLevelExp = differenceExp + nextLevelExp;
+                }           
+                nextLevelExp -= differenceExp;
+                currExp = 0;
 
+                skillPoints--;
+                attributePoints -= 4;
+                level--;
+
+            }
         }
     }
 }
