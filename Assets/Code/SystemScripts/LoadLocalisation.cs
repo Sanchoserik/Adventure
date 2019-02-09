@@ -28,12 +28,10 @@ namespace Assets.Code.SystemScripts
 
         void LoadXML()
         {
-            IEnumerable<XElement> scenes; // <scene> tag     
-            IEnumerable<XElement> elements; // <el> tag
+            IEnumerable<XElement> scenes; // <scene> tag                
             XDocument xDoc = XDocument.Load(path);
 
             scenes = xDoc.Descendants("scenes").Elements();
-            elements = xDoc.Descendants("scene").Elements();
 
             foreach (XElement scene in scenes)
             {

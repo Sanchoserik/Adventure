@@ -9,10 +9,10 @@ namespace Assets.Code.UIScripts.HeroEditorScene
 {
     class HeroEditorController : MonoBehaviour
     {
-        public GameObject canvas;
-        public PlayerController controller;
         private InterfaceCommand inputCommand;
         private bool dataUpdated = false;
+        public GameObject canvas;
+        public PlayerController controller;
 
         void Start()
         {

@@ -101,7 +101,6 @@ namespace Assets.Code.UIScripts.SkillTreeScene
 
             //get APCost EnergyCost and Targets
             int _intkey = _data.skillCurentLevel;
-            string _key = _intkey.ToString();
             if (_data.skillAPCost.ContainsKey(_intkey)) 
             {
                 skillAPCost.text = _data.skillAPCost[_data.skillCurentLevel];

@@ -123,7 +123,7 @@ namespace Assets.Code
             currHP = 200;
             baseMaxENE = 100;
             currENE = 100;
-            level = 0;
+            level = 1;
             currExp = 0;
             nextLevelExp = 100;
             skillPoints = 0;
@@ -155,26 +155,95 @@ namespace Assets.Code
         //
         public void attributePlus(string attribute)
         {
-            switch (attribute)
+            if (attributePoints > 0)
             {
-                case "str": { baseStrength++; break; }
-                case "end": { baseEndurance++; break; }
-                case "knd": { baseKnowledge++; break; }
-                case "chr": { baseCharisma++; break; }
+                switch (attribute)
+                {
+                    case "str":
+                        {
+                            if (attributePoints > 0)
+                            {
+                                baseStrength++;
+                                attributePoints--;
+                            }
+                            break;
+                        }
+                    case "end":
+                        {
+                            if (attributePoints > 0)
+                            {
+                                baseEndurance++;
+                                attributePoints--;
+                            }
+                            break;
+                        }
+                    case "knd":
+                        {
+                            if (attributePoints > 0)
+                            {
+                                baseKnowledge++;
+                                attributePoints--;
+                            }
+                            break;
+                        }
+                    case "chr":
+                        {
+                            if (attributePoints > 0)
+                            {
+                                baseCharisma++;
+                                attributePoints--;
+                            }
+                            break;
+                        }
+                }
+                updateAttributes();
             }
-            updateAttributes();
         }
 
         public void attributeMinus(string attribute)
         {
-            switch (attribute)
-            {
-                case "str": { if(baseStrength>1)baseStrength--; break; }
-                case "end": { if(baseEndurance>1)baseEndurance--; break; }
-                case "knd": { if(baseKnowledge>1)baseKnowledge--; break; }
-                case "chr": { if(baseCharisma>1)baseCharisma--; break; }
-            }
-            updateAttributes();
+            
+                switch (attribute)
+                {
+                    case "str":
+                        {
+                            if (baseStrength > 1)
+                            {
+                                baseStrength--;
+                                attributePoints++;
+                            }
+                            break;
+                        }
+                    case "end":
+                        {
+                            if (baseEndurance > 1)
+                            {
+                                baseEndurance--;
+                                attributePoints++;
+                            }
+                            break;
+                        }
+                    case "knd":
+                        {
+                            if (baseKnowledge > 1)
+                            {
+                                baseKnowledge--;
+                                attributePoints++;
+                            }
+                            break;
+                        }
+                    case "chr":
+                        {
+                            if (baseCharisma > 1)
+                            {
+                                baseCharisma--;
+                                attributePoints++;
+                            }
+                            break;
+                        }
+                }
+                updateAttributes();
+            
         }
 
         private void updateAttributes()

@@ -9,10 +9,12 @@ namespace Assets.Code
     class PlayerController : MonoBehaviour 
     {
         public C_Hero hero;
+        public GameObject heroEditorController;
 
         private void Start()
-        {
+        {          
             hero = new C_Hero();
+            heroEditorController.SetActive(true);
         }
 
 

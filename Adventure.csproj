@@ -322,6 +322,7 @@
     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\InterfaceCommand.cs" />
     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\PlusMinusButtonInputData.cs" />
     <Compile Include="Assets\Code\UIScripts\SetResolution.cs" />
+    <Compile Include="Assets\Code\UIScripts\SkillTreeScene\GetPlayerController.cs" />
     <Compile Include="Assets\Code\UIScripts\SkillTreeScene\ShowSkillDescr.cs" />
     <Compile Include="Assets\Code\UIScripts\SkillTreeScene\SkillButtonChangerData.cs" />
     <Compile Include="Assets\Code\UIScripts\SkillTreeScene\SkillDataStorage.cs" />

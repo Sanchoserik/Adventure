@@ -12,6 +12,7 @@ namespace Assets.Code.SystemScripts
     {
         public void localiseScene(LocalisationData _data)
         {
+         
           Scene scene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
           Dictionary<string, string> sceneValues = _data.locValues[scene.name];
 
@@ -19,11 +20,13 @@ namespace Assets.Code.SystemScripts
             foreach (string key in sceneValues.Keys)
             {
                 GameObject obj = GameObject.Find(key);
-                
-                Text _t = obj.GetComponent<Text>();
-                _t.text = sceneValues[key];
+
+                if (obj != null)
+                {
+                    Text _t = obj.GetComponent<Text>();
+                    _t.text = sceneValues[key];
+                }
             }
-           
         }
     }
 }
