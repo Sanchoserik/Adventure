@@ -13,12 +13,14 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectGenerator>VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.1.0f3</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -79,8 +81,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Code\C_Hero.cs" />
-    <Compile Include="Assets\Code\DefenceParam.cs" />
+    <Compile Include="Assets\PlayerController\C_Hero.cs" />
+    <Compile Include="Assets\PlayerController\DefenceParam.cs" />
     <Compile Include="Assets\Code\Effects\A_Effect.cs" />
     <Compile Include="Assets\Code\Effects\AirUp.cs" />
     <Compile Include="Assets\Code\Effects\DarknessUp.cs" />
@@ -94,7 +96,8 @@
     <Compile Include="Assets\Code\Effects\RegENE.cs" />
     <Compile Include="Assets\Code\Effects\RegHP.cs" />
     <Compile Include="Assets\Code\Effects\waterUp.cs" />
-    <Compile Include="Assets\Code\Hero_Serialization.cs" />
+    <Compile Include="Assets\PlayerController\HeroSkillsController.cs" />
+    <Compile Include="Assets\PlayerController\Hero_Serialization.cs" />
     <Compile Include="Assets\Code\Items\A_Card.cs" />
     <Compile Include="Assets\Code\Items\A_Item.cs" />
     <Compile Include="Assets\Code\Items\A_Talisman.cs" />
@@ -191,7 +194,7 @@
     <Compile Include="Assets\Code\Items\Talismans\DefWater3G.cs" />
     <Compile Include="Assets\Code\Items\Talismans\DefWater4U.cs" />
     <Compile Include="Assets\Code\Monsters\C_Monster.cs" />
-    <Compile Include="Assets\Code\PlayerController.cs" />
+    <Compile Include="Assets\PlayerController\PlayerController.cs" />
     <Compile Include="Assets\Code\ScriptHelper\ScriptHelper.cs" />
     <Compile Include="Assets\Code\Skills\A_Skill.cs" />
     <Compile Include="Assets\Code\Skills\ActionScripts\A_AScript.cs" />
@@ -306,12 +309,12 @@
     <Compile Include="Assets\Code\Skills\Warrior\sw_Tsunami.cs" />
     <Compile Include="Assets\Code\Skills\Warrior\sw_WaterPrison.cs" />
     <Compile Include="Assets\Code\SystemScripts\AppParameters.cs" />
-    <Compile Include="Assets\Code\SystemScripts\GetLocalisation.cs" />
-    <Compile Include="Assets\Code\SystemScripts\LoadLocalisation.cs" />
-    <Compile Include="Assets\Code\SystemScripts\LocalisationData.cs" />
-    <Compile Include="Assets\Code\SystemScripts\LocaliseComponents.cs" />
+    <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\GetLocalisation.cs" />
+    <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LoadLocalisation.cs" />
+    <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocalisationData.cs" />
+    <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocaliseComponents.cs" />
     <Compile Include="Assets\Code\UIScripts\CameraZooming.cs" />
-    <Compile Include="Assets\Code\UIScripts\ChangeLanguage.cs" />
+    <Compile Include="Assets\Code\UIScripts\OptionsScene\ChangeLanguage.cs" />
     <Compile Include="Assets\Code\UIScripts\ExitApp.cs" />
     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\CommandAttributeChange.cs" />
     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\CommandDefenceValueChange.cs" />
@@ -319,7 +322,7 @@
     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\HeroEditorController.cs" />
     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\InterfaceCommand.cs" />
     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\PlusMinusButtonInputData.cs" />
-    <Compile Include="Assets\Code\UIScripts\SetResolution.cs" />
+    <Compile Include="Assets\Code\UIScripts\OptionsScene\SetResolution.cs" />
     <Compile Include="Assets\Code\UIScripts\SkillTreeScene\ShowSkillDescr.cs" />
     <Compile Include="Assets\Code\UIScripts\SkillTreeScene\SkillButtonChangerData.cs" />
     <Compile Include="Assets\Code\UIScripts\SkillTreeScene\SkillDataStorage.cs" />
@@ -335,6 +338,7 @@
     <None Include="Assets\Resources\xml\skills\skillsLocRU.xml" />
     <None Include="Assets\Resources\xml\skills\skillsLocUA.xml" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
 </Project>

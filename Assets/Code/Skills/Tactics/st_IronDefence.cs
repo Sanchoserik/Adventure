@@ -15,7 +15,7 @@ namespace Assets.Code.Skills.Tactics
 
         public st_IronDefence()
         {
-            flag = 5;
+          
         }
         // only for heroes
         public void callSkill(C_Hero user)

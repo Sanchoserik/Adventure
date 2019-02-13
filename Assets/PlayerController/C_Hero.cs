@@ -6,8 +6,9 @@ using Assets.Items;
 using Assets.Effects;
 using Assets.Code.Skills;
 using System.Xml.Serialization;
+using Assets.Code.UIScripts.SkillTreeScene;
 
-namespace Assets.Code
+namespace Assets.PlayerController
 {
     [Serializable]
     public class C_Hero 
@@ -100,11 +101,12 @@ namespace Assets.Code
         public List<A_Talisman> inUseTalismansStorage; // 0-2 main stack 3-9 secondary stack
         
         //Effects        
-        public List<A_Effect> effectsStorage; 
+        public List<A_Effect> effectsStorage;
 
         //Skills
-        public List<A_Skill> skillList; 
+        public HeroSkillsController heroSkills;
         public int skillPoints;
+
         public int attributePoints;
         public int level;
         public int currExp; 
@@ -116,8 +118,7 @@ namespace Assets.Code
             mainItemsStorage = new List<A_Item>();
             mainTalismansStorage = new List<A_Talisman>();
             inUseTalismansStorage = new List<A_Talisman>();
-            effectsStorage = new List<A_Effect>();
-            skillList = new List<A_Skill>();
+            effectsStorage = new List<A_Effect>();       
 
             baseMaxHP = 200;
             currHP = 200;
@@ -356,5 +357,7 @@ namespace Assets.Code
 
             }
         }
+
+
     }
 }

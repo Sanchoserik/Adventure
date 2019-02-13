@@ -3344,7 +3344,7 @@ Prefab:
     - target: {fileID: 114913773259175228, guid: 184700b89cd6d0c4f9c4e0125acc2a8e,
         type: 2}
       propertyPath: m_Text
-      value: Skill Tree
+      value: Return to Main Menu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 184700b89cd6d0c4f9c4e0125acc2a8e, type: 2}
@@ -3574,7 +3574,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1488594177}
-  controller: {fileID: 1308168652}
 --- !u!4 &731486935
 Transform:
   m_ObjectHideFlags: 0
@@ -7050,51 +7049,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1308168650}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17832a3cf154c5d4cb2eb36e76bb4ffe, type: 3}
+  m_Script: {fileID: 11500000, guid: ad3304f382e139c46ab2cf3afac39c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hero:
-    baseMaxHP: 0
-    maxHP: 0
-    currHP: 0
-    baseMaxENE: 0
-    maxENE: 0
-    currENE: 0
-    baseStrength: 0
-    baseEndurance: 0
-    baseKnowledge: 0
-    baseCharisma: 0
-    bonusStrength: 0
-    bonusEndurance: 0
-    bonusKnowledge: 0
-    bonusCharisma: 0
-    totalStrength: 0
-    totalEndurance: 0
-    totalKnowledge: 0
-    totalCharisma: 0
-    bonusHP: 0
-    bonusHPPercent: 0
-    bonusENE: 0
-    bonusPhysAtkPercent: 0
-    bonusPhysAtkValue: 0
-    bonusMagAtkPercent: 0
-    bonusMagAtkValue: 0
-    bonusTalismanPowerPercent: 0
-    bonusTalismanPowerValue: 0
-    bonusCritDamageMod: 0
-    bonusCritChance: 0
-    critChance: 0
-    critDamageMod: 0
-    baseAP: 0
-    bonusAP: 0
-    totalAP: 0
-    currAP: 0
-    money: 0
-    skillPoints: 0
-    attributePoints: 0
-    level: 0
-    currExp: 0
-    nextLevelExp: 0
   heroEditorController: {fileID: 731486933}
 --- !u!1001 &1318729643
 Prefab:

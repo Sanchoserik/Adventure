@@ -15,7 +15,7 @@ namespace Assets.Code.Skills.Tactics
 
         public st_Recharge()
         {
-            flag = 8;      
+          
         }
         // only for heroes
         public void callSkill(C_Hero user)

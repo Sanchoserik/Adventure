@@ -15,7 +15,7 @@ namespace Assets.Code.Skills.Tactics
 
         public st_Overcharge()
         {
-            flag = 6;
+         
         }
         // only for heroes
         public void callSkill(C_Hero user)

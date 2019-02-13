@@ -15,7 +15,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
 
         void Start()
         {
-            DontDestroyOnLoad(gameObject); //Allows Loader to carry over into new scene                          
+            //DontDestroyOnLoad(gameObject); //Allows Loader to carry over into new scene                          
             LoadXML();
             skillDataReader.SetActive(true); //seting active skillswitcher when skill data loaded from XML
         }

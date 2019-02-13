@@ -38,8 +38,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
         private void updateVisualValues(Transform textValue)
         {
             Text text = textValue.GetComponent<Text>();
-            int xx = 20;
-
+         
             switch (textValue.name)
             {
                 case "SkillPointsVal": {text.text = PlayerController.mainHero.skillPoints.ToString(); break; }

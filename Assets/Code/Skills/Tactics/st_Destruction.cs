@@ -15,7 +15,7 @@ namespace Assets.Code.Skills.Tactics
 
         public st_Destruction()
         {
-            flag = 4;
+           
         }
         // only for heroes
         public void callSkill(C_Hero user)

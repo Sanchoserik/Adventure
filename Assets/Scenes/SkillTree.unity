@@ -7575,7 +7575,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 796635144}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67961527ab4217844893ca9ac2a17b6d, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d4d6128ad1d6844aa295b6223b52f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &801686909
@@ -18039,7 +18039,7 @@ Prefab:
     - target: {fileID: 114434685987472154, guid: 184700b89cd6d0c4f9c4e0125acc2a8e,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: MainMenu
+      value: HeroEditor
       objectReference: {fileID: 0}
     - target: {fileID: 1247379219228658, guid: 184700b89cd6d0c4f9c4e0125acc2a8e, type: 2}
       propertyPath: m_Name

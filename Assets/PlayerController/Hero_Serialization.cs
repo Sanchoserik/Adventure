@@ -6,7 +6,7 @@ using UnityEngine;
 using System.Xml.Serialization;
 using System.IO;
 
-namespace Assets.Code
+namespace Assets.PlayerController
 {
     class Hero_Serialization : MonoBehaviour
     {

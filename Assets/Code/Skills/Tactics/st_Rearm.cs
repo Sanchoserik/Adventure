@@ -15,7 +15,7 @@ namespace Assets.Code.Skills.Tactics
 
         public st_Rearm()
         {
-            flag = 7;
+           
         }
         // only for heroes
         public void callSkill(C_Hero user)

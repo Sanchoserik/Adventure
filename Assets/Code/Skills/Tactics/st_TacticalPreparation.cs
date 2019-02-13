@@ -15,7 +15,7 @@ namespace Assets.Code.Skills.Tactics
 
         public st_TacticalPreparation()
         {
-            flag = 11;
+          
         }
         // only for heroes
         public void callSkill(C_Hero user) //specify data from reader
