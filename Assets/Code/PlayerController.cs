@@ -8,15 +8,22 @@ namespace Assets.Code
 {
     class PlayerController : MonoBehaviour 
     {
-        public C_Hero hero;
+        public static bool loadHero = false;
+        public static C_Hero mainHero = new C_Hero();
         public GameObject heroEditorController;
 
         private void Start()
-        {          
-            hero = new C_Hero();
+        {
+            if (loadHero)
+            {
+                loadHeroFromSaveFile(); }
             heroEditorController.SetActive(true);
         }
 
+        private void loadHeroFromSaveFile()
+        {
+
+        }
 
 
     }

@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 namespace Assets.Code.SystemScripts
 {
-    public class LocaliseComponents : MonoBehaviour
+    public class LocaliseComponents
     {
         public void localiseScene(LocalisationData _data)
         {
