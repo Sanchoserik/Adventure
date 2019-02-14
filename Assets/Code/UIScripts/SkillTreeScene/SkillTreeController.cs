@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.PlayerController;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -41,7 +42,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
          
             switch (textValue.name)
             {
-                case "SkillPointsVal": {text.text = PlayerController.mainHero.skillPoints.ToString(); break; }
+                case "SkillPointsVal": {text.text = C_PlayerController.mainHero.skillPoints.ToString(); break; }
             }
         }
     }

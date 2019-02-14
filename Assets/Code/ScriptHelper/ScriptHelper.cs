@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Assets.Code;
 using Assets.Items;
+using Assets.PlayerController;
 
 namespace Assets.ScriptHelper
 {

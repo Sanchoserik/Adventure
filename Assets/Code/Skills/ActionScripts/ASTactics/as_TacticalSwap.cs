@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Assets.PlayerController;
 using Assets.Skills.ActionScripts;
 
 namespace Assets.Code.Skills.ActionScripts.ASTactics

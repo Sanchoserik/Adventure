@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Assets.PlayerController
 {
-    class PlayerController : MonoBehaviour 
+    class C_PlayerController : MonoBehaviour 
     {
         public static bool loadHero = false;
         public static C_Hero mainHero = new C_Hero();
