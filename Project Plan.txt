@@ -4,6 +4,9 @@
 0.2.3 skillsTree scene & simple localisation +
 0.2.4 skillsTree scene Done +
 --->0.2.5 HeroEditorScene * IN PROGRESS 
+    // load&save hero
+    // skill learning in skillTree scene
+    // display and change hero parametress	
 0.2.6 Hero Invertory
 0.2.7 Simple enemies 
 0.2.8 Battle arena test

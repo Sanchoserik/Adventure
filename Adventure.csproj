@@ -13,12 +13,14 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectGenerator>VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.1.0f3</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -246,61 +248,62 @@
     <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_TripleCut.cs" />
     <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_Tsunami.cs" />
     <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_WaterPrison.cs" />
-    <Compile Include="Assets\Code\Skills\Assassin\sa_Assassination.cs" />
-    <Compile Include="Assets\Code\Skills\Assassin\sa_Burnout.cs" />
-    <Compile Include="Assets\Code\Skills\Assassin\sa_DoubleStrike.cs" />
-    <Compile Include="Assets\Code\Skills\Assassin\sa_Evasion.cs" />
-    <Compile Include="Assets\Code\Skills\Assassin\sa_FasterThanLight.cs" />
-    <Compile Include="Assets\Code\Skills\Assassin\sa_FireClaw.cs" />
-    <Compile Include="Assets\Code\Skills\Assassin\sa_Gehenna.cs" />
-    <Compile Include="Assets\Code\Skills\Assassin\sa_LethalTempo.cs" />
-    <Compile Include="Assets\Code\Skills\Assassin\sa_PiercingLight.cs" />
-    <Compile Include="Assets\Code\Skills\Assassin\sa_PiercingStrike.cs" />
-    <Compile Include="Assets\Code\Skills\Assassin\sa_ReleasedStream.cs" />
-    <Compile Include="Assets\Code\Skills\Assassin\sa_ShiningCloak.cs" />
-    <Compile Include="Assets\Code\Skills\Assassin\sa_Tornado.cs" />
-    <Compile Include="Assets\Code\Skills\Assassin\sa_WindBlade.cs" />
-    <Compile Include="Assets\Code\Skills\Bruiser\sb_Anarchy.cs" />
-    <Compile Include="Assets\Code\Skills\Bruiser\sb_Blocking.cs" />
-    <Compile Include="Assets\Code\Skills\Bruiser\sb_DeathBlossom.cs" />
-    <Compile Include="Assets\Code\Skills\Bruiser\sb_DeathSign.cs" />
-    <Compile Include="Assets\Code\Skills\Bruiser\sb_DelayedDeath.cs" />
-    <Compile Include="Assets\Code\Skills\Bruiser\sb_Devouring.cs" />
-    <Compile Include="Assets\Code\Skills\Bruiser\sb_Electrification.cs" />
-    <Compile Include="Assets\Code\Skills\Bruiser\sb_Evolution.cs" />
-    <Compile Include="Assets\Code\Skills\Bruiser\sb_FaceOfDeath.cs" />
-    <Compile Include="Assets\Code\Skills\Bruiser\sb_Harvesting.cs" />
-    <Compile Include="Assets\Code\Skills\Bruiser\sb_LifeDrain.cs" />
-    <Compile Include="Assets\Code\Skills\Bruiser\sb_LightningChain.cs" />
-    <Compile Include="Assets\Code\Skills\Bruiser\sb_Thunderstorm.cs" />
-    <Compile Include="Assets\Code\Skills\Bruiser\sb_WideSwing.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_AllIn.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_ComboCharge.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_CounterAnalysis.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_CriticalBalance.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_Destruction.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_IronDefence.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_Overcharge.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_Rearm.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_Recharge.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_Retreat.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_Synchronization.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_TacticalPreparation.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\st_TacticalSwap.cs" />
-    <Compile Include="Assets\Code\Skills\Warrior\sw_AbsoluteDarkness.cs" />
-    <Compile Include="Assets\Code\Skills\Warrior\sw_CounterAttack.cs" />
-    <Compile Include="Assets\Code\Skills\Warrior\sw_CursedSign.cs" />
-    <Compile Include="Assets\Code\Skills\Warrior\sw_DarkDemon.cs" />
-    <Compile Include="Assets\Code\Skills\Warrior\sw_DarkVortex.cs" />
-    <Compile Include="Assets\Code\Skills\Warrior\sw_EarthDestruction.cs" />
-    <Compile Include="Assets\Code\Skills\Warrior\sw_FinnishingBlow.cs" />
-    <Compile Include="Assets\Code\Skills\Warrior\sw_PerfectWarrior.cs" />
-    <Compile Include="Assets\Code\Skills\Warrior\sw_Regeneration.cs" />
-    <Compile Include="Assets\Code\Skills\Warrior\sw_Ricochet.cs" />
-    <Compile Include="Assets\Code\Skills\Warrior\sw_StoneSkin.cs" />
-    <Compile Include="Assets\Code\Skills\Warrior\sw_TripleCut.cs" />
-    <Compile Include="Assets\Code\Skills\Warrior\sw_Tsunami.cs" />
-    <Compile Include="Assets\Code\Skills\Warrior\sw_WaterPrison.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillAssassination.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillBurnout.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillDoubleStrike.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillEvasion.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillFasterThanLight.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillFireClaw.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillGehenna.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillLethalTempo.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillPiercingLight.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillPiercingStrike.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillReleasedStream.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillShiningCloak.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillTornado.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillWindBlade.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillAnarchy.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillBlocking.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillDeathBlossom.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillDeathSign.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillDelayedDeath.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillDevouring.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillElectrification.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillEvolution.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillFaceOfDeath.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillHarvesting.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillLifeDrain.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillLightningChain.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillThunderstorm.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillWideSwing.cs" />
+    <Compile Include="Assets\Code\Skills\SkillTargets.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillAllIn.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillComboCharge.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillCounterAnalysis.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillCriticalBalance.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillDestruction.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillIronDefence.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillOvercharge.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillRearm.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillRecharge.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillRetreat.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillSynchronization.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillTacticalPreparation.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillTacticalSwap.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillAbsoluteDarkness.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillCounterAttack.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillCursedSign.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillDarkDemon.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillDarkVortex.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillEarthDestruction.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillFinnishingBlow.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillPerfectWarrior.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillRegeneration.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillRicochet.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillStoneSkin.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillTripleCut.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillTsunami.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillWaterPrison.cs" />
     <Compile Include="Assets\Code\SystemScripts\AppParameters.cs" />
     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\GetLocalisation.cs" />
     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LoadLocalisation.cs" />
@@ -322,7 +325,7 @@
     <Compile Include="Assets\Code\UIScripts\SkillTreeScene\SkillsLoaderFromXML.cs" />
     <Compile Include="Assets\Code\UIScripts\SkillTreeScene\SkillTreeController.cs" />
     <Compile Include="Assets\PlayerController\C_Hero.cs" />
-    <Compile Include="Assets\PlayerController\C_PlayerController.cs" />
+    <Compile Include="Assets\PlayerController\HeroController.cs" />
     <Compile Include="Assets\PlayerController\DefenceParam.cs" />
     <Compile Include="Assets\PlayerController\Hero_Serialization.cs" />
     <Compile Include="Assets\PlayerController\HeroSkillsController.cs" />

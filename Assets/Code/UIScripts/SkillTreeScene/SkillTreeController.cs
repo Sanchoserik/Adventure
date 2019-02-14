@@ -42,7 +42,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
          
             switch (textValue.name)
             {
-                case "SkillPointsVal": {text.text = C_PlayerController.mainHero.skillPoints.ToString(); break; }
+                case "SkillPointsVal": {text.text = HeroController.mainHero.skillPoints.ToString(); break; }
             }
         }
     }

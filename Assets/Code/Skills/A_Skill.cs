@@ -5,6 +5,7 @@ using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
 using Assets.Monsters;
+using Assets.PlayerController;
 using UnityEngine;
 
 namespace Assets.Code.Skills
@@ -17,5 +18,25 @@ namespace Assets.Code.Skills
         public short skillLevel;
         public short skillMaxLevel;
 
+        public short energyCost;
+        public short actionPointsCost;
+        public short skillDuration;
+        public SkillTargets skillTargets;
+
+        public A_Skill(string _name, short _maxLevel)
+        {
+            skillName = _name;
+            isLearned = false;
+            skillLevel = 0;
+            skillMaxLevel = _maxLevel;
+        }
+
+        public abstract void callSkill(C_Hero user);
+        //TO DO - add other signatures for callSkipll like (C_Monster user) etc.
+
+        public static void bindSkillData()
+        {
+            // 
+        }
     }
 }

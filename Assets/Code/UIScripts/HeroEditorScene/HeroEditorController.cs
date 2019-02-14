@@ -40,9 +40,9 @@ namespace Assets.Code.UIScripts.HeroEditorScene
         {
             switch (data.commandName)
             {
-                case "attrChange": { setCommand(new CommandAttributeChange(C_PlayerController.mainHero, data)); break; }
-                case "defValChange": { setCommand(new CommandDefenceValueChange(C_PlayerController.mainHero, data)); break; }
-                case "levelChange": { setCommand(new CommandLevelChange(C_PlayerController.mainHero, data)); break; }
+                case "attrChange": { setCommand(new CommandAttributeChange(HeroController.mainHero, data)); break; }
+                case "defValChange": { setCommand(new CommandDefenceValueChange(HeroController.mainHero, data)); break; }
+                case "levelChange": { setCommand(new CommandLevelChange(HeroController.mainHero, data)); break; }
             }
             dataUpdated = false;
         }
@@ -67,30 +67,30 @@ namespace Assets.Code.UIScripts.HeroEditorScene
 
             switch (textValue.name)
             {
-                case "StrengthVal": { text.text = C_PlayerController.mainHero.baseStrength.ToString(); break; }
-                case "EnduranceVal": { text.text = C_PlayerController.mainHero.baseEndurance.ToString(); break; }
-                case "KnowledgeVal": { text.text = C_PlayerController.mainHero.baseKnowledge.ToString(); break; }
-                case "CharismaVal": { text.text = C_PlayerController.mainHero.baseCharisma.ToString(); break; }
+                case "StrengthVal": { text.text = HeroController.mainHero.baseStrength.ToString(); break; }
+                case "EnduranceVal": { text.text = HeroController.mainHero.baseEndurance.ToString(); break; }
+                case "KnowledgeVal": { text.text = HeroController.mainHero.baseKnowledge.ToString(); break; }
+                case "CharismaVal": { text.text = HeroController.mainHero.baseCharisma.ToString(); break; }
 
-                case "PhysicalDefVal": { text.text = C_PlayerController.mainHero.physDef.strValue; break; }
-                case "FireDefVal": { text.text = C_PlayerController.mainHero.fireDef.strValue; break; }
-                case "AirDefVal": { text.text = C_PlayerController.mainHero.airDef.strValue; break; }
-                case "LightningDefVal": { text.text = C_PlayerController.mainHero.lightningDef.strValue; break; }
-                case "EarthDefVal": { text.text = C_PlayerController.mainHero.earthDef.strValue; break; }
-                case "WaterDefVal": { text.text = C_PlayerController.mainHero.waterDef.strValue; break; }
-                case "LifeDefVal": { text.text = C_PlayerController.mainHero.lifeDef.strValue; break; }
-                case "DeathDefVal": { text.text = C_PlayerController.mainHero.deathDef.strValue; break; }
-                case "LightDefVal": { text.text = C_PlayerController.mainHero.lightDef.strValue; break; }
-                case "DarknessDefVal": { text.text = C_PlayerController.mainHero.darknessDef.strValue; break; }
+                case "PhysicalDefVal": { text.text = HeroController.mainHero.physDef.strValue; break; }
+                case "FireDefVal": { text.text = HeroController.mainHero.fireDef.strValue; break; }
+                case "AirDefVal": { text.text = HeroController.mainHero.airDef.strValue; break; }
+                case "LightningDefVal": { text.text = HeroController.mainHero.lightningDef.strValue; break; }
+                case "EarthDefVal": { text.text = HeroController.mainHero.earthDef.strValue; break; }
+                case "WaterDefVal": { text.text = HeroController.mainHero.waterDef.strValue; break; }
+                case "LifeDefVal": { text.text = HeroController.mainHero.lifeDef.strValue; break; }
+                case "DeathDefVal": { text.text = HeroController.mainHero.deathDef.strValue; break; }
+                case "LightDefVal": { text.text = HeroController.mainHero.lightDef.strValue; break; }
+                case "DarknessDefVal": { text.text = HeroController.mainHero.darknessDef.strValue; break; }
 
-                case "HeroHPVal": { text.text = C_PlayerController.mainHero.baseMaxHP.ToString(); break; }
-                case "HeroEnergyVal": { text.text = C_PlayerController.mainHero.baseMaxENE.ToString(); break; }
-                case "HeroActionPointsVal": { text.text = C_PlayerController.mainHero.baseAP.ToString(); break; }
-                case "HeroLevelVal": { text.text = C_PlayerController.mainHero.level.ToString(); break; }
-                case "HeroExpVal": { text.text = C_PlayerController.mainHero.currExp.ToString(); break; }
-                case "HeroNextLevelEXPVal": { text.text = C_PlayerController.mainHero.nextLevelExp.ToString(); break; }
-                case "HeroSkillPointsVal": { text.text = C_PlayerController.mainHero.skillPoints.ToString(); break; }
-                case "AttributePointsVal": { text.text = C_PlayerController.mainHero.attributePoints.ToString(); break; }
+                case "HeroHPVal": { text.text = HeroController.mainHero.baseMaxHP.ToString(); break; }
+                case "HeroEnergyVal": { text.text = HeroController.mainHero.baseMaxENE.ToString(); break; }
+                case "HeroActionPointsVal": { text.text = HeroController.mainHero.baseAP.ToString(); break; }
+                case "HeroLevelVal": { text.text = HeroController.mainHero.level.ToString(); break; }
+                case "HeroExpVal": { text.text = HeroController.mainHero.currExp.ToString(); break; }
+                case "HeroNextLevelEXPVal": { text.text = HeroController.mainHero.nextLevelExp.ToString(); break; }
+                case "HeroSkillPointsVal": { text.text = HeroController.mainHero.skillPoints.ToString(); break; }
+                case "AttributePointsVal": { text.text = HeroController.mainHero.attributePoints.ToString(); break; }
             }
         }
     }
