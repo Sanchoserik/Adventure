@@ -8,7 +8,7 @@ namespace Assets.Code.Skills.Bruiser
 {
     class SkillEvolution : A_Skill
     {
-        public SkillEvolution(string _name, short _maxLevel) : base(_name, _maxLevel)
+        public SkillEvolution(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
         {
 
         }

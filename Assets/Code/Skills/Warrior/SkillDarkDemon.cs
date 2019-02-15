@@ -8,7 +8,7 @@ namespace Assets.Code.Skills.Warrior
 {
     class SkillDarkDemon : A_Skill
     {
-        public SkillDarkDemon(string _name, short _maxLevel) : base(_name, _maxLevel)
+        public SkillDarkDemon(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
         {
 
         }

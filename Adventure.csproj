@@ -276,6 +276,8 @@
     <Compile Include="Assets\Code\Skills\Bruiser\SkillLightningChain.cs" />
     <Compile Include="Assets\Code\Skills\Bruiser\SkillThunderstorm.cs" />
     <Compile Include="Assets\Code\Skills\Bruiser\SkillWideSwing.cs" />
+    <Compile Include="Assets\Code\Skills\ISkillFabric.cs" />
+    <Compile Include="Assets\Code\Skills\SkillFabric.cs" />
     <Compile Include="Assets\Code\Skills\SkillTargets.cs" />
     <Compile Include="Assets\Code\Skills\Tactics\SkillAllIn.cs" />
     <Compile Include="Assets\Code\Skills\Tactics\SkillComboCharge.cs" />
@@ -285,8 +287,8 @@
     <Compile Include="Assets\Code\Skills\Tactics\SkillIronDefence.cs" />
     <Compile Include="Assets\Code\Skills\Tactics\SkillOvercharge.cs" />
     <Compile Include="Assets\Code\Skills\Tactics\SkillRearm.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\SkillRecharge.cs" />
-    <Compile Include="Assets\Code\Skills\Tactics\SkillRetreat.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillTacticalRecharge.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillTacticalRetreat.cs" />
     <Compile Include="Assets\Code\Skills\Tactics\SkillSynchronization.cs" />
     <Compile Include="Assets\Code\Skills\Tactics\SkillTacticalPreparation.cs" />
     <Compile Include="Assets\Code\Skills\Tactics\SkillTacticalSwap.cs" />

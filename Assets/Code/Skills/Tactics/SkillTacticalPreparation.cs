@@ -14,7 +14,7 @@ namespace Assets.Code.Skills.Tactics
     {
         AS_Retreat script = new AS_Retreat();
 
-        public SkillTacticalPreparation(string _name, short _maxLevel) : base(_name, _maxLevel)
+        public SkillTacticalPreparation(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
         {
 
         }

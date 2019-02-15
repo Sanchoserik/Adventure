@@ -14,6 +14,7 @@ namespace Assets.Code.Skills
     public abstract class A_Skill
     {
         public string skillName;
+        public bool isAvailableForLearning;
         public bool isLearned;
         public short skillLevel;
         public short skillMaxLevel;
@@ -23,12 +24,14 @@ namespace Assets.Code.Skills
         public short skillDuration;
         public SkillTargets skillTargets;
 
-        public A_Skill(string _name, short _maxLevel)
+        public A_Skill(string _name, short _maxLevel, bool _isAvailableForLearning)
         {
             skillName = _name;
             isLearned = false;
+            isAvailableForLearning = _isAvailableForLearning;
             skillLevel = 0;
             skillMaxLevel = _maxLevel;
+
         }
 
         public abstract void callSkill(C_Hero user);

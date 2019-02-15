@@ -8,7 +8,7 @@ namespace Assets.Code.Skills.Bruiser
 {
     class SkillAnarchy : A_Skill
     {
-        public SkillAnarchy(string _name, short _maxLevel) : base(_name, _maxLevel)
+        public SkillAnarchy(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
         {
 
         }

@@ -8,7 +8,7 @@ namespace Assets.Code.Skills.Assassin
 {
     class SkillWindBlade : A_Skill
     {
-        public SkillWindBlade(string _name, short _maxLevel) : base(_name, _maxLevel)
+        public SkillWindBlade(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
         {
 
         }

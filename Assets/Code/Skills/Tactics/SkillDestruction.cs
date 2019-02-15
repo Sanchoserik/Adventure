@@ -14,7 +14,7 @@ namespace Assets.Code.Skills.Tactics
     {
         AS_Destruction script = new AS_Destruction();
 
-        public SkillDestruction(string _name, short _maxLevel) : base(_name, _maxLevel)
+        public SkillDestruction(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
         {
 
         }

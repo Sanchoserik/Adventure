@@ -8,7 +8,7 @@ namespace Assets.Code.Skills.Warrior
 {
     class SkillPerfectWarrior : A_Skill
     {
-        public SkillPerfectWarrior(string _name, short _maxLevel) : base(_name, _maxLevel)
+        public SkillPerfectWarrior(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
         {
 
         }

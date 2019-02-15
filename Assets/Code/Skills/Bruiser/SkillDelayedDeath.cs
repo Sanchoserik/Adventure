@@ -8,7 +8,7 @@ namespace Assets.Code.Skills.Bruiser
 {
     class SkillDelayedDeath : A_Skill
     {
-       public SkillDelayedDeath(string _name, short _maxLevel) : base(_name, _maxLevel)
+       public SkillDelayedDeath(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
         {
 
         }

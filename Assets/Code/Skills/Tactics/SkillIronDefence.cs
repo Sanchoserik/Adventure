@@ -14,7 +14,7 @@ namespace Assets.Code.Skills.Tactics
     {
         AS_IronDefence script = new AS_IronDefence();
 
-        public SkillIronDefence(string _name, short _maxLevel) : base(_name, _maxLevel)
+        public SkillIronDefence(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
         {
 
         }

@@ -8,7 +8,7 @@ namespace Assets.Code.Skills.Assassin
 {
     class SkillDoubleStrike : A_Skill
     {
-        public SkillDoubleStrike(string _name, short _maxLevel) : base(_name, _maxLevel)
+        public SkillDoubleStrike(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
         {
 
         }

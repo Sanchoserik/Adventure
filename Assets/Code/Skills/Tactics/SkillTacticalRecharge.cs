@@ -10,11 +10,11 @@ using Assets.Skills.ActionScripts;
 
 namespace Assets.Code.Skills.Tactics
 {
-    class SkillRecharge :A_Skill
+    class SkillTacticalRecharge :A_Skill
     {
         AS_Recharge script = new AS_Recharge();
 
-        public SkillRecharge(string _name, short _maxLevel) : base(_name, _maxLevel)
+        public SkillTacticalRecharge(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
         {
 
         }

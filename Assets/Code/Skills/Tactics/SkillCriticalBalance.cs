@@ -14,7 +14,7 @@ namespace Assets.Code.Skills.Tactics
     {
         AS_CriticalBalance script = new AS_CriticalBalance();
 
-        public SkillCriticalBalance(string _name, short _maxLevel) : base(_name, _maxLevel)
+        public SkillCriticalBalance(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
         {
 
         }

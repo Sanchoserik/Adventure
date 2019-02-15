@@ -14,7 +14,7 @@ namespace Assets.Code.Skills.Tactics
     {
         AS_Rearm script = new AS_Rearm();
 
-        public SkillRearm(string _name, short _maxLevel) : base(_name, _maxLevel)
+        public SkillRearm(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
         {
 
         }

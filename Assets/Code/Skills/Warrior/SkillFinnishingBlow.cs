@@ -8,7 +8,7 @@ namespace Assets.Code.Skills.Warrior
 {
     class SkillFinnishingBlow : A_Skill
     {
-        public SkillFinnishingBlow(string _name, short _maxLevel) : base(_name, _maxLevel)
+        public SkillFinnishingBlow(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
         {
 
         }

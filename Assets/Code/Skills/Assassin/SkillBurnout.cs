@@ -8,7 +8,7 @@ namespace Assets.Code.Skills.Assassin
 {
     class SkillBurnout : A_Skill
     {
-        public SkillBurnout(string _name, short _maxLevel) : base(_name, _maxLevel)
+        public SkillBurnout(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
         {
 
         }

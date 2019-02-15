@@ -14,7 +14,8 @@ namespace Assets.PlayerController
         //standart initialisation
         public HeroSkillsController(List<SkillDataStorage> data)
         {
-            
+            skillsList = new List<A_Skill>();
+
         }
 
         //load hero skill list from file
