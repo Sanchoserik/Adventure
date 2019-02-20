@@ -8,19 +8,10 @@ using System.Xml.Linq;
 
 namespace Assets.Code.UIScripts.SkillTreeScene
 {
-    public class SkillsLoaderFromXML : MonoBehaviour
+    public class SkillsLoaderFromXML
     {
-        public List<SkillDataStorage> skillDataXML = new List<SkillDataStorage>();   
-        public GameObject skillDataReader;
 
-        void Start()
-        {
-            //DontDestroyOnLoad(gameObject); //Allows Loader to carry over into new scene                          
-            LoadXML();
-            skillDataReader.SetActive(true); //seting active skillswitcher when skill data loaded from XML
-        }
-
-        void LoadXML() // TODO: add localisation language parames
+        public static void LoadXML(List<SkillDataStorage> skillDataXML) // TODO: add localisation language parames
         {
             IEnumerable<XElement> skills;      
             IEnumerable<XElement> skillLocalisation; 
@@ -34,13 +25,13 @@ namespace Assets.Code.UIScripts.SkillTreeScene
 
             skillLocalisation = skillsLocalisationXML.Descendants("skills").Elements();
 
-            getSkillsDataFromXML(skills);
-            getSkillsLocalisationFromXML(skillLocalisation);
+            getSkillsDataFromXML(skillDataXML,skills);
+            getSkillsLocalisationFromXML(skillDataXML, skillLocalisation);
         
            
         }
 
-        private void getSkillsDataFromXML(IEnumerable<XElement> skills)
+        private static void getSkillsDataFromXML(List<SkillDataStorage> skillDataXML, IEnumerable<XElement> skills)
         {
             foreach (XElement item in skills)
             {              
@@ -77,9 +68,9 @@ namespace Assets.Code.UIScripts.SkillTreeScene
             }
         }
 
-        private void getSkillsLocalisationFromXML(IEnumerable<XElement> skillLocalisation)
+        private static void getSkillsLocalisationFromXML(List<SkillDataStorage> skillDataXML, IEnumerable<XElement> skillLocalisation)
         {
-            int iter = 0; // iter
+            int iter = 0; 
             foreach (XElement item in skillLocalisation)
             {
                 skillDataXML[iter].skillLocalisadName = item.Attribute("locname").Value;

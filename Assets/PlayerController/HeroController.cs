@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Code.UIScripts.SkillTreeScene;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,13 +11,23 @@ namespace Assets.PlayerController
     {
         public static bool loadHero = false;
         public static C_Hero mainHero = new C_Hero();
+        public static List<SkillDataStorage> skillDataStorage;
         public GameObject heroEditorController;
 
         private void Start()
         {
+            skillDataStorage = new List<SkillDataStorage>();
+            SkillsLoaderFromXML.LoadXML(skillDataStorage);
+
             if (loadHero)
             {
-                loadHeroFromSaveFile(); }
+                loadHeroFromSaveFile();
+            }
+            else
+            {
+                mainHero.heroSkills = new HeroSkillsController(skillDataStorage);
+            }
+
             heroEditorController.SetActive(true);
         }
 

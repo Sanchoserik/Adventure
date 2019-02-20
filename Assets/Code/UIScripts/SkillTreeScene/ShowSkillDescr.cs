@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Assets.PlayerController;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using UnityEngine;
@@ -19,18 +20,15 @@ namespace Assets.Code.UIScripts.SkillTreeScene
         public Text skillDuration;
         public Text skillTargets;
 
-        bool skillLoaded = false; 
-        bool skillSelected = false;
-        GameObject newSkill;
-        List<SkillDataStorage> data; // all skills data from loader xml file
+        private bool skillLoaded = false;
+        private bool skillSelected = false;
+        private GameObject newSkill;
+        private List<SkillDataStorage> data; // all skills data from loader xml file
 
         void Start()
-        {
-            GameObject skillLoader = GameObject.Find("SkillLoader");
-            SkillsLoaderFromXML loader = skillLoader.GetComponent<SkillsLoaderFromXML>();
-            //get loaded skill data
-            data = loader.skillDataXML;   
-            loadSkillLevels(skillTreeParent); // load skill levels
+        {      
+            data = HeroController.skillDataStorage;
+            loadSkillLevels(skillTreeParent); 
         }
 
         void Update()

@@ -120,6 +120,8 @@ namespace Assets.PlayerController
             inUseTalismansStorage = new List<A_Talisman>();
             effectsStorage = new List<A_Effect>();       
 
+
+
             baseMaxHP = 200;
             currHP = 200;
             baseMaxENE = 100;
