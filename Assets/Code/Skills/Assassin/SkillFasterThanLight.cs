@@ -8,7 +8,7 @@ namespace Assets.Code.Skills.Assassin
 {
     class SkillFasterThanLight : A_Skill
     {
-        public SkillFasterThanLight(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
+        public SkillFasterThanLight(string _name, string _skillUnlocker, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _isAvailableForLearning)
         {
 
         }

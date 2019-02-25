@@ -38,6 +38,7 @@ namespace Assets.PlayerController
             slist.Add(skillFabric.createSkillRearm());
             slist.Add(skillFabric.createSkillSynchronyzation());
             slist.Add(skillFabric.createSkillTacticalRetreat());
+            slist.Add(skillFabric.createSkillTacticalPreparation());
             slist.Add(skillFabric.createSkillTacticalRecharge());
             slist.Add(skillFabric.createSkillTacticalSwap());
 
@@ -85,6 +86,42 @@ namespace Assets.PlayerController
             slist.Add(skillFabric.createSkillLightningChain());
             slist.Add(skillFabric.createSkillThunderstorm());
             slist.Add(skillFabric.createSkillWideSwing());
+        }
+
+        public static string getSkillAvailability(List<A_Skill> _data, string _name)
+        {
+            A_Skill skill = _data.Find(x => x.skillName == _name);
+
+            if (skill.isAvailableForLearning)
+            {
+                if (skill.isLearned)
+                    return "Learned";
+                else
+                    return "Available";
+            }
+            else
+                return "NotAvailable";
+        }
+
+        public static void refreshAvailability(List<A_Skill> _data, string _newLearnedSkillName)
+        {
+            foreach (A_Skill skill in _data)
+            {
+                if (skill.skillUnlocker.Equals(_newLearnedSkillName) && !skill.isAvailableForLearning && !skill.isLearned)
+                    skill.isAvailableForLearning = true;
+                else
+                    skill.isAvailableForLearning = false;
+            }
+        }
+
+        public static void setSkillAsLearned(A_Skill skill)
+        {
+            skill.isLearned = true;
+        }
+
+        public static void setSkillAsNotLearned(A_Skill skill)
+        {
+            skill.isLearned = false;
         }
 
     }

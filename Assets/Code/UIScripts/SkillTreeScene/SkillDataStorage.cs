@@ -17,7 +17,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
         public Dictionary<int, string> skillEneCost; 
         public List<Dictionary<string, string>> skillValues; 
         //skill Localisation data
-        public string skillLocalisadName; // skill localised name
+        public string skillLocalisedName; // skill localised name
         public List<string> skillLocalisedLevelDescription; // skill level description
         public string skillMainDescription; // skil description
         public List<string> skillTargetsDescription; // localised skill targets 

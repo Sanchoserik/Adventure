@@ -14,7 +14,7 @@ namespace Assets.Code.Skills.Tactics
     {
         AS_Overcharge script = new AS_Overcharge();
 
-        public SkillOvercharge(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
+        public SkillOvercharge(string _name, string _skillUnlocker, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _isAvailableForLearning)
         {
 
         }

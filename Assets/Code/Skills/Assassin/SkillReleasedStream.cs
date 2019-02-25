@@ -8,7 +8,7 @@ namespace Assets.Code.Skills.Assassin
 {
     class SkillReleasedStream : A_Skill
     {
-        public SkillReleasedStream(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
+        public SkillReleasedStream(string _name, string _skillUnlocker, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _isAvailableForLearning)
         {
 
         }

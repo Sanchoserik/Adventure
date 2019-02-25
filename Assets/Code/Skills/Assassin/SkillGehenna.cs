@@ -8,7 +8,7 @@ namespace Assets.Code.Skills.Assassin
 {
     class SkillGehenna : A_Skill
     {
-        public SkillGehenna(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
+        public SkillGehenna(string _name, string _skillUnlocker, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _isAvailableForLearning)
         {
 
         }

@@ -8,7 +8,7 @@ namespace Assets.Code.Skills.Warrior
 {
     class SkillEarthDestruction : A_Skill
     {
-        public SkillEarthDestruction(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
+        public SkillEarthDestruction(string _name, string _skillUnlocker, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _isAvailableForLearning)
         {
 
         }

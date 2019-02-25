@@ -1,4 +1,5 @@
-﻿using Assets.PlayerController;
+﻿using Assets.Code.Skills;
+using Assets.PlayerController;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
@@ -19,14 +20,17 @@ namespace Assets.Code.UIScripts.SkillTreeScene
         public Text skillEnergyCost;
         public Text skillDuration;
         public Text skillTargets;
+        public Text skillAvailability;
 
         private bool skillLoaded = false;
         private bool skillSelected = false;
         private GameObject newSkill;
         private List<SkillDataStorage> data; // all skills data from loader xml file
+        private List<A_Skill> skillTree;
 
         void Start()
-        {      
+        {
+            skillTree = HeroController.mainHero.heroSkills.skillsList;
             data = HeroController.skillDataStorage;
             loadSkillLevels(skillTreeParent); 
         }
@@ -46,11 +50,12 @@ namespace Assets.Code.UIScripts.SkillTreeScene
         void loadSkillData(GameObject _skill) 
         {
             this.skillLevelDescription.text = ""; 
-            skillDuration.text = ""; 
+            skillDuration.text = "";
+            skillAvailability.text = "";
 
             SkillDataStorage _data = data.Find(x => x.skillName == _skill.name); //concrette skill storage
 
-            skillName.text = _data.skillLocalisadName;
+            skillName.text = _data.skillLocalisedName;
             skillDescription.text = _data.skillMainDescription;
 
             string skillLevelDescription = _data.skillLocalisedLevelDescription[_data.skillCurentLevel-1];
@@ -109,7 +114,10 @@ namespace Assets.Code.UIScripts.SkillTreeScene
             if (_data.skillValues[_data.skillCurentLevel - 1].ContainsKey("Time"))
             {
                 skillDuration.text = _data.skillValues[_data.skillCurentLevel - 1]["Time"];
-            }            
+            }
+
+            //get skillAvailability
+            skillAvailability.text = HeroSkillsController.getSkillAvailability(skillTree, _data.skillName);                    
         }  
         //CHANGE SKILL
         public void changeSkill(GameObject _newSkill)
@@ -185,33 +193,57 @@ namespace Assets.Code.UIScripts.SkillTreeScene
         public void skillLevelUp(GameObject _skill)
         {
             string _sName = _skill.name;
-            Text t = _skill.GetComponentInChildren<Text>();
-            SkillDataStorage _d = data.Find(x => x.skillName == _sName);
-            //
-            if (t != null)
+            A_Skill _s = skillTree.Find(x => x.skillName == _sName);
+            if (_s.skillLevel + 1 <= _s.skillMaxLevel)
             {
-                if (_d.skillCurentLevel + 1 <= _d.skillLevels)
+                string _availability = HeroSkillsController.getSkillAvailability(skillTree, _sName);
+
+                if (_availability.Equals("Available"))
                 {
-                    ++_d.skillCurentLevel;
-                    t.text = _d.skillCurentLevel + "/" + _d.skillLevels;
-                    loadSkillData(_skill);
+                    levelUp(_skill, _sName, _s);
+                    HeroSkillsController.refreshAvailability(skillTree, _sName);
+                    HeroSkillsController.setSkillAsLearned(skillTree.Find(x => x.skillName.Equals(_sName)));
+                }
+                else if (_availability.Equals("Learned"))
+                {
+                    levelUp(_skill, _sName, _s);
                 }
             }
         }
+
+        private void levelUp(GameObject _skill, string _sName, A_Skill _s)
+        {
+            Text t = _skill.GetComponentInChildren<Text>();
+                       
+            if (t != null)
+            {            
+                    ++_s.skillLevel;
+                    t.text = _s.skillLevel + "/" + _s.skillMaxLevel;
+                    loadSkillData(_skill);              
+            }
+        }
+
         public void skillLevelDown(GameObject _skill)
         {
             string _sName = _skill.name;
-            Text t = _skill.GetComponentInChildren<Text>();
-            SkillDataStorage _d = data.Find(x => x.skillName == _sName);
-            //
-            if (t != null)
+            A_Skill _s = skillTree.Find(x => x.skillName == _sName);
+            if (_s.skillLevel - 1 > 0)
             {
-                if (_d.skillCurentLevel - 1 > 0)
-                {
-                    --_d.skillCurentLevel;
-                    t.text = _d.skillCurentLevel + "/" + _d.skillLevels;
+                levelDown(_skill, _sName, _s);
+                
+            }
+
+        }
+
+        private void levelDown(GameObject _skill, string _sName, A_Skill _s)
+        {
+            Text t = _skill.GetComponentInChildren<Text>();          
+
+            if (t != null)
+            {               
+                    --_s.skillLevel;
+                    t.text = _s.skillLevel + "/" + _s.skillMaxLevel;
                     loadSkillData(_skill);
-                }
             }
         }
 

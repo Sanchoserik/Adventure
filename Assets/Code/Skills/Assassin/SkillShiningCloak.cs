@@ -8,7 +8,7 @@ namespace Assets.Code.Skills.Assassin
 {
     class SkillShiningCloak : A_Skill
     {
-        public SkillShiningCloak(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
+        public SkillShiningCloak(string _name, string _skillUnlocker, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _isAvailableForLearning)
         {
 
         }

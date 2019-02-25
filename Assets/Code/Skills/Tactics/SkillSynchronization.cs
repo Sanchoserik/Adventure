@@ -14,7 +14,7 @@ namespace Assets.Code.Skills.Tactics
     {
        AS_Synchronization script = new AS_Synchronization();
 
-        public SkillSynchronization(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
+        public SkillSynchronization(string _name, string _skillUnlocker, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _isAvailableForLearning)
         {
 
         }

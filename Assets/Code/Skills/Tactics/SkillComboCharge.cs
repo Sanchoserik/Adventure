@@ -14,7 +14,7 @@ namespace Assets.Code.Skills.Tactics
     {
         AS_ComboCharge script = new AS_ComboCharge();
 
-        public SkillComboCharge(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
+        public SkillComboCharge(string _name, string _skillUnlocker, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _isAvailableForLearning)
         {
 
         }

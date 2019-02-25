@@ -24,13 +24,15 @@ namespace Assets.Code.Skills
         public short skillDuration;
         public SkillTargets skillTargets;
 
-        public A_Skill(string _name, short _maxLevel, bool _isAvailableForLearning)
+        public string skillUnlocker;
+
+        public A_Skill(string _name, string _skillUnlocker, bool _isAvailableForLearning)
         {
             skillName = _name;
             isLearned = false;
             isAvailableForLearning = _isAvailableForLearning;
             skillLevel = 0;
-            skillMaxLevel = _maxLevel;
+            skillUnlocker = _skillUnlocker;
 
         }
 

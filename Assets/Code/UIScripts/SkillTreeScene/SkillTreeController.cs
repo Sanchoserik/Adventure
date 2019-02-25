@@ -12,6 +12,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
     {
         private bool dataUpdated = false;
         public GameObject skillTreeControllPanel;
+
         private void Start()
         {
             getVisualValues();

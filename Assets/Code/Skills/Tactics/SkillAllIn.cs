@@ -15,7 +15,7 @@ namespace Assets.Code.Skills.Tactics
         AS_AllIn script = new AS_AllIn();
      
         
-        public SkillAllIn(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
+        public SkillAllIn(string _name, string _skillUnlocker, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _isAvailableForLearning)
         {
           
         }

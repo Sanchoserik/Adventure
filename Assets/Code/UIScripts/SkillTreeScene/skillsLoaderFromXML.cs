@@ -73,7 +73,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
             int iter = 0; 
             foreach (XElement item in skillLocalisation)
             {
-                skillDataXML[iter].skillLocalisadName = item.Attribute("locname").Value;
+                skillDataXML[iter].skillLocalisedName = item.Attribute("locname").Value;
                 skillDataXML[iter].skillMainDescription = item.Attribute("descr").Value;
 
                 List<string> levelsDescr = new List<string>();// concrette level description

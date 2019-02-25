@@ -8,7 +8,7 @@ namespace Assets.Code.Skills.Warrior
 {
     class SkillRicochet : A_Skill
     {
-        public SkillRicochet(string _name, short _maxLevel, bool _isAvailableForLearning) : base(_name, _maxLevel, _isAvailableForLearning)
+        public SkillRicochet(string _name, string _skillUnlocker, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _isAvailableForLearning)
         {
 
         }
