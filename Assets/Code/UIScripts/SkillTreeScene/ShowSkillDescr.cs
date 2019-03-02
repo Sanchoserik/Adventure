@@ -21,9 +21,12 @@ namespace Assets.Code.UIScripts.SkillTreeScene
         public Text skillDuration;
         public Text skillTargets;
         public Text skillAvailability;
+        public Text heroSkillPoints;
 
         private bool skillLoaded = false;
         private bool skillSelected = false;
+        private bool visualValuesUpdated = true;
+
         private GameObject newSkill;
         private List<SkillDataStorage> data; // all skills data from loader xml file
         private List<A_Skill> skillTree;
@@ -32,7 +35,8 @@ namespace Assets.Code.UIScripts.SkillTreeScene
         {
             skillTree = HeroController.mainHero.heroSkills.skillsList;
             data = HeroController.skillDataStorage;
-            loadSkillLevels(skillTreeParent); 
+            loadSkillLevels(skillTreeParent);
+            heroSkillPoints.text = HeroController.mainHero.skillPoints.ToString();
         }
 
         void Update()
@@ -44,6 +48,18 @@ namespace Assets.Code.UIScripts.SkillTreeScene
                 skillLoaded = true;
                 skillSelected = false;
             }
+            if (!visualValuesUpdated)
+            {
+                updateTextValues(newSkill);
+            }
+        }
+
+        private void updateTextValues(GameObject _skill)
+        {
+            heroSkillPoints.text = HeroController.mainHero.skillPoints.ToString();
+
+            A_Skill skill = skillTree.Find(x => x.skillName.Equals(_skill.name));
+            skillAvailability.text = HeroSkillsController.getSkillAvailability(skill);
         }
 
         //LOAD LEVEL DATA
@@ -117,7 +133,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
             }
 
             //get skillAvailability
-            skillAvailability.text = HeroSkillsController.getSkillAvailability(skillTree, _data.skillName);                    
+            skillAvailability.text = HeroSkillsController.getSkillAvailability(skillTree.Find(x => x.skillName.Equals(_data.skillName)));                    
         }  
         //CHANGE SKILL
         public void changeSkill(GameObject _newSkill)
@@ -192,21 +208,30 @@ namespace Assets.Code.UIScripts.SkillTreeScene
         //CHANGE SKILL LEVEL
         public void skillLevelUp(GameObject _skill)
         {
-            string _sName = _skill.name;
-            A_Skill _s = skillTree.Find(x => x.skillName == _sName);
-            if (_s.skillLevel + 1 <= _s.skillMaxLevel)
+            if(HeroController.mainHero.skillPoints > 0)
             {
-                string _availability = HeroSkillsController.getSkillAvailability(skillTree, _sName);
+                string _sName = _skill.name;
+                A_Skill _s = skillTree.Find(x => x.skillName == _sName);
+                // skills are default level 1 
+                if ( (_s.skillLevel + 1 <= _s.skillMaxLevel) || (!_s.isLearned && _s.skillMaxLevel == 1))
+                {
+                    string _availability = HeroSkillsController.getSkillAvailability(_s);
 
-                if (_availability.Equals("Available"))
-                {
-                    levelUp(_skill, _sName, _s);
-                    HeroSkillsController.refreshAvailability(skillTree, _sName);
-                    HeroSkillsController.setSkillAsLearned(skillTree.Find(x => x.skillName.Equals(_sName)));
-                }
-                else if (_availability.Equals("Learned"))
-                {
-                    levelUp(_skill, _sName, _s);
+                    if (_availability.Equals("Available"))
+                    {                                  
+                        HeroSkillsController.setSkillAsLearned(_s);
+                        HeroSkillsController.getNewAvailableSKills(skillTree, _sName);                        
+                        --HeroController.mainHero.skillPoints;
+                        visualValuesUpdated = false;
+                    }
+                    else if (_availability.Equals("Learned"))
+                    {
+                        ++_s.skillLevel;
+                        levelUp(_skill, _sName, _s);
+                        --HeroController.mainHero.skillPoints;
+                        visualValuesUpdated = false;
+                    }
+                    
                 }
             }
         }
@@ -214,23 +239,30 @@ namespace Assets.Code.UIScripts.SkillTreeScene
         private void levelUp(GameObject _skill, string _sName, A_Skill _s)
         {
             Text t = _skill.GetComponentInChildren<Text>();
-                       
-            if (t != null)
-            {            
-                    ++_s.skillLevel;
-                    t.text = _s.skillLevel + "/" + _s.skillMaxLevel;
-                    loadSkillData(_skill);              
-            }
+            t.text = _s.skillLevel + "/" + _s.skillMaxLevel;
+            loadSkillData(_skill);     
+            
         }
 
         public void skillLevelDown(GameObject _skill)
         {
             string _sName = _skill.name;
             A_Skill _s = skillTree.Find(x => x.skillName == _sName);
-            if (_s.skillLevel - 1 > 0)
+            if (_s.skillLevel - 1 >= 0)
             {
-                levelDown(_skill, _sName, _s);
-                
+                if (_s.skillLevel - 1 >= 1)
+                {
+                    --_s.skillLevel;
+                    levelDown(_skill, _sName, _s);
+                    ++HeroController.mainHero.skillPoints;
+                    visualValuesUpdated = false;
+                }
+                else if (_s.skillLevel - 1 == 0)
+                {
+                    HeroSkillsController.setSkillAsNotLearned(skillTree.Find(x => x.skillName.Equals(_sName)));
+                    HeroSkillsController.refreshAvailability(skillTree, _sName);
+                    visualValuesUpdated = false;
+                }
             }
 
         }
@@ -240,8 +272,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
             Text t = _skill.GetComponentInChildren<Text>();          
 
             if (t != null)
-            {               
-                    --_s.skillLevel;
+            {                                  
                     t.text = _s.skillLevel + "/" + _s.skillMaxLevel;
                     loadSkillData(_skill);
             }

@@ -325,7 +325,6 @@
     <Compile Include="Assets\Code\UIScripts\SkillTreeScene\SkillButtonChangerData.cs" />
     <Compile Include="Assets\Code\UIScripts\SkillTreeScene\SkillDataStorage.cs" />
     <Compile Include="Assets\Code\UIScripts\SkillTreeScene\SkillsLoaderFromXML.cs" />
-    <Compile Include="Assets\Code\UIScripts\SkillTreeScene\SkillTreeController.cs" />
     <Compile Include="Assets\PlayerController\C_Hero.cs" />
     <Compile Include="Assets\PlayerController\HeroController.cs" />
     <Compile Include="Assets\PlayerController\DefenceParam.cs" />

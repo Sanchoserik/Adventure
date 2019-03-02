@@ -16,6 +16,13 @@ namespace Assets.PlayerController
         {
             skillsList = new List<A_Skill>();
             addSkillsInList(skillsList);
+
+            foreach (A_Skill skill in skillsList)
+            {
+                SkillDataStorage _d = data.Find(x => x.skillName.Equals(skill.skillName));
+                skill.skillLevel = 1;
+                skill.skillMaxLevel = _d.skillLevels;
+            }
         }
 
         //load hero skill list from file
@@ -88,10 +95,8 @@ namespace Assets.PlayerController
             slist.Add(skillFabric.createSkillWideSwing());
         }
 
-        public static string getSkillAvailability(List<A_Skill> _data, string _name)
-        {
-            A_Skill skill = _data.Find(x => x.skillName == _name);
-
+        public static string getSkillAvailability(A_Skill skill)
+        {           
             if (skill.isAvailableForLearning)
             {
                 if (skill.isLearned)
@@ -103,16 +108,36 @@ namespace Assets.PlayerController
                 return "NotAvailable";
         }
 
-        public static void refreshAvailability(List<A_Skill> _data, string _newLearnedSkillName)
+        public static void getNewAvailableSKills(List<A_Skill> _data, string _newLearnedSkillName)
         {
             foreach (A_Skill skill in _data)
             {
                 if (skill.skillUnlocker.Equals(_newLearnedSkillName) && !skill.isAvailableForLearning && !skill.isLearned)
-                    skill.isAvailableForLearning = true;
-                else
-                    skill.isAvailableForLearning = false;
+                    skill.isAvailableForLearning = true;            
             }
         }
+
+        public static void refreshAvailability(List<A_Skill> _data, string _newLearnedSkillName)
+        {
+            foreach (A_Skill skill in _data)
+            {
+                string unlocker = skill.skillUnlocker;
+
+                if(!_data.Find(x => x.skillName.Equals(unlocker)).isLearned)
+                {
+                    skill.isAvailableForLearning = false;
+                    skill.isLearned = false;
+                    refundSkillPoints(HeroController.mainHero, skill);
+                    skill.skillLevel = 1;
+                }
+            }
+        }
+
+        private static void refundSkillPoints(C_Hero hero, A_Skill skill)
+        {
+            hero.skillPoints += skill.skillLevel;
+        }
+        
 
         public static void setSkillAsLearned(A_Skill skill)
         {
