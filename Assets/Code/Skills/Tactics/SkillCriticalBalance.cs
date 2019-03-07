@@ -14,7 +14,7 @@ namespace Assets.Code.Skills.Tactics
     {
         AS_CriticalBalance script = new AS_CriticalBalance();
 
-        public SkillCriticalBalance(string _name, string _skillUnlocker, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _isAvailableForLearning)
+        public SkillCriticalBalance(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {
 
         }

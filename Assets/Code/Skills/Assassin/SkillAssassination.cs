@@ -8,7 +8,7 @@ namespace Assets.Code.Skills.Assassin
 {
     class SkillAssassination : A_Skill
     {
-        public SkillAssassination(string _name, string _skillUnlocker, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _isAvailableForLearning)
+        public SkillAssassination(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {
 
         }

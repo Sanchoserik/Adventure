@@ -25,6 +25,7 @@ namespace Assets.PlayerController
             }
             else
             {
+                if(mainHero.heroSkills == null)
                 mainHero.heroSkills = new HeroSkillsController(skillDataStorage);
             }
 

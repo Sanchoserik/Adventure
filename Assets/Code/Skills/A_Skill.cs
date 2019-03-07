@@ -25,14 +25,16 @@ namespace Assets.Code.Skills
         public SkillTargets skillTargets;
 
         public string skillUnlocker;
+        public string[] skillsToUnlock;
 
-        public A_Skill(string _name, string _skillUnlocker, bool _isAvailableForLearning)
+        public A_Skill(string _name, string _skillUnlocker,string[] _skillsToUnlock, bool _isAvailableForLearning)
         {
             skillName = _name;
             isLearned = false;
             isAvailableForLearning = _isAvailableForLearning;
             skillLevel = 0;
             skillUnlocker = _skillUnlocker;
+            skillsToUnlock = _skillsToUnlock;
 
         }
 

@@ -220,7 +220,7 @@
  <l lTarget = "Герой">Пошкодження світлом +$LightDmgMod$% Зменшення захисту $RandomDefDecr$</l>
  <l lTarget = "Герой">Пошкодження світлом +$LightDmgMod$% Зменшення захисту $RandomDefDecr$</l>
  </skill>
- <skill name = "FsterThanLight" locname = "Швидше світла" 
+ <skill name = "FasterThanLight" locname = "Швидше світла" 
  descr = "Збільшує шанс ухилення і шанс критичної атаки але зменшує всі резісти">
  <l lTarget = "Герой">Ухилення від атак +$AtkEvasionIncr$% Ухилення від скілів +$SKillEvasionIncr$% Шанс критичної атаки +$AllDefDecr$% Всі резісти -$CrStrikeChancePlus$</l>
  <l lTarget = "Герой">Ухилення від атак +$AtkEvasionIncr$% Ухилення від скілів +$SKillEvasionIncr$% Шанс критичної атаки +$AllDefDecr$% Всі резісти -$CrStrikeChancePlus$</l>

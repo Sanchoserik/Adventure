@@ -680,7 +680,7 @@
  <v name = "Targets">Self</v>
  </l>
  </skill>
- <skill name = "FsterThanLight" levels = "3" scname = "as_FasterThanLight">
+ <skill name = "FasterThanLight" levels = "3" scname = "as_FasterThanLight">
  <l pEne = "150" pAP = "2">
  <v name ="AtkEvasionIncr">10</v>
  <v name = "SKillEvasionIncr">7</v>

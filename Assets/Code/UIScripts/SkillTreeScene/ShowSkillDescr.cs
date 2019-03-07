@@ -10,7 +10,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
 {
     public class ShowSkillDescr : MonoBehaviour
     {       
-        public GameObject skillTreeParent;
+        public GameObject skillTreeParent; // Contains all skill prefabs
         
         //text UI objects
         public Text skillName; 
@@ -32,11 +32,12 @@ namespace Assets.Code.UIScripts.SkillTreeScene
         private List<A_Skill> skillTree;
 
         void Start()
-        {
-            skillTree = HeroController.mainHero.heroSkills.skillsList;
+        {         
+
+            skillTree =  HeroController.mainHero.heroSkills.skillsList;
             data = HeroController.skillDataStorage;
             loadSkillLevels(skillTreeParent);
-            heroSkillPoints.text = HeroController.mainHero.skillPoints.ToString();
+            heroSkillPoints.text = HeroController.mainHero.skillPoints.ToString();         
         }
 
         void Update()
@@ -182,7 +183,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
             }
         }
         
-        void loadSkillLevels(GameObject parent)
+        private void loadSkillLevels(GameObject parent)
         {   // parent - skilltree
             foreach (Transform child in parent.transform) // skill branches
             {
@@ -193,15 +194,16 @@ namespace Assets.Code.UIScripts.SkillTreeScene
             }        
         }
         // get levels count
-        void getLevelCount(Transform _skill)
+        private void getLevelCount(Transform _skill)
         {
             string _sName = _skill.name;
-            Text t = _skill.GetComponentInChildren<Text>();
-            // 1 levels
+            A_Skill skill = skillTree.Find(x => x.skillName.Equals(_sName));
+
+            Text t = _skill.GetComponentInChildren<Text>();            
             if (t != null)
             {
-                t.text = "1/" + data.Find(x => x.skillName == _sName).skillLevels.ToString();
-                data.Find(x => x.skillName == _sName).skillCurentLevel = 1;// 0 is first level 
+                t.text = skill.skillLevel + "/" + skill.skillMaxLevel;
+                data.Find(x => x.skillName == _sName).skillCurentLevel = skill.skillLevel; // 0 is first level 
             }
         }
 
@@ -227,21 +229,12 @@ namespace Assets.Code.UIScripts.SkillTreeScene
                     else if (_availability.Equals("Learned"))
                     {
                         ++_s.skillLevel;
-                        levelUp(_skill, _sName, _s);
+                        refreshSkill(_skill, _sName, _s);
                         --HeroController.mainHero.skillPoints;
                         visualValuesUpdated = false;
-                    }
-                    
+                    }                  
                 }
             }
-        }
-
-        private void levelUp(GameObject _skill, string _sName, A_Skill _s)
-        {
-            Text t = _skill.GetComponentInChildren<Text>();
-            t.text = _s.skillLevel + "/" + _s.skillMaxLevel;
-            loadSkillData(_skill);     
-            
         }
 
         public void skillLevelDown(GameObject _skill)
@@ -253,30 +246,29 @@ namespace Assets.Code.UIScripts.SkillTreeScene
                 if (_s.skillLevel - 1 >= 1)
                 {
                     --_s.skillLevel;
-                    levelDown(_skill, _sName, _s);
+                    refreshSkill(_skill, _sName, _s);
                     ++HeroController.mainHero.skillPoints;
                     visualValuesUpdated = false;
                 }
-                else if (_s.skillLevel - 1 == 0)
-                {
-                    HeroSkillsController.setSkillAsNotLearned(skillTree.Find(x => x.skillName.Equals(_sName)));
-                    HeroSkillsController.refreshAvailability(skillTree, _sName);
+                else if (_s.skillLevel - 1 == 0 && !_s.skillName.Equals("Rearm")) // Rearm is starting point for skills learning
+                {                   
+                    HeroSkillsController.setSkillAsNotLearned(_s);                    
+                    HeroSkillsController.cascadeSkillRemoval(skillTree, _s);
+                    loadSkillLevels(skillTreeParent); // Need to refresh all skills
                     visualValuesUpdated = false;
                 }
             }
 
         }
 
-        private void levelDown(GameObject _skill, string _sName, A_Skill _s)
+        private void refreshSkill(GameObject _skill, string _sName, A_Skill _s)
         {
-            Text t = _skill.GetComponentInChildren<Text>();          
-
-            if (t != null)
-            {                                  
-                    t.text = _s.skillLevel + "/" + _s.skillMaxLevel;
-                    loadSkillData(_skill);
-            }
+            Text t = _skill.GetComponentInChildren<Text>();                                         
+            t.text = _s.skillLevel + "/" + _s.skillMaxLevel;
+            loadSkillData(_skill);
         }
+
+
 
         //
         //get heroskill levels

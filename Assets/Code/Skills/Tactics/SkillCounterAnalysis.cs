@@ -15,7 +15,7 @@ namespace Assets.Code.Skills.Tactics
     {
         AS_CounterAnalysis script = new AS_CounterAnalysis();
 
-        public SkillCounterAnalysis(string _name, string _skillUnlocker, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _isAvailableForLearning)
+        public SkillCounterAnalysis(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {
 
         }

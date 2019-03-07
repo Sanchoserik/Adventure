@@ -14,7 +14,7 @@ namespace Assets.Code.Skills.Tactics
     {
         AS_Recharge script = new AS_Recharge();
 
-        public SkillTacticalRecharge(string _name, string _skillUnlocker, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _isAvailableForLearning)
+        public SkillTacticalRecharge(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {
 
         }

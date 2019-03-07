@@ -8,7 +8,7 @@ namespace Assets.Code.Skills.Bruiser
 {
     class SkillHarvesting : A_Skill
     {
-        public SkillHarvesting(string _name, string _skillUnlocker, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _isAvailableForLearning)
+        public SkillHarvesting(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {
 
         }

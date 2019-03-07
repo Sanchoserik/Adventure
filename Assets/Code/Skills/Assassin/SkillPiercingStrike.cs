@@ -8,7 +8,7 @@ namespace Assets.Code.Skills.Assassin
 {
     class SkillPiercingStrike : A_Skill
     {
-        public SkillPiercingStrike(string _name, string _skillUnlocker, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _isAvailableForLearning)
+        public SkillPiercingStrike(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {
 
         }

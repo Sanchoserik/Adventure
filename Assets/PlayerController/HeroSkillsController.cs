@@ -20,9 +20,10 @@ namespace Assets.PlayerController
             foreach (A_Skill skill in skillsList)
             {
                 SkillDataStorage _d = data.Find(x => x.skillName.Equals(skill.skillName));
-                skill.skillLevel = 1;
-                skill.skillMaxLevel = _d.skillLevels;
+                    skill.skillLevel = 1;
+                    skill.skillMaxLevel = _d.skillLevels;                   
             }
+
         }
 
         //load hero skill list from file
@@ -138,7 +139,6 @@ namespace Assets.PlayerController
             hero.skillPoints += skill.skillLevel;
         }
         
-
         public static void setSkillAsLearned(A_Skill skill)
         {
             skill.isLearned = true;
@@ -149,5 +149,28 @@ namespace Assets.PlayerController
             skill.isLearned = false;
         }
 
+        public static void cascadeSkillRemoval(List<A_Skill> skillTree, A_Skill skill)
+        {
+            skill.isLearned = false;
+            refundSkillPoints(HeroController.mainHero, skill);
+            skill.skillLevel = 1;
+
+            foreach (string _sToUnlock in skill.skillsToUnlock)
+            {
+                if (!_sToUnlock.Equals(""))
+                {
+                    A_Skill nextSkill = skillTree.Find(x => x.skillName.Equals(_sToUnlock));
+                    if (nextSkill.isLearned)
+                    {
+                        cascadeSkillRemoval(skillTree, nextSkill);
+                    }
+                    if (nextSkill.isAvailableForLearning)
+                    {
+                        nextSkill.isAvailableForLearning = false;
+                    }
+
+                }
+            }
+        }
     }
 }

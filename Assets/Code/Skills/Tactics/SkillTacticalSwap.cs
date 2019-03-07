@@ -14,7 +14,7 @@ namespace Assets.Code.Skills.Tactics
     {        
         AS_TacticalSwap script = new AS_TacticalSwap();
 
-        public SkillTacticalSwap(string _name, string _skillUnlocker, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _isAvailableForLearning)
+        public SkillTacticalSwap(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {
 
         }
