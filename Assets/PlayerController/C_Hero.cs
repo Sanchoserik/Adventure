@@ -11,13 +11,13 @@ using Assets.Code.UIScripts.SkillTreeScene;
 namespace Assets.PlayerController
 {
     [Serializable]
-    public class C_Hero 
+    public class C_Hero
     {
-        public int baseMaxHP; 
-        public int maxHP; 
+        public int baseMaxHP;
+        public int maxHP;
         public int currHP;
 
-        public int baseMaxENE; 
+        public int baseMaxENE;
         public int maxENE;
         public int currENE;
 
@@ -66,10 +66,10 @@ namespace Assets.PlayerController
         public int bonusKnowledge;
         public int bonusCharisma;
         //total params
-        public int totalStrength;  
-        public int totalEndurance; 
-        public int totalKnowledge; 
-        public int totalCharisma;  
+        public int totalStrength;
+        public int totalEndurance;
+        public int totalKnowledge;
+        public int totalCharisma;
 
         //bonuses from attributes
         public int bonusHP;
@@ -85,21 +85,21 @@ namespace Assets.PlayerController
         public int bonusCritChance;
         public int critChance;
         public float critDamageMod; // crit damage percent
-        
+
         //AP - action Points
         //every 10 levels give 1 AP
         public int baseAP;
-        public int bonusAP; 
-        public int totalAP; 
-       
-        public int currAP; 
+        public int bonusAP;
+        public int totalAP;
+
+        public int currAP;
 
         //Invertory
-        public int money;  
-        public List<A_Item> mainItemsStorage; 
+        public int money;
+        public List<A_Item> mainItemsStorage;
         public List<A_Talisman> mainTalismansStorage;
         public List<A_Talisman> inUseTalismansStorage; // 0-2 main stack 3-9 secondary stack
-        
+
         //Effects        
         public List<A_Effect> effectsStorage;
 
@@ -107,7 +107,7 @@ namespace Assets.PlayerController
         public HeroSkillsController heroSkills;
         public int skillPoints;
 
-        public int attributePoints;
+        public int attributePoints;        
         public int level;
         public int currExp; 
         public int nextLevelExp;

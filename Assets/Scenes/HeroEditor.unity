@@ -2037,7 +2037,7 @@ Prefab:
     - target: {fileID: 114434685987472154, guid: 184700b89cd6d0c4f9c4e0125acc2a8e,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: buttonOpenSaveHeroDialog
+      value: buttonOpenLoadHeroDialog
       objectReference: {fileID: 0}
     - target: {fileID: 114434685987472154, guid: 184700b89cd6d0c4f9c4e0125acc2a8e,
         type: 2}

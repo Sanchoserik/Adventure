@@ -42,6 +42,14 @@ namespace Assets.Code.UIScripts.HeroEditorScene
             Hero_Serialization.serializeHero(path);
         }
 
+        public void buttonOpenLoadHeroDialog()
+        {
+            string path = EditorUtility.OpenFilePanel("LoadHero", "", "xml");
+             Hero_Serialization.deserializeHero(path);
+            getVisualValues();
+            dataUpdated = true;       
+        }
+
         private void switchCommandType(PlusMinusButtonInputData data )
         {
             switch (data.commandName)

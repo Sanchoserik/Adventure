@@ -5,10 +5,12 @@
 0.2.4 skillsTree scene Done +
 --->0.2.5 HeroEditorScene * IN PROGRESS 
     // load&save hero
-    // skill learning in skillTree scene
-    // display and change hero parametress	
-0.2.6 Hero Invertory
-0.2.7 Simple enemies 
-0.2.8 Battle arena test
-0.2.9 Improved AI?
+    // skill learning in skillTree scene +
+    // display and change hero parametress + 
+0.2.6 Hero Invertory Display
+0.2.7 Hero can use items
+0.2.8 More info display in Hero Editor
+0.2.9 Simple enemies 
+0.3 Simple battle arena
+
 

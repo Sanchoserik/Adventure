@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml.Serialization;
 
 namespace Assets.PlayerController
 {
+    [Serializable]
     public class DefenceParam
     {
         public string strValue;  //n - none s - small m - medium g - greater u - ultra

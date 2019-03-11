@@ -17,10 +17,19 @@ namespace Assets.PlayerController
             using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
             {
                 hero_serializer.Serialize(fs, HeroController.mainHero);
-                Debug.Log("Serialization Completed");
-            }
+                fs.Dispose();
+            }    
+        }
 
-             
+        public static void deserializeHero(string path)
+        {
+            XmlSerializer hero_serializer = new XmlSerializer(typeof(C_Hero));
+
+            using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
+            {               
+                HeroController.mainHero = (C_Hero)hero_serializer.Deserialize(fs);
+                fs.Dispose();
+            }
         }
     }
 }
