@@ -10,9 +10,14 @@ using Assets.Skills.ActionScripts;
 
 namespace Assets.Code.Skills.Tactics
 {
-    class SkillTacticalSwap : A_Skill
+    [Serializable]
+    public class SkillTacticalSwap : A_Skill
     {        
         AS_TacticalSwap script = new AS_TacticalSwap();
+
+        public SkillTacticalSwap()
+        {
+        }
 
         public SkillTacticalSwap(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {

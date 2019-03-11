@@ -6,8 +6,13 @@ using Assets.PlayerController;
 
 namespace Assets.Code.Skills.Warrior
 {
-    class SkillCursedSign : A_Skill
+    [Serializable]
+    public class SkillCursedSign : A_Skill
     {
+        public SkillCursedSign()
+        {
+        }
+
         public SkillCursedSign(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {
 

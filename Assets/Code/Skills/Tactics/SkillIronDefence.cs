@@ -10,9 +10,14 @@ using Assets.Skills.ActionScripts;
 
 namespace Assets.Code.Skills.Tactics
 {
-    class SkillIronDefence : A_Skill
+    [Serializable]
+    public class SkillIronDefence : A_Skill
     {
         AS_IronDefence script = new AS_IronDefence();
+
+        public SkillIronDefence()
+        {
+        }
 
         public SkillIronDefence(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {

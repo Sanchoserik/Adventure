@@ -6,8 +6,13 @@ using Assets.PlayerController;
 
 namespace Assets.Code.Skills.Bruiser
 {
-    class SkillDeathSign : A_Skill
+    [Serializable]
+    public class SkillDeathSign : A_Skill
     {
+        public SkillDeathSign()
+        {
+        }
+
         public SkillDeathSign(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {
 

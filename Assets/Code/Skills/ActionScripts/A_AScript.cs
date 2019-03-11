@@ -7,6 +7,6 @@ namespace Assets.Skills.ActionScripts
 {
     public abstract class A_AScript
     {
-       public int flag;
+       public int flag;      
     }
 }

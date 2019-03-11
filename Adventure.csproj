@@ -93,7 +93,7 @@
     <Compile Include="Assets\Code\Effects\PhysUp.cs" />
     <Compile Include="Assets\Code\Effects\RegENE.cs" />
     <Compile Include="Assets\Code\Effects\RegHP.cs" />
-    <Compile Include="Assets\Code\Effects\waterUp.cs" />
+    <Compile Include="Assets\Code\Effects\WaterUp.cs" />
     <Compile Include="Assets\Code\Items\A_Card.cs" />
     <Compile Include="Assets\Code\Items\A_Item.cs" />
     <Compile Include="Assets\Code\Items\A_Talisman.cs" />
@@ -153,7 +153,7 @@
     <Compile Include="Assets\Code\Items\Potions\WaterUpMix2M.cs" />
     <Compile Include="Assets\Code\Items\Potions\WaterUpMix3G.cs" />
     <Compile Include="Assets\Code\Items\Potions\WaterUpMix4U.cs" />
-    <Compile Include="Assets\Code\Items\Talismans\defAir1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefAir1S.cs" />
     <Compile Include="Assets\Code\Items\Talismans\DefAir2M.cs" />
     <Compile Include="Assets\Code\Items\Talismans\DefAir3G.cs" />
     <Compile Include="Assets\Code\Items\Talismans\DefAir4U.cs" />

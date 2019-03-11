@@ -33,7 +33,6 @@ namespace Assets.Code.UIScripts.SkillTreeScene
 
         void Start()
         {         
-
             skillTree =  HeroController.mainHero.heroSkills.skillsList;
             data = HeroController.skillDataStorage;
             loadSkillLevels(skillTreeParent);
@@ -55,6 +54,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
             }
         }
 
+        //Update skillPoints UI value and skillAvailability UI value
         private void updateTextValues(GameObject _skill)
         {
             heroSkillPoints.text = HeroController.mainHero.skillPoints.ToString();
@@ -193,7 +193,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
                 }
             }        
         }
-        // get levels count
+        
         private void getLevelCount(Transform _skill)
         {
             string _sName = _skill.name;
@@ -268,9 +268,6 @@ namespace Assets.Code.UIScripts.SkillTreeScene
             loadSkillData(_skill);
         }
 
-
-
-        //
         //get heroskill levels
         void getHeroLevels(Transform _skill) // + skills level list
         { }

@@ -10,9 +10,14 @@ using Assets.Skills.ActionScripts;
 
 namespace Assets.Code.Skills.Tactics
 {
-    class SkillOvercharge : A_Skill
+    [Serializable]
+    public class SkillOvercharge : A_Skill
     {
         AS_Overcharge script = new AS_Overcharge();
+
+        public SkillOvercharge()
+        {
+        }
 
         public SkillOvercharge(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {

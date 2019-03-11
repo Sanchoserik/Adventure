@@ -6,8 +6,13 @@ using Assets.PlayerController;
 
 namespace Assets.Code.Skills.Warrior
 {
-    class SkillPerfectWarrior : A_Skill
+    [Serializable]
+    public class SkillPerfectWarrior : A_Skill
     {
+        public SkillPerfectWarrior()
+        {
+        }
+
         public SkillPerfectWarrior(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {
 

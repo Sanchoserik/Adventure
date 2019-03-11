@@ -7,6 +7,7 @@ using System.Text;
 
 namespace Assets.PlayerController
 {
+    
     public class HeroSkillsController
     {
         public List<A_Skill> skillsList;
@@ -31,6 +32,9 @@ namespace Assets.PlayerController
         //{
 
         //}
+
+        public HeroSkillsController()
+        { }
 
         private void addSkillsInList(List<A_Skill> slist)
         {

@@ -6,8 +6,13 @@ using Assets.PlayerController;
 
 namespace Assets.Code.Skills.Assassin
 {
-    class SkillPiercingLight : A_Skill
+    [Serializable]
+    public class SkillPiercingLight : A_Skill
     {
+        public SkillPiercingLight()
+        {
+        }
+
         public SkillPiercingLight(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {
 

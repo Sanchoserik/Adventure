@@ -10,9 +10,14 @@ using Assets.PlayerController;
 
 namespace Assets.Code.Skills.Tactics
 {
-    class SkillSynchronization : A_Skill
+    [Serializable]
+    public class SkillSynchronization : A_Skill
     {
        AS_Synchronization script = new AS_Synchronization();
+
+        public SkillSynchronization()
+        {
+        }
 
         public SkillSynchronization(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {

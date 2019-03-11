@@ -10,11 +10,13 @@ using Assets.PlayerController;
 
 namespace Assets.Code.Skills.Tactics
 {
-    class SkillAllIn : A_Skill
+    [Serializable]
+    public class SkillAllIn : A_Skill
     {
         AS_AllIn script = new AS_AllIn();
-     
-        
+
+        public SkillAllIn() { }
+
         public SkillAllIn(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {
           

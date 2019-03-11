@@ -6,8 +6,13 @@ using Assets.PlayerController;
 
 namespace Assets.Code.Skills.Assassin
 {
-    class SkillBurnout : A_Skill
+    [Serializable]
+    public class SkillBurnout : A_Skill
     {
+        public SkillBurnout()
+        {
+        }
+
         public SkillBurnout(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {
 

@@ -5,6 +5,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 using Assets.PlayerController;
+using UnityEditor;
 
 namespace Assets.Code.UIScripts.HeroEditorScene
 {
@@ -12,8 +13,8 @@ namespace Assets.Code.UIScripts.HeroEditorScene
     {
         private InterfaceCommand inputCommand;
         private bool dataUpdated = false;
-        public GameObject canvas;
-
+        public GameObject UIContainer;
+     
         void Start()
         {
             getVisualValues();
@@ -28,12 +29,17 @@ namespace Assets.Code.UIScripts.HeroEditorScene
                 dataUpdated = true;
             }
         }
-
       
         public void buttonInput(PlusMinusButtonInputData commandData)
         {
             switchCommandType(commandData);
             inputCommand.execute();
+        }
+
+        public void buttonOpenSaveHeroDialog()
+        {
+            string path = EditorUtility.SaveFilePanel("SaveHero","" ,"hero_save", "xml");
+            Hero_Serialization.serializeHero(path);
         }
 
         private void switchCommandType(PlusMinusButtonInputData data )
@@ -54,7 +60,7 @@ namespace Assets.Code.UIScripts.HeroEditorScene
 
         private void getVisualValues()
         {          
-            foreach (Transform value in canvas.transform)
+            foreach (Transform value in UIContainer.transform)
             {
                 if (value.name.Contains("Val"))
                 { updateVisualValues(value); }

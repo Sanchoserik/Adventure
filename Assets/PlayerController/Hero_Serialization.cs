@@ -8,19 +8,15 @@ using System.IO;
 
 namespace Assets.PlayerController
 {
-    class Hero_Serialization : MonoBehaviour
-    {
-        //kinda "make save"
-        private void Start()
+    class Hero_Serialization 
+    {       
+        public static void serializeHero(string path)
         {
-            C_Hero hero = new C_Hero();
-            Debug.Log("Hero created");
-
             XmlSerializer hero_serializer = new XmlSerializer(typeof(C_Hero));
 
-            using (FileStream fs = new FileStream("h.xml", FileMode.OpenOrCreate))
+            using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
             {
-                hero_serializer.Serialize(fs, hero);
+                hero_serializer.Serialize(fs, HeroController.mainHero);
                 Debug.Log("Serialization Completed");
             }
 

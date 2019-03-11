@@ -10,9 +10,14 @@ using Assets.Skills.ActionScripts;
 
 namespace Assets.Code.Skills.Tactics
 {
-    class SkillCriticalBalance : A_Skill
+    [Serializable]
+    public class SkillCriticalBalance : A_Skill
     {
         AS_CriticalBalance script = new AS_CriticalBalance();
+
+        public SkillCriticalBalance()
+        {
+        }
 
         public SkillCriticalBalance(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {

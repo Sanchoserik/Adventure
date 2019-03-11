@@ -6,8 +6,13 @@ using Assets.PlayerController;
 
 namespace Assets.Code.Skills.Warrior
 {
-    class SkillRicochet : A_Skill
+    [Serializable]
+    public class SkillRicochet : A_Skill
     {
+        public SkillRicochet()
+        {
+        }
+
         public SkillRicochet(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {
 

@@ -6,8 +6,13 @@ using Assets.PlayerController;
 
 namespace Assets.Code.Skills.Assassin
 {
-    class SkillGehenna : A_Skill
+    [Serializable]
+    public class SkillGehenna : A_Skill
     {
+        public SkillGehenna()
+        {
+        }
+
         public SkillGehenna(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {
 

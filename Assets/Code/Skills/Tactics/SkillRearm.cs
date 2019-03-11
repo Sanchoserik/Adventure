@@ -10,9 +10,14 @@ using Assets.Skills;
 
 namespace Assets.Code.Skills.Tactics
 {
-    class SkillRearm : A_Skill
+    [Serializable]
+    public class SkillRearm : A_Skill
     {
         AS_Rearm script = new AS_Rearm();
+
+        public SkillRearm()
+        {
+        }
 
         public SkillRearm(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {

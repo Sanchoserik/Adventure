@@ -11,9 +11,14 @@ using Assets.Skills.ActionScripts;
 
 namespace Assets.Code.Skills.Tactics
 {
-    class SkillCounterAnalysis : A_Skill
+    [Serializable]
+    public class SkillCounterAnalysis : A_Skill
     {
         AS_CounterAnalysis script = new AS_CounterAnalysis();
+
+        public SkillCounterAnalysis()
+        {
+        }
 
         public SkillCounterAnalysis(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {

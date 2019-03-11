@@ -6,8 +6,13 @@ using Assets.PlayerController;
 
 namespace Assets.Code.Skills.Bruiser
 {
-    class SkillLightningChain : A_Skill
+    [Serializable]
+    public class SkillLightningChain : A_Skill
     {
+        public SkillLightningChain()
+        {
+        }
+
         public SkillLightningChain(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {
 

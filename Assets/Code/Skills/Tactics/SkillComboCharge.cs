@@ -10,9 +10,14 @@ using Assets.PlayerController;
 
 namespace Assets.Code.Skills.Tactics
 {
-    class SkillComboCharge : A_Skill
+    [Serializable]
+    public class SkillComboCharge : A_Skill
     {
         AS_ComboCharge script = new AS_ComboCharge();
+
+        public SkillComboCharge()
+        {
+        }
 
         public SkillComboCharge(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {

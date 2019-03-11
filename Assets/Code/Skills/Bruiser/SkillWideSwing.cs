@@ -6,8 +6,13 @@ using Assets.PlayerController;
 
 namespace Assets.Code.Skills.Bruiser
 {
-    class SkillWideSwing : A_Skill
+    [Serializable]
+    public class SkillWideSwing : A_Skill
     {
+        public SkillWideSwing()
+        {
+        }
+
         public SkillWideSwing(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {
 

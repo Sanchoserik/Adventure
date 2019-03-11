@@ -6,8 +6,13 @@ using Assets.PlayerController;
 
 namespace Assets.Code.Skills.Bruiser
 {
-    class SkillHarvesting : A_Skill
+    [Serializable]
+    public class SkillHarvesting : A_Skill
     {
+        public SkillHarvesting()
+        {
+        }
+
         public SkillHarvesting(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {
 
