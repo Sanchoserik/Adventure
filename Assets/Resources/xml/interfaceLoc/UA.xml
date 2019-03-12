@@ -10,8 +10,6 @@
  <el name = "ReturnButtonText">Повернутися</el>
  </scene>
  <scene name = "SkillTree">
- <el name = "TacticianButtonText">Тактик</el>
- <el name = "WarriorButtonText">Воїн</el>
  <el name = "AssassinButtonText">Вбивця</el>
  <el name = "BruiserButtonText">Громила</el>
  <el name = "ReturnButtonText">Повернутися</el>

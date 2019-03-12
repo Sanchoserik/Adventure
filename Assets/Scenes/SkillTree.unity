@@ -2750,7 +2750,7 @@ Prefab:
     - target: {fileID: 114913773259175228, guid: 184700b89cd6d0c4f9c4e0125acc2a8e,
         type: 2}
       propertyPath: m_Text
-      value: Warrior
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114434685987472154, guid: 184700b89cd6d0c4f9c4e0125acc2a8e,
         type: 2}
@@ -2786,6 +2786,12 @@ Prefab:
       propertyPath: m_Name
       value: WarriorButtonText
       objectReference: {fileID: 0}
+    - target: {fileID: 114689445877241568, guid: 184700b89cd6d0c4f9c4e0125acc2a8e,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0b4ee0cbdc565c14bae2d200aeedb932,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 184700b89cd6d0c4f9c4e0125acc2a8e, type: 2}
   m_IsPrefabParent: 0
@@ -5560,7 +5566,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 41ad9875ac3c18a48817bc37763887ba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8d92c945fe4f8294f923b5cf8b0bbd5c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8762,6 +8768,12 @@ Prefab:
       propertyPath: m_Name
       value: Plus
       objectReference: {fileID: 0}
+    - target: {fileID: 114569442637829998, guid: 58c5198c8389a664ba21d395c663dbd9,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8d92c945fe4f8294f923b5cf8b0bbd5c,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 58c5198c8389a664ba21d395c663dbd9, type: 2}
   m_IsPrefabParent: 0
@@ -14583,7 +14595,7 @@ Prefab:
     - target: {fileID: 114913773259175228, guid: 184700b89cd6d0c4f9c4e0125acc2a8e,
         type: 2}
       propertyPath: m_Text
-      value: Tactician
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114689445877241568, guid: 184700b89cd6d0c4f9c4e0125acc2a8e,
         type: 2}

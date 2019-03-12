@@ -5,7 +5,6 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 using Assets.PlayerController;
-using UnityEditor;
 
 namespace Assets.Code.UIScripts.HeroEditorScene
 {
@@ -38,13 +37,13 @@ namespace Assets.Code.UIScripts.HeroEditorScene
 
         public void buttonOpenSaveHeroDialog()
         {
-            string path = EditorUtility.SaveFilePanel("SaveHero","" ,"hero_save", "xml");
+            string path = UnityEditor.EditorUtility.SaveFilePanel("SaveHero","" ,"hero_save", "xml");
             Hero_Serialization.serializeHero(path);
         }
 
         public void buttonOpenLoadHeroDialog()
         {
-            string path = EditorUtility.OpenFilePanel("LoadHero", "", "xml");
+            string path = UnityEditor.EditorUtility.OpenFilePanel("LoadHero", "", "xml");
              Hero_Serialization.deserializeHero(path);
             getVisualValues();
             dataUpdated = true;       
