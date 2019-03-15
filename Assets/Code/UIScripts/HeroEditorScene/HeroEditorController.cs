@@ -36,17 +36,32 @@ namespace Assets.Code.UIScripts.HeroEditorScene
         }
 
         public void buttonOpenSaveHeroDialog()
-        {
-            string path = UnityEditor.EditorUtility.SaveFilePanel("SaveHero","" ,"hero_save", "xml");
-            Hero_Serialization.serializeHero(path);
+        {          
+            try
+            {
+                var path = SFB.StandaloneFileBrowser.SaveFilePanel("SaveHero", "", "hero_save", "xml");
+                Hero_Serialization.serializeHero(path.ToString());
+            }
+            catch
+            {
+                Debug.Log("Operation error");
+            }
+           
         }
 
         public void buttonOpenLoadHeroDialog()
         {
-            string path = UnityEditor.EditorUtility.OpenFilePanel("LoadHero", "", "xml");
-             Hero_Serialization.deserializeHero(path);
+            var path = SFB.StandaloneFileBrowser.OpenFilePanel("LoadHero", "", "xml",false);
+            try
+            {
+                Hero_Serialization.deserializeHero(path[0].ToString());
+            }
+            catch
+            {
+                Debug.Log("Save file not selected");
+            }
             getVisualValues();
-            dataUpdated = true;       
+            dataUpdated = true;
         }
 
         private void switchCommandType(PlusMinusButtonInputData data )
