@@ -8,20 +8,12 @@ using Assets.PlayerController;
 
 namespace Assets.Code.Items.Potions
 {
-    class FireUpMix3G : A_Item
+    public class FireUpMix3G : A_Item
     {
         public FireUpMix3G(string _name, C_Hero h)
-        {
-            id = returnFreeId(h);
-            name = _name;
+        {            
+            localisedName = _name;
         }
 
-        public override void use(C_Hero h)
-        {
-            A_Effect eff = new FireUp(80, 6, h);
-            eff.addToEffStack(h);
-
-            dell(h.mainItemsStorage, this.id);
-        }
     }
 }

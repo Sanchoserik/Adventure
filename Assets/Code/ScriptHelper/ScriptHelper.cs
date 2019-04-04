@@ -13,7 +13,7 @@ namespace Assets.ScriptHelper
         //select talisman from in use
         public static A_Talisman getTalismanInUse(C_Hero h, int _id)
         {
-            return h.inUseTalismansStorage.Find(x => x.id == _id);
+            return h.inventorySystem.inUseTalismansStorage.Find(x => x.id == _id);
         }
 
 

@@ -8,20 +8,12 @@ using Assets.PlayerController;
 
 namespace Assets.Code.Items.Potions
 {
-    class EneReP1S : A_Item
+    public class EneReP1S : A_Item
     {
         public EneReP1S(string _name, C_Hero h)
         {
-            id = returnFreeId(h);
-            name = _name;
-        }
-
-        public override void use(C_Hero h)
-        {
-            A_Effect eff = new RegENE(50, 4, h);
-            eff.addToEffStack(h);
-
-            dell(h.mainItemsStorage, this.id);
+           
+            localisedName = _name;
         }
     }
 }

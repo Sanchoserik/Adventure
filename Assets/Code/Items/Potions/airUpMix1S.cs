@@ -8,20 +8,11 @@ using Assets.PlayerController;
 
 namespace Assets.Code.Items.Potions
 {
-    class AirUpMix1S : A_Item
+    public class AirUpMix1S : A_Item
     {
-        public AirUpMix1S(string _name, C_Hero h)
-        {
-            id = returnFreeId(h);
-            name = _name;
-        }
-
-        public override void use(C_Hero h)
-        {
-            A_Effect eff = new AirUp(20, 4, h);
-            eff.addToEffStack(h);
-
-            dell(h.mainItemsStorage, this.id);
-        }
+        public AirUpMix1S(string _name)
+        {            
+            localisedName = _name;
+        }      
     }
 }

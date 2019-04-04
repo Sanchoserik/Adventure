@@ -8,20 +8,13 @@ using Assets.PlayerController;
 
 namespace Assets.Code.Items.Potions
 {
-    class LightUpMix4U : A_Item
+    public class LightUpMix4U : A_Item
     {
         public LightUpMix4U(string _name, C_Hero h)
         {
-            id = returnFreeId(h);
-            name = _name;
+      
+            localisedName = _name;
         }
-
-        public override void use(C_Hero h)
-        {
-            A_Effect eff = new LightUp(100, 7, h);
-            eff.addToEffStack(h);
-
-            dell(h.mainItemsStorage, this.id);
-        }
+      
     }
 }

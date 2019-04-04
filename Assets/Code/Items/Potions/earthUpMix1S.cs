@@ -8,20 +8,13 @@ using Assets.PlayerController;
 
 namespace Assets.Code.Items.Potions
 {
-    class EarthUpMix1S : A_Item
+    public class EarthUpMix1S : A_Item
     {
         public EarthUpMix1S(string _name, C_Hero h)
         {
-            id = returnFreeId(h);
-            name = _name;
+           
+            localisedName = _name;
         }
-
-        public override void use(C_Hero h)
-        {
-            A_Effect eff = new EarthUp(20, 4, h);
-            eff.addToEffStack(h);
-
-            dell(h.mainItemsStorage, this.id);
-        }
+    
     }
 }
