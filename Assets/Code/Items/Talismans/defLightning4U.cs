@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
  
 
-namespace Assets.Items.Talismans
+namespace Assets.Code.Items.Talismans
 {
     class DefLightning4U : A_Talisman
     {

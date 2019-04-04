@@ -140,7 +140,7 @@ namespace Assets.PlayerController
 
         private static void refundSkillPoints(C_Hero hero, A_Skill skill)
         {
-            hero.skillPoints += skill.skillLevel;
+            hero.freeSkillPoints += skill.skillLevel;
         }
         
         public static void setSkillAsLearned(A_Skill skill)

@@ -117,8 +117,8 @@ namespace Assets.Code.UIScripts.HeroEditorScene
                 case "HeroLevelVal": { text.text = HeroController.mainHero.level.ToString(); break; }
                 case "HeroExpVal": { text.text = HeroController.mainHero.currExp.ToString(); break; }
                 case "HeroNextLevelEXPVal": { text.text = HeroController.mainHero.nextLevelExp.ToString(); break; }
-                case "HeroSkillPointsVal": { text.text = HeroController.mainHero.skillPoints.ToString(); break; }
-                case "AttributePointsVal": { text.text = HeroController.mainHero.attributePoints.ToString(); break; }
+                case "HeroSkillPointsVal": { text.text = HeroController.mainHero.freeSkillPoints.ToString(); break; }
+                case "AttributePointsVal": { text.text = HeroController.mainHero.freeAttributePoints.ToString(); break; }
             }
         }
     }

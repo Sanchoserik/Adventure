@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Assets.Items
+namespace Assets.Code.Items
 {
     public abstract class A_Item
     {
@@ -63,7 +63,7 @@ namespace Assets.Items
 
             if (hero.money >= price)
             {
-                hero.mainItemsStorage.Add(item);
+               // hero.mainItemsStorage.Add(item);             
                 findid(hero);
                 hero.money -= price;
                 return true;
@@ -113,27 +113,27 @@ namespace Assets.Items
             }
 
             hero.money += price;
-            dell(hero.mainItemsStorage, item.id);
+           // dell(hero.mainItemsStorage, item.id);
             findid(hero);
         }
 
         //id funcs
         public static void findid(C_Hero h)
         {
-            for (int i = 0; i < h.mainItemsStorage.Count; ++i)
-            {
-                h.mainItemsStorage[i].id = i + 1;
-            }
+            //for (int i = 0; i < h.mainItemsStorage.Count; ++i)
+            //{
+            //    h.mainItemsStorage[i].id = i + 1;
+            //}
             
         }
 
         protected int returnFreeId(C_Hero h)
         {
-            if (h.mainItemsStorage.Count != 0)
-            {
-                return h.mainItemsStorage.Count;
-            }
-            else
+            //if (h.mainItemsStorage.Count != 0)
+            //{
+            //    return h.mainItemsStorage.Count;
+            //}
+            //else
                 return 1;
         }
     }

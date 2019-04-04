@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
  
 
-namespace Assets.Items
+namespace Assets.Code.Items
 {
     abstract class A_Card
     {

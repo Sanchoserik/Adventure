@@ -36,7 +36,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
             skillTree =  HeroController.mainHero.heroSkills.skillsList;
             data = HeroController.skillDataStorage;
             loadSkillLevels(skillTreeParent);
-            heroSkillPoints.text = HeroController.mainHero.skillPoints.ToString();         
+            heroSkillPoints.text = HeroController.mainHero.freeSkillPoints.ToString();         
         }
 
         void Update()
@@ -57,7 +57,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
         //Update skillPoints UI value and skillAvailability UI value
         private void updateTextValues(GameObject _skill)
         {
-            heroSkillPoints.text = HeroController.mainHero.skillPoints.ToString();
+            heroSkillPoints.text = HeroController.mainHero.freeSkillPoints.ToString();
 
             A_Skill skill = skillTree.Find(x => x.skillName.Equals(_skill.name));
             skillAvailability.text = HeroSkillsController.getSkillAvailability(skill);
@@ -210,7 +210,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
         //CHANGE SKILL LEVEL
         public void skillLevelUp(GameObject _skill)
         {
-            if(HeroController.mainHero.skillPoints > 0)
+            if(HeroController.mainHero.freeSkillPoints > 0)
             {
                 string _sName = _skill.name;
                 A_Skill _s = skillTree.Find(x => x.skillName == _sName);
@@ -223,14 +223,14 @@ namespace Assets.Code.UIScripts.SkillTreeScene
                     {                                  
                         HeroSkillsController.setSkillAsLearned(_s);
                         HeroSkillsController.getNewAvailableSKills(skillTree, _sName);                        
-                        --HeroController.mainHero.skillPoints;
+                        --HeroController.mainHero.freeSkillPoints;
                         visualValuesUpdated = false;
                     }
                     else if (_availability.Equals("Learned"))
                     {
                         ++_s.skillLevel;
                         refreshSkill(_skill, _sName, _s);
-                        --HeroController.mainHero.skillPoints;
+                        --HeroController.mainHero.freeSkillPoints;
                         visualValuesUpdated = false;
                     }                  
                 }
@@ -247,7 +247,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
                 {
                     --_s.skillLevel;
                     refreshSkill(_skill, _sName, _s);
-                    ++HeroController.mainHero.skillPoints;
+                    ++HeroController.mainHero.freeSkillPoints;
                     visualValuesUpdated = false;
                 }
                 else if (_s.skillLevel - 1 == 0 && !_s.skillName.Equals("Rearm")) // Rearm is starting point for skills learning

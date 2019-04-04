@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
  
 
-namespace Assets.Items.Potions
+namespace Assets.Code.Items.Potions
 {
     class HealP1S : A_Item
     {

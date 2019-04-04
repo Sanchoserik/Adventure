@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
  
 
-namespace Assets.Items
+namespace Assets.Code.Items
 {
     public abstract class A_Talisman
     {
@@ -36,39 +36,39 @@ namespace Assets.Items
         //move from inv to tInUSe
         public static void moveToOrder(C_Hero h, int pos, A_Talisman t)
         {
-            if (h.inUseTalismansStorage[pos] == null)
-            {
-                h.inUseTalismansStorage[pos] = t;
-                dell(h, t);
-            }
-            else
-            {
-                h.mainTalismansStorage.Add(h.mainTalismansStorage[pos]);
-                h.inUseTalismansStorage[pos] = t;
-                dell(h, t);
-            }
-            findId(h);
+            //if (h.inUseTalismansStorage[pos] == null)
+            //{
+            //    h.inUseTalismansStorage[pos] = t;
+            //    dell(h, t);
+            //}
+            //else
+            //{
+            //    h.mainTalismansStorage.Add(h.mainTalismansStorage[pos]);
+            //    h.inUseTalismansStorage[pos] = t;
+            //    dell(h, t);
+            //}
+            //findId(h);
         }
         //move from InUse to Invertory
         public static void moveToInv(C_Hero h, int pos)
         {
-                h.mainTalismansStorage.Add(h.mainTalismansStorage[pos]);
-                h.inUseTalismansStorage[pos] = null;
+                //h.mainTalismansStorage.Add(h.mainTalismansStorage[pos]);
+                //h.inUseTalismansStorage[pos] = null;
                 findId(h);                   
         }
 
         // tInUse1 <-> tInUse2
         public static void swapPosition(C_Hero h, int posX, int posY)
         {
-            A_Talisman t = h.inUseTalismansStorage[posY];
-            h.inUseTalismansStorage[posY] = h.inUseTalismansStorage[posX];
-            h.inUseTalismansStorage[posX] = t;
+            //A_Talisman t = h.inUseTalismansStorage[posY];
+            //h.inUseTalismansStorage[posY] = h.inUseTalismansStorage[posX];
+            //h.inUseTalismansStorage[posX] = t;
         }
       
         //dell from inv
         public static void dell(C_Hero h, A_Talisman t)
         {
-            h.mainTalismansStorage.Remove(h.mainTalismansStorage.Find(x => x.id == t.id));
+            //h.mainTalismansStorage.Remove(h.mainTalismansStorage.Find(x => x.id == t.id));
             // findId's in inv
             findId(h);
         }
@@ -76,10 +76,10 @@ namespace Assets.Items
         //rename id in invertory
         private static void findId(C_Hero h)
         {
-            for (int i = 0; i < h.mainTalismansStorage.Count; ++i)
-            {
-                h.mainTalismansStorage[i].id = i + 1;
-            }
+            //for (int i = 0; i < h.mainTalismansStorage.Count; ++i)
+            //{
+            //    h.mainTalismansStorage[i].id = i + 1;
+            //}
         }
 
         public static bool buy(A_Talisman talisman, C_Hero hero)
@@ -100,7 +100,7 @@ namespace Assets.Items
             
             if (hero.money >= price)
             {
-                hero.mainTalismansStorage.Add(talisman);
+              //  hero.mainTalismansStorage.Add(talisman);
                 findId(hero);
                 hero.money -= price;
                 return true;

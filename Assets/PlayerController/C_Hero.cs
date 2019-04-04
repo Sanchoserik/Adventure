@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Assets.Items;
+using Assets.Code.Items;
 using Assets.Effects;
 using Assets.Code.Skills;
 using System.Xml.Serialization;
@@ -72,42 +72,39 @@ namespace Assets.PlayerController
         public int totalCharisma;
 
         //bonuses from attributes
-        public int bonusHP;
-        public int bonusHPPercent;
-        public int bonusENE;
-        public double bonusPhysAtkPercent;
+        public int bonusHPValue;
+        public double bonusHPPercent;
+        public int bonusENEValue;
+        public double bonusENEPercent;
         public int bonusPhysAtkValue;
-        public double bonusMagAtkPercent;
+        public double bonusPhysAtkPercent;
         public int bonusMagAtkValue;
-        public double bonusTalismanPowerPercent;
+        public double bonusMagAtkPercent;
         public int bonusTalismanPowerValue;
-        public int bonusCritDamageMod;
+        public double bonusTalismanPowerPercent;        
+        public int bonusCritDamagePercent;
         public int bonusCritChance;
         public int critChance;
-        public float critDamageMod; // crit damage percent
-
+        public float critDamageMod;
         //AP - action Points
-        //every 10 levels give 1 AP
         public int baseAP;
         public int bonusAP;
         public int totalAP;
-
-        public int currAP;
+        public int currentAP;
 
         //Invertory
         public int money;
-        public List<A_Item> mainItemsStorage;
-        public List<A_Talisman> mainTalismansStorage;
-        public List<A_Talisman> inUseTalismansStorage; // 0-2 main stack 3-9 secondary stack
+        public InventorySystem inventorySystem; 
 
         //Effects        
         public List<A_Effect> effectsStorage;
 
         //Skills
         public HeroSkillsController heroSkills;
-        public int skillPoints;
 
-        public int attributePoints;        
+        //Level Data
+        public int freeSkillPoints;
+        public int freeAttributePoints;        
         public int level;
         public int currExp; 
         public int nextLevelExp;
@@ -115,9 +112,7 @@ namespace Assets.PlayerController
         //starting initialisation
         public C_Hero()
         {
-            mainItemsStorage = new List<A_Item>();
-            mainTalismansStorage = new List<A_Talisman>();
-            inUseTalismansStorage = new List<A_Talisman>();
+            inventorySystem = new InventorySystem();
             effectsStorage = new List<A_Effect>();       
 
             baseMaxHP = 200;
@@ -127,8 +122,8 @@ namespace Assets.PlayerController
             level = 1;
             currExp = 0;
             nextLevelExp = 100;
-            skillPoints = 0;
-            attributePoints = 0;
+            freeSkillPoints = 0;
+            freeAttributePoints = 0;
           
             baseStrength = 1;
             baseEndurance = 1;
@@ -156,43 +151,43 @@ namespace Assets.PlayerController
         //
         public void attributePlus(string attribute)
         {
-            if (attributePoints > 0)
+            if (freeAttributePoints > 0)
             {
                 switch (attribute)
                 {
                     case "str":
                         {
-                            if (attributePoints > 0)
+                            if (freeAttributePoints > 0)
                             {
                                 baseStrength++;
-                                attributePoints--;
+                                freeAttributePoints--;
                             }
                             break;
                         }
                     case "end":
                         {
-                            if (attributePoints > 0)
+                            if (freeAttributePoints > 0)
                             {
                                 baseEndurance++;
-                                attributePoints--;
+                                freeAttributePoints--;
                             }
                             break;
                         }
                     case "knd":
                         {
-                            if (attributePoints > 0)
+                            if (freeAttributePoints > 0)
                             {
                                 baseKnowledge++;
-                                attributePoints--;
+                                freeAttributePoints--;
                             }
                             break;
                         }
                     case "chr":
                         {
-                            if (attributePoints > 0)
+                            if (freeAttributePoints > 0)
                             {
                                 baseCharisma++;
-                                attributePoints--;
+                                freeAttributePoints--;
                             }
                             break;
                         }
@@ -211,7 +206,7 @@ namespace Assets.PlayerController
                             if (baseStrength > 1)
                             {
                                 baseStrength--;
-                                attributePoints++;
+                                freeAttributePoints++;
                             }
                             break;
                         }
@@ -220,7 +215,7 @@ namespace Assets.PlayerController
                             if (baseEndurance > 1)
                             {
                                 baseEndurance--;
-                                attributePoints++;
+                                freeAttributePoints++;
                             }
                             break;
                         }
@@ -229,7 +224,7 @@ namespace Assets.PlayerController
                             if (baseKnowledge > 1)
                             {
                                 baseKnowledge--;
-                                attributePoints++;
+                                freeAttributePoints++;
                             }
                             break;
                         }
@@ -238,7 +233,7 @@ namespace Assets.PlayerController
                             if (baseCharisma > 1)
                             {
                                 baseCharisma--;
-                                attributePoints++;
+                                freeAttributePoints++;
                             }
                             break;
                         }
@@ -272,7 +267,7 @@ namespace Assets.PlayerController
 
         private void updateEndurance()
         {
-            bonusHP = totalEndurance * 5;           
+            bonusHPValue = totalEndurance * 5;           
             bonusHPPercent = totalEndurance / 10 / 100;
             bonusTalismanPowerValue = totalEndurance / 10 * 15;
         }
@@ -280,14 +275,14 @@ namespace Assets.PlayerController
         private void updateKnowledge()
         {
             bonusMagAtkValue = totalKnowledge * 3;
-            bonusENE = totalKnowledge * 3;
+            bonusENEValue= totalKnowledge * 3;
             bonusMagAtkPercent = totalKnowledge / 10 * 2 / 100;
             bonusTalismanPowerPercent = totalKnowledge / 10 / 100;
         }
 
         private void updateCharisma()
         {
-            bonusCritDamageMod = totalCharisma * 2;
+            critDamageMod = totalCharisma * 2;
             bonusCritChance = totalCharisma / 10;
         }
         
@@ -333,13 +328,13 @@ namespace Assets.PlayerController
             level++;
             currExp = 0;
             nextLevelExp = (int)(nextLevelExp * 0.2) + nextLevelExp;
-            skillPoints++;
-            attributePoints += 4;
+            freeSkillPoints++;
+            freeAttributePoints += 4;
         }
 
         public void levelMinus()
         {
-            if (skillPoints >= 1 && attributePoints >= 4 && level >1)
+            if (freeSkillPoints >= 1 && freeAttributePoints >= 4 && level >1)
             {
                 nextLevelExp = 100;
                 int differenceExp = 0;
@@ -351,8 +346,8 @@ namespace Assets.PlayerController
                 nextLevelExp -= differenceExp;
                 currExp = 0;
 
-                skillPoints--;
-                attributePoints -= 4;
+                freeSkillPoints--;
+                freeAttributePoints -= 4;
                 level--;
 
             }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
  
 
-namespace Assets.Items.Talismans
+namespace Assets.Code.Items.Talismans
 {
     class DefEarth1S : A_Talisman
     {

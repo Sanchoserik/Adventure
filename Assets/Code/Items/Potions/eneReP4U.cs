@@ -6,7 +6,7 @@ using Assets.Code;
 using Assets.Effects;
 using Assets.PlayerController;
 
-namespace Assets.Items.Potions
+namespace Assets.Code.Items.Potions
 {
     class EneReP4U : A_Item
     {
