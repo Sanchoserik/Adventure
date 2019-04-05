@@ -10,7 +10,7 @@ namespace Assets.Code.Items.Potions
 {
     public class LightningUpMix3G : A_Item
     {
-        public LightningUpMix3G(string _name, C_Hero h)
+        public LightningUpMix3G(string _name)
         {
            
             localisedName = _name;

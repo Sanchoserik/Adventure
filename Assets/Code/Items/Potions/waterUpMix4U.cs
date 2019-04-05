@@ -10,7 +10,7 @@ namespace Assets.Code.Items.Potions
 {
     public class WaterUpMix4U : A_Item
     {
-        public WaterUpMix4U(string _name, C_Hero h)
+        public WaterUpMix4U(string _name)
         {
           
             localisedName = _name;

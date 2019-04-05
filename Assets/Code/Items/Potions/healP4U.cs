@@ -10,7 +10,7 @@ namespace Assets.Code.Items.Potions
 {
     public class HealP4U : A_Item
     {
-        public HealP4U(int _id, string _name)
+        public HealP4U(string _name)
         {
       
             localisedName = _name;

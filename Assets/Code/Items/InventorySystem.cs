@@ -20,31 +20,52 @@ namespace Assets.Code.Items
             quickAccesItemStorage = new List<A_Item>();
         }
 
-        public string addItem(A_Item item)
+        public void addItem(A_Item item)
         {
-            if (checkStacks(item.GetType().ToString()))
+            if (checkStacks(item.GetType().Name))
             {
-                mainItemsStorage.Find(x => x.GetType().Name.Equals(item.GetType().Name)).Add(item);
-                return "found";
+                mainItemsStorage.Find(x => x.GetType().Name.Equals(item.GetType().Name)).Add(item);              
             }
             else
             {
-                mainItemsStorage.Add(new List<A_Item> { item });
-                return item.GetType().Name;
+                mainItemsStorage.Add(new List<A_Item> { item });             
+            }  
+        }
+
+        public void removeItem(A_Item item)
+        {
+            if (checkStacks(item.GetType().Name))
+            {
+                foreach (List<A_Item> items in mainItemsStorage)
+                {
+                    if (items[0] != null && items[0].Equals(item))
+                    {
+                        items.Remove(item);                        
+                    }
+                }
             }
-           
+            removeEmptyItemStacks();
         }
 
         private bool checkStacks(string itemType)
         {
             foreach (List<A_Item> items in mainItemsStorage)
             {
-                if (items.GetType().Name.Equals(itemType))
+                if (items[0] != null && items[0].GetType().Name.Equals(itemType)) //get first item from stack
                 {
                     return true;
                 }                 
             }
             return false;
+        }
+
+        private void removeEmptyItemStacks()
+        {
+            for (int i = 0; i < mainItemsStorage.Count; ++i)
+            {
+                if (mainItemsStorage[i].Count == 0)
+                    mainItemsStorage.RemoveAt(i);
+            }
         }
     }
 }

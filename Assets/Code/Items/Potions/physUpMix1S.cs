@@ -10,7 +10,7 @@ namespace Assets.Code.Items.Potions
 {
     public class PhysUpMix1S : A_Item
     {
-        public PhysUpMix1S(string _name, C_Hero h)
+        public PhysUpMix1S(string _name)
         {
          
             localisedName = _name;

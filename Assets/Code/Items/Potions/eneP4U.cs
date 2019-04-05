@@ -10,7 +10,7 @@ namespace Assets.Code.Items.Potions
 {
     public class EneP4U : A_Item
     {
-        public EneP4U(int _id, string _name)
+        public EneP4U(string _name)
         {
           
            localisedName = _name;
