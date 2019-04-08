@@ -24,7 +24,15 @@ namespace Assets.Code.Items
         {
             if (checkStacks(item.GetType().Name))
             {
-                mainItemsStorage.Find(x => x.GetType().Name.Equals(item.GetType().Name)).Add(item);              
+                foreach (List<A_Item> stack in mainItemsStorage)
+                {
+                    if (stack[0].GetType().Name.Equals(item.GetType().Name))
+                    {
+                        stack.Add(item);
+                        break;
+                    }
+                }
+              
             }
             else
             {

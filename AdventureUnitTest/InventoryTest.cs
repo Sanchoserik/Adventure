@@ -10,7 +10,7 @@ namespace AdventureUnitTest
     public class InventoryTest
     {
         [TestMethod]
-        public void TestRemoveItem()
+        public void TestRemoveItemStack()
         {
             C_Hero h = new C_Hero();
             InventorySystem invSys = new InventorySystem();
@@ -28,36 +28,109 @@ namespace AdventureUnitTest
             Assert.AreEqual(expected, result);
         }
 
+        [TestMethod]
+        public void TestRemoveItemFromStack()
+        {
+            C_Hero h = new C_Hero();
+            InventorySystem invSys = new InventorySystem();
+            A_Item p1 = new HealP1S("smalHPPot");
+            A_Item p2 = new HealP2M("medHPPot");
 
+            invSys.addItem(p1);
+            invSys.addItem(p1);
+            invSys.addItem(p1);
 
-        //tests passed
-        //for test set InvertorySystem.checkStacks function as public
-        //[TestMethod]
-        //public void TestAddItem1()
-        //{
-        //    C_Hero h = new C_Hero(); 
-        //    InventorySystem invSys  = new InventorySystem();
-        //    A_Item p1 = new HealP1S("smalHPPot", h);
+            invSys.addItem(p2);
 
-        //    bool expected = false;
-        //    bool result = invSys.checkStacks(p1.GetType().Name);
+            invSys.removeItem(p1);
 
-        //    Assert.AreEqual(expected, result);
-        //}
+            int expected = 2;
+            int result = invSys.mainItemsStorage[0].Count;
 
-        //[TestMethod]
-        //public void TestAddItem2()
-        //{
-        //    C_Hero h = new C_Hero();
-        //    InventorySystem invSys = new InventorySystem();
-        //    A_Item p1 = new HealP1S("smalHPPot", h);
+            Assert.AreEqual(expected, result);
+        }
 
-        //    invSys.addItem(p1);
+        [TestMethod]
+        public void TestRemoveLastItemStack()
+        {
+            C_Hero h = new C_Hero();
+            InventorySystem invSys = new InventorySystem();
+            A_Item p1 = new HealP1S("smalHPPot");
+          
+            invSys.addItem(p1);
+          
+            invSys.removeItem(p1);
 
-        //    bool expected = true;
-        //    bool result = invSys.checkStacks(p1.GetType().Name);
+            int expected = 0;
+            int result = invSys.mainItemsStorage.Count;
 
-        //    Assert.AreEqual(expected, result);
-        //}
+            Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        public void TestAddNewStackItem()
+        {
+            C_Hero h = new C_Hero();
+            InventorySystem invSys = new InventorySystem();
+            A_Item p1 = new HealP1S("smalHPPot");
+           
+            invSys.addItem(p1);
+                    
+            int expected = 1;
+            int result = invSys.mainItemsStorage.Count;
+            int result2 = invSys.mainItemsStorage[0].Count;
+
+            Assert.AreEqual(expected, result);
+            Assert.AreEqual(expected, result2);
+        }
+
+        [TestMethod]
+        public void TestAddNewItemToStack()
+        {
+            C_Hero h = new C_Hero();
+            InventorySystem invSys = new InventorySystem();
+            A_Item p1 = new HealP1S("smalHPPot");
+
+            invSys.addItem(p1);
+            invSys.addItem(p1);
+            invSys.addItem(p1);
+
+            int expected = 1;
+            int expected2 = 3;
+            int result = invSys.mainItemsStorage.Count;
+            int result2 = invSys.mainItemsStorage[0].Count;
+
+            Assert.AreEqual(expected, result);
+            Assert.AreEqual(expected2, result2);
+        }
+
+        [TestMethod]
+        public void TestAddNewItemToRightStack()
+        {
+            C_Hero h = new C_Hero();
+            InventorySystem invSys = new InventorySystem();
+            A_Item p1 = new HealP1S("smalHPPot");
+            A_Item p2 = new HealP2M("medHPPot");
+
+            invSys.addItem(p1);
+            invSys.addItem(p1);
+            invSys.addItem(p1);
+            invSys.addItem(p2);
+            invSys.addItem(p2);
+            invSys.addItem(p2);
+            invSys.addItem(p2);
+
+            int expectedStacksCount = 2;
+            int expectedFirstStackCount = 3;
+            int expectedSecondStackCount = 4;
+
+            int resultStacksCount = invSys.mainItemsStorage.Count;
+            int resultFirstStackCount = invSys.mainItemsStorage[0].Count;
+            int resultSecondStackCount = invSys.mainItemsStorage[1].Count;
+
+            Assert.AreEqual(expectedStacksCount, resultStacksCount);
+            Assert.AreEqual(expectedFirstStackCount, resultFirstStackCount);
+            Assert.AreEqual(expectedSecondStackCount, resultSecondStackCount);
+        }
     }
 }
