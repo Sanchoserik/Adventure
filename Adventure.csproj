@@ -326,6 +326,7 @@
     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\HeroEditorController.cs" />
     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\InterfaceCommand.cs" />
     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\PlusMinusButtonInputData.cs" />
+    <Compile Include="Assets\Code\UIScripts\MainInvertoryScene\MainInvertorySceneController.cs" />
     <Compile Include="Assets\Code\UIScripts\OptionsScene\ChangeLanguage.cs" />
     <Compile Include="Assets\Code\UIScripts\OptionsScene\SetResolution.cs" />
     <Compile Include="Assets\Code\UIScripts\Saver\SaveController.cs" />
