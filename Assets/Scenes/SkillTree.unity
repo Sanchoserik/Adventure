@@ -10685,7 +10685,7 @@ Prefab:
     - target: {fileID: 114913773259175228, guid: 184700b89cd6d0c4f9c4e0125acc2a8e,
         type: 2}
       propertyPath: m_Text
-      value: Assassin
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114434685987472154, guid: 184700b89cd6d0c4f9c4e0125acc2a8e,
         type: 2}
@@ -10721,6 +10721,12 @@ Prefab:
       propertyPath: m_Name
       value: AssassinButtonText
       objectReference: {fileID: 0}
+    - target: {fileID: 114689445877241568, guid: 184700b89cd6d0c4f9c4e0125acc2a8e,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6955aa08dc8742e47ade68a2fa9d12f4,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 184700b89cd6d0c4f9c4e0125acc2a8e, type: 2}
   m_IsPrefabParent: 0

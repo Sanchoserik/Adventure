@@ -9,6 +9,20 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
 {
     public class MainInvertorySceneController : MonoBehaviour
     {
+        private int numberOfSlots = 100;
+        public GameObject slotPrefab;
+        public Transform mainHolder;
+
+        private void Awake()
+        {
+            for (int i = 0; i < numberOfSlots; ++i)
+            {
+                GameObject instance = Instantiate(slotPrefab);
+                instance.transform.SetParent(mainHolder);
+                Debug.Log("ins" + i);
+            }
+        }
+
         private void Start()
         {
             

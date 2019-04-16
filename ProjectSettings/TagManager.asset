@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SkillP
   - sText
+  - Item
   layers:
   - Default
   - TransparentFX

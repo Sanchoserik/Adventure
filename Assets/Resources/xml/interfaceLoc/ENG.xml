@@ -10,7 +10,6 @@
  <el name = "ReturnButtonText">Return</el>
  </scene>
  <scene name = "SkillTree">
- <el name = "AssassinButtonText">Assassin</el>
  <el name = "BruiserButtonText">Bruiser</el>
  <el name = "ReturnButtonText">Return</el>
  <el name = "CostAP">ֳPrice AP:</el>
