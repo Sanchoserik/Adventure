@@ -9,7 +9,7 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
 {
     public class MainInvertorySceneController : MonoBehaviour
     {
-        private int numberOfSlots = 100;
+        private int numberOfSlots = 5 ;
         public GameObject slotPrefab;
         public Transform mainHolder;
 
@@ -18,8 +18,7 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
             for (int i = 0; i < numberOfSlots; ++i)
             {
                 GameObject instance = Instantiate(slotPrefab);
-                instance.transform.SetParent(mainHolder);
-                Debug.Log("ins" + i);
+                instance.transform.SetParent(mainHolder);                
             }
         }
 
