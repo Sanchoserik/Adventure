@@ -12,8 +12,8 @@ namespace Assets.Code.Items.Potions
     {
         public LifeUpMix3G(string _name)
         {
-          
             localisedName = _name;
+            category = "Mixtures";
         }
      
     }

@@ -11,6 +11,7 @@ namespace Assets.Code.Items
     {
         public int id;
         public string localisedName;
+        public string category;
         public int price;
     
         //public static void dell(List<A_Item> items, int _id)

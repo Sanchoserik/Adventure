@@ -13,6 +13,7 @@ namespace Assets.Code.Items.Potions
         public LightUpMix3G(string _name)
         {       
             localisedName = _name;
+            category = "Mixtures";
         }
 
      

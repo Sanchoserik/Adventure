@@ -12,7 +12,8 @@ namespace Assets.Code.Items.Potions
     {
         public AirUpMix3G(string _name)
         {          
-            localisedName = _name;           
+            localisedName = _name;
+            category = "Mixtures";
         }
 
       

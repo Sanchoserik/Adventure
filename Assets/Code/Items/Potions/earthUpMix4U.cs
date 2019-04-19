@@ -12,8 +12,8 @@ namespace Assets.Code.Items.Potions
     {
         public EarthUpMix4U(string _name)
         {
-            
             localisedName = _name;
+            category = "Mixtures";
         }
       
     }

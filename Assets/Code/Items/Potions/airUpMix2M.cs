@@ -13,6 +13,7 @@ namespace Assets.Code.Items.Potions
         public AirUpMix2M(string _name)
         {
             localisedName = _name;
+            category = "Mixtures";
         }
 
         

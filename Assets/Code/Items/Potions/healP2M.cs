@@ -12,8 +12,8 @@ namespace Assets.Code.Items.Potions
     {
         public HealP2M(string _name)
         {
-          
            localisedName = _name;
+            category = "Potions";
         }
 
     }

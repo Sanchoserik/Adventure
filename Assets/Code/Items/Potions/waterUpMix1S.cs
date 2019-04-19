@@ -12,8 +12,8 @@ namespace Assets.Code.Items.Potions
     {
         public WaterUpMix1S(string _name)
         {
-         
             localisedName = _name;
+            category = "Mixtures";
         }
 
     }

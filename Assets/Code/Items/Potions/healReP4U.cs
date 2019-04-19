@@ -13,6 +13,7 @@ namespace Assets.Code.Items.Potions
         public HealReP4U(string _name)
         {           
             localisedName = _name;
+            category = "Potions";
         }
 
    

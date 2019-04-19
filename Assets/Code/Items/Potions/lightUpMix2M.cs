@@ -12,8 +12,8 @@ namespace Assets.Code.Items.Potions
     {
         public LightUpMix2M(string _name)
         {
-        
             localisedName = _name;
+            category = "Mixtures";
         }
 
     

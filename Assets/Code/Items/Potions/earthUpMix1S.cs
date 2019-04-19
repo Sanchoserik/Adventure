@@ -11,9 +11,9 @@ namespace Assets.Code.Items.Potions
     public class EarthUpMix1S : A_Item
     {
         public EarthUpMix1S(string _name)
-        {
-           
+        {           
             localisedName = _name;
+            category = "Mixtures";
         }
     
     }
