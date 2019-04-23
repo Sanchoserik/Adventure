@@ -14,6 +14,7 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
     {
         public GameObject slotPrefab;
         public Transform mainHolder;
+        public Sprite[] itemsSpriteSheet;
 
         InventorySystem invSystem;
 
@@ -25,12 +26,15 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
             A_Item hppotS = new HealP1S("hpS");
             A_Item hppotM = new HealP2M("hpM");
             A_Item hppotG = new HealP3G("hpG");
+            A_Item enepotS = new EneP1S("eneS");
             invSystem.addItem(hppotS);
             invSystem.addItem(hppotM);
             invSystem.addItem(hppotM);
             invSystem.addItem(hppotG);
             invSystem.addItem(hppotG);
             invSystem.addItem(hppotG);
+            invSystem.addItem(enepotS);
+            invSystem.addItem(enepotS);
 
             //2 get items in first category    
             displayInvertory("Potions");
@@ -54,18 +58,35 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
             foreach (List<A_Item> itemType in invSystem.mainItemsStorage)
             {
                 if (itemType[0].category.Equals(category))
-                    getItems(itemType.Count);
+                    getItems(itemType.Count,itemType[0].GetType().Name);
             }
         }
         //Instantiate selected items
-        private void getItems(int itemCount)
-        {                       
-            GameObject instance = Instantiate(slotPrefab, mainHolder);
-            Text textItemCount = instance.GetComponentInChildren<Text>();
-            textItemCount.enabled = true;
-            textItemCount.text = itemCount.ToString();
-           // instance.GetComponentInChildren<Image>.is ;
+        private void getItems(int itemCount, string itemTypeName)
+        {
+            GameObject instance = Instantiate(slotPrefab, mainHolder);            
+            //Prefab instance has 2 child - Index 0 is <Image> - itemIcon - Index 1 is <Text> - itemCountText
+            Transform component = instance.transform.GetChild(0);
+            Image itemIcon = component.GetComponentInChildren<Image>();
+            itemIcon.enabled = true;
+            itemIcon.sprite = itemsSpriteSheet[getSpite(itemTypeName)];
 
+            component = instance.transform.GetChild(1);
+            Text itemCountText = component.GetComponentInChildren<Text>();
+            itemCountText.text = itemCount.ToString();
+        }
+
+        private int getSpite(string name)
+        {
+            switch (name)
+            {
+                case "HealP1S": { return 0;}
+                case "HealP2M": { return 3; }
+                case "HealP3G": { return 1; }
+                case "HealP4U": { return 2; }
+                case "EneP1S": { return 4; }
+            }
+            return 0;
         }
     }
 }
