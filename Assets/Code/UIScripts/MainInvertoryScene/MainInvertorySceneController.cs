@@ -37,7 +37,7 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
             invSystem.addItem(enepotS);
 
             //2 get items in first category    
-            displayInvertory("Potions");
+            //displayInvertory("Potions");
         }
 
         private void Update()
@@ -47,6 +47,8 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
 
         public void displayInvertory(string category)
         {
+            
+
             switch (category)
             {
                 case "Potions": { getCategory("Potions");  break; }
@@ -80,11 +82,58 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
         {
             switch (name)
             {
-                case "HealP1S": { return 0;}
-                case "HealP2M": { return 3; }
-                case "HealP3G": { return 1; }
-                case "HealP4U": { return 2; }
-                case "EneP1S": { return 4; }
+                case "HealP1S": { return 12;}
+                case "HealP2M": { return 1; }
+                case "HealP3G": { return 2; }
+                case "HealP4U": { return 3; }
+                case "EneP1S": { return 0; }
+                case "EneP2M": { return 1; }
+                case "EneP3G": { return 2; }
+                case "EneP4U": { return 3; }
+                case "HealReP1S": { return 8; }
+                case "HealReP2M": { return 9; }
+                case "HealReP3G": { return 10; }
+                case "HealReP4U": { return 11; }
+                case "EneReP1S": { return 8; }
+                case "EneReP2M": { return 9; }
+                case "EneReP3G": { return 10; }
+                case "EneReP4U": { return 11; }
+                case "AirhUpMix1S": { return 4; }
+                case "AirUpMix2M": { return 5; }
+                case "AirUpMix3G": { return 6; }
+                case "AirUpMix4U": { return 7; }
+                case "DarknessUpMix1S": { return 4; }
+                case "DarknessUpMix2M": { return 5; }
+                case "DarknessUpMix3G": { return 6; }
+                case "DarknessUpMix4U": { return 7; }
+                case "DeathUpMix1S": { return 4; }
+                case "DeathUpMix2M": { return 5; }
+                case "DeathUpMix3G": { return 6; }
+                case "DeathUpMix4U": { return 7; }
+                case "EarthUpMix1S": { return 4; }
+                case "EarthUpMix2M": { return 5; }
+                case "EarthUpMix3G": { return 6; }
+                case "EarthUpMix4U": { return 7; }
+                case "FireUpMix1S": { return 4; }
+                case "FireUpMix2M": { return 5; }
+                case "FireUpMix3G": { return 6; }
+                case "FireUpMix4U": { return 7; }
+                case "LifeUpMix1S": { return 4; }
+                case "LifeUpMix2M": { return 5; }
+                case "LifeUpMix3G": { return 6; }
+                case "LifeUpMix4U": { return 7; }
+                case "LightningUpMix1S": { return 4; }
+                case "LightningUpMix2M": { return 5; }
+                case "LightningUpMix3G": { return 6; }
+                case "LightningUpMix4U": { return 7; }
+                case "PhysUpMix1S": { return 4; }
+                case "PhysUpMix2M": { return 5; }
+                case "PhysUpMix3G": { return 6; }
+                case "PhysUpMix4U": { return 7; }
+                case "WaterUpMix1S": { return 4; }
+                case "WaterUpMix2M": { return 5; }
+                case "WaterUpMix3G": { return 6; }
+                case "WaterUpMix4U": { return 7; }
             }
             return 0;
         }
