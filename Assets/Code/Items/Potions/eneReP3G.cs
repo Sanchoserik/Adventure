@@ -13,7 +13,7 @@ namespace Assets.Code.Items.Potions
         public EneReP3G(string _name)
         {
             localisedName = _name;
-            category = "Potions";
+            category = "Elixirs";
         }
 
     }

@@ -27,6 +27,10 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
             A_Item hppotM = new HealP2M("hpM");
             A_Item hppotG = new HealP3G("hpG");
             A_Item enepotS = new EneP1S("eneS");
+            A_Item eneRegS = new EneReP1S("reneS");
+            A_Item eneRegM = new EneReP2M("reneM");
+            A_Item eneRegG = new EneReP3G("reneG");
+            A_Item eneRegU = new EneReP4U("reneU");
             invSystem.addItem(hppotS);
             invSystem.addItem(hppotM);
             invSystem.addItem(hppotM);
@@ -35,7 +39,10 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
             invSystem.addItem(hppotG);
             invSystem.addItem(enepotS);
             invSystem.addItem(enepotS);
-
+            invSystem.addItem(eneRegS);
+            invSystem.addItem(eneRegM);
+            invSystem.addItem(eneRegG);
+            invSystem.addItem(eneRegU);
             //2 get items in first category    
             //displayInvertory("Potions");
         }
@@ -47,11 +54,17 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
 
         public void displayInvertory(string category)
         {
-            
+            //refresh item panel
+            foreach (Transform item in mainHolder.GetComponentInChildren<Transform>())
+            {
+                if (item.tag.Equals("Item"))
+                    Destroy(item.gameObject);
+            }
 
             switch (category)
             {
                 case "Potions": { getCategory("Potions");  break; }
+                case "Elixirs": { getCategory("Elixirs"); break; }
             }
         }
         //select all items from category

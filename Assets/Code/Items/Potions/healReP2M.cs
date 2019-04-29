@@ -13,7 +13,7 @@ namespace Assets.Code.Items.Potions
         public HealReP2M(string _name)
         {
             localisedName = _name;
-            category = "Potions";
+            category = "Elixirs";
         }
 
     }
