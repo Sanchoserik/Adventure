@@ -13,14 +13,12 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectGenerator>VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.1.0f3</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -79,11 +77,11 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
     </Reference>
-    <Reference Include="System.Windows.Forms">
-      <HintPath>Assets/StandaloneFileBrowser/Plugins/System.Windows.Forms.dll</HintPath>
-    </Reference>
     <Reference Include="Ookii.Dialogs">
       <HintPath>Assets/StandaloneFileBrowser/Plugins/Ookii.Dialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>Assets/StandaloneFileBrowser/Plugins/System.Windows.Forms.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -326,7 +324,9 @@
     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\HeroEditorController.cs" />
     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\InterfaceCommand.cs" />
     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\PlusMinusButtonInputData.cs" />
+    <Compile Include="Assets\Code\UIScripts\MainInvertoryScene\FollowMouse.cs" />
     <Compile Include="Assets\Code\UIScripts\MainInvertoryScene\MainInvertorySceneController.cs" />
+    <Compile Include="Assets\Code\UIScripts\MainInvertoryScene\ToolTip.cs" />
     <Compile Include="Assets\Code\UIScripts\OptionsScene\ChangeLanguage.cs" />
     <Compile Include="Assets\Code\UIScripts\OptionsScene\SetResolution.cs" />
     <Compile Include="Assets\Code\UIScripts\Saver\SaveController.cs" />
@@ -356,6 +356,7 @@
   <ItemGroup>
     <None Include="Assets\Resources\xml\interfaceLoc\ENG.xml" />
     <None Include="Assets\Resources\xml\interfaceLoc\UA.xml" />
+    <None Include="Assets\Resources\xml\items\ItemsLocUA.xml" />
     <None Include="Assets\Resources\xml\skills\skills.xml" />
     <None Include="Assets\Resources\xml\skills\skillsLocENG.xml" />
     <None Include="Assets\Resources\xml\skills\skillsLocRU.xml" />
