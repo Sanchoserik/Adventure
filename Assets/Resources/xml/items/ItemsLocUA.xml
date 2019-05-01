@@ -1,6 +1,241 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Items>
-<Item name= "">
-<val LocName>
+<Item name = "HealP1S">
+<val LocName = "Мале зілля зцілення">
+<val LocDescr = "Відновлює  $val$% здоров'я.">
 </Item>
+<Item name = "HealP2M">
+<val LocName = "Середнє зілля зцілення">
+<val LocDescr = "Відновлює  $val$% здоров'я.">
+</Item>
+<Item name = "HealP3G">
+<val LocName = "Велике зілля зцілення">
+<val LocDescr = "Відновлює  $val$% здоров'я.">
+</Item>
+<Item name = "HealP4U">
+<val LocName = "Ультра зілля зцілення">
+<val LocDescr = "Відновлює  $val$% здоров'я.">
+</Item>
+
+<Item name = "EneP1S">
+<val LocName = "Мале зілля енергії">
+<val LocDescr = "Відновлює  $val$% енергії.">
+</Item>
+<Item name = "EneP2M">
+<val LocName = "Середнє зілля енергії">
+<val LocDescr = "Відновлює  $val$% енергії.">
+</Item>
+<Item name = "EneP3G">
+<val LocName = "Велике зілля енергії">
+<val LocDescr = "Відновлює  $val$% енергії.">
+</Item>
+<Item name = "EneP4U">
+<val LocName = "Ультра зілля енергії">
+<val LocDescr = "Відновлює  $val$% енергії.">
+</Item>
+
+<Item name = "HealReP1S">
+<val LocName = "Малий еліксир регенерації здоров'я">
+<val LocDescr = "Відновлює по $val$% здоров'я протягом $time$ кроків.">
+</Item>
+<Item name = "HealReP2M">
+<val LocName = "Середній еліксир регенерації здоров'я">
+<val LocDescr = "Відновлює по $val$% здоров'я протягом $time$ кроків.">
+</Item>
+<Item name = "HealReP3G">
+<val LocName = "Великий еліксир регенерації здоров'я">
+<val LocDescr = "Відновлює по $val$% здоров'я протягом $time$ кроків.">
+</Item>
+<Item name = "HealReP4U">
+<val LocName = "Ультра еліксир регенерації здоров'я">
+<val LocDescr = "Відновлює по $val$% здоров'я протягом $time$ кроків.">
+</Item>
+
+<Item name = "EneReP1S">
+<val LocName = "Малий еліксир регенерації енергії">
+<val LocDescr = "Відновлює по $val$% енергії протягом $time$ кроків.">
+</Item>
+<Item name = "EneReP2M">
+<val LocName = "Середній еліксир регенерації енергії">
+<val LocDescr = "Відновлює по $val$% енергії протягом $time$ кроків.">
+</Item>
+<Item name = "EneReP3G">
+<val LocName = "Великий еліксир регенерації енергії">
+<val LocDescr = "Відновлює по $val$% енергії протягом $time$ кроків.">
+</Item>
+<Item name = "EneReP4U">
+<val LocName = "Ультра еліксир регенерації енергії">
+<val LocDescr = "Відновлює по $val$% енергії протягом $time$ кроків.">
+</Item>
+
+<Item name = "AirUpMix1S">
+<val LocName = "Мала мікстура захисту від повітря">
+<val LocDescr = "Збільшує захист від атак повітря на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "AirUpMix2M">
+<val LocName = "Середня мікстура захисту від повітря">
+<val LocDescr = "Збільшує захист від атак повітря на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "AirUpMix3G">
+<val LocName = "Велика мікстура захисту від повітря">
+<val LocDescr = "Збільшує захист від атак повітря на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "AirUpMix4U">
+<val LocName = "Ультра мікстура захисту від повітря">
+<val LocDescr = "Збільшує захист від атак повітря на $val$, протягом $time$ кроків.">
+</Item>
+
+<Item name = "DarknessUpMix1S">
+<val LocName = "Мала мікстура захисту від темряви">
+<val LocDescr = "Збільшує захист від атак темряви на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "DarknessUpMix2M">
+<val LocName = "Середня мікстура захисту від темряви">
+<val LocDescr = "Збільшує захист від атак темряви на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "DarknessUpMix3G">
+<val LocName = "Велика мікстура захисту від темряви">
+<val LocDescr = "Збільшує захист від атак темряви на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "DarknessUpMix4U">
+<val LocName = "Ультра мікстура захисту від темряви">
+<val LocDescr = "Збільшує захист від атак темряви на $val$, протягом $time$ кроків.">
+</Item>
+
+<Item name = "DeathUpMix1S">
+<val LocName = "Мала мікстура захисту від смерті">
+<val LocDescr = "Збільшує захист від атак смерті на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "DeathUpMix2M">
+<val LocName = "Середня мікстура захисту від смерті">
+<val LocDescr = "Збільшує захист від атак смерті на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "DeathUpMix3G">
+<val LocName = "Велика мікстура захисту від смерті">
+<val LocDescr = "Збільшує захист від атак смерті на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "DeathUpMix4U">
+<val LocName = "Ультра мікстура захисту від смерті">
+<val LocDescr = "Збільшує захист від атак смерті на $val$, протягом $time$ кроків.">
+</Item>
+
+<Item name = "EarthUpMix1S">
+<val LocName = "Мала мікстура захисту від землі">
+<val LocDescr = "Збільшує захист від атак землі на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "EarthUpMix2M">
+<val LocName = "Середня мікстура захисту від землі">
+<val LocDescr = "Збільшує захист від атак землі на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "EarthUpMix3G">
+<val LocName = "Велика мікстура захисту від землі">
+<val LocDescr = "Збільшує захист від атак землі на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "EarthUpMix4U">
+<val LocName = "Ультра мікстура захисту від землі">
+<val LocDescr = "Збільшує захист від атак землі на $val$, протягом $time$ кроків.">
+</Item>
+
+<Item name = "FireUpMix1S">
+<val LocName = "Мала мікстура захисту від вогню">
+<val LocDescr = "Збільшує захист від атак вогню на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "FireUpMix2M">
+<val LocName = "Середня мікстура захисту від вогню">
+<val LocDescr = "Збільшує захист від атак вогню на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "FireUpMix3G">
+<val LocName = "Велика мікстура захисту від вогню">
+<val LocDescr = "Збільшує захист від атак вогню на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "FireUpMix4U">
+<val LocName = "Ультра мікстура захисту від вогню">
+<val LocDescr = "Збільшує захист від атак вогню на $val$, протягом $time$ кроків.">
+</Item>
+
+<Item name = "LifeUpMix1S">
+<val LocName = "Мала мікстура захисту від життя">
+<val LocDescr = "Збільшує захист від атак життя на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "LifeUpMix2M">
+<val LocName = "Середня мікстура захисту від життя">
+<val LocDescr = "Збільшує захист від атак життя на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "LifeUpMix3G">
+<val LocName = "Велика мікстура захисту від життя">
+<val LocDescr = "Збільшує захист від атак життя на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "LifeUpMix4U">
+<val LocName = "Ультра мікстура захисту від життя">
+<val LocDescr = "Збільшує захист від атак життя на $val$, протягом $time$ кроків.">
+</Item>
+
+<Item name = "LightningUpMix1S">
+<val LocName = "Мала мікстура захисту від блискавки">
+<val LocDescr = "Збільшує захист від атак блискавки на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "LightningUpMix2M">
+<val LocName = "Середня мікстура захисту від блискавки">
+<val LocDescr = "Збільшує захист від атак блискавки на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "LightningUpMix3G">
+<val LocName = "Велика мікстура захисту від блискавки">
+<val LocDescr = "Збільшує захист від атак блискавки на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "LightningUpMix4U">
+<val LocName = "Ультра мікстура захисту від блискавки">
+<val LocDescr = "Збільшує захист від атак блискавки на $val$, протягом $time$ кроків.">
+</Item>
+
+<Item name = "LightUpMix1S">
+<val LocName = "Мала мікстура захисту від світла">
+<val LocDescr = "Збільшує захист від атак світла на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "LightUpMix2M">
+<val LocName = "Середня мікстура захисту від світла">
+<val LocDescr = "Збільшує захист від атак світла на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "LightUpMix3G">
+<val LocName = "Велика мікстура захисту від світла">
+<val LocDescr = "Збільшує захист від атак світла на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "LightUpMix4U">
+<val LocName = "Ультра мікстура захисту від світла">
+<val LocDescr = "Збільшує захист від атак світла на $val$, протягом $time$ кроків.">
+</Item>
+
+<Item name = "WaterUpMix1S">
+<val LocName = "Мала мікстура захисту від води">
+<val LocDescr = "Збільшує захист від атак води на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "WaterUpMix2M">
+<val LocName = "Середня мікстура захисту від води">
+<val LocDescr = "Збільшує захист від атак води на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "WaterUpMix3G">
+<val LocName = "Велика мікстура захисту від води">
+<val LocDescr = "Збільшує захист від атак води на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "WaterUpMix4U">
+<val LocName = "Ультра мікстура захисту від води">
+<val LocDescr = "Збільшує захист від атак води на $val$, протягом $time$ кроків.">
+</Item>
+
+<Item name = "PhysUpMix1S">
+<val LocName = "Мала мікстура захисту від  фізичних атак">
+<val LocDescr = "Збільшує захист від фізичних атак на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "PhysUpMix2M">
+<val LocName = "Середня мікстура захисту від  фізичних атак">
+<val LocDescr = "Збільшує захист від фізичних атак на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "PhysUpMix3G">
+<val LocName = "Велика мікстура захисту від  фізичних атак">
+<val LocDescr = "Збільшує захист від фізичних атак на $val$, протягом $time$ кроків.">
+</Item>
+<Item name = "PhysUpMix4U">
+<val LocName = "Ультра мікстура захисту від  фізичних атак">
+<val LocDescr = "Збільшує захист від фізичних атак на $val$, протягом $time$ кроків.">
+</Item>
+
 </Items>
