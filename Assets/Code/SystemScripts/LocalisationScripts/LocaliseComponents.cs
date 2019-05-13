@@ -10,7 +10,7 @@ namespace Assets.Code.SystemScripts
 {
     public class LocaliseComponents
     {
-        public void localiseScene(LocalisationData _data)
+        public void localiseScene(InterfaceLocalisationData _data)
         {
          
           Scene scene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
@@ -28,5 +28,6 @@ namespace Assets.Code.SystemScripts
                 }
             }
         }
+
     }
 }

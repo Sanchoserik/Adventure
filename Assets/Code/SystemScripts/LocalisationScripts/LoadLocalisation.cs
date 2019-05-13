@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Code.SystemScripts.LocalisationScripts;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,23 +11,26 @@ namespace Assets.Code.SystemScripts
     public class LoadLocalisation : MonoBehaviour
     {
         private string path = "";
-        public static LocalisationData localisationDataStorage; 
+        public static InterfaceLocalisationData interfaceLcalisationData;
+        public List<ItemsLocalisationData> itemsLocalisationData;
 
         private void Start()
         {
             //reset localisation data storage 
-            localisationDataStorage = new LocalisationData();
+            interfaceLcalisationData = new InterfaceLocalisationData();
+            itemsLocalisationData = new List<ItemsLocalisationData>();
 
-            string lang = AppParameters.localisation;
-            selectLocalisationLanguage(lang);
+            selectLocalisationLanguage(AppParameters.localisation);
             DontDestroyOnLoad(gameObject);
-            LoadXML();
+
+            LoadInterfaceLocalisationXML();
+
 
             LocaliseComponents lsc = new LocaliseComponents();
-            lsc.localiseScene(localisationDataStorage); // localise scene from ldata       
+            lsc.localiseScene(interfaceLcalisationData); // localise scene from ldata       
         }
 
-        void LoadXML()
+        private void LoadInterfaceLocalisationXML()
         {
             IEnumerable<XElement> scenes; // <scene> tag                
             XDocument xDoc = XDocument.Load(path);
@@ -43,17 +47,17 @@ namespace Assets.Code.SystemScripts
                    
                     values.Add(el.Attribute("name").Value, el.Value);
                 }
-                localisationDataStorage.locValues.Add(scName, values);
+                interfaceLcalisationData.locValues.Add(scName, values);
             }
-        }//end LoadXML
+        }
 
-        void selectLocalisationLanguage(string _lang)
+        private void selectLocalisationLanguage(string _lang)
         {
             switch (_lang)
             {
                 case "ENG": { path = "Assets/Resources/xml/interfaceLoc/ENG.xml";  break; }
                 case "UA": { path = "Assets/Resources/xml/interfaceLoc/UA.xml"; break; }
             }
-        }//end ufn
+        }
     }
 }

@@ -5,12 +5,12 @@ using System.Text;
 
 namespace Assets.Code.SystemScripts
 {
-    public class LocalisationData
+    public class InterfaceLocalisationData
     {
         //  Dictionary<sceneName, Dictionary<gameObjectName, Value>>
         public Dictionary<string, Dictionary<string, string>> locValues;
 
-        public LocalisationData()
+        public InterfaceLocalisationData()
         {
             locValues = new Dictionary<string, Dictionary<string, string>>();
         }

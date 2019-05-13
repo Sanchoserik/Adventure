@@ -11,7 +11,7 @@ namespace Assets.Code.SystemScripts
         private void Start()
         {                  
             LocaliseComponents lsc = new LocaliseComponents();
-            lsc.localiseScene(LoadLocalisation.localisationDataStorage); // localise scene from ldata       
+            lsc.localiseScene(LoadLocalisation.interfaceLcalisationData); // localise scene from ldata       
         }
     }
 }
