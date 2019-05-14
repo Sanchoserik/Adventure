@@ -10,5 +10,12 @@ namespace Assets.Code.SystemScripts.LocalisationScripts
         public string itemName;
         public string itemLocalisedName;
         public string itemLocalisedDescription;
+
+        public ItemsLocalisationData(string iName, string iLocName, string iLocDescr)
+        {
+            itemName = iName;
+            itemLocalisedName = iLocName;
+            itemLocalisedDescription = iLocDescr;
+        }
     }
 }

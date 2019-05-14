@@ -37,12 +37,10 @@ namespace Assets.Code.SystemScripts
 
             foreach (XElement scene in scenes)
             {
-
                 string scName = scene.Attribute("name").Value.Trim();
                 Dictionary<string, string> values = new Dictionary<string, string>();
                 foreach (XElement el in scene.Elements())
-                {               
-                   
+                {                                  
                     values.Add(el.Attribute("name").Value, el.Value);
                 }
                 interfaceLcalisationData.locValues.Add(scName, values);
@@ -51,7 +49,19 @@ namespace Assets.Code.SystemScripts
 
         private void LoadItemsLocalisationXML()
         {
+            IEnumerable<XElement> items; // <item> tag  
+            XDocument xDoc = XDocument.Load(itemsLocPath);
 
+            items = xDoc.Descendants("items").Elements(); ;
+
+            foreach (XElement item in items)
+            {
+                string itemName = item.Attribute("name").Value.Trim();
+                string itemLocName = item.Element("LocName").Value;
+                string itemLocDesc = item.Element("LocDescr").Value;
+
+                itemsLocalisationData.Add(new ItemsLocalisationData(itemName, itemLocName, itemLocDesc));
+            }
         }
 
         private void selectLocalisationLanguage(string _lang)
@@ -68,5 +78,6 @@ namespace Assets.Code.SystemScripts
                         break; }
             }
         }
+
     }
 }
