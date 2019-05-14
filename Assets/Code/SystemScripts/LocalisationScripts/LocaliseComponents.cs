@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Code.SystemScripts.LocalisationScripts;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,8 +12,7 @@ namespace Assets.Code.SystemScripts
     public class LocaliseComponents
     {
         public void localiseScene(InterfaceLocalisationData _data)
-        {
-         
+        {        
           Scene scene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
           Dictionary<string, string> sceneValues = _data.locValues[scene.name];
 
@@ -27,6 +27,11 @@ namespace Assets.Code.SystemScripts
                     _t.text = sceneValues[key];
                 }
             }
+        }
+
+        public void localiseItems(List<ItemsLocalisationData> _data)
+        {
+
         }
 
     }

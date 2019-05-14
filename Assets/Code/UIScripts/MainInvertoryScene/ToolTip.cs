@@ -5,7 +5,8 @@ using System.Text;
 
 namespace Assets.Code.UIScripts.MainInvertoryScene
 {
-    class ToolTip
+    public class ToolTip
     {
+
     }
 }

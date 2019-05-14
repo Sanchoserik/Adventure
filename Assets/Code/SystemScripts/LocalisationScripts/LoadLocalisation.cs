@@ -10,9 +10,10 @@ namespace Assets.Code.SystemScripts
 {
     public class LoadLocalisation : MonoBehaviour
     {
-        private string path = "";
+        private string interfaceLocPath = "";
+        private string itemsLocPath = "";
         public static InterfaceLocalisationData interfaceLcalisationData;
-        public List<ItemsLocalisationData> itemsLocalisationData;
+        public static List<ItemsLocalisationData> itemsLocalisationData;
 
         private void Start()
         {
@@ -24,16 +25,13 @@ namespace Assets.Code.SystemScripts
             DontDestroyOnLoad(gameObject);
 
             LoadInterfaceLocalisationXML();
-
-
-            LocaliseComponents lsc = new LocaliseComponents();
-            lsc.localiseScene(interfaceLcalisationData); // localise scene from ldata       
+           
         }
 
         private void LoadInterfaceLocalisationXML()
         {
             IEnumerable<XElement> scenes; // <scene> tag                
-            XDocument xDoc = XDocument.Load(path);
+            XDocument xDoc = XDocument.Load(interfaceLocPath);
 
             scenes = xDoc.Descendants("scenes").Elements();
 
@@ -51,12 +49,23 @@ namespace Assets.Code.SystemScripts
             }
         }
 
+        private void LoadItemsLocalisationXML()
+        {
+
+        }
+
         private void selectLocalisationLanguage(string _lang)
         {
             switch (_lang)
             {
-                case "ENG": { path = "Assets/Resources/xml/interfaceLoc/ENG.xml";  break; }
-                case "UA": { path = "Assets/Resources/xml/interfaceLoc/UA.xml"; break; }
+                case "ENG": {
+                        interfaceLocPath = "Assets/Resources/xml/interfaceLoc/ENG.xml";
+                        itemsLocPath = "Assets/Resources/xml/items/ItemsLocUA.xml"; // Add Englich Localisation later(
+                        break; }
+                case "UA": {
+                        interfaceLocPath = "Assets/Resources/xml/interfaceLoc/UA.xml";
+                        itemsLocPath = "Assets/Resources/xml/items/ItemsLocUA.xml";
+                        break; }
             }
         }
     }

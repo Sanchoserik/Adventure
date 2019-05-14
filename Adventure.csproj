@@ -314,7 +314,8 @@
     <Compile Include="Assets\Code\Skills\Warrior\SkillTsunami.cs" />
     <Compile Include="Assets\Code\Skills\Warrior\SkillWaterPrison.cs" />
     <Compile Include="Assets\Code\SystemScripts\AppParameters.cs" />
-    <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\GetLocalisation.cs" />
+    <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\GetItemsLocalisation.cs" />
+    <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\GetSceneLocalisation.cs" />
     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocalisationDataStructures\ItemsLocalisationData.cs" />
     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LoadLocalisation.cs" />
     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocalisationDataStructures\InterfaceLocalisationData.cs" />

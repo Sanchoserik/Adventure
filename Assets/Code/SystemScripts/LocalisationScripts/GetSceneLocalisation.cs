@@ -6,12 +6,12 @@ using UnityEngine;
 
 namespace Assets.Code.SystemScripts
 {
-    class GetLocalisation : MonoBehaviour
+    class GetSceneLocalisation : MonoBehaviour
     {
         private void Start()
         {                  
             LocaliseComponents lsc = new LocaliseComponents();
-            lsc.localiseScene(LoadLocalisation.interfaceLcalisationData); // localise scene from ldata       
+            lsc.localiseScene(LoadLocalisation.interfaceLcalisationData);   
         }
     }
 }
