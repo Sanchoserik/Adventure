@@ -31,7 +31,7 @@ namespace AdventureUnitTest
 
             Assert.AreEqual("HealP1S", _data[0].itemName);
             Assert.AreEqual("Мале зілля зцілення", _data[0].itemLocalisedName);
-            Assert.AreEqual("Відновлює  $val$% здоров'я.", _data[0].itemLocalisedDescription);
+            Assert.AreEqual("Відновлює  $val$% здоров'я.", _data[0].itemLocalisedDescription);         
         }
     }
 }

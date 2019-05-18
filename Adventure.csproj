@@ -331,6 +331,7 @@
     <Compile Include="Assets\Code\UIScripts\MainInvertoryScene\FollowMouse.cs" />
     <Compile Include="Assets\Code\UIScripts\MainInvertoryScene\MainInvertorySceneController.cs" />
     <Compile Include="Assets\Code\UIScripts\MainInvertoryScene\ToolTip.cs" />
+    <Compile Include="Assets\Code\UIScripts\MainInvertoryScene\UIItem.cs" />
     <Compile Include="Assets\Code\UIScripts\OptionsScene\ChangeLanguage.cs" />
     <Compile Include="Assets\Code\UIScripts\OptionsScene\SetResolution.cs" />
     <Compile Include="Assets\Code\UIScripts\Saver\SaveController.cs" />
