@@ -17,11 +17,12 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
 
         private void Start()
         {
-          gameObject.SetActive(false);
+            gameObject.SetActive(false);
         }
 
         public void generateItemTooltip(string itemName)
-        {
+        {            
+            toolTipItemName.text = "itemName1" + Time.time;
             gameObject.SetActive(true);
         }
 

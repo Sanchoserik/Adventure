@@ -8,27 +8,29 @@ using UnityEngine.EventSystems;
 
 namespace Assets.Code.UIScripts.MainInvertoryScene
 {
-    public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerExitHandler
+    public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerExitHandler, IPointerEnterHandler
     {
         public A_Item item;
         private ToolTip tooltip;
 
         private void Awake()
-        {
-            GameObject x = GameObject.Find("ToolTip2");
-
-            int xx = 20;
-            //tooltip = GameObject.Find("ItemToolTip").GetComponent<ToolTip>();
+        {     
+           tooltip = GameObject.Find("InvHolder").transform.Find("ToolTip").GetComponent<ToolTip>();
         }
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            tooltip.generateItemTooltip("itemname");
+           
         }
 
         public void OnPointerExit(PointerEventData eventData)
         {
             tooltip.gameObject.SetActive(false);
+        }
+
+        public void OnPointerEnter(PointerEventData eventData)
+        {
+            tooltip.generateItemTooltip("itemname");
         }
     }
 }
