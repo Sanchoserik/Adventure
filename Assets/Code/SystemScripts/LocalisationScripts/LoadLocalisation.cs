@@ -15,7 +15,7 @@ namespace Assets.Code.SystemScripts
         public static InterfaceLocalisationData interfaceLcalisationData;
         public static List<ItemsLocalisationData> itemsLocalisationData;
 
-        private void Start()
+        private void Awake()
         {
             //reset localisation data storage 
             interfaceLcalisationData = new InterfaceLocalisationData();
@@ -25,7 +25,7 @@ namespace Assets.Code.SystemScripts
             DontDestroyOnLoad(gameObject);
 
             LoadInterfaceLocalisationXML();
-           
+            LoadItemsLocalisationXML();
         }
 
         private void LoadInterfaceLocalisationXML()

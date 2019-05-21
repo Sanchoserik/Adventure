@@ -103,6 +103,7 @@
     <Compile Include="Assets\Code\Items\A_Card.cs" />
     <Compile Include="Assets\Code\Items\A_Item.cs" />
     <Compile Include="Assets\Code\Items\A_Talisman.cs" />
+    <Compile Include="Assets\Code\Items\IItemFabric.cs" />
     <Compile Include="Assets\Code\Items\InventorySystem.cs" />
     <Compile Include="Assets\Code\Items\Potions\AirUpMix1S.cs" />
     <Compile Include="Assets\Code\Items\Potions\AirUpMix2M.cs" />

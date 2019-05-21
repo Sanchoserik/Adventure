@@ -17,12 +17,7 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
         {     
            tooltip = GameObject.Find("InvHolder").transform.Find("ToolTip").GetComponent<ToolTip>();
         }
-
-        public void OnPointerClick(PointerEventData eventData)
-        {
-           
-        }
-
+     
         public void OnPointerExit(PointerEventData eventData)
         {
             tooltip.gameObject.SetActive(false);
@@ -30,7 +25,14 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-            tooltip.generateItemTooltip("itemname");
+            tooltip.generateItemTooltip(item);
         }
+
+        //TO DO Item context menu
+        public void OnPointerClick(PointerEventData eventData)
+        {
+
+        }
+
     }
 }

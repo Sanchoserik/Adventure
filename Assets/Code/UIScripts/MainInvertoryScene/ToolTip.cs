@@ -1,4 +1,5 @@
-﻿using Assets.Code.SystemScripts.LocalisationScripts;
+﻿using Assets.Code.Items;
+using Assets.Code.SystemScripts.LocalisationScripts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,16 +14,19 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
         public Text toolTipItemName;
         public Text toolTipItemDescription;
 
-        private List<ItemsLocalisationData> itemsData = SystemScripts.LoadLocalisation.itemsLocalisationData;
+        private List<ItemsLocalisationData> itemsData;
 
         private void Start()
         {
             gameObject.SetActive(false);
+            itemsData = SystemScripts.LoadLocalisation.itemsLocalisationData;
         }
 
-        public void generateItemTooltip(string itemName)
-        {            
-            toolTipItemName.text = "itemName1" + Time.time;
+        public void generateItemTooltip(A_Item item)
+        {        
+            ItemsLocalisationData itemLocalisation = itemsData.Find(x => x.itemName.Equals(item.GetType().Name));
+            toolTipItemName.text = itemLocalisation.itemLocalisedName;
+            toolTipItemDescription.text = itemLocalisation.itemLocalisedDescription;
             gameObject.SetActive(true);
         }
 

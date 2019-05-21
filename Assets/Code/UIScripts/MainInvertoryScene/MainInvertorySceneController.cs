@@ -89,6 +89,11 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
             component = instance.transform.GetChild(1);
             Text itemCountText = component.GetComponentInChildren<Text>();
             itemCountText.text = itemCount.ToString();
+
+            UIItem uiitem = instance.GetComponent<UIItem>();
+            uiitem.item = new HealP1S("HealP1S");
+
+            int xx = 20;
         }
 
         private int getSpite(string name)
