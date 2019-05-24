@@ -10,7 +10,7 @@ namespace Assets.Code.UIScripts.HeroEditorScene
 {
     class HeroEditorController : MonoBehaviour
     {
-        private InterfaceCommand inputCommand;
+        private ICommand inputCommand;
         private bool dataUpdated = false;
         public GameObject UIContainer;
      
@@ -75,7 +75,7 @@ namespace Assets.Code.UIScripts.HeroEditorScene
             dataUpdated = false;
         }
 
-        private void setCommand(InterfaceCommand command)
+        private void setCommand(ICommand command)
         {
             inputCommand = command;
         }

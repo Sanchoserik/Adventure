@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Assets.Code.UIScripts.HeroEditorScene
+namespace Assets.Code.Items
 {
-    interface InterfaceCommand
+    public class ItemFabric
     {
-       void execute();
     }
 }

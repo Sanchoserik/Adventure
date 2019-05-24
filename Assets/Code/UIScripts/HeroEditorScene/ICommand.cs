@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Assets.Code.UIScripts.Saver
+namespace Assets.Code.UIScripts.HeroEditorScene
 {
-    public class SaveController
+    interface ICommand
     {
-
+       void execute();
     }
 }

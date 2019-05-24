@@ -20,6 +20,7 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
      
         public void OnPointerExit(PointerEventData eventData)
         {
+            tooltip.setToolTipGeneratedValue(false);
             tooltip.gameObject.SetActive(false);
         }
 

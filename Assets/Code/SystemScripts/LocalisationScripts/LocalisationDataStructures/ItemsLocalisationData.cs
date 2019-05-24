@@ -10,6 +10,7 @@ namespace Assets.Code.SystemScripts.LocalisationScripts
         public string itemName;
         public string itemLocalisedName;
         public string itemLocalisedDescription;
+        public Dictionary<string, string> itemValues;
 
         public ItemsLocalisationData(string iName, string iLocName, string iLocDescr)
         {

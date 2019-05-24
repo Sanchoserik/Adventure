@@ -105,6 +105,7 @@
     <Compile Include="Assets\Code\Items\A_Talisman.cs" />
     <Compile Include="Assets\Code\Items\IItemFabric.cs" />
     <Compile Include="Assets\Code\Items\InventorySystem.cs" />
+    <Compile Include="Assets\Code\Items\ItemFabric.cs" />
     <Compile Include="Assets\Code\Items\Potions\AirUpMix1S.cs" />
     <Compile Include="Assets\Code\Items\Potions\AirUpMix2M.cs" />
     <Compile Include="Assets\Code\Items\Potions\AirUpMix3G.cs" />
@@ -317,9 +318,9 @@
     <Compile Include="Assets\Code\SystemScripts\AppParameters.cs" />
     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\GetItemsLocalisation.cs" />
     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\GetSceneLocalisation.cs" />
-    <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocalisationDataStructures\ItemsLocalisationData.cs" />
     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LoadLocalisation.cs" />
     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocalisationDataStructures\InterfaceLocalisationData.cs" />
+    <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocalisationDataStructures\ItemsLocalisationData.cs" />
     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocaliseComponents.cs" />
     <Compile Include="Assets\Code\UIScripts\CameraZooming.cs" />
     <Compile Include="Assets\Code\UIScripts\ExitApp.cs" />
@@ -327,7 +328,7 @@
     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\CommandDefenceValueChange.cs" />
     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\CommandLevelChange.cs" />
     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\HeroEditorController.cs" />
-    <Compile Include="Assets\Code\UIScripts\HeroEditorScene\InterfaceCommand.cs" />
+    <Compile Include="Assets\Code\UIScripts\HeroEditorScene\ICommand.cs" />
     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\PlusMinusButtonInputData.cs" />
     <Compile Include="Assets\Code\UIScripts\MainInvertoryScene\FollowMouse.cs" />
     <Compile Include="Assets\Code\UIScripts\MainInvertoryScene\MainInvertorySceneController.cs" />
@@ -335,7 +336,6 @@
     <Compile Include="Assets\Code\UIScripts\MainInvertoryScene\UIItem.cs" />
     <Compile Include="Assets\Code\UIScripts\OptionsScene\ChangeLanguage.cs" />
     <Compile Include="Assets\Code\UIScripts\OptionsScene\SetResolution.cs" />
-    <Compile Include="Assets\Code\UIScripts\Saver\SaveController.cs" />
     <Compile Include="Assets\Code\UIScripts\SkillTreeScene\ShowSkillDescr.cs" />
     <Compile Include="Assets\Code\UIScripts\SkillTreeScene\SkillButtonChangerData.cs" />
     <Compile Include="Assets\Code\UIScripts\SkillTreeScene\SkillDataStorage.cs" />
@@ -362,7 +362,8 @@
   <ItemGroup>
     <None Include="Assets\Resources\xml\interfaceLoc\ENG.xml" />
     <None Include="Assets\Resources\xml\interfaceLoc\UA.xml" />
-    <None Include="Assets\Resources\xml\items\ItemsLocUA.xml" />
+    <None Include="Assets\Resources\xml\items\ItemsPotions.xml" />
+    <None Include="Assets\Resources\xml\items\ItemsPotionsLocUA.xml" />
     <None Include="Assets\Resources\xml\skills\skills.xml" />
     <None Include="Assets\Resources\xml\skills\skillsLocENG.xml" />
     <None Include="Assets\Resources\xml\skills\skillsLocRU.xml" />

@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Assets.Code.UIScripts.HeroEditorScene
 {
-    class CommandDefenceValueChange : InterfaceCommand
+    class CommandDefenceValueChange : ICommand
     {
         C_Hero hero;
         PlusMinusButtonInputData data;

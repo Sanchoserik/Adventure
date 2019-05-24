@@ -12,6 +12,7 @@ namespace Assets.Code.SystemScripts
     {
         private string interfaceLocPath = "";
         private string itemsLocPath = "";
+        private string itemsPotionsdataPath = "";
         public static InterfaceLocalisationData interfaceLcalisationData;
         public static List<ItemsLocalisationData> itemsLocalisationData;
 
@@ -50,9 +51,13 @@ namespace Assets.Code.SystemScripts
         private void LoadItemsLocalisationXML()
         {
             IEnumerable<XElement> items; // <item> tag  
+            IEnumerable<XElement> itemsPotionsData; // <item>
             XDocument xDoc = XDocument.Load(itemsLocPath);
+            XDocument xDocPotions = XDocument.Load(itemsPotionsdataPath);
+
 
             items = xDoc.Descendants("items").Elements(); ;
+            itemsPotionsData = xDocPotions.Descendants("items").Elements();
 
             foreach (XElement item in items)
             {
@@ -62,6 +67,10 @@ namespace Assets.Code.SystemScripts
 
                 itemsLocalisationData.Add(new ItemsLocalisationData(itemName, itemLocName, itemLocDesc));
             }
+
+            //
+
+
         }
 
         private void selectLocalisationLanguage(string _lang)
@@ -69,14 +78,16 @@ namespace Assets.Code.SystemScripts
             switch (_lang)
             {
                 case "ENG": {
-                        interfaceLocPath = "Assets/Resources/xml/interfaceLoc/ENG.xml";
-                        itemsLocPath = "Assets/Resources/xml/items/ItemsLocUA.xml"; // Add Englich Localisation later(
+                        interfaceLocPath = "Assets/Resources/xml/interfaceLoc/ENG.xml";                     
+                        itemsLocPath = "Assets/Resources/xml/items/ItemsPotionsLocUA.xml"; // Add Englich Localisation later(
                         break; }
                 case "UA": {
                         interfaceLocPath = "Assets/Resources/xml/interfaceLoc/UA.xml";
-                        itemsLocPath = "Assets/Resources/xml/items/ItemsLocUA.xml";
+                        itemsLocPath = "Assets/Resources/xml/items/ItemsPotionsLocUA.xml";
                         break; }
             }
+            itemsPotionsdataPath = "Assets/Resources/xml/items/ItemsPotions.xml";
+
         }
 
     }
