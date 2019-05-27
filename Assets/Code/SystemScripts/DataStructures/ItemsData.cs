@@ -7,9 +7,9 @@ namespace Assets.Code.SystemScripts.DataStructures
 {
     public class ItemsData
     {
-        Dictionary<string, string> potionsParameters;
+        public Dictionary<string, string> potionsParameters;
 
-        ItemsData()
+        public ItemsData()
         {
             potionsParameters = new Dictionary<string, string>();
         }

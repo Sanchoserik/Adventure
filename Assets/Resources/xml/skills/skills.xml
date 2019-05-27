@@ -3,12 +3,12 @@
 <skills>
    <skill name = "Rearm" levels = "1" scname = "as_Rearm">
     <l pEne = "0" pAP = "1">
-	<v name = "Targets">Self</v>
+	 <v name = "Targets">Self</v>
 	</l>	
    </skill>
    <skill name = "TacticalSwap" levels = "1" scname = "as_TacticalSwap" >    
 	<l pEne = "0" pAP = "1">
-	<v name = "Targets">Self</v>
+	 <v name = "Targets">Self</v>
 	</l>	
    </skill>    
    <skill name = "TacticalRetreat" levels = "4" scname = "as_Retreat">    
