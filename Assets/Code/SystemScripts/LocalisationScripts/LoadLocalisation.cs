@@ -12,13 +12,15 @@ namespace Assets.Code.SystemScripts
     {
         private string interfaceLocPath = "";
         private string itemsLocPath = "";
-        private string itemsPotionsdataPath = "";
-        public static InterfaceLocalisationData interfaceLcalisationData;
-        public static List<ItemsLocalisationData> itemsLocalisationData;
 
+        private string itemsPotionsdataPath = "";
+
+        public static InterfaceLocalisationData interfaceLcalisationData;
+        public static List<ItemsLocalisationData> itemsLocalisationData;       
+
+        //Load from XML on awake
         private void Awake()
-        {
-            //reset localisation data storage 
+        {            
             interfaceLcalisationData = new InterfaceLocalisationData();
             itemsLocalisationData = new List<ItemsLocalisationData>();
 
@@ -50,16 +52,12 @@ namespace Assets.Code.SystemScripts
 
         private void LoadItemsLocalisationXML()
         {
-            IEnumerable<XElement> items; // <item> tag  
-            IEnumerable<XElement> itemsPotionsData; // <item>
-            XDocument xDoc = XDocument.Load(itemsLocPath);
-            XDocument xDocPotions = XDocument.Load(itemsPotionsdataPath);
+            IEnumerable<XElement> itemsLocalisation; // <item> tag  
+            XDocument xDoc = XDocument.Load(itemsLocPath);                  
 
+            itemsLocalisation = xDoc.Descendants("items").Elements(); ;
 
-            items = xDoc.Descendants("items").Elements(); ;
-            itemsPotionsData = xDocPotions.Descendants("items").Elements();
-
-            foreach (XElement item in items)
+            foreach (XElement item in itemsLocalisation)
             {
                 string itemName = item.Attribute("name").Value.Trim();
                 string itemLocName = item.Element("LocName").Value;
@@ -67,9 +65,6 @@ namespace Assets.Code.SystemScripts
 
                 itemsLocalisationData.Add(new ItemsLocalisationData(itemName, itemLocName, itemLocDesc));
             }
-
-            //
-
 
         }
 

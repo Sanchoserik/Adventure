@@ -7,11 +7,11 @@ namespace Assets.Code.SystemScripts.LocalisationScripts
 {
     public class ItemsLocalisationData
     {
+        //item localisation data
         public string itemName;
         public string itemLocalisedName;
         public string itemLocalisedDescription;
-        public Dictionary<string, string> itemValues;
-
+        
         public ItemsLocalisationData(string iName, string iLocName, string iLocDescr)
         {
             itemName = iName;

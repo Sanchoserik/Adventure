@@ -15,9 +15,11 @@ namespace Assets.Code.UIScripts.SkillTreeScene
         {
             IEnumerable<XElement> skills;      
             IEnumerable<XElement> skillLocalisation; 
-          
+            
+            //skill data
             XDocument skillsXML = XDocument.Load("Assets/Resources/xml/skills/skills.xml");
            
+            //skill localisation
             //!!! UA LOCALISATION BY DEFAULT 
             XDocument skillsLocalisationXML = XDocument.Load("Assets/Resources/xml/skills/skillsLocUA.xml");
 
