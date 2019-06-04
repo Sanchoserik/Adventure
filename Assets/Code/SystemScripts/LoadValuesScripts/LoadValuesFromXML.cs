@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Code.SystemScripts.DataStructures;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,10 +28,17 @@ namespace Assets.Code.SystemScripts.LoadValuesScripts
             {
                 if (item.Nodes() != null)
                 {
+                    string itemName = item.Attribute("name").Value;
+                    Dictionary<string, string> potionParameters = new Dictionary<string, string>();
+
                     foreach (XElement valTag in item.Nodes())
                     {
-                        ResourcesManager.itemsData.potionsParameters.Add(valTag.Attribute("name").Value, valTag.Value);
+                        potionParameters.Add(valTag.Attribute("name").Value, valTag.Value);                        
                     }
+                    ItemsData itemData = new ItemsData();
+                    itemData.potionName = itemName;
+                    itemData.potionParameters = potionParameters;
+                    ResourcesManager.itemsData.Add(itemData);  
                 }               
             }
         }

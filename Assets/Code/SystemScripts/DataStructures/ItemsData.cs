@@ -7,11 +7,12 @@ namespace Assets.Code.SystemScripts.DataStructures
 {
     public class ItemsData
     {
-        public Dictionary<string, string> potionsParameters;
+        public string potionName;
+        public Dictionary<string, string> potionParameters;
 
         public ItemsData()
         {
-            potionsParameters = new Dictionary<string, string>();
+            potionParameters = new Dictionary<string, string>();
         }
     }
 }

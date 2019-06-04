@@ -10,13 +10,12 @@ namespace Assets.Code.SystemScripts
 {
     public class ResourcesManager : MonoBehaviour
     {
-        public static ItemsData itemsData;
+        public static List<ItemsData> itemsData;
 
         private void Awake()
         {
-            itemsData = new ItemsData();
+            itemsData = new List<ItemsData>();
 
-            //
             LoadValuesFromXML loadValues = new LoadValuesFromXML();
         }
     }
