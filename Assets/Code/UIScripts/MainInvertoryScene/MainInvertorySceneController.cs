@@ -91,9 +91,9 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
             itemCountText.text = itemCount.ToString();
 
             UIItem uiitem = instance.GetComponent<UIItem>();
-            uiitem.item = new HealP1S("HealP1S");
 
-            int xx = 20;
+            //TEMP set all objects as HealP1S
+            uiitem.item = new HealP1S("HealP1S");
         }
 
         private int getSpite(string name)

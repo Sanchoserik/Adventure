@@ -1,4 +1,5 @@
 ﻿using Assets.Code.Items;
+using Assets.Code.SystemScripts.DataStructures;
 using Assets.Code.SystemScripts.LocalisationScripts;
 using System;
 using System.Collections.Generic;
@@ -15,25 +16,40 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
         public Text toolTipItemDescription;
         private bool toolTipGenerated;
 
-        private List<ItemsLocalisationData> itemsData;
+        private List<ItemsLocalisationData> itemsLocalisationData;
+        private List<ItemsData> potionsData; //  this file store only potions data
 
         private void Start()
         {
             toolTipGenerated = false;
             gameObject.SetActive(false);
-            itemsData = SystemScripts.LoadLocalisation.itemsLocalisationData;
+            itemsLocalisationData = SystemScripts.LoadLocalisation.itemsLocalisationData;
+            potionsData = SystemScripts.ResourcesManager.itemsData;
         }
 
         public void generateItemTooltip(A_Item item)
         {
             if (!toolTipGenerated)
             {                
-                ItemsLocalisationData itemLocalisation = itemsData.Find(x => x.itemName.Equals(item.GetType().Name));
+                ItemsLocalisationData itemLocalisation = itemsLocalisationData.Find(x => x.itemName.Equals(item.GetType().Name));
+                ItemsData itemData = potionsData.Find(x => x.potionName.Equals(item.GetType().Name));
+
                 toolTipItemName.text = itemLocalisation.itemLocalisedName;
-                toolTipItemDescription.text = itemLocalisation.itemLocalisedDescription;
+                toolTipItemDescription.text = getLocalisedText(itemLocalisation, itemData); // itemLocalisation.itemLocalisedDescription;
                 gameObject.SetActive(true);
                 toolTipGenerated = true;
             }
+        }
+
+        private string getLocalisedText(ItemsLocalisationData localisation, ItemsData data)
+        {
+            string fullDescription = localisation.itemLocalisedDescription;
+            foreach(KeyValuePair<string, string> pair in data.potionParameters)
+            {
+                fullDescription = fullDescription.Replace("$" + pair.Key + "$", pair.Value);
+            }
+
+            return fullDescription;
         }
 
         public void setToolTipGeneratedValue(bool val)
