@@ -10,11 +10,14 @@ namespace Assets.Code.Items.Potions
 {
     public class PhysUpMix4U : A_Item
     {
-        public PhysUpMix4U(string _name)
-        {       
-            localisedName = _name;
+        public short defValue;
+        public int defTime;
+
+        public PhysUpMix4U(short _defVal, int _defTime, int _price) : base(_price)
+        {
+            defValue = _defVal;
+            defTime = _defTime;
             category = "Mixtures";
         }
-
     }
 }

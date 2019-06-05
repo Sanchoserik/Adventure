@@ -9,11 +9,13 @@ using System.Text;
 namespace Assets.Code.Items.Potions
 {
     public class EneP2M : A_Item      
-    { 
-        public EneP2M(string _name)
+    {
+        public int restorenValue;
+
+        public EneP2M(int _restorenValue, int _price) : base(_price)
         {
-            localisedName = _name;
+            restorenValue = _restorenValue;
             category = "Potions";
-        }     
+        }
     }
 }

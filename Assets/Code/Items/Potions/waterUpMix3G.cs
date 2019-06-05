@@ -10,11 +10,14 @@ namespace Assets.Code.Items.Potions
 {
     public class WaterUpMix3G : A_Item
     {
-        public WaterUpMix3G(string _name)
+        public short defValue;
+        public int defTime;
+
+        public WaterUpMix3G(short _defVal, int _defTime, int _price) : base(_price)
         {
-            localisedName = _name;
+            defValue = _defVal;
+            defTime = _defTime;
             category = "Mixtures";
         }
-
     }
 }

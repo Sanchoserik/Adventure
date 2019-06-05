@@ -10,12 +10,13 @@ namespace Assets.Code.Items.Potions
 {
     public class HealP1S : A_Item
     {
-        public HealP1S(string _name)
+        public int restorenValue;
+
+        public HealP1S(int _restorenValue, int _price) : base(_price)
         {
-            localisedName = _name;
+            restorenValue = _restorenValue;
             category = "Potions";
         }
-
 
     }
 }

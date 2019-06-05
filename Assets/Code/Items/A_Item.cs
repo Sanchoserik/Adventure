@@ -9,11 +9,20 @@ namespace Assets.Code.Items
 {
     public abstract class A_Item
     {
-        public int id;
-        public string localisedName;
+        public int id; // for yet unknown reasons 
         public string category;
         public int price;
-    
+
+        public A_Item()
+        {
+
+        }
+
+        public A_Item(int _price)
+        {
+            price = _price;
+        }
+
         //public static void dell(List<A_Item> items, int _id)
         //{
         //    items.Remove(items.Find(x => x.id == _id));

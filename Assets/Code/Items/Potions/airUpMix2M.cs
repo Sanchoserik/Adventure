@@ -10,12 +10,16 @@ namespace Assets.Code.Items.Potions
 {
     public class AirUpMix2M : A_Item
     {
-        public AirUpMix2M(string _name)
+        public short defValue;
+        public int defTime;
+
+        public AirUpMix2M(short _defVal, int _defTime, int _price) : base(_price)
         {
-            localisedName = _name;
+            defValue = _defVal;
+            defTime = _defTime;
             category = "Mixtures";
         }
 
-        
+
     }
 }

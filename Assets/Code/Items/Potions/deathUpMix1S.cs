@@ -10,9 +10,13 @@ namespace Assets.Code.Items.Potions
 {
     public class DeathUpMix1S : A_Item
     {
-        public DeathUpMix1S(string _name)
-        {        
-            localisedName = _name;
+        public short defValue;
+        public int defTime;
+
+        public DeathUpMix1S(short _defVal, int _defTime, int _price) : base(_price)
+        {
+            defValue = _defVal;
+            defTime = _defTime;
             category = "Mixtures";
         }
 

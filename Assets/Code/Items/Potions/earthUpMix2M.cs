@@ -10,9 +10,13 @@ namespace Assets.Code.Items.Potions
 {
     public class EarthUpMix2M : A_Item
     {
-        public EarthUpMix2M(string _name)
+        public short defValue;
+        public int defTime;
+
+        public EarthUpMix2M(short _defVal, int _defTime, int _price) : base(_price)
         {
-            localisedName = _name;
+            defValue = _defVal;
+            defTime = _defTime;
             category = "Mixtures";
         }
     }

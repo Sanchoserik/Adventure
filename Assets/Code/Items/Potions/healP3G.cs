@@ -10,9 +10,11 @@ namespace Assets.Code.Items.Potions
 {
     public class HealP3G : A_Item
     {
-        public HealP3G(string _name)
+        public int restorenValue;
+
+        public HealP3G(int _restorenValue, int _price) : base(_price)
         {
-           localisedName = _name;
+            restorenValue = _restorenValue;
             category = "Potions";
         }
 

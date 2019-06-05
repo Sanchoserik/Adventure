@@ -10,9 +10,13 @@ namespace Assets.Code.Items.Potions
 {
     public class FireUpMix4U : A_Item
     {
-        public FireUpMix4U(string _name)
+        public short defValue;
+        public int defTime;
+
+        public FireUpMix4U(short _defVal, int _defTime, int _price) : base(_price)
         {
-                      localisedName = _name;
+            defValue = _defVal;
+            defTime = _defTime;
             category = "Mixtures";
         }
 

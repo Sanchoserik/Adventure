@@ -10,11 +10,14 @@ namespace Assets.Code.Items.Potions
 {
     public class EneReP2M : A_Item
     {
-        public EneReP2M(string _name)
-        {
-            localisedName = _name;
-            category = "Elixirs";
-        }
+        public int regenerationValue;
+        public int defTime;
 
+        public EneReP2M(int _regenerationValue, int _defTime, int _price) : base(_price)
+        {
+            regenerationValue = _regenerationValue;
+            defTime = _defTime;
+            category = "Potions";
+        }
     }
 }
