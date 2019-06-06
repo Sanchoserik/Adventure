@@ -10,10 +10,10 @@ namespace Assets.Code.Items.Potions
 {
     public class LightUpMix2M : A_Item
     {
-        public short defValue;
+        public int defValue;
         public int defTime;
 
-        public LightUpMix2M(short _defVal, int _defTime, int _price) : base(_price)
+        public LightUpMix2M(int _defVal, int _defTime, int _price) : base(_price)
         {
             defValue = _defVal;
             defTime = _defTime;

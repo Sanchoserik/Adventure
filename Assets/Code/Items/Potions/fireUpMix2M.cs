@@ -10,10 +10,10 @@ namespace Assets.Code.Items.Potions
 {
     public class FireUpMix2M : A_Item
     {
-        public short defValue;
+        public int defValue;
         public int defTime;
 
-        public FireUpMix2M(short _defVal, int _defTime, int _price) : base(_price)
+        public FireUpMix2M(int _defVal, int _defTime, int _price) : base(_price)
         {
             defValue = _defVal;
             defTime = _defTime;

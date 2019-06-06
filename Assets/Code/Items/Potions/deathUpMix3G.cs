@@ -10,10 +10,10 @@ namespace Assets.Code.Items.Potions
 {
     public class DeathUpMix3G : A_Item
     {
-        public short defValue;
+        public int defValue;
         public int defTime;
 
-        public DeathUpMix3G(short _defVal, int _defTime, int _price) : base(_price)
+        public DeathUpMix3G(int _defVal, int _defTime, int _price) : base(_price)
         {
             defValue = _defVal;
             defTime = _defTime;

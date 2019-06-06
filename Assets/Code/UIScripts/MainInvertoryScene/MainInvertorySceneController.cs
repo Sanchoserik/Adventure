@@ -7,6 +7,7 @@ using UnityEngine.UI;
 using Assets.PlayerController;
 using Assets.Code.Items;
 using Assets.Code.Items.Potions;
+using Assets.Code.SystemScripts.DataStructures;
 
 namespace Assets.Code.UIScripts.MainInvertoryScene
 {
@@ -20,29 +21,21 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
 
         private void Start()
         {
+            //TEST
             //1 get inventory
             invSystem = HeroController.mainHero.inventorySystem;
-            //1.5 Test give items
-            A_Item hppotS = new HealP1S("hpS");
-            A_Item hppotM = new HealP2M("hpM");
-            A_Item hppotG = new HealP3G("hpG");
-            A_Item enepotS = new EneP1S("eneS");
-            A_Item eneRegS = new EneReP1S("reneS");
-            A_Item eneRegM = new EneReP2M("reneM");
-            A_Item eneRegG = new EneReP3G("reneG");
-            A_Item eneRegU = new EneReP4U("reneU");
-            invSystem.addItem(hppotS);
-            invSystem.addItem(hppotM);
-            invSystem.addItem(hppotM);
-            invSystem.addItem(hppotG);
-            invSystem.addItem(hppotG);
-            invSystem.addItem(hppotG);
-            invSystem.addItem(enepotS);
-            invSystem.addItem(enepotS);
-            invSystem.addItem(eneRegS);
-            invSystem.addItem(eneRegM);
-            invSystem.addItem(eneRegG);
-            invSystem.addItem(eneRegU);
+            //TEST FABRIC
+            ItemFabric itemFabric = new ItemFabric();
+            List<ItemsData> alldata = SystemScripts.ResourcesManager.itemsData;
+
+            invSystem.addItem(itemFabric.createPotionAirUpMix1S(alldata.Find(x => x.potionName.Equals("AirUpMix1S"))));
+            invSystem.addItem(itemFabric.createPotionHealP1S(alldata.Find(x => x.potionName.Equals("HealP1S"))));
+            invSystem.addItem(itemFabric.createPotionHealP2M(alldata.Find(x => x.potionName.Equals("HealP2M"))));
+            invSystem.addItem(itemFabric.createPotionHealP2M(alldata.Find(x => x.potionName.Equals("HealP2M"))));
+            invSystem.addItem(itemFabric.createPotionHealP3G(alldata.Find(x => x.potionName.Equals("HealP3G"))));
+            invSystem.addItem(itemFabric.createPotionHealP4U(alldata.Find(x => x.potionName.Equals("HealP4U"))));
+            invSystem.addItem(itemFabric.createPotionHealP4U(alldata.Find(x => x.potionName.Equals("HealP4U"))));
+            
             //2 get items in first category    
             //displayInvertory("Potions");
         }
@@ -65,6 +58,7 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
             {
                 case "Potions": { getCategory("Potions");  break; }
                 case "Elixirs": { getCategory("Elixirs"); break; }
+                case "Mixtures": { getCategory("Mixtures"); break; }
             }
         }
         //select all items from category
@@ -93,7 +87,15 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
             UIItem uiitem = instance.GetComponent<UIItem>();
 
             //TEMP set all objects as HealP1S
-            uiitem.item = new HealP1S("HealP1S");
+            foreach (List<A_Item> stack in invSystem.mainItemsStorage)
+            {
+                if (stack[0].GetType().Name.Equals(itemTypeName))
+                {
+                    uiitem.item = stack[0];
+                    break;
+                }
+            }
+            
         }
 
         private int getSpite(string name)
