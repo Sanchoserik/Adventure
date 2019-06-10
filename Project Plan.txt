@@ -2,15 +2,22 @@
 0.2.1 Simple options menu +
 0.2.2 Skills.xml files +
 0.2.3 skillsTree scene & simple localisation +
-0.2.4 skillsTree scene Done +
---->0.2.5 HeroEditorScene * IN PROGRESS 
-    // load&save hero
-    // skill learning in skillTree scene +
-    // display and change hero parametress + 
-0.2.6 Hero Invertory Display
-0.2.7 Hero can use items
-0.2.8 More info display in Hero Editor
-0.2.9 Simple enemies 
-0.3 Simple battle arena
+0.2.4 skillsTree scene +
+0.2.5 HeroEditorScene +
+0.2.6 Hero Invertory Display +
+    //
+---->0.2.7 full character menu interface
+	0.2.8 skill tree integration in character menu
+	 // skillTree bugfixing
+	0.2.9 invertory integration in character menu
+	0.3.0 improved invertory 
+	 // add quick slots management
+	 // add items using
+    
+    0.3.1 improved hero editon
+     // display more info
+     // add hero edito tool tip
+    	 
+
 
 

@@ -62,7 +62,7 @@
  </Tactics>
  
  <Warrior>
-  <skill name ="Counterattack" locname = "">
+  <skill name ="CounterAttack" locname = "">
   <1></1>
   <2></2>
   <3></3>

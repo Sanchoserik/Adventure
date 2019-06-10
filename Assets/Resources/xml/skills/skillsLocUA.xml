@@ -71,7 +71,7 @@
   <l lTarget = "Герой">ОД + $addAP$ Наступні 2 Ходи ОД = 0</l>
   <l lTarget = "Герой">ОД + $addAP$ Наступні 2 Ходи ОД = 0</l>
   </skill>
-  <skill name ="Counterattack" locname = "Контратака" 
+  <skill name ="CounterAttack" locname = "Контратака" 
   descr = "Є шанс провести контратаку по ворогу у відповіть на його атаку або скіл">
   <l lTarget = "Герой">Шанс $val1$%</l>
   <l lTarget = "Герой">Шанс $val1$%</l>

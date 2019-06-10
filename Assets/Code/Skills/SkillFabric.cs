@@ -53,7 +53,7 @@ namespace Assets.Code.Skills
 
         public A_Skill createSkillCounterAttack()
         {
-            return new   SkillCounterAttack("Counterattack", "Rearm", new string[] { "TripleCut", "CursedSign", "StoneSkin",
+            return new   SkillCounterAttack("CounterAttack", "Rearm", new string[] { "TripleCut", "CursedSign", "StoneSkin",
                 "WaterPrison", "DarkVortex" }, false);
         }
 
@@ -65,7 +65,7 @@ namespace Assets.Code.Skills
 
         public A_Skill createSkillCursedSign()
         {
-            return new   SkillCursedSign("CursedSign", "Counterattack", new string[] { "Ricochet" }, false);
+            return new   SkillCursedSign("CursedSign", "CounterAttack", new string[] { "Ricochet" }, false);
         }
 
         public A_Skill createSkillDarkDemon()

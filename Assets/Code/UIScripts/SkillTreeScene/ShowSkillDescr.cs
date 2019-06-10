@@ -238,10 +238,11 @@ namespace Assets.Code.UIScripts.SkillTreeScene
         }
 
         public void skillLevelDown(GameObject _skill)
-        {
+        {           
             string _sName = _skill.name;
             A_Skill _s = skillTree.Find(x => x.skillName == _sName);
-            if (_s.skillLevel - 1 >= 0)
+
+            if (_s.skillLevel - 1 >= 0 && _s.isLearned == true)  
             {
                 if (_s.skillLevel - 1 >= 1)
                 {

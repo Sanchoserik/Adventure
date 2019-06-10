@@ -183,7 +183,7 @@
    <v name = "Targets">Self</v>
    </l>
    </skill>
- <skill name ="Counterattack" levels = "5" scname = "as_CounterAttack">
+ <skill name ="CounterAttack" levels = "5" scname = "as_CounterAttack">
  <l pEne = "0" pAP = "0">
  <v name = "val1">10</v>
  <v name = "Targets">Self</v>

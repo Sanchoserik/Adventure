@@ -3721,7 +3721,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1813464778720918, guid: 1f5d870a5aa0a174c849a82aa91a9b35, type: 2}
       propertyPath: m_Name
-      value: Counterattack
+      value: CounterAttack
       objectReference: {fileID: 0}
     - target: {fileID: 114527241324533518, guid: 1f5d870a5aa0a174c849a82aa91a9b35,
         type: 2}
@@ -6483,8 +6483,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 447240419}
   - {fileID: 1967840537}
+  - {fileID: 447240419}
   - {fileID: 1481650683}
   - {fileID: 683519368}
   - {fileID: 914042582}
