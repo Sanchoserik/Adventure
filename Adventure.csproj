@@ -326,6 +326,7 @@
     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocalisationDataStructures\ItemsLocalisationData.cs" />
     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocaliseComponents.cs" />
     <Compile Include="Assets\Code\UIScripts\CameraZooming.cs" />
+    <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\SkillTree\SkillBranchChange.cs" />
     <Compile Include="Assets\Code\UIScripts\ExitApp.cs" />
     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\CommandAttributeChange.cs" />
     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\CommandDefenceValueChange.cs" />
@@ -372,6 +373,7 @@
     <None Include="Assets\Resources\xml\skills\skillsLocRU.xml" />
     <None Include="Assets\Resources\xml\skills\skillsLocUA.xml" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
 </Project>
