@@ -1,4 +1,4 @@
-﻿using Assets.Code.SystemScripts.LocalisationScripts;
+﻿using Assets.Code.SystemScripts.LocalisationScripts.LocalisationDataStructures;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,11 +12,11 @@ namespace Assets.Code.SystemScripts
     {
         private string interfaceLocPath = "";
         private string itemsLocPath = "";
-
-        private string itemsPotionsdataPath = "";
+        private string skillsLocPath = "";
 
         public static InterfaceLocalisationData interfaceLcalisationData;
-        public static List<ItemsLocalisationData> itemsLocalisationData;       
+        public static List<ItemsLocalisationData> itemsLocalisationData;
+        public static List<SkillsLocalisationData> skillsLocalisationData;
 
         //Load from XML on awake
         private void Awake()
@@ -29,6 +29,7 @@ namespace Assets.Code.SystemScripts
 
             LoadInterfaceLocalisationXML();
             LoadItemsLocalisationXML();
+            LoadSkillsLocalisationXML();
         }
 
         private void LoadInterfaceLocalisationXML()
@@ -68,21 +69,45 @@ namespace Assets.Code.SystemScripts
 
         }
 
+        private void LoadSkillsLocalisationXML()
+        {
+            IEnumerable<XElement> skillsLocalisation; // <item> tag  
+            XDocument xDoc = XDocument.Load(skillsLocPath);
+
+            skillsLocalisation = xDoc.Descendants("skills").Elements();
+
+            foreach (XElement item in skillsLocalisation)
+            {
+                string sLocName = item.Attribute("locname").Value;
+                string sMainDescr = item.Attribute("descr").Value;
+
+                List<string> levelsDescr = new List<string>();// concrette level description
+                List<string> levelsTargets = new List<string>();// <targets> tag 
+                foreach (XElement el in item.Elements("l"))
+                {
+                    levelsTargets.Add(el.Attribute("lTarget").Value);
+                    levelsDescr.Add(el.Value);
+                }
+
+                skillsLocalisationData.Add(new SkillsLocalisationData(sLocName, sMainDescr, levelsDescr, levelsTargets));
+            }
+        }
+
         private void selectLocalisationLanguage(string _lang)
         {
             switch (_lang)
             {
                 case "ENG": {
                         interfaceLocPath = "Assets/Resources/xml/interfaceLoc/ENG.xml";                     
-                        itemsLocPath = "Assets/Resources/xml/items/ItemsPotionsLocUA.xml"; // Add Englich Localisation later(
+                        itemsLocPath = "Assets/Resources/xml/items/ItemsPotionsLocUA.xml"; // Add English Localisation later(
+                        skillsLocPath = "Assets/Resources/xml/skills/skillsLocUA";
                         break; }
                 case "UA": {
                         interfaceLocPath = "Assets/Resources/xml/interfaceLoc/UA.xml";
                         itemsLocPath = "Assets/Resources/xml/items/ItemsPotionsLocUA.xml";
+                        skillsLocPath = "Assets/Resources/xml/skills/skillsLocUA";
                         break; }
             }
-            itemsPotionsdataPath = "Assets/Resources/xml/items/ItemsPotions.xml";
-
         }
 
     }

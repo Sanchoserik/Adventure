@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Assets.Code.SystemScripts.LocalisationScripts
+namespace Assets.Code.SystemScripts.LocalisationScripts.LocalisationDataStructures
 {
     public class InterfaceLocalisationData
     {
