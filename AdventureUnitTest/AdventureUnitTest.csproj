@@ -56,6 +56,7 @@
     <Compile Include="LocalisationTests\SkillsLocalisationTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="LocalisationTests\ItemsLocalisationTest.cs" />
+    <Compile Include="LoadSkillsDataTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

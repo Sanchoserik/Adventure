@@ -17,14 +17,14 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
         private bool toolTipGenerated;
 
         private List<ItemsLocalisationData> itemsLocalisationData;
-        private List<ItemsData> potionsData; //  this file store only potions data
+        private List<ItemsData> itemsData; 
 
         private void Start()
         {
             toolTipGenerated = false;
             gameObject.SetActive(false);
             itemsLocalisationData = SystemScripts.LoadLocalisation.itemsLocalisationData;
-            potionsData = SystemScripts.ResourcesManager.itemsData;
+            itemsData = SystemScripts.ResourcesManager.itemsData;
         }
 
         public void generateItemTooltip(A_Item item)
@@ -32,7 +32,7 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
             if (!toolTipGenerated)
             {                
                 ItemsLocalisationData itemLocalisation = itemsLocalisationData.Find(x => x.itemName.Equals(item.GetType().Name));
-                ItemsData itemData = potionsData.Find(x => x.potionName.Equals(item.GetType().Name));
+                ItemsData itemData = itemsData.Find(x => x.potionName.Equals(item.GetType().Name));
 
                 toolTipItemName.text = itemLocalisation.itemLocalisedName;
                 toolTipItemDescription.text = getLocalisedText(itemLocalisation, itemData); // itemLocalisation.itemLocalisedDescription;
