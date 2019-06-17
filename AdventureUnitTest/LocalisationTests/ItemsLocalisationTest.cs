@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Xml.Linq;
 using Assets.Code.SystemScripts;
-using Assets.Code.SystemScripts.LocalisationScripts;
+using Assets.Code.SystemScripts.LocalisationScripts.LocalisationDataStructures;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace AdventureUnitTest
-{
+namespace AdventureUnitTest.LocalisationTests
+{ 
+
     [TestClass]
     public class ItemsLocalisationTest
     {
@@ -16,7 +17,7 @@ namespace AdventureUnitTest
             List<ItemsLocalisationData> _data = new List<ItemsLocalisationData>();
 
             IEnumerable<XElement> items; // <item> tag  
-            XDocument xDoc = XDocument.Load("F:/UnityProjects/Adventure/Assets/Resources/xml/items/ItemsLocUA.xml");
+            XDocument xDoc = XDocument.Load("F:/UnityProjects/Adventure/Assets/Resources/xml/items/ItemsPotionsLocUA.xml");
 
             items = xDoc.Descendants("items").Elements();
 

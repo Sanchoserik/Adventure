@@ -14,8 +14,8 @@ namespace AdventureUnitTest
         {
             C_Hero h = new C_Hero();
             InventorySystem invSys = new InventorySystem();
-            A_Item p1 = new HealP1S("smalHPPot");
-            A_Item p2 = new HealP2M("medHPPot");
+            A_Item p1 = new HealP1S(1, 1);
+            A_Item p2 = new HealP2M(1, 1);
 
             invSys.addItem(p1);
             invSys.addItem(p2);
@@ -33,8 +33,8 @@ namespace AdventureUnitTest
         {
             C_Hero h = new C_Hero();
             InventorySystem invSys = new InventorySystem();
-            A_Item p1 = new HealP1S("smalHPPot");
-            A_Item p2 = new HealP2M("medHPPot");
+            A_Item p1 = new HealP1S(1, 1);
+            A_Item p2 = new HealP2M(1, 1);
 
             invSys.addItem(p1);
             invSys.addItem(p1);
@@ -55,7 +55,7 @@ namespace AdventureUnitTest
         {
             C_Hero h = new C_Hero();
             InventorySystem invSys = new InventorySystem();
-            A_Item p1 = new HealP1S("smalHPPot");
+            A_Item p1 = new HealP1S(1, 1);
           
             invSys.addItem(p1);
           
@@ -72,7 +72,7 @@ namespace AdventureUnitTest
         {
             C_Hero h = new C_Hero();
             InventorySystem invSys = new InventorySystem();
-            A_Item p1 = new HealP1S("smalHPPot");
+            A_Item p1 = new HealP1S(1,1);
            
             invSys.addItem(p1);
                     
@@ -89,7 +89,7 @@ namespace AdventureUnitTest
         {
             C_Hero h = new C_Hero();
             InventorySystem invSys = new InventorySystem();
-            A_Item p1 = new HealP1S("smalHPPot");
+            A_Item p1 = new HealP1S(1, 1);
 
             invSys.addItem(p1);
             invSys.addItem(p1);
@@ -109,8 +109,8 @@ namespace AdventureUnitTest
         {
             C_Hero h = new C_Hero();
             InventorySystem invSys = new InventorySystem();
-            A_Item p1 = new HealP1S("smalHPPot");
-            A_Item p2 = new HealP2M("medHPPot");
+            A_Item p1 = new HealP1S(1, 1);
+            A_Item p2 = new HealP2M(1, 1);
 
             invSys.addItem(p1);
             invSys.addItem(p1);

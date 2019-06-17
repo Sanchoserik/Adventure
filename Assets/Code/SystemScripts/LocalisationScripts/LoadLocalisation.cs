@@ -71,7 +71,7 @@ namespace Assets.Code.SystemScripts
 
         private void LoadSkillsLocalisationXML()
         {
-            IEnumerable<XElement> skillsLocalisation; // <item> tag  
+            IEnumerable<XElement> skillsLocalisation; 
             XDocument xDoc = XDocument.Load(skillsLocPath);
 
             skillsLocalisation = xDoc.Descendants("skills").Elements();
