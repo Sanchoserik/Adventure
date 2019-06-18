@@ -329,6 +329,8 @@
     <Compile Include="Assets\Code\UIScripts\CameraZooming.cs" />
     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\SkillTree\SkillBranchChange.cs" />
     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\SkillTree\SkillToolTip.cs" />
+    <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\SkillTree\SkillTreeController.cs" />
+    <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\SkillTree\UISkill.cs" />
     <Compile Include="Assets\Code\UIScripts\ExitApp.cs" />
     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\CommandAttributeChange.cs" />
     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\CommandDefenceValueChange.cs" />

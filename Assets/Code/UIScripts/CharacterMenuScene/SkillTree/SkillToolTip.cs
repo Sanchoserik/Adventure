@@ -34,25 +34,57 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
             skillsData = SystemScripts.ResourcesManager.skillsData;
         }
 
-        public void generateToolTip(A_Skill skill)
+        public void generateCurrentLevelToolTip(A_Skill skill)
         {
+            if (!toolTipGenerated)
+            {
+                SkillsLocalisationData skillLocalisation = skillsLocalisationData.Find(x => x.skillName.Equals(skill.skillName));
+                SkillsData skillData = skillsData.Find(x => x.skillName.Equals(skill.skillName));
+                
+                skillName.text = skillLocalisation.skillLocalisedName;
+                skillLevel.text = skill.skillLevel.ToString(); // get actual level from game object
+                skillAvailability.text = getSkillAvailability(skill);
+                skillAPcost.text = skill.actionPointsCost.ToString();
+                skillEneCost.text = skill.energyCost.ToString();
+                skillTargets.text = skillLocalisation.skillTargetsDescription[skill.skillLevel - 1];
+                skillDuration.text = skill.skillDuration.ToString(); //TO DO if = 0 set as X 
+                skillGeneralDescription.text = skillLocalisation.skillMainDescription;
+                skillLevelDescription.text = getLocalisedText(skillLocalisation, skillData, skill.skillLevel);
 
+                gameObject.SetActive(true);
+                toolTipGenerated = true;
+            }
         }
 
-        private string getLocalisedText(SkillsLocalisationData localisation, SkillsData data)
+        private string getLocalisedText(SkillsLocalisationData localisation, SkillsData data, short skillLevel)
         {
-            //string fullDescription = localisation.itemLocalisedDescription;
-            //foreach (KeyValuePair<string, string> pair in data.potionParameters)
-            //{
-            //    fullDescription = fullDescription.Replace("$" + pair.Key + "$", pair.Value);
-            //}
+            string fullDescription = localisation.skillLocalisedLevelDescription[skillLevel-1];
+            foreach (KeyValuePair<string, string> pair in data.skillValues[skillLevel-1])
+            {
+                fullDescription = fullDescription.Replace("$" + pair.Key + "$", pair.Value);
+            }
 
-            return ""; //fullDescription;
+            return fullDescription;
         }
 
         public void setToolTipGeneratedValue(bool val)
         {
             toolTipGenerated = val;
         }
+
+        //move to skill controller
+        public static string getSkillAvailability(A_Skill skill)
+        {
+            if (skill.isAvailableForLearning)
+            {
+                if (skill.isLearned)
+                    return "Learned";
+                else
+                    return "Available";
+            }
+            else
+                return "NotAvailable";
+        }
+
     }
 }

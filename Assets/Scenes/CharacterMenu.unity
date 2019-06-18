@@ -527,20 +527,21 @@ GameObject:
   - component: {fileID: 111898830}
   - component: {fileID: 111898829}
   - component: {fileID: 111898828}
+  - component: {fileID: 111898832}
   m_Layer: 5
   m_Name: SkillGeneralToolTip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &111898827
 RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 111898826}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -553,13 +554,13 @@ RectTransform:
   - {fileID: 202962906}
   - {fileID: 100148978}
   - {fileID: 1552918861}
-  m_Father: {fileID: 977193707}
-  m_RootOrder: 3
+  m_Father: {fileID: 270678644}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -347, y: -196.4}
-  m_SizeDelta: {x: 332.9, y: 0}
+  m_AnchoredPosition: {x: -980, y: 137.59998}
+  m_SizeDelta: {x: 332.9, y: 376}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &111898828
 MonoBehaviour:
@@ -629,6 +630,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 111898826}
+--- !u!114 &111898832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 111898826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5169d2269b36ba24caef4d969ddf3be2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &114980088
 GameObject:
   m_ObjectHideFlags: 0
@@ -973,6 +985,40 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224710065262632108, guid: 3028071192f3d6948bf251a97ac8297e,
     type: 2}
   m_PrefabInternal: {fileID: 202962905}
+--- !u!1 &270678643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 270678644}
+  m_Layer: 5
+  m_Name: ToolTipHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &270678644
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 270678643}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 111898827}
+  m_Father: {fileID: 977193707}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &323063791
 GameObject:
   m_ObjectHideFlags: 0
@@ -2991,7 +3037,7 @@ RectTransform:
   - {fileID: 510848696}
   - {fileID: 415801453}
   - {fileID: 1016350500}
-  - {fileID: 111898827}
+  - {fileID: 270678644}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

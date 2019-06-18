@@ -21,6 +21,7 @@ namespace AdventureUnitTest.LocalisationTests
 
             foreach (XElement item in skillsLocalisation)
             {
+                string sName = item.Attribute("name").Value;
                 string sLocName = item.Attribute("locname").Value;
                 string sMainDescr = item.Attribute("descr").Value;
 
@@ -32,7 +33,7 @@ namespace AdventureUnitTest.LocalisationTests
                     levelsDescr.Add(el.Value);
                 }
 
-                skillsLocalisationData.Add(new SkillsLocalisationData(sLocName, sMainDescr, levelsDescr, levelsTargets));     
+                skillsLocalisationData.Add(new SkillsLocalisationData(sName, sLocName, sMainDescr, levelsDescr, levelsTargets));     
             }
             Assert.AreEqual("Можна змінити зброю на катану катари або косу", skillsLocalisationData[0].skillLocalisedLevelDescription[0]);
 

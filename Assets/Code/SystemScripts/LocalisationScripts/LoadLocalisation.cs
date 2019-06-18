@@ -78,6 +78,7 @@ namespace Assets.Code.SystemScripts
 
             foreach (XElement item in skillsLocalisation)
             {
+                string sName = item.Attribute("name").Value;
                 string sLocName = item.Attribute("locname").Value;
                 string sMainDescr = item.Attribute("descr").Value;
 
@@ -89,7 +90,7 @@ namespace Assets.Code.SystemScripts
                     levelsDescr.Add(el.Value);
                 }
 
-                skillsLocalisationData.Add(new SkillsLocalisationData(sLocName, sMainDescr, levelsDescr, levelsTargets));
+                skillsLocalisationData.Add(new SkillsLocalisationData(sName, sLocName, sMainDescr, levelsDescr, levelsTargets));
             }
         }
 
