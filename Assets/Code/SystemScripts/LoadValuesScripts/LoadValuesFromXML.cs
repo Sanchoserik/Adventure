@@ -15,7 +15,8 @@ namespace Assets.Code.SystemScripts.LoadValuesScripts
 
         public LoadValuesFromXML()
         {
-            loadItems();            
+            loadItems();
+            loadSkills();
         }
 
         private void loadItems()

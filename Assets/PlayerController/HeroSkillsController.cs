@@ -1,4 +1,5 @@
 ﻿using Assets.Code.Skills;
+using Assets.Code.SystemScripts.DataStructures;
 using Assets.Code.UIScripts.SkillTreeScene;
 using System;
 using System.Collections.Generic;
@@ -12,19 +13,17 @@ namespace Assets.PlayerController
     {
         public List<A_Skill> skillsList;
 
-        //standart initialisation
-        public HeroSkillsController(List<SkillDataStorage> data)
+        //standart empty initialisation
+        public HeroSkillsController(List<SkillsData> data)
         {
             skillsList = new List<A_Skill>();
             addSkillsInList(skillsList);
 
             foreach (A_Skill skill in skillsList)
             {
-                SkillDataStorage _d = data.Find(x => x.skillName.Equals(skill.skillName));
-                    skill.skillLevel = 1;
-                    skill.skillMaxLevel = _d.skillLevels;                   
+                skill.skillLevel = 1;
+                skill.skillMaxLevel = data.Find(x => x.skillName.Equals(skill.skillName)).skillLevels;                   
             }
-
         }
 
         //load hero skill list from file

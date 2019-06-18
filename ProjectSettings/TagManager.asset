@@ -4,10 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - SkillP
   - sText
   - Item
   - ToolTipElement
+  - UISkill
   layers:
   - Default
   - TransparentFX

@@ -18,7 +18,7 @@ namespace Assets.Code.SystemScripts
             itemsData = new List<ItemsData>();
             skillsData = new List<SkillsData>();
 
-            LoadValuesFromXML loadValues = new LoadValuesFromXML();
+            LoadValuesFromXML loadValues = new LoadValuesFromXML();           
         }
     }
 }

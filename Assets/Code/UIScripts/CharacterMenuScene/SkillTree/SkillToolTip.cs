@@ -43,7 +43,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
                 
                 skillName.text = skillLocalisation.skillLocalisedName;
                 skillLevel.text = skill.skillLevel.ToString(); // get actual level from game object
-                skillAvailability.text = getSkillAvailability(skill);
+                skillAvailability.text = SkillTreeController.getSkillAvailability(skill);
                 skillAPcost.text = skill.actionPointsCost.ToString();
                 skillEneCost.text = skill.energyCost.ToString();
                 skillTargets.text = skillLocalisation.skillTargetsDescription[skill.skillLevel - 1];
@@ -70,20 +70,6 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
         public void setToolTipGeneratedValue(bool val)
         {
             toolTipGenerated = val;
-        }
-
-        //move to skill controller
-        public static string getSkillAvailability(A_Skill skill)
-        {
-            if (skill.isAvailableForLearning)
-            {
-                if (skill.isLearned)
-                    return "Learned";
-                else
-                    return "Available";
-            }
-            else
-                return "NotAvailable";
         }
 
     }
