@@ -9,7 +9,7 @@ using UnityEngine.EventSystems;
 namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
 {
     public class UISkill : MonoBehaviour, IPointerExitHandler, IPointerEnterHandler
-    {
+    {  
         public A_Skill skill;
         private SkillToolTip toolTip;
 

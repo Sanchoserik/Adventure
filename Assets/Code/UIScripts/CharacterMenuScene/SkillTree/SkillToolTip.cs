@@ -12,15 +12,15 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
 {
     public class SkillToolTip : MonoBehaviour
     {
-        Text skillName;
-        Text skillLevel;
-        Text skillAvailability;
-        Text skillAPcost;
-        Text skillEneCost;
-        Text skillTargets;
-        Text skillDuration;
-        Text skillGeneralDescription;
-        Text skillLevelDescription;
+        public Text skillName;
+        public Text skillLevel;
+        public Text skillAvailability;
+        public Text skillAPcost;
+        public Text skillEneCost;
+        public Text skillTargets;
+        public Text skillDuration;
+        public Text skillGeneralDescription;
+        public Text skillLevelDescription;
 
         private bool toolTipGenerated;
         private List<SkillsLocalisationData> skillsLocalisationData;

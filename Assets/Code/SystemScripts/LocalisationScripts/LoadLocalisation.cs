@@ -23,6 +23,7 @@ namespace Assets.Code.SystemScripts
         {            
             interfaceLcalisationData = new InterfaceLocalisationData();
             itemsLocalisationData = new List<ItemsLocalisationData>();
+            skillsLocalisationData = new List<SkillsLocalisationData>();
 
             selectLocalisationLanguage(AppParameters.localisation);
             DontDestroyOnLoad(gameObject);
@@ -101,12 +102,12 @@ namespace Assets.Code.SystemScripts
                 case "ENG": {
                         interfaceLocPath = "Assets/Resources/xml/interfaceLoc/ENG.xml";                     
                         itemsLocPath = "Assets/Resources/xml/items/ItemsPotionsLocUA.xml"; // Add English Localisation later(
-                        skillsLocPath = "Assets/Resources/xml/skills/skillsLocUA";
+                        skillsLocPath = "Assets/Resources/xml/skills/skillsLocUA.xml";
                         break; }
                 case "UA": {
                         interfaceLocPath = "Assets/Resources/xml/interfaceLoc/UA.xml";
                         itemsLocPath = "Assets/Resources/xml/items/ItemsPotionsLocUA.xml";
-                        skillsLocPath = "Assets/Resources/xml/skills/skillsLocUA";
+                        skillsLocPath = "Assets/Resources/xml/skills/skillsLocUA.xml";
                         break; }
             }
         }

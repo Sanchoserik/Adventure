@@ -11,22 +11,22 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
     public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerExitHandler, IPointerEnterHandler
     {
         public A_Item item;
-        private ToolTip tooltip;
+        private ToolTip toolTip;
 
         private void Awake()
         {     
-           tooltip = GameObject.Find("InvHolder").transform.Find("ToolTip").GetComponent<ToolTip>();
+           toolTip = GameObject.Find("InvHolder").transform.Find("ToolTip").GetComponent<ToolTip>();
         }
      
         public void OnPointerExit(PointerEventData eventData)
         {
-            tooltip.setToolTipGeneratedValue(false);
-            tooltip.gameObject.SetActive(false);
+            toolTip.setToolTipGeneratedValue(false);
+            toolTip.gameObject.SetActive(false);
         }
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-            tooltip.generateItemTooltip(item);
+            toolTip.generateItemTooltip(item);
         }
 
         //TO DO Item context menu

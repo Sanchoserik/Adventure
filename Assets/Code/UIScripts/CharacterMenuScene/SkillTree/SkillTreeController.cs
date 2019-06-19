@@ -18,21 +18,35 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
         private void Start()
         {
             skillTree = HeroController.mainHero.heroSkills.skillsList;
-            loadSkillLevels(skillTrees);
+            initializeSkills(skillTrees);
         }
-
-        private void loadSkillLevels(GameObject[] parent)
+  
+        private void initializeSkills(GameObject[] parent)
         {
             for (int i = 0; i < parent.Length; ++i)
             {
-                foreach (Transform childskill in parent[i].transform) //skills
+                foreach (Transform childSkill in parent[i].transform) //skills
                 {
-                    A_Skill skill = skillTree.Find(x => x.skillName.Equals(childskill.name));
-                    Text t = childskill.GetComponentInChildren<Text>();
-                    t.text = skill.skillLevel + "/" + skill.skillMaxLevel;                       
+                    setSkillsLevels(childSkill);
+                    setUISkills(childSkill);
                 }
             }
         }
+
+        private void setSkillsLevels(Transform childSkill)
+        {
+            A_Skill skill = skillTree.Find(x => x.skillName.Equals(childSkill.name));
+            Text levelText = childSkill.GetComponentInChildren<Text>();
+            levelText.text = skill.skillLevel + "/" + skill.skillMaxLevel;
+        }
+
+        private void setUISkills(Transform childSkill)
+        {
+            Transform skillIcon = childSkill.transform.Find("Icon");
+            UISkill UIskill = skillIcon.GetComponent<UISkill>();
+            UIskill.skill = skillTree.Find(x => x.skillName.Equals(childSkill.name));
+        }
+
 
         public static string getSkillAvailability(A_Skill skill)
         {

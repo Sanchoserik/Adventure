@@ -36,6 +36,7 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
 
                 toolTipItemName.text = itemLocalisation.itemLocalisedName;
                 toolTipItemDescription.text = getLocalisedText(itemLocalisation, itemData); // itemLocalisation.itemLocalisedDescription;
+
                 gameObject.SetActive(true);
                 toolTipGenerated = true;
             }
