@@ -319,7 +319,7 @@
     <Compile Include="Assets\Code\SystemScripts\DataStructures\ItemsData.cs" />
     <Compile Include="Assets\Code\SystemScripts\DataStructures\SkillsData.cs" />
     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocalisationDataStructures\SkillsLocalisationData.cs" />
-    <Compile Include="Assets\Code\SystemScripts\ObjectBoundaries.cs" />
+    <Compile Include="Assets\Code\SystemScripts\ToolTipFollowMouse.cs" />
     <Compile Include="Assets\Code\SystemScripts\ResourcesManager.cs" />
     <Compile Include="Assets\Code\SystemScripts\LoadValuesScripts\LoadValuesFromXML.cs" />
     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\GetSceneLocalisation.cs" />
