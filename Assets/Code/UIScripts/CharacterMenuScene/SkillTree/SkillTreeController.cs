@@ -49,15 +49,20 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
 
         public static string getSkillAvailability(A_Skill skill)
         {
+            //TO DO replace this text messages with some localisation function
             if (skill.isAvailableForLearning)
-            {
+                {
                 if (skill.isLearned)
                     return "Learned";
-                else
+                else if (HeroController.mainHero.freeSkillPoints > 0)
                     return "Available";
-            }
-            else
-                return "NotAvailable";
+                else
+                    return "Available but NOT enough skillPoints";
+                }
+                else
+                    return "NotAvailable";                        
         }
+
+
     }
 }

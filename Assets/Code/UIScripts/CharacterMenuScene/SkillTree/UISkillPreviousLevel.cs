@@ -8,8 +8,8 @@ using UnityEngine.EventSystems;
 
 namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
 {
-    public class UISkill : MonoBehaviour, IPointerExitHandler, IPointerEnterHandler
-    {  
+    public class UISkillPreviousLevel : MonoBehaviour, IPointerExitHandler, IPointerEnterHandler
+    {
         public A_Skill skill;
         private SkillToolTip toolTip;
 
@@ -26,9 +26,8 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-            toolTip.generateToolTip(skill, "loadCurrentLevel");
+            toolTip.generateToolTip(skill, "loadPreviousLevel");
         }
-
 
     }
 }
