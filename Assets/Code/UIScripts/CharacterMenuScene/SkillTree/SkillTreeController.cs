@@ -47,7 +47,6 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
             UIskill.skill = skillTree.Find(x => x.skillName.Equals(childSkill.name));
         }
 
-
         public static string getSkillAvailability(A_Skill skill)
         {
             if (skill.isAvailableForLearning)

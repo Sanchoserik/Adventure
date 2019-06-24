@@ -71,6 +71,5 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
         {
             toolTipGenerated = val;
         }
-
     }
 }
