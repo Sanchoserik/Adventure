@@ -42,15 +42,35 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
                 SkillsLocalisationData skillLocalisation = skillsLocalisationData.Find(x => x.skillName.Equals(skill.skillName));
                 SkillsData skillData = skillsData.Find(x => x.skillName.Equals(skill.skillName));
 
+                bool isAllowedToGenerateToolTip = true;
                 switch (flag)
                 {
-                    case "loadCurrentLevel": { loadCurrentLevel(skill, skillLocalisation, skillData); break; }
-                    case "LoadNextLevel": { break; }
-                    case "LoadPreviousLevel": { break; }
+                    case "LoadCurrentLevel":
+                        {
+                            loadCurrentLevel(skill, skillLocalisation, skillData);
+                            break;
+                        }
+                    case "LoadNextLevel":
+                        {
+                            if (skill.skillLevel < skill.skillMaxLevel)
+                                loadNextLevel(skill, skillLocalisation, skillData);
+                            else isAllowedToGenerateToolTip = false;
+                            break;
+                        }
+                    case "LoadPreviousLevel":
+                        {
+                            if (skill.skillLevel > 1)
+                                loadPreviousLevel(skill, skillLocalisation, skillData);
+                            else isAllowedToGenerateToolTip = false;
+                            break;
+                        }
                 }
 
-                gameObject.SetActive(true);
-                toolTipGenerated = true;
+                if (isAllowedToGenerateToolTip)
+                {
+                    gameObject.SetActive(true);
+                    toolTipGenerated = true;
+                }
             }
         }
 

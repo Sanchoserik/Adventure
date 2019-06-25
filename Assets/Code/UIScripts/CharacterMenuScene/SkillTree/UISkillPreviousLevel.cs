@@ -26,7 +26,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-            toolTip.generateToolTip(skill, "loadPreviousLevel");
+            toolTip.generateToolTip(skill, "LoadPreviousLevel");
         }
 
     }

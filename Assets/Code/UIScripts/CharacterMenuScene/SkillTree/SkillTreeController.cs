@@ -42,9 +42,18 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
 
         private void setUISkills(Transform childSkill)
         {
+            A_Skill skill = skillTree.Find(x => x.skillName.Equals(childSkill.name));
             Transform skillIcon = childSkill.transform.Find("Icon");
             UISkill UIskill = skillIcon.GetComponent<UISkill>();
-            UIskill.skill = skillTree.Find(x => x.skillName.Equals(childSkill.name));
+            UIskill.skill = skill;
+
+            Transform skillNextLevel = childSkill.transform.Find("Plus");
+            UISkillNextLevel skillNext = skillNextLevel.GetComponent<UISkillNextLevel>();
+            skillNext.skill = skill;
+
+            Transform skillPreviousLevel = childSkill.transform.Find("Minus");
+            UISkillPreviousLevel skillPrevious = skillPreviousLevel.GetComponent<UISkillPreviousLevel>();
+            skillPrevious.skill = skill;
         }
 
         public static string getSkillAvailability(A_Skill skill)
