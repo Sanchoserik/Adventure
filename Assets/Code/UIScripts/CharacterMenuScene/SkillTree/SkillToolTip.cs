@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -101,7 +102,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
                 skillTargets.text = skillLocalisation.skillTargetsDescription[skill.skillLevel]; 
                 skillDuration.text = skill.skillDuration.ToString(); //TO DO if = 0 set loacalisation message as Don't Have Duration or smth 
                 skillGeneralDescription.text = skillLocalisation.skillMainDescription;
-                skillLevelDescription.text = getLocalisedText(skillLocalisation, skillData, (short)(skill.skillLevel +1));
+                skillLevelDescription.text = getLocalisedTextForNextLevel(skillLocalisation, skillData, (short)(skill.skillLevel));
             }
         }
 
@@ -117,7 +118,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
                 skillTargets.text = skillLocalisation.skillTargetsDescription[skill.skillLevel - 2];
                 skillDuration.text = skill.skillDuration.ToString(); //TO DO if = 0 set loacalisation message as Don't Have Duration or smth 
                 skillGeneralDescription.text = skillLocalisation.skillMainDescription;
-                skillLevelDescription.text = getLocalisedText(skillLocalisation, skillData, (short)(skill.skillLevel - 1));
+                skillLevelDescription.text = getLocalisedText(skillLocalisation, skillData, (short)(skill.skillLevel));
             }
         }
 
@@ -130,6 +131,36 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
             }
 
             return fullDescription;
+        }
+
+        private string getLocalisedTextForNextLevel(SkillsLocalisationData localisation, SkillsData data, short skillLevel)
+        {
+            string fullCurrentLevelDescription = localisation.skillLocalisedLevelDescription[skillLevel - 1];
+            string fullNextLevelDescription = localisation.skillLocalisedLevelDescription[skillLevel];
+
+            foreach (KeyValuePair<string, string> pair in data.skillValues[skillLevel])
+            {
+                if(fullCurrentLevelDescription.Contains("$"+pair.Key+"$"))
+                fullNextLevelDescription = fullNextLevelDescription.
+                    Replace("$" + pair.Key + "$", "$"+pair.Key+"$1^"+"->$"+pair.Key+"$2^");
+                else
+                    fullNextLevelDescription = fullNextLevelDescription.
+                    Replace("$" + pair.Key + "$", "$" + pair.Key + "$2^");
+            }
+
+            foreach (KeyValuePair<string, string> pair in data.skillValues[skillLevel-1])
+            {
+                fullNextLevelDescription = fullNextLevelDescription.
+                    Replace("$" + pair.Key + "$1^", pair.Value);
+            }
+
+            foreach (KeyValuePair<string, string> pair in data.skillValues[skillLevel])
+            {
+                fullNextLevelDescription = fullNextLevelDescription.
+                    Replace("$" + pair.Key + "$2^", pair.Value);
+            }
+
+            return fullNextLevelDescription;
         }
 
         public void setToolTipGeneratedValue(bool val)
