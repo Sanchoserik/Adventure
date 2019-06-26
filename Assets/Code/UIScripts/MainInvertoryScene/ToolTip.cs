@@ -1,5 +1,6 @@
 ﻿using Assets.Code.Items;
 using Assets.Code.SystemScripts.DataStructures;
+using Assets.Code.SystemScripts.LocalisationScripts;
 using Assets.Code.SystemScripts.LocalisationScripts.LocalisationDataStructures;
 using System;
 using System.Collections.Generic;
@@ -23,7 +24,7 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
         {
             toolTipGenerated = false;
             gameObject.SetActive(false);
-            itemsLocalisationData = SystemScripts.LoadLocalisation.itemsLocalisationData;
+            itemsLocalisationData = LocalisationManager.itemsLocalisationData;
             itemsData = SystemScripts.ResourcesManager.itemsData;
         }
 

@@ -1,4 +1,5 @@
 ﻿using Assets.Code.Skills;
+using Assets.Code.SystemScripts.DataStructures;
 using Assets.PlayerController;
 using System;
 using System.Collections.Generic;
@@ -56,22 +57,27 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
             skillPrevious.skill = skill;
         }
 
-        public static string getSkillAvailability(A_Skill skill)
-        {
-            //TO DO replace this text messages with some localisation function
+        public static string getSkillAvailability(A_Skill skill, Dictionary<string,string> systemMessages)
+        {            
             if (skill.isAvailableForLearning)
                 {
                 if (skill.isLearned)
-                    return "Learned";
+                    return "<color=#20B51B>" + systemMessages["SkillLearned"] + "</color>";
                 else if (HeroController.mainHero.freeSkillPoints > 0)
-                    return "Available";
+                    return "<color=#FFFF00>" + systemMessages["SkillAvailable"] + "</color>";
                 else
-                    return "Available but NOT enough skillPoints";
+                    return "<color=#FFB600>" + systemMessages["SkillAvailableButNoSkillPoints"] + "</color>";
                 }
                 else
-                    return "NotAvailable";                        
+                    return "<color=#FF0004>" + systemMessages["SkillIsNotAvailable"] + "</color>";                        
         }
 
-
+        public static string getSkillDuration(SkillsData skillData, short level, Dictionary<string, string> systemMessages)
+        {
+            if (!skillData.skillValues[level-1].ContainsKey("Time"))
+                return systemMessages["ThereIsnoDuration"];
+            else
+                return skillData.skillValues[level-1]["Time"];
+        }
     }
 }

@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace Assets.Code.SystemScripts
+namespace Assets.Code.SystemScripts.LocalisationScripts
 {
     public class LocaliseComponents
     {

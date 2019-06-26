@@ -13,12 +13,14 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectGenerator>VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.1.0f3</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -318,7 +320,7 @@
     <Compile Include="Assets\Code\SystemScripts\DataStructures\SkillsData.cs" />
     <Compile Include="Assets\Code\SystemScripts\LoadValuesScripts\LoadValuesFromXML.cs" />
     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\GetSceneLocalisation.cs" />
-    <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LoadLocalisation.cs" />
+    <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocalisationManager.cs" />
     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocalisationDataStructures\InterfaceLocalisationData.cs" />
     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocalisationDataStructures\ItemsLocalisationData.cs" />
     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocalisationDataStructures\SkillsLocalisationData.cs" />

@@ -6,7 +6,6 @@
  <el name = "EneCost">Ціна енергії: </el>
  <el name = "Targets">Цілі: </el>
  <el name = "Duration">Тривалість: </el>
- <el name = "Targets">Цілі: </el>
  <el name = "SkillGeneralDescription">Опис: </el>
  
  <el name = "ThereIsnoDuration">Тривалість відсутня</el>

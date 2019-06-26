@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-namespace Assets.Code.SystemScripts
+namespace Assets.Code.SystemScripts.LocalisationScripts
 {
     class GetSceneLocalisation : MonoBehaviour
     {
         private void Start()
         {                  
             LocaliseComponents lsc = new LocaliseComponents();
-            lsc.localiseScene(LoadLocalisation.interfaceLocalisationData);   
+            lsc.localiseScene(LocalisationManager.interfaceLocalisationData);   
         }
     }
 }
