@@ -142,7 +142,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
             {
                 if(fullCurrentLevelDescription.Contains("$"+pair.Key+"$"))
                 fullNextLevelDescription = fullNextLevelDescription.
-                    Replace("$" + pair.Key + "$", "$"+pair.Key+"$1^"+"->$"+pair.Key+"$2^");
+                    Replace("$" + pair.Key + "$", "$"+pair.Key+"$1^"+" -> $"+pair.Key+"$2^");
                 else
                     fullNextLevelDescription = fullNextLevelDescription.
                     Replace("$" + pair.Key + "$", "$" + pair.Key + "$2^");
@@ -157,7 +157,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
             foreach (KeyValuePair<string, string> pair in data.skillValues[skillLevel])
             {
                 fullNextLevelDescription = fullNextLevelDescription.
-                    Replace("$" + pair.Key + "$2^", pair.Value);
+                    Replace("$" + pair.Key + "$2^", "<color=#3FFF00>" + pair.Value+ "</color>");
             }
 
             return fullNextLevelDescription;

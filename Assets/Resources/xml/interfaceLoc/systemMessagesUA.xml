@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scenes>
+<scene name = "CharacterMenu">
+ <el name = "SkillLevel">Рівень: </el>
+ <el name = "APCost">Ціна очків дії: </el>
+ <el name = "EneCost">Ціна енергії: </el>
+ <el name = "Targets">Цілі: </el>
+ <el name = "Duration">Тривалість: </el>
+ <el name = "Targets">Цілі: </el>
+ <el name = "SkillGeneralDescription">Опис: </el>
+ 
+ <el name = "ThereIsnoDuration">Тривалість відсутня</el>
+ <el name = "SkillAvailable">Доступно для вивчення</el>
+ <el name = "SkillLearned">Вміння вивчено</el>
+ <el name = "SkillIsNotAvailable">НЕ доступно для вивчення</el>
+ <el name = "SkillAvailableButNoSkillPoints">Доступно для вивчення але НЕ вистачає очків вмінь</el>
+ 
+ </scene>
+ </scenes>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

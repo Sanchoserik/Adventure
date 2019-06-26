@@ -15,9 +15,10 @@ namespace Assets.Code.SystemScripts
         public void localiseScene(InterfaceLocalisationData _data)
         {        
           Scene scene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
-          Dictionary<string, string> sceneValues = _data.locValues[scene.name];
+          Dictionary<string, string> sceneValues = _data.localisationValues[scene.name];
 
             //find gameObjects in scene by keys then set Text from localisation file
+            //but this method can't find inactive gameObjects... 
             foreach (string key in sceneValues.Keys)
             {
                 GameObject obj = GameObject.Find(key);
@@ -29,11 +30,5 @@ namespace Assets.Code.SystemScripts
                 }
             }
         }
-
-        public void localiseItems(List<ItemsLocalisationData> _data)
-        {
-
-        }
-
     }
 }

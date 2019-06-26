@@ -8,11 +8,11 @@ namespace Assets.Code.SystemScripts.LocalisationScripts.LocalisationDataStructur
     public class InterfaceLocalisationData
     {
         //  Dictionary<sceneName, Dictionary<gameObjectName, Value>>
-        public Dictionary<string, Dictionary<string, string>> locValues;
+        public Dictionary<string, Dictionary<string, string>> localisationValues;
 
         public InterfaceLocalisationData()
         {
-            locValues = new Dictionary<string, Dictionary<string, string>>();
+            localisationValues = new Dictionary<string, Dictionary<string, string>>();
         }
     }
 }

@@ -11,32 +11,38 @@ namespace Assets.Code.SystemScripts
     public class LoadLocalisation : MonoBehaviour
     {
         private string interfaceLocPath = "";
+        private string systemMessagesPath = "";
         private string itemsLocPath = "";
         private string skillsLocPath = "";
-
-        public static InterfaceLocalisationData interfaceLcalisationData;
+       
+        public static InterfaceLocalisationData interfaceLocalisationData;
+        public static InterfaceLocalisationData systemMessagesLocalisationData;
         public static List<ItemsLocalisationData> itemsLocalisationData;
         public static List<SkillsLocalisationData> skillsLocalisationData;
+       
 
         //Load from XML on awake
         private void Awake()
         {            
-            interfaceLcalisationData = new InterfaceLocalisationData();
+            interfaceLocalisationData = new InterfaceLocalisationData();
+            systemMessagesLocalisationData = new InterfaceLocalisationData();
             itemsLocalisationData = new List<ItemsLocalisationData>();
             skillsLocalisationData = new List<SkillsLocalisationData>();
+            
 
             selectLocalisationLanguage(AppParameters.localisation);
             DontDestroyOnLoad(gameObject);
 
-            LoadInterfaceLocalisationXML();
+            LoadInterfaceLocalisationXML(interfaceLocalisationData, interfaceLocPath);
+            LoadInterfaceLocalisationXML(systemMessagesLocalisationData, systemMessagesPath);
             LoadItemsLocalisationXML();
             LoadSkillsLocalisationXML();
         }
 
-        private void LoadInterfaceLocalisationXML()
+        private void LoadInterfaceLocalisationXML(InterfaceLocalisationData _data, string path)
         {
             IEnumerable<XElement> scenes; // <scene> tag                
-            XDocument xDoc = XDocument.Load(interfaceLocPath);
+            XDocument xDoc = XDocument.Load(path);
 
             scenes = xDoc.Descendants("scenes").Elements();
 
@@ -48,7 +54,7 @@ namespace Assets.Code.SystemScripts
                 {                                  
                     values.Add(el.Attribute("name").Value, el.Value);
                 }
-                interfaceLcalisationData.locValues.Add(scName, values);
+                _data.localisationValues.Add(scName, values);
             }
         }
 
@@ -95,6 +101,8 @@ namespace Assets.Code.SystemScripts
             }
         }
 
+
+
         private void selectLocalisationLanguage(string _lang)
         {
             switch (_lang)
@@ -102,12 +110,14 @@ namespace Assets.Code.SystemScripts
                 case "ENG": {
                         interfaceLocPath = "Assets/Resources/xml/interfaceLoc/ENG.xml";                     
                         itemsLocPath = "Assets/Resources/xml/items/ItemsPotionsLocUA.xml"; // Add English Localisation later(
-                        skillsLocPath = "Assets/Resources/xml/skills/skillsLocUA.xml";
+                        skillsLocPath = "Assets/Resources/xml/skills/skillsLocUA.xml";// // Add English Localisation later(
+                        systemMessagesPath = "Assets/Resources/xml/interfaceLoc/systemMessagesENG.xml";
                         break; }
                 case "UA": {
                         interfaceLocPath = "Assets/Resources/xml/interfaceLoc/UA.xml";
                         itemsLocPath = "Assets/Resources/xml/items/ItemsPotionsLocUA.xml";
                         skillsLocPath = "Assets/Resources/xml/skills/skillsLocUA.xml";
+                        systemMessagesPath = "Assets/Resources/xml/interfaceLoc/systemMessagesUA.xml";
                         break; }
             }
         }

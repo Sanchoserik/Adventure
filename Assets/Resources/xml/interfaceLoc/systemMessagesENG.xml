@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scenes>
+<scene name = "CharacterMenu">
+ <el name = "SkillLevel">Level: </el>
+ <el name = "APCost">Action points cost: </el>
+ <el name = "EneCost">Energy cost: </el>
+ <el name = "Targets">Targets: </el>
+ <el name = "Duration">Duration: </el>
+ <el name = "SkillGeneralDescription">Description: </el>
+ 
+ <el name = "ThereIsnoDuration">No duration</el>
+ <el name = "SkillAvailable">Available for learning</el>
+ <el name = "SkillLearned">Learned</el>
+ <el name = "SkillIsNotAvailable">Not available for learning</el>
+ <el name = "SkillAvailableButNoSkillPoints">Skill is available for learning, but not enough skill points</el>
+ 
+ </scene>
+ </scenes>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
