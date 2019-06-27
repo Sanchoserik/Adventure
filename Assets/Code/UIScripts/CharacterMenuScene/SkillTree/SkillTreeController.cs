@@ -79,5 +79,60 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
             else
                 return skillData.skillValues[level-1]["Time"];
         }
+
+        public void skillLevelUp(GameObject skillObject)
+        {
+            if (HeroController.mainHero.freeSkillPoints > 0)
+            {
+                string skillName = skillObject.name;
+                A_Skill skill = skillTree.Find(x => x.skillName == skillName);
+                // skills are default level 1 
+                if ((skill.skillLevel + 1 <= skill.skillMaxLevel) || (!skill.isLearned && skill.skillMaxLevel == 1))
+                { 
+                    if (skill.isAvailableForLearning)
+                    {
+                        HeroSkillsController.setSkillAsLearned(skill);
+                        HeroSkillsController.getNewAvailableSKills(skillTree, skillName);
+                        --HeroController.mainHero.freeSkillPoints;     
+                    }
+                    else if (skill.isLearned)
+                    {
+                        ++skill.skillLevel;
+                        refreshSkillLevelText(skillObject, skillName, skill);
+                        --HeroController.mainHero.freeSkillPoints;
+                    }
+                }
+            }
+        }
+
+        public void skillLevelDown(GameObject skillObject)
+        {
+            string skillName = skillObject.name;
+            A_Skill skill = skillTree.Find(x => x.skillName == skillName);
+
+            if (skill.skillLevel - 1 >= 0 && skill.isLearned == true)
+            {
+                if (skill.skillLevel - 1 >= 1)
+                {
+                    --skill.skillLevel;
+                    refreshSkillLevelText(skillObject, skillName, skill);
+                    ++HeroController.mainHero.freeSkillPoints;                   
+                }
+                else if (skill.skillLevel - 1 == 0 && !skill.skillName.Equals("Rearm")) // Rearm is starting point for skills learning
+                {
+                    HeroSkillsController.setSkillAsNotLearned(skill);
+                    HeroSkillsController.cascadeSkillRemoval(skillTree, skill);
+                    initializeSkills(skillTrees); // Need to refresh all skills                    
+                }
+            }
+
+        }
+
+        private void refreshSkillLevelText(GameObject _skill, string _sName, A_Skill _s)
+        {
+            Text t = _skill.GetComponentInChildren<Text>();
+            t.text = _s.skillLevel + "/" + _s.skillMaxLevel;           
+        }
+
     }
 }
