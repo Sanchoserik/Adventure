@@ -95,6 +95,10 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
 
         private void loadNextLevel(A_Skill skill, SkillsLocalisationData skillLocalisation, SkillsData skillData)
         {
+            if (skill.skillLevel == 3)
+            {
+                int xx = 20;
+            }
             if (skill.skillLevel + 1 <= skill.skillMaxLevel)
             {
                 Dictionary<string, string> systemMessages = LocalisationManager.systemMessagesLocalisationData.localisationValues["CharacterMenu"];
@@ -107,8 +111,8 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
                 skillEneCost.text = systemMessages["EneCost"] + skillData.skillEneCost[skill.skillLevel] +" -> "
                     + "<color=#20B51B>" + skillData.skillEneCost[skill.skillLevel +1 ] + "</color>";
                 skillTargets.text = systemMessages["Targets"] +
-                    skillLocalisation.skillTargetsDescription[skill.skillLevel] + "->" + "<color=#20B51B>"
-                    + skillLocalisation.skillTargetsDescription[skill.skillLevel +1 ] + "</color>"; 
+                    skillLocalisation.skillTargetsDescription[skill.skillLevel-1] + "->" + "<color=#20B51B>"
+                    + skillLocalisation.skillTargetsDescription[skill.skillLevel] + "</color>"; 
                 skillDuration.text = systemMessages["Duration"] 
                     + SkillTreeController.getSkillDuration(skillData, skill.skillLevel, systemMessages) 
                     + " -> " + "<color=#20B51B>"
@@ -116,7 +120,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
                     + "</color>";
                 skillGeneralDescription.text = systemMessages["SkillGeneralDescription"] + skillLocalisation.skillMainDescription;
                 skillLevelDescription.text = getLocalisedTextForNextLevel(skillLocalisation, skillData,
-                    (short)(skill.skillLevel-1), skill.skillLevel);
+                    (short)(skill.skillLevel-1), skill.skillLevel, "<color=#20B51B>");
             }
         }
 
@@ -135,8 +139,8 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
                 skillEneCost.text = systemMessages["EneCost"] + skillData.skillEneCost[skill.skillLevel] + " -> "
                     + "<color=#FF0004>" + skillData.skillEneCost[skill.skillLevel - 1] + "</color>";
                 skillTargets.text = systemMessages["Targets"] +
-                    skillLocalisation.skillTargetsDescription[skill.skillLevel] + "->" + "<color=#FF0004>"
-                    + skillLocalisation.skillTargetsDescription[skill.skillLevel-+ 1] + "</color>";
+                    skillLocalisation.skillTargetsDescription[skill.skillLevel - 1] + "->" + "<color=#FF0004>"
+                    + skillLocalisation.skillTargetsDescription[skill.skillLevel - 2] + "</color>";
                 skillDuration.text = systemMessages["Duration"]
                     + SkillTreeController.getSkillDuration(skillData, skill.skillLevel, systemMessages)
                     + " -> " + "<color=#FF0004>"
@@ -144,7 +148,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
                     + "</color>";
                 skillGeneralDescription.text = systemMessages["SkillGeneralDescription"] + skillLocalisation.skillMainDescription;
                 skillLevelDescription.text = getLocalisedTextForNextLevel(skillLocalisation, skillData,
-                    (short)(skill.skillLevel - 1), skill.skillLevel);
+                    (short)(skill.skillLevel - 1),(short)(skill.skillLevel -2), "<color=#FF0004>");
             }
         }
 
@@ -160,10 +164,11 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
         }
 
         private string getLocalisedTextForNextLevel(SkillsLocalisationData localisation, SkillsData data,
-            short skillCurrentLevel, short skillAnotherLevel)
+            short skillCurrentLevel, short skillAnotherLevel, string textColor)
         {
             string fullCurrentLevelDescription = localisation.skillLocalisedLevelDescription[skillCurrentLevel];
             string fullAnotherLevelDescription = localisation.skillLocalisedLevelDescription[skillAnotherLevel];
+           
 
             foreach (KeyValuePair<string, string> pair in data.skillValues[skillAnotherLevel])
             {
@@ -184,7 +189,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
             foreach (KeyValuePair<string, string> pair in data.skillValues[skillAnotherLevel])
             {
                 fullAnotherLevelDescription = fullAnotherLevelDescription.
-                    Replace("$" + pair.Key + "$2^", "<color=#20B51B>" + pair.Value+ "</color>");
+                    Replace("$" + pair.Key + "$2^", textColor + pair.Value+ "</color>");
             }
 
             return fullAnotherLevelDescription;

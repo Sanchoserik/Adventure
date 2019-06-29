@@ -16,7 +16,7 @@ namespace Assets.PlayerController
         public GameObject heroEditorController;
         private List<SkillsData> skillsData;
 
-        private void Start()
+        private void Awake()
         {
             skillsData = ResourcesManager.skillsData;
 

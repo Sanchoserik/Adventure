@@ -13,6 +13,8 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
     public class SkillTreeController : MonoBehaviour
     {
         public GameObject[] skillTrees = new GameObject[4];
+        public SkillToolTip skillToolTip;
+        CharacterMenuController cmController = new CharacterMenuController();//TEMP
 
         private List<A_Skill> skillTree;
 
@@ -89,7 +91,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
                 // skills are default level 1 
                 if ((skill.skillLevel + 1 <= skill.skillMaxLevel) || (!skill.isLearned && skill.skillMaxLevel == 1))
                 { 
-                    if (skill.isAvailableForLearning)
+                    if (skill.isAvailableForLearning && !skill.isLearned)
                     {
                         HeroSkillsController.setSkillAsLearned(skill);
                         HeroSkillsController.getNewAvailableSKills(skillTree, skillName);
@@ -100,7 +102,10 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
                         ++skill.skillLevel;
                         refreshSkillLevelText(skillObject, skillName, skill);
                         --HeroController.mainHero.freeSkillPoints;
+                        skillToolTip.setToolTipGeneratedValue(false);
+                        skillToolTip.generateToolTip(skill, "LoadNextLevel");
                     }
+                    cmController.getSkillPoints();                  
                 }
             }
         }
@@ -116,7 +121,9 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
                 {
                     --skill.skillLevel;
                     refreshSkillLevelText(skillObject, skillName, skill);
-                    ++HeroController.mainHero.freeSkillPoints;                   
+                    ++HeroController.mainHero.freeSkillPoints;
+                    skillToolTip.setToolTipGeneratedValue(false);
+                    skillToolTip.generateToolTip(skill, "LoadPreviousLevel");
                 }
                 else if (skill.skillLevel - 1 == 0 && !skill.skillName.Equals("Rearm")) // Rearm is starting point for skills learning
                 {
@@ -124,6 +131,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
                     HeroSkillsController.cascadeSkillRemoval(skillTree, skill);
                     initializeSkills(skillTrees); // Need to refresh all skills                    
                 }
+                cmController.getSkillPoints();               
             }
 
         }
