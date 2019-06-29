@@ -28,7 +28,7 @@ namespace Assets.PlayerController
             {
                 if(mainHero.heroSkills == null)
                 mainHero.heroSkills = new HeroSkillsController(skillsData);
-                mainHero.freeSkillPoints = 20; // TEMP
+                mainHero.freeSkillPoints = 100; // TEMP
             }
 
             heroEditorController.SetActive(true);

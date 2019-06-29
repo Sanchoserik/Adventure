@@ -23,3 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainInvertory.unity
     guid: 594f06706b9eacd49b849d031936e6fb
+  - enabled: 1
+    path: Assets/Scenes/CharacterMenu.unity
+    guid: cf4b5f93095a5e3489738dba57d70279
