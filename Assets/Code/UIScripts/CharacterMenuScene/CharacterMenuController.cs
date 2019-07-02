@@ -35,7 +35,11 @@ namespace Assets.Code.UIScripts.CharacterMenuScene
 
         public void showInvertoryButton()
         {
-
+            foreach (Transform panel in ParentMenu.transform)
+            {
+                panel.gameObject.SetActive(false);
+            }
+            ParentMenu.transform.Find("InvertoryPanel").gameObject.SetActive(true);
         }
     }
 }
