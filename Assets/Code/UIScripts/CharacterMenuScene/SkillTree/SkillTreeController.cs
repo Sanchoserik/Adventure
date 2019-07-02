@@ -101,10 +101,10 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
                     {
                         ++skill.skillLevel;
                         refreshSkillLevelText(skillObject, skillName, skill);
-                        --HeroController.mainHero.freeSkillPoints;
-                        skillToolTip.setToolTipGeneratedValue(false);
-                        skillToolTip.generateToolTip(skill, "LoadNextLevel");
+                        --HeroController.mainHero.freeSkillPoints;                       
                     }
+                    skillToolTip.setToolTipGeneratedValue(false);
+                    skillToolTip.generateToolTip(skill, "LoadNextLevel");
                     cmController.getSkillPoints();                  
                 }
             }

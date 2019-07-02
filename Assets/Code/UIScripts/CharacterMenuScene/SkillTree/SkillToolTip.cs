@@ -94,11 +94,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
         }
 
         private void loadNextLevel(A_Skill skill, SkillsLocalisationData skillLocalisation, SkillsData skillData)
-        {
-            if (skill.skillLevel == 3)
-            {
-                int xx = 20;
-            }
+        {           
             if (skill.skillLevel + 1 <= skill.skillMaxLevel)
             {
                 Dictionary<string, string> systemMessages = LocalisationManager.systemMessagesLocalisationData.localisationValues["CharacterMenu"];

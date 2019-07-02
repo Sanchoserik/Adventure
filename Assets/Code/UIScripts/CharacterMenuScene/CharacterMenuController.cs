@@ -10,8 +10,8 @@ namespace Assets.Code.UIScripts.CharacterMenuScene
 {
     public class CharacterMenuController : MonoBehaviour
     {
-        private Text skillPoints;
-
+        public GameObject ParentMenu;
+       
         private void Start()
         {
             getSkillPoints();
@@ -19,8 +19,23 @@ namespace Assets.Code.UIScripts.CharacterMenuScene
 
         public void getSkillPoints()
         {
+            Text skillPoints;
             skillPoints = GameObject.Find("SkillPointsVal").GetComponent<Text>();
             skillPoints.text = HeroController.mainHero.freeSkillPoints.ToString();
+        }
+
+        public void showSkillTreeButton()
+        {
+            foreach (Transform panel in ParentMenu.transform)
+            {
+                panel.gameObject.SetActive(false);
+            }
+            ParentMenu.transform.Find("SkillTreePanel").gameObject.SetActive(true);
+        }
+
+        public void showInvertoryButton()
+        {
+
         }
     }
 }

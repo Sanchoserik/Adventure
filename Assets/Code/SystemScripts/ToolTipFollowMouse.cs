@@ -17,7 +17,7 @@ namespace Assets.Code.SystemScripts
         {
             RectTransform canvasRect = (RectTransform)mainUICanvas.transform;
             bottomLeft = new Vector2(0, 0);
-            topRight = new Vector2(canvasRect.rect.width,canvasRect.rect.height);
+            topRight = new Vector2(canvasRect.rect.width, canvasRect.rect.height);
 
             cameraRect = new Rect(
               bottomLeft.x,
