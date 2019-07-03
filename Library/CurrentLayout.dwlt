@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 43
+  controlID: 10177
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 44
+  controlID: 10077
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 45
+  controlID: 10078
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,25 +317,25 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-      width: 787
-      height: 326
-    m_Scale: {x: 0.30185184, y: 0.30185184}
-    m_Translation: {x: 393.49997, y: 163}
+      width: 1366
+      height: 597
+    m_Scale: {x: 0.55277777, y: 0.55277777}
+    m_Translation: {x: 683, y: 298.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1303.6196
+      x: -1235.5779
       y: -540
-      width: 2607.2393
+      width: 2471.1558
       height: 1080
     m_MinimalGUI: 1
-  m_defaultScale: 0.30185184
+  m_defaultScale: 0.55277777
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 787, y: 343}
+  m_LastWindowPixelSize: {x: 1366, y: 614}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -366,10 +366,10 @@ MonoBehaviour:
     width: 296
     height: 343
   m_TreeViewState:
-    scrollPos: {x: 0, y: 74}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: c831ffff4e56ffff2061ffffe4caffffeacaffff50daffff28eeffff1afcffff000000009e3a0000ba3a00000a3b00002e3b0000b23d0000d83d00005c3e00000e4a00002a4a00007a4a00009e4a00005a4b0000684b00008e4b00000e4d0000384d00005e4d0000e24d0000
+    m_ExpandedIDs: 183afdff244afdff82c1feff12e4feffb015ffff1afcffff00000000de2a00000c2c0000842c0000ae2c0000d42c0000542d0000582d00006c4a0000e04a0000aa4b0000d04b0000564d0000804d0000a64d00002a4e00008af30000a6f30000f6f300001af4000078f5000090f60000baf60000e0f60000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -424,9 +424,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 887.8556, y: 549.1249, z: 0}
+    m_Target: {x: 638.925, y: -45.96851, z: 0}
     speed: 2
-    m_Value: {x: 887.8556, y: 549.1249, z: 0}
+    m_Value: {x: 638.925, y: -45.96851, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -453,9 +453,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1530.0552
+    m_Target: 2855.9429
     speed: 2
-    m_Value: 1530.0552
+    m_Value: 2855.9429
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -576,19 +576,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: F:\UnityProjects\Adventure
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 187}
-    m_SelectedIDs: d6280000
-    m_LastClickedID: 10454
-    m_ExpandedIDs: 0000000052280000962800009c2900009e290000ac290000903a000000ca9a3bffffff7f
+    m_SelectedIDs: 04290000
+    m_LastClickedID: 10500
+    m_ExpandedIDs: 000000005228000096280000d62800009c290000ac290000ca3a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -616,7 +616,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 18f2ffff
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000052280000962800009c2900009e290000ac290000903a0000
+    m_ExpandedIDs: 000000005228000096280000d62800009c290000ac290000ca3a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -643,8 +643,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c623000090250000182b00001a2b0000a0260000a425000006260000be250000d0250000e6250000ae260000aa2600002c2600001626000028270000401ffcff38270000e22700000000000046280000b42800002c28000066e7feffac280000f042ffff94280000b2280000a828000042e0feff4072feffaec2fdff5c2800009e2800006c2900000e290000
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c623000090250000182b00001a2b0000a0260000a425000006260000be250000d0250000e6250000ae260000aa2600002c2600001626000028270000401ffcff38270000e22700000000000046280000b42800002c28000066e7feffac280000f042ffff94280000b2280000a828000042e0feff4072feffaec2fdff9e2800006c2900000e290000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

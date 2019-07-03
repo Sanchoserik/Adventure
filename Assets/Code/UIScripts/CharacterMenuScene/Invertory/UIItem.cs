@@ -11,11 +11,11 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
     public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerExitHandler, IPointerEnterHandler
     {
         public A_Item item;
-        private ToolTip toolTip;
+        private ItemToolTip toolTip;
 
         private void Awake()
         {     
-           toolTip = GameObject.Find("InvHolder").transform.Find("ToolTip").GetComponent<ToolTip>();
+           toolTip = GameObject.Find("ToolTipHolder").transform.Find("ItemsGeneralToolTip").GetComponent<ItemToolTip>();
         }
      
         public void OnPointerExit(PointerEventData eventData)

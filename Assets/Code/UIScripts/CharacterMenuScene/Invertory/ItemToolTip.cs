@@ -11,7 +11,7 @@ using UnityEngine.UI;
 
 namespace Assets.Code.UIScripts.MainInvertoryScene
 {
-    public class ToolTip : MonoBehaviour
+    public class ItemToolTip : MonoBehaviour
     {
         public Text toolTipItemName;
         public Text toolTipItemDescription;

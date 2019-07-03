@@ -11,7 +11,7 @@ using Assets.Code.SystemScripts.DataStructures;
 
 namespace Assets.Code.UIScripts.MainInvertoryScene
 {
-    public class MainInvertorySceneController : MonoBehaviour
+    public class InvertoryController : MonoBehaviour
     {
         public GameObject slotPrefab;
         public Transform mainHolder;
