@@ -9,14 +9,22 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
 {
     public class ItemDragHandler : MonoBehaviour, IDragHandler, IEndDragHandler
     {
+        public GameObject item;
+
+        public void Awake()
+        {
+            item = GameObject.Find("DragDropObject");
+        }
+
         public void OnDrag(PointerEventData eventData)
         {
-            transform.position = Input.mousePosition;
+           
+            item.transform.position = Input.mousePosition;
         }
 
         public void OnEndDrag(PointerEventData eventData)
         {
-            transform.localPosition = Vector3.zero;
+            item.transform.localPosition = Vector3.zero;
         }
     }
 }

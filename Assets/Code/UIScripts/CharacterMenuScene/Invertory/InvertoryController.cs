@@ -9,7 +9,7 @@ using Assets.Code.Items;
 using Assets.Code.Items.Potions;
 using Assets.Code.SystemScripts.DataStructures;
 
-namespace Assets.Code.UIScripts.MainInvertoryScene
+namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
 {
     public class InvertoryController : MonoBehaviour
     {

@@ -5,8 +5,9 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-namespace Assets.Code.UIScripts.MainInvertoryScene
+namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
 {
     public class UIItem : MonoBehaviour, IPointerExitHandler, IPointerEnterHandler
     {
@@ -15,7 +16,7 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
   
         private void Awake()
         {
-            toolTip = GameObject.Find("ToolTipHolder").transform.Find("ItemsGeneralToolTip").GetComponent<ItemToolTip>();         
+            toolTip = GameObject.Find("ToolTipHolder").transform.Find("ItemsGeneralToolTip").GetComponent<ItemToolTip>();          
         }
      
         public void OnPointerExit(PointerEventData eventData)

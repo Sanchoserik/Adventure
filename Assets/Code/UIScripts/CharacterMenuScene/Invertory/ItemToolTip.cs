@@ -9,7 +9,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Assets.Code.UIScripts.MainInvertoryScene
+namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
 {
     public class ItemToolTip : MonoBehaviour
     {
