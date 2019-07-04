@@ -8,14 +8,14 @@ using UnityEngine.EventSystems;
 
 namespace Assets.Code.UIScripts.MainInvertoryScene
 {
-    public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerExitHandler, IPointerEnterHandler
+    public class UIItem : MonoBehaviour, IPointerExitHandler, IPointerEnterHandler
     {
         public A_Item item;
         private ItemToolTip toolTip;
-
+  
         private void Awake()
-        {     
-           toolTip = GameObject.Find("ToolTipHolder").transform.Find("ItemsGeneralToolTip").GetComponent<ItemToolTip>();
+        {
+            toolTip = GameObject.Find("ToolTipHolder").transform.Find("ItemsGeneralToolTip").GetComponent<ItemToolTip>();         
         }
      
         public void OnPointerExit(PointerEventData eventData)
@@ -29,11 +29,6 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
             toolTip.generateItemTooltip(item);
         }
 
-        //TO DO Item context menu
-        public void OnPointerClick(PointerEventData eventData)
-        {
-
-        }
 
     }
 }

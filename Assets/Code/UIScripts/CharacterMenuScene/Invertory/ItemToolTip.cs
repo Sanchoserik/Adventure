@@ -30,7 +30,7 @@ namespace Assets.Code.UIScripts.MainInvertoryScene
 
         public void generateItemTooltip(A_Item item)
         {
-            if (!toolTipGenerated)
+            if (!toolTipGenerated && item != null)
             {                
                 ItemsLocalisationData itemLocalisation = itemsLocalisationData.Find(x => x.itemName.Equals(item.GetType().Name));
                 ItemsData itemData = itemsData.Find(x => x.potionName.Equals(item.GetType().Name));

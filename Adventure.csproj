@@ -329,6 +329,8 @@
     <Compile Include="Assets\Code\SystemScripts\ToolTipFollowMouse.cs" />
     <Compile Include="Assets\Code\UIScripts\CameraZooming.cs" />
     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\CharacterMenuController.cs" />
+    <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\Invertory\ItemDragHandler.cs" />
+    <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\Invertory\ItemDropHandler.cs" />
     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\SkillTree\SkillBranchChange.cs" />
     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\SkillTree\SkillToolTip.cs" />
     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\SkillTree\SkillTreeController.cs" />

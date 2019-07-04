@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 224949660248674716}
   - component: {fileID: 222433364266303092}
   - component: {fileID: 114118506627128694}
+  - component: {fileID: 114137910420025538}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -99,6 +100,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 18096d959e162c443819967a8bd3a6d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114137910420025538
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1363714592496914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cc92695a43effb42807d37173e72413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114276218408290158
@@ -214,7 +226,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -285.5752, y: 379.9762}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224949660248674716
