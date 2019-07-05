@@ -4,27 +4,32 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
 {
     public class ItemDragHandler : MonoBehaviour, IDragHandler, IEndDragHandler
-    {
-        public GameObject item;
+    {       
+        public Transform dragDropObject;
 
         public void Awake()
         {
-            item = GameObject.Find("DragDropObject");
+            dragDropObject = GameObject.Find("InvertoryPanel").transform.Find("DragDropObject");
         }
 
         public void OnDrag(PointerEventData eventData)
         {
-           
-            item.transform.position = Input.mousePosition;
+            dragDropObject.gameObject.SetActive(true);
+            if (dragDropObject.GetComponent<Image>().sprite == null)
+            {
+                dragDropObject.GetComponent<Image>().sprite = gameObject.GetComponent<Image>().sprite;
+            }
+            dragDropObject.transform.position = Input.mousePosition;
         }
 
         public void OnEndDrag(PointerEventData eventData)
         {
-            item.transform.localPosition = Vector3.zero;
+            dragDropObject.gameObject.SetActive(false);
         }
     }
 }
