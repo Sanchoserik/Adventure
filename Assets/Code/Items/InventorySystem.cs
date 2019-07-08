@@ -9,15 +9,26 @@ namespace Assets.Code.Items
     {
         public List<List<A_Item>> mainItemsStorage;
         public List<A_Talisman> mainTalismansStorage;
-        public List<A_Talisman> inUseTalismansStorage;
-        public List<A_Item> quickAccesItemStorage;
+        public List<A_Talisman> inUseTalismansStorage; // size = 10
+        public List<A_Item> quickAccesItemStorage; // size = 5
 
         public InventorySystem()
         {
             mainItemsStorage = new List<List<A_Item>>();
             mainTalismansStorage = new List<A_Talisman>();
+
+            //initialize empty
             inUseTalismansStorage = new List<A_Talisman>();
+            for (int i = 0; i < 10; ++i)
+            {
+                inUseTalismansStorage.Add(null);
+            }
+
             quickAccesItemStorage = new List<A_Item>();
+            for (int i = 0; i < 5; ++i)
+            {
+                quickAccesItemStorage.Add(null);
+            }
         }
 
         public void addItem(A_Item item)

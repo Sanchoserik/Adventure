@@ -2,10 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
 {
-    class ItemDropHandler
+    public class ItemDropHandler : MonoBehaviour, IDropHandler
     {
+        GameObject dropPanel;
+
+        public void OnDrop(PointerEventData eventData)
+        {
+          
+        }
     }
 }

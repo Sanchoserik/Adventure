@@ -69,6 +69,13 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
                 if (itemType[0].category.Equals(category))
                     getItems(itemType.Count,itemType[0].GetType().Name);
             }
+
+            if (category.Equals("Potions") || category.Equals("Elixirs") || category.Equals("Mixtures"))
+            {
+
+            }
+
+
         }
         //Instantiate selected items
         private void getItems(int itemCount, string itemTypeName)

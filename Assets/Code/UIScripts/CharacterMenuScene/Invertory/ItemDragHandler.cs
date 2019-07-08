@@ -11,6 +11,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
     public class ItemDragHandler : MonoBehaviour, IDragHandler, IEndDragHandler
     {       
         public Transform dragDropObject;
+        public GameObject quickAccesPanel;
 
         public void Awake()
         {
@@ -28,7 +29,8 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
         }
 
         public void OnEndDrag(PointerEventData eventData)
-        {
+        {          
+
             dragDropObject.gameObject.SetActive(false);
         }
     }
