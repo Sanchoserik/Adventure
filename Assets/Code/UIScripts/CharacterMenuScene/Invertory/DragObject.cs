@@ -8,14 +8,14 @@ using UnityEngine.UI;
 
 namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
 {
-    public class DragDropObject : MonoBehaviour
+    public class DragObject : MonoBehaviour
     {
         A_Item item;
 
         public void setSprite(Image newImage)
         {
             Image image = gameObject.GetComponent<Image>();
-            image = newImage;
+            image.sprite = newImage.sprite;
         }
     }
 

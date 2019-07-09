@@ -9,8 +9,8 @@ namespace Assets.Code.Items
     {
         public List<List<A_Item>> mainItemsStorage;
         public List<A_Talisman> mainTalismansStorage;
-        public List<A_Talisman> inUseTalismansStorage; // size = 10
-        public List<A_Item> quickAccesItemStorage; // size = 5
+        public List<A_Talisman> inUseTalismansStorage; // native size = 10
+        public List<A_Item> quickAccesItemStorage; // native size = 5
 
         public InventorySystem()
         {

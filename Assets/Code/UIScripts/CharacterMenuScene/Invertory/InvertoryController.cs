@@ -15,6 +15,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
     {
         public GameObject slotPrefab;
         public Transform mainHolder;
+        public Transform quickAccesHolder;
         public Sprite[] itemsSpriteSheet;
 
         InventorySystem invSystem;
@@ -35,20 +36,20 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             invSystem.addItem(itemFabric.createPotionHealP3G(alldata.Find(x => x.potionName.Equals("HealP3G"))));
             invSystem.addItem(itemFabric.createPotionHealP4U(alldata.Find(x => x.potionName.Equals("HealP4U"))));
             invSystem.addItem(itemFabric.createPotionHealP4U(alldata.Find(x => x.potionName.Equals("HealP4U"))));
-            
-            //2 get items in first category    
-            //displayInvertory("Potions");
-        }
 
-        private void Update()
-        {
-            // refresh dispaly               
+            invSystem.quickAccesItemStorage[0] = invSystem.mainItemsStorage[1][0];// 
         }
 
         public void displayInvertory(string category)
         {
             //refresh item panel
             foreach (Transform item in mainHolder.GetComponentInChildren<Transform>())
+            {
+                if (item.tag.Equals("Item"))
+                    Destroy(item.gameObject);
+            }
+
+            foreach (Transform item in quickAccesHolder.GetComponentInChildren<Transform>())
             {
                 if (item.tag.Equals("Item"))
                     Destroy(item.gameObject);
@@ -67,14 +68,13 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             foreach (List<A_Item> itemType in invSystem.mainItemsStorage)
             {
                 if (itemType[0].category.Equals(category))
-                    getItems(itemType.Count,itemType[0].GetType().Name);
+                    getItems(itemType.Count, itemType[0].GetType().Name);
             }
 
             if (category.Equals("Potions") || category.Equals("Elixirs") || category.Equals("Mixtures"))
-            {
-
-            }
-
+                instantiateQuickAccesItems();
+            else
+                instantiateQuickAccesItems();
 
         }
         //Instantiate selected items
@@ -104,6 +104,48 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             }
             
         }
+
+        private void instantiateQuickAccesItems()
+        {
+            foreach (A_Item item in invSystem.quickAccesItemStorage)
+            {
+                GameObject instance = Instantiate(slotPrefab, quickAccesHolder);
+                Transform component = instance.transform.GetChild(0);
+                Image itemIcon = component.GetComponentInChildren<Image>();
+
+                if (item != null)
+                {
+                    itemIcon.enabled = true;
+                    itemIcon.sprite = itemsSpriteSheet[getSpite(item.GetType().Name)];
+
+                    component = instance.transform.GetChild(1);
+                    Text itemCountText = component.GetComponentInChildren<Text>();
+                    string x1 = item.GetType().Name;
+                    itemCountText.enabled = false;
+                    UIItem uiitem = instance.GetComponent<UIItem>();
+
+                    foreach (List<A_Item> stack in invSystem.mainItemsStorage)
+                    {
+                        if (stack[0].GetType().Name.Equals(item.GetType().Name))
+                        {
+                            uiitem.item = stack[0];
+                            break;
+                        }
+                    }
+
+                }
+                else
+                {
+                    itemIcon.enabled = false;
+                    component = instance.transform.GetChild(1);
+                    Text itemCountText = component.GetComponentInChildren<Text>();
+                    itemCountText.enabled = false;
+                }
+
+            }
+        }
+
+
 
         private int getSpite(string name)
         {
