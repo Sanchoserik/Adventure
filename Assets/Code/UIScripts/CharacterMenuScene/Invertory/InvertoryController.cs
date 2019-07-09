@@ -91,14 +91,14 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             Text itemCountText = component.GetComponentInChildren<Text>();
             itemCountText.text = itemCount.ToString();
 
-            UIItem uiitem = instance.GetComponent<UIItem>();
+            UIItem uiItem = instance.GetComponent<UIItem>();
 
             //TEMP set all objects as HealP1S
             foreach (List<A_Item> stack in invSystem.mainItemsStorage)
             {
                 if (stack[0].GetType().Name.Equals(itemTypeName))
                 {
-                    uiitem.item = stack[0];
+                    uiItem.item = stack[0];
                     break;
                 }
             }

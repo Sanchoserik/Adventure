@@ -23,22 +23,30 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
         {
             dragObjectTransform.gameObject.SetActive(true);
             DragObject dragObject = dragObjectTransform.GetComponent<DragObject>();
+            dragObject.setItem(gameObject.GetComponentInParent<UIItem>().item);
             dragObject.setSprite(gameObject.GetComponent<Image>());           
             dragObjectTransform.transform.position = Input.mousePosition;
         }
 
         public void OnEndDrag(PointerEventData eventData)
-        {         
+        {
+            int slotIndex = 0;
             foreach (Transform slot in quickAccesPanel.transform)
-            {
+            {               
                 RectTransform slotRect = slot.transform as RectTransform;
+               
                 if (RectTransformUtility.RectangleContainsScreenPoint(slotRect, Input.mousePosition))
                 {
+                    //ON normal drag - from InvertoryPanel to QuickAcesPanel
                     DragObject dragObject = dragObjectTransform.GetComponent<DragObject>();
-                    dragObject.setItemToSlot(slot);
-                    break;
-                }
+                    dragObject.setItemToSlot(slot, slotIndex);
 
+                    //ON Special drag - from QuickAccesPanel to QuickAccesPanel and itemDrop
+                    break;
+
+
+                }
+                ++slotIndex;
             }
 
             dragObjectTransform.gameObject.SetActive(false);
