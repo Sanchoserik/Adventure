@@ -119,8 +119,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
                     itemIcon.sprite = itemsSpriteSheet[getSpite(item.GetType().Name)];
 
                     component = instance.transform.GetChild(1);
-                    Text itemCountText = component.GetComponentInChildren<Text>();
-                    string x1 = item.GetType().Name;
+                    Text itemCountText = component.GetComponentInChildren<Text>();                   
                     itemCountText.enabled = false;
                     UIItem uiitem = instance.GetComponent<UIItem>();
 

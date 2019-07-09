@@ -9,13 +9,14 @@ using UnityEngine.UI;
 namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
 {
     public class ItemDragHandler : MonoBehaviour, IDragHandler, IEndDragHandler
-    {       
+    {
         public Transform dragObjectTransform;
         public GameObject quickAccesPanel;
 
         public void Awake()
         {
             dragObjectTransform = GameObject.Find("InvertoryPanel").transform.Find("DragDropObject");
+            quickAccesPanel = GameObject.Find("InvertoryPanel").transform.Find("QuickAccesPanel").gameObject;
         }
 
         public void OnDrag(PointerEventData eventData)
@@ -27,8 +28,21 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
         }
 
         public void OnEndDrag(PointerEventData eventData)
-        {          
+        {         
+            foreach (Transform slot in quickAccesPanel.transform)
+            {
+                RectTransform slotRect = slot.transform as RectTransform;
+                if (RectTransformUtility.RectangleContainsScreenPoint(slotRect, Input.mousePosition))
+                {
+                    DragObject dragObject = dragObjectTransform.GetComponent<DragObject>();
+                    dragObject.setItemToSlot(slot);
+                    break;
+                }
+
+            }
+
             dragObjectTransform.gameObject.SetActive(false);
+
         }
     }
 }
