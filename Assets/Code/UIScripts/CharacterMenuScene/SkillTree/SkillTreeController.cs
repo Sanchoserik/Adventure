@@ -14,7 +14,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
     {
         public GameObject[] skillTrees = new GameObject[4];
         public SkillToolTip skillToolTip;
-        CharacterMenuController cmController = new CharacterMenuController();//TEMP
+        public CharacterMenuController cmController;// = new CharacterMenuController();//TEMP
 
         private List<A_Skill> skillTree;
 

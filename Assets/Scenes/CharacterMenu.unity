@@ -5569,6 +5569,7 @@ MonoBehaviour:
   - {fileID: 722348520}
   - {fileID: 1060088787}
   skillToolTip: {fileID: 111898832}
+  cmController: {fileID: 910289630}
 --- !u!4 &948032649
 Transform:
   m_ObjectHideFlags: 0
@@ -8841,7 +8842,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemSprite: {fileID: 0}
-  itemSlotIndex: 0
 --- !u!114 &1475758041
 MonoBehaviour:
   m_ObjectHideFlags: 0

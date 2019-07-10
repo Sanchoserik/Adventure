@@ -13,8 +13,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
     {
         public A_Item item;
         public Image itemSprite;
-        public int itemSlotIndex;
-
+     
         public void setSprite(Image newImage)
         {
             itemSprite = gameObject.GetComponent<Image>();
@@ -41,22 +40,21 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
         private void setItemToQuickAcces(int slotIndex)
         {
             InventorySystem invSystem = HeroController.mainHero.inventorySystem;
-            invSystem.quickAccesItemStorage[slotIndex] = item;
-            itemSlotIndex = slotIndex;
+            invSystem.quickAccesItemStorage[slotIndex] = item;         
         }
 
-        public void dropItemFromSlot(Transform slot)
+        public void dropItemFromSlot(Transform slot, UIItem item)
         {        
             InventorySystem invSystem = HeroController.mainHero.inventorySystem;
-            invSystem.quickAccesItemStorage[itemSlotIndex] = null;
+            int removeIndex = invSystem.quickAccesItemStorage.IndexOf(item.item);
+            invSystem.quickAccesItemStorage[removeIndex] = null;
 
             slot.GetComponent<Image>().enabled = false;
             slot.parent.GetComponent<UIItem>().item = null;
 
             item = null;
             itemSprite = null;
-            itemSlotIndex = 99;
-
+           
         }
     }
 

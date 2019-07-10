@@ -70,8 +70,8 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
                 }
                 if(dropFlag)
                 {
-                    DragObject dragObject = dragObjectTransform.GetComponent<DragObject>();
-                    dragObject.dropItemFromSlot(gameObject.transform);       
+                    DragObject dragObject = dragObjectTransform.GetComponent<DragObject>();                    
+                    dragObject.dropItemFromSlot(gameObject.transform, gameObject.transform.parent.GetComponent<UIItem>());       
                 }
                 if (moveFlag)
                 {
