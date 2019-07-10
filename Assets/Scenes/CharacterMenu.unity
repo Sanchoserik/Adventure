@@ -8841,6 +8841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemSprite: {fileID: 0}
+  itemSlotIndex: 0
 --- !u!114 &1475758041
 MonoBehaviour:
   m_ObjectHideFlags: 0

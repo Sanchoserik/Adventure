@@ -31,22 +31,52 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
         public void OnEndDrag(PointerEventData eventData)
         {
             int slotIndex = 0;
-            foreach (Transform slot in quickAccesPanel.transform)
-            {               
-                RectTransform slotRect = slot.transform as RectTransform;
-               
-                if (RectTransformUtility.RectangleContainsScreenPoint(slotRect, Input.mousePosition))
+            if (!gameObject.transform.parent.parent.name.Equals("QuickAccesPanel"))
+            {            
+                foreach (Transform slot in quickAccesPanel.transform)
                 {
-                    //ON normal drag - from InvertoryPanel to QuickAcesPanel
-                    DragObject dragObject = dragObjectTransform.GetComponent<DragObject>();
-                    dragObject.setItemToSlot(slot, slotIndex);
+                    RectTransform slotRect = slot.transform as RectTransform;
 
-                    //ON Special drag - from QuickAccesPanel to QuickAccesPanel and itemDrop
-                    break;
-
-
+                    if (RectTransformUtility.RectangleContainsScreenPoint(slotRect, Input.mousePosition))
+                    {
+                        DragObject dragObject = dragObjectTransform.GetComponent<DragObject>();
+                        dragObject.setItemToSlot(slot, slotIndex);
+                        break;
+                    }
+                    ++slotIndex;
                 }
-                ++slotIndex;
+            }
+            else
+            {
+                bool dropFlag = false;
+                bool moveFlag = false;
+
+                foreach (Transform slot in quickAccesPanel.transform)
+                {
+                    RectTransform slotRect = slot.transform as RectTransform;
+
+                    if (RectTransformUtility.RectangleContainsScreenPoint(slotRect, Input.mousePosition))
+                    {
+                        dropFlag = false;
+                        moveFlag = true;
+                        break;
+                    }
+                    else
+                    {
+                        dropFlag = true;
+                        moveFlag = false;                          
+                    }
+                    ++slotIndex;
+                }
+                if(dropFlag)
+                {
+                    DragObject dragObject = dragObjectTransform.GetComponent<DragObject>();
+                    dragObject.dropItemFromSlot(gameObject.transform);       
+                }
+                if (moveFlag)
+                {
+                    int xx = 15;
+                }
             }
 
             dragObjectTransform.gameObject.SetActive(false);

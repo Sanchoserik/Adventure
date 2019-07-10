@@ -11,8 +11,9 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
 {
     public class DragObject : MonoBehaviour
     {
-        public  A_Item item;
+        public A_Item item;
         public Image itemSprite;
+        public int itemSlotIndex;
 
         public void setSprite(Image newImage)
         {
@@ -29,7 +30,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
         {
             Transform component = slot.transform.GetChild(0);
             Image slotSprite = component.GetComponent<Image>();            
-            slotSprite.sprite = itemSprite.sprite;
+            slotSprite.sprite = itemSprite.sprite;           
             setItemToQuickAcces(slotIndex);
             
             UIItem uiItem = slot.GetComponent<UIItem>();
@@ -41,6 +42,21 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
         {
             InventorySystem invSystem = HeroController.mainHero.inventorySystem;
             invSystem.quickAccesItemStorage[slotIndex] = item;
+            itemSlotIndex = slotIndex;
+        }
+
+        public void dropItemFromSlot(Transform slot)
+        {        
+            InventorySystem invSystem = HeroController.mainHero.inventorySystem;
+            invSystem.quickAccesItemStorage[itemSlotIndex] = null;
+
+            slot.GetComponent<Image>().enabled = false;
+            slot.parent.GetComponent<UIItem>().item = null;
+
+            item = null;
+            itemSprite = null;
+            itemSlotIndex = 99;
+
         }
     }
 
