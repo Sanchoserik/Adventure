@@ -75,7 +75,19 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
                 }
                 if (moveFlag)
                 {
-                    int xx = 15;
+                    //????
+                    foreach (Transform slot in quickAccesPanel.transform)
+                    {
+                        RectTransform slotRect = slot.transform as RectTransform;
+
+                        if (RectTransformUtility.RectangleContainsScreenPoint(slotRect, Input.mousePosition))
+                        {
+                            DragObject dragObject = dragObjectTransform.GetComponent<DragObject>();
+                            dragObject.setItemToSlot(slot, slotIndex);
+                            break;
+                        }
+                        ++slotIndex;
+                    }
                 }
             }
 
