@@ -30,9 +30,10 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
 
         public void OnEndDrag(PointerEventData eventData)
         {
-            int slotIndex = 0;
+            
             if (!gameObject.transform.parent.parent.name.Equals("QuickAccesPanel"))
-            {            
+            {
+                int slotIndex = 0;
                 foreach (Transform slot in quickAccesPanel.transform)
                 {
                     RectTransform slotRect = slot.transform as RectTransform;
@@ -50,7 +51,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             {
                 bool dropFlag = false;
                 bool moveFlag = false;
-
+                
                 foreach (Transform slot in quickAccesPanel.transform)
                 {
                     RectTransform slotRect = slot.transform as RectTransform;
@@ -65,8 +66,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
                     {
                         dropFlag = true;
                         moveFlag = false;                          
-                    }
-                    ++slotIndex;
+                    }                   
                 }
                 if(dropFlag)
                 {
@@ -76,6 +76,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
                 if (moveFlag)
                 {
                     //????
+                    int slotIndex = 0;
                     foreach (Transform slot in quickAccesPanel.transform)
                     {
                         RectTransform slotRect = slot.transform as RectTransform;

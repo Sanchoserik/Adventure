@@ -28,18 +28,17 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
         public void setItemToSlot(Transform slot, int slotIndex)
         {           
             if (checkQuickAccesItems(item)) // if quickAccesPanel already has this type of item
-            {
-                //and remove item from UI
+            {               
                 foreach (Transform qaSlot in slot.parent.transform)
                 {
                     A_Item qaItem = qaSlot.GetComponent<UIItem>().item;
 
                     if (qaItem != null)
-                    if (qaItem.Equals(item))
-                    {
-                        qaItem = null;
-                        qaSlot.GetChild(0).GetComponent<Image>().enabled = false;
-                    }
+                     if (qaItem.Equals(item))
+                     {
+                            qaSlot.GetComponent<UIItem>().item = null;
+                            qaSlot.GetChild(0).GetComponent<Image>().enabled = false;
+                     }
                 }
                 removeItemFromQuickAcces(slotIndex);
             }
