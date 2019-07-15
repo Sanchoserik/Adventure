@@ -11,7 +11,8 @@ namespace Assets.Code.Items
     {
         public int id; // for yet unknown reasons 
         public string category;
-        public int price;
+        public int buyPrice;
+        public int sellPrice;
 
         public A_Item()
         {
@@ -20,7 +21,7 @@ namespace Assets.Code.Items
 
         public A_Item(int _price)
         {
-            price = _price;
+            buyPrice = _price;
         }
 
        

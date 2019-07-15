@@ -10,7 +10,7 @@ using UnityEngine.UI;
 namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
 {
     public class DragObject : MonoBehaviour
-    {
+    {        
         public A_Item item;
         public Image itemSprite;
      
@@ -36,7 +36,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
                     if (qaItem != null)
                      if (qaItem.Equals(item))
                      {
-                            qaSlot.GetComponent<UIItem>().item = null;
+                            qaSlot.GetComponent<UIItem>().item = null; 
                             qaSlot.GetChild(0).GetComponent<Image>().enabled = false;
                      }
                 }
