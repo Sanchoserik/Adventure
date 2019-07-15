@@ -29,13 +29,13 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             ItemFabric itemFabric = new ItemFabric();
             List<ItemsData> alldata = SystemScripts.ResourcesManager.itemsData;
 
-            invSystem.addItem(itemFabric.createPotionAirUpMix1S(alldata.Find(x => x.potionName.Equals("AirUpMix1S"))));
-            invSystem.addItem(itemFabric.createPotionHealP1S(alldata.Find(x => x.potionName.Equals("HealP1S"))));
-            invSystem.addItem(itemFabric.createPotionHealP2M(alldata.Find(x => x.potionName.Equals("HealP2M"))));
-            invSystem.addItem(itemFabric.createPotionHealP2M(alldata.Find(x => x.potionName.Equals("HealP2M"))));
-            invSystem.addItem(itemFabric.createPotionHealP3G(alldata.Find(x => x.potionName.Equals("HealP3G"))));
-            invSystem.addItem(itemFabric.createPotionHealP4U(alldata.Find(x => x.potionName.Equals("HealP4U"))));
-            invSystem.addItem(itemFabric.createPotionHealP4U(alldata.Find(x => x.potionName.Equals("HealP4U"))));
+            invSystem.addItem(itemFabric.createPotionAirUpMix1S(alldata.Find(x => x.itemName.Equals("AirUpMix1S"))));
+            invSystem.addItem(itemFabric.createPotionHealP1S(alldata.Find(x => x.itemName.Equals("HealP1S"))));
+            invSystem.addItem(itemFabric.createPotionHealP2M(alldata.Find(x => x.itemName.Equals("HealP2M"))));
+            invSystem.addItem(itemFabric.createPotionHealP2M(alldata.Find(x => x.itemName.Equals("HealP2M"))));
+            invSystem.addItem(itemFabric.createPotionHealP3G(alldata.Find(x => x.itemName.Equals("HealP3G"))));
+            invSystem.addItem(itemFabric.createPotionHealP4U(alldata.Find(x => x.itemName.Equals("HealP4U"))));
+            invSystem.addItem(itemFabric.createPotionHealP4U(alldata.Find(x => x.itemName.Equals("HealP4U"))));
 
             //invSystem.quickAccesItemStorage[0] = invSystem.mainItemsStorage[1][0];// 
             //invSystem.quickAccesItemStorage[1] = invSystem.mainItemsStorage[1][0];// 

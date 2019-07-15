@@ -33,7 +33,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             if (!toolTipGenerated && item != null)
             {                
                 ItemsLocalisationData itemLocalisation = itemsLocalisationData.Find(x => x.itemName.Equals(item.GetType().Name));
-                ItemsData itemData = itemsData.Find(x => x.potionName.Equals(item.GetType().Name));
+                ItemsData itemData = itemsData.Find(x => x.itemName.Equals(item.GetType().Name));
 
                 toolTipItemName.text = itemLocalisation.itemLocalisedName;
                 toolTipItemDescription.text = getLocalisedText(itemLocalisation, itemData); // itemLocalisation.itemLocalisedDescription;
@@ -46,7 +46,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
         private string getLocalisedText(ItemsLocalisationData localisation, ItemsData data)
         {
             string fullDescription = localisation.itemLocalisedDescription;
-            foreach(KeyValuePair<string, string> pair in data.potionParameters)
+            foreach(KeyValuePair<string, string> pair in data.itemsParameters)
             {
                 fullDescription = fullDescription.Replace("$" + pair.Key + "$", pair.Value);
             }

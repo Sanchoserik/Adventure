@@ -10,7 +10,7 @@ namespace Assets.Code.SystemScripts.LoadValuesScripts
     //storage for all item, skill etc. values 
     public class LoadValuesFromXML
     {
-        private string itemsPath = "Assets/Resources/xml/items/ItemsPotions.xml";
+        private string itemsPath = "Assets/Resources/xml/items/Items.xml";
         private string skillsPath = "Assets/Resources/xml/skills/skills.xml";
 
         public LoadValuesFromXML()
@@ -38,8 +38,8 @@ namespace Assets.Code.SystemScripts.LoadValuesScripts
                         potionParameters.Add(valTag.Attribute("name").Value, valTag.Value);                        
                     }
                     ItemsData itemData = new ItemsData();
-                    itemData.potionName = itemName;
-                    itemData.potionParameters = potionParameters;
+                    itemData.itemName = itemName;
+                    itemData.itemsParameters = potionParameters;
                     ResourcesManager.itemsData.Add(itemData);  
                 }               
             }

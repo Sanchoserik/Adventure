@@ -109,13 +109,13 @@ namespace Assets.Code.SystemScripts.LocalisationScripts
             {
                 case "ENG": {
                         interfaceLocPath = "Assets/Resources/xml/interfaceLoc/ENG.xml";                     
-                        itemsLocPath = "Assets/Resources/xml/items/ItemsPotionsLocUA.xml"; // Add English Localisation later(
+                        itemsLocPath = "Assets/Resources/xml/items/ItemsLocUA.xml"; // Add English Localisation later(
                         skillsLocPath = "Assets/Resources/xml/skills/skillsLocUA.xml";// // Add English Localisation later(
                         systemMessagesPath = "Assets/Resources/xml/interfaceLoc/systemMessagesENG.xml";
                         break; }
                 case "UA": {
                         interfaceLocPath = "Assets/Resources/xml/interfaceLoc/UA.xml";
-                        itemsLocPath = "Assets/Resources/xml/items/ItemsPotionsLocUA.xml";
+                        itemsLocPath = "Assets/Resources/xml/items/ItemsLocUA.xml";
                         skillsLocPath = "Assets/Resources/xml/skills/skillsLocUA.xml";
                         systemMessagesPath = "Assets/Resources/xml/interfaceLoc/systemMessagesUA.xml";
                         break; }

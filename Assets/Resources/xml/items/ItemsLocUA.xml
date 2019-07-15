@@ -238,4 +238,157 @@
 <LocDescr name = "LocDescr">Збільшує захист від фізичних атак на $val$, протягом $time$ кроків.</LocDescr>
 </item>
 
+<item name = "DefAir1S">
+<LocName name = "LocName">Малий талісман повітря</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії повітря велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefAir2M">
+<LocName name = "LocName">Середній талісман повітря</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії повітря велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefAir3G">
+<LocName name = "LocName">Великий талісман повітря</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії повітря велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefAir4U">
+<LocName name = "LocName">Ультра талісман повітря</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії повітря велечиною в $maxEne$.</LocDescr>
+</item>
+
+<item name = "DefDarkness1S">
+<LocName name = "LocName">Малий талісман темряви</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії темряви велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefDarkness2M">
+<LocName name = "LocName">Середній талісман темряви</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії темряви велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefDarkness3G">
+<LocName name = "LocName">Великий талісман темряви</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії темряви велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefDarkness4U">
+<LocName name = "LocName">Ультра талісман темряви</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії темряви велечиною в $maxEne$.</LocDescr>
+</item>
+
+<item name = "DefDeath1S">
+<LocName name = "LocName">Малий талісман смерті</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії смерті велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefDeath2M">
+<LocName name = "LocName">Середній талісман смерті</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії смерті велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefDeath3G">
+<LocName name = "LocName">Великий талісман смерті</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії смерті велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefDeath4U">
+<LocName name = "LocName">Ультра талісман смерті</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії смерті велечиною в $maxEne$.</LocDescr>
+</item>
+
+<item name = "DefEarth1S">
+<LocName name = "LocName">Малий талісман землі</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії землі велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefEarth2M">
+<LocName name = "LocName">Середній талісман землі</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії землі велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefEarth3G">
+<LocName name = "LocName">Великий талісман землі</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії землі велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefEarth4U">
+<LocName name = "LocName">Ультра талісман землі</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії землі велечиною в $maxEne$.</LocDescr>
+</item>
+
+<item name = "DefFire1S">
+<LocName name = "LocName">Малий талісман вогню</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії вогню велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefFire2M">
+<LocName name = "LocName">Середній талісман вогню</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії вогню велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefFire3G">
+<LocName name = "LocName">Великий талісман вогню</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії вогню велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefFire4U">
+<LocName name = "LocName">Ультра талісман вогню</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії вогню велечиною в $maxEne$.</LocDescr>
+</item>
+
+<item name = "DefLife1S">
+<LocName name = "LocName">Малий талісман життя</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії життя велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefLife2M">
+<LocName name = "LocName">Середній талісман життя</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії життя велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefLife3G">
+<LocName name = "LocName">Великий талісман життя</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії життя велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefLife4U">
+<LocName name = "LocName">Ультра талісман життя</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії життя велечиною в $maxEne$.</LocDescr>
+</item>
+
+<item name = "DefLight1S">
+<LocName name = "LocName">Малий талісман світла</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії світла велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefLight2M">
+<LocName name = "LocName">Середній талісман світла</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії світла велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefLight3G">
+<LocName name = "LocName">Великий талісман світла</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії світла велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefLight4U">
+<LocName name = "LocName">Ультра талісман світла</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії світла велечиною в $maxEne$.</LocDescr>
+</item>
+
+<item name = "DefLightning1S">
+<LocName name = "LocName">Малий талісман блискавки</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії блискавки велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefLightning2M">
+<LocName name = "LocName">Середній талісман блискавки</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії блискавки велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefLightning3G">
+<LocName name = "LocName">Великий талісман блискавки</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії блискавки велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefLightning4U">
+<LocName name = "LocName">Ультра талісман блискавки</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії блискавки велечиною в $maxEne$.</LocDescr>
+</item>
+
+<item name = "DefWater1S">
+<LocName name = "LocName">Малий талісман води</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії води велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefWater2M">
+<LocName name = "LocName">Середній талісман води</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії води велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefWater3G">
+<LocName name = "LocName">Великий талісман води</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії води велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefWater4U">
+<LocName name = "LocName">Ультра талісман води</LocName>
+<LocDescr name = "LocDescr">Дає захист від атак магії води велечиною в $maxEne$.</LocDescr>
+</item>
+
 </items>
