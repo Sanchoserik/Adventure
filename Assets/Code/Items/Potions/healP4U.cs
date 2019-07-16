@@ -12,7 +12,7 @@ namespace Assets.Code.Items.Potions
     {
         public int restorenValue;
 
-        public HealP4U(int _restorenValue, int _price) : base(_price)
+        public HealP4U(int _restorenValue, int _buyPrice, int _sellPrice) : base(_buyPrice, _sellPrice)
         {
             restorenValue = _restorenValue;
             category = "Potions";

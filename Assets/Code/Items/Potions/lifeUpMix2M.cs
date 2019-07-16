@@ -13,7 +13,7 @@ namespace Assets.Code.Items.Potions
         public int defValue;
         public int defTime;
 
-        public LifeUpMix2M(int _defVal, int _defTime, int _price) : base(_price)
+        public LifeUpMix2M(int _defVal, int _defTime, int _buyPrice, int _sellPrice) : base(_buyPrice, _sellPrice)
         {
             defValue = _defVal;
             defTime = _defTime;

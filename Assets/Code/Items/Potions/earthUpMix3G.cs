@@ -13,7 +13,7 @@ namespace Assets.Code.Items.Potions
         public int defValue;
         public int defTime;
 
-        public EarthUpMix3G(int _defVal, int _defTime, int _price) : base(_price)
+        public EarthUpMix3G(int _defVal, int _defTime, int _buyPrice, int _sellPrice) : base(_buyPrice, _sellPrice)
         {
             defValue = _defVal;
             defTime = _defTime;

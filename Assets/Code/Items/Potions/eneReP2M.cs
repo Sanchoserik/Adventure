@@ -13,7 +13,7 @@ namespace Assets.Code.Items.Potions
         public int regenerationValue;
         public int defTime;
 
-        public EneReP2M(int _regenerationValue, int _defTime, int _price) : base(_price)
+        public EneReP2M(int _regenerationValue, int _defTime, int _buyPrice, int _sellPrice) : base(_buyPrice, _sellPrice)
         {
             regenerationValue = _regenerationValue;
             defTime = _defTime;

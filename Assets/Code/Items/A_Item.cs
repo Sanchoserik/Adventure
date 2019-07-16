@@ -19,9 +19,10 @@ namespace Assets.Code.Items
 
         }
 
-        public A_Item(int _price)
+        public A_Item(int _buyPrice, int _sellPrice)
         {
-            buyPrice = _price;
+            buyPrice = _buyPrice;
+            sellPrice = _sellPrice;
         }
 
        

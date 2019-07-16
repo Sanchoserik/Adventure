@@ -3,531 +3,531 @@
 <item name = "HealP1S">
 <val name = "val">20</val>
 <val name = "buyPrice">200</val>
-<val name = "cellPrice">100</val>
+<val name = "sellPrice">100</val>
 </item>
 <item name = "HealP2M">
 <val name = "val">50</val>
 <val name = "buyPrice">500</val>
-<val name = "cellPrice">250</val>
+<val name = "sellPrice">250</val>
 </item>
 <item name = "HealP3G">
 <val name = "val">80</val>
 <val name = "buyPrice">1000</val>
-<val name = "cellPrice">500</val>
+<val name = "sellPrice">500</val>
 </item>
 <item name = "HealP4U">
 <val name = "val">100</val>
 <val name = "buyPrice">1500</val>
-<val name = "cellPrice">750</val>
+<val name = "sellPrice">750</val>
 </item>
 
 <item name = "EneP1S">
 <val name = "val">20</val>
 <val name = "buyPrice">200</val>
-<val name = "cellPrice">100</val>
+<val name = "sellPrice">100</val>
 </item>
 <item name = "EneP2M">
 <val name = "val">50</val>
 <val name = "buyPrice">500</val>
-<val name = "cellPrice">250</val>
+<val name = "sellPrice">250</val>
 </item>
 <item name = "EneP3G">
 <val name = "val">80</val>
 <val name = "buyPrice">1000</val>
-<val name = "cellPrice">500</val>
+<val name = "sellPrice">500</val>
 </item>
 <item name = "EneP4U">
 <val name = "val">100</val>
 <val name = "buyPrice">1500</val>
-<val name = "cellPrice">750</val>
+<val name = "sellPrice">750</val>
 </item>
 
 <item name = "HealReP1S">
 <val name = "val">10</val>
 <val name = "time">3</val>
 <val name = "buyPrice">400</val>
-<val name = "cellPrice">200</val>
+<val name = "sellPrice">200</val>
 </item>
 <item name = "HealReP2M">
 <val name = "val">30</val>
 <val name = "time">4</val>
 <val name = "buyPrice">1200</val>
-<val name = "cellPrice">600</val>
+<val name = "sellPrice">600</val>
 </item>
 <item name = "HealReP3G">
 <val name = "val">50</val>
 <val name = "time">5</val>
 <val name = "buyPrice">2500</val>
-<val name = "cellPrice">1250</val>
+<val name = "sellPrice">1250</val>
 </item>
 <item name = "HealReP4U">
 <val name = "val">70</val>
 <val name = "time">6</val>
 <val name = "buyPrice">5000</val>
-<val name = "cellPrice">2500</val>
+<val name = "sellPrice">2500</val>
 </item>
 
 <item name = "EneReP1S">
 <val name = "val">10</val>
 <val name = "time">3</val>
 <val name = "buyPrice">400</val>
-<val name = "cellPrice">200</val>
+<val name = "sellPrice">200</val>
 </item>
 <item name = "EneReP2M">
 <val name = "val">30</val>
 <val name = "time">4</val>
 <val name = "buyPrice">1200</val>
-<val name = "cellPrice">600</val>
+<val name = "sellPrice">600</val>
 </item>
 <item name = "EneReP3G">
 <val name = "val">50</val>
 <val name = "time">5</val>
 <val name = "buyPrice">2500</val>
-<val name = "cellPrice">1250</val>
+<val name = "sellPrice">1250</val>
 </item>
 <item name = "EneReP4U">
 <val name = "val">70</val>
 <val name = "time">6</val>
 <val name = "buyPrice">5000</val>
-<val name = "cellPrice">2500</val>
+<val name = "sellPrice">2500</val>
 </item>
 
 <item name = "AirUpMix1S">
 <val name = "val">1</val>
 <val name = "time">3</val>
 <val name = "buyPrice">2500</val>
-<val name = "cellPrice">1250</val>
+<val name = "sellPrice">1250</val>
 </item>
 <item name = "AirUpMix2M">
 <val name = "val">2</val>
 <val name = "time">4</val>
 <val name = "buyPrice">5000</val>
-<val name = "cellPrice">2500</val>
+<val name = "sellPrice">2500</val>
 </item>
 <item name = "AirUpMix3G">
 <val name = "val">3</val>
 <val name = "time">5</val>
 <val name = "buyPrice">10000</val>
-<val name = "cellPrice">5000</val>
+<val name = "sellPrice">5000</val>
 </item>
 <item name = "AirUpMix4U">
 <val name = "val">4</val>
 <val name = "time">6</val>
 <val name = "buyPrice">20000</val>
-<val name = "cellPrice">10000</val>
+<val name = "sellPrice">10000</val>
 </item>
 
 <item name = "DarknessUpMix1S">
 <val name = "val">1</val>
 <val name = "time">3</val>
 <val name = "buyPrice">2500</val>
-<val name = "cellPrice">1250</val>
+<val name = "sellPrice">1250</val>
 </item>
 <item name = "DarknessUpMix2M">
 <val name = "val">2</val>
 <val name = "time">4</val>
 <val name = "buyPrice">5000</val>
-<val name = "cellPrice">2500</val>
+<val name = "sellPrice">2500</val>
 </item>
 <item name = "DarknessUpMix3G">
 <val name = "val">3</val>
 <val name = "time">5</val>
 <val name = "buyPrice">10000</val>
-<val name = "cellPrice">5000</val>
+<val name = "sellPrice">5000</val>
 </item>
 <item name = "DarknessUpMix4U">
 <val name = "val">4</val>
 <val name = "time">6</val>
 <val name = "buyPrice">20000</val>
-<val name = "cellPrice">10000</val>
+<val name = "sellPrice">10000</val>
 </item>
 
 <item name = "DeathUpMix1S">
 <val name = "val">1</val>
 <val name = "time">3</val>
 <val name = "buyPrice">2500</val>
-<val name = "cellPrice">1250</val>
+<val name = "sellPrice">1250</val>
 </item>
 <item name = "DeathUpMix2M">
 <val name = "val">2</val>
 <val name = "time">4</val>
 <val name = "buyPrice">5000</val>
-<val name = "cellPrice">2500</val>
+<val name = "sellPrice">2500</val>
 </item>
 <item name = "DeathUpMix3G">
 <val name = "val">3</val>
 <val name = "time">5</val>
 <val name = "buyPrice">10000</val>
-<val name = "cellPrice">5000</val>
+<val name = "sellPrice">5000</val>
 </item>
 <item name = "DeathUpMix4U">
 <val name = "val">4</val>
 <val name = "time">6</val>
 <val name = "buyPrice">20000</val>
-<val name = "cellPrice">10000</val>
+<val name = "sellPrice">10000</val>
 </item>
 
 <item name = "EarthUpMix1S">
 <val name = "val">1</val>
 <val name = "time">3</val>
 <val name = "buyPrice">2500</val>
-<val name = "cellPrice">1250</val>
+<val name = "sellPrice">1250</val>
 </item>
 <item name = "EarthUpMix2M">
 <val name = "val">2</val>
 <val name = "time">4</val>
 <val name = "buyPrice">5000</val>
-<val name = "cellPrice">2500</val>
+<val name = "sellPrice">2500</val>
 </item>
 <item name = "EarthUpMix3G">
 <val name = "val">3</val>
 <val name = "time">5</val>
 <val name = "buyPrice">10000</val>
-<val name = "cellPrice">5000</val>
+<val name = "sellPrice">5000</val>
 </item>
 <item name = "EarthUpMix4U">
 <val name = "val">4</val>
 <val name = "time">6</val>
 <val name = "buyPrice">20000</val>
-<val name = "cellPrice">10000</val>
+<val name = "sellPrice">10000</val>
 </item>
 
 <item name = "FireUpMix1S">
 <val name = "val">1</val>
 <val name = "time">3</val>
 <val name = "buyPrice">2500</val>
-<val name = "cellPrice">12500</val>
+<val name = "sellPrice">12500</val>
 </item>
 <item name = "FireUpMix2M">
 <val name = "val">2</val>
 <val name = "time">4</val>
 <val name = "buyPrice">5000</val>
-<val name = "cellPrice">2500</val>
+<val name = "sellPrice">2500</val>
 </item>
 <item name = "FireUpMix3G">
 <val name = "val">3</val>
 <val name = "time">5</val>
 <val name = "buyPrice">10000</val>
-<val name = "cellPrice">5000</val>
+<val name = "sellPrice">5000</val>
 </item>
 <item name = "FireUpMix4U">
 <val name = "val">4</val>
 <val name = "time">6</val>
 <val name = "buyPrice">20000</val>
-<val name = "cellPrice">10000</val>
+<val name = "sellPrice">10000</val>
 </item>
 
 <item name = "LifeUpMix1S">
 <val name = "val">1</val>
 <val name = "time">3</val>
 <val name = "buyPrice">2500</val>
-<val name = "cellPrice">12500</val>
+<val name = "sellPrice">12500</val>
 </item>
 <item name = "LifeUpMix2M">
 <val name = "val">2</val>
 <val name = "time">4</val>
 <val name = "buyPrice">5000</val>
-<val name = "cellPrice">2500</val>
+<val name = "sellPrice">2500</val>
 </item>
 <item name = "LifeUpMix3G">
 <val name = "val">3</val>
 <val name = "time">5</val>
 <val name = "buyPrice">10000</val>
-<val name = "cellPrice">5000</val>
+<val name = "sellPrice">5000</val>
 </item>
 <item name = "LifeUpMix4U">
 <val name = "val">4</val>
 <val name = "time">6</val>
 <val name = "buyPrice">20000</val>
-<val name = "cellPrice">10000</val>
+<val name = "sellPrice">10000</val>
 </item>
 
 <item name = "LightningUpMix1S">
 <val name = "val">1</val>
 <val name = "time">3</val>
 <val name = "buyPrice">2500</val>
-<val name = "cellPrice">1250</val>
+<val name = "sellPrice">1250</val>
 </item>
 <item name = "LightningUpMix2M">
 <val name = "val">2</val>
 <val name = "time">4</val>
 <val name = "buyPrice">5000</val>
-<val name = "cellPrice">2500</val>
+<val name = "sellPrice">2500</val>
 </item>
 <item name = "LightningUpMix3G">
 <val name = "val">3</val>
 <val name = "time">5</val>
 <val name = "buyPrice">10000</val>
-<val name = "cellPrice">5000</val>
+<val name = "sellPrice">5000</val>
 </item>
 <item name = "LightningUpMix4U">
 <val name = "val">4</val>
 <val name = "time">6</val>
 <val name = "buyPrice">20000</val>
-<val name = "cellPrice">10000</val>
+<val name = "sellPrice">10000</val>
 </item>
 
 <item name = "LightUpMix1S">
 <val name = "val">1</val>
 <val name = "time">3</val>
 <val name = "buyPrice">2500</val>
-<val name = "cellPrice">1250</val>
+<val name = "sellPrice">1250</val>
 </item>
 <item name = "LightUpMix2M">
 <val name = "val">2</val>
 <val name = "time">4</val>
 <val name = "buyPrice">5000</val>
-<val name = "cellPrice">2500</val>
+<val name = "sellPrice">2500</val>
 </item>
 <item name = "LightUpMix3G">
 <val name = "val">3</val>
 <val name = "time">5</val>
 <val name = "buyPrice">10000</val>
-<val name = "cellPrice">5000</val>
+<val name = "sellPrice">5000</val>
 </item>
 <item name = "LightUpMix4U">
 <val name = "val">4</val>
 <val name = "time">6</val>
 <val name = "buyPrice">20000</val>
-<val name = "cellPrice">10000</val>
+<val name = "sellPrice">10000</val>
 </item>
 
 <item name = "WaterUpMix1S">
 <val name = "val">1</val>
 <val name = "time">3</val>
 <val name = "buyPrice">2500</val>
-<val name = "cellPrice">1250</val>
+<val name = "sellPrice">1250</val>
 </item>
 <item name = "WaterUpMix2M">
 <val name = "val">2</val>
 <val name = "time">4</val>
 <val name = "buyPrice">5000</val>
-<val name = "cellPrice">2500</val>
+<val name = "sellPrice">2500</val>
 </item>
 <item name = "WaterUpMix3G">
 <val name = "val">3</val>
 <val name = "time">5</val>
 <val name = "buyPrice">10000</val>
-<val name = "cellPrice">5000</val>
+<val name = "sellPrice">5000</val>
 </item>
 <item name = "WaterUpMix4U">
 <val name = "val">4</val>
 <val name = "time">6</val>
 <val name = "buyPrice">20000</val>
-<val name = "cellPrice">10000</val>
+<val name = "sellPrice">10000</val>
 </item>
 
 <item name = "PhysUpMix1S">
 <val name = "val">1</val>
 <val name = "time">3</val>
 <val name = "buyPrice">2500</val>
-<val name = "cellPrice">1250</val>
+<val name = "sellPrice">1250</val>
 </item>
 <item name = "PhysUpMix2M">
 <val name = "val">2</val>
 <val name = "time">4</val>
 <val name = "buyPrice">5000</val>
-<val name = "cellPrice">2500</val>
+<val name = "sellPrice">2500</val>
 </item>
 <item name = "PhysUpMix3G">
 <val name = "val">3</val>
 <val name = "time">5</val>
 <val name = "buyPrice">10000</val>
-<val name = "cellPrice">5000</val>
+<val name = "sellPrice">5000</val>
 </item>
 <item name = "PhysUpMix4U">
 <val name = "val">4</val>
 <val name = "time">6</val>
 <val name = "buyPrice">20000</val>
-<val name = "cellPrice">10000</val>
+<val name = "sellPrice">10000</val>
 </item>
 
 <item name = "DefAir1S">
 <val name = "maxEne">250</val>
 <val name = "buyPrice">500</val>
-<val name = "cellPrice">250</val>
+<val name = "sellPrice">250</val>
 </item>
 <item name = "DefAir2M">
 <val name = "maxEne">800</val>
 <val name = "buyPrice">1500</val>
-<val name = "cellPrice">1250</val>
+<val name = "sellPrice">1250</val>
 </item>
 <item name = "DefAir3G">
 <val name = "maxEne">1600</val>
 <val name = "buyPrice">3000</val>
-<val name = "cellPrice">1500</val>
+<val name = "sellPrice">1500</val>
 </item>
 <item name = "DefAir4U">
 <val name = "maxEne">2500</val>
 <val name = "buyPrice">6000</val>
-<val name = "cellPrice">3000</val>
+<val name = "sellPrice">3000</val>
 </item>
 
 <item name = "DefDarkness1S">
 <val name = "maxEne">250</val>
 <val name = "buyPrice">500</val>
-<val name = "cellPrice">250</val>
+<val name = "sellPrice">250</val>
 </item>
 <item name = "DefDarkness2M">
 <val name = "maxEne">800</val>
 <val name = "buyPrice">1500</val>
-<val name = "cellPrice">1250</val>
+<val name = "sellPrice">1250</val>
 </item>
 <item name = "DefDarkness3G">
 <val name = "maxEne">1600</val>
 <val name = "buyPrice">3000</val>
-<val name = "cellPrice">1500</val>
+<val name = "sellPrice">1500</val>
 </item>
 <item name = "DefDarkness4U">
 <val name = "maxEne">2500</val>
 <val name = "buyPrice">6000</val>
-<val name = "cellPrice">3000</val>
+<val name = "sellPrice">3000</val>
 </item>
 
 <item name = "DefDeath1S">
 <val name = "maxEne">250</val>
 <val name = "buyPrice">500</val>
-<val name = "cellPrice">250</val>
+<val name = "sellPrice">250</val>
 </item>
 <item name = "DefDeath2M">
 <val name = "maxEne">800</val>
 <val name = "buyPrice">1500</val>
-<val name = "cellPrice">1250</val>
+<val name = "sellPrice">1250</val>
 </item>
 <item name = "DefDeath3G">
 <val name = "maxEne">1600</val>
 <val name = "buyPrice">3000</val>
-<val name = "cellPrice">1500</val>
+<val name = "sellPrice">1500</val>
 </item>
 <item name = "DefDeath4U">
 <val name = "maxEne">2500</val>
 <val name = "buyPrice">6000</val>
-<val name = "cellPrice">3000</val>
+<val name = "sellPrice">3000</val>
 </item>
 
 <item name = "DefEarth1S">
 <val name = "maxEne">250</val>
 <val name = "buyPrice">500</val>
-<val name = "cellPrice">250</val>
+<val name = "sellPrice">250</val>
 </item>
 <item name = "DefEarth2M">
 <val name = "maxEne">800</val>
 <val name = "buyPrice">1500</val>
-<val name = "cellPrice">1250</val>
+<val name = "sellPrice">1250</val>
 </item>
 <item name = "DefEarth3G">
 <val name = "maxEne">1600</val>
 <val name = "buyPrice">3000</val>
-<val name = "cellPrice">1500</val>
+<val name = "sellPrice">1500</val>
 </item>
 <item name = "DefEarth4U">
 <val name = "maxEne">2500</val>
 <val name = "buyPrice">6000</val>
-<val name = "cellPrice">3000</val>
+<val name = "sellPrice">3000</val>
 </item>
 
 <item name = "DefFire1S">
 <val name = "maxEne">250</val>
 <val name = "buyPrice">500</val>
-<val name = "cellPrice">250</val>
+<val name = "sellPrice">250</val>
 </item>
 <item name = "DefFire2M">
 <val name = "maxEne">800</val>
 <val name = "buyPrice">1500</val>
-<val name = "cellPrice">1250</val>
+<val name = "sellPrice">1250</val>
 </item>
 <item name = "DefFire3G">
 <val name = "maxEne">1600</val>
 <val name = "buyPrice">3000</val>
-<val name = "cellPrice">1500</val>
+<val name = "sellPrice">1500</val>
 </item>
 <item name = "DefFire4U">
 <val name = "maxEne">2500</val>
 <val name = "buyPrice">6000</val>
-<val name = "cellPrice">3000</val>
+<val name = "sellPrice">3000</val>
 </item>
 
 <item name = "DefLife1S">
 <val name = "maxEne">250</val>
 <val name = "buyPrice">500</val>
-<val name = "cellPrice">250</val>
+<val name = "sellPrice">250</val>
 </item>
 <item name = "DefLife2M">
 <val name = "maxEne">800</val>
 <val name = "buyPrice">1500</val>
-<val name = "cellPrice">1250</val>
+<val name = "sellPrice">1250</val>
 </item>
 <item name = "DefLife3G">
 <val name = "maxEne">1600</val>
 <val name = "buyPrice">3000</val>
-<val name = "cellPrice">1500</val>
+<val name = "sellPrice">1500</val>
 </item>
 <item name = "DefLife4U">
 <val name = "maxEne">2500</val>
 <val name = "buyPrice">6000</val>
-<val name = "cellPrice">3000</val>
+<val name = "sellPrice">3000</val>
 </item>
 
 <item name = "DefLight1S">
 <val name = "maxEne">250</val>
 <val name = "buyPrice">500</val>
-<val name = "cellPrice">250</val>
+<val name = "sellPrice">250</val>
 </item>
 <item name = "DefLight2M">
 <val name = "maxEne">800</val>
 <val name = "buyPrice">1500</val>
-<val name = "cellPrice">1250</val>
+<val name = "sellPrice">1250</val>
 </item>
 <item name = "DefLight3G">
 <val name = "maxEne">1600</val>
 <val name = "buyPrice">3000</val>
-<val name = "cellPrice">1500</val>
+<val name = "sellPrice">1500</val>
 </item>
 <item name = "DefLight4U">
 <val name = "maxEne">2500</val>
 <val name = "buyPrice">6000</val>
-<val name = "cellPrice">3000</val>
+<val name = "sellPrice">3000</val>
 </item>
 
 <item name = "DefLightning1S">
 <val name = "maxEne">250</val>
 <val name = "buyPrice">500</val>
-<val name = "cellPrice">250</val>
+<val name = "sellPrice">250</val>
 </item>
 <item name = "DefLightning2M">
 <val name = "maxEne">800</val>
 <val name = "buyPrice">1500</val>
-<val name = "cellPrice">1250</val>
+<val name = "sellPrice">1250</val>
 </item>
 <item name = "DefLightning3G">
 <val name = "maxEne">1600</val>
 <val name = "buyPrice">3000</val>
-<val name = "cellPrice">1500</val>
+<val name = "sellPrice">1500</val>
 </item>
 <item name = "DefLightning4U">
 <val name = "maxEne">2500</val>
 <val name = "buyPrice">6000</val>
-<val name = "cellPrice">3000</val>
+<val name = "sellPrice">3000</val>
 
 <item name = "DefWater1S">
 <val name = "maxEne">250</val>
 <val name = "buyPrice">500</val>
-<val name = "cellPrice">250</val>
+<val name = "sellPrice">250</val>
 </item>
 <item name = "DefWater2M">
 <val name = "maxEne">800</val>
 <val name = "buyPrice">1500</val>
-<val name = "cellPrice">1250</val>
+<val name = "sellPrice">1250</val>
 </item>
 <item name = "DefWater3G">
 <val name = "maxEne">1600</val>
 <val name = "buyPrice">3000</val>
-<val name = "cellPrice">1500</val>
+<val name = "sellPrice">1500</val>
 </item>
 <item name = "DefWater4U">
 <val name = "maxEne">2500</val>
 <val name = "buyPrice">6000</val>
-<val name = "cellPrice">3000</val>
+<val name = "sellPrice">3000</val>
 </item>
 
 </items>

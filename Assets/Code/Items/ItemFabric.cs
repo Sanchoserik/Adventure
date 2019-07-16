@@ -14,7 +14,8 @@ namespace Assets.Code.Items
             return new AirUpMix1S( 
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]), 
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionAirUpMix2M(ItemsData data)
@@ -22,7 +23,8 @@ namespace Assets.Code.Items
             return new AirUpMix2M(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionAirUpMix3G(ItemsData data)
@@ -30,7 +32,8 @@ namespace Assets.Code.Items
             return new AirUpMix3G(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionAirUpMix4U(ItemsData data)
@@ -38,7 +41,8 @@ namespace Assets.Code.Items
             return new AirUpMix4U(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionDarknessUpMix1S(ItemsData data)
@@ -46,7 +50,8 @@ namespace Assets.Code.Items
             return new DarknessUpMix1S(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionDarknessUpMix2M(ItemsData data)
@@ -54,7 +59,8 @@ namespace Assets.Code.Items
             return new DarknessUpMix2M(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionDarknessUpMix3G(ItemsData data)
@@ -62,7 +68,8 @@ namespace Assets.Code.Items
             return new DarknessUpMix3G(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionDarknessUpMix4U(ItemsData data)
@@ -70,7 +77,8 @@ namespace Assets.Code.Items
             return new DarknessUpMix4U(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionDeathUpMix1S(ItemsData data)
@@ -78,7 +86,8 @@ namespace Assets.Code.Items
             return new DeathUpMix1S(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionDeathUpMix2M(ItemsData data)
@@ -86,7 +95,8 @@ namespace Assets.Code.Items
             return new DeathUpMix2M(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionDeathUpMix3G(ItemsData data)
@@ -94,7 +104,8 @@ namespace Assets.Code.Items
             return new DeathUpMix3G(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionDeathUpMix4U(ItemsData data)
@@ -102,7 +113,8 @@ namespace Assets.Code.Items
             return new DeathUpMix4U(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionEarthUpMix1S(ItemsData data)
@@ -110,7 +122,8 @@ namespace Assets.Code.Items
             return new EarthUpMix1S(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionEarthUpMix2M(ItemsData data)
@@ -118,7 +131,8 @@ namespace Assets.Code.Items
             return new EarthUpMix2M(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionEarthUpMix3G(ItemsData data)
@@ -126,7 +140,8 @@ namespace Assets.Code.Items
             return new EarthUpMix3G(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionEarthUpMix4U(ItemsData data)
@@ -134,35 +149,40 @@ namespace Assets.Code.Items
             return new EarthUpMix4U(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionEneP1S(ItemsData data)
         {
             return new EneP1S(
                 Convert.ToInt32(data.itemsParameters["val"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionEneP2M(ItemsData data)
         {
             return new EneP2M(
                 Convert.ToInt32(data.itemsParameters["val"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionEneP3G(ItemsData data)
         {
             return new EneP3G(
                 Convert.ToInt32(data.itemsParameters["val"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionEneP4U(ItemsData data)
         {
             return new EneP4U(
                 Convert.ToInt32(data.itemsParameters["val"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionEneReP1S(ItemsData data)
@@ -170,7 +190,8 @@ namespace Assets.Code.Items
             return new EneReP1S(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionEneReP2M(ItemsData data)
@@ -178,7 +199,8 @@ namespace Assets.Code.Items
             return new EneReP2M(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionEneReP3G(ItemsData data)
@@ -186,7 +208,8 @@ namespace Assets.Code.Items
             return new EneReP3G(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionEneReP4U(ItemsData data)
@@ -194,7 +217,8 @@ namespace Assets.Code.Items
             return new EneReP4U(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionFireUpMix1S(ItemsData data)
@@ -202,7 +226,8 @@ namespace Assets.Code.Items
             return new FireUpMix1S(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionFireUpMix2M(ItemsData data)
@@ -210,7 +235,8 @@ namespace Assets.Code.Items
             return new FireUpMix2M(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionFireUpMix3G(ItemsData data)
@@ -218,7 +244,8 @@ namespace Assets.Code.Items
             return new FireUpMix3G(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionFireUpMix4U(ItemsData data)
@@ -226,35 +253,40 @@ namespace Assets.Code.Items
             return new FireUpMix4U(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionHealP1S(ItemsData data)
         {
             return new HealP1S(
                 Convert.ToInt32(data.itemsParameters["val"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionHealP2M(ItemsData data)
         {
             return new HealP2M(
                 Convert.ToInt32(data.itemsParameters["val"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionHealP3G(ItemsData data)
         {
             return new HealP3G(
                 Convert.ToInt32(data.itemsParameters["val"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionHealP4U(ItemsData data)
         {
             return new HealP4U(
                 Convert.ToInt32(data.itemsParameters["val"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionHealReP1S(ItemsData data)
@@ -262,7 +294,8 @@ namespace Assets.Code.Items
             return new HealReP1S(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionHealReP2M(ItemsData data)
@@ -270,7 +303,8 @@ namespace Assets.Code.Items
             return new HealReP2M(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionHealReP3G(ItemsData data)
@@ -278,7 +312,8 @@ namespace Assets.Code.Items
             return new HealReP3G(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionHealReP4U(ItemsData data)
@@ -286,7 +321,8 @@ namespace Assets.Code.Items
             return new HealReP4U(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionLifeUpMix1S(ItemsData data)
@@ -294,7 +330,8 @@ namespace Assets.Code.Items
             return new LifeUpMix1S(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionLifeUpMix2M(ItemsData data)
@@ -302,7 +339,8 @@ namespace Assets.Code.Items
             return new LifeUpMix2M(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionLifeUpMix3G(ItemsData data)
@@ -310,7 +348,8 @@ namespace Assets.Code.Items
             return new LifeUpMix3G(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionLifeUpMix4G(ItemsData data)
@@ -318,7 +357,8 @@ namespace Assets.Code.Items
             return new LifeUpMix4U(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionLightningUpMix1S(ItemsData data)
@@ -326,7 +366,8 @@ namespace Assets.Code.Items
             return new LightningUpMix1S(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionLightningUpMix2M(ItemsData data)
@@ -334,7 +375,8 @@ namespace Assets.Code.Items
             return new LightningUpMix2M(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionLightningUpMix3G(ItemsData data)
@@ -342,7 +384,8 @@ namespace Assets.Code.Items
             return new LightningUpMix3G(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionLightningUpMix4U(ItemsData data)
@@ -350,7 +393,8 @@ namespace Assets.Code.Items
             return new LightningUpMix4U(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionLightUpMix1S(ItemsData data)
@@ -358,7 +402,8 @@ namespace Assets.Code.Items
             return new LightUpMix1S(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionLightUpMix2M(ItemsData data)
@@ -366,7 +411,8 @@ namespace Assets.Code.Items
             return new LightUpMix2M(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionLightUpMix3G(ItemsData data)
@@ -374,7 +420,8 @@ namespace Assets.Code.Items
             return new LightUpMix3G(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionLightUpMix4U(ItemsData data)
@@ -382,7 +429,8 @@ namespace Assets.Code.Items
             return new LightUpMix4U(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionPhysUpMix1S(ItemsData data)
@@ -390,7 +438,8 @@ namespace Assets.Code.Items
             return new PhysUpMix1S(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionPhysUpMix2M(ItemsData data)
@@ -398,7 +447,8 @@ namespace Assets.Code.Items
             return new PhysUpMix2M(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionPhysUpMix3G(ItemsData data)
@@ -406,7 +456,8 @@ namespace Assets.Code.Items
             return new PhysUpMix3G(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionPhysUpMix4U(ItemsData data)
@@ -414,7 +465,8 @@ namespace Assets.Code.Items
             return new PhysUpMix4U(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionWaterUpMix1S(ItemsData data)
@@ -422,7 +474,8 @@ namespace Assets.Code.Items
             return new WaterUpMix1S(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionWaterUpMix2M(ItemsData data)
@@ -430,7 +483,8 @@ namespace Assets.Code.Items
             return new WaterUpMix2M(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionWaterUpMix3G(ItemsData data)
@@ -438,7 +492,8 @@ namespace Assets.Code.Items
             return new WaterUpMix3G(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createPotionWaterUpMix4U(ItemsData data)
@@ -446,7 +501,8 @@ namespace Assets.Code.Items
             return new WaterUpMix4U(
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]),
-                Convert.ToInt32(data.itemsParameters["price"]));
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefAir1S(ItemsData data)
