@@ -6,13 +6,17 @@ using System.Text;
 
 namespace Assets.Code.Items.Talismans
 {
-    class DefLightning3G : A_Talisman
+    public class DefLightning3G : A_Item
     {
-        public DefLightning3G(string _name)
+        int maxEne;
+        int currentEne;
+        string element;
+
+        public DefLightning3G(int _maxEne, int _currentEne, int _buyPrice, int _sellPrice) : base(_buyPrice, _sellPrice)
         {
-            maxEne = gEne;
             element = "lightning";
-            currEne = maxEne;
+            maxEne = _maxEne;
+            currentEne = _currentEne;
         }
     }
 }
