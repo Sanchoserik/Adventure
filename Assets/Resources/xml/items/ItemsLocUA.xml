@@ -391,4 +391,21 @@
 <LocDescr name = "LocDescr">Дає захист від атак магії води велечиною в $maxEne$.</LocDescr>
 </item>
 
+<item name = "DefPhys1S">
+<LocName name = "LocName">Малий талісман фізичного захисту</LocName>
+<LocDescr name = "LocDescr">Дає захист від фізичних атак велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefPhys2M">
+<LocName name = "LocName">Середній талісман фізичного захисту</LocName>
+<LocDescr name = "LocDescr">Дає захист від фізичних атак велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefPhys3G">
+<LocName name = "LocName">Великий талісман фізичного захисту</LocName>
+<LocDescr name = "LocDescr">Дає захист від фізичних атак велечиною в $maxEne$.</LocDescr>
+</item>
+<item name = "DefPhys4U">
+<LocName name = "LocName">Ультра талісман фізичного захисту</LocName>
+<LocDescr name = "LocDescr">Дає захист від фізичних атак велечиною в $maxEne$.</LocDescr>
+</item>
+
 </items>

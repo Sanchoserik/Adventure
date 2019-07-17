@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Assets.Code.Items.Potions;
+using Assets.Code.Items.Talismans;
 using Assets.Code.SystemScripts.DataStructures;
 
 namespace Assets.Code.Items
@@ -507,182 +508,290 @@ namespace Assets.Code.Items
 
         public A_Item createTalismanDefAir1S(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefAir1S(
+                Convert.ToInt32(data.itemsParameters["maxEne"]),                
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefAir2M(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefAir2M(
+               Convert.ToInt32(data.itemsParameters["maxEne"]),
+               Convert.ToInt32(data.itemsParameters["buyPrice"]),
+               Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefAir3G(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefAir3G(
+               Convert.ToInt32(data.itemsParameters["maxEne"]),
+               Convert.ToInt32(data.itemsParameters["buyPrice"]),
+               Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefAir4U(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefAir4U(
+                Convert.ToInt32(data.itemsParameters["maxEne"]),
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefDarkness1S(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefDarkness1S(
+                Convert.ToInt32(data.itemsParameters["maxEne"]),
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefDarkness2M(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefDarkness2M(
+                Convert.ToInt32(data.itemsParameters["maxEne"]),
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefDarkness3G(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefDarkness3G(
+               Convert.ToInt32(data.itemsParameters["maxEne"]),
+               Convert.ToInt32(data.itemsParameters["buyPrice"]),
+               Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefDarkness4U(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefDarkness4U(
+                Convert.ToInt32(data.itemsParameters["maxEne"]),
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefDeath1S(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefDeath1S(
+                Convert.ToInt32(data.itemsParameters["maxEne"]),
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefDeath2M(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefDeath2M(
+               Convert.ToInt32(data.itemsParameters["maxEne"]),
+               Convert.ToInt32(data.itemsParameters["buyPrice"]),
+               Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefDeath3G(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefDeath3G(
+                Convert.ToInt32(data.itemsParameters["maxEne"]),
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefDeath4U(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefDeath4U(
+                 Convert.ToInt32(data.itemsParameters["maxEne"]),
+                 Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                 Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefEarth1S(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefEarth1S(
+               Convert.ToInt32(data.itemsParameters["maxEne"]),
+               Convert.ToInt32(data.itemsParameters["buyPrice"]),
+               Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefEarth2M(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefEarth2M(
+               Convert.ToInt32(data.itemsParameters["maxEne"]),
+               Convert.ToInt32(data.itemsParameters["buyPrice"]),
+               Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefEarth3G(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefEarth3G(
+                 Convert.ToInt32(data.itemsParameters["maxEne"]),
+                 Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                 Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefEarth4U(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefEarth4U(
+                Convert.ToInt32(data.itemsParameters["maxEne"]),
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefFire1S(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefFire1S(
+                Convert.ToInt32(data.itemsParameters["maxEne"]),
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefFire2M(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefFire2M(
+                Convert.ToInt32(data.itemsParameters["maxEne"]),
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefFire3G(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefFire3G(
+                Convert.ToInt32(data.itemsParameters["maxEne"]),
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefFire4U(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefFire4U(
+               Convert.ToInt32(data.itemsParameters["maxEne"]),
+               Convert.ToInt32(data.itemsParameters["buyPrice"]),
+               Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefLight1S(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefLight1S(
+               Convert.ToInt32(data.itemsParameters["maxEne"]),
+               Convert.ToInt32(data.itemsParameters["buyPrice"]),
+               Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefLight2M(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefLight2M(
+               Convert.ToInt32(data.itemsParameters["maxEne"]),
+               Convert.ToInt32(data.itemsParameters["buyPrice"]),
+               Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefLight3G(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefLight3G(
+               Convert.ToInt32(data.itemsParameters["maxEne"]),
+               Convert.ToInt32(data.itemsParameters["buyPrice"]),
+               Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefLight4U(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefLight4U(
+               Convert.ToInt32(data.itemsParameters["maxEne"]),
+               Convert.ToInt32(data.itemsParameters["buyPrice"]),
+               Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefLightning1S(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefLightning1S(
+               Convert.ToInt32(data.itemsParameters["maxEne"]),
+               Convert.ToInt32(data.itemsParameters["buyPrice"]),
+               Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefLightning2M(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefLightning2M(
+               Convert.ToInt32(data.itemsParameters["maxEne"]),
+               Convert.ToInt32(data.itemsParameters["buyPrice"]),
+               Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefLightning3G(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefLightning3G(
+               Convert.ToInt32(data.itemsParameters["maxEne"]),
+               Convert.ToInt32(data.itemsParameters["buyPrice"]),
+               Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefLightning4U(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefLightning4U(
+               Convert.ToInt32(data.itemsParameters["maxEne"]),
+               Convert.ToInt32(data.itemsParameters["buyPrice"]),
+               Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefPhys1S(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefPhys1S(
+              Convert.ToInt32(data.itemsParameters["maxEne"]),
+              Convert.ToInt32(data.itemsParameters["buyPrice"]),
+              Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefPhys2M(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefPhys2M(
+              Convert.ToInt32(data.itemsParameters["maxEne"]),
+              Convert.ToInt32(data.itemsParameters["buyPrice"]),
+              Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefPhys3G(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefPhys3G(
+              Convert.ToInt32(data.itemsParameters["maxEne"]),
+              Convert.ToInt32(data.itemsParameters["buyPrice"]),
+              Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefPhys4U(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefPhys4U(
+              Convert.ToInt32(data.itemsParameters["maxEne"]),
+              Convert.ToInt32(data.itemsParameters["buyPrice"]),
+              Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefWater1S(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefWater1S(
+                Convert.ToInt32(data.itemsParameters["maxEne"]),
+                Convert.ToInt32(data.itemsParameters["buyPrice"]),
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefWater2M(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefWater2M(
+               Convert.ToInt32(data.itemsParameters["maxEne"]),
+               Convert.ToInt32(data.itemsParameters["buyPrice"]),
+               Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefWater3G(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefWater3G(
+               Convert.ToInt32(data.itemsParameters["maxEne"]),
+               Convert.ToInt32(data.itemsParameters["buyPrice"]),
+               Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
 
         public A_Item createTalismanDefWater4U(ItemsData data)
         {
-            throw new NotImplementedException();
+            return new DefWater4U(
+               Convert.ToInt32(data.itemsParameters["maxEne"]),
+               Convert.ToInt32(data.itemsParameters["buyPrice"]),
+               Convert.ToInt32(data.itemsParameters["sellPrice"]));
         }
     }
 }

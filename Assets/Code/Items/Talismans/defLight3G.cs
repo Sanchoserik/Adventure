@@ -12,11 +12,11 @@ namespace Assets.Code.Items.Talismans
         int currentEne;
         string element;
 
-        public DefLight3G(int _maxEne, int _currentEne, int _buyPrice, int _sellPrice) : base(_buyPrice, _sellPrice)
+        public DefLight3G(int _maxEne,   int _buyPrice, int _sellPrice) : base(_buyPrice, _sellPrice)
         {
             element = "light";
             maxEne = _maxEne;
-            currentEne = _currentEne;
+            currentEne = maxEne;
         }
     }
 }

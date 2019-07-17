@@ -12,11 +12,11 @@ namespace Assets.Code.Items.Talismans
         int currentEne;
         string element;
 
-        public DefLife4U(int _maxEne, int _currentEne, int _buyPrice, int _sellPrice) : base(_buyPrice, _sellPrice)
+        public DefLife4U(int _maxEne,   int _buyPrice, int _sellPrice) : base(_buyPrice, _sellPrice)
         {
             element = "life";
             maxEne = _maxEne;
-            currentEne = _currentEne;
+            currentEne = maxEne;
         }
     }
 }

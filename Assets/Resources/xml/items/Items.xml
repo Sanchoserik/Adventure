@@ -530,4 +530,25 @@
 <val name = "sellPrice">3000</val>
 </item>
 
+<item name = "DefPhys1S">
+<val name = "maxEne">250</val>
+<val name = "buyPrice">500</val>
+<val name = "sellPrice">250</val>
+</item>
+<item name = "DefPhys2M">
+<val name = "maxEne">800</val>
+<val name = "buyPrice">1500</val>
+<val name = "sellPrice">1250</val>
+</item>
+<item name = "DefPhys3G">
+<val name = "maxEne">1600</val>
+<val name = "buyPrice">3000</val>
+<val name = "sellPrice">1500</val>
+</item>
+<item name = "DefPhys4U">
+<val name = "maxEne">2500</val>
+<val name = "buyPrice">6000</val>
+<val name = "sellPrice">3000</val>
+</item>
+
 </items>

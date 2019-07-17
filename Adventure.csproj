@@ -193,6 +193,10 @@
     <Compile Include="Assets\Code\Items\Talismans\DefLightning2M.cs" />
     <Compile Include="Assets\Code\Items\Talismans\DefLightning3G.cs" />
     <Compile Include="Assets\Code\Items\Talismans\DefLightning4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefPhys1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefPhys2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefPhys3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefPhys4U.cs" />
     <Compile Include="Assets\Code\Items\Talismans\DefWater1S.cs" />
     <Compile Include="Assets\Code\Items\Talismans\DefWater2M.cs" />
     <Compile Include="Assets\Code\Items\Talismans\DefWater3G.cs" />

@@ -12,11 +12,11 @@ namespace Assets.Code.Items.Talismans
         int currentEne;
         string element;
 
-        public DefLightning2M(int _maxEne, int _currentEne, int _buyPrice, int _sellPrice) : base(_buyPrice, _sellPrice)
+        public DefLightning2M(int _maxEne,   int _buyPrice, int _sellPrice) : base(_buyPrice, _sellPrice)
         {
             element = "lightning";
             maxEne = _maxEne;
-            currentEne = _currentEne;
+            currentEne = maxEne;
         }
     }
 }
