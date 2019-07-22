@@ -40,7 +40,10 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
         {
             A_Skill skill = skillTree.Find(x => x.skillName.Equals(childSkill.name));
             Text levelText = childSkill.GetComponentInChildren<Text>();
-            levelText.text = skill.skillLevel + "/" + skill.skillMaxLevel;
+            if(skill.isLearned)
+                levelText.text = skill.skillLevel + "/" + skill.skillMaxLevel;
+            else
+                levelText.text = "0/" + skill.skillMaxLevel;
         }
 
         private void setUISkills(Transform childSkill)
@@ -95,7 +98,8 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
                     {
                         HeroSkillsController.setSkillAsLearned(skill);
                         HeroSkillsController.getNewAvailableSKills(skillTree, skillName);
-                        --HeroController.mainHero.freeSkillPoints;     
+                        --HeroController.mainHero.freeSkillPoints;
+                        refreshSkillLevelText(skillObject, skillName, skill);
                     }
                     else if (skill.isLearned)
                     {
@@ -103,6 +107,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
                         refreshSkillLevelText(skillObject, skillName, skill);
                         --HeroController.mainHero.freeSkillPoints;                       
                     }
+                    refreshSkillLevelText(skillObject, skillName, skill);
                     skillToolTip.setToolTipGeneratedValue(false);
                     skillToolTip.generateToolTip(skill, "LoadNextLevel");
                     cmController.getSkillPoints();                  
@@ -119,18 +124,18 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
             {
                 if (skill.skillLevel - 1 >= 1)
                 {
-                    --skill.skillLevel;
-                    refreshSkillLevelText(skillObject, skillName, skill);
+                    --skill.skillLevel;                   
                     ++HeroController.mainHero.freeSkillPoints;
                     skillToolTip.setToolTipGeneratedValue(false);
                     skillToolTip.generateToolTip(skill, "LoadPreviousLevel");
+                    refreshSkillLevelText(skillObject, skillName, skill);
                 }
                 else if (skill.skillLevel - 1 == 0 && !skill.skillName.Equals("Rearm")) // Rearm is starting point for skills learning
                 {
                     HeroSkillsController.setSkillAsNotLearned(skill);
                     HeroSkillsController.cascadeSkillRemoval(skillTree, skill);
                     initializeSkills(skillTrees); // Need to refresh all skills                    
-                }
+                }                
                 cmController.getSkillPoints();               
             }
 
@@ -139,7 +144,10 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
         private void refreshSkillLevelText(GameObject _skill, string _sName, A_Skill _s)
         {
             Text t = _skill.GetComponentInChildren<Text>();
-            t.text = _s.skillLevel + "/" + _s.skillMaxLevel;           
+            if (_s.isLearned)
+                t.text = _s.skillLevel + "/" + _s.skillMaxLevel;
+            else
+                t.text = "0/" + _s.skillMaxLevel;
         }
 
     }

@@ -11,7 +11,7 @@ namespace Assets.ScriptHelper
     public static class ScriptHelper
     {
         //select talisman from in use
-        public static A_Talisman getTalismanInUse(C_Hero h, int _id)
+        public static A_Item getTalismanInUse(C_Hero h, int _id)
         {
             return h.inventorySystem.inUseTalismansStorage.Find(x => x.id == _id);
         }

@@ -8,17 +8,17 @@ namespace Assets.Code.Items
     public class InventorySystem
     {
         public List<List<A_Item>> mainItemsStorage;
-        public List<A_Talisman> mainTalismansStorage;
-        public List<A_Talisman> inUseTalismansStorage; // native size = 10
+        public List<A_Item> mainTalismansStorage;
+        public List<A_Item> inUseTalismansStorage; // native size = 10
         public List<A_Item> quickAccesItemStorage; // native size = 5
 
         public InventorySystem()
         {
             mainItemsStorage = new List<List<A_Item>>();
-            mainTalismansStorage = new List<A_Talisman>();
+            mainTalismansStorage = new List<A_Item>();
 
             //initialize empty
-            inUseTalismansStorage = new List<A_Talisman>();
+            inUseTalismansStorage = new List<A_Item>();
             for (int i = 0; i < 10; ++i)
             {
                 inUseTalismansStorage.Add(null);

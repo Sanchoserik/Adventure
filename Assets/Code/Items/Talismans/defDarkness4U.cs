@@ -17,6 +17,7 @@ namespace Assets.Code.Items.Talismans
             element = "darkness";
             maxEne = _maxEne;
             currentEne = maxEne;
+            category = "Talismans";
         }
     }
 }

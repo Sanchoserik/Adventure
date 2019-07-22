@@ -508,6 +508,7 @@
 <val name = "maxEne">2500</val>
 <val name = "buyPrice">6000</val>
 <val name = "sellPrice">3000</val>
+</item>
 
 <item name = "DefWater1S">
 <val name = "maxEne">250</val>

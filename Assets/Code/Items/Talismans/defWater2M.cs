@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
- 
+
 
 namespace Assets.Code.Items.Talismans
 {
@@ -12,10 +12,12 @@ namespace Assets.Code.Items.Talismans
         int currentEne;
         string element;
 
-        public DefWater2M(int _maxEne,   int _buyPrice, int _sellPrice) : base(_buyPrice, _sellPrice)
+        public DefWater2M(int _maxEne, int _buyPrice, int _sellPrice) : base(_buyPrice, _sellPrice)
         {
             element = "water";
             maxEne = _maxEne;
             currentEne = maxEne;
+            category = "Talismans";
         }
     }
+}
