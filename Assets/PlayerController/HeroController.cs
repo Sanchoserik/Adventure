@@ -20,24 +20,13 @@ namespace Assets.PlayerController
         {
             skillsData = ResourcesManager.skillsData;
 
-            if (loadHero)
-            {
-                loadHeroFromSaveFile();
-            }
-            else
-            {
                 if(mainHero.heroSkills == null)
                 mainHero.heroSkills = new HeroSkillsController(skillsData);
                 mainHero.freeSkillPoints = 100; // TEMP
-            }
 
             heroEditorController.SetActive(true);
         }
 
-        private void loadHeroFromSaveFile()
-        {
-
-        }
 
 
     }

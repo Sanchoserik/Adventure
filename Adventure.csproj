@@ -332,6 +332,7 @@
     <Compile Include="Assets\Code\SystemScripts\ToolTipFollowMouse.cs" />
     <Compile Include="Assets\Code\UIScripts\CameraZooming.cs" />
     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\CharacterMenuController.cs" />
+    <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\HeroEditor\ButtonData.cs" />
     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\Invertory\DragObject.cs" />
     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\Invertory\InvertoryController.cs" />
     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\Invertory\ItemDragHandler.cs" />

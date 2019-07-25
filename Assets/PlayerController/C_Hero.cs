@@ -17,7 +17,7 @@ namespace Assets.PlayerController
         public int maxHP;
         public int currHP;
 
-        public int baseMaxENE;
+        public int baseMaxENE;    
         public int maxENE;
         public int currENE;
 
@@ -65,6 +65,11 @@ namespace Assets.PlayerController
         public int bonusEndurance;
         public int bonusKnowledge;
         public int bonusCharisma;
+        //bonus params percent
+        public int bonusStrengthPercent;
+        public int bonusEndurancePercent;
+        public int bonusKnowledgePercent;
+        public int bonusCharismaPercent;
         //total params
         public int totalStrength;
         public int totalEndurance;
@@ -82,10 +87,12 @@ namespace Assets.PlayerController
         public double bonusMagAtkPercent;
         public int bonusTalismanPowerValue;
         public double bonusTalismanPowerPercent;        
+        
+        public int critChance;
         public int bonusCritDamagePercent;
         public int bonusCritChance;
-        public int critChance;
         public float critDamageMod;
+
         //AP - action Points
         public int baseAP;
         public int bonusAP;
@@ -119,7 +126,7 @@ namespace Assets.PlayerController
             currHP = 200;
             baseMaxENE = 100;
             currENE = 100;
-            level = 1;
+            level = 0;
             currExp = 0;
             nextLevelExp = 100;
             freeSkillPoints = 0;
@@ -241,6 +248,8 @@ namespace Assets.PlayerController
                 updateAttributes();
             
         }
+
+
 
         private void updateAttributes()
         {
