@@ -6,9 +6,10 @@ using System.Text;
 
 namespace Assets.Monsters
 {
-    abstract class C_Monster
+    public abstract class C_Monster
     {
-       
+        public string name;
+        public byte rank;
 
     }
 }

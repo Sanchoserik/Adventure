@@ -47,6 +47,46 @@
  <el name ="SkillPointsText"></el>
  
  </scene>
+ 
+ <scene name = "CharacterMenu">
+  <el name = "Level">Level:</el>
+ <el name = "Experience">Experience:</el>
+ <el name = "AttributePoints">AttributePoints:</el> 
+ <el name = "SkillPoints">SkillPoints:</el> 
+ <el name = "HP">HP:</el> 
+ <el name = "ENE">ENE:</el>
+ <el name = "ActionPoints">ActionPoints:</el>  
+ <el name = "PhysDef">PhysDef:</el>  
+ <el name = "FireDef">FireDef:</el>  
+ <el name = "AirDef">AirDef:</el>  
+ <el name = "LightningDef">LightningDef:</el>  
+ <el name = "EarthDef">EarthDef:</el>  
+ <el name = "WaterDef">WaterDef:</el>  
+ <el name = "LightDef">LightDef:</el>  
+ <el name = "DarknessDef">DarknessDef:</el>  
+ <el name = "LifeDef">LifeDef:</el>  
+ <el name = "DeathDef">DeathDef:</el>  
+ <el name = "Money">Money:</el>  
+ 
+ <el name = "BaseHP">BaseHP:</el>
+ <el name = "MaxHP">MaxHP:</el>
+ <el name = "BaseEne">BaseEne:</el> 
+ <el name = "MaxEne">MaxEne:</el> 
+ <el name = "BaseStrength">BaseStrength:</el> 
+ <el name = "BaseEndurance">BaseEndurance:</el>
+ <el name = "BaseKnowledge">BaseKnowledge:</el>  
+ <el name = "BaseCharisma">BaseCharisma:</el>  
+ <el name = "BonusStrength">BonusStrength:</el>  
+ <el name = "BonusEndurance">BonusEndurance:</el>  
+ <el name = "BonusKnowledge">BonusKnowledge:</el>  
+ <el name = "BonusCharisma">BonusCharisma:</el>  
+ <el name = "TotalStrength">TotalStrength:</el>  
+ <el name = "TotalEndurance">TotalEndurance:</el>  
+ <el name = "TotalKnowledge">TotalKnowledge:</el>  
+ <el name = "TotalCharisma">TotalCharisma:</el> 
+ 
+ </scene>
+ 
  </scenes>
  
  
