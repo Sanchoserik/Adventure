@@ -36,7 +36,7 @@ namespace Assets.PlayerController
         public DefenceParam chPhysDef;
         public DefenceParam chFireDef;
         public DefenceParam chAirDef;
-        public DefenceParam chLightninhDef;
+        public DefenceParam chLightningDef;
         public DefenceParam chEarthDef;
         public DefenceParam chWaterDef;
         public DefenceParam chLifeDef;
@@ -47,7 +47,7 @@ namespace Assets.PlayerController
         public DefenceParam tPhysDef;
         public DefenceParam tFireDef;
         public DefenceParam tAirDef;
-        public DefenceParam tLightninhDef;
+        public DefenceParam tLightningDef;
         public DefenceParam tEarthDef;
         public DefenceParam tWaterDef;
         public DefenceParam tLifeDef;
@@ -147,6 +147,28 @@ namespace Assets.PlayerController
             deathDef = new DefenceParam();
             lightDef = new DefenceParam();
             darknessDef = new DefenceParam();
+
+            chPhysDef = new DefenceParam();
+            chFireDef = new DefenceParam();
+            chAirDef = new DefenceParam();
+            chLightningDef = new DefenceParam();
+            chEarthDef = new DefenceParam();
+            chWaterDef = new DefenceParam();
+            chLifeDef = new DefenceParam();
+            chDeathDef = new DefenceParam();
+            chLightDef = new DefenceParam();
+            chDarknessDef = new DefenceParam();
+
+            tPhysDef = new DefenceParam();
+            tFireDef = new DefenceParam();
+            tAirDef = new DefenceParam();
+            tLightningDef = new DefenceParam();
+            tEarthDef = new DefenceParam();
+            tWaterDef = new DefenceParam();
+            tLifeDef = new DefenceParam();
+            tDeathDef = new DefenceParam();
+            tLightDef = new DefenceParam();
+            tDarknessDef = new DefenceParam();
 
             money = 0;
             baseAP = 4;
