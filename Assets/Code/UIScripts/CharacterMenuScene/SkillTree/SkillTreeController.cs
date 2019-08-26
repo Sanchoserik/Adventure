@@ -110,7 +110,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
                     refreshSkillLevelText(skillObject, skillName, skill);
                     skillToolTip.setToolTipGeneratedValue(false);
                     skillToolTip.generateToolTip(skill, "LoadNextLevel");
-                    cmController.getSkillPoints();                  
+                   // cmController.getSkillPoints();     //display skillpoints             
                 }
             }
         }
@@ -136,7 +136,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
                     HeroSkillsController.cascadeSkillRemoval(skillTree, skill);
                     initializeSkills(skillTrees); // Need to refresh all skills                    
                 }                
-                cmController.getSkillPoints();               
+                //cmController.getSkillPoints();    //display skillpoints            
             }
 
         }

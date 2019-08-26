@@ -10,36 +10,38 @@ namespace Assets.Code.UIScripts.CharacterMenuScene
 {
     public class CharacterMenuController : MonoBehaviour
     {
-        public GameObject ParentMenu;
-       
+        public GameObject AdvancedStatusPanel;
+  
         private void Start()
         {
-            getSkillPoints();
-        }
-
-        public void getSkillPoints()
-        {
-            Text skillPoints;
-            skillPoints = GameObject.Find("SkillPointsVal").GetComponent<Text>();
-            skillPoints.text = HeroController.mainHero.freeSkillPoints.ToString();
+            
         }
 
         public void showSkillTreeButton()
         {
-            foreach (Transform panel in ParentMenu.transform)
+            foreach (Transform panel in AdvancedStatusPanel.transform)
             {
                 panel.gameObject.SetActive(false);
             }
-            ParentMenu.transform.Find("SkillTreePanel").gameObject.SetActive(true);
+            AdvancedStatusPanel.transform.Find("SkillTreePanel").gameObject.SetActive(true);
         }
 
         public void showInvertoryButton()
         {
-            foreach (Transform panel in ParentMenu.transform)
+            foreach (Transform panel in AdvancedStatusPanel.transform)
             {
                 panel.gameObject.SetActive(false);
             }
-            ParentMenu.transform.Find("InvertoryPanel").gameObject.SetActive(true);
+            AdvancedStatusPanel.transform.Find("InvertoryPanel").gameObject.SetActive(true);
+        }
+
+        public void showHeroStatusButton()
+        {
+            foreach (Transform panel in AdvancedStatusPanel.transform)
+            {
+                panel.gameObject.SetActive(false);
+            }
+            AdvancedStatusPanel.transform.Find("StatusPanel").gameObject.SetActive(true);
         }
     }
 }

@@ -11,20 +11,18 @@ namespace Assets.PlayerController
 {
     class HeroController : MonoBehaviour 
     {
-        public static bool loadHero = false;
-        public static C_Hero mainHero = new C_Hero();
-        public GameObject heroEditorController;
-        private List<SkillsData> skillsData;
-
+        public static C_Hero mainHero;
+        public GameObject OtherControllers;
+    
         private void Awake()
         {
-            skillsData = ResourcesManager.skillsData;
-
-                if(mainHero.heroSkills == null)
-                mainHero.heroSkills = new HeroSkillsController(skillsData);
-                mainHero.freeSkillPoints = 100; // TEMP
-
-            heroEditorController.SetActive(true);
+            if (mainHero == null) // initialisation for new game
+            {
+                mainHero = new C_Hero();
+                mainHero.heroSkills = new HeroSkillsController(ResourcesManager.skillsData);
+            }
+            mainHero.freeSkillPoints = 100; // TEMP
+            OtherControllers.SetActive(true);
         }
 
 

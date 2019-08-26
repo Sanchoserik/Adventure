@@ -8,6 +8,8 @@ TagManager:
   - Item
   - ToolTipElement
   - UISkill
+  - SkillP
+  - Value
   layers:
   - Default
   - TransparentFX
