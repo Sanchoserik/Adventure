@@ -19,9 +19,9 @@ namespace Assets.Code.UIScripts.HeroEditorScene
 
         public void execute()
         {
-            if (data.buttonType)
-            { hero.levelPlus(); }
-            else hero.levelMinus();
+            //if (data.buttonType)
+            //{ hero.levelPlus(); }
+            //else hero.levelMinus();
         }
     }
 }

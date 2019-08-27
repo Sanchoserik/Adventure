@@ -98,7 +98,46 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
          
             //heroStatusValues[""].text = hero;
         }
-        
+
+        //BUTTON INPUT
+        public void attributePlusButton(string attribute)
+        {
+            switch (attribute)
+            {
+                case "str":
+                    HeroAttributesController.attributePlus("str");
+                    break;
+                case "end":
+                    HeroAttributesController.attributePlus("end");
+                    break;
+                case "knd":
+                    HeroAttributesController.attributePlus("knd");
+                    break;
+                case "chr":
+                    HeroAttributesController.attributePlus("chr");
+                    break;
+            }
+        }
+
+        public void attributeMinusButton(string attribute)
+        {
+            switch (attribute)
+            {
+                case "str":
+                    HeroAttributesController.attributeMinus("str");
+                    break;
+                case "end":
+                    HeroAttributesController.attributeMinus("end");
+                    break;
+                case "knd":
+                    HeroAttributesController.attributeMinus("knd");
+                    break;
+                case "chr":
+                    HeroAttributesController.attributeMinus("chr");
+                    break;
+            }
+        }
+
     }
 
 }

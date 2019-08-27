@@ -19,9 +19,9 @@ namespace Assets.Code.UIScripts.HeroEditorScene
 
         public void execute()
         {
-            if (data.buttonType)
-            { hero.attributePlus(data.functionMessage); }
-            else hero.attributeMinus(data.functionMessage);
+            //if (data.buttonType)
+            //{ hero.attributePlus(data.functionMessage); }
+            //else hero.attributeMinus(data.functionMessage);
         }
     }
 }
