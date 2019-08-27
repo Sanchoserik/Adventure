@@ -14,12 +14,16 @@ namespace Assets.PlayerController
     public class C_Hero
     {
         public int baseMaxHP;
-        public int maxHP;
-        public int currHP;
+        public int bonusHPValue;
+        public int bonusHPPercent;
+        public int totalMaxHP;       
+        public int currentHP;
 
-        public int baseMaxENE;    
-        public int maxENE;
-        public int currENE;
+        public int baseMaxENE;
+        public int bonusENEValue;
+        public int bonusENEPercent;
+        public int totalMaxENE;
+        public int currentENE;
 
         //base hero defence values // actualy = 0
         public DefenceParam physDef;
@@ -76,21 +80,24 @@ namespace Assets.PlayerController
         public int totalKnowledge;
         public int totalCharisma;
 
-        //bonuses from attributes
-        public int bonusHPValue;
-        public double bonusHPPercent;
-        public int bonusENEValue;
-        public double bonusENEPercent;
-        public int bonusPhysAtkValue;
-        public double bonusPhysAtkPercent;
-        public int bonusMagAtkValue;
-        public double bonusMagAtkPercent;
-        public int bonusTalismanPowerValue;
-        public double bonusTalismanPowerPercent;        
+        //bonus to phys damage and skills phys damage
+        public int basePhysAtk;        
+        public int bonusPhysAtk;
+        public int bonusPhysAtkPercent;
+        public int totalPhysAtk;
         
-        public int critChance;
+        //bonus to skills mag damage
+        public int bonusMagAtkValue;
+        public int bonusMagAtkPercent;
+
+        public int bonusTalismanPower;
+        public int bonusTalismanPowerPercent;        
+        
+        //crit chance
+        public int baseCritChance;
         public int bonusCritDamagePercent;
         public int bonusCritChance;
+        public int totalCritChance;        
         public float critDamageMod;
 
         //AP - action Points
@@ -123,15 +130,17 @@ namespace Assets.PlayerController
             effectsStorage = new List<A_Effect>();       
 
             baseMaxHP = 200;
-            currHP = 200;
+            currentHP = 200;
             baseMaxENE = 100;
-            currENE = 100;
+            currentENE = 100;
             level = 0;
             currExp = 0;
             nextLevelExp = 100;
             freeSkillPoints = 0;
             freeAttributePoints = 0;
-          
+
+            basePhysAtk = 25;
+
             baseStrength = 1;
             baseEndurance = 1;
             baseKnowledge = 1;
@@ -173,7 +182,7 @@ namespace Assets.PlayerController
             money = 0;
             baseAP = 4;
 
-            critChance = 1;
+            baseCritChance = 1;
             critDamageMod = 2.0f;
         }
 

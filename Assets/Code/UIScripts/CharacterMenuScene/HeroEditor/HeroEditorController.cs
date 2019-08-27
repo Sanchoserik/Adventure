@@ -58,8 +58,8 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
             heroStatusValues["ExperienceVal"].text = hero.currExp.ToString()+"/"+hero.nextLevelExp;
             heroStatusValues["AttributePointsVal"].text = hero.freeAttributePoints.ToString();
             heroStatusValues["SkillPointsVal"].text = hero.freeSkillPoints.ToString();
-            heroStatusValues["HPVal"].text = hero.currHP.ToString()+"/"+hero.maxHP.ToString();
-            heroStatusValues["ENEVal"].text = hero.currENE.ToString() + "/" + hero.maxENE.ToString();
+            heroStatusValues["HPVal"].text = hero.currentHP.ToString()+"/"+hero.totalMaxHP.ToString();
+            heroStatusValues["ENEVal"].text = hero.currentENE.ToString() + "/" + hero.totalMaxENE.ToString();
             heroStatusValues["ActionPointsVal"].text = hero.totalAP.ToString();
             heroStatusValues["PhysDefVal"].text = hero.tPhysDef.strValue;
             heroStatusValues["FireDefVal"].text = hero.tFireDef.strValue;
@@ -92,9 +92,9 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
             heroStatusValues["TotalKnowledgeVal"].text = hero.bonusKnowledge.ToString();
             heroStatusValues["TotalCharismaVal"].text = hero.totalCharisma.ToString();
             heroStatusValues["BaseHPVal"].text = hero.baseMaxHP.ToString();
-            heroStatusValues["MaxHPVal"].text = hero.maxHP.ToString();
+            heroStatusValues["MaxHPVal"].text = hero.totalMaxHP.ToString();
             heroStatusValues["BaseENEVal"].text = hero.baseMaxENE.ToString();
-            heroStatusValues["MaxENEVal"].text = hero.maxENE.ToString();
+            heroStatusValues["MaxENEVal"].text = hero.totalMaxENE.ToString();
          
             //heroStatusValues[""].text = hero;
         }
