@@ -18,12 +18,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
         public void Start()
         {
             fillHeroStatusValues();  
-            updateHeroStatus();   
-        }
-
-        public void Update()
-        {
-            
+            updateVisuals();   
         }
 
         private void fillHeroStatusValues()
@@ -44,7 +39,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
             }
         }
 
-        public void updateHeroStatus()
+        public void updateVisuals()
         {
             updateLeftStatusPanel();
             updateMainStatusPanel();
@@ -117,6 +112,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
                     HeroAttributesController.attributePlus("chr");
                     break;
             }
+            updateVisuals();
         }
 
         public void attributeMinusButton(string attribute)
@@ -136,6 +132,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
                     HeroAttributesController.attributeMinus("chr");
                     break;
             }
+            updateVisuals();
         }
 
     }

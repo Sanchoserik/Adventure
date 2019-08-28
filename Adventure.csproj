@@ -333,6 +333,8 @@
     <Compile Include="Assets\Code\UIScripts\CameraZooming.cs" />
     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\CharacterMenuController.cs" />
     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\HeroEditor\HeroEditorController.cs" />
+    <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\HeroEditor\HeroEditorToolTip.cs" />
+    <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\HeroEditor\UIHeroEditorHelper.cs" />
     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\Invertory\DragObject.cs" />
     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\Invertory\InvertoryController.cs" />
     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\Invertory\ItemDragHandler.cs" />
