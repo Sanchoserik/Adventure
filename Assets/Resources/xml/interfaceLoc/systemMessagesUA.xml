@@ -14,41 +14,9 @@
  <el name = "SkillIsNotAvailable">НЕ доступно для вивчення</el>
  <el name = "SkillAvailableButNoSkillPoints">Доступно для вивчення але НЕ вистачає очків вмінь</el>
  
- <el name = "Level">Рівень:</el>
- <el name = "Experience">Досвід:</el>
- <el name = "AttributePoints">Очки атрибутів:</el> 
- <el name = "SkillPoints">Очки навичок:</el> 
- <el name = "HP">Життя:</el> 
- <el name = "ENE">Енергія:</el>
- <el name = "ActionPoints">Очки дії:</el>  
- <el name = "PhysDef">Фізичний захист:</el>  
- <el name = "FireDef">Захист від вогню:</el>  
- <el name = "AirDef">Захист від повітря:</el>  
- <el name = "LightningDef">Захист від блискавки:</el>  
- <el name = "EarthDef">Захист від землі:</el>  
- <el name = "WaterDef">Захист від води:</el>  
- <el name = "LightDef">Захист від світла:</el>  
- <el name = "DarknessDef">Захист від темряви:</el>  
- <el name = "LifeDef">Захист від життя:</el>  
- <el name = "DeathDef">Захист від смерті:</el>  
- <el name = "Money">Гроші:</el>  
+ <el name = "BaseMaxHP">Базове здоров'я = $BaseHP$ + $EndVal$(Здоров'я від витривалості) + $Val$($End%$%)(Здоров'я від витривалості%)</el>
+ <el name = "TotalHP">Загальне здоров'я = $BaseHP$ + $BonusHP$</el>
  
- <el name = "BaseHP">Базове життя:</el>
- <el name = "MaxHP">Максимальне життя:</el>
- <el name = "BaseEne">Базова енергія:</el> 
- <el name = "MaxEne">Максимальна енергія:</el> 
- <el name = "BaseStrength">Базова сила:</el> 
- <el name = "BaseEndurance">Базова витривалість:</el>
- <el name = "BaseKnowledge">Базові знання:</el>  
- <el name = "BaseCharisma">Базова хризма:</el>  
- <el name = "BonusStrength">Бонусна сила:</el>  
- <el name = "BonusEndurance">Бонусна витривалість:</el>  
- <el name = "BonusKnowledge">Бонусні знання:</el>  
- <el name = "BonusCharisma">Бонусна харизма:</el>  
- <el name = "TotalStrength">Загальна сила:</el>  
- <el name = "TotalEndurance">Загальна витривалість:</el>  
- <el name = "TotalKnowledge">Загальні знання:</el>  
- <el name = "TotalCharisma">Загальна харизма:</el>  
  
  </scene>
  </scenes>

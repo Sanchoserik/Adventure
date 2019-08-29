@@ -11,6 +11,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
     {
 
         private HeroEditorToolTip toolTip;
+        public string helperFlag;
 
         private void Awake()
         {
@@ -20,12 +21,13 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
 
         public void OnPointerExit(PointerEventData eventData)
         {
-            throw new NotImplementedException();
+            toolTip.setToolTipGeneratedValue(false);
+            toolTip.gameObject.SetActive(false);
         }
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-            throw new NotImplementedException();
+            toolTip.generateToolTip(helperFlag);
         }
 
        

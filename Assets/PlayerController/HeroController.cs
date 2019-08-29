@@ -20,6 +20,7 @@ namespace Assets.PlayerController
             {
                 mainHero = new C_Hero();
                 mainHero.heroSkills = new HeroSkillsController(ResourcesManager.skillsData);
+                HeroAttributesController.updateAttributes();
             }
             mainHero.freeSkillPoints = 100; // TEMP
             OtherControllers.SetActive(true);

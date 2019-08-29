@@ -79,7 +79,7 @@ namespace Assets.PlayerController
             updateAttributes();
         }
 
-        private static void updateAttributes()
+        public static void updateAttributes()
         {           
             updateStrength();
             updateEndurance();
@@ -116,8 +116,9 @@ namespace Assets.PlayerController
         {
             C_Hero hero = HeroController.mainHero;
 
-            hero.bonusHPValue = hero.totalEndurance * 5;
-            hero.bonusHPPercent = hero.totalEndurance / 10 / 100;
+            hero.baseMaxHP = hero.baseHP + hero.totalEndurance * 5 + (hero.baseHP + hero.totalEndurance * 5) * hero.totalEndurance / 10  / 100;
+            //hero.bonusHPValue = hero.totalEndurance * 5;
+            //hero.bonusHPPercent = hero.totalEndurance / 10 / 100;
             hero.bonusTalismanPower = hero.totalEndurance / 5 * 15;
         }
 

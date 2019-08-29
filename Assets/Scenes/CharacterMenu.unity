@@ -4657,6 +4657,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224710065262632108, guid: 3028071192f3d6948bf251a97ac8297e,
     type: 2}
   m_PrefabInternal: {fileID: 471330881}
+--- !u!114 &479115845 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114862939210088942, guid: 3028071192f3d6948bf251a97ac8297e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1337835373}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &494355999
 Prefab:
   m_ObjectHideFlags: 0
@@ -13923,6 +13929,11 @@ Prefab:
       propertyPath: m_Name
       value: HelpText
       objectReference: {fileID: 0}
+    - target: {fileID: 114862939210088942, guid: 3028071192f3d6948bf251a97ac8297e,
+        type: 2}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3028071192f3d6948bf251a97ac8297e, type: 2}
   m_IsPrefabParent: 0
@@ -19034,6 +19045,23 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224710065262632108, guid: 3028071192f3d6948bf251a97ac8297e,
     type: 2}
   m_PrefabInternal: {fileID: 1802461764}
+--- !u!1 &1802461766 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1986433149969878, guid: 3028071192f3d6948bf251a97ac8297e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1802461764}
+--- !u!114 &1802461767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1802461766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a80ac6d8cd2d8c54492faf90d6a1ffda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  helperFlag: BaseMaxHP
 --- !u!1 &1802693178
 GameObject:
   m_ObjectHideFlags: 0
@@ -20929,9 +20957,10 @@ GameObject:
   - component: {fileID: 1989621242}
   - component: {fileID: 1989621247}
   - component: {fileID: 1989621246}
-  - component: {fileID: 1989621245}
   - component: {fileID: 1989621244}
   - component: {fileID: 1989621243}
+  - component: {fileID: 1989621245}
+  - component: {fileID: 1989621248}
   m_Layer: 5
   m_Name: HeroEditiorHelpToolTip
   m_TagString: Untagged
@@ -20955,9 +20984,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 37.29001, y: 160}
+  m_AnchoredPosition: {x: -82.70999, y: 156}
   m_SizeDelta: {x: 240, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0}
 --- !u!114 &1989621243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21018,7 +21047,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.7960785, g: 0.7960785, b: 0.7960785, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -21038,6 +21067,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1989621241}
+--- !u!114 &1989621248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1989621241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7df34fdb15f204449fdb199b85fe52a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  helpInfo: {fileID: 479115845}
 --- !u!1001 &1990084122
 Prefab:
   m_ObjectHideFlags: 0

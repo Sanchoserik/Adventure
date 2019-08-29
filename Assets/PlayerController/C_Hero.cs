@@ -13,12 +13,14 @@ namespace Assets.PlayerController
     [Serializable]
     public class C_Hero
     {
-        public int baseMaxHP;
-        public int bonusHPValue;
-        public int bonusHPPercent;
-        public int totalMaxHP;       
+        public int baseHP;
+        public int baseMaxHP;       // baseHP + HP from Endurance
+        public int bonusHPValue;    // bonus from cads
+        public int bonusHPPercent;  // bonus from cards to (baseMaxHP+bonusHPvalue)%
+        public int totalMaxHP;      // baseMax+bonusVal+bonus%  
         public int currentHP;
 
+        public int baseENE; //100
         public int baseMaxENE;
         public int bonusENEValue;
         public int bonusENEPercent;
@@ -129,9 +131,9 @@ namespace Assets.PlayerController
             inventorySystem = new InventorySystem();
             effectsStorage = new List<A_Effect>();       
 
-            baseMaxHP = 200;
+            baseHP = 200;
             currentHP = 200;
-            baseMaxENE = 100;
+            baseENE = 100;
             currentENE = 100;
             level = 0;
             currExp = 0;
