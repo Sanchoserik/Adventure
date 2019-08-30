@@ -75,15 +75,7 @@
  <el name = "BaseStrength">Базова сила:</el> 
  <el name = "BaseEndurance">Базова витривалість:</el>
  <el name = "BaseKnowledge">Базові знання:</el>  
- <el name = "BaseCharisma">Базова хризма:</el>  
- <el name = "BonusStrength">Бонусна сила:</el>  
- <el name = "BonusEndurance">Бонусна витривалість:</el>  
- <el name = "BonusKnowledge">Бонусні знання:</el>  
- <el name = "BonusCharisma">Бонусна харизма:</el>  
- <el name = "TotalStrength">Загальна сила:</el>  
- <el name = "TotalEndurance">Загальна витривалість:</el>  
- <el name = "TotalKnowledge">Загальні знання:</el>  
- <el name = "TotalCharisma">Загальна харизма:</el>  
+ <el name = "BaseCharisma">Базова харизма:</el>  
  
  </scene>
  

@@ -22,6 +22,7 @@ namespace Assets.PlayerController
                 mainHero.heroSkills = new HeroSkillsController(ResourcesManager.skillsData);
                 HeroAttributesController.updateAttributes();
             }
+            mainHero.freeAttributePoints = 100; // TEMP
             mainHero.freeSkillPoints = 100; // TEMP
             OtherControllers.SetActive(true);
         }

@@ -76,14 +76,6 @@
  <el name = "BaseEndurance">BaseEndurance:</el>
  <el name = "BaseKnowledge">BaseKnowledge:</el>  
  <el name = "BaseCharisma">BaseCharisma:</el>  
- <el name = "BonusStrength">BonusStrength:</el>  
- <el name = "BonusEndurance">BonusEndurance:</el>  
- <el name = "BonusKnowledge">BonusKnowledge:</el>  
- <el name = "BonusCharisma">BonusCharisma:</el>  
- <el name = "TotalStrength">TotalStrength:</el>  
- <el name = "TotalEndurance">TotalEndurance:</el>  
- <el name = "TotalKnowledge">TotalKnowledge:</el>  
- <el name = "TotalCharisma">TotalCharisma:</el> 
  
  </scene>
  

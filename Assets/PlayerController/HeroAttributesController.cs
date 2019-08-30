@@ -91,17 +91,21 @@ namespace Assets.PlayerController
         private static void refreshTotalValues()
         {
             C_Hero hero = HeroController.mainHero;
+
             hero.totalStrength = hero.baseStrength + hero.bonusStrength + (hero.baseStrength+hero.bonusStrength)*hero.bonusStrengthPercent/100;
             hero.totalEndurance = hero.baseEndurance + hero.bonusEndurance + (hero.baseEndurance + hero.bonusEndurance) * hero.bonusEndurancePercent / 100; 
             hero.totalKnowledge = hero.baseKnowledge + hero.bonusKnowledge + (hero.baseKnowledge + hero.bonusKnowledge) * hero.bonusKnowledgePercent / 100; 
-            hero.totalCharisma = hero.baseCharisma + hero.bonusCharisma + (hero.baseCharisma + hero.bonusCharisma) * hero.bonusCharismaPercent / 100; 
+            hero.totalCharisma = hero.baseCharisma + hero.bonusCharisma + (hero.baseCharisma + hero.bonusCharisma) * hero.bonusCharismaPercent / 100;
 
-            hero.totalMaxHP = hero.baseMaxHP+hero.bonusHPValue + (hero.baseMaxHP + hero.bonusHPValue) * hero.bonusHPPercent / 100;
+            hero.baseMaxHP = hero.baseHP + hero.totalEndurance * 5 + (hero.baseHP + hero.totalEndurance * 5) * hero.totalEndurance/10/100;
+            hero.totalMaxHP = hero.baseMaxHP + hero.bonusHPValue + (hero.baseMaxHP + hero.bonusHPValue) * hero.bonusHPPercent / 100;
+
+            hero.baseMaxENE = hero.baseENE + hero.totalKnowledge * 3;
             hero.totalMaxENE = hero.baseMaxENE + hero.bonusENEValue + (hero.baseMaxENE + hero.bonusENEValue) * hero.bonusENEPercent / 100;
 
             hero.totalPhysAtk = hero.basePhysAtk + hero.bonusPhysAtk + (hero.basePhysAtk + hero.bonusPhysAtk) * hero.bonusPhysAtkPercent / 100;
             hero.totalCritChance = hero.baseCritChance + hero.bonusCritChance;
-            hero.totalAP = hero.baseAP + hero.totalAP;
+            hero.totalAP = hero.baseAP + hero.bonusAP;
         }
 
         private static void updateStrength()
@@ -117,8 +121,7 @@ namespace Assets.PlayerController
             C_Hero hero = HeroController.mainHero;
 
             hero.baseMaxHP = hero.baseHP + hero.totalEndurance * 5 + (hero.baseHP + hero.totalEndurance * 5) * hero.totalEndurance / 10  / 100;
-            //hero.bonusHPValue = hero.totalEndurance * 5;
-            //hero.bonusHPPercent = hero.totalEndurance / 10 / 100;
+
             hero.bonusTalismanPower = hero.totalEndurance / 5 * 15;
         }
 
@@ -126,8 +129,9 @@ namespace Assets.PlayerController
         {
             C_Hero hero = HeroController.mainHero;
 
-            hero.bonusMagAtkValue = hero.totalKnowledge * 3;
-            hero.bonusENEValue = hero.totalKnowledge * 3;
+            hero.baseMaxENE = hero.baseENE + hero.totalKnowledge * 3;
+
+            hero.bonusMagAtkValue = hero.totalKnowledge * 3;     
             hero.bonusMagAtkPercent = hero.totalKnowledge / 10 * 2 / 100;
             hero.bonusTalismanPowerPercent = hero.totalKnowledge / 10 / 100;
         }

@@ -15,7 +15,10 @@
  <el name = "SkillAvailableButNoSkillPoints">Доступно для вивчення але НЕ вистачає очків вмінь</el>
  
  <el name = "BaseMaxHP">Базове здоров'я = $BaseHP$ + $EndVal$(Здоров'я від витривалості) + $Val$($End%$%)(Здоров'я від витривалості%)</el>
- <el name = "TotalHP">Загальне здоров'я = $BaseHP$ + $BonusHP$</el>
+ <el name = "TotalHP">Загальне здоров'я = $BaseHP$(Загальне базове здоров'я) + $BonusVal$(Бонус від підсилювачів) + $Val$($B%$%)(Бонус від підсилювачів %)</el>
+ <el name = "BaseMaxENE">Базова енергія = $BaseENE$ + $KndVal$(Енергія від знань)</el>
+ <el name = "TotalENE">Загальна енергія = $BaseENE$(Загальна базова енергія) + $BonusVal$(Бонус від підсилювачів) + $Val$($B%$%)(Бонус від підсилювачів %)</el>
+ 
  
  
  </scene>
