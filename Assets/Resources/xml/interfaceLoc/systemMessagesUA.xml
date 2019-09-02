@@ -29,16 +29,16 @@
  <el name = "gDef">Великий(80%)</el>
  <el name = "uDef">Ультра(100%)</el>
  
- <el name = "fireDef">Захист від вогню = $base$ + $bonus$</el>
- <el name = "airDef">Захист від повітря = $base$ + $bonus$</el>
- <el name = "lightningDef">Захист від блискавки = $base$ + $bonus$</el>
- <el name = "earthDef">Захист від землі = $base$ + $bonus$</el>
- <el name = "waterDef">Захист від води = $base$ + $bonus$</el>
- <el name = "lifeDef">Захист від життя = $base$ + $bonus$</el>
- <el name = "deathDef">Захист від смерті = $base$ + $bonus$</el>
- <el name = "lightDef">Захист від світла = $base$ + $bonus$</el>
- <el name = "darknessDef">Захист від темряви = $base$ + $bonus$</el>
- <el name = "physDef">Захист від фізичних атак = $base$ + $bonus$</el>
+ <el name = "fireDef">Захист від вогню = $base$(Базовий захист) + $bonus$</el>
+ <el name = "airDef">Захист від повітря = $base$(Базовий захист) + $bonus$</el>
+ <el name = "lightningDef">Захист від блискавки = $base$(Базовий захист) + $bonus$</el>
+ <el name = "earthDef">Захист від землі = $base$(Базовий захист) + $bonus$</el>
+ <el name = "waterDef">Захист від води = $base$(Базовий захист) + $bonus$</el>
+ <el name = "lifeDef">Захист від життя = $base$(Базовий захист) + $bonus$</el>
+ <el name = "deathDef">Захист від смерті = $base$(Базовий захист) + $bonus$</el>
+ <el name = "lightDef">Захист від світла = $base$(Базовий захист) + $bonus$</el>
+ <el name = "darknessDef">Захист від темряви = $base$(Базовий захист) + $bonus$</el>
+ <el name = "physDef">Захист від фізичних атак = $base$(Базовий захист) + $bonus$</el>
  
  </scene>
  </scenes>

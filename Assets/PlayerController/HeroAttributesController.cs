@@ -16,17 +16,17 @@ namespace Assets.PlayerController
                 switch (attribute)
                 {
                     case "str":
-                            hero.baseStrength++;                               
-                            break;
+                        hero.baseStrength++;
+                        break;
                     case "end":
-                            hero.baseEndurance++;                         
-                            break;
+                        hero.baseEndurance++;
+                        break;
                     case "knd":
-                            hero.baseKnowledge++;
-                            break;
+                        hero.baseKnowledge++;
+                        break;
                     case "chr":
-                            hero.baseCharisma++;
-                            break;
+                        hero.baseCharisma++;
+                        break;
                 }
                 hero.freeAttributePoints--;
                 updateAttributes();
@@ -80,7 +80,7 @@ namespace Assets.PlayerController
         }
 
         public static void updateAttributes()
-        {           
+        {
             updateStrength();
             updateEndurance();
             updateKnowledge();
@@ -92,12 +92,12 @@ namespace Assets.PlayerController
         {
             C_Hero hero = HeroController.mainHero;
 
-            hero.totalStrength = hero.baseStrength + hero.bonusStrength + (hero.baseStrength+hero.bonusStrength)*hero.bonusStrengthPercent/100;
-            hero.totalEndurance = hero.baseEndurance + hero.bonusEndurance + (hero.baseEndurance + hero.bonusEndurance) * hero.bonusEndurancePercent / 100; 
-            hero.totalKnowledge = hero.baseKnowledge + hero.bonusKnowledge + (hero.baseKnowledge + hero.bonusKnowledge) * hero.bonusKnowledgePercent / 100; 
+            hero.totalStrength = hero.baseStrength + hero.bonusStrength + (hero.baseStrength + hero.bonusStrength) * hero.bonusStrengthPercent / 100;
+            hero.totalEndurance = hero.baseEndurance + hero.bonusEndurance + (hero.baseEndurance + hero.bonusEndurance) * hero.bonusEndurancePercent / 100;
+            hero.totalKnowledge = hero.baseKnowledge + hero.bonusKnowledge + (hero.baseKnowledge + hero.bonusKnowledge) * hero.bonusKnowledgePercent / 100;
             hero.totalCharisma = hero.baseCharisma + hero.bonusCharisma + (hero.baseCharisma + hero.bonusCharisma) * hero.bonusCharismaPercent / 100;
 
-            hero.baseMaxHP = hero.baseHP + hero.totalEndurance * 5 + (hero.baseHP + hero.totalEndurance * 5) * hero.totalEndurance/10/100;
+            hero.baseMaxHP = hero.baseHP + hero.totalEndurance * 5 + (hero.baseHP + hero.totalEndurance * 5) * hero.totalEndurance / 10 / 100;
             hero.totalMaxHP = hero.baseMaxHP + hero.bonusHPValue + (hero.baseMaxHP + hero.bonusHPValue) * hero.bonusHPPercent / 100;
 
             hero.baseMaxENE = hero.baseENE + hero.totalKnowledge * 3;
@@ -120,7 +120,7 @@ namespace Assets.PlayerController
         {
             C_Hero hero = HeroController.mainHero;
 
-            hero.baseMaxHP = hero.baseHP + hero.totalEndurance * 5 + (hero.baseHP + hero.totalEndurance * 5) * hero.totalEndurance / 10  / 100;
+            hero.baseMaxHP = hero.baseHP + hero.totalEndurance * 5 + (hero.baseHP + hero.totalEndurance * 5) * hero.totalEndurance / 10 / 100;
 
             hero.bonusTalismanPower = hero.totalEndurance / 5 * 15;
         }
@@ -131,7 +131,7 @@ namespace Assets.PlayerController
 
             hero.baseMaxENE = hero.baseENE + hero.totalKnowledge * 3;
 
-            hero.bonusMagAtkValue = hero.totalKnowledge * 3;     
+            hero.bonusMagAtkValue = hero.totalKnowledge * 3;
             hero.bonusMagAtkPercent = hero.totalKnowledge / 10 * 2 / 100;
             hero.bonusTalismanPowerPercent = hero.totalKnowledge / 10 / 100;
         }
@@ -140,7 +140,7 @@ namespace Assets.PlayerController
         {
             C_Hero hero = HeroController.mainHero;
 
-            hero.critDamageMod = hero.totalCharisma * 2/100;
+            hero.critDamageMod = hero.totalCharisma * 2 / 100;
             hero.bonusCritChance = hero.totalCharisma / 10;
         }
 
@@ -218,6 +218,17 @@ namespace Assets.PlayerController
             }
         }
 
-
+        public static string getDefParamState(DefenceParam defenceParam, Dictionary<string, string> messages)
+        {
+            switch (defenceParam.intValue)
+            {
+                case 0: return messages["nDef"];
+                case 1: return messages["sDef"];
+                case 2: return messages["mDef"];
+                case 3: return messages["gDef"];
+                case 4: return messages["uDef"];
+                default: return "NoVal";
+            }
+        }
     }
 }

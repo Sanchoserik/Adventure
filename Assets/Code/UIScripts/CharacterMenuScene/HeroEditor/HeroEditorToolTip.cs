@@ -29,7 +29,17 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
                 { "TotalStr", () => genTotalStr(systemMessages["TotalStr"])},
                 { "TotalEnd", () => genTotalEnd(systemMessages["TotalEnd"])},
                 { "TotalKnd", () => genTotalKnd(systemMessages["TotalKnd"])},
-                { "TotalChr", () => genTotalChr(systemMessages["TotalChr"])}
+                { "TotalChr", () => genTotalChr(systemMessages["TotalChr"])},
+                { "airDef", () => genAirDef(systemMessages["airDef"])},
+                { "lightningDef", () => genLightningDef(systemMessages["lightningDef"])},
+                { "earthDef", () => genEarthDef(systemMessages["earthDef"])},
+                { "waterDef", () => genWaterDef(systemMessages["waterDef"])},
+                { "fireDef", () => genFireDef(systemMessages["fireDef"])},
+                { "lifeDef", () => genLifeDef(systemMessages["lifeDef"])},
+                { "deathDef", () => genDeathDef(systemMessages["deathDef"])},
+                { "lightDef", () => genLightDef(systemMessages["lightDef"])},
+                { "darknessDef", () => genDarknessDef(systemMessages["darknessDef"])},
+                { "physDef", () => genPhysDef(systemMessages["physDef"])},
             };
 
             systemMessages = LocalisationManager.systemMessagesLocalisationData.localisationValues["CharacterMenu"];
@@ -40,9 +50,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
         public void generateToolTip(string flag)
         {
             if (!toolTipGenerated)
-            {
-                //  Dictionary<string,string> systemMessages = LocalisationManager.systemMessagesLocalisationData.localisationValues["CharacterMenu"];
-
+            {           
                 tooltipGenerator[flag]();
 
                 gameObject.SetActive(true);
@@ -157,6 +165,115 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
             helpInfo.text = str.ToString();
         }
 
+        private void genAirDef(string sysText)
+        {
+            C_Hero hero = HeroController.mainHero;
+            StringBuilder str = new StringBuilder(sysText);
+
+            str.Replace("$base$", HeroAttributesController.getDefParamState(hero.airDef, systemMessages));
+            str.Replace("$bonus$", HeroAttributesController.getDefParamState(hero.bonusAirDef, systemMessages));
+
+            helpInfo.text = str.ToString();
+        }
+
+        private void genLightningDef(string sysText)
+        {
+            C_Hero hero = HeroController.mainHero;
+            StringBuilder str = new StringBuilder(sysText);
+
+            str.Replace("$base$", HeroAttributesController.getDefParamState(hero.lightningDef, systemMessages));
+            str.Replace("$bonus$", HeroAttributesController.getDefParamState(hero.bonusLightningDef, systemMessages));
+
+            helpInfo.text = str.ToString();
+        }
+
+        private void genEarthDef(string sysText)
+        {
+            C_Hero hero = HeroController.mainHero;
+            StringBuilder str = new StringBuilder(sysText);
+
+            str.Replace("$base$", HeroAttributesController.getDefParamState(hero.earthDef, systemMessages));
+            str.Replace("$bonus$", HeroAttributesController.getDefParamState(hero.bonusEarthDef, systemMessages));
+
+            helpInfo.text = str.ToString();
+        }
+
+        private void genWaterDef(string sysText)
+        {
+            C_Hero hero = HeroController.mainHero;
+            StringBuilder str = new StringBuilder(sysText);
+
+            str.Replace("$base$", HeroAttributesController.getDefParamState(hero.waterDef, systemMessages));
+            str.Replace("$bonus$", HeroAttributesController.getDefParamState(hero.bonusWaterDef, systemMessages));
+
+            helpInfo.text = str.ToString();
+        }
+
+        private void genFireDef(string sysText)
+        {
+            C_Hero hero = HeroController.mainHero;
+            StringBuilder str = new StringBuilder(sysText);
+
+            str.Replace("$base$", HeroAttributesController.getDefParamState(hero.fireDef, systemMessages));
+            str.Replace("$bonus$", HeroAttributesController.getDefParamState(hero.bonusFireDef, systemMessages));
+
+            helpInfo.text = str.ToString();
+        }
+
+        private void genLifeDef(string sysText)
+        {
+            C_Hero hero = HeroController.mainHero;
+            StringBuilder str = new StringBuilder(sysText);
+
+            str.Replace("$base$", HeroAttributesController.getDefParamState(hero.lifeDef, systemMessages));
+            str.Replace("$bonus$", HeroAttributesController.getDefParamState(hero.bonusLifeDef, systemMessages));
+
+            helpInfo.text = str.ToString();
+        }
+
+        private void genDeathDef(string sysText)
+        {
+            C_Hero hero = HeroController.mainHero;
+            StringBuilder str = new StringBuilder(sysText);
+
+            str.Replace("$base$", HeroAttributesController.getDefParamState(hero.deathDef, systemMessages));
+            str.Replace("$bonus$", HeroAttributesController.getDefParamState(hero.bonusDeathDef, systemMessages));
+
+            helpInfo.text = str.ToString();
+        }
+
+        private void genLightDef(string sysText)
+        {
+            C_Hero hero = HeroController.mainHero;
+            StringBuilder str = new StringBuilder(sysText);
+
+            str.Replace("$base$", HeroAttributesController.getDefParamState(hero.lightDef, systemMessages));
+            str.Replace("$bonus$", HeroAttributesController.getDefParamState(hero.bonusLightDef, systemMessages));
+
+            helpInfo.text = str.ToString();
+        }
+
+        private void genDarknessDef(string sysText)
+        {
+            C_Hero hero = HeroController.mainHero;
+            StringBuilder str = new StringBuilder(sysText);
+
+            str.Replace("$base$", HeroAttributesController.getDefParamState(hero.darknessDef, systemMessages));
+            str.Replace("$bonus$", HeroAttributesController.getDefParamState(hero.bonusDarknessDef, systemMessages));
+
+            helpInfo.text = str.ToString();
+        }
+
+        private void genPhysDef(string sysText)
+        {
+            C_Hero hero = HeroController.mainHero;
+            StringBuilder str = new StringBuilder(sysText);
+
+            str.Replace("$base$", HeroAttributesController.getDefParamState(hero.physDef, systemMessages));
+            str.Replace("$bonus$", HeroAttributesController.getDefParamState(hero.bonusPhysDef, systemMessages));
+
+            helpInfo.text = str.ToString();
+        }
 
     }
 }
