@@ -38,28 +38,28 @@ namespace Assets.PlayerController
         public DefenceParam deathDef;
         public DefenceParam lightDef;
         public DefenceParam darknessDef;
-        // this valus can be changed by some effects
-        public DefenceParam chPhysDef;
-        public DefenceParam chFireDef;
-        public DefenceParam chAirDef;
-        public DefenceParam chLightningDef;
-        public DefenceParam chEarthDef;
-        public DefenceParam chWaterDef;
-        public DefenceParam chLifeDef;
-        public DefenceParam chDeathDef;
-        public DefenceParam chLightDef;
-        public DefenceParam chDarknessDef;
+        // bonus values
+        public DefenceParam bonusPhysDef;
+        public DefenceParam bonusFireDef;
+        public DefenceParam bonusAirDef;
+        public DefenceParam bonusLightningDef;
+        public DefenceParam bonusEarthDef;
+        public DefenceParam bonusWaterDef;
+        public DefenceParam bonusLifeDef;
+        public DefenceParam bonusDeathDef;
+        public DefenceParam bonusLightDef;
+        public DefenceParam bonusDarknessDef;
         //Total hero def values  totalDefValue = defVal + chDefVal;
-        public DefenceParam tPhysDef;
-        public DefenceParam tFireDef;
-        public DefenceParam tAirDef;
-        public DefenceParam tLightningDef;
-        public DefenceParam tEarthDef;
-        public DefenceParam tWaterDef;
-        public DefenceParam tLifeDef;
-        public DefenceParam tDeathDef;
-        public DefenceParam tLightDef;
-        public DefenceParam tDarknessDef;
+        public DefenceParam totalPhysDef;
+        public DefenceParam totalFireDef;
+        public DefenceParam totalAirDef;
+        public DefenceParam totalLightningDef;
+        public DefenceParam totalEarthDef;
+        public DefenceParam totalWaterDef;
+        public DefenceParam totalLifeDef;
+        public DefenceParam totalDeathDef;
+        public DefenceParam totalLightDef;
+        public DefenceParam totalDarknessDef;
 
         //base params
         public int baseStrength;
@@ -159,27 +159,27 @@ namespace Assets.PlayerController
             lightDef = new DefenceParam();
             darknessDef = new DefenceParam();
 
-            chPhysDef = new DefenceParam();
-            chFireDef = new DefenceParam();
-            chAirDef = new DefenceParam();
-            chLightningDef = new DefenceParam();
-            chEarthDef = new DefenceParam();
-            chWaterDef = new DefenceParam();
-            chLifeDef = new DefenceParam();
-            chDeathDef = new DefenceParam();
-            chLightDef = new DefenceParam();
-            chDarknessDef = new DefenceParam();
+            bonusPhysDef = new DefenceParam();
+            bonusFireDef = new DefenceParam();
+            bonusAirDef = new DefenceParam();
+            bonusLightningDef = new DefenceParam();
+            bonusEarthDef = new DefenceParam();
+            bonusWaterDef = new DefenceParam();
+            bonusLifeDef = new DefenceParam();
+            bonusDeathDef = new DefenceParam();
+            bonusLightDef = new DefenceParam();
+            bonusDarknessDef = new DefenceParam();
 
-            tPhysDef = new DefenceParam();
-            tFireDef = new DefenceParam();
-            tAirDef = new DefenceParam();
-            tLightningDef = new DefenceParam();
-            tEarthDef = new DefenceParam();
-            tWaterDef = new DefenceParam();
-            tLifeDef = new DefenceParam();
-            tDeathDef = new DefenceParam();
-            tLightDef = new DefenceParam();
-            tDarknessDef = new DefenceParam();
+            totalPhysDef = new DefenceParam();
+            totalFireDef = new DefenceParam();
+            totalAirDef = new DefenceParam();
+            totalLightningDef = new DefenceParam();
+            totalEarthDef = new DefenceParam();
+            totalWaterDef = new DefenceParam();
+            totalLifeDef = new DefenceParam();
+            totalDeathDef = new DefenceParam();
+            totalLightDef = new DefenceParam();
+            totalDarknessDef = new DefenceParam();
 
             money = 0;
             baseAP = 4;

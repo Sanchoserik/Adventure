@@ -56,15 +56,15 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
             heroStatusValues["HPVal"].text = hero.currentHP.ToString()+"/"+hero.totalMaxHP.ToString();
             heroStatusValues["ENEVal"].text = hero.currentENE.ToString() + "/" + hero.totalMaxENE.ToString();
             heroStatusValues["ActionPointsVal"].text = hero.totalAP.ToString();
-            heroStatusValues["PhysDefVal"].text = hero.tPhysDef.strValue;
-            heroStatusValues["FireDefVal"].text = hero.tFireDef.strValue;
-            heroStatusValues["AirDefVal"].text = hero.tAirDef.strValue;
-            heroStatusValues["LightningDefVal"].text = hero.tLightningDef.strValue;
-            heroStatusValues["EarthDefVal"].text = hero.tEarthDef.strValue;
-            heroStatusValues["WaterDefVal"].text = hero.tWaterDef.strValue;
-            heroStatusValues["LightDefVal"].text = hero.tLightDef.strValue;
-            heroStatusValues["DarknessDefVal"].text = hero.tDarknessDef.strValue;
-            heroStatusValues["LifeDefVal"].text = hero.tLifeDef.strValue;
+            heroStatusValues["PhysDefVal"].text = hero.totalPhysDef.strValue;
+            heroStatusValues["FireDefVal"].text = hero.totalFireDef.strValue;
+            heroStatusValues["AirDefVal"].text = hero.totalAirDef.strValue;
+            heroStatusValues["LightningDefVal"].text = hero.totalLightningDef.strValue;
+            heroStatusValues["EarthDefVal"].text = hero.totalEarthDef.strValue;
+            heroStatusValues["WaterDefVal"].text = hero.totalWaterDef.strValue;
+            heroStatusValues["LightDefVal"].text = hero.totalLightDef.strValue;
+            heroStatusValues["DarknessDefVal"].text = hero.totalDarknessDef.strValue;
+            heroStatusValues["LifeDefVal"].text = hero.totalLifeDef.strValue;
             heroStatusValues["DeathDefVal"].text = hero.deathDef.strValue;
             heroStatusValues["MoneyVal"].text = hero.money.ToString();
             

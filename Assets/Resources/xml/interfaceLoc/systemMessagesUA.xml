@@ -18,8 +18,27 @@
  <el name = "TotalHP">Загальне здоров'я = $BaseHP$(Загальне базове здоров'я) + $BonusVal$(Бонус від підсилювачів) + $Val$($B%$%)(Бонус від підсилювачів %)</el>
  <el name = "BaseMaxENE">Базова енергія = $BaseENE$ + $KndVal$(Енергія від знань)</el>
  <el name = "TotalENE">Загальна енергія = $BaseENE$(Загальна базова енергія) + $BonusVal$(Бонус від підсилювачів) + $Val$($B%$%)(Бонус від підсилювачів %)</el>
+ <el name = "TotalStr">Загальна сила = $BaseStr$ + $BonusStr$(Бонус від підсилювачів) + $Val$($B%$%)(Бонус від підсилювачів %)</el>
+ <el name = "TotalEnd">Загальна витривалість = $BaseEnd$ + $BonusEnd$(Бонус від підсилювачів) + $Val$($B%$%)(Бонус від підсилювачів %)</el>
+ <el name = "TotalKnd">Загальні знання = $BaseKnd$ + $BonusKnd$(Бонус від підсилювачів) + $Val$($B%$%)(Бонус від підсилювачів %)</el>
+ <el name = "TotalChr">Загальна харизма = $BaseChr$ + $BonusChr$(Бонус від підсилювачів) + $Val$($B%$%)(Бонус від підсилювачів %)</el>
  
+ <el name = "nDef">Відсутній(0%)</el>
+ <el name = "sDef">Малий(20%)</el>
+ <el name = "mDef">Середній(50%)</el>
+ <el name = "gDef">Великий(80%)</el>
+ <el name = "uDef">Ультра(100%)</el>
  
+ <el name = "fireDef">Захист від вогню = $base$ + $bonus$</el>
+ <el name = "airDef">Захист від повітря = $base$ + $bonus$</el>
+ <el name = "lightningDef">Захист від блискавки = $base$ + $bonus$</el>
+ <el name = "earthDef">Захист від землі = $base$ + $bonus$</el>
+ <el name = "waterDef">Захист від води = $base$ + $bonus$</el>
+ <el name = "lifeDef">Захист від життя = $base$ + $bonus$</el>
+ <el name = "deathDef">Захист від смерті = $base$ + $bonus$</el>
+ <el name = "lightDef">Захист від світла = $base$ + $bonus$</el>
+ <el name = "darknessDef">Захист від темряви = $base$ + $bonus$</el>
+ <el name = "physDef">Захист від фізичних атак = $base$ + $bonus$</el>
  
  </scene>
  </scenes>
