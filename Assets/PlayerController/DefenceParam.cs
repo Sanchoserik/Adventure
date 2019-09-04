@@ -35,6 +35,15 @@ namespace Assets.PlayerController
             setValue();
         }
 
+        public DefenceParam combineValues(DefenceParam baseVal, DefenceParam bonusVal)
+        {
+            this.intValue = baseVal.intValue + bonusVal.intValue;
+            this.shortValue = (short)(baseVal.shortValue + bonusVal.shortValue);
+            this.setValue();
+
+            return this;
+        }
+
         private void setValue()
         {
             switch (shortValue)

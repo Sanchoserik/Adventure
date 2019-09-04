@@ -92,6 +92,8 @@ namespace Assets.PlayerController
         {
             C_Hero hero = HeroController.mainHero;
 
+            refreshTotalDefValues();
+
             hero.totalStrength = hero.baseStrength + hero.bonusStrength + (hero.baseStrength + hero.bonusStrength) * hero.bonusStrengthPercent / 100;
             hero.totalEndurance = hero.baseEndurance + hero.bonusEndurance + (hero.baseEndurance + hero.bonusEndurance) * hero.bonusEndurancePercent / 100;
             hero.totalKnowledge = hero.baseKnowledge + hero.bonusKnowledge + (hero.baseKnowledge + hero.bonusKnowledge) * hero.bonusKnowledgePercent / 100;
@@ -106,6 +108,7 @@ namespace Assets.PlayerController
             hero.totalPhysAtk = hero.basePhysAtk + hero.bonusPhysAtk + (hero.basePhysAtk + hero.bonusPhysAtk) * hero.bonusPhysAtkPercent / 100;
             hero.totalCritChance = hero.baseCritChance + hero.bonusCritChance;
             hero.totalAP = hero.baseAP + hero.bonusAP;
+
         }
 
         private static void updateStrength()
@@ -144,6 +147,23 @@ namespace Assets.PlayerController
             hero.bonusCritChance = hero.totalCharisma / 10;
         }
 
+        public static void refreshTotalDefValues()
+        {
+            C_Hero hero = HeroController.mainHero;
+
+            hero.totalAirDef.combineValues(hero.airDef, hero.bonusAirDef);
+            hero.totalLightningDef.combineValues(hero.lightningDef, hero.bonusLightningDef);
+            hero.totalEarthDef.combineValues(hero.earthDef, hero.bonusEarthDef);
+            hero.totalWaterDef.combineValues(hero.waterDef, hero.bonusWaterDef);
+            hero.totalFireDef.combineValues(hero.fireDef, hero.bonusFireDef);
+            hero.totalLifeDef.combineValues(hero.lifeDef, hero.bonusLifeDef);
+            hero.totalDeathDef.combineValues(hero.deathDef, hero.bonusDeathDef);
+            hero.totalLightDef.combineValues(hero.lightDef, hero.bonusLightDef);
+            hero.totalDarknessDef.combineValues(hero.darknessDef, hero.bonusDarknessDef);
+            hero.totalPhysDef.combineValues(hero.physDef, hero.bonusPhysDef);
+        }
+
+        
 
         public static void defenceValuePlus(string defValue)
         {

@@ -40,6 +40,10 @@
  <el name = "darknessDef">Захист від темряви = $base$(Базовий захист) + $bonus$</el>
  <el name = "physDef">Захист від фізичних атак = $base$(Базовий захист) + $bonus$</el>
  
+ <el name = "physAtk">Фізична атака = $Base$(Базове значення) + $BonusVal$(Бонус від підсилювачів) +$Val$($B%$%)(Бонус від підсилювачів %)  </el>
+ <el name = "critChance">Шанс критичного удару = $Base$(Базовий) + $Bonus$(Бонус від підсилювачів) </el> 
+ <el name = "actionPoints">Очки дії = $Base$(Базові) + $Bonus$(Бонус від підсилювачів)</el>
+ 
  </scene>
  </scenes>
  

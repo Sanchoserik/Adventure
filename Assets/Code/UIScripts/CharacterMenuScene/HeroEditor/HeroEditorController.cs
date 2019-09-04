@@ -67,7 +67,14 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
             heroStatusValues["LifeDefVal"].text = hero.totalLifeDef.strValue;
             heroStatusValues["DeathDefVal"].text = hero.deathDef.strValue;
             heroStatusValues["MoneyVal"].text = hero.money.ToString();
-            
+            heroStatusValues["PhysAtkVal"].text = hero.totalPhysAtk.ToString();
+            heroStatusValues["BonusMagAtkVal"].text = hero.bonusMagAtkValue.ToString();
+            heroStatusValues["BonusMagAtkPercentVal"].text = hero.bonusMagAtkPercent.ToString();
+            heroStatusValues["BonusTPowerVal"].text = hero.bonusTalismanPower.ToString();
+            heroStatusValues["BonusTPowerPercentVal"].text = hero.bonusTalismanPowerPercent.ToString();
+            heroStatusValues["CritChanceVal"].text = hero.totalCritChance.ToString();
+            heroStatusValues["CritDmgModVal"].text = hero.critDamageMod.ToString();
+            heroStatusValues["BonusCritDmgPercentVal"].text = hero.bonusCritDamagePercent.ToString();
         }
 
         public void updateMainStatusPanel()

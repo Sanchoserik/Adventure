@@ -40,6 +40,9 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
                 { "lightDef", () => genLightDef(systemMessages["lightDef"])},
                 { "darknessDef", () => genDarknessDef(systemMessages["darknessDef"])},
                 { "physDef", () => genPhysDef(systemMessages["physDef"])},
+                { "physAtk", () => genPhysAtk(systemMessages["physAtk"])},
+                { "critChance", () => genCritChance(systemMessages["critChance"])},
+                { "actionPoints", () => genActionPoints(systemMessages["actionPoints"])}
             };
 
             systemMessages = LocalisationManager.systemMessagesLocalisationData.localisationValues["CharacterMenu"];
@@ -271,6 +274,41 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
 
             str.Replace("$base$", HeroAttributesController.getDefParamState(hero.physDef, systemMessages));
             str.Replace("$bonus$", HeroAttributesController.getDefParamState(hero.bonusPhysDef, systemMessages));
+
+            helpInfo.text = str.ToString();
+        }
+
+        private void genPhysAtk(string sysText)
+        {
+            C_Hero hero = HeroController.mainHero;
+            StringBuilder str = new StringBuilder(sysText);
+
+            str.Replace("$Base$", hero.basePhysAtk.ToString());
+            str.Replace("$BonusVal$", hero.bonusPhysAtk.ToString());
+            str.Replace("$Val$", ((hero.basePhysAtk + hero.bonusPhysAtk) * hero.bonusPhysAtkPercent / 100).ToString());
+            str.Replace("$B%$", hero.bonusPhysAtkPercent.ToString());
+
+            helpInfo.text = str.ToString();
+        }
+
+        private void genCritChance(string sysText)
+        {
+            C_Hero hero = HeroController.mainHero;
+            StringBuilder str = new StringBuilder(sysText);
+
+            str.Replace("$Base$", hero.baseCritChance.ToString());
+            str.Replace("$Bonus$", hero.bonusCritChance.ToString());
+         
+            helpInfo.text = str.ToString();
+        }
+
+        private void genActionPoints(string sysText)
+        {
+            C_Hero hero = HeroController.mainHero;
+            StringBuilder str = new StringBuilder(sysText);
+
+            str.Replace("$Base$", hero.baseAP.ToString());
+            str.Replace("$Bonus$", hero.bonusAP.ToString());
 
             helpInfo.text = str.ToString();
         }

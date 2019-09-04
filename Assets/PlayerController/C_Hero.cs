@@ -96,11 +96,11 @@ namespace Assets.PlayerController
         public int bonusTalismanPowerPercent;        
         
         //crit chance
-        public int baseCritChance;
-        public int bonusCritDamagePercent;
+        public int baseCritChance;        
         public int bonusCritChance;
         public int totalCritChance;        
         public float critDamageMod;
+        public int bonusCritDamagePercent;
 
         //AP - action Points
         public int baseAP;
@@ -138,8 +138,8 @@ namespace Assets.PlayerController
             level = 0;
             currExp = 0;
             nextLevelExp = 100;
-            freeSkillPoints = 0;
-            freeAttributePoints = 0;
+            freeSkillPoints = 1;
+            freeAttributePoints = 4;
 
             basePhysAtk = 25;
 
