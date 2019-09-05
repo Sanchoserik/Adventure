@@ -10,9 +10,7 @@ namespace Assets.PlayerController
         public static void attributePlus(string attribute)
         {
             C_Hero hero = HeroController.mainHero;
-
-            if (hero.freeAttributePoints > 0)
-            {
+          
                 switch (attribute)
                 {
                     case "str":
@@ -30,7 +28,7 @@ namespace Assets.PlayerController
                 }
                 hero.freeAttributePoints--;
                 updateAttributes();
-            }
+            
         }
 
         public static void attributeMinus(string attribute)
@@ -41,38 +39,27 @@ namespace Assets.PlayerController
             {
                 case "str":
                     {
-                        if (hero.baseStrength > 1)
-                        {
                             hero.baseStrength--;
                             hero.freeAttributePoints++;
-                        }
                         break;
                     }
                 case "end":
-                    {
-                        if (hero.baseEndurance > 1)
-                        {
+                    {                   
                             hero.baseEndurance--;
-                            hero.freeAttributePoints++;
-                        }
+                            hero.freeAttributePoints++;                 
                         break;
                     }
                 case "knd":
                     {
-                        if (hero.baseKnowledge > 1)
-                        {
                             hero.baseKnowledge--;
                             hero.freeAttributePoints++;
-                        }
+
                         break;
                     }
                 case "chr":
                     {
-                        if (hero.baseCharisma > 1)
-                        {
                             hero.baseCharisma--;
                             hero.freeAttributePoints++;
-                        }
                         break;
                     }
             }
@@ -163,8 +150,6 @@ namespace Assets.PlayerController
             hero.totalPhysDef.combineValues(hero.physDef, hero.bonusPhysDef);
         }
 
-        
-
         public static void defenceValuePlus(string defValue)
         {
             C_Hero hero = HeroController.mainHero;
@@ -250,5 +235,6 @@ namespace Assets.PlayerController
                 default: return "NoVal";
             }
         }
+        
     }
 }

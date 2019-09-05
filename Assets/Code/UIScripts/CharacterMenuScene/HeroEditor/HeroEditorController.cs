@@ -13,12 +13,24 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
         public GameObject LeftStatusPanel;
         public GameObject MainStatusPanel;
 
+        public GameObject[] plusButtons;
+        public GameObject[] minusButtons;
+
+        private bool updated = false;
+        private int attributeButtonCounter = 0;
+
         public static Dictionary<string, Text> heroStatusValues;
 
         public void Start()
         {
             fillHeroStatusValues();  
             updateVisuals();   
+        }
+
+        public void Update()
+        {
+            if (!updated)
+                updateButtons();
         }
 
         private void fillHeroStatusValues()
@@ -104,42 +116,93 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
         //BUTTON INPUT
         public void attributePlusButton(string attribute)
         {
-            switch (attribute)
+            if (HeroController.mainHero.freeAttributePoints > 0)
             {
-                case "str":
-                    HeroAttributesController.attributePlus("str");
-                    break;
-                case "end":
-                    HeroAttributesController.attributePlus("end");
-                    break;
-                case "knd":
-                    HeroAttributesController.attributePlus("knd");
-                    break;
-                case "chr":
-                    HeroAttributesController.attributePlus("chr");
-                    break;
-            }
-            updateVisuals();
-        }
+                switch (attribute)
+                {
+                    case "str":
+                        HeroAttributesController.attributePlus("str");
+                        break;
+                    case "end":
+                        HeroAttributesController.attributePlus("end");
+                        break;
+                    case "knd":
+                        HeroAttributesController.attributePlus("knd");
+                        break;
+                    case "chr":
+                        HeroAttributesController.attributePlus("chr");
+                        break;
+                }
 
+                attributeButtonCounter++;
+                updateVisuals();
+                updated = false;
+            }
+        }
         public void attributeMinusButton(string attribute)
         {
             switch (attribute)
             {
                 case "str":
-                    HeroAttributesController.attributeMinus("str");
+                    if (HeroController.mainHero.baseStrength > 1)
+                    {
+                        HeroAttributesController.attributeMinus("str");
+                        attributeButtonCounter--;
+                    }
                     break;
                 case "end":
-                    HeroAttributesController.attributeMinus("end");
-                    break;
+                    if (HeroController.mainHero.baseEndurance > 1)
+                    {
+                        HeroAttributesController.attributeMinus("end");
+                        attributeButtonCounter--;
+                    }
+                        break;
                 case "knd":
-                    HeroAttributesController.attributeMinus("knd");
-                    break;
+                    if (HeroController.mainHero.baseKnowledge > 1)
+                    {
+                        HeroAttributesController.attributeMinus("knd");
+                        attributeButtonCounter--;
+                    }
+                        break;
                 case "chr":
-                    HeroAttributesController.attributeMinus("chr");
-                    break;
+                    if (HeroController.mainHero.baseCharisma > 1)
+                    {
+                        HeroAttributesController.attributeMinus("chr");
+                        attributeButtonCounter--;
+                    }
+                        break;
             }
+
             updateVisuals();
+            updated = false;
+        }
+
+        private void updateButtons()
+        {
+            if (HeroController.mainHero.freeAttributePoints > 0)
+            {
+                for (int i = 0; i < plusButtons.Length;++i)
+                {
+                    plusButtons[i].SetActive(true);
+                }
+            }
+            if (attributeButtonCounter > 0)
+            {
+                for (int i = 0; i < minusButtons.Length; ++i)
+                {
+                    minusButtons[i].SetActive(true);
+                }
+            }
+            else
+            {
+                for (int i = 0; i < minusButtons.Length; ++i)
+                {
+                    minusButtons[i].SetActive(false);
+                }
+            }
+
+
+            updated = true;
         }
 
     }

@@ -120,7 +120,7 @@ namespace Assets.PlayerController
 
         //Level Data
         public int freeSkillPoints;
-        public int freeAttributePoints;        
+        public int freeAttributePoints;
         public int level;
         public int currExp; 
         public int nextLevelExp;
