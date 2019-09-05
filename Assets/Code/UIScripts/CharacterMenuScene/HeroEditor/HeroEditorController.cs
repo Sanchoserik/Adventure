@@ -17,7 +17,10 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
         public GameObject[] minusButtons;
 
         private bool updated = false;
-        private int attributeButtonCounter = 0;
+        private int buttonCounterStr = 0;
+        private int buttonCounterEnd = 0;
+        private int buttonCounterKnd = 0;
+        private int buttonCounterChr = 0;
 
         public static Dictionary<string, Text> heroStatusValues;
 
@@ -122,23 +125,27 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
                 {
                     case "str":
                         HeroAttributesController.attributePlus("str");
+                        buttonCounterStr++;
                         break;
                     case "end":
+                        buttonCounterEnd++;
                         HeroAttributesController.attributePlus("end");
                         break;
                     case "knd":
+                        buttonCounterKnd++;
                         HeroAttributesController.attributePlus("knd");
                         break;
                     case "chr":
+                        buttonCounterChr++;
                         HeroAttributesController.attributePlus("chr");
                         break;
                 }
 
-                attributeButtonCounter++;
                 updateVisuals();
                 updated = false;
             }
         }
+
         public void attributeMinusButton(string attribute)
         {
             switch (attribute)
@@ -147,28 +154,28 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
                     if (HeroController.mainHero.baseStrength > 1)
                     {
                         HeroAttributesController.attributeMinus("str");
-                        attributeButtonCounter--;
+                        buttonCounterStr--;
                     }
                     break;
                 case "end":
                     if (HeroController.mainHero.baseEndurance > 1)
                     {
                         HeroAttributesController.attributeMinus("end");
-                        attributeButtonCounter--;
+                        buttonCounterEnd--;
                     }
                         break;
                 case "knd":
                     if (HeroController.mainHero.baseKnowledge > 1)
                     {
                         HeroAttributesController.attributeMinus("knd");
-                        attributeButtonCounter--;
+                        buttonCounterKnd--;
                     }
                         break;
                 case "chr":
                     if (HeroController.mainHero.baseCharisma > 1)
                     {
                         HeroAttributesController.attributeMinus("chr");
-                        attributeButtonCounter--;
+                        buttonCounterChr--;
                     }
                         break;
             }
@@ -179,6 +186,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
 
         private void updateButtons()
         {
+            //activate pluss attribute buttons
             if (HeroController.mainHero.freeAttributePoints > 0)
             {
                 for (int i = 0; i < plusButtons.Length;++i)
@@ -186,25 +194,40 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
                     plusButtons[i].SetActive(true);
                 }
             }
-            if (attributeButtonCounter > 0)
-            {
-                for (int i = 0; i < minusButtons.Length; ++i)
-                {
-                    minusButtons[i].SetActive(true);
-                }
-            }
+           
+            //if counters > 0 activate minus buttons
+            //else deactivate minus button
+            if(buttonCounterStr > 0)
+                minusButtons[0].SetActive(true);
             else
-            {
-                for (int i = 0; i < minusButtons.Length; ++i)
-                {
-                    minusButtons[i].SetActive(false);
-                }
-            }
+                minusButtons[0].SetActive(false);
 
+            if (buttonCounterEnd > 0)
+                minusButtons[1].SetActive(true);
+            else
+                minusButtons[1].SetActive(false);
+
+            if (buttonCounterKnd > 0)
+                minusButtons[2].SetActive(true);
+            else
+                minusButtons[2].SetActive(false);
+
+            if (buttonCounterChr > 0)
+                minusButtons[3].SetActive(true);
+            else
+                minusButtons[3].SetActive(false);
 
             updated = true;
         }
 
+        public void resetSession()
+        {
+            buttonCounterStr = 0;
+            buttonCounterEnd = 0;
+            buttonCounterKnd = 0;
+            buttonCounterChr = 0;
+            updated = false;
+        }
     }
 
 }

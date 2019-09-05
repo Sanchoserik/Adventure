@@ -12,6 +12,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene
     {
         public GameObject AdvancedStatusPanel;
   
+
         private void Start()
         {
             
@@ -24,6 +25,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene
                 panel.gameObject.SetActive(false);
             }
             AdvancedStatusPanel.transform.Find("SkillTreePanel").gameObject.SetActive(true);
+            
         }
 
         public void showInvertoryButton()
