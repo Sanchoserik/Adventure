@@ -28,7 +28,9 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
         public void setItemToSlot(Transform slot, int slotIndex)
         {           
             if (checkQuickAccesItems(item)) // if quickAccesPanel already has this type of item
-            {               
+            {
+                int removeSlot;
+
                 foreach (Transform qaSlot in slot.parent.transform)
                 {
                     A_Item qaItem = qaSlot.GetComponent<UIItem>().item;
@@ -36,11 +38,13 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
                     if (qaItem != null)
                      if (qaItem.Equals(item))
                      {
+                            removeSlot = getSlotIndex(item);
+                            removeItemFromQuickAcces(removeSlot);
                             qaSlot.GetComponent<UIItem>().item = null;
+                            qaSlot.GetChild(0).GetComponent<Image>().sprite = null;
                             qaSlot.GetChild(0).GetComponent<Image>().enabled = false;
                      }
-                }
-                removeItemFromQuickAcces(slotIndex);
+                }           
             }
             
             Transform component = slot.transform.GetChild(0);
@@ -72,6 +76,12 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
         {
             InventorySystem invSystem = HeroController.mainHero.inventorySystem;
             invSystem.quickAccesItemStorage[slotIndex] = null;
+        }
+
+        private int getSlotIndex(A_Item item)
+        {
+            InventorySystem invSystem = HeroController.mainHero.inventorySystem;
+            return invSystem.quickAccesItemStorage.IndexOf(item);
         }
 
         public void dropItemFromSlot(Transform slot, UIItem item)
