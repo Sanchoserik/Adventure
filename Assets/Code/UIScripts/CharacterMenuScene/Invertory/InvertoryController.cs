@@ -12,30 +12,13 @@ using UnityEngine.U2D;
 
 namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
 {
-     enum ItemsEnum { defAirG , defAirM , defAirS , defAirU ,
-        defDarknessG, defDarknessM, defDarknessS, defDarknessU,
-        defDeathG, defDeathM, defDeathS, defDeathU,
-        defEarthG, defEarthM, defEarthS, defEarthU,
-        defFireG, defFireM, defFireS, defFireU,
-        defLifeG, defLifeM, defLifeS, defLifeU,
-        defLightG, defLightM, defLightS, defLightU,
-        defLightningG, defLightningM, defLightningS, defLightningU,
-        defPhysG, defPhysM, defPhysS, defPhysU,
-        defWaterG, defWaterM, defWaterS, defWaterU, 
-        // end Talisman Enum
-        potionHealS, PotionS, PotionM, PotionG, PotionU, // Potions
-        Mixture1S, Mixture1M, Mixture1G, Mixture1U, // Mixtures
-        ElixirS, ElixirM, ElixirG, ElixirU // Elixirs
-        //end Items Enum
-    }
-
+    
     public class InvertoryController : MonoBehaviour
     {
         public GameObject slotPrefab;
         public Transform mainHolder;
         public Transform quickAccesHolder;
-        public Sprite[] itemsSpriteSheet;
-
+    
         public SpriteAtlas itemsAtlas;
 
         InventorySystem invSystem;
@@ -105,16 +88,13 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             //Prefab instance has 2 child - Index 0 is <Image> - itemIcon - Index 1 is <Text> - itemCountText
             Transform component = instance.transform.GetChild(0);
             Image itemIcon = component.GetComponentInChildren<Image>();
-            itemIcon.enabled = true;
-            itemIcon.sprite = itemsSpriteSheet[getSpite(itemTypeName)];
-
+            itemIcon.enabled = true;   
             component = instance.transform.GetChild(1);
             Text itemCountText = component.GetComponentInChildren<Text>();
             itemCountText.text = itemCount.ToString();
 
             UIItem uiItem = instance.GetComponent<UIItem>();
-
-            //TEMP set all objects as HealP1S
+            
             foreach (List<A_Item> stack in invSystem.mainItemsStorage)
             {
                 if (stack[0].GetType().Name.Equals(itemTypeName))
@@ -124,6 +104,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
                 }
             }
             
+            itemIcon.sprite = itemsAtlas.GetSprite(uiItem.item.GetType().Name);
         }
 
         private void instantiateQuickAccesItems()
@@ -137,7 +118,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
                 if (item != null)
                 {
                     itemIcon.enabled = true;
-                    itemIcon.sprite = itemsSpriteSheet[getSpite(item.GetType().Name)];
+                    itemIcon.sprite = itemsAtlas.GetSprite(item.GetType().Name);
 
                     component = instance.transform.GetChild(1);
                     Text itemCountText = component.GetComponentInChildren<Text>();                   
@@ -163,68 +144,41 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
                 }
 
             }
-        }
-
-
-
-        private int getSpite(string name)
-        {
-            switch (name)
-            {
-                case "HealP1S": { return 12;}
-                case "HealP2M": { return 1; }
-                case "HealP3G": { return 2; }
-                case "HealP4U": { return 3; }
-                case "EneP1S": { return 0; }
-                case "EneP2M": { return 1; }
-                case "EneP3G": { return 2; }
-                case "EneP4U": { return 3; }
-                case "HealReP1S": { return 8; }
-                case "HealReP2M": { return 9; }
-                case "HealReP3G": { return 10; }
-                case "HealReP4U": { return 11; }
-                case "EneReP1S": { return 8; }
-                case "EneReP2M": { return 9; }
-                case "EneReP3G": { return 10; }
-                case "EneReP4U": { return 11; }
-                case "AirhUpMix1S": { return 4; }
-                case "AirUpMix2M": { return 5; }
-                case "AirUpMix3G": { return 6; }
-                case "AirUpMix4U": { return 7; }
-                case "DarknessUpMix1S": { return 4; }
-                case "DarknessUpMix2M": { return 5; }
-                case "DarknessUpMix3G": { return 6; }
-                case "DarknessUpMix4U": { return 7; }
-                case "DeathUpMix1S": { return 4; }
-                case "DeathUpMix2M": { return 5; }
-                case "DeathUpMix3G": { return 6; }
-                case "DeathUpMix4U": { return 7; }
-                case "EarthUpMix1S": { return 4; }
-                case "EarthUpMix2M": { return 5; }
-                case "EarthUpMix3G": { return 6; }
-                case "EarthUpMix4U": { return 7; }
-                case "FireUpMix1S": { return 4; }
-                case "FireUpMix2M": { return 5; }
-                case "FireUpMix3G": { return 6; }
-                case "FireUpMix4U": { return 7; }
-                case "LifeUpMix1S": { return 4; }
-                case "LifeUpMix2M": { return 5; }
-                case "LifeUpMix3G": { return 6; }
-                case "LifeUpMix4U": { return 7; }
-                case "LightningUpMix1S": { return 4; }
-                case "LightningUpMix2M": { return 5; }
-                case "LightningUpMix3G": { return 6; }
-                case "LightningUpMix4U": { return 7; }
-                case "PhysUpMix1S": { return 4; }
-                case "PhysUpMix2M": { return 5; }
-                case "PhysUpMix3G": { return 6; }
-                case "PhysUpMix4U": { return 7; }
-                case "WaterUpMix1S": { return 4; }
-                case "WaterUpMix2M": { return 5; }
-                case "WaterUpMix3G": { return 6; }
-                case "WaterUpMix4U": { return 7; }
-            }
-            return 0;
-        }
+        }     
     }
+
+    //enum with items names - just in case
+    //enum ItemsEnum
+    //{
+    //    DefAir1S, DefAir2M, DefAir3G, DefAir4U,
+    //    DefDarkness1S, DefDarkness2M, DefDarkness3G, DefDarkness4U,
+    //    DefDeath1S, DefDeath2M, DefDeath3G, DefDeath4U,
+    //    DefEarth1S, DefEarth2M, DefEarth3G, DefEarth4U,
+    //    DefFire1S, DefFire2M, DefFire3G, DefFire4U,
+    //    DefLife1S, DefLife2M, DefLife3G, DefLife4U,
+    //    DefLight1S, DefLight2M, DefLight3G, DefLight4U,
+    //    DefLightning1S, DefLightning2M, DefLightning3G, DefLightning4U,
+    //    DefPhys1S, DefPhys2M, DefPhys3G, DefPhys4U,
+    //    DefWater1S, DefWater2M, DefWater3G, DefWater4U,
+    //    // end Talisman Enum
+    //    HealP1S, HealP2M, HealP3G, HealP4U,
+    //    EneP1S, EneP2M, EneP3G, EneP4U,
+    //    // Potions
+    //    AirUp1S, AirUp2M, AirUp3G, AirUp4U,
+    //    DarknessUp1S, DarknessUp2M, DarknessUp3G, DarknessUp4U,
+    //    DeathUp1S, DeathUp2M, DeathUp3G, DeathUp4U,
+    //    EarthUp1S, EarthUp2M, EarthUp3G, EarthUp4U,
+    //    FireUp1S, FireUp2M, FireUp3G, FireUp4U,
+    //    LifeUp1S, LifeUp2M, LifeUp3G, LifeUp4U,
+    //    LightUp1S, LightUp2M, LightUp3G, LightUp4U,
+    //    LightningUp1S, LightningUp2M, LightningUp3G, LightningUp4U,
+    //    PhysUp1S, PhysUp2M, PhysUp3G, PhysUp4U,
+    //    WaterUp1S, WaterUp2M, WaterUp3G, WaterUp4U,
+    //    // Mixtures
+    //    HealRe1S, HealRe2M, HealRe3G, HealRe4U,
+    //    EneRe1S, EneRe2M, EneRe3G, EneRe4U
+    //    // Elixirs
+    //    //end Items Enum
+    //}
+
 }
