@@ -5,17 +5,16 @@
 0.2.4 skillsTree scene +
 0.2.5 HeroEditorScene +
 0.2.6 Hero Invertory Display +
-    //    
-	0.2.7 skill tree integration in character menu
-	 // skillTree bugfixing
-	--->0.2.8 invertory integration in character menu
-	0.2.9 improved invertory 
-	 // drag n drop items
-	 // add quick slots management
-	 // add items using
-    
-    0.3.0 CharacterMenu
-     // display more info
+0.2.7 skill tree integration in character menu +
+0.2.8 invertory integration in character menu +
+      hero editor in character menu +
+    --->0.2.9	 improved invertory
+                 new items
+                 new sprites
+                 use/drop/viewInfo items  
+                 provide localisation                 
+				 
+    0.3.0 CharacterMenu ready
      	 
 
 

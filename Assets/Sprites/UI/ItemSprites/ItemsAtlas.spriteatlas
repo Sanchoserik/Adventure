@@ -1,0 +1,202 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ItemsAtlas
+  m_EditorData:
+    textureSettings:
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      colorSpace: 1
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+    platformSettings: []
+    packingParameters:
+      paddingPower: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    packedHash:
+      serializedVersion: 2
+      Hash: 7ff6fae544be76cbb44de099ab857d58
+    variantMultiplier: 1
+    bindAsDefault: 1
+    finalFormat: 4
+    hashString: 7ff6fae544be76cbb44de099ab857d58
+    totalSpriteSurfaceArea: 2120000
+    packables:
+    - {fileID: 102900000, guid: cf0517a88a724154d8898d6be0150230, type: 3}
+    - {fileID: 102900000, guid: 0c254a2cfb4e7064da6a4d49e6a7fb33, type: 3}
+    packedSpriteRenderDataKeys:
+    - d446b82c5b55a1043bc848fe7cc7c8b4: 21300000
+    - 2b81cfd28eb1d2843b982480a51dd9fb: 21300000
+    - eee05bc6d9431824aaf5c77809a32dff: 21300000
+    - 22a238a35046e7743b770c57ffcbe23e: 21300000
+    - c512d8b2d8b121d49b381f8b4695f292: 21300000
+    - 2ce68111ffc452f4685bd751b3290bc9: 21300000
+    - 465c2ff1acf2650409e8d27879eb1271: 21300000
+    - 771786238426a4242b9b5a1d0e8262e2: 21300000
+    - 6d070eda609eadc4cb64b12eb8590d38: 21300000
+    - 190d074ede494b44e91edd9ec7a3398c: 21300000
+    - 9fb48be7ae9576d44b749494d9afa964: 21300000
+    - 49b6b4029dcc8ed498dce5b35be9270a: 21300000
+    - b8c9e7e76456ce34c94992d611f86f65: 21300000
+    - 6c650f73332e5694fab9562e34f95438: 21300000
+    - 09e64ac000e03c343a4042349f510d62: 21300000
+    - a05369280633bf440bdf76cd1459de07: 21300000
+    - 122d01fea05c26642b16279744718692: 21300000
+    - 369fd0b0c6e8b6a4386fef38977a8a81: 21300000
+    - 3ab2f94bfb9b53b49bc1d0dda9a2be31: 21300000
+    - 85da859e3144d8348bed13641ee9e886: 21300000
+    - 25fe10e305e2c07438b0ef16887ea216: 21300000
+    - 7c25dbb1d6409754682fa7701e4b8cab: 21300000
+    - 1eaffb6b3e9bf484189f1e30b8367ba2: 21300000
+    - 1143a57ce546acb4d95150d13ad3f083: 21300000
+    - 4ebae3d19cff0ae4b80f94c552fa0561: 21300000
+    - 72434d66fae8b0b4e930d2679d4bcdf1: 21300000
+    - 56436eeff262da549a98b0dcaa40568d: 21300000
+    - 9683b724011b28b46a28a430784290f9: 21300000
+    - 5000e82bd5ddbc743bef98446a0880d3: 21300000
+    - 30172ac530a484f4f8eb29fce9d52c44: 21300000
+    - 3bb1c5a8fbaaafc498f65b21ad87d287: 21300000
+    - d96ec90188804154db3a2c163310247b: 21300000
+    - 1153978bef2bb354cad4384c8d83e4fa: 21300000
+    - 68f9ebe07a2bcf44b99c8b356115fe49: 21300000
+    - e1a5752b3866c4b469cf83efe008cd6d: 21300000
+    - 7a59b2af3ea548f45a1fbfd580e895a6: 21300000
+    - ce4e650eda1f3e441bbb79e961feb931: 21300000
+    - 9bcd05e4f114233498b4b9bbf1fc9167: 21300000
+    - d793db54875d76041a952bf4195dec4b: 21300000
+    - 4a20a56ca57df9d4c9b5f605df6bd15e: 21300000
+    - acb2dd2c7237bd74ca1d5b0af5a160ef: 21300000
+    - 5be62f21a0967b145aaca480d0b8e841: 21300000
+    - bed05bb2b2631924db4485dd7349a668: 21300000
+    - 4c4a9ece71d7b744eb5f5f6cfac38afe: 21300000
+    - 1e633b9bd58240746a2c9444f325d509: 21300000
+    - 7da62de5c1dd64946af500a3f9543c06: 21300000
+    - b651ceeca6b26b148aa72730b794e8a8: 21300000
+    - 74d923a6e98e0294699787a473f69417: 21300000
+    - cee551ea5b91ac745b4d28cb6b3c9995: 21300000
+    - 5ab77d369bac8714b81114930b3f627f: 21300000
+    - 012d5440d17aba148be57957a5d942b4: 21300000
+    - 6dc1dafbcdf73454c80f094af177487b: 21300000
+    - 92b7d344f0c1f8a42bb7cc91455f84aa: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: d446b82c5b55a1043bc848fe7cc7c8b4, type: 3}
+  - {fileID: 21300000, guid: 2b81cfd28eb1d2843b982480a51dd9fb, type: 3}
+  - {fileID: 21300000, guid: eee05bc6d9431824aaf5c77809a32dff, type: 3}
+  - {fileID: 21300000, guid: 22a238a35046e7743b770c57ffcbe23e, type: 3}
+  - {fileID: 21300000, guid: c512d8b2d8b121d49b381f8b4695f292, type: 3}
+  - {fileID: 21300000, guid: 2ce68111ffc452f4685bd751b3290bc9, type: 3}
+  - {fileID: 21300000, guid: 465c2ff1acf2650409e8d27879eb1271, type: 3}
+  - {fileID: 21300000, guid: 771786238426a4242b9b5a1d0e8262e2, type: 3}
+  - {fileID: 21300000, guid: 6d070eda609eadc4cb64b12eb8590d38, type: 3}
+  - {fileID: 21300000, guid: 190d074ede494b44e91edd9ec7a3398c, type: 3}
+  - {fileID: 21300000, guid: 9fb48be7ae9576d44b749494d9afa964, type: 3}
+  - {fileID: 21300000, guid: 49b6b4029dcc8ed498dce5b35be9270a, type: 3}
+  - {fileID: 21300000, guid: b8c9e7e76456ce34c94992d611f86f65, type: 3}
+  - {fileID: 21300000, guid: 6c650f73332e5694fab9562e34f95438, type: 3}
+  - {fileID: 21300000, guid: 09e64ac000e03c343a4042349f510d62, type: 3}
+  - {fileID: 21300000, guid: a05369280633bf440bdf76cd1459de07, type: 3}
+  - {fileID: 21300000, guid: 122d01fea05c26642b16279744718692, type: 3}
+  - {fileID: 21300000, guid: 369fd0b0c6e8b6a4386fef38977a8a81, type: 3}
+  - {fileID: 21300000, guid: 3ab2f94bfb9b53b49bc1d0dda9a2be31, type: 3}
+  - {fileID: 21300000, guid: 85da859e3144d8348bed13641ee9e886, type: 3}
+  - {fileID: 21300000, guid: 25fe10e305e2c07438b0ef16887ea216, type: 3}
+  - {fileID: 21300000, guid: 7c25dbb1d6409754682fa7701e4b8cab, type: 3}
+  - {fileID: 21300000, guid: 1eaffb6b3e9bf484189f1e30b8367ba2, type: 3}
+  - {fileID: 21300000, guid: 1143a57ce546acb4d95150d13ad3f083, type: 3}
+  - {fileID: 21300000, guid: 4ebae3d19cff0ae4b80f94c552fa0561, type: 3}
+  - {fileID: 21300000, guid: 72434d66fae8b0b4e930d2679d4bcdf1, type: 3}
+  - {fileID: 21300000, guid: 56436eeff262da549a98b0dcaa40568d, type: 3}
+  - {fileID: 21300000, guid: 9683b724011b28b46a28a430784290f9, type: 3}
+  - {fileID: 21300000, guid: 5000e82bd5ddbc743bef98446a0880d3, type: 3}
+  - {fileID: 21300000, guid: 30172ac530a484f4f8eb29fce9d52c44, type: 3}
+  - {fileID: 21300000, guid: 3bb1c5a8fbaaafc498f65b21ad87d287, type: 3}
+  - {fileID: 21300000, guid: d96ec90188804154db3a2c163310247b, type: 3}
+  - {fileID: 21300000, guid: 1153978bef2bb354cad4384c8d83e4fa, type: 3}
+  - {fileID: 21300000, guid: 68f9ebe07a2bcf44b99c8b356115fe49, type: 3}
+  - {fileID: 21300000, guid: e1a5752b3866c4b469cf83efe008cd6d, type: 3}
+  - {fileID: 21300000, guid: 7a59b2af3ea548f45a1fbfd580e895a6, type: 3}
+  - {fileID: 21300000, guid: ce4e650eda1f3e441bbb79e961feb931, type: 3}
+  - {fileID: 21300000, guid: 9bcd05e4f114233498b4b9bbf1fc9167, type: 3}
+  - {fileID: 21300000, guid: d793db54875d76041a952bf4195dec4b, type: 3}
+  - {fileID: 21300000, guid: 4a20a56ca57df9d4c9b5f605df6bd15e, type: 3}
+  - {fileID: 21300000, guid: acb2dd2c7237bd74ca1d5b0af5a160ef, type: 3}
+  - {fileID: 21300000, guid: 5be62f21a0967b145aaca480d0b8e841, type: 3}
+  - {fileID: 21300000, guid: bed05bb2b2631924db4485dd7349a668, type: 3}
+  - {fileID: 21300000, guid: 4c4a9ece71d7b744eb5f5f6cfac38afe, type: 3}
+  - {fileID: 21300000, guid: 1e633b9bd58240746a2c9444f325d509, type: 3}
+  - {fileID: 21300000, guid: 7da62de5c1dd64946af500a3f9543c06, type: 3}
+  - {fileID: 21300000, guid: b651ceeca6b26b148aa72730b794e8a8, type: 3}
+  - {fileID: 21300000, guid: 74d923a6e98e0294699787a473f69417, type: 3}
+  - {fileID: 21300000, guid: cee551ea5b91ac745b4d28cb6b3c9995, type: 3}
+  - {fileID: 21300000, guid: 5ab77d369bac8714b81114930b3f627f, type: 3}
+  - {fileID: 21300000, guid: 012d5440d17aba148be57957a5d942b4, type: 3}
+  - {fileID: 21300000, guid: 6dc1dafbcdf73454c80f094af177487b, type: 3}
+  - {fileID: 21300000, guid: 92b7d344f0c1f8a42bb7cc91455f84aa, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - defFireG
+  - defFireM
+  - defWaterM
+  - defFireS
+  - defFireU
+  - defWaterG
+  - defWaterS
+  - defWaterU
+  - defLightS
+  - defLightU
+  - potionHealS
+  - Mixture1U
+  - Mixture1S
+  - defLightG
+  - defLightM
+  - Mixture1G
+  - defAirS
+  - defAirU
+  - Mixture1M
+  - defDeathM
+  - defPhysM
+  - defAirM
+  - defDeathG
+  - defPhysG
+  - defAirG
+  - defDeathU
+  - defPhysU
+  - defDeathS
+  - defPhysS
+  - PotionM
+  - defLightningG
+  - defDarknessS
+  - PotionG
+  - defDarknessU
+  - defLightningM
+  - PotionS
+  - defDarknessM
+  - defLightningU
+  - PotionU
+  - defLightningS
+  - defDarknessG
+  - ElixirM
+  - ElixirG
+  - ElixirS
+  - ElixirU
+  - defEarthM
+  - defLifeU
+  - defEarthG
+  - defLifeS
+  - defEarthS
+  - defLifeG
+  - defEarthU
+  - defLifeM
+  m_Tag: ItemsAtlas
+  m_IsVariant: 0

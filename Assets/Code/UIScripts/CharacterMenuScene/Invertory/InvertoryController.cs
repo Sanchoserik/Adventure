@@ -8,15 +8,35 @@ using Assets.PlayerController;
 using Assets.Code.Items;
 using Assets.Code.Items.Potions;
 using Assets.Code.SystemScripts.DataStructures;
+using UnityEngine.U2D;
 
 namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
 {
+     enum ItemsEnum { defAirG , defAirM , defAirS , defAirU ,
+        defDarknessG, defDarknessM, defDarknessS, defDarknessU,
+        defDeathG, defDeathM, defDeathS, defDeathU,
+        defEarthG, defEarthM, defEarthS, defEarthU,
+        defFireG, defFireM, defFireS, defFireU,
+        defLifeG, defLifeM, defLifeS, defLifeU,
+        defLightG, defLightM, defLightS, defLightU,
+        defLightningG, defLightningM, defLightningS, defLightningU,
+        defPhysG, defPhysM, defPhysS, defPhysU,
+        defWaterG, defWaterM, defWaterS, defWaterU, 
+        // end Talisman Enum
+        potionHealS, PotionS, PotionM, PotionG, PotionU, // Potions
+        Mixture1S, Mixture1M, Mixture1G, Mixture1U, // Mixtures
+        ElixirS, ElixirM, ElixirG, ElixirU // Elixirs
+        //end Items Enum
+    }
+
     public class InvertoryController : MonoBehaviour
     {
         public GameObject slotPrefab;
         public Transform mainHolder;
         public Transform quickAccesHolder;
         public Sprite[] itemsSpriteSheet;
+
+        public SpriteAtlas itemsAtlas;
 
         InventorySystem invSystem;
 
