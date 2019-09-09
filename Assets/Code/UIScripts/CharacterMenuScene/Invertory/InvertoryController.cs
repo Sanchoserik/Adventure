@@ -40,6 +40,12 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             invSystem.addItem(itemFabric.createPotionHealP4U(alldata.Find(x => x.itemName.Equals("HealP4U"))));
             invSystem.addItem(itemFabric.createPotionHealP4U(alldata.Find(x => x.itemName.Equals("HealP4U"))));
 
+            invSystem.addItem(itemFabric.createTalismanDefAir1S(alldata.Find(x => x.itemName.Equals("DefAir1S"))));
+            invSystem.addItem(itemFabric.createTalismanDefAir2M(alldata.Find(x => x.itemName.Equals("DefAir2M"))));
+            invSystem.addItem(itemFabric.createTalismanDefAir3G(alldata.Find(x => x.itemName.Equals("DefAir3G"))));
+            invSystem.addItem(itemFabric.createTalismanDefAir4U(alldata.Find(x => x.itemName.Equals("DefAir4U"))));
+
+
             //invSystem.quickAccesItemStorage[0] = invSystem.mainItemsStorage[1][0];// 
             //invSystem.quickAccesItemStorage[1] = invSystem.mainItemsStorage[1][0];// 
         }

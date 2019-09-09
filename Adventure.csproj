@@ -100,7 +100,6 @@
     <Compile Include="Assets\Code\Effects\RegENE.cs" />
     <Compile Include="Assets\Code\Effects\RegHP.cs" />
     <Compile Include="Assets\Code\Effects\WaterUp.cs" />
-    <Compile Include="Assets\Code\Items\A_Card.cs" />
     <Compile Include="Assets\Code\Items\A_Item.cs" />
     <Compile Include="Assets\Code\Items\IItemFabric.cs" />
     <Compile Include="Assets\Code\Items\InventorySystem.cs" />

@@ -75,7 +75,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
                 }
                 if (moveFlag)
                 {
-                    //????
+                    
                     int slotIndex = 0;
                     foreach (Transform slot in quickAccesPanel.transform)
                     {
@@ -93,7 +93,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             }
 
             dragObjectTransform.gameObject.SetActive(false);
-
         }
+
     }
 }

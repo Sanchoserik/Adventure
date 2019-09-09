@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Code.Items;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -235,6 +236,11 @@ namespace Assets.PlayerController
                 default: return "NoVal";
             }
         }
-        
+
+        public static int talismanTotalEnergy(A_Item talisman)
+        {
+            return 1;
+        }
+
     }
 }
