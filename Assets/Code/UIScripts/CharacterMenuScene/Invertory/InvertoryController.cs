@@ -21,7 +21,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
     
         public SpriteAtlas itemsAtlas;
 
-        InventorySystem invSystem;
+        private InventorySystem invSystem;
 
         private void Start()
         {
@@ -44,6 +44,10 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             invSystem.addItem(itemFabric.createTalismanDefAir2M(alldata.Find(x => x.itemName.Equals("DefAir2M"))));
             invSystem.addItem(itemFabric.createTalismanDefAir3G(alldata.Find(x => x.itemName.Equals("DefAir3G"))));
             invSystem.addItem(itemFabric.createTalismanDefAir4U(alldata.Find(x => x.itemName.Equals("DefAir4U"))));
+            invSystem.addItem(itemFabric.createTalismanDefFire1S(alldata.Find(x => x.itemName.Equals("DefFire1S"))));
+            invSystem.addItem(itemFabric.createTalismanDefFire2M(alldata.Find(x => x.itemName.Equals("DefFire2M"))));
+            invSystem.addItem(itemFabric.createTalismanDefFire3G(alldata.Find(x => x.itemName.Equals("DefFire3G"))));
+            invSystem.addItem(itemFabric.createTalismanDefFire4U(alldata.Find(x => x.itemName.Equals("DefFire4U"))));
 
 
             //invSystem.quickAccesItemStorage[0] = invSystem.mainItemsStorage[1][0];// 
@@ -70,6 +74,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
                 case "Potions": { getCategory("Potions");  break; }
                 case "Elixirs": { getCategory("Elixirs"); break; }
                 case "Mixtures": { getCategory("Mixtures"); break; }
+                case "Talismans": { getCategory("Talismans"); break; }
             }
         }
         //select all items from category
@@ -80,11 +85,11 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
                 if (itemType[0].category.Equals(category))
                     getItems(itemType.Count, itemType[0].GetType().Name);
             }
-
+            //instantiate quick acces panel or talismansInUsePanel
             if (category.Equals("Potions") || category.Equals("Elixirs") || category.Equals("Mixtures"))
                 instantiateQuickAccesItems();
             else
-                instantiateQuickAccesItems();
+                instantiateTalismansInUsePanel();
 
         }
         //Instantiate selected items
@@ -127,7 +132,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
                     itemIcon.sprite = itemsAtlas.GetSprite(item.GetType().Name);
 
                     component = instance.transform.GetChild(1);
-                    Text itemCountText = component.GetComponentInChildren<Text>();                   
+                    Text itemCountText = component.GetComponentInChildren<Text>();
                     itemCountText.enabled = false;
                     UIItem uiitem = instance.GetComponent<UIItem>();
 
@@ -148,9 +153,39 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
                     Text itemCountText = component.GetComponentInChildren<Text>();
                     itemCountText.enabled = false;
                 }
-
             }
-        }     
+        }
+
+        private void instantiateTalismansInUsePanel()
+        {
+            foreach (A_Item item in invSystem.inUseTalismansStorage)
+            {
+                GameObject instance = Instantiate(slotPrefab, quickAccesHolder);
+                Transform component = instance.transform.GetChild(0);
+                Image itemIcon = component.GetComponentInChildren<Image>();
+
+                if (item != null)
+                {
+                    itemIcon.enabled = true;
+                    itemIcon.sprite = itemsAtlas.GetSprite(item.GetType().Name);
+
+                    component = instance.transform.GetChild(1);
+                    Text itemCountText = component.GetComponentInChildren<Text>();
+                    itemCountText.enabled = false;
+                    UIItem uiitem = instance.GetComponent<UIItem>();
+                    uiitem.item = item;                   
+                }
+                else
+                {
+                    itemIcon.enabled = false;
+                    component = instance.transform.GetChild(1);
+                    Text itemCountText = component.GetComponentInChildren<Text>();
+                    itemCountText.enabled = false;
+                }
+            }
+        }
+
+   
     }
 
     //enum with items names - just in case

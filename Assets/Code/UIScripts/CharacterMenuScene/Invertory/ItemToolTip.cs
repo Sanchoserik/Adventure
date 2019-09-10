@@ -31,12 +31,14 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
         public void generateItemTooltip(A_Item item)
         {
             if (!toolTipGenerated && item != null)
-            {                
+            {
+                //tooltip for standart items
                 ItemsLocalisationData itemLocalisation = itemsLocalisationData.Find(x => x.itemName.Equals(item.GetType().Name));
                 ItemsData itemData = itemsData.Find(x => x.itemName.Equals(item.GetType().Name));
 
                 toolTipItemName.text = itemLocalisation.itemLocalisedName;
                 toolTipItemDescription.text = getLocalisedText(itemLocalisation, itemData); // itemLocalisation.itemLocalisedDescription;
+                //tooltip for Talismans
 
                 gameObject.SetActive(true);
                 toolTipGenerated = true;
