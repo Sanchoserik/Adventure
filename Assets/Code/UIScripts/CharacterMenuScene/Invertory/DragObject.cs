@@ -25,6 +25,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             item = newItem;
         }
 
+        //for items
         public void setItemToSlot(Transform slot, int slotIndex)
         {           
             if (checkQuickAccesItems(item)) // if quickAccesPanel already has this type of item
@@ -96,6 +97,15 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             item = null;
             itemSprite = null;           
         }
+        //for talismans
+        public void setTalismanToSlot(Transform slot, int slotIndex)
+        {
+
+
+        }
+
+       
+
     }
 
 }

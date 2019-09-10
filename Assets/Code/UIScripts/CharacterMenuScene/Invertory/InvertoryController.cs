@@ -40,18 +40,16 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             invSystem.addItem(itemFabric.createPotionHealP4U(alldata.Find(x => x.itemName.Equals("HealP4U"))));
             invSystem.addItem(itemFabric.createPotionHealP4U(alldata.Find(x => x.itemName.Equals("HealP4U"))));
 
-            invSystem.addItem(itemFabric.createTalismanDefAir1S(alldata.Find(x => x.itemName.Equals("DefAir1S"))));
-            invSystem.addItem(itemFabric.createTalismanDefAir2M(alldata.Find(x => x.itemName.Equals("DefAir2M"))));
-            invSystem.addItem(itemFabric.createTalismanDefAir3G(alldata.Find(x => x.itemName.Equals("DefAir3G"))));
-            invSystem.addItem(itemFabric.createTalismanDefAir4U(alldata.Find(x => x.itemName.Equals("DefAir4U"))));
-            invSystem.addItem(itemFabric.createTalismanDefFire1S(alldata.Find(x => x.itemName.Equals("DefFire1S"))));
-            invSystem.addItem(itemFabric.createTalismanDefFire2M(alldata.Find(x => x.itemName.Equals("DefFire2M"))));
-            invSystem.addItem(itemFabric.createTalismanDefFire3G(alldata.Find(x => x.itemName.Equals("DefFire3G"))));
-            invSystem.addItem(itemFabric.createTalismanDefFire4U(alldata.Find(x => x.itemName.Equals("DefFire4U"))));
+            //add talisman
+            invSystem.addTalisman(itemFabric.createTalismanDefAir1S(alldata.Find(x => x.itemName.Equals("DefAir1S"))));
+            invSystem.addTalisman(itemFabric.createTalismanDefAir2M(alldata.Find(x => x.itemName.Equals("DefAir2M"))));
+            invSystem.addTalisman(itemFabric.createTalismanDefAir3G(alldata.Find(x => x.itemName.Equals("DefAir3G"))));
+            invSystem.addTalisman(itemFabric.createTalismanDefAir4U(alldata.Find(x => x.itemName.Equals("DefAir4U"))));
+            invSystem.addTalisman(itemFabric.createTalismanDefFire1S(alldata.Find(x => x.itemName.Equals("DefFire1S"))));
+            invSystem.addTalisman(itemFabric.createTalismanDefFire2M(alldata.Find(x => x.itemName.Equals("DefFire2M"))));
+            invSystem.addTalisman(itemFabric.createTalismanDefFire3G(alldata.Find(x => x.itemName.Equals("DefFire3G"))));
+            invSystem.addTalisman(itemFabric.createTalismanDefFire4U(alldata.Find(x => x.itemName.Equals("DefFire4U"))));
 
-
-            //invSystem.quickAccesItemStorage[0] = invSystem.mainItemsStorage[1][0];// 
-            //invSystem.quickAccesItemStorage[1] = invSystem.mainItemsStorage[1][0];// 
         }
 
         public void displayInvertory(string category)
@@ -80,17 +78,24 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
         //select all items from category
         private void getCategory(string category)
         {
-            foreach (List<A_Item> itemType in invSystem.mainItemsStorage)
+            if (category.Equals("Talismans"))
             {
-                if (itemType[0].category.Equals(category))
-                    getItems(itemType.Count, itemType[0].GetType().Name);
-            }
-            //instantiate quick acces panel or talismansInUsePanel
-            if (category.Equals("Potions") || category.Equals("Elixirs") || category.Equals("Mixtures"))
-                instantiateQuickAccesItems();
-            else
-                instantiateTalismansInUsePanel();
+                //get talismans
+                foreach (A_Item talisman in invSystem.mainTalismansStorage)
+                    getTalismans(talisman);
 
+                instantiateTalismansInUsePanel();
+            }
+            else
+            {
+                foreach (List<A_Item> itemType in invSystem.mainItemsStorage)
+                {
+                    if (itemType[0].category.Equals(category))
+                        getItems(itemType.Count, itemType[0].GetType().Name);
+
+                }
+                instantiateQuickAccesItems();          
+            }
         }
         //Instantiate selected items
         private void getItems(int itemCount, string itemTypeName)
@@ -115,6 +120,23 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
                 }
             }
             
+            itemIcon.sprite = itemsAtlas.GetSprite(uiItem.item.GetType().Name);
+        }
+
+        private void getTalismans(A_Item talisman)
+        {
+            GameObject instance = Instantiate(slotPrefab, mainHolder);
+            //Prefab instance has 2 child - Index 0 is <Image> - itemIcon - Index 1 is <Text> - itemCountText
+            Transform component = instance.transform.GetChild(0);
+            Image itemIcon = component.GetComponentInChildren<Image>();
+            itemIcon.enabled = true;
+            component = instance.transform.GetChild(1);
+            Text itemCountText = component.GetComponentInChildren<Text>();
+            itemCountText.enabled = false; 
+
+            UIItem uiItem = instance.GetComponent<UIItem>();
+            uiItem.item = talisman;
+
             itemIcon.sprite = itemsAtlas.GetSprite(uiItem.item.GetType().Name);
         }
 
