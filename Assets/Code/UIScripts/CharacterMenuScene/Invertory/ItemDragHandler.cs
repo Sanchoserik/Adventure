@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Code.Items;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,128 +25,107 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
         public void OnDrag(PointerEventData eventData)
         {
             dragObjectTransform.gameObject.SetActive(true);
+
             DragObject dragObject = dragObjectTransform.GetComponent<DragObject>();
-            dragObject.setItem(gameObject.GetComponentInParent<UIItem>().item);
-            dragObject.setSprite(gameObject.GetComponent<Image>());           
-            dragObjectTransform.transform.position = Input.mousePosition;
+
             dragObjectParentSlot = gameObject.transform.parent.gameObject;
+            dragObject.setItem(gameObject.GetComponentInParent<UIItem>().item);
+            dragObject.setSprite(gameObject.GetComponent<Image>());
+            dragObjectTransform.transform.position = Input.mousePosition;            
         }
 
         public void OnEndDrag(PointerEventData eventData)
         {
-            bool setToEmptyFromInv;
-            bool moveToEmptyFromPanel;
-            bool swapFromInv; // for talismans only
-            bool swapFromPanel;
-            bool dropFromPanel;
-
-            string parentName = gameObject.transform.parent.parent.name;
             DragObject dragObject = dragObjectTransform.GetComponent<DragObject>();
-
-            if (dragObject.item.category.Equals("Talismans"))
+            if (dragObject.item.category.Equals("Talismans")) // for talismans
             {
-
-
+                if (dragObjectParentSlot.name.Equals("QuickAccesPanel"))
+                    dragObject.quickAccesTalismansPanelHandler(transform, dragObjectParentSlot);
+                else
+                    dragObject.inventoryPanelTalismansHandler(transform, dragObjectParentSlot);
             }
             else
             {
-                if (parentName.Equals("QuickAccesPanel")) // fro talismans
-                {
-                    //if action from quick acces panel
-
-
-                }
-                else //for items
-                {
-                    //if action from inventory
-                    int slotIndex = 0;
-                    foreach (Transform slot in quickAccesPanel.transform)
-                    {
-                        RectTransform slotRect = slot.transform as RectTransform;
-                        if (RectTransformUtility.RectangleContainsScreenPoint(slotRect, Input.mousePosition))
-                        {                            
-                            dragObject.setItemToSlot(slot, slotIndex);
-                            break;
-                        }
-                        ++slotIndex;
-                    }
-                }
-
+                if (dragObjectParentSlot.transform.parent.name.Equals("QuickAccesPanel")) // for all other items
+                    dragObject.quickAccesItemsPanelHandler(transform, dragObjectParentSlot);
+                else
+                    dragObject.inventoryPanelItemsHandler(transform, Input.mousePosition, quickAccesPanel);
             }
-
-          
-            ////set item
-            //if (!gameObject.transform.parent.parent.name.Equals("QuickAccesPanel"))
-            //{
-            //    int slotIndex = 0;
-            //    foreach (Transform slot in quickAccesPanel.transform)
-            //    {
-            //        RectTransform slotRect = slot.transform as RectTransform;
-
-            //        if (RectTransformUtility.RectangleContainsScreenPoint(slotRect, Input.mousePosition))
-            //        {
-            //            DragObject dragObject = dragObjectTransform.GetComponent<DragObject>();
-            //            dragObject.setItemToSlot(slot, slotIndex);
-            //            break;
-            //        }
-            //        ++slotIndex;
-            //    }
-            //}
-            //else
-            //{
-            //    bool dropFlag = false;
-            //    bool moveFlag = false;
-            //    bool swapFlag = false;
-
-            //    foreach (Transform slot in quickAccesPanel.transform)
-            //    {
-            //        RectTransform slotRect = slot.transform as RectTransform;
-
-            //        if (RectTransformUtility.RectangleContainsScreenPoint(slotRect, Input.mousePosition))
-            //        {
-            //            dropFlag = false;
-            //            //move or swap
-            //            moveFlag = true;
-            //            break;
-            //        }
-            //        else
-            //        {
-            //            dropFlag = true;
-            //            moveFlag = false;                          
-            //        }                   
-            //    }
-
-            //    //
-            //    if (dropFlag)
-            //    {
-            //        DragObject dragObject = dragObjectTransform.GetComponent<DragObject>();                    
-            //        dragObject.dropItemFromSlot(gameObject.transform, gameObject.transform.parent.GetComponent<UIItem>());       
-            //    }
-            //    else if (moveFlag)
-            //    {
-                    
-            //        int slotIndex = 0;
-            //        foreach (Transform slot in quickAccesPanel.transform)
-            //        {
-            //            RectTransform slotRect = slot.transform as RectTransform;
-
-            //            if (RectTransformUtility.RectangleContainsScreenPoint(slotRect, Input.mousePosition))
-            //            {
-            //                DragObject dragObject = dragObjectTransform.GetComponent<DragObject>();
-            //                dragObject.setItemToSlot(slot, slotIndex);
-            //                break;
-            //            }
-            //            ++slotIndex;
-            //        }
-            //    }
-            //    else if (swapFlag)
-            //    {
-
-            //    }
-            //}
 
             dragObjectTransform.gameObject.SetActive(false);
         }
-
     }
 }
+
+//public void OnEndDrag(PointerEventData eventData)
+//{
+//    string parentName = gameObject.transform.parent.parent.name;
+//    DragObject dragObject = dragObjectTransform.GetComponent<DragObject>();
+
+//    if (dragObject.item.category.Equals("Talismans")) //for talismans
+//    {
+
+
+//    }
+//    else //for items
+//    {
+//        if (parentName.Equals("QuickAccesPanel"))
+//        {
+//            //if action from quick acces panel
+//            foreach (Transform slot in quickAccesPanel.transform)
+//            {
+//                RectTransform slotRect = slot.transform as RectTransform;
+
+//                if (RectTransformUtility.RectangleContainsScreenPoint(slotRect, Input.mousePosition))
+//                {
+//                    //move or swap item to slot
+//                    dragItemSetToSlot(dragObject);
+//                    break;
+//                }
+//                else
+//                {
+//                    //drop item from slot                           
+//                    dragObject.dropItemFromSlot(gameObject.transform, gameObject.transform.parent.GetComponent<UIItem>());
+//                    break;
+//                }
+//            }
+
+//        }
+//        else //for items
+//        {
+//            //if action from inventory
+//            dragItemSetToSlot(dragObject);
+//        }
+
+//        dragObjectTransform.gameObject.SetActive(false);
+//    }
+
+
+
+//}
+
+//private void dragItemSetToSlot(DragObject dragObject)
+//{
+//    int slotIndex = 0;
+
+//    List<A_Item> items = new List<A_Item>();
+//    foreach (Transform slot in quickAccesPanel.transform)
+//    {
+//        items.Add(slot.GetComponent<UIItem>().item);
+//    }
+
+//    foreach (Transform slot in quickAccesPanel.transform)
+//    {              
+//        RectTransform slotRect = slot.transform as RectTransform;
+//        if (RectTransformUtility.RectangleContainsScreenPoint(slotRect, Input.mousePosition))
+//        {
+//            if (gameObject.transform.parent.parent.name.Equals("QuickAccesPanel"))
+//                dragObject.swapItemsFromQAPanel(slot, slotIndex, dragObjectParentSlot.transform);                
+//            else                       
+//                dragObject.setItemToSlotandRemove(slot, slotIndex, dragObjectParentSlot.transform);
+
+//            break;
+//        }
+//        ++slotIndex;
+//    }
+//}
