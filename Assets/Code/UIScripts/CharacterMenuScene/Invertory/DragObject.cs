@@ -12,6 +12,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
     public class DragObject : MonoBehaviour
     {        
         public A_Item item;
+        public string text;
         public Image itemSprite;
      
         public void setSprite(Image newImage)
@@ -20,17 +21,40 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             itemSprite.sprite = newImage.sprite;
         }
 
+        public void setText(Text newText)
+        {
+           // text = newText.text;
+        }
+
         public void setItem(A_Item newItem)
         {
             item = newItem;
         }
 
         //for items
-        public void quickAccesItemsPanelHandler(Transform dragObject, GameObject dragObjectParent)
+        public void quickAccesItemsPanelHandler(Transform dragObject, GameObject dragObjectParent, Vector3 mousePosition, GameObject qaPanel)
         {
             //1. move item to another QA slot
             //2. swap items in QA slots
             //3. drop item from QA panel
+            int indexOfActiveSlot = 0;
+            GameObject activeSlot = getActiveQASlot(qaPanel, mousePosition, out indexOfActiveSlot);
+            if (activeSlot != null)
+            {
+                if (checkSlotForEmptyness(activeSlot)) // if active slot is filled then swap items
+                {
+                    swapItemsInSlots(activeSlot, dragObjectParent, indexOfActiveSlot, qaPanel);
+                }
+                else // else move item to empty slot
+                {
+                    removeItemFromPanel(qaPanel);
+                    setItemToSlot(indexOfActiveSlot, activeSlot);
+                }
+            }
+            else
+            {
+                dropItemFromSlot(dragObject, item);
+            }
         }
 
         public void inventoryPanelItemsHandler(Transform dragObject, Vector3 mousePosition, GameObject qaPanel)
@@ -41,11 +65,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             GameObject activeSlot = getActiveQASlot(qaPanel, mousePosition,out indexOfActiveSlot);
             if (activeSlot != null)
             {
-                //check if in qaPanel already doesnt have this item if so then remove it from qaPanel and invQAstorage
-                if (checkQuickAccesItems(item))
-                {
-                    removeItemFromSlot(qaPanel);
-                }
+                removeItemFromPanel(qaPanel);
                 setItemToSlot(indexOfActiveSlot,activeSlot);
             }
         }
@@ -77,7 +97,33 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             activeSlot.GetComponent<UIItem>().item = item;
         }
 
-        private void removeItemFromSlot(GameObject qaPanel)
+        private void swapItemsInSlots(GameObject activeSlot, GameObject parentSlot, int indexOfActiveSlot, GameObject qaPanel)
+        {
+            int indexOfParentSlot = 0;           
+            foreach (Transform slot in qaPanel.transform)
+            {
+               if(slot.GetComponent<UIItem>().item != null)
+                if (parentSlot.GetComponent<UIItem>().item.GetType().Name.Equals(slot.GetComponent<UIItem>().item.GetType().Name))
+                {
+                    break;
+                }
+                indexOfParentSlot++;
+            }
+
+            A_Item tempItem = activeSlot.GetComponent<UIItem>().item;
+            Sprite tempSprite = activeSlot.transform.GetChild(0).GetComponent<Image>().sprite;
+           
+            setItemToSlot(indexOfActiveSlot, activeSlot);
+
+            item = tempItem;
+            itemSprite.sprite = tempSprite;
+
+            setItemToSlot(indexOfParentSlot, parentSlot);
+
+            InventorySystem inv = HeroController.mainHero.inventorySystem;
+        }
+
+        private void removeItemFromPanel(GameObject qaPanel)
         {
             int removeIndex = 0;
             foreach (Transform qaSlot in qaPanel.transform)
@@ -107,17 +153,23 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
                 return false;
         }
 
-        public void dropItemFromSlot(Transform slot, UIItem item)
+        private bool checkSlotForEmptyness(GameObject activeSlot)
+        {
+            A_Item item = activeSlot.GetComponent<UIItem>().item;
+            if (item != null)
+                return true;
+            else
+                return false;
+        }
+
+        public void dropItemFromSlot(Transform slot, A_Item slotItem)
         {        
             InventorySystem invSystem = HeroController.mainHero.inventorySystem;
-            int removeIndex = invSystem.quickAccesItemStorage.IndexOf(item.item);
+            int removeIndex = invSystem.quickAccesItemStorage.IndexOf(slotItem);
             invSystem.quickAccesItemStorage[removeIndex] = null;
 
             slot.GetComponent<Image>().enabled = false;
-            slot.parent.GetComponent<UIItem>().item = null;
-
-            item = null;
-            itemSprite = null;           
+            slot.parent.GetComponent<UIItem>().item = null;                      
         }
         //for talismans
         public void quickAccesTalismansPanelHandler(Transform dragObject, GameObject dragObjectParent)
