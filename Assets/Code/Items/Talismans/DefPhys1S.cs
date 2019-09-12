@@ -20,6 +20,7 @@ namespace Assets.Code.Items.Talismans
             category = "Talismans";
             totalMaxEne = HeroAttributesController.talismanTotalEnergy(this);
             currentEne = totalMaxEne;
+            stackable = false;
         }
     }
 }

@@ -16,6 +16,8 @@ namespace Assets.Code.Items.Potions
         {
             restorenValue = _restorenValue;
             category = "Potions";
+            stackable = true;
+            itemCount = 1;
         }
     }
 }

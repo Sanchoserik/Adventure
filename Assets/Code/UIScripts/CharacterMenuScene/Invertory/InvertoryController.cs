@@ -88,10 +88,10 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             }
             else
             {
-                foreach (List<A_Item> itemType in invSystem.mainItemsStorage)
+                foreach (A_Item itemType in invSystem.mainItemsStorage)
                 {
-                    if (itemType[0].category.Equals(category))
-                        getItems(itemType.Count, itemType[0].GetType().Name);
+                    if (itemType.category.Equals(category))
+                        getItems(itemType.itemCount, itemType.GetType().Name);
 
                 }
                 instantiateQuickAccesItems();          
@@ -111,11 +111,11 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
 
             UIItem uiItem = instance.GetComponent<UIItem>();
             
-            foreach (List<A_Item> stack in invSystem.mainItemsStorage)
+            foreach (A_Item stack in invSystem.mainItemsStorage)
             {
-                if (stack[0].GetType().Name.Equals(itemTypeName))
+                if (stack.GetType().Name.Equals(itemTypeName))
                 {
-                    uiItem.item = stack[0];
+                    uiItem.item = stack;
                     break;
                 }
             }
@@ -158,11 +158,11 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
                     itemCountText.enabled = false;
                     UIItem uiitem = instance.GetComponent<UIItem>();
 
-                    foreach (List<A_Item> stack in invSystem.mainItemsStorage)
+                    foreach (A_Item stack in invSystem.quickAccesItemStorage)
                     {
-                        if (stack[0].GetType().Name.Equals(item.GetType().Name))
+                        if (stack.GetType().Name.Equals(item.GetType().Name))
                         {
-                            uiitem.item = stack[0];
+                            uiitem.item = stack;
                             break;
                         }
                     }

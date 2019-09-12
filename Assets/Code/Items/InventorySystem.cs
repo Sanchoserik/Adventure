@@ -7,7 +7,7 @@ namespace Assets.Code.Items
 {
     public class InventorySystem
     {
-        public List<List<A_Item>> mainItemsStorage;
+        public List<A_Item> mainItemsStorage;
         public List<A_Item> mainTalismansStorage;
         public List<A_Item> inUseTalismansStorage; // native size = 10
         public List<A_Item> quickAccesItemStorage; // native size = 5
@@ -17,7 +17,7 @@ namespace Assets.Code.Items
 
         public InventorySystem()
         {
-            mainItemsStorage = new List<List<A_Item>>();
+            mainItemsStorage = new List<A_Item>();
             mainTalismansStorage = new List<A_Item>();
 
             //initialize empty
@@ -37,60 +37,52 @@ namespace Assets.Code.Items
         //for items storage
         public void addItem(A_Item item)
         {
-            if (checkStacks(item.GetType().Name))
+            A_Item invItem = returnStack(item);
+            if (invItem != null)
             {
-                foreach (List<A_Item> stack in mainItemsStorage)
-                {
-                    if (stack[0].GetType().Name.Equals(item.GetType().Name))
-                    {
-                        stack.Add(item);
-                        break;
-                    }
-                }
-              
+                mainItemsStorage.Find(x => x.GetType().Name.Equals(invItem.GetType().Name)).itemCount++;
             }
             else
             {
-                mainItemsStorage.Add(new List<A_Item> { item });             
-            }  
+                mainItemsStorage.Add(item);
+            }       
         }
 
         public void removeItem(A_Item item)
         {
-            if (checkStacks(item.GetType().Name))
-            {
-                foreach (List<A_Item> items in mainItemsStorage)
-                {
-                    if (items[0] != null && items[0].Equals(item))
-                    {
-                        items.Remove(item);                        
-                    }
-                }
-            }
-            removeEmptyItemStacks();
+            mainItemsStorage.Remove(item);        
         }
 
-        private bool checkStacks(string itemType)
-        {
-            foreach (List<A_Item> items in mainItemsStorage)
-            {
-                if (items[0] != null && items[0].GetType().Name.Equals(itemType)) //get first item from stack
-                {
-                    return true;
-                }                 
-            }
-            return false;
-        }
-
-        private void removeEmptyItemStacks()
+        public void removeEmptyFromMainItemsStorage()
         {
             for (int i = 0; i < mainItemsStorage.Count; ++i)
             {
-                if (mainItemsStorage[i].Count == 0)
+                if (mainItemsStorage[i].itemCount <= 0)
                     mainItemsStorage.RemoveAt(i);
             }
         }
-        
+
+        public void removeEmptyFromQAIemsStorage()
+        {
+            for (int i = 0; i < quickAccesItemStorage.Count; ++i)
+            {
+                if (quickAccesItemStorage[i].itemCount <= 0)
+                    quickAccesItemStorage.RemoveAt(i);
+            }
+        }
+
+        private A_Item returnStack(A_Item item)
+        {
+            foreach (A_Item invItem in mainItemsStorage)
+            {
+                if (invItem.GetType().Name.Equals(item.GetType().Name)) //get first item from stack
+                {
+                    return invItem;
+                }
+            }
+            return null;
+        }
+                     
         //for talismans storage
         public void addTalisman(A_Item item)
         {

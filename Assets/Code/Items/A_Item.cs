@@ -13,6 +13,8 @@ namespace Assets.Code.Items
         public string category;
         public int buyPrice;
         public int sellPrice;
+        public bool stackable;
+        public int itemCount;
 
         public A_Item()
         {

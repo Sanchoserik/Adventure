@@ -18,6 +18,8 @@ namespace Assets.Code.Items.Potions
             regenerationValue = _regenerationValue;
             defTime = _defTime;
             category = "Potions";
+            stackable = true;
+            itemCount = 1;
         }
 
 

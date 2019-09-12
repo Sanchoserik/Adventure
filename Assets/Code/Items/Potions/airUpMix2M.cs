@@ -18,6 +18,8 @@ namespace Assets.Code.Items.Potions
             defValue = _defVal;
             defTime = _defTime;
             category = "Mixtures";
+            stackable = true;
+            itemCount = 1;
         }
 
 
