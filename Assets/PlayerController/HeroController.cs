@@ -21,9 +21,11 @@ namespace Assets.PlayerController
                 mainHero = new C_Hero();
                 mainHero.heroSkills = new HeroSkillsController(ResourcesManager.skillsData);
                 HeroAttributesController.updateAttributes();
+                //max level 120
+                mainHero.freeAttributePoints = 600; // TEMP
+                mainHero.freeSkillPoints = 120; // TEMP
             }
-            mainHero.freeAttributePoints = 5; // TEMP
-            mainHero.freeSkillPoints = 100; // TEMP
+           
             OtherControllers.SetActive(true);
         }
 

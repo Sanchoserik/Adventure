@@ -14,41 +14,36 @@
  <el name = "SkillIsNotAvailable">Not available for learning</el>
  <el name = "SkillAvailableButNoSkillPoints">Skill is available for learning, but not enough skill points</el>
  
- <el name = "Level">Level:</el>
- <el name = "Experience">Experience:</el>
- <el name = "AttributePoints">AttributePoints:</el> 
- <el name = "SkillPoints">SkillPoints:</el> 
- <el name = "HP">HP:</el> 
- <el name = "ENE">ENE:</el>
- <el name = "ActionPoints">ActionPoints:</el>  
- <el name = "PhysDef">PhysDef:</el>  
- <el name = "FireDef">FireDef:</el>  
- <el name = "AirDef">AirDef:</el>  
- <el name = "LightningDef">LightningDef:</el>  
- <el name = "EarthDef">EarthDef:</el>  
- <el name = "WaterDef">WaterDef:</el>  
- <el name = "LightDef">LightDef:</el>  
- <el name = "DarknessDef">DarknessDef:</el>  
- <el name = "LifeDef">LifeDef:</el>  
- <el name = "DeathDef">DeathDef:</el>  
- <el name = "Money">Money:</el>  
+<el name = "BaseMaxHP">Base Hit Points = $BaseHP$ + $EndVal$(from endurance) + $Val$($End%$%)(from endurance %)</el>
+ <el name = "TotalHP">Total Hit Points = $BaseHP$(Base HP) + $BonusVal$(from bonuses) + $Val$($B%$%)(from bonuses %)</el>
+ <el name = "BaseMaxENE">Base Energy = $BaseENE$ + $KndVal$(from knowledge)</el>
+ <el name = "TotalENE">Total Energy = $BaseENE$(Base ENE) + $BonusVal$(from bonuses) + $Val$($B%$%)(from bonuses %)</el>
+ <el name = "TotalStr">Total Strength = $BaseStr$ + $BonusStr$(from bonuses) + $Val$($B%$%)(from bonuses %)</el>
+ <el name = "TotalEnd">Total Endurance = $BaseEnd$ + $BonusEnd$(from bonuses) + $Val$($B%$%)(from bonuses %)</el>
+ <el name = "TotalKnd">Total Knowledge = $BaseKnd$ + $BonusKnd$(from bonuses) + $Val$($B%$%)(from bonuses %)</el>
+ <el name = "TotalChr">Total Charisma = $BaseChr$ + $BonusChr$(from bonuses) + $Val$($B%$%)(from bonuses %)</el>
  
- <el name = "BaseHP">BaseHP:</el>
- <el name = "MaxHP">MaxHP:</el>
- <el name = "BaseEne">BaseEne:</el> 
- <el name = "MaxEne">MaxEne:</el> 
- <el name = "BaseStrength">BaseStrength:</el> 
- <el name = "BaseEndurance">BaseEndurance:</el>
- <el name = "BaseKnowledge">BaseKnowledge:</el>  
- <el name = "BaseCharisma">BaseCharisma:</el>  
- <el name = "BonusStrength">BonusStrength:</el>  
- <el name = "BonusEndurance">BonusEndurance:</el>  
- <el name = "BonusKnowledge">BonusKnowledge:</el>  
- <el name = "BonusCharisma">BonusCharisma:</el>  
- <el name = "TotalStrength">TotalStrength:</el>  
- <el name = "TotalEndurance">TotalEndurance:</el>  
- <el name = "TotalKnowledge">TotalKnowledge:</el>  
- <el name = "TotalCharisma">TotalCharisma:</el>  
+ <el name = "nDef">None(0%)</el>
+ <el name = "sDef">Small(20%)</el>
+ <el name = "mDef">Medium(50%)</el>
+ <el name = "gDef">Great(80%)</el>
+ <el name = "uDef">Ultra(100%)</el>
+ 
+ <el name = "fireDef">Fire defence = $base$(Base) + $bonus$(Bonus)</el>
+ <el name = "airDef">Aie defence = $base$(Base) + $bonus$(Bonus)</el>
+ <el name = "lightningDef">Lightning defence = $base$(Base) + $bonus$(Bonus)</el>
+ <el name = "earthDef">Earth defence = $base$(Base) + $bonus$(Bonus)</el>
+ <el name = "waterDef">Water defence = $base$(Base) + $bonus$(Bonus)</el>
+ <el name = "lifeDef">Life defence = $base$(Base) + $bonus$(Bonus)</el>
+ <el name = "deathDef">Dearg defence = $base$(Base) + $bonus$(Bonus)</el>
+ <el name = "lightDef">Light defence = $base$(Base) + $bonus$(Bonus)</el>
+ <el name = "darknessDef">Darkness defence = $base$(Base) + $bonus$(Bonus)</el>
+ <el name = "physDef">Physical defence = $base$(Base) + $bonus$(Bonus)</el>
+ 
+ <el name = "physAtk">Фізична атака = $Base$(Base) + $BonusVal$(from bonuses) +$Val$($B%$%)(from bonuses %)  </el>
+ <el name = "critChance">Шанс критичного удару = $Base$(Base) + $Bonus$(from bonuses) </el> 
+ <el name = "actionPoints">Очки дії = $Base$(Base) + $Bonus$(from bonuses)</el>
+ 
  
  </scene>
  </scenes>

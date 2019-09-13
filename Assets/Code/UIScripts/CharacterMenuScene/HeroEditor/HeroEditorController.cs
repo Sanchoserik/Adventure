@@ -24,8 +24,11 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
 
         public static Dictionary<string, Text> heroStatusValues;
 
+
         public void Start()
         {
+            heroStatusValues = null;
+            updated = false;
             fillHeroStatusValues();  
             updateVisuals();   
         }

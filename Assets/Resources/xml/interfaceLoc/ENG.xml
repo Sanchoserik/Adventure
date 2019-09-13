@@ -51,31 +51,31 @@
  <scene name = "CharacterMenu">
   <el name = "Level">Level:</el>
  <el name = "Experience">Experience:</el>
- <el name = "AttributePoints">AttributePoints:</el> 
- <el name = "SkillPoints">SkillPoints:</el> 
+ <el name = "AttributePoints">Attribute Points:</el> 
+ <el name = "SkillPoints">Skill Points:</el> 
  <el name = "HP">HP:</el> 
  <el name = "ENE">ENE:</el>
- <el name = "ActionPoints">ActionPoints:</el>  
- <el name = "PhysDef">PhysDef:</el>  
- <el name = "FireDef">FireDef:</el>  
- <el name = "AirDef">AirDef:</el>  
- <el name = "LightningDef">LightningDef:</el>  
- <el name = "EarthDef">EarthDef:</el>  
- <el name = "WaterDef">WaterDef:</el>  
- <el name = "LightDef">LightDef:</el>  
- <el name = "DarknessDef">DarknessDef:</el>  
- <el name = "LifeDef">LifeDef:</el>  
- <el name = "DeathDef">DeathDef:</el>  
+ <el name = "ActionPoints">Action Points:</el>  
+ <el name = "PhysDef">Phys Defence:</el>  
+ <el name = "FireDef">Fire Defence:</el>  
+ <el name = "AirDef">Air Defence:</el>  
+ <el name = "LightningDef">Lightning Defence:</el>  
+ <el name = "EarthDef">Earth Defence:</el>  
+ <el name = "WaterDef">Water Defence:</el>  
+ <el name = "LightDef">Light Defence:</el>  
+ <el name = "DarknessDef">Darkness Defence:</el>  
+ <el name = "LifeDef">Life Defence:</el>  
+ <el name = "DeathDef">Death Defence:</el>  
  <el name = "Money">Money:</el>  
  
- <el name = "BaseHP">BaseHP:</el>
- <el name = "MaxHP">MaxHP:</el>
- <el name = "BaseEne">BaseEne:</el> 
- <el name = "MaxEne">MaxEne:</el> 
- <el name = "BaseStrength">BaseStrength:</el> 
- <el name = "BaseEndurance">BaseEndurance:</el>
- <el name = "BaseKnowledge">BaseKnowledge:</el>  
- <el name = "BaseCharisma">BaseCharisma:</el>  
+ <el name = "BaseHP">Base Hit Points:</el>
+ <el name = "MaxHP">Max Hit Points:</el>
+ <el name = "BaseEne">Base Energy:</el> 
+ <el name = "MaxEne">Max Energy:</el> 
+ <el name = "BaseStrength">Base Strength:</el> 
+ <el name = "BaseEndurance">Base Endurance:</el>
+ <el name = "BaseKnowledge">Base Knowledge:</el>  
+ <el name = "BaseCharisma">Base Charisma:</el>  
  
  </scene>
  
