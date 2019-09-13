@@ -35,45 +35,42 @@ namespace Assets.Code.Items
         }
 
         //for items storage
-        public void addItem(A_Item item)
+        public void addItem(A_Item item, List<A_Item> storage)
         {
-            A_Item invItem = returnStack(item);
+            A_Item invItem = null;
+            if (item.stackable)
+             invItem = returnStack(item, storage);
+
             if (invItem != null)
             {
-                mainItemsStorage.Find(x => x.GetType().Name.Equals(invItem.GetType().Name)).itemCount++;
+                storage.Find(x => x.GetType().Name.Equals(invItem.GetType().Name)).itemCount++;
             }
             else
             {
-                mainItemsStorage.Add(item);
+                storage.Add(item);
             }       
         }
 
-        public void removeItem(A_Item item)
+        public void removeItem(A_Item item, List<A_Item> storage)
         {
-            mainItemsStorage.Remove(item);        
+            A_Item invItem = storage.Find(x => x.GetType().Name.Equals(item.GetType().Name));
+            invItem.itemCount--;
+            if(invItem.itemCount <=0)
+             storage.Remove(item);        
         }
 
-        public void removeEmptyFromMainItemsStorage()
+        public void removeEmptyFromMainItemsStorage(List<A_Item> storage)
         {
-            for (int i = 0; i < mainItemsStorage.Count; ++i)
+            for (int i = 0; i < storage.Count; ++i)
             {
-                if (mainItemsStorage[i].itemCount <= 0)
-                    mainItemsStorage.RemoveAt(i);
+                if (storage[i].itemCount <= 0)
+                    storage.RemoveAt(i);
             }
         }
 
-        public void removeEmptyFromQAIemsStorage()
+        private A_Item returnStack(A_Item item,List<A_Item> storage)
         {
-            for (int i = 0; i < quickAccesItemStorage.Count; ++i)
-            {
-                if (quickAccesItemStorage[i].itemCount <= 0)
-                    quickAccesItemStorage.RemoveAt(i);
-            }
-        }
-
-        private A_Item returnStack(A_Item item)
-        {
-            foreach (A_Item invItem in mainItemsStorage)
+            foreach (A_Item invItem in storage)
             {
                 if (invItem.GetType().Name.Equals(item.GetType().Name)) //get first item from stack
                 {
@@ -82,18 +79,6 @@ namespace Assets.Code.Items
             }
             return null;
         }
-                     
-        //for talismans storage
-        public void addTalisman(A_Item item)
-        {
-            mainTalismansStorage.Add(item);
-        }
-
-        public void removeTalisman(A_Item item)
-        {
-            mainTalismansStorage.Remove(item);
-        }
-
 
     }
 }

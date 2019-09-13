@@ -32,23 +32,23 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             ItemFabric itemFabric = new ItemFabric();
             List<ItemsData> alldata = SystemScripts.ResourcesManager.itemsData;
 
-            invSystem.addItem(itemFabric.createPotionAirUpMix1S(alldata.Find(x => x.itemName.Equals("AirUpMix1S"))));
-            invSystem.addItem(itemFabric.createPotionHealP1S(alldata.Find(x => x.itemName.Equals("HealP1S"))));
-            invSystem.addItem(itemFabric.createPotionHealP2M(alldata.Find(x => x.itemName.Equals("HealP2M"))));
-            invSystem.addItem(itemFabric.createPotionHealP2M(alldata.Find(x => x.itemName.Equals("HealP2M"))));
-            invSystem.addItem(itemFabric.createPotionHealP3G(alldata.Find(x => x.itemName.Equals("HealP3G"))));
-            invSystem.addItem(itemFabric.createPotionHealP4U(alldata.Find(x => x.itemName.Equals("HealP4U"))));
-            invSystem.addItem(itemFabric.createPotionHealP4U(alldata.Find(x => x.itemName.Equals("HealP4U"))));
+            invSystem.addItem(itemFabric.createPotionAirUpMix1S(alldata.Find(x => x.itemName.Equals("AirUpMix1S"))), invSystem.mainItemsStorage);
+            invSystem.addItem(itemFabric.createPotionHealP1S(alldata.Find(x => x.itemName.Equals("HealP1S"))), invSystem.mainItemsStorage);
+            invSystem.addItem(itemFabric.createPotionHealP2M(alldata.Find(x => x.itemName.Equals("HealP2M"))), invSystem.mainItemsStorage);
+            invSystem.addItem(itemFabric.createPotionHealP2M(alldata.Find(x => x.itemName.Equals("HealP2M"))), invSystem.mainItemsStorage);
+            invSystem.addItem(itemFabric.createPotionHealP3G(alldata.Find(x => x.itemName.Equals("HealP3G"))), invSystem.mainItemsStorage);
+            invSystem.addItem(itemFabric.createPotionHealP4U(alldata.Find(x => x.itemName.Equals("HealP4U"))), invSystem.mainItemsStorage);
+            invSystem.addItem(itemFabric.createPotionHealP4U(alldata.Find(x => x.itemName.Equals("HealP4U"))), invSystem.mainItemsStorage);
 
             //add talisman
-            invSystem.addTalisman(itemFabric.createTalismanDefAir1S(alldata.Find(x => x.itemName.Equals("DefAir1S"))));
-            invSystem.addTalisman(itemFabric.createTalismanDefAir2M(alldata.Find(x => x.itemName.Equals("DefAir2M"))));
-            invSystem.addTalisman(itemFabric.createTalismanDefAir3G(alldata.Find(x => x.itemName.Equals("DefAir3G"))));
-            invSystem.addTalisman(itemFabric.createTalismanDefAir4U(alldata.Find(x => x.itemName.Equals("DefAir4U"))));
-            invSystem.addTalisman(itemFabric.createTalismanDefFire1S(alldata.Find(x => x.itemName.Equals("DefFire1S"))));
-            invSystem.addTalisman(itemFabric.createTalismanDefFire2M(alldata.Find(x => x.itemName.Equals("DefFire2M"))));
-            invSystem.addTalisman(itemFabric.createTalismanDefFire3G(alldata.Find(x => x.itemName.Equals("DefFire3G"))));
-            invSystem.addTalisman(itemFabric.createTalismanDefFire4U(alldata.Find(x => x.itemName.Equals("DefFire4U"))));
+            invSystem.addItem(itemFabric.createTalismanDefAir1S(alldata.Find(x => x.itemName.Equals("DefAir1S"))), invSystem.mainTalismansStorage);
+            invSystem.addItem(itemFabric.createTalismanDefAir2M(alldata.Find(x => x.itemName.Equals("DefAir2M"))), invSystem.mainTalismansStorage);
+            invSystem.addItem(itemFabric.createTalismanDefAir3G(alldata.Find(x => x.itemName.Equals("DefAir3G"))), invSystem.mainTalismansStorage);
+            invSystem.addItem(itemFabric.createTalismanDefAir4U(alldata.Find(x => x.itemName.Equals("DefAir4U"))), invSystem.mainTalismansStorage);
+            invSystem.addItem(itemFabric.createTalismanDefFire1S(alldata.Find(x => x.itemName.Equals("DefFire1S"))), invSystem.mainTalismansStorage);
+            invSystem.addItem(itemFabric.createTalismanDefFire2M(alldata.Find(x => x.itemName.Equals("DefFire2M"))), invSystem.mainTalismansStorage);
+            invSystem.addItem(itemFabric.createTalismanDefFire3G(alldata.Find(x => x.itemName.Equals("DefFire3G"))), invSystem.mainTalismansStorage);
+            invSystem.addItem(itemFabric.createTalismanDefFire4U(alldata.Find(x => x.itemName.Equals("DefFire4U"))), invSystem.mainTalismansStorage);
 
         }
 
