@@ -131,7 +131,7 @@ namespace Assets.PlayerController
         {
             C_Hero hero = HeroController.mainHero;
 
-            hero.critDamageMod = hero.totalCharisma * 2 / 100;
+            hero.bonusCritDamagePercent = hero.totalCharisma * 2;
             hero.bonusCritChance = hero.totalCharisma / 10;
         }
 

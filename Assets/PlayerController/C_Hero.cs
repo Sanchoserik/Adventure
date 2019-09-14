@@ -143,10 +143,10 @@ namespace Assets.PlayerController
 
             basePhysAtk = 25;
 
-            baseStrength = 1;
-            baseEndurance = 1;
-            baseKnowledge = 1;
-            baseCharisma = 1;
+            baseStrength = 0;
+            baseEndurance = 0;
+            baseKnowledge = 0;
+            baseCharisma = 0;
            
             physDef = new DefenceParam();
             fireDef = new DefenceParam();

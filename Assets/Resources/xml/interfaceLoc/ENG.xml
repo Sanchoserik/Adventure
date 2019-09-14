@@ -76,6 +76,14 @@
  <el name = "BaseEndurance">Base Endurance:</el>
  <el name = "BaseKnowledge">Base Knowledge:</el>  
  <el name = "BaseCharisma">Base Charisma:</el>  
+ <el name = "PhysAtk">Physical ATK:</el>
+ <el name = "BonusMagAtk">B. Mag ATK:</el>
+ <el name = "BonusMagAtkPercent">B. Mag ATK%:</el> 
+ <el name = "BonusTPower">B. ENE Talismans:</el> 
+ <el name = "BonusTPowerPercent">B. ENE Talismans%:</el> 
+ <el name = "CritChance">Crit chance:</el>
+ <el name = "CritDmgMod">Crit ATK mod:</el>  
+ <el name = "BonusCritDmgPercent">B. Crit ATK%:</el>  
  
  </scene>
  

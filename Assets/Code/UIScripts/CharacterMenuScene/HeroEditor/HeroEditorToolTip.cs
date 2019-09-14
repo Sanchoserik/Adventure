@@ -42,7 +42,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
                 { "physDef", () => genPhysDef(systemMessages["physDef"])},
                 { "physAtk", () => genPhysAtk(systemMessages["physAtk"])},
                 { "critChance", () => genCritChance(systemMessages["critChance"])},
-                { "actionPoints", () => genActionPoints(systemMessages["actionPoints"])}
+                { "actionPoints", () => genActionPoints(systemMessages["actionPoints"])},             
             };
 
             systemMessages = LocalisationManager.systemMessagesLocalisationData.localisationValues["CharacterMenu"];
@@ -126,6 +126,9 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
             str.Replace("$Val$", ((hero.baseStrength + hero.bonusStrength) * hero.bonusStrengthPercent / 100).ToString());
             str.Replace("$B%$", hero.bonusStrengthPercent.ToString());
 
+            str.Append("\n"+systemMessages["BaseStrength"]);
+            str.Replace("\\n", "\n");
+
             helpInfo.text = str.ToString();
         }
 
@@ -138,6 +141,9 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
             str.Replace("$BonusEnd$", hero.bonusEndurance.ToString());
             str.Replace("$Val$", ((hero.baseEndurance + hero.bonusEndurance) * hero.bonusEndurancePercent / 100).ToString());
             str.Replace("$B%$", hero.bonusEndurancePercent.ToString());
+
+            str.Append("\n" + systemMessages["BaseEndurance"]);
+            str.Replace("\\n", "\n");
 
             helpInfo.text = str.ToString();
         }
@@ -152,6 +158,9 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
             str.Replace("$Val$", ((hero.baseKnowledge + hero.bonusKnowledge) * hero.bonusKnowledgePercent / 100).ToString());
             str.Replace("$B%$", hero.bonusKnowledgePercent.ToString());
 
+            str.Append("\n" + systemMessages["BaseKnowledge"]);
+            str.Replace("\\n", "\n");
+
             helpInfo.text = str.ToString();
         }
 
@@ -164,6 +173,9 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
             str.Replace("$BonusChr$", hero.bonusCharisma.ToString());
             str.Replace("$Val$", ((hero.baseCharisma + hero.bonusCharisma) * hero.bonusCharismaPercent / 100).ToString());
             str.Replace("$B%$", hero.bonusCharismaPercent.ToString());
+
+            str.Append("\n" + systemMessages["BaseCharisma"]);
+            str.Replace("\\n", "\n");
 
             helpInfo.text = str.ToString();
         }
@@ -311,6 +323,11 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
             str.Replace("$Bonus$", hero.bonusAP.ToString());
 
             helpInfo.text = str.ToString();
+        }
+
+        private void genSimpleToolTip(string sysText)
+        {
+            helpInfo.text = sysText;
         }
 
     }

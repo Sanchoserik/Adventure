@@ -76,6 +76,15 @@
  <el name = "BaseEndurance">Базова витривалість:</el>
  <el name = "BaseKnowledge">Базові знання:</el>  
  <el name = "BaseCharisma">Базова харизма:</el>  
+ <el name = "PhysAtk">Фізична атака:</el>
+ <el name = "BonusMagAtk">Б. Маг АТК:</el>
+ <el name = "BonusMagAtkPercent">Б. Маг Атк%:</el> 
+ <el name = "BonusTPower">Б. ЕНЕ Талісманів:</el> 
+ <el name = "BonusTPowerPercent">Б. ЕНЕ Талісманів%:</el> 
+ <el name = "CritChance">Шанс КРТ:</el>
+ <el name = "CritDmgMod">Мод КРТ:</el>  
+ <el name = "BonusCritDmgPercent">Б. КРТ АТК%:</el>  
+ 
  
  </scene>
  
