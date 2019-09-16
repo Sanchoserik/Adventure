@@ -193,7 +193,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
 
                     component = instance.transform.GetChild(1);
                     Text itemCountText = component.GetComponentInChildren<Text>();
-                    itemCountText.enabled = false;
+                    itemCountText.enabled = true;
                     UIItem uiitem = instance.GetComponent<UIItem>();
                     uiitem.item = item;                   
                 }

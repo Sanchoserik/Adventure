@@ -32,23 +32,23 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
         }
 
         //for items
-        public void quickAccesItemsPanelHandler(Transform dragObject, GameObject dragObjectParent, Vector3 mousePosition, GameObject qaPanel)
+        public void quickAccesItemsPanelHandler(Transform dragObject, GameObject dragObjectParent, Vector3 mousePosition, GameObject qaPanel, List<A_Item> qaStorage)
         {
             //1. move item to another QA slot
             //2. swap items in QA slots
             //3. drop item from QA panel
             int indexOfActiveSlot = 0;
-            GameObject activeSlot = getActiveQASlot(qaPanel, mousePosition, out indexOfActiveSlot);
+            GameObject activeSlot = getActiveQASlot(qaPanel, mousePosition, qaStorage, out indexOfActiveSlot);
             if (activeSlot != null)
             {
                 if (checkSlotForEmptyness(activeSlot)) // if active slot is filled then swap items
                 {
-                    swapItemsInSlots(activeSlot, dragObjectParent, indexOfActiveSlot, qaPanel);
+                    swapItemsInSlots(activeSlot, dragObjectParent, indexOfActiveSlot, qaPanel, qaStorage);
                 }
                 else // else move item to empty slot
                 {
-                    removeItemFromPanel(qaPanel);
-                    setItemToSlot(indexOfActiveSlot, activeSlot);
+                    removeItemFromPanel(qaPanel,qaStorage);
+                    setItemToSlot(indexOfActiveSlot, activeSlot, qaStorage);
                 }
             }
             else
@@ -57,20 +57,20 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             }
         }
 
-        public void inventoryPanelItemsHandler(Transform dragObject, Vector3 mousePosition, GameObject qaPanel)
+        public void inventoryPanelItemsHandler(Transform dragObject, Vector3 mousePosition, GameObject qaPanel,List<A_Item> qaStorage)
         {
             //1. set item to empty QA slot or Replace filled QA slot
             //get slot we drag into and its index
             int indexOfActiveSlot = 0;
-            GameObject activeSlot = getActiveQASlot(qaPanel, mousePosition,out indexOfActiveSlot);
+            GameObject activeSlot = getActiveQASlot(qaPanel, mousePosition,qaStorage ,out indexOfActiveSlot);
             if (activeSlot != null)
             {
-                removeItemFromPanel(qaPanel);
-                setItemToSlot(indexOfActiveSlot,activeSlot);
+                removeItemFromPanel(qaPanel,qaStorage);
+                setItemToSlot(indexOfActiveSlot,activeSlot, qaStorage);
             }
         }
 
-        private GameObject getActiveQASlot(GameObject qaPanel, Vector3 mousePosition,out int index)
+        private GameObject getActiveQASlot(GameObject qaPanel, Vector3 mousePosition, List<A_Item> qaStorage, out int index)
         {
             index = 0;
             foreach (Transform slot in qaPanel.transform)
@@ -86,10 +86,11 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             return null; // 
         }
 
-        private void setItemToSlot(int indexOfActiveSlot, GameObject activeSlot)
+        private void setItemToSlot(int indexOfActiveSlot, GameObject activeSlot, List<A_Item> qaStorage)
         {
-            InventorySystem invSystem = HeroController.mainHero.inventorySystem;
-            invSystem.quickAccesItemStorage[indexOfActiveSlot] = item;
+            //InventorySystem invSystem = HeroController.mainHero.inventorySystem;
+            //invSystem.quickAccesItemStorage[indexOfActiveSlot] = item;
+            qaStorage[indexOfActiveSlot] = item;
 
             activeSlot.transform.GetChild(0).gameObject.GetComponent<Image>().enabled = true;
             activeSlot.transform.GetChild(0).GetComponent<Image>().sprite = itemSprite.sprite;
@@ -99,7 +100,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             activeSlot.GetComponent<UIItem>().item = item;
         }
 
-        private void swapItemsInSlots(GameObject activeSlot, GameObject parentSlot, int indexOfActiveSlot, GameObject qaPanel)
+        private void swapItemsInSlots(GameObject activeSlot, GameObject parentSlot, int indexOfActiveSlot, GameObject qaPanel, List<A_Item> qaStorage)
         {
             int indexOfParentSlot = 0;           
             foreach (Transform slot in qaPanel.transform)
@@ -116,18 +117,16 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             Sprite tempSprite = activeSlot.transform.GetChild(0).GetComponent<Image>().sprite;
             string tempText = activeSlot.transform.GetChild(1).GetComponent<Text>().text;
 
-            setItemToSlot(indexOfActiveSlot, activeSlot);
+            setItemToSlot(indexOfActiveSlot, activeSlot, qaStorage);
 
             item = tempItem;
             itemSprite.sprite = tempSprite;
             text = tempText;
 
-            setItemToSlot(indexOfParentSlot, parentSlot);
-
-            InventorySystem inv = HeroController.mainHero.inventorySystem;
+            setItemToSlot(indexOfParentSlot, parentSlot, qaStorage);           
         }
 
-        private void removeItemFromPanel(GameObject qaPanel)
+        private void removeItemFromPanel(GameObject qaPanel, List<A_Item> qaStorage)
         {
             int removeIndex = 0;
             foreach (Transform qaSlot in qaPanel.transform)
@@ -139,8 +138,9 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
                         qaSlot.GetChild(1).gameObject.GetComponent<Text>().enabled = false;
                         qaSlot.GetComponent<UIItem>().item = null;
 
-                        InventorySystem invSystem = HeroController.mainHero.inventorySystem;
-                        invSystem.quickAccesItemStorage[removeIndex] = null;
+                        //InventorySystem invSystem = HeroController.mainHero.inventorySystem;
+                        //invSystem.quickAccesItemStorage[removeIndex] = null;
+                        qaStorage[removeIndex] = null;
                         break;
                     }
                 ++removeIndex;

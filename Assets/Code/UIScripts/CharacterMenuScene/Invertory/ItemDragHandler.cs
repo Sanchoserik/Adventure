@@ -1,4 +1,5 @@
 ﻿using Assets.Code.Items;
+using Assets.PlayerController;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,17 +41,17 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             DragObject dragObject = dragObjectTransform.GetComponent<DragObject>();
             if (dragObject.item.category.Equals("Talismans")) // for talismans
             {
-                if (dragObjectParentSlot.name.Equals("QuickAccesPanel"))
-                    dragObject.quickAccesTalismansPanelHandler(transform, dragObjectParentSlot);
+                if (dragObjectParentSlot.transform.parent.name.Equals("QuickAccesPanel")) // for all other items
+                    dragObject.quickAccesItemsPanelHandler(transform, dragObjectParentSlot, Input.mousePosition, quickAccesPanel, HeroController.mainHero.inventorySystem.inUseTalismansStorage);
                 else
-                    dragObject.inventoryPanelTalismansHandler(transform, dragObjectParentSlot);
+                    dragObject.inventoryPanelItemsHandler(transform, Input.mousePosition, quickAccesPanel, HeroController.mainHero.inventorySystem.inUseTalismansStorage);
             }
             else
             {
                 if (dragObjectParentSlot.transform.parent.name.Equals("QuickAccesPanel")) // for all other items
-                    dragObject.quickAccesItemsPanelHandler(transform, dragObjectParentSlot, Input.mousePosition, quickAccesPanel);
+                    dragObject.quickAccesItemsPanelHandler(transform, dragObjectParentSlot, Input.mousePosition, quickAccesPanel, HeroController.mainHero.inventorySystem.quickAccesItemStorage);
                 else
-                    dragObject.inventoryPanelItemsHandler(transform, Input.mousePosition, quickAccesPanel);
+                    dragObject.inventoryPanelItemsHandler(transform, Input.mousePosition, quickAccesPanel, HeroController.mainHero.inventorySystem.quickAccesItemStorage);
             }
 
             dragObjectTransform.gameObject.SetActive(false);
