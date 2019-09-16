@@ -31,7 +31,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             dragObjectParentSlot = gameObject.transform.parent.gameObject;
             dragObject.setItem(gameObject.GetComponentInParent<UIItem>().item);
             dragObject.setSprite(gameObject.GetComponent<Image>());
-            dragObject.setText(gameObject.GetComponent<Text>());
+            dragObject.setText(gameObject.transform.parent.GetChild(1).GetComponent<Text>());
             dragObjectTransform.transform.position = Input.mousePosition;            
         }
 

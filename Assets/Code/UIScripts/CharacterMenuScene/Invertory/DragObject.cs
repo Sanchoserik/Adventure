@@ -23,7 +23,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
 
         public void setText(Text newText)
         {
-           // text = newText.text;
+            text = newText.text;
         }
 
         public void setItem(A_Item newItem)
@@ -93,7 +93,9 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
 
             activeSlot.transform.GetChild(0).gameObject.GetComponent<Image>().enabled = true;
             activeSlot.transform.GetChild(0).GetComponent<Image>().sprite = itemSprite.sprite;
-           
+            activeSlot.transform.GetChild(1).GetComponent<Text>().enabled = true;
+            activeSlot.transform.GetChild(1).GetComponent<Text>().text = text;
+
             activeSlot.GetComponent<UIItem>().item = item;
         }
 
@@ -112,11 +114,13 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
 
             A_Item tempItem = activeSlot.GetComponent<UIItem>().item;
             Sprite tempSprite = activeSlot.transform.GetChild(0).GetComponent<Image>().sprite;
-           
+            string tempText = activeSlot.transform.GetChild(1).GetComponent<Text>().text;
+
             setItemToSlot(indexOfActiveSlot, activeSlot);
 
             item = tempItem;
             itemSprite.sprite = tempSprite;
+            text = tempText;
 
             setItemToSlot(indexOfParentSlot, parentSlot);
 

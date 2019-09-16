@@ -102,21 +102,11 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
             heroStatusValues["BaseStrengthVal"].text = hero.baseStrength.ToString();
             heroStatusValues["BaseEnduranceVal"].text = hero.baseEndurance.ToString();
             heroStatusValues["BaseKnowledgeVal"].text = hero.baseKnowledge.ToString();
-            heroStatusValues["BaseCharismaVal"].text = hero.baseCharisma.ToString();
-            //heroStatusValues["BonusStrengthVal"].text = hero.bonusStrength.ToString();
-            //heroStatusValues["BonusEnduranceVal"].text = hero.bonusEndurance.ToString();
-            //heroStatusValues["BonusKnowledgeVal"].text = hero.bonusKnowledge.ToString();
-            //heroStatusValues["BonusCharismaVal"].text = hero.bonusCharisma.ToString();
-            //heroStatusValues["TotalStrengthVal"].text = hero.totalStrength.ToString();
-            //heroStatusValues["TotalEnduranceVal"].text = hero.totalEndurance.ToString();
-            //heroStatusValues["TotalKnowledgeVal"].text = hero.bonusKnowledge.ToString();
-            //heroStatusValues["TotalCharismaVal"].text = hero.totalCharisma.ToString();
+            heroStatusValues["BaseCharismaVal"].text = hero.baseCharisma.ToString();           
             heroStatusValues["BaseHPVal"].text = hero.baseMaxHP.ToString();
             heroStatusValues["MaxHPVal"].text = hero.totalMaxHP.ToString();
             heroStatusValues["BaseENEVal"].text = hero.baseMaxENE.ToString();
-            heroStatusValues["MaxENEVal"].text = hero.totalMaxENE.ToString();
-         
-            //heroStatusValues[""].text = hero;
+            heroStatusValues["MaxENEVal"].text = hero.totalMaxENE.ToString();         
         }
 
         //BUTTON INPUT
@@ -142,6 +132,35 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
                         buttonCounterChr++;
                         HeroAttributesController.attributePlus("chr");
                         break;
+                        //TEMP CASE 10
+                    case "str10":
+                        for (int i = 0; i < 10; ++i)
+                        {
+                            HeroAttributesController.attributePlus("str");
+                            buttonCounterStr++;
+                        }
+                        break;
+                    case "end10":
+                        for (int i = 0; i < 10; ++i)
+                        {
+                            HeroAttributesController.attributePlus("end");
+                            buttonCounterStr++;
+                        }
+                        break;
+                    case "knd10":
+                        for (int i = 0; i < 10; ++i)
+                        {
+                            HeroAttributesController.attributePlus("knd");
+                            buttonCounterStr++;
+                        }
+                        break;
+                    case "chr10":
+                        for (int i = 0; i < 10; ++i)
+                        {
+                            HeroAttributesController.attributePlus("chr");
+                            buttonCounterStr++;
+                        }
+                        break;
                 }
 
                 updateVisuals();
@@ -154,33 +173,66 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
             switch (attribute)
             {
                 case "str":
-                    if (HeroController.mainHero.baseStrength > 1)
+                    if (HeroController.mainHero.baseStrength > 0)
                     {
                         HeroAttributesController.attributeMinus("str");
                         buttonCounterStr--;
                     }
                     break;
                 case "end":
-                    if (HeroController.mainHero.baseEndurance > 1)
+                    if (HeroController.mainHero.baseEndurance > 0)
                     {
                         HeroAttributesController.attributeMinus("end");
                         buttonCounterEnd--;
                     }
                         break;
                 case "knd":
-                    if (HeroController.mainHero.baseKnowledge > 1)
+                    if (HeroController.mainHero.baseKnowledge > 0)
                     {
                         HeroAttributesController.attributeMinus("knd");
                         buttonCounterKnd--;
                     }
                         break;
                 case "chr":
-                    if (HeroController.mainHero.baseCharisma > 1)
+                    if (HeroController.mainHero.baseCharisma > 0)
                     {
                         HeroAttributesController.attributeMinus("chr");
                         buttonCounterChr--;
                     }
                         break;
+                //TEMP CASE 10
+                case "str10":
+                    for(int i=0;i<10;++i)
+                        if (HeroController.mainHero.baseStrength > 0)
+                        {
+                            HeroAttributesController.attributeMinus("str");
+                            buttonCounterStr--;
+                        }
+                    break;
+                case "end10":
+                    for (int i = 0; i < 10; ++i)
+                        if (HeroController.mainHero.baseEndurance > 0)
+                        {
+                            HeroAttributesController.attributeMinus("end");
+                            buttonCounterEnd--;
+                        }
+                    break;
+                case "knd10":
+                    for (int i = 0; i < 10; ++i)
+                        if (HeroController.mainHero.baseKnowledge > 0)
+                        {
+                            HeroAttributesController.attributeMinus("knd");
+                            buttonCounterKnd--;
+                        }
+                    break;
+                case "chr10":
+                    for (int i = 0; i < 10; ++i)
+                        if (HeroController.mainHero.baseCharisma > 0)
+                        {
+                            HeroAttributesController.attributeMinus("chr");
+                            buttonCounterChr--;
+                        }
+                    break;
             }
 
             updateVisuals();
@@ -197,29 +249,61 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
                     plusButtons[i].SetActive(true);
                 }
             }
-           
+
             //if counters > 0 activate minus buttons
             //else deactivate minus button
-            if(buttonCounterStr > 0)
+            if (buttonCounterStr > 0)
+            {
                 minusButtons[0].SetActive(true);
+                if (buttonCounterStr >= 10)
+                    minusButtons[4].SetActive(true);
+                else
+                    minusButtons[4].SetActive(false);
+            }
             else
+            {
                 minusButtons[0].SetActive(false);
-
+                minusButtons[4].SetActive(false);
+            }
             if (buttonCounterEnd > 0)
+            {
                 minusButtons[1].SetActive(true);
+                if (buttonCounterEnd >= 10)
+                    minusButtons[5].SetActive(true);
+                else
+                    minusButtons[5].SetActive(false);
+            }
             else
+            {
                 minusButtons[1].SetActive(false);
-
+                minusButtons[5].SetActive(false);
+            }
             if (buttonCounterKnd > 0)
+            {
                 minusButtons[2].SetActive(true);
+                if (buttonCounterKnd >= 10)
+                    minusButtons[6].SetActive(true);
+                else
+                    minusButtons[6].SetActive(false);
+            }
             else
+            {
                 minusButtons[2].SetActive(false);
-
+                minusButtons[6].SetActive(false);
+            }
             if (buttonCounterChr > 0)
+            {
                 minusButtons[3].SetActive(true);
+                if (buttonCounterChr >= 10)
+                    minusButtons[7].SetActive(true);
+                else
+                    minusButtons[7].SetActive(false);
+            }
             else
+            {
                 minusButtons[3].SetActive(false);
-
+                minusButtons[7].SetActive(false);
+            }
             updated = true;
         }
 
