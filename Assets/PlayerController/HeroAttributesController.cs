@@ -69,6 +69,7 @@ namespace Assets.PlayerController
 
         public static void updateAttributes()
         {
+            refreshTotalAttributes();
             updateStrength();
             updateEndurance();
             updateKnowledge();
@@ -76,17 +77,23 @@ namespace Assets.PlayerController
             refreshTotalValues();
         }
 
-        private static void refreshTotalValues()
+        private static void refreshTotalAttributes()
         {
             C_Hero hero = HeroController.mainHero;
-
-            refreshTotalDefValues();
 
             hero.totalStrength = hero.baseStrength + hero.bonusStrength + (hero.baseStrength + hero.bonusStrength) * hero.bonusStrengthPercent / 100;
             hero.totalEndurance = hero.baseEndurance + hero.bonusEndurance + (hero.baseEndurance + hero.bonusEndurance) * hero.bonusEndurancePercent / 100;
             hero.totalKnowledge = hero.baseKnowledge + hero.bonusKnowledge + (hero.baseKnowledge + hero.bonusKnowledge) * hero.bonusKnowledgePercent / 100;
             hero.totalCharisma = hero.baseCharisma + hero.bonusCharisma + (hero.baseCharisma + hero.bonusCharisma) * hero.bonusCharismaPercent / 100;
 
+        }
+
+        private static void refreshTotalValues()
+        {
+            C_Hero hero = HeroController.mainHero;
+
+            refreshTotalDefValues();
+          
             hero.baseMaxHP = hero.baseHP + hero.totalEndurance * 5 + (hero.baseHP + hero.totalEndurance * 5) * hero.totalEndurance / 10 / 100;
             hero.totalMaxHP = hero.baseMaxHP + hero.bonusHPValue + (hero.baseMaxHP + hero.bonusHPValue) * hero.bonusHPPercent / 100;
 
@@ -124,7 +131,7 @@ namespace Assets.PlayerController
 
             hero.bonusMagAtkValue = hero.totalKnowledge * 3;
             hero.bonusMagAtkPercent = hero.totalKnowledge / 10 * 2 / 100;
-            hero.bonusTalismanPowerPercent = hero.totalKnowledge / 10 / 100;
+            hero.bonusTalismanPowerPercent = hero.totalKnowledge / 10;
         }
 
         private static void updateCharisma()
@@ -236,11 +243,6 @@ namespace Assets.PlayerController
                 default: return "NoVal";
             }
         }
-
-        public static int talismanTotalEnergy(A_Item talisman)
-        {
-            return 1;
-        }
-
+     
     }
 }

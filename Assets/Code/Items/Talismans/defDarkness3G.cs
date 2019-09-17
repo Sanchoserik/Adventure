@@ -19,9 +19,20 @@ namespace Assets.Code.Items.Talismans
             element = "darkness";
             baseMaxEne = _maxEne;
             category = "Talismans";
-            totalMaxEne = HeroAttributesController.talismanTotalEnergy(this);
-            currentEne = totalMaxEne;
+            talismanCalculateMaxPower();
             stackable = false;
         }
+
+        public override string talismanGetPower()
+        {
+           return totalMaxEne.ToString();
+        }
+
+        public override void talismanCalculateMaxPower()
+        {
+            totalMaxEne = baseMaxEne + HeroController.mainHero.bonusTalismanPower
+                + (baseMaxEne + HeroController.mainHero.bonusTalismanPower) * HeroController.mainHero.bonusTalismanPowerPercent / 100;
+        }
+
     }
 }

@@ -26,7 +26,17 @@ namespace Assets.Code.Items
             buyPrice = _buyPrice;
             sellPrice = _sellPrice;
         }
+        //Items specific functions
 
-       
+        //Talismans specific functions
+        public virtual string talismanGetPower()
+        {
+            return "Wrong Item Type";
+        }
+
+        public virtual void talismanCalculateMaxPower()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -337,7 +337,6 @@
     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\Invertory\DragObject.cs" />
     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\Invertory\InvertoryController.cs" />
     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\Invertory\ItemDragHandler.cs" />
-    <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\Invertory\ItemDropHandler.cs" />
     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\Invertory\ItemToolTip.cs" />
     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\Invertory\UIItem.cs" />
     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\SkillTree\SkillBranchChange.cs" />

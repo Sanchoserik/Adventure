@@ -144,21 +144,21 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.HeroEditor
                         for (int i = 0; i < 10; ++i)
                         {
                             HeroAttributesController.attributePlus("end");
-                            buttonCounterStr++;
+                            buttonCounterEnd++;
                         }
                         break;
                     case "knd10":
                         for (int i = 0; i < 10; ++i)
                         {
                             HeroAttributesController.attributePlus("knd");
-                            buttonCounterStr++;
+                            buttonCounterKnd++;
                         }
                         break;
                     case "chr10":
                         for (int i = 0; i < 10; ++i)
                         {
                             HeroAttributesController.attributePlus("chr");
-                            buttonCounterStr++;
+                            buttonCounterChr++;
                         }
                         break;
                 }

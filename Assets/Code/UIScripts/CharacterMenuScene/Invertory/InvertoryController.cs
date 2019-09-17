@@ -122,7 +122,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             
             itemIcon.sprite = itemsAtlas.GetSprite(uiItem.item.GetType().Name);
         }
-
+       
         private void getTalismans(A_Item talisman)
         {
             GameObject instance = Instantiate(slotPrefab, mainHolder);
@@ -132,7 +132,8 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             itemIcon.enabled = true;
             component = instance.transform.GetChild(1);
             Text itemCountText = component.GetComponentInChildren<Text>();
-            itemCountText.enabled = false; 
+            itemCountText.enabled = true;
+            itemCountText.text = getItemText(talisman);
 
             UIItem uiItem = instance.GetComponent<UIItem>();
             uiItem.item = talisman;
@@ -207,7 +208,19 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             }
         }
 
-   
+        private string getItemText(A_Item item)
+        {
+            if (item.stackable)
+            {
+               return item.itemCount.ToString();
+            }
+            else
+            {
+                item.talismanCalculateMaxPower(); //recalculate tpower
+                return item.talismanGetPower();
+            }            
+        }
+        
     }
 
     //enum with items names - just in case

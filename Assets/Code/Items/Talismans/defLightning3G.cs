@@ -19,9 +19,21 @@ namespace Assets.Code.Items.Talismans
             element = "lightning";
             baseMaxEne = _maxEne;
             category = "Talismans";
-            totalMaxEne = HeroAttributesController.talismanTotalEnergy(this);
+            talismanCalculateMaxPower();
             currentEne = totalMaxEne;
             stackable = false;
         }
+
+        public override string talismanGetPower()
+        {
+           return totalMaxEne.ToString();
+        }
+
+        public override void talismanCalculateMaxPower()
+        {
+            totalMaxEne = baseMaxEne + HeroController.mainHero.bonusTalismanPower
+                + (baseMaxEne + HeroController.mainHero.bonusTalismanPower) * HeroController.mainHero.bonusTalismanPowerPercent / 100;
+        }
+
     }
 }
