@@ -17,7 +17,8 @@ namespace Assets.Code.SystemScripts
         {
             RectTransform canvasRect = (RectTransform)mainUICanvas.transform;
             bottomLeft = new Vector2(0, 0);
-            topRight = new Vector2(canvasRect.rect.width, canvasRect.rect.height);
+            //topRight = new Vector2(canvasRect.rect.width, canvasRect.rect.height);
+            topRight = new Vector2(Screen.width, Screen.height);
 
             cameraRect = new Rect(
               bottomLeft.x,
@@ -27,7 +28,9 @@ namespace Assets.Code.SystemScripts
         }
 
         void LateUpdate()
-        {           
+        {
+            topRight = new Vector2(Screen.width, Screen.height);
+
             transform.position = Input.mousePosition;
             RectTransform toolTipRect = (RectTransform)transform;
             if ((transform.position.y + toolTipRect.rect.height > cameraRect.max.y) || (transform.position.x + toolTipRect.rect.width > cameraRect.max.x))
