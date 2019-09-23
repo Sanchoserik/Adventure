@@ -200,7 +200,14 @@
     <Compile Include="Assets\Code\Items\Talismans\DefWater2M.cs" />
     <Compile Include="Assets\Code\Items\Talismans\DefWater3G.cs" />
     <Compile Include="Assets\Code\Items\Talismans\DefWater4U.cs" />
-    <Compile Include="Assets\Code\Monsters\C_Monster.cs" />
+    <Compile Include="Assets\Code\Monsters\A_Monster.cs" />
+    <Compile Include="Assets\Code\Monsters\A_MonsterAction.cs" />
+    <Compile Include="Assets\Code\Monsters\NeuralWeb\DataCollector.cs" />
+    <Compile Include="Assets\Code\Monsters\NeuralWeb\Neuron.cs" />
+    <Compile Include="Assets\Code\Monsters\NeuralWeb\NeuronMemoryController.cs" />
+    <Compile Include="Assets\Code\Monsters\NeuralWeb\StrategicNeuralLayer.cs" />
+    <Compile Include="Assets\Code\Monsters\PackController.cs" />
+    <Compile Include="Assets\Code\Monsters\PackGenerator.cs" />
     <Compile Include="Assets\Code\ScriptHelper\ScriptHelper.cs" />
     <Compile Include="Assets\Code\Skills\A_Skill.cs" />
     <Compile Include="Assets\Code\Skills\ActionScripts\A_AScript.cs" />
@@ -390,6 +397,10 @@
     <None Include="Assets\Resources\xml\skills\skillsLocENG.xml" />
     <None Include="Assets\Resources\xml\skills\skillsLocRU.xml" />
     <None Include="Assets\Resources\xml\skills\skillsLocUA.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Code\Monsters\ConcretteMonsters\" />
+    <Folder Include="Assets\Code\Monsters\MonsterActions\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
