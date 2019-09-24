@@ -202,6 +202,16 @@
     <Compile Include="Assets\Code\Items\Talismans\DefWater4U.cs" />
     <Compile Include="Assets\Code\Monsters\A_Monster.cs" />
     <Compile Include="Assets\Code\Monsters\A_MonsterAction.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\nativeAir.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\nativeDarkness.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\nativeDeath.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\nativeEarth.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\nativeFire.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\nativeLife.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\nativeLight.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\nativeLightning.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\nativePhys.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\nativeWater.cs" />
     <Compile Include="Assets\Code\Monsters\NeuralWeb\DataCollector.cs" />
     <Compile Include="Assets\Code\Monsters\NeuralWeb\Neuron.cs" />
     <Compile Include="Assets\Code\Monsters\NeuralWeb\NeuronMemoryController.cs" />
@@ -399,7 +409,6 @@
     <None Include="Assets\Resources\xml\skills\skillsLocUA.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\Code\Monsters\ConcretteMonsters\" />
     <Folder Include="Assets\Code\Monsters\MonsterActions\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

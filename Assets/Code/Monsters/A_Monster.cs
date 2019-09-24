@@ -15,7 +15,6 @@ namespace Assets.Code.Monsters
 
         public int monsterPrice;
 
-
         public int baseHP;
         public int bonusHP;
         public int maxHP;
@@ -67,6 +66,17 @@ namespace Assets.Code.Monsters
         public int physATK;
         public int bonusPhysATKval;
         public int bonusPhysATKPerccent;
+
+        List<A_MonsterAction> actionList;
+
+        public A_Monster(string mName, string mRank, int mPrice)
+        {
+            name = mName;
+            rank = mRank;
+            monsterPrice = mPrice;
+
+            actionList = new List<A_MonsterAction>();
+        }
 
         public virtual A_MonsterAction attackAdvisor()
         {
