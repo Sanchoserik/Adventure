@@ -8,7 +8,6 @@ using Assets.Code.Skills.Assassin;
 using Assets.Code.Skills.Bruiser;
 using Assets.Code.Skills.Tactics;
 using Assets.Code.Skills.Warrior;
-using Assets.Monsters;
 using Assets.PlayerController;
 using UnityEngine;
 

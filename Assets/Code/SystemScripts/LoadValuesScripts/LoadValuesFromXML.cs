@@ -12,11 +12,14 @@ namespace Assets.Code.SystemScripts.LoadValuesScripts
     {
         private string itemsPath = "Assets/Resources/xml/items/Items.xml";
         private string skillsPath = "Assets/Resources/xml/skills/skills.xml";
+        private string monstersParemetersPath = "Assets/Resources/xml/monsters/monsters.xml";
+        private string monstersActionsPath = "Assets/Resources/xml/monsters/actions.xml";
 
         public LoadValuesFromXML()
         {
             loadItems();
             loadSkills();
+            loadMonsters();
         }
 
         private void loadItems()
@@ -83,5 +86,45 @@ namespace Assets.Code.SystemScripts.LoadValuesScripts
             }
         }
 
+        private void loadMonsters()
+        {
+            IEnumerable<XElement> monsters; // <item> tag  
+            XDocument xDoc = XDocument.Load(monstersParemetersPath);
+
+            monsters = xDoc.Descendants("monsters").Elements(); ;
+            foreach (XElement monster in monsters)
+            {
+                if (monster.Nodes() != null)
+                {
+                    string mName = monster.Attribute("name").Value;
+                    Dictionary<string, string> monsterParameters = new Dictionary<string, string>();
+                    List<string> monsterActions = new List<string>();
+
+                    foreach (XElement valTag in monster.Nodes())
+                    {
+                        if (valTag.Attribute("name").Value.Equals("actions"))
+                        {
+                            foreach (XElement action in valTag.Nodes())
+                            {
+                                monsterActions.Add(action.Value);
+                            }
+                        }
+                        else
+                        monsterParameters.Add(valTag.Attribute("name").Value, valTag.Value);
+                        
+                    }
+
+                    MonstersData monsterData = new MonstersData();
+                    monsterData.monsterName = mName;
+                    monsterData.monsterParameters = monsterParameters;
+                    monsterData.monsterActionsList = monsterActions;
+                    ResourcesManager.monstersData.Add(monsterData);
+                }
+            }
+        }
+
+        private void loadMonstersActions()
+        {
+        }
     }
 }

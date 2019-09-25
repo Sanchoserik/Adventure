@@ -336,6 +336,7 @@
     <Compile Include="Assets\Code\Skills\Warrior\SkillWaterPrison.cs" />
     <Compile Include="Assets\Code\SystemScripts\AppParameters.cs" />
     <Compile Include="Assets\Code\SystemScripts\DataStructures\ItemsData.cs" />
+    <Compile Include="Assets\Code\SystemScripts\DataStructures\MonstersData.cs" />
     <Compile Include="Assets\Code\SystemScripts\DataStructures\SkillsData.cs" />
     <Compile Include="Assets\Code\SystemScripts\LoadValuesScripts\LoadValuesFromXML.cs" />
     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\GetSceneLocalisation.cs" />
