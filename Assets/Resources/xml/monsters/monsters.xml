@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<monsters>
+<monster name = "nativeAir">
+<el name = "mName">nativeAir</el>
+<el name = "mHP">75<el>
+<el name = "mENE">50</el>
+<el name = "nativeElement">air</el>
+<el name = "counterElement">fire</el>
+<el name = "defAir">4</el>
+<el name = "physAtk">15</el>
+<el name = "actions">
+ <act name = "simpleAttack">simpleAttack</el>
+ <act name = "overcharge">overcharge</el>
+ <act name = "smallAirAttack">airAttack</el>
+ </el>
+</monster>
+<monster name = "nativeLightning">
+<el name = "mName">nativeLightning</el>
+<el name = "mHP">75<el>
+<el name = "mENE">50</el>
+<el name = "nativeElement">lightning</el>
+<el name = "counterElement">air</el>
+<el name = "defLightning">4</el>
+<el name = "physAtk">15</el>
+<el name = "actions">
+ <act name = "simpleAttack">simpleAttack</el>
+ <act name = "overcharge">overcharge</el>
+ <act name = "smallLightningAttack">lightningAttack</el>
+ </el>
+</monster>
+<monster name = "nativeEarth">
+<el name = "mName">nativeEarth</el>
+<el name = "mHP">75<el>
+<el name = "mENE">50</el>
+<el name = "nativeElement">earth</el>
+<el name = "counterElement">lightning</el>
+<el name = "defEarth">4</el>
+<el name = "physAtk">15</el>
+<el name = "actions">
+ <act name = "simpleAttack">simpleAttack</el>
+ <act name = "overcharge">overcharge</el>
+ <act name = "smallEarthAttack">earthAttack</el>
+ </el>
+</monster>
+<monster name = "nativeWater">
+<el name = "mName">nativeWater</el>
+<el name = "mHP">75<el>
+<el name = "mENE">50</el>
+<el name = "nativeElement">water</el>
+<el name = "counterElement">earth</el>
+<el name = "defWater">4</el>
+<el name = "physAtk">15</el>
+<el name = "actions">
+ <act name = "simpleAttack">simpleAttack</el>
+ <act name = "overcharge">overcharge</el>
+ <act name = "smallWaterAttack">waterAttack</el>
+ </el>
+</monster>
+<monster name = "nativeFire">
+<el name = "mName">nativeFire</el>
+<el name = "mHP">75<el>
+<el name = "mENE">50</el>
+<el name = "nativeElement">fire</el>
+<el name = "counterElement">water</el>
+<el name = "defFire">4</el>
+<el name = "physAtk">15</el>
+<el name = "actions">
+ <act name = "simpleAttack">simpleAttack</el>
+ <act name = "overcharge">overcharge</el>
+ <act name = "smallFireAttack">fireAttack</el>
+ </el>
+</monster>
+<monster name = "nativePhys">
+<el name = "mName">nativePhys</el>
+<el name = "mHP">100<el>
+<el name = "mENE">50</el>
+<el name = "nativeElement">phys</el>
+<el name = "counterElement">none</el>
+<el name = "defPhys">4</el>
+<el name = "physAtk">25</el>
+<el name = "actions">
+ <act name = "simpleAttack">simpleAttack</el>
+ <act name = "overcharge">overcharge</el>
+ <act name = "smallPhyscharge">physcharge</el>
+ </el>
+</monster>
+<monster name = "nativeLife">
+<el name = "mName">nativeLife</el>
+<el name = "mHP">125<el>
+<el name = "mENE">75</el>
+<el name = "nativeElement">darkness</el>
+<el name = "counterElement">life</el>
+<el name = "defLife">4</el>
+<el name = "physAtk">15</el>
+<el name = "actions">
+ <act name = "simpleAttack">simpleAttack</el>
+ <act name = "overcharge">overcharge</el>
+ <act name = "smallLifeAttack">lifeAttack</el>
+ <act name = "smallHealing">smallHealing</e;>
+ </el>
+</monster>
+<monster name = "nativeDeath">
+<el name = "mName">nativeDeath</el>
+<el name = "mHP">95<el>
+<el name = "mENE">50</el>
+<el name = "nativeElement">death</el>
+<el name = "counterElement">life</el>
+<el name = "defDeath">4</el>
+<el name = "physAtk">35</el>
+<el name = "actions">
+ <act name = "simpleAttack">simpleAttack</el>
+ <act name = "overcharge">overcharge</el>
+ <act name = "smallDeathAttack">deathAttack</el>
+ <act name = "smalldeathPoisonCurse">smalldeathPoisonCurse</el>
+ </el>
+</monster>
+<monster name = "nativeLight">
+<el name = "mName">nativeLight</el>
+<el name = "mHP">100<el>
+<el name = "mENE">100</el>
+<el name = "nativeElement">light</el>
+<el name = "counterElement">death</el>
+<el name = "defDeath">4</el>
+<el name = "physAtk">10</el>
+<el name = "actions">
+ <act name = "simpleAttack">simpleAttack</el>
+ <act name = "overcharge">overcharge</el>
+ <act name = "smallLightAttack">lightAttack</el>
+ <act name = "smallAtkBless">smallAtkBless</el>
+ <act name = "smallLightDefBless">smallLightDefBless</el>
+ </el>
+</monster>
+<monster name = "nativeDarkness">
+<el name = "mName">nativeDarkness</el>
+<el name = "mHP">90<el>
+<el name = "mENE">125</el>
+<el name = "nativeElement">darkness</el>
+<el name = "counterElement">light</el>
+<el name = "defDeath">4</el>
+<el name = "physAtk">20</el>
+<el name = "actions">
+ <act name = "simpleAttack">simpleAttack</el>
+ <act name = "overcharge">overcharge</el>
+ <act name = "smallDarknessAttack">darknessAttack</el>
+ <act name = "smallAtkCurse">smallAtkCurse</el>
+ <act name = "smallRandomDefCurse">smallRandomDefCurse</el>
+ </el>
+</monster>
+</monsters>
