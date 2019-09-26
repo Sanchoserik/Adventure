@@ -5,9 +5,9 @@ using System.Text;
 
 namespace Assets.Code.Monsters.ConcretteMonsters.Rank1
 {
-    public class nativeEarth : A_Monster
+    public class nativeWaterR1 : A_Monster
     {
-        public nativeEarth(string mName, string mRank, int mPrice) : base(mName, mRank, mPrice)
+        public nativeWaterR1(string mName, string mRank, int mPrice) : base(mName, mRank, mPrice)
         {
         }
     }

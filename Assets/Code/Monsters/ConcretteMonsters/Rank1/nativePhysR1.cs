@@ -5,11 +5,10 @@ using System.Text;
 
 namespace Assets.Code.Monsters.ConcretteMonsters.Rank1
 {
-    public class nativeAir : A_Monster
+    public class nativePhysR1 : A_Monster
     {
-        public nativeAir(string mName, string mRank, int mPrice) : base(mName, mRank, mPrice)
+        public nativePhysR1(string mName, string mRank, int mPrice) : base(mName, mRank, mPrice)
         {
-
         }
     }
 }
