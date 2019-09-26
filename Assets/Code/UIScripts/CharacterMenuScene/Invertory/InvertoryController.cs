@@ -29,7 +29,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.Invertory
             //1 get inventory
             invSystem = HeroController.mainHero.inventorySystem;
             //TEST FABRIC
-            ItemFabric itemFabric = new ItemFabric();
+            ItemFactory itemFabric = new ItemFactory();
             List<ItemsData> alldata = SystemScripts.ResourcesManager.itemsData;
 
             invSystem.addItem(itemFabric.createPotionAirUpMix1S(alldata.Find(x => x.itemName.Equals("AirUpMix1S"))), invSystem.mainItemsStorage);

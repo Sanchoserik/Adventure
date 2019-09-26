@@ -37,7 +37,7 @@ namespace Assets.PlayerController
 
         private void addSkillsInList(List<A_Skill> slist)
         {
-            SkillFabric skillFabric = new SkillFabric();
+            SkillFactory skillFabric = new SkillFactory();
 
             slist.Add(skillFabric.createSkillAllIn());
             slist.Add(skillFabric.createSkillComboCharge());

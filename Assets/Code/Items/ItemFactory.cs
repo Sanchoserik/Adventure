@@ -8,7 +8,7 @@ using Assets.Code.SystemScripts.DataStructures;
 
 namespace Assets.Code.Items
 {
-    public class ItemFabric : IItemFabric
+    public class ItemFactory 
     {
         public A_Item createPotionAirUpMix1S(ItemsData data)
         {

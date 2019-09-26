@@ -101,9 +101,8 @@
     <Compile Include="Assets\Code\Effects\RegHP.cs" />
     <Compile Include="Assets\Code\Effects\WaterUp.cs" />
     <Compile Include="Assets\Code\Items\A_Item.cs" />
-    <Compile Include="Assets\Code\Items\IItemFabric.cs" />
     <Compile Include="Assets\Code\Items\InventorySystem.cs" />
-    <Compile Include="Assets\Code\Items\ItemFabric.cs" />
+    <Compile Include="Assets\Code\Items\ItemFactory.cs" />
     <Compile Include="Assets\Code\Items\Potions\AirUpMix1S.cs" />
     <Compile Include="Assets\Code\Items\Potions\AirUpMix2M.cs" />
     <Compile Include="Assets\Code\Items\Potions\AirUpMix3G.cs" />
@@ -304,8 +303,7 @@
     <Compile Include="Assets\Code\Skills\Bruiser\SkillLightningChain.cs" />
     <Compile Include="Assets\Code\Skills\Bruiser\SkillThunderstorm.cs" />
     <Compile Include="Assets\Code\Skills\Bruiser\SkillWideSwing.cs" />
-    <Compile Include="Assets\Code\Skills\ISkillFabric.cs" />
-    <Compile Include="Assets\Code\Skills\SkillFabric.cs" />
+    <Compile Include="Assets\Code\Skills\SkillFactory.cs" />
     <Compile Include="Assets\Code\Skills\SkillTargets.cs" />
     <Compile Include="Assets\Code\Skills\Tactics\SkillAllIn.cs" />
     <Compile Include="Assets\Code\Skills\Tactics\SkillComboCharge.cs" />

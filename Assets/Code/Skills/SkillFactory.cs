@@ -9,7 +9,7 @@ using System.Text;
 
 namespace Assets.Code.Skills
 {
-    class SkillFabric : ISkillFabric
+    class SkillFactory
     {
         public A_Skill createSkillAbsoluteDarkness()
         {
