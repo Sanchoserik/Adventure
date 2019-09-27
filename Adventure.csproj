@@ -32,6 +32,7 @@
     <WarningLevel>4</WarningLevel>
     <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_0;UNITY_2017_1;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>6</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -42,6 +43,7 @@
     <WarningLevel>4</WarningLevel>
     <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_0;UNITY_2017_1;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>6</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
@@ -201,16 +203,27 @@
     <Compile Include="Assets\Code\Items\Talismans\DefWater4U.cs" />
     <Compile Include="Assets\Code\Monsters\A_Monster.cs" />
     <Compile Include="Assets\Code\Monsters\A_MonsterAction.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\nativeAirR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\nativeDarknessR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\nativeDeathR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\nativeEarthR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\nativeFireR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\nativeLifeR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\nativeLightR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\nativeLightningR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\nativePhysR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\nativeWaterR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\CreatorNativeAirR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\CreatorNativeDarknessR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\CreatorNativeDeathR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\CreatorNativeEarthR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\CreatorNativeFireR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\CreatorNativeLifeR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\CreatorNativeLightningR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\CreatorNativeLightR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\CreatorNativePhysR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\CreatorNativeWaterR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\NativeAirR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\NativeDarknessR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\NativeDeathR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\NativeEarthR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\NativeFireR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\NativeLifeR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\NativeLightR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\NativeLightningR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\NativePhysR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\NativeWaterR1.cs" />
+    <Compile Include="Assets\Code\Monsters\IMonster.cs" />
     <Compile Include="Assets\Code\Monsters\MonsterFactory.cs" />
     <Compile Include="Assets\Code\Monsters\NeuralWeb\DataCollector.cs" />
     <Compile Include="Assets\Code\Monsters\NeuralWeb\Neuron.cs" />
