@@ -6,8 +6,8 @@ using System.Text;
 
 namespace Assets.Code.Monsters
 {
-    public abstract class MonsterFactory
+    public interface IMonsterFactory
     {
-        public abstract IMonster createMonster(MonstersData mData);
+       IMonster createMonster(MonstersData mData);
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Assets.Code.Monsters.ConcretteMonsters.Rank1;
+using Assets.Code.Monsters.ConcretteMonsters.Factories;
 using Assets.Code.SystemScripts;
 using Assets.Code.SystemScripts.DataStructures;
 
@@ -15,16 +15,16 @@ namespace Assets.Code.Monsters
             NativeAirR1, NativeDarknessR1, NativeDeathR1, NativeEarthR1, NativeFireR1, NativeLifeR1, NativeLightningR1, NativeLightR1, NativePhysR1, NativeWaterR1
         }
 
-        public readonly Dictionary<MonstersList, MonsterFactory> mFactories;
+        public readonly Dictionary<MonstersList, IMonsterFactory> mFactories;
         public readonly List<MonstersData> monstersDataList = ResourcesManager.monstersData;
 
         public PackGenerator()
         {
-            mFactories = new Dictionary<MonstersList, MonsterFactory>();
+            mFactories = new Dictionary<MonstersList, IMonsterFactory>();
 
             foreach (MonstersList monst in Enum.GetValues(typeof(MonstersList)))
             {     
-                var factory = (MonsterFactory)Activator.CreateInstance(Type.GetType("Assets.Code.Monsters.ConcretteMonsters.Creator" + Enum.GetName(typeof(MonstersList), monst)));
+                var factory = (IMonsterFactory)Activator.CreateInstance(Type.GetType("Assets.Code.Monsters.ConcretteMonsters.Factories.Creator" + Enum.GetName(typeof(MonstersList), monst)));
                 mFactories.Add(monst, factory);
             }
         }
