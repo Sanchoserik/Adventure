@@ -203,26 +203,26 @@
     <Compile Include="Assets\Code\Items\Talismans\DefWater4U.cs" />
     <Compile Include="Assets\Code\Monsters\A_Monster.cs" />
     <Compile Include="Assets\Code\Monsters\A_MonsterAction.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\CreatorNativeAirR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\CreatorNativeDarknessR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\CreatorNativeDeathR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\CreatorNativeEarthR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\CreatorNativeFireR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\CreatorNativeLifeR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\CreatorNativeLightningR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\CreatorNativeLightR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\CreatorNativePhysR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\CreatorNativeWaterR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\NativeAirR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\NativeDarknessR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\NativeDeathR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\NativeEarthR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\NativeFireR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\NativeLifeR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\NativeLightR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\NativeLightningR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\NativePhysR1.cs" />
-    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\NativeWaterR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\CreatorNativeAirR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\CreatorNativeDarknessR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\CreatorNativeDeathR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\CreatorNativeEarthR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\CreatorNativeFireR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\CreatorNativeLifeR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\CreatorNativeLightningR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\CreatorNativeLightR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\CreatorNativePhysR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\CreatorNativeWaterR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeAirR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeDarknessR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeDeathR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeEarthR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeFireR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeLifeR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeLightR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeLightningR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativePhysR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeWaterR1.cs" />
     <Compile Include="Assets\Code\Monsters\IMonster.cs" />
     <Compile Include="Assets\Code\Monsters\MonsterFactory.cs" />
     <Compile Include="Assets\Code\Monsters\NeuralWeb\DataCollector.cs" />
@@ -422,6 +422,7 @@
     <None Include="Assets\Resources\xml\skills\skillsLocUA.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Assets\Code\Monsters\ConcretteMonsters\Rank1\" />
     <Folder Include="Assets\Code\Monsters\MonsterActions\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

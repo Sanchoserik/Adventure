@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Assets.Code.Monsters.ConcretteMonsters.Rank1
+namespace Assets.Code.Monsters.ConcretteMonsters
 {
     public class NativeDeathR1 : A_Monster, IMonster
     {

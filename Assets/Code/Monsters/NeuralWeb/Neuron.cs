@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Assets.Code.Monsters.NeuralWeb
 {
-    class Neuron
+    public class Neuron
     {
         A_Monster monster;
         DataCollector dataCollector;

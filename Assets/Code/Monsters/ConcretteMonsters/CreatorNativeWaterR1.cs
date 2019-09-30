@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Assets.Code.SystemScripts.DataStructures;
 
-namespace Assets.Code.Monsters.ConcretteMonsters.Rank1
+namespace Assets.Code.Monsters.ConcretteMonsters
 {
     public class CreatorNativeWaterR1 : MonsterFactory
     {

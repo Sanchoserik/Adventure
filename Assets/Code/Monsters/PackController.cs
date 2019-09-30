@@ -6,11 +6,19 @@ using System.Text;
 
 namespace Assets.Code.Monsters
 {
-    class PackController
+    public class PackController
     {
         public List<A_Monster> monsters;
+        public List<coordinatates> monstersCors;
+
         public StrategicNeuralLayer strategicLayer;
 
+
+        public struct coordinatates
+        {
+            int corX;
+            int corY;
+        }
 
         public void doStrategicCalculations()
         {

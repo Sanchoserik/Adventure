@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Assets.Code.Monsters.NeuralWeb
 {
-    class StrategicNeuralLayer
+    public class StrategicNeuralLayer
     {
         public List<Neuron> neurons;
     }
