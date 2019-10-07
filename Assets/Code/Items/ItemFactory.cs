@@ -16,7 +16,7 @@ namespace Assets.Code.Items
                 Convert.ToInt32(data.itemsParameters["val"]),
                 Convert.ToInt32(data.itemsParameters["time"]), 
                 Convert.ToInt32(data.itemsParameters["buyPrice"]),
-                Convert.ToInt32(data.itemsParameters["sellPrice"]));
+                Convert.ToInt32(data.itemsParameters["sellPrice"]));           
         }
 
         public A_Item createPotionAirUpMix2M(ItemsData data)

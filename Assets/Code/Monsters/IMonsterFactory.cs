@@ -8,6 +8,6 @@ namespace Assets.Code.Monsters
 {
     public interface IMonsterFactory
     {
-       IMonster createMonster(MonstersData mData);
+       A_Monster createMonster(MonstersData mData);       
     }
 }

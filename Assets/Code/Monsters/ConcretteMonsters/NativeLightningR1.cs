@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Assets.Code.Monsters.ConcretteMonsters
 {
-    public class NativeLightningR1 : A_Monster, IMonster
+    public class NativeLightningR1 : A_Monster
     {
         public NativeLightningR1(string mName, string mRank, int mPrice, Dictionary<string, string> mParams, List<string> actions)
              : base(mName, mRank, mPrice)

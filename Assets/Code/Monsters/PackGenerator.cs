@@ -33,7 +33,7 @@ namespace Assets.Code.Monsters
         {
         }
 
-        private IMonster addMonster(MonstersList monster, MonstersData mData) => mFactories[monster].createMonster(mData);
+        private A_Monster addMonster(MonstersList monster, MonstersData mData) => mFactories[monster].createMonster(mData);
 
     }
 }

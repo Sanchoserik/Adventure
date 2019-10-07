@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Assets.Code.Monsters
+namespace Assets.Code.Items
 {
-    public interface IMonster
+    public interface IItemFactory
     {
-       //add public methods later
+        A_Item createItem(ItemsData itemData);
     }
 }

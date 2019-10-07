@@ -8,7 +8,7 @@ namespace Assets.Code.Monsters.ConcretteMonsters.Factories
 {
     public class CreatorNativeWaterR1 : IMonsterFactory
     {
-        public IMonster createMonster(MonstersData mData) => new NativeWaterR1(mData.monsterName, mData.monsterParameters["mRank"], Convert.ToInt32(mData.monsterParameters["mPrice"]),
+        public A_Monster createMonster(MonstersData mData) => new NativeWaterR1(mData.monsterName, mData.monsterParameters["mRank"], Convert.ToInt32(mData.monsterParameters["mPrice"]),
               mData.monsterParameters, mData.monsterActionsList);
     }
 }
