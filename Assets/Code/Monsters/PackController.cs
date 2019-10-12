@@ -20,6 +20,15 @@ namespace Assets.Code.Monsters
             int corY;
         }
 
+        public PackController()
+        {
+            //generate monsters
+
+            //get naeural web
+            strategicLayer = new StrategicNeuralLayer(monsters);
+
+        }
+
         public void doStrategicCalculations()
         {
 
