@@ -7,5 +7,8 @@ namespace Assets.Code.Monsters
 {
     public abstract class A_MonsterAction
     {
+        int priceAP;
+        int priceENE;
+        int cooldown;
     }
 }

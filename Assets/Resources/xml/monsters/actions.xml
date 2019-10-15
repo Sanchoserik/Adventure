@@ -14,9 +14,175 @@
 <el name = "APPrice">0</el>
 </action>
 
+<action name = "smallHealing">
+<el name = "healingVal">50</el>
+<el name = "CoolDownTime">3</el>
+<el name = "EnePrice">25</el>
+<el name = "APPrice">1</el>
+</action>
+<action name = "mediumHealing">
+<el name = "healingVal">100</el>
+<el name = "CoolDownTime">3</el>
+<el name = "EnePrice">50</el>
+<el name = "APPrice">1</el>
+</action>
+<action name = "greaterHealing">
+<el name = "healingVal">200</el>
+<el name = "CoolDownTime">3</el>
+<el name = "EnePrice">75</el>
+<el name = "APPrice">1</el>
+</action>
+<action name = "ultraHealing">
+<el name = "healingVal">300</el>
+<el name = "CoolDownTime">3</el>
+<el name = "EnePrice">100</el>
+<el name = "APPrice">1</el>
+</action>
 
+<action name = "smallDeathPoisonCurse">
+<el name = "poisonATK">20</el>
+<el name = "duration">4</el>
+<el name = "CoolDownTime">5</el>
+<el name = "EnePrice">30</el>
+<el name = "APPrice">1</el>
+</action>
+<action name = "mediumDeathPoisonCurse">
+<el name = "poisonATK">40</el>
+<el name = "duration">4</el>
+<el name = "CoolDownTime">5</el>
+<el name = "EnePrice">30</el>
+<el name = "APPrice">1</el>
+</action>
+<action name = "greaterDeathPoisonCurse">
+<el name = "poisonATK">60</el>
+<el name = "duration">4</el>
+<el name = "CoolDownTime">5</el>
+<el name = "EnePrice">30</el>
+<el name = "APPrice">1</el>
+</action>
+<action name = "ultraDeathPoisonCurse">
+<el name = "poisonATK">80</el>
+<el name = "duration">4</el>
+<el name = "CoolDownTime">5</el>
+<el name = "EnePrice">30</el>
+<el name = "APPrice">1</el>
+</action>
 
+<action name = "smallAtkBless">
+<el name = "ATKUp">30</el>
+<el name = "duration">4</el>
+<el name = "CoolDownTime">5</el>
+<el name = "EnePrice">30</el>
+<el name = "APPrice">1</el>
+</action>
+<action name = "mediumAtkBless">
+<el name = "ATKUp">50</el>
+<el name = "duration">4</el>
+<el name = "CoolDownTime">5</el>
+<el name = "EnePrice">30</el>
+<el name = "APPrice">1</el>
+</action>
+<action name = "greaterAtkBless">
+<el name = "ATKUp">70</el>
+<el name = "duration">4</el>
+<el name = "CoolDownTime">5</el>
+<el name = "EnePrice">30</el>
+<el name = "APPrice">1</el>
+</action>
+<action name = "ultraAtkBless">
+<el name = "ATKUp">90</el>
+<el name = "duration">4</el>
+<el name = "CoolDownTime">5</el>
+<el name = "EnePrice">30</el>
+<el name = "APPrice">1</el>
+</action>
 
+<action name = "smallLightDefBless">
+<el name = "blessVal">1</el>
+<el name = "duration">4</el>
+<el name = "CoolDownTime">5</el>
+<el name = "EnePrice">30</el>
+<el name = "APPrice">1</el>
+</action>
+<action name = "mediumLightDefBless">
+<el name = "blessVal">2</el>
+<el name = "duration">4</el>
+<el name = "CoolDownTime">5</el>
+<el name = "EnePrice">30</el>
+<el name = "APPrice">1</el>
+</action>
+<action name = "greaterLightDefBless">
+<el name = "blessVal">3</el>
+<el name = "duration">4</el>
+<el name = "CoolDownTime">5</el>
+<el name = "EnePrice">30</el>
+<el name = "APPrice">1</el>
+</action>
+<action name = "ultraLightDefBless">
+<el name = "blessVal">4</el>
+<el name = "duration">4</el>
+<el name = "CoolDownTime">5</el>
+<el name = "EnePrice">30</el>
+<el name = "APPrice">1</el>
+</action>
+
+<action name = "smallAtkCurse">
+<el name = "curseVal">20</el>
+<el name = "duration">4</el>
+<el name = "CoolDownTime">5</el>
+<el name = "EnePrice">30</el>
+<el name = "APPrice">1</el>
+</action>
+<action name = "mediumAtkCurse">
+<el name = "curseVal">40</el>
+<el name = "duration">4</el>
+<el name = "CoolDownTime">5</el>
+<el name = "EnePrice">30</el>
+<el name = "APPrice">1</el>
+</action>
+<action name = "greaterAtkCurse">
+<el name = "curseVal">60</el>
+<el name = "duration">4</el>
+<el name = "CoolDownTime">5</el>
+<el name = "EnePrice">30</el>
+<el name = "APPrice">1</el>
+</action>
+<action name = "ultraAtkCurse">
+<el name = "curseVal">80</el>
+<el name = "duration">4</el>
+<el name = "CoolDownTime">5</el>
+<el name = "EnePrice">30</el>
+<el name = "APPrice">1</el>
+</action>
+
+<action name = "smallRandomDefCurse">
+<el name = "curseVal">80</el>
+<el name = "duration">4</el>
+<el name = "CoolDownTime">5</el>
+<el name = "EnePrice">30</el>
+<el name = "APPrice">1</el>
+</action>
+<action name = "mediumRandomDefCurse">
+<el name = "curseVal">80</el>
+<el name = "duration">4</el>
+<el name = "CoolDownTime">5</el>
+<el name = "EnePrice">30</el>
+<el name = "APPrice">1</el>
+</action>
+<action name = "greaterRandomDefCurse">
+<el name = "curseVal">80</el>
+<el name = "duration">4</el>
+<el name = "CoolDownTime">5</el>
+<el name = "EnePrice">30</el>
+<el name = "APPrice">1</el>
+</action>
+<action name = "ultraRandomDefCurse">
+<el name = "curseVal">80</el>
+<el name = "duration">4</el>
+<el name = "CoolDownTime">5</el>
+<el name = "EnePrice">30</el>
+<el name = "APPrice">1</el>
+</action>
 
 <action name = "smallAirAttack">
 <el name = "ATKVal">30</el>

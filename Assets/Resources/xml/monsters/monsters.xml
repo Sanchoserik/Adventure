@@ -127,7 +127,7 @@
  <act name = "simpleAttack">simpleAttack</act>
  <act name = "overcharge">overcharge</act>
  <act name = "smallDeathAttack">deathAttack</act>
- <act name = "smalldeathPoisonCurse">smalldeathPoisonCurse</act>
+ <act name = "smallDeathPoisonCurse">smallDeathPoisonCurse</act>
  </el>
 </monster>
 <monster name = "nativeLight">
