@@ -5,7 +5,15 @@ using System.Text;
 
 namespace Assets.Code.Monsters.MonsterActions
 {
-    class SmallWaterAttack
+    public class SmallWaterAttack : A_MonsterAction
     {
+        string element;
+        int ATKVal;
+
+        public SmallWaterAttack(string aName, int pAP, int pENE, int cd, string el, int ATKv) : base(aName, pAP, pENE, cd)
+        {
+            element = el;
+            ATKVal = ATKv;
+        }
     }
 }

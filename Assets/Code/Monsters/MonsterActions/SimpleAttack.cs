@@ -5,7 +5,10 @@ using System.Text;
 
 namespace Assets.Code.Monsters.MonsterActions
 {
-    class SimpleAttack
+    public class SimpleAttack : A_MonsterAction
     {
+        public SimpleAttack(string aName, int pAP, int pENE, int cd) : base(aName, pAP, pENE, cd)
+        {
+        }
     }
 }

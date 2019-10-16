@@ -5,7 +5,15 @@ using System.Text;
 
 namespace Assets.Code.Monsters.MonsterActions
 {
-    class SmallRandomDefCurse
+    public class SmallRandomDefCurse : A_MonsterAction
     {
+        int duration;
+        int defCurseVal;
+
+        public SmallRandomDefCurse(string aName, int pAP, int pENE, int cd, int dur, int cVal) : base(aName, pAP, pENE, cd)
+        {
+            duration = dur;
+            defCurseVal = cVal;
+        }
     }
 }

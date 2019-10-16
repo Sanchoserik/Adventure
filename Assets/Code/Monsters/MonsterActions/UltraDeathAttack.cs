@@ -5,7 +5,15 @@ using System.Text;
 
 namespace Assets.Code.Monsters.MonsterActions
 {
-    class UltraDeathAttack
+    public class UltraDeathAttack : A_MonsterAction
     {
+        string element;
+        int ATKVal;
+
+        public UltraDeathAttack(string aName, int pAP, int pENE, int cd, string el, int ATKv) : base(aName, pAP, pENE, cd)
+        {
+            element = el;
+            ATKVal = ATKv;
+        }
     }
 }

@@ -5,7 +5,13 @@ using System.Text;
 
 namespace Assets.Code.Monsters.MonsterActions
 {
-    class MediumHealing
+    public class MediumHealing : A_MonsterAction
     {
+        int healingVal;
+
+        public MediumHealing(string aName, int pAP, int pENE, int cd, int hVal) : base(aName, pAP, pENE, cd)
+        {
+            healingVal = hVal;
+        }
     }
 }
