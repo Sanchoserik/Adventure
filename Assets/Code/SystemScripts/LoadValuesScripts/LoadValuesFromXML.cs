@@ -13,13 +13,14 @@ namespace Assets.Code.SystemScripts.LoadValuesScripts
         private string itemsPath = "Assets/Resources/xml/items/Items.xml";
         private string skillsPath = "Assets/Resources/xml/skills/skills.xml";
         private string monstersParemetersPath = "Assets/Resources/xml/monsters/monsters.xml";
-        private string monstersActionsPath = "Assets/Resources/xml/monsters/actions.xml";
+        private string monsterActionsPath = "Assets/Resources/xml/monsters/actions.xml";
 
         public LoadValuesFromXML()
         {
             loadItems();
             loadSkills();
             loadMonsters();
+            loadMonstersActions();
         }
 
         private void loadItems()
@@ -38,13 +39,13 @@ namespace Assets.Code.SystemScripts.LoadValuesScripts
 
                     foreach (XElement valTag in item.Nodes())
                     {
-                        potionParameters.Add(valTag.Attribute("name").Value, valTag.Value);                        
+                        potionParameters.Add(valTag.Attribute("name").Value, valTag.Value);
                     }
                     ItemsData itemData = new ItemsData();
                     itemData.itemName = itemName;
                     itemData.itemsParameters = potionParameters;
-                    ResourcesManager.itemsData.Add(itemData);  
-                }               
+                    ResourcesManager.itemsData.Add(itemData);
+                }
             }
         }
 
@@ -82,7 +83,7 @@ namespace Assets.Code.SystemScripts.LoadValuesScripts
                     }
                     ++levelIter;
                 }
-                ResourcesManager.skillsData.Add(new SkillsData(_name, _scname, _levels , _sAPCost, _sEneCost, _sValues));
+                ResourcesManager.skillsData.Add(new SkillsData(_name, _scname, _levels, _sAPCost, _sEneCost, _sValues));
             }
         }
 
@@ -110,8 +111,8 @@ namespace Assets.Code.SystemScripts.LoadValuesScripts
                             }
                         }
                         else
-                        monsterParameters.Add(valTag.Attribute("name").Value, valTag.Value);
-                        
+                            monsterParameters.Add(valTag.Attribute("name").Value, valTag.Value);
+
                     }
 
                     MonstersData monsterData = new MonstersData();
@@ -125,6 +126,28 @@ namespace Assets.Code.SystemScripts.LoadValuesScripts
 
         private void loadMonstersActions()
         {
+            IEnumerable<XElement> monsterActions; // <item> tag  
+            XDocument xDoc = XDocument.Load(monsterActionsPath);
+
+            monsterActions = xDoc.Descendants("actions").Elements(); ;
+            foreach (XElement action in monsterActions)
+            {
+                if (action.Nodes() != null)
+                {
+                    string actionName = action.Attribute("name").Value;
+                    Dictionary<string, string> actionParameters = new Dictionary<string, string>();
+
+                    foreach (XElement elTag in action.Nodes())
+                    {
+                        actionParameters.Add(elTag.Attribute("name").Value, elTag.Value);
+                    }
+
+                    MonsterActionsData aData = new MonsterActionsData();
+                    aData.actionName = actionName;
+                    aData.actionParameters = actionParameters;
+                    ResourcesManager.monsterActionsData.Add(aData);
+                }
+            }
         }
     }
 }
