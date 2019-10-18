@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{33937CBC-456E-2B3B-AD4B-9EE246125F00}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -53,1071 +54,1119 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Code\Effects\A_Effect.cs" />
-     <Compile Include="Assets\Code\Effects\AirUp.cs" />
-     <Compile Include="Assets\Code\Effects\DarknessUp.cs" />
-     <Compile Include="Assets\Code\Effects\DeathUp.cs" />
-     <Compile Include="Assets\Code\Effects\EarthUp.cs" />
-     <Compile Include="Assets\Code\Effects\FireUp.cs" />
-     <Compile Include="Assets\Code\Effects\LifeUp.cs" />
-     <Compile Include="Assets\Code\Effects\LightUp.cs" />
-     <Compile Include="Assets\Code\Effects\LightningUp.cs" />
-     <Compile Include="Assets\Code\Effects\PhysUp.cs" />
-     <Compile Include="Assets\Code\Effects\RegENE.cs" />
-     <Compile Include="Assets\Code\Effects\RegHP.cs" />
-     <Compile Include="Assets\Code\Effects\WaterUp.cs" />
-     <Compile Include="Assets\Code\Items\A_Item.cs" />
-     <Compile Include="Assets\Code\Items\IItemFactory.cs" />
-     <Compile Include="Assets\Code\Items\InventorySystem.cs" />
-     <Compile Include="Assets\Code\Items\ItemFactory.cs" />
-     <Compile Include="Assets\Code\Items\Potions\AirUpMix1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\AirUpMix2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\AirUpMix3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\AirUpMix4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\DarknessUpMix1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\DarknessUpMix2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\DarknessUpMix3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\DarknessUpMix4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\DeathUpMix1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\DeathUpMix2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\DeathUpMix3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\DeathUpMix4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\EarthUpMix1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\EarthUpMix2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\EarthUpMix3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\EarthUpMix4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\EneP1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\EneP2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\EneP3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\EneP4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\EneReP1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\EneReP2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\EneReP3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\EneReP4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorAirUpMix1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorAirUpMix2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorAirUpMix3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorAirUpMix4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorDarknessUpMix2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorDarknessUpMix3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorDarknessUpMix4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorDeathUpMix1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorDeathUpMix2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorDeathUpMix3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorDeathUpMix4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorEarthUpMix1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorEarthUpMix2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorEarthUpMix3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorEarthUpMix4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorEneP1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorEneP2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorEneP3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorEneP4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorEneReP1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorEneReP2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorEneReP3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorEneReP4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorFireUpMix1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorFireUpMix2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorFireUpMix3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorFireUpMix4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorHealP1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorHealP2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorHealP3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorHealP4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorHealReP1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorHealReP3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorHealReP4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorHealRep2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorLifeUpMix1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorLifeUpMix2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorLifeUpMix3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorLifeUpMix4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorLightUpMix1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorLightUpMix2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorLightUpMix3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorLightUpMix4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorLightningUpMix1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorLightningUpMix2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorLightningUpMix3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorLightningUpMix4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorPhysUpMix1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorPhysUpMix2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorPhysUpMix3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorPhysUpMix4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorWaterUpMix1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorWaterUpMix2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorWaterUpMix3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatorWaterUpMix4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\Factories\CreatordarknessUpMix1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\FireUpMix1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\FireUpMix2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\FireUpMix3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\FireUpMix4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\HealP1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\HealP2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\HealP3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\HealP4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\HealReP1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\HealReP2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\HealReP3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\HealReP4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\LifeUpMix1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\LifeUpMix2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\LifeUpMix3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\LifeUpMix4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\LightUpMix1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\LightUpMix2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\LightUpMix3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\LightUpMix4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\LightningUpMix1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\LightningUpMix2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\LightningUpMix3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\LightningUpMix4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\PhysUpMix1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\PhysUpMix2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\PhysUpMix3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\PhysUpMix4U.cs" />
-     <Compile Include="Assets\Code\Items\Potions\WaterUpMix1S.cs" />
-     <Compile Include="Assets\Code\Items\Potions\WaterUpMix2M.cs" />
-     <Compile Include="Assets\Code\Items\Potions\WaterUpMix3G.cs" />
-     <Compile Include="Assets\Code\Items\Potions\WaterUpMix4U.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefAir1S.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefAir2M.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefAir3G.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefAir4U.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefDarkness1S.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefDarkness2M.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefDarkness3G.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefDarkness4U.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefDeath1S.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefDeath2M.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefDeath3G.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefDeath4U.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefEarth1S.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefEarth2M.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefEarth3G.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefEarth4U.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefFire1S.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefFire2M.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefFire3G.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefFire4U.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefLife1S.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefLife2M.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefLife3G.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefLife4U.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefLight1S.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefLight2M.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefLight3G.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefLight4U.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefLightning1S.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefLightning2M.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefLightning3G.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefLightning4U.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefPhys1S.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefPhys2M.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefPhys3G.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefPhys4U.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefWater1S.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefWater2M.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefWater3G.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\DefWater4U.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefAir1S.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefAir2M.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefAir3G.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefAir4U.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefDarkness1S.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefDarkness2M.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefDarkness3G.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefDarkness4U.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefDeath1S.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefDeath2M.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefDeath3G.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefDeath4U.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefEarth1S.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefEarth2M.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefEarth3G.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefEarth4U.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefFIre3G.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefFire1S.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefFire2M.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefFire4U.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefLife1S.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefLife2M.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefLife3G.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefLife4U.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefLight1S.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefLight2M.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefLight3G.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefLight4U.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefLightning1S.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefLightning2M.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefLightning3G.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefLightning4U.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefPhys1S.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefPhys2M.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefPhys3G.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefPhys4U.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefWater1S.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefWater2M.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefWater3G.cs" />
-     <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefWater4U.cs" />
-     <Compile Include="Assets\Code\Monsters\A_Monster.cs" />
-     <Compile Include="Assets\Code\Monsters\A_MonsterAction.cs" />
-     <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Factories\CreatorNativeAirR1.cs" />
-     <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Factories\CreatorNativeDarknessR1.cs" />
-     <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Factories\CreatorNativeDeathR1.cs" />
-     <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Factories\CreatorNativeEarthR1.cs" />
-     <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Factories\CreatorNativeFireR1.cs" />
-     <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Factories\CreatorNativeLifeR1.cs" />
-     <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Factories\CreatorNativeLightR1.cs" />
-     <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Factories\CreatorNativeLightningR1.cs" />
-     <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Factories\CreatorNativePhysR1.cs" />
-     <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Factories\CreatorNativeWaterR1.cs" />
-     <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeAirR1.cs" />
-     <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeDarknessR1.cs" />
-     <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeDeathR1.cs" />
-     <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeEarthR1.cs" />
-     <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeFireR1.cs" />
-     <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeLifeR1.cs" />
-     <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeLightR1.cs" />
-     <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeLightningR1.cs" />
-     <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativePhysR1.cs" />
-     <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeWaterR1.cs" />
-     <Compile Include="Assets\Code\Monsters\IActionsFactory.cs" />
-     <Compile Include="Assets\Code\Monsters\IMonsterFactory.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorGreaterAirAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorGreaterAtkBless.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorGreaterAtkCurse.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorGreaterDarknessAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorMediumAirAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorMediumDarknessAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorSmallAirAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorSmallDarknessAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorUltraAirAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorUltraDarknessAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterAirAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterAtkBless.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterAtkCurse.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterDarknessAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterDeathAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterDeathPoisonCurse.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterEarthAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterFireAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterHealing.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterLifeAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterLightAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterLightDefBless.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterLightningAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterRandomDefCurse.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterWaterAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\MediumAirAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\MediumAtkBless.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\MediumAtkCurse.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\MediumDarknessAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\MediumDeathAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\MediumDeathPoisonCurse.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\MediumEarthAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\MediumFireAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\MediumHealing.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\MediumLifeAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\MediumLightAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\MediumLightDefBless.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\MediumLightningAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\MediumRandomDefCurse.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\MediumWaterAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\Overcharge.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\SimpleAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\SmallAirAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\SmallAtkBless.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\SmallAtkCurse.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\SmallDarknessAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\SmallDeathAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\SmallDeathPoisonCurse.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\SmallEarthAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\SmallFireAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\SmallHealing.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\SmallLifeAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\SmallLightAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\SmallLightDefBless.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\SmallLightningAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\SmallRandomDefCurse.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\SmallWaterAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\UltraAirAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\UltraAtkBless.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\UltraAtkCurse.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\UltraDarknessAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\UltraDeathAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\UltraDeathPoisonCurse.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\UltraEarthAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\UltraFireAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\UltraHealing.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\UltraLifeAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\UltraLightAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\UltraLightDefBless.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\UltraLightningAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\UltraRandomDefCurse.cs" />
-     <Compile Include="Assets\Code\Monsters\MonsterActions\UltraWaterAttack.cs" />
-     <Compile Include="Assets\Code\Monsters\NeuralWeb\DataCollector.cs" />
-     <Compile Include="Assets\Code\Monsters\NeuralWeb\Neuron.cs" />
-     <Compile Include="Assets\Code\Monsters\NeuralWeb\NeuronMemoryController.cs" />
-     <Compile Include="Assets\Code\Monsters\NeuralWeb\StrategicNeuralLayer.cs" />
-     <Compile Include="Assets\Code\Monsters\PackController.cs" />
-     <Compile Include="Assets\Code\Monsters\PackGenerator.cs" />
-     <Compile Include="Assets\Code\ScriptHelper\ScriptHelper.cs" />
-     <Compile Include="Assets\Code\Skills\A_Skill.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\AS_DoubleStrike.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\AS_Evasion.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\AS_FireClaw.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\AS_Gehena.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\AS_LethalTempo.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\AS_PiercingLight.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\AS_PiercingStrike.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_Assassination.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_Burnout.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_FasterThanLight.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_ReleasedStream.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_ShiningCloak.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_Tornado.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_WindBlade.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_Anarchy.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_Blocking.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_DeathBlossom.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_DeathSign.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_DelayedDeath.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_Devouring.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_Electrification.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_Evolution.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_FaceOfDeath.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_Harvesting.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_LifeDrain.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_LightningChain.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_ThunderStorm.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_WideSwing.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_AllIn.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_ComboCharge.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_CounterAnalysis.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_CriticalBalance.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_Destruction.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_IronDefence.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_Overcharge.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_Rearm.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_Recharge.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_Retreat.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_Synchronization.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_TacticalPreparation.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_TacticalSwap.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_AbsoluteDarkness.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_CounterAttack.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_CursedSign.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_DarkDemon.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_DarkVortex.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_EarthDestruction.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_FinnishingBlow.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_PerfectWarrior.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_Regeneration.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_Ricochet.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_StoneSkin.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_TripleCut.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_Tsunami.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_WaterPrison.cs" />
-     <Compile Include="Assets\Code\Skills\ActionScripts\A_AScript.cs" />
-     <Compile Include="Assets\Code\Skills\Assassin\SkillAssassination.cs" />
-     <Compile Include="Assets\Code\Skills\Assassin\SkillBurnout.cs" />
-     <Compile Include="Assets\Code\Skills\Assassin\SkillDoubleStrike.cs" />
-     <Compile Include="Assets\Code\Skills\Assassin\SkillEvasion.cs" />
-     <Compile Include="Assets\Code\Skills\Assassin\SkillFasterThanLight.cs" />
-     <Compile Include="Assets\Code\Skills\Assassin\SkillFireClaw.cs" />
-     <Compile Include="Assets\Code\Skills\Assassin\SkillGehenna.cs" />
-     <Compile Include="Assets\Code\Skills\Assassin\SkillLethalTempo.cs" />
-     <Compile Include="Assets\Code\Skills\Assassin\SkillPiercingLight.cs" />
-     <Compile Include="Assets\Code\Skills\Assassin\SkillPiercingStrike.cs" />
-     <Compile Include="Assets\Code\Skills\Assassin\SkillReleasedStream.cs" />
-     <Compile Include="Assets\Code\Skills\Assassin\SkillShiningCloak.cs" />
-     <Compile Include="Assets\Code\Skills\Assassin\SkillTornado.cs" />
-     <Compile Include="Assets\Code\Skills\Assassin\SkillWindBlade.cs" />
-     <Compile Include="Assets\Code\Skills\Bruiser\SkillAnarchy.cs" />
-     <Compile Include="Assets\Code\Skills\Bruiser\SkillBlocking.cs" />
-     <Compile Include="Assets\Code\Skills\Bruiser\SkillDeathBlossom.cs" />
-     <Compile Include="Assets\Code\Skills\Bruiser\SkillDeathSign.cs" />
-     <Compile Include="Assets\Code\Skills\Bruiser\SkillDelayedDeath.cs" />
-     <Compile Include="Assets\Code\Skills\Bruiser\SkillDevouring.cs" />
-     <Compile Include="Assets\Code\Skills\Bruiser\SkillElectrification.cs" />
-     <Compile Include="Assets\Code\Skills\Bruiser\SkillEvolution.cs" />
-     <Compile Include="Assets\Code\Skills\Bruiser\SkillFaceOfDeath.cs" />
-     <Compile Include="Assets\Code\Skills\Bruiser\SkillHarvesting.cs" />
-     <Compile Include="Assets\Code\Skills\Bruiser\SkillLifeDrain.cs" />
-     <Compile Include="Assets\Code\Skills\Bruiser\SkillLightningChain.cs" />
-     <Compile Include="Assets\Code\Skills\Bruiser\SkillThunderstorm.cs" />
-     <Compile Include="Assets\Code\Skills\Bruiser\SkillWideSwing.cs" />
-     <Compile Include="Assets\Code\Skills\SkillFactory.cs" />
-     <Compile Include="Assets\Code\Skills\SkillTargets.cs" />
-     <Compile Include="Assets\Code\Skills\Tactics\SkillAllIn.cs" />
-     <Compile Include="Assets\Code\Skills\Tactics\SkillComboCharge.cs" />
-     <Compile Include="Assets\Code\Skills\Tactics\SkillCounterAnalysis.cs" />
-     <Compile Include="Assets\Code\Skills\Tactics\SkillCriticalBalance.cs" />
-     <Compile Include="Assets\Code\Skills\Tactics\SkillDestruction.cs" />
-     <Compile Include="Assets\Code\Skills\Tactics\SkillIronDefence.cs" />
-     <Compile Include="Assets\Code\Skills\Tactics\SkillOvercharge.cs" />
-     <Compile Include="Assets\Code\Skills\Tactics\SkillRearm.cs" />
-     <Compile Include="Assets\Code\Skills\Tactics\SkillSynchronization.cs" />
-     <Compile Include="Assets\Code\Skills\Tactics\SkillTacticalPreparation.cs" />
-     <Compile Include="Assets\Code\Skills\Tactics\SkillTacticalRecharge.cs" />
-     <Compile Include="Assets\Code\Skills\Tactics\SkillTacticalRetreat.cs" />
-     <Compile Include="Assets\Code\Skills\Tactics\SkillTacticalSwap.cs" />
-     <Compile Include="Assets\Code\Skills\Warrior\SkillAbsoluteDarkness.cs" />
-     <Compile Include="Assets\Code\Skills\Warrior\SkillCounterAttack.cs" />
-     <Compile Include="Assets\Code\Skills\Warrior\SkillCursedSign.cs" />
-     <Compile Include="Assets\Code\Skills\Warrior\SkillDarkDemon.cs" />
-     <Compile Include="Assets\Code\Skills\Warrior\SkillDarkVortex.cs" />
-     <Compile Include="Assets\Code\Skills\Warrior\SkillEarthDestruction.cs" />
-     <Compile Include="Assets\Code\Skills\Warrior\SkillFinnishingBlow.cs" />
-     <Compile Include="Assets\Code\Skills\Warrior\SkillPerfectWarrior.cs" />
-     <Compile Include="Assets\Code\Skills\Warrior\SkillRegeneration.cs" />
-     <Compile Include="Assets\Code\Skills\Warrior\SkillRicochet.cs" />
-     <Compile Include="Assets\Code\Skills\Warrior\SkillStoneSkin.cs" />
-     <Compile Include="Assets\Code\Skills\Warrior\SkillTripleCut.cs" />
-     <Compile Include="Assets\Code\Skills\Warrior\SkillTsunami.cs" />
-     <Compile Include="Assets\Code\Skills\Warrior\SkillWaterPrison.cs" />
-     <Compile Include="Assets\Code\SystemScripts\AppParameters.cs" />
-     <Compile Include="Assets\Code\SystemScripts\DataStructures\ItemsData.cs" />
-     <Compile Include="Assets\Code\SystemScripts\DataStructures\MonsterActionsData.cs" />
-     <Compile Include="Assets\Code\SystemScripts\DataStructures\MonstersData.cs" />
-     <Compile Include="Assets\Code\SystemScripts\DataStructures\SkillsData.cs" />
-     <Compile Include="Assets\Code\SystemScripts\LoadValuesScripts\LoadValuesFromXML.cs" />
-     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\GetSceneLocalisation.cs" />
-     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocalisationDataStructures\InterfaceLocalisationData.cs" />
-     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocalisationDataStructures\ItemsLocalisationData.cs" />
-     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocalisationDataStructures\SkillsLocalisationData.cs" />
-     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocalisationManager.cs" />
-     <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocaliseComponents.cs" />
-     <Compile Include="Assets\Code\SystemScripts\ResourcesManager.cs" />
-     <Compile Include="Assets\Code\SystemScripts\ToolTipFollowMouse.cs" />
-     <Compile Include="Assets\Code\UIScripts\CameraZooming.cs" />
-     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\CharacterMenuController.cs" />
-     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\HeroEditor\HeroEditorController.cs" />
-     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\HeroEditor\HeroEditorToolTip.cs" />
-     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\HeroEditor\UIHeroEditorHelper.cs" />
-     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\Invertory\DragObject.cs" />
-     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\Invertory\InvertoryController.cs" />
-     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\Invertory\ItemDragHandler.cs" />
-     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\Invertory\ItemToolTip.cs" />
-     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\Invertory\UIItem.cs" />
-     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\SkillTree\SkillBranchChange.cs" />
-     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\SkillTree\SkillToolTip.cs" />
-     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\SkillTree\SkillTreeController.cs" />
-     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\SkillTree\UISkill.cs" />
-     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\SkillTree\UISkillNextLevel.cs" />
-     <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\SkillTree\UISkillPreviousLevel.cs" />
-     <Compile Include="Assets\Code\UIScripts\ExitApp.cs" />
-     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\CommandAttributeChange.cs" />
-     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\CommandDefenceValueChange.cs" />
-     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\CommandLevelChange.cs" />
-     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\HeroEditorController.cs" />
-     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\ICommand.cs" />
-     <Compile Include="Assets\Code\UIScripts\HeroEditorScene\PlusMinusButtonInputData.cs" />
-     <Compile Include="Assets\Code\UIScripts\MainInvertoryScene\FollowMouse.cs" />
-     <Compile Include="Assets\Code\UIScripts\OptionsScene\ChangeLanguage.cs" />
-     <Compile Include="Assets\Code\UIScripts\OptionsScene\SetResolution.cs" />
-     <Compile Include="Assets\Code\UIScripts\SkillTreeScene\ShowSkillDescr.cs" />
-     <Compile Include="Assets\Code\UIScripts\SkillTreeScene\SkillButtonChangerData.cs" />
-     <Compile Include="Assets\Code\UIScripts\SkillTreeScene\SkillDataStorage.cs" />
-     <Compile Include="Assets\Code\UIScripts\SkillTreeScene\SkillsLoaderFromXML.cs" />
-     <Compile Include="Assets\PlayerController\C_Hero.cs" />
-     <Compile Include="Assets\PlayerController\DefenceParam.cs" />
-     <Compile Include="Assets\PlayerController\HeroAttributesController.cs" />
-     <Compile Include="Assets\PlayerController\HeroController.cs" />
-     <Compile Include="Assets\PlayerController\HeroSkillsController.cs" />
-     <Compile Include="Assets\PlayerController\Hero_Serialization.cs" />
-     <Compile Include="Assets\Scenes\SceneManager.cs" />
-     <Compile Include="Assets\StandaloneFileBrowser\IStandaloneFileBrowser.cs" />
-     <Compile Include="Assets\StandaloneFileBrowser\Sample\BasicSample.cs" />
-     <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleOpenFileImage.cs" />
-     <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleOpenFileText.cs" />
-     <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleOpenFileTextMultiple.cs" />
-     <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleSaveFileImage.cs" />
-     <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleSaveFileText.cs" />
-     <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowser.cs" />
-     <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserEditor.cs" />
-     <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserLinux.cs" />
-     <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserMac.cs" />
-     <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserWindows.cs" />
-     <None Include="Assets\Resources\xml\items\ItemsLocUA.xml" />
-     <None Include="Assets\Resources\xml\skills\skillsLocRU.xml" />
-     <None Include="Assets\Resources\xml\items\Items.xml" />
-     <None Include="Assets\Resources\xml\monsters\monsters.xml" />
-     <None Include="Assets\Resources\xml\skills\skillsLocENG.xml" />
-     <None Include="Assets\Resources\xml\interfaceLoc\UA.xml" />
-     <None Include="Assets\Resources\xml\skills\skillsLocUA.xml" />
-     <None Include="Assets\Resources\xml\interfaceLoc\ENG.xml" />
-     <None Include="Assets\Resources\xml\interfaceLoc\systemMessagesUA.xml" />
-     <None Include="Assets\Resources\xml\skills\skills.xml" />
-     <None Include="Assets\Resources\xml\monsters\actions.xml" />
-     <None Include="Assets\Resources\xml\interfaceLoc\systemMessagesENG.xml" />
- <Reference Include="Unity.Timeline.Editor">
- <HintPath>F:/UnityProjects/Adventure/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.VSCode.Editor">
- <HintPath>F:/UnityProjects/Adventure/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>F:/UnityProjects/Adventure/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>F:/UnityProjects/Adventure/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline">
- <HintPath>F:/UnityProjects/Adventure/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
- </Reference>
- <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>F:/UnityProjects/Adventure/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Rider.Editor">
- <HintPath>F:/UnityProjects/Adventure/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>F:/UnityProjects/Adventure/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>F:/UnityProjects/Adventure/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>F:/UnityProjects/Adventure/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.AIModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ARModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.AccessibilityModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.AndroidJNIModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.AnimationModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.AssetBundleModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.AudioModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ClothModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ClusterInputModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ClusterRendererModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.CoreModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.CrashReportingModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.DSPGraphModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.DirectorModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.GameCenterModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.GridModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.HotReloadModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.IMGUIModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ImageConversionModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.InputModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.InputLegacyModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.JSONSerializeModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.LocalizationModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ParticleSystemModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.PerformanceReportingModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.PhysicsModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Physics2DModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ProfilerModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ScreenCaptureModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SharedInternalsModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SpriteMaskModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SpriteShapeModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.StreamingModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SubstanceModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TLSModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TerrainModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TerrainPhysicsModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TextCoreModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TextRenderingModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TilemapModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UIModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UIElementsModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UNETModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UmbraModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityAnalyticsModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityConnectModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityTestProtocolModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityWebRequestModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityWebRequestAudioModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityWebRequestTextureModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityWebRequestWWWModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.VFXModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.VRModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.VehiclesModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.VideoModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.WindModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.XRModule">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
- </Reference>
- <Reference Include="Ookii.Dialogs">
- <HintPath>F:/UnityProjects/Adventure/Assets/StandaloneFileBrowser/Plugins/Ookii.Dialogs.dll</HintPath>
- </Reference>
- <Reference Include="System.Windows.Forms">
- <HintPath>F:/UnityProjects/Adventure/Assets/StandaloneFileBrowser/Plugins/System.Windows.Forms.dll</HintPath>
- </Reference>
- <Reference Include="mscorlib">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
- </Reference>
- <Reference Include="System">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll</HintPath>
- </Reference>
- <Reference Include="System.Core">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll</HintPath>
- </Reference>
- <Reference Include="System.Runtime.Serialization">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Runtime.Serialization.dll</HintPath>
- </Reference>
- <Reference Include="System.Xml">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll</HintPath>
- </Reference>
- <Reference Include="System.Xml.Linq">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.Linq.dll</HintPath>
- </Reference>
- <Reference Include="System.Numerics">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.dll</HintPath>
- </Reference>
- <Reference Include="System.Numerics.Vectors">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.Vectors.dll</HintPath>
- </Reference>
- <Reference Include="System.Net.Http">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Net.Http.dll</HintPath>
- </Reference>
- <Reference Include="Microsoft.CSharp">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Microsoft.CSharp.dll</HintPath>
- </Reference>
- <Reference Include="System.Data">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Data.dll</HintPath>
- </Reference>
- <Reference Include="Microsoft.Win32.Primitives">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/Microsoft.Win32.Primitives.dll</HintPath>
- </Reference>
- <Reference Include="netstandard">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
- </Reference>
- <Reference Include="System.AppContext">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.AppContext.dll</HintPath>
- </Reference>
- <Reference Include="System.Collections.Concurrent">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Concurrent.dll</HintPath>
- </Reference>
- <Reference Include="System.Collections">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.dll</HintPath>
- </Reference>
- <Reference Include="System.Collections.NonGeneric">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.NonGeneric.dll</HintPath>
- </Reference>
- <Reference Include="System.Collections.Specialized">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Specialized.dll</HintPath>
- </Reference>
- <Reference Include="System.ComponentModel.Annotations">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Annotations.dll</HintPath>
- </Reference>
- <Reference Include="System.ComponentModel">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.dll</HintPath>
- </Reference>
- <Reference Include="System.ComponentModel.EventBasedAsync">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.EventBasedAsync.dll</HintPath>
- </Reference>
- <Reference Include="System.ComponentModel.Primitives">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Primitives.dll</HintPath>
- </Reference>
- <Reference Include="System.ComponentModel.TypeConverter">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.TypeConverter.dll</HintPath>
- </Reference>
- <Reference Include="System.Console">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Console.dll</HintPath>
- </Reference>
- <Reference Include="System.Data.Common">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Data.Common.dll</HintPath>
- </Reference>
- <Reference Include="System.Diagnostics.Contracts">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Contracts.dll</HintPath>
- </Reference>
- <Reference Include="System.Diagnostics.Debug">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Debug.dll</HintPath>
- </Reference>
- <Reference Include="System.Diagnostics.FileVersionInfo">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.FileVersionInfo.dll</HintPath>
- </Reference>
- <Reference Include="System.Diagnostics.Process">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Process.dll</HintPath>
- </Reference>
- <Reference Include="System.Diagnostics.StackTrace">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.StackTrace.dll</HintPath>
- </Reference>
- <Reference Include="System.Diagnostics.TextWriterTraceListener">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
- </Reference>
- <Reference Include="System.Diagnostics.Tools">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Tools.dll</HintPath>
- </Reference>
- <Reference Include="System.Diagnostics.TraceSource">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TraceSource.dll</HintPath>
- </Reference>
- <Reference Include="System.Drawing.Primitives">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Drawing.Primitives.dll</HintPath>
- </Reference>
- <Reference Include="System.Dynamic.Runtime">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Dynamic.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="System.Globalization.Calendars">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Calendars.dll</HintPath>
- </Reference>
- <Reference Include="System.Globalization">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.dll</HintPath>
- </Reference>
- <Reference Include="System.Globalization.Extensions">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="System.IO.Compression.ZipFile">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Compression.ZipFile.dll</HintPath>
- </Reference>
- <Reference Include="System.IO">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.dll</HintPath>
- </Reference>
- <Reference Include="System.IO.FileSystem">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.dll</HintPath>
- </Reference>
- <Reference Include="System.IO.FileSystem.DriveInfo">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.DriveInfo.dll</HintPath>
- </Reference>
- <Reference Include="System.IO.FileSystem.Primitives">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Primitives.dll</HintPath>
- </Reference>
- <Reference Include="System.IO.FileSystem.Watcher">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Watcher.dll</HintPath>
- </Reference>
- <Reference Include="System.IO.IsolatedStorage">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.IsolatedStorage.dll</HintPath>
- </Reference>
- <Reference Include="System.IO.MemoryMappedFiles">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.MemoryMappedFiles.dll</HintPath>
- </Reference>
- <Reference Include="System.IO.Pipes">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Pipes.dll</HintPath>
- </Reference>
- <Reference Include="System.IO.UnmanagedMemoryStream">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.UnmanagedMemoryStream.dll</HintPath>
- </Reference>
- <Reference Include="System.Linq">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.dll</HintPath>
- </Reference>
- <Reference Include="System.Linq.Expressions">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Expressions.dll</HintPath>
- </Reference>
- <Reference Include="System.Linq.Parallel">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Parallel.dll</HintPath>
- </Reference>
- <Reference Include="System.Linq.Queryable">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Queryable.dll</HintPath>
- </Reference>
- <Reference Include="System.Net.Http.Rtc">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Http.Rtc.dll</HintPath>
- </Reference>
- <Reference Include="System.Net.NameResolution">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NameResolution.dll</HintPath>
- </Reference>
- <Reference Include="System.Net.NetworkInformation">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NetworkInformation.dll</HintPath>
- </Reference>
- <Reference Include="System.Net.Ping">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Ping.dll</HintPath>
- </Reference>
- <Reference Include="System.Net.Primitives">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Primitives.dll</HintPath>
- </Reference>
- <Reference Include="System.Net.Requests">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Requests.dll</HintPath>
- </Reference>
- <Reference Include="System.Net.Security">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Security.dll</HintPath>
- </Reference>
- <Reference Include="System.Net.Sockets">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Sockets.dll</HintPath>
- </Reference>
- <Reference Include="System.Net.WebHeaderCollection">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebHeaderCollection.dll</HintPath>
- </Reference>
- <Reference Include="System.Net.WebSockets.Client">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.Client.dll</HintPath>
- </Reference>
- <Reference Include="System.Net.WebSockets">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.dll</HintPath>
- </Reference>
- <Reference Include="System.ObjectModel">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ObjectModel.dll</HintPath>
- </Reference>
- <Reference Include="System.Reflection">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.dll</HintPath>
- </Reference>
- <Reference Include="System.Reflection.Emit">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.dll</HintPath>
- </Reference>
- <Reference Include="System.Reflection.Emit.ILGeneration">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.ILGeneration.dll</HintPath>
- </Reference>
- <Reference Include="System.Reflection.Emit.Lightweight">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.Lightweight.dll</HintPath>
- </Reference>
- <Reference Include="System.Reflection.Extensions">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="System.Reflection.Primitives">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Primitives.dll</HintPath>
- </Reference>
- <Reference Include="System.Resources.Reader">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Reader.dll</HintPath>
- </Reference>
- <Reference Include="System.Resources.ResourceManager">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.ResourceManager.dll</HintPath>
- </Reference>
- <Reference Include="System.Resources.Writer">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Writer.dll</HintPath>
- </Reference>
- <Reference Include="System.Runtime.CompilerServices.VisualC">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.CompilerServices.VisualC.dll</HintPath>
- </Reference>
- <Reference Include="System.Runtime">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="System.Runtime.Extensions">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="System.Runtime.Handles">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Handles.dll</HintPath>
- </Reference>
- <Reference Include="System.Runtime.InteropServices">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.dll</HintPath>
- </Reference>
- <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
- </Reference>
- <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
- </Reference>
- <Reference Include="System.Runtime.Numerics">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Numerics.dll</HintPath>
- </Reference>
- <Reference Include="System.Runtime.Serialization.Formatters">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Formatters.dll</HintPath>
- </Reference>
- <Reference Include="System.Runtime.Serialization.Json">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Json.dll</HintPath>
- </Reference>
- <Reference Include="System.Runtime.Serialization.Primitives">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Primitives.dll</HintPath>
- </Reference>
- <Reference Include="System.Runtime.Serialization.Xml">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Xml.dll</HintPath>
- </Reference>
- <Reference Include="System.Security.Claims">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Claims.dll</HintPath>
- </Reference>
- <Reference Include="System.Security.Cryptography.Algorithms">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Algorithms.dll</HintPath>
- </Reference>
- <Reference Include="System.Security.Cryptography.Csp">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Csp.dll</HintPath>
- </Reference>
- <Reference Include="System.Security.Cryptography.Encoding">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Encoding.dll</HintPath>
- </Reference>
- <Reference Include="System.Security.Cryptography.Primitives">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Primitives.dll</HintPath>
- </Reference>
- <Reference Include="System.Security.Cryptography.X509Certificates">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.X509Certificates.dll</HintPath>
- </Reference>
- <Reference Include="System.Security.Principal">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Principal.dll</HintPath>
- </Reference>
- <Reference Include="System.Security.SecureString">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.SecureString.dll</HintPath>
- </Reference>
- <Reference Include="System.ServiceModel.Duplex">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Duplex.dll</HintPath>
- </Reference>
- <Reference Include="System.ServiceModel.Http">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Http.dll</HintPath>
- </Reference>
- <Reference Include="System.ServiceModel.NetTcp">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.NetTcp.dll</HintPath>
- </Reference>
- <Reference Include="System.ServiceModel.Primitives">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Primitives.dll</HintPath>
- </Reference>
- <Reference Include="System.ServiceModel.Security">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Security.dll</HintPath>
- </Reference>
- <Reference Include="System.Text.Encoding">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.dll</HintPath>
- </Reference>
- <Reference Include="System.Text.Encoding.Extensions">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="System.Text.RegularExpressions">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.RegularExpressions.dll</HintPath>
- </Reference>
- <Reference Include="System.Threading">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.dll</HintPath>
- </Reference>
- <Reference Include="System.Threading.Overlapped">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Overlapped.dll</HintPath>
- </Reference>
- <Reference Include="System.Threading.Tasks">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.dll</HintPath>
- </Reference>
- <Reference Include="System.Threading.Tasks.Parallel">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.Parallel.dll</HintPath>
- </Reference>
- <Reference Include="System.Threading.Thread">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Thread.dll</HintPath>
- </Reference>
- <Reference Include="System.Threading.ThreadPool">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.ThreadPool.dll</HintPath>
- </Reference>
- <Reference Include="System.Threading.Timer">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Timer.dll</HintPath>
- </Reference>
- <Reference Include="System.ValueTuple">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ValueTuple.dll</HintPath>
- </Reference>
- <Reference Include="System.Xml.ReaderWriter">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.ReaderWriter.dll</HintPath>
- </Reference>
- <Reference Include="System.Xml.XDocument">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XDocument.dll</HintPath>
- </Reference>
- <Reference Include="System.Xml.XmlDocument">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlDocument.dll</HintPath>
- </Reference>
- <Reference Include="System.Xml.XmlSerializer">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlSerializer.dll</HintPath>
- </Reference>
- <Reference Include="System.Xml.XPath">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.dll</HintPath>
- </Reference>
- <Reference Include="System.Xml.XPath.XDocument">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
- </Reference>
- <Reference Include="UnityScript">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/UnityScript.dll</HintPath>
- </Reference>
- <Reference Include="UnityScript.Lang">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/UnityScript.Lang.dll</HintPath>
- </Reference>
- <Reference Include="Boo.Lang">
- <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
- </Reference>
+    <Compile Include="Assets\Code\Effects\A_Effect.cs" />
+    <Compile Include="Assets\Code\Effects\AirUp.cs" />
+    <Compile Include="Assets\Code\Effects\DarknessUp.cs" />
+    <Compile Include="Assets\Code\Effects\DeathUp.cs" />
+    <Compile Include="Assets\Code\Effects\EarthUp.cs" />
+    <Compile Include="Assets\Code\Effects\FireUp.cs" />
+    <Compile Include="Assets\Code\Effects\LifeUp.cs" />
+    <Compile Include="Assets\Code\Effects\LightUp.cs" />
+    <Compile Include="Assets\Code\Effects\LightningUp.cs" />
+    <Compile Include="Assets\Code\Effects\PhysUp.cs" />
+    <Compile Include="Assets\Code\Effects\RegENE.cs" />
+    <Compile Include="Assets\Code\Effects\RegHP.cs" />
+    <Compile Include="Assets\Code\Effects\WaterUp.cs" />
+    <Compile Include="Assets\Code\Items\A_Item.cs" />
+    <Compile Include="Assets\Code\Items\IItemFactory.cs" />
+    <Compile Include="Assets\Code\Items\InventorySystem.cs" />
+    <Compile Include="Assets\Code\Items\ItemFactory.cs" />
+    <Compile Include="Assets\Code\Items\Potions\AirUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\AirUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\AirUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\AirUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\DarknessUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\DarknessUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\DarknessUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\DarknessUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\DeathUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\DeathUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\DeathUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\DeathUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\EarthUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\EarthUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\EarthUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\EarthUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\EneP1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\EneP2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\EneP3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\EneP4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\EneReP1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\EneReP2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\EneReP3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\EneReP4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorAirUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorAirUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorAirUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorAirUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorDarknessUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorDarknessUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorDarknessUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorDeathUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorDeathUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorDeathUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorDeathUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorEarthUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorEarthUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorEarthUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorEarthUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorEneP1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorEneP2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorEneP3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorEneP4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorEneReP1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorEneReP2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorEneReP3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorEneReP4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorFireUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorFireUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorFireUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorFireUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorHealP1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorHealP2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorHealP3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorHealP4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorHealReP1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorHealReP3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorHealReP4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorHealRep2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorLifeUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorLifeUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorLifeUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorLifeUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorLightUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorLightUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorLightUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorLightUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorLightningUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorLightningUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorLightningUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorLightningUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorPhysUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorPhysUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorPhysUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorPhysUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorWaterUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorWaterUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorWaterUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatorWaterUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\Factories\CreatordarknessUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\FireUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\FireUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\FireUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\FireUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\HealP1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\HealP2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\HealP3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\HealP4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\HealReP1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\HealReP2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\HealReP3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\HealReP4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\LifeUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\LifeUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\LifeUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\LifeUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\LightUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\LightUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\LightUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\LightUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\LightningUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\LightningUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\LightningUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\LightningUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\PhysUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\PhysUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\PhysUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\PhysUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Potions\WaterUpMix1S.cs" />
+    <Compile Include="Assets\Code\Items\Potions\WaterUpMix2M.cs" />
+    <Compile Include="Assets\Code\Items\Potions\WaterUpMix3G.cs" />
+    <Compile Include="Assets\Code\Items\Potions\WaterUpMix4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefAir1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefAir2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefAir3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefAir4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefDarkness1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefDarkness2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefDarkness3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefDarkness4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefDeath1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefDeath2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefDeath3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefDeath4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefEarth1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefEarth2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefEarth3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefEarth4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefFire1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefFire2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefFire3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefFire4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefLife1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefLife2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefLife3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefLife4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefLight1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefLight2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefLight3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefLight4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefLightning1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefLightning2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefLightning3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefLightning4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefPhys1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefPhys2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefPhys3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefPhys4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefWater1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefWater2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefWater3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\DefWater4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefAir1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefAir2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefAir3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefAir4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefDarkness1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefDarkness2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefDarkness3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefDarkness4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefDeath1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefDeath2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefDeath3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefDeath4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefEarth1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefEarth2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefEarth3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefEarth4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefFIre3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefFire1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefFire2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefFire4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefLife1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefLife2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefLife3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefLife4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefLight1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefLight2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefLight3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefLight4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefLightning1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefLightning2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefLightning3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefLightning4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefPhys1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefPhys2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefPhys3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefPhys4U.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefWater1S.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefWater2M.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefWater3G.cs" />
+    <Compile Include="Assets\Code\Items\Talismans\Factories\CreatorDefWater4U.cs" />
+    <Compile Include="Assets\Code\Monsters\A_Monster.cs" />
+    <Compile Include="Assets\Code\Monsters\A_MonsterAction.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Factories\CreatorNativeAirR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Factories\CreatorNativeDarknessR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Factories\CreatorNativeDeathR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Factories\CreatorNativeEarthR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Factories\CreatorNativeFireR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Factories\CreatorNativeLifeR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Factories\CreatorNativeLightR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Factories\CreatorNativeLightningR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Factories\CreatorNativePhysR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\Factories\CreatorNativeWaterR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeAirR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeDarknessR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeDeathR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeEarthR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeFireR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeLifeR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeLightR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeLightningR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativePhysR1.cs" />
+    <Compile Include="Assets\Code\Monsters\ConcretteMonsters\NativeWaterR1.cs" />
+    <Compile Include="Assets\Code\Monsters\IActionsFactory.cs" />
+    <Compile Include="Assets\Code\Monsters\IMonsterFactory.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorGreaterDeathAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorGreaterAirAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorGreaterAtkBless.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorGreaterAtkCurse.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorGreaterDarknessAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorGreaterDeathPoisonCurse.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorGreaterEarthAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorGreaterFireAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorGreaterHealing.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorGreaterLifeAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorGreaterLightAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorGreaterLightningAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorGreaterRandomDefCurse.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorGreaterWaterAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorMediumAirAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorMediumAtkBless.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorMediumAtkCurse.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorMediumDarknessAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorMediumDeathAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorMediumDeathPoisonCurse.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorMediumEarthAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorMediumFireAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorMediumHealing.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorMediumLifeAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorMediumLightAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorMediumLightningAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorMediumRandomDefCurse.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorMediumWaterAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorOvercharge.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorSimpleAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorSmallAirAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorSmallAtkBless.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorSmallAtkCurse.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorSmallDarknessAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorSmallDeathAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorSmallDeathPoisonCurse.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorSmallEarthAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorSmallFireAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorSmallHealing.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorSmallLifeAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorSmallLightAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorSmallLightningAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorSmallRandomDefCurse.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorSmallWaterAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorUltraAirAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorUltraAtkBless.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorUltraAtkCurse.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorUltraDarknessAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorUltraDeathAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorUltraDeathPoisonCurse.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorUltraEarthAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorUltraFireAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorUltraHealing.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorUltraLifeAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorUltraLightAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorUltraLightningAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorUltraRandomDefCurse.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Factories\CreatorUltraWaterAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterAirAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterAtkBless.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterAtkCurse.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterDarknessAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterDeathAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterDeathPoisonCurse.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterEarthAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterFireAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterHealing.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterLifeAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterLightAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterLightDefBless.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterLightningAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterRandomDefCurse.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\GreaterWaterAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\MediumAirAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\MediumAtkBless.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\MediumAtkCurse.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\MediumDarknessAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\MediumDeathAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\MediumDeathPoisonCurse.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\MediumEarthAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\MediumFireAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\MediumHealing.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\MediumLifeAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\MediumLightAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\MediumLightDefBless.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\MediumLightningAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\MediumRandomDefCurse.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\MediumWaterAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\Overcharge.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\SimpleAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\SmallAirAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\SmallAtkBless.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\SmallAtkCurse.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\SmallDarknessAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\SmallDeathAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\SmallDeathPoisonCurse.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\SmallEarthAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\SmallFireAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\SmallHealing.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\SmallLifeAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\SmallLightAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\SmallLightDefBless.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\SmallLightningAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\SmallRandomDefCurse.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\SmallWaterAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\UltraAirAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\UltraAtkBless.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\UltraAtkCurse.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\UltraDarknessAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\UltraDeathAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\UltraDeathPoisonCurse.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\UltraEarthAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\UltraFireAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\UltraHealing.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\UltraLifeAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\UltraLightAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\UltraLightDefBless.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\UltraLightningAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\UltraRandomDefCurse.cs" />
+    <Compile Include="Assets\Code\Monsters\MonsterActions\UltraWaterAttack.cs" />
+    <Compile Include="Assets\Code\Monsters\NeuralWeb\DataCollector.cs" />
+    <Compile Include="Assets\Code\Monsters\NeuralWeb\Neuron.cs" />
+    <Compile Include="Assets\Code\Monsters\NeuralWeb\NeuronMemoryController.cs" />
+    <Compile Include="Assets\Code\Monsters\NeuralWeb\StrategicNeuralLayer.cs" />
+    <Compile Include="Assets\Code\Monsters\PackController.cs" />
+    <Compile Include="Assets\Code\Monsters\PackGenerator.cs" />
+    <Compile Include="Assets\Code\ScriptHelper\ScriptHelper.cs" />
+    <Compile Include="Assets\Code\Skills\A_Skill.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\AS_DoubleStrike.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\AS_Evasion.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\AS_FireClaw.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\AS_Gehena.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\AS_LethalTempo.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\AS_PiercingLight.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\AS_PiercingStrike.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_Assassination.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_Burnout.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_FasterThanLight.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_ReleasedStream.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_ShiningCloak.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_Tornado.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASAssassin\as_WindBlade.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_Anarchy.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_Blocking.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_DeathBlossom.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_DeathSign.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_DelayedDeath.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_Devouring.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_Electrification.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_Evolution.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_FaceOfDeath.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_Harvesting.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_LifeDrain.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_LightningChain.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_ThunderStorm.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASBruiser\as_WideSwing.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_AllIn.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_ComboCharge.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_CounterAnalysis.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_CriticalBalance.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_Destruction.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_IronDefence.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_Overcharge.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_Rearm.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_Recharge.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_Retreat.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_Synchronization.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_TacticalPreparation.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASTactics\as_TacticalSwap.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_AbsoluteDarkness.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_CounterAttack.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_CursedSign.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_DarkDemon.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_DarkVortex.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_EarthDestruction.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_FinnishingBlow.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_PerfectWarrior.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_Regeneration.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_Ricochet.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_StoneSkin.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_TripleCut.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_Tsunami.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\ASWarrior\as_WaterPrison.cs" />
+    <Compile Include="Assets\Code\Skills\ActionScripts\A_AScript.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillAssassination.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillBurnout.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillDoubleStrike.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillEvasion.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillFasterThanLight.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillFireClaw.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillGehenna.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillLethalTempo.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillPiercingLight.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillPiercingStrike.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillReleasedStream.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillShiningCloak.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillTornado.cs" />
+    <Compile Include="Assets\Code\Skills\Assassin\SkillWindBlade.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillAnarchy.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillBlocking.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillDeathBlossom.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillDeathSign.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillDelayedDeath.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillDevouring.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillElectrification.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillEvolution.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillFaceOfDeath.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillHarvesting.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillLifeDrain.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillLightningChain.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillThunderstorm.cs" />
+    <Compile Include="Assets\Code\Skills\Bruiser\SkillWideSwing.cs" />
+    <Compile Include="Assets\Code\Skills\SkillFactory.cs" />
+    <Compile Include="Assets\Code\Skills\SkillTargets.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillAllIn.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillComboCharge.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillCounterAnalysis.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillCriticalBalance.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillDestruction.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillIronDefence.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillOvercharge.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillRearm.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillSynchronization.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillTacticalPreparation.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillTacticalRecharge.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillTacticalRetreat.cs" />
+    <Compile Include="Assets\Code\Skills\Tactics\SkillTacticalSwap.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillAbsoluteDarkness.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillCounterAttack.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillCursedSign.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillDarkDemon.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillDarkVortex.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillEarthDestruction.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillFinnishingBlow.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillPerfectWarrior.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillRegeneration.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillRicochet.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillStoneSkin.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillTripleCut.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillTsunami.cs" />
+    <Compile Include="Assets\Code\Skills\Warrior\SkillWaterPrison.cs" />
+    <Compile Include="Assets\Code\SystemScripts\AppParameters.cs" />
+    <Compile Include="Assets\Code\SystemScripts\DataStructures\ItemsData.cs" />
+    <Compile Include="Assets\Code\SystemScripts\DataStructures\MonsterActionsData.cs" />
+    <Compile Include="Assets\Code\SystemScripts\DataStructures\MonstersData.cs" />
+    <Compile Include="Assets\Code\SystemScripts\DataStructures\SkillsData.cs" />
+    <Compile Include="Assets\Code\SystemScripts\LoadValuesScripts\LoadValuesFromXML.cs" />
+    <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\GetSceneLocalisation.cs" />
+    <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocalisationDataStructures\InterfaceLocalisationData.cs" />
+    <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocalisationDataStructures\ItemsLocalisationData.cs" />
+    <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocalisationDataStructures\SkillsLocalisationData.cs" />
+    <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocalisationManager.cs" />
+    <Compile Include="Assets\Code\SystemScripts\LocalisationScripts\LocaliseComponents.cs" />
+    <Compile Include="Assets\Code\SystemScripts\ResourcesManager.cs" />
+    <Compile Include="Assets\Code\SystemScripts\ToolTipFollowMouse.cs" />
+    <Compile Include="Assets\Code\UIScripts\CameraZooming.cs" />
+    <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\CharacterMenuController.cs" />
+    <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\HeroEditor\HeroEditorController.cs" />
+    <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\HeroEditor\HeroEditorToolTip.cs" />
+    <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\HeroEditor\UIHeroEditorHelper.cs" />
+    <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\Invertory\DragObject.cs" />
+    <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\Invertory\InvertoryController.cs" />
+    <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\Invertory\ItemDragHandler.cs" />
+    <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\Invertory\ItemToolTip.cs" />
+    <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\Invertory\UIItem.cs" />
+    <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\SkillTree\SkillBranchChange.cs" />
+    <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\SkillTree\SkillToolTip.cs" />
+    <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\SkillTree\SkillTreeController.cs" />
+    <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\SkillTree\UISkill.cs" />
+    <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\SkillTree\UISkillNextLevel.cs" />
+    <Compile Include="Assets\Code\UIScripts\CharacterMenuScene\SkillTree\UISkillPreviousLevel.cs" />
+    <Compile Include="Assets\Code\UIScripts\ExitApp.cs" />
+    <Compile Include="Assets\Code\UIScripts\HeroEditorScene\CommandAttributeChange.cs" />
+    <Compile Include="Assets\Code\UIScripts\HeroEditorScene\CommandDefenceValueChange.cs" />
+    <Compile Include="Assets\Code\UIScripts\HeroEditorScene\CommandLevelChange.cs" />
+    <Compile Include="Assets\Code\UIScripts\HeroEditorScene\HeroEditorController.cs" />
+    <Compile Include="Assets\Code\UIScripts\HeroEditorScene\ICommand.cs" />
+    <Compile Include="Assets\Code\UIScripts\HeroEditorScene\PlusMinusButtonInputData.cs" />
+    <Compile Include="Assets\Code\UIScripts\MainInvertoryScene\FollowMouse.cs" />
+    <Compile Include="Assets\Code\UIScripts\OptionsScene\ChangeLanguage.cs" />
+    <Compile Include="Assets\Code\UIScripts\OptionsScene\SetResolution.cs" />
+    <Compile Include="Assets\Code\UIScripts\SkillTreeScene\ShowSkillDescr.cs" />
+    <Compile Include="Assets\Code\UIScripts\SkillTreeScene\SkillButtonChangerData.cs" />
+    <Compile Include="Assets\Code\UIScripts\SkillTreeScene\SkillDataStorage.cs" />
+    <Compile Include="Assets\Code\UIScripts\SkillTreeScene\SkillsLoaderFromXML.cs" />
+    <Compile Include="Assets\PlayerController\C_Hero.cs" />
+    <Compile Include="Assets\PlayerController\DefenceParam.cs" />
+    <Compile Include="Assets\PlayerController\HeroAttributesController.cs" />
+    <Compile Include="Assets\PlayerController\HeroController.cs" />
+    <Compile Include="Assets\PlayerController\HeroSkillsController.cs" />
+    <Compile Include="Assets\PlayerController\Hero_Serialization.cs" />
+    <Compile Include="Assets\Scenes\SceneManager.cs" />
+    <Compile Include="Assets\StandaloneFileBrowser\IStandaloneFileBrowser.cs" />
+    <Compile Include="Assets\StandaloneFileBrowser\Sample\BasicSample.cs" />
+    <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleOpenFileImage.cs" />
+    <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleOpenFileText.cs" />
+    <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleOpenFileTextMultiple.cs" />
+    <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleSaveFileImage.cs" />
+    <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleSaveFileText.cs" />
+    <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowser.cs" />
+    <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserEditor.cs" />
+    <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserLinux.cs" />
+    <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserMac.cs" />
+    <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserWindows.cs" />
+    <None Include="Assets\Resources\xml\items\ItemsLocUA.xml" />
+    <None Include="Assets\Resources\xml\skills\skillsLocRU.xml" />
+    <None Include="Assets\Resources\xml\items\Items.xml" />
+    <None Include="Assets\Resources\xml\monsters\monsters.xml" />
+    <None Include="Assets\Resources\xml\skills\skillsLocENG.xml" />
+    <None Include="Assets\Resources\xml\interfaceLoc\UA.xml" />
+    <None Include="Assets\Resources\xml\skills\skillsLocUA.xml" />
+    <None Include="Assets\Resources\xml\interfaceLoc\ENG.xml" />
+    <None Include="Assets\Resources\xml\interfaceLoc\systemMessagesUA.xml" />
+    <None Include="Assets\Resources\xml\skills\skills.xml" />
+    <None Include="Assets\Resources\xml\monsters\actions.xml" />
+    <None Include="Assets\Resources\xml\interfaceLoc\systemMessagesENG.xml" />
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>F:/UnityProjects/Adventure/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>F:/UnityProjects/Adventure/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>F:/UnityProjects/Adventure/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>F:/UnityProjects/Adventure/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>F:/UnityProjects/Adventure/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>F:/UnityProjects/Adventure/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>F:/UnityProjects/Adventure/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>F:/UnityProjects/Adventure/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>F:/UnityProjects/Adventure/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>F:/UnityProjects/Adventure/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Ookii.Dialogs">
+      <HintPath>F:/UnityProjects/Adventure/Assets/StandaloneFileBrowser/Plugins/Ookii.Dialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>F:/UnityProjects/Adventure/Assets/StandaloneFileBrowser/Plugins/System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Rtc">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Http.Rtc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.ILGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Duplex">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Duplex.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Http">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.NetTcp">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.NetTcp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Primitives">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Security">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/UnityScript.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript.Lang">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/UnityScript.Lang.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang">
+      <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

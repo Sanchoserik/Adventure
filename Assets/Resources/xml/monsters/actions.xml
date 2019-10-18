@@ -185,216 +185,252 @@
 </action>
 
 <action name = "smallAirAttack">
+<el name = "Element">air</el>
 <el name = "ATKVal">30</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">25</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "mediumAirAttack">
+<el name = "Element">air</el>
 <el name = "ATKVal">90</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">50</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "greaterAirAttack">
+<el name = "Element">air</el>
 <el name = "ATKVal">180</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">75</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "ultraAirAttack">
+<el name = "Element">air</el>
 <el name = "ATKVal">360</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">100</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "smallLightningAttack">
+<el name = "Element">lightning</el>
 <el name = "ATKVal">30</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">25</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "mediumLightningAttack">
+<el name = "Element">lightning</el>
 <el name = "ATKVal">90</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">50</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "greaterLightningAttack">
+<el name = "Element">lightning</el>
 <el name = "ATKVal">180</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">75</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "ultraLightningAttack">
+<el name = "Element">lightning</el>
 <el name = "ATKVal">360</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">100</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "smallEarthAttack">
+<el name = "Element">earth</el>
 <el name = "ATKVal">30</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">25</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "mediumEarthAttack">
+<el name = "Element">earth</el>
 <el name = "ATKVal">90</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">50</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "greaterEarthAttack">
+<el name = "Element">earth</el>
 <el name = "ATKVal">180</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">75</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "ultraEarthAttack">
+<el name = "Element">earth</el>
 <el name = "ATKVal">360</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">100</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "smallWaterAttack">
+<el name = "Element">water</el>
 <el name = "ATKVal">30</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">25</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "mediumWaterAttack">
+<el name = "Element">water</el>
 <el name = "ATKVal">90</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">50</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "greaterWaterAttack">
+<el name = "Element">water</el>
 <el name = "ATKVal">180</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">75</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "ultraWaterAttack">
+<el name = "Element">water</el>
 <el name = "ATKVal">360</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">100</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "smallFireAttack">
+<el name = "Element">fire</el>
 <el name = "ATKVal">30</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">25</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "mediumFireAttack">
+<el name = "Element">fire</el>
 <el name = "ATKVal">90</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">50</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "greaterFireAttack">
+<el name = "Element">fire</el>
 <el name = "ATKVal">180</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">75</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "ultraFireAttack">
+<el name = "Element">fire</el>
 <el name = "ATKVal">360</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">100</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "smallLightAttack">
+<el name = "Element">ligth</el>
 <el name = "ATKVal">30</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">25</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "mediumLightAttack">
+<el name = "Element">ligth</el>
 <el name = "ATKVal">90</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">50</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "greaterLightAttack">
+<el name = "Element">ligth</el>
 <el name = "ATKVal">180</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">75</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "ultraLightAttack">
+<el name = "Element">ligth</el>
 <el name = "ATKVal">360</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">100</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "smallDarknessAttack">
+<el name = "Element">darkness</el>
 <el name = "ATKVal">30</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">25</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "mediumDarknessAttack">
+<el name = "Element">darkness</el>
 <el name = "ATKVal">90</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">50</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "greaterDarknessAttack">
+<el name = "Element">darkness</el>
 <el name = "ATKVal">180</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">75</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "ultraDarknessAttack">
+<el name = "Element">darkness</el>
 <el name = "ATKVal">360</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">100</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "smallLifeAttack">
+<el name = "Element">life</el>
 <el name = "ATKVal">30</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">25</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "mediumLifeAttack">
+<el name = "Element">life</el>
 <el name = "ATKVal">90</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">50</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "greaterLifeAttack">
+<el name = "Element">life</el>
 <el name = "ATKVal">180</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">75</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "ultraLifeAttack">
+<el name = "Element">life</el>
 <el name = "ATKVal">360</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">100</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "smallDeathAttack">
+<el name = "Element">death</el>
 <el name = "ATKVal">30</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">25</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "mediumDeathAttack">
+<el name = "Element">death</el>
 <el name = "ATKVal">90</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">50</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "greaterDeathAttack">
+<el name = "Element">death</el>
 <el name = "ATKVal">180</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">75</el>
 <el name = "APPrice">1</el>
 </action>
 <action name = "ultraDeathAttack">
+<el name = "Element">death</el>
 <el name = "ATKVal">360</el>
 <el name = "CoolDownTime">0</el>
 <el name = "EnePrice">100</el>
