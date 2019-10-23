@@ -75,12 +75,12 @@ namespace Assets.Code.Skills
         public string skillName;
         public bool isAvailableForLearning;
         public bool isLearned;
-        public short skillLevel;
-        public short skillMaxLevel;
+        public int skillLevel;
+        public int skillMaxLevel;
 
-        public short energyCost;
-        public short actionPointsCost;
-        public short skillDuration;
+        public int priceENE;
+        public int priceAP;
+        public int skillCooldown;          
         public SkillTargets skillTargets;
 
         public string skillUnlocker;
@@ -94,6 +94,8 @@ namespace Assets.Code.Skills
             skillLevel = 0;
             skillUnlocker = _skillUnlocker;
             skillsToUnlock = _skillsToUnlock;
+
+
         }
 
         public A_Skill() { }

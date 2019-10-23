@@ -7,5 +7,11 @@ namespace Assets.Code.Skills
 {
     public class SkillTargets
     {
+        public string targetValue;
+
+        public SkillTargets(string val)
+        {
+            targetValue = val;
+        }
     }
 }
