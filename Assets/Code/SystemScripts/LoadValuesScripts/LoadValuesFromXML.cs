@@ -57,33 +57,35 @@ namespace Assets.Code.SystemScripts.LoadValuesScripts
 
             foreach (XElement item in skills)
             {
-                short _levels = short.Parse(item.Attribute("levels").Value);
-                string _name = item.Attribute("name").Value.Trim();
-                string _scname = item.Attribute("scname").Value.Trim();
+                int levels = short.Parse(item.Attribute("levels").Value);
+                string sName = item.Attribute("name").Value.Trim();
+                string sASName = item.Attribute("scname").Value.Trim();
 
                 //int value is skill levels
-                Dictionary<int, string> _sEneCost = new Dictionary<int, string>();
-                Dictionary<int, string> _sAPCost = new Dictionary<int, string>();
-                List<Dictionary<string, string>> _sValues = new List<Dictionary<string, string>>();
+                Dictionary<int, string> sEneCost = new Dictionary<int, string>();
+                Dictionary<int, string> sAPCost = new Dictionary<int, string>();
+                Dictionary<int, string> sCooldown = new Dictionary<int, string>();
+                List<Dictionary<string, string>> sValues = new List<Dictionary<string, string>>();
 
                 int levelIter = 1;
                 foreach (XElement el in item.Elements("l"))
                 {
-                    _sEneCost.Add(levelIter, el.Attribute("pEne").Value);
-                    _sAPCost.Add(levelIter, el.Attribute("pAP").Value);
+                    sEneCost.Add(levelIter, el.Attribute("pEne").Value);
+                    sAPCost.Add(levelIter, el.Attribute("pAP").Value);
+                    sCooldown.Add(levelIter, el.Attribute("scd").Value);
 
                     //get <v> tag values
                     if (el.Nodes() != null)
                     {
-                        _sValues.Add(new Dictionary<string, string>());
+                        sValues.Add(new Dictionary<string, string>());
                         foreach (XElement vTag in el.Nodes())
                         {
-                            _sValues[_sValues.Count - 1].Add(vTag.Attribute("name").Value, vTag.Value);
+                            sValues[sValues.Count - 1].Add(vTag.Attribute("name").Value, vTag.Value);
                         }
                     }
                     ++levelIter;
                 }
-                ResourcesManager.skillsData.Add(new SkillsData(_name, _scname, _levels, _sAPCost, _sEneCost, _sValues));
+                ResourcesManager.skillsData.Add(new SkillsData(sName, sASName, levels, sAPCost, sEneCost, sCooldown, sValues));
             }
         }
 

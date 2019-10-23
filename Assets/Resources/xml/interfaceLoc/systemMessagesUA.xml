@@ -7,6 +7,7 @@
  <el name = "Targets">Цілі: </el>
  <el name = "Duration">Тривалість: </el>
  <el name = "SkillGeneralDescription">Опис: </el>
+ <el name = "SkillCooldown">Перезарядка: </el>
  
  <el name = "ThereIsnoDuration">Тривалість відсутня</el>
  <el name = "SkillAvailable">Доступно для вивчення</el>
