@@ -24,8 +24,8 @@ namespace Assets.PlayerController
                 //max level 120
                 mainHero.freeAttributePoints = 600; // TEMP
                 mainHero.freeSkillPoints = 120; // TEMP
-            }
-           
+            }           
+
             OtherControllers.SetActive(true);
         }
 

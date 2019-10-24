@@ -9,11 +9,8 @@ namespace Assets.Code.Skills.Warrior
     [Serializable]
     public class SkillAbsoluteDarkness : A_Skill
     {
-        public SkillAbsoluteDarkness()
-        {
-        }
-
-        public SkillAbsoluteDarkness(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning) : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
+        public SkillAbsoluteDarkness(string _name, string _skillUnlocker, string[] _skillsToUnlock, bool _isAvailableForLearning)
+            : base(_name, _skillUnlocker, _skillsToUnlock, _isAvailableForLearning)
         {
 
         }

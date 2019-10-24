@@ -77,7 +77,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
                     return "<color=#FF0004>" + systemMessages["SkillIsNotAvailable"] + "</color>";                        
         }
 
-        public static string getSkillDuration(SkillsData skillData, short level, Dictionary<string, string> systemMessages)
+        public static string getSkillDuration(SkillsData skillData, int level, Dictionary<string, string> systemMessages)
         {
             if (!skillData.skillValues[level-1].ContainsKey("Time"))
                 return systemMessages["ThereIsnoDuration"];
@@ -96,6 +96,8 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
                 { 
                     if (skill.isAvailableForLearning && !skill.isLearned)
                     {
+                        // skill init as level 1
+
                         HeroSkillsController.setSkillAsLearned(skill);
                         HeroSkillsController.getNewAvailableSKills(skillTree, skillName);
                         --HeroController.mainHero.freeSkillPoints;
@@ -104,6 +106,8 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
                     else if (skill.isLearned)
                     {
                         ++skill.skillLevel;
+                        // skill init as level X
+
                         refreshSkillLevelText(skillObject, skillName, skill);
                         --HeroController.mainHero.freeSkillPoints;                       
                     }
@@ -124,7 +128,9 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
             {
                 if (skill.skillLevel - 1 >= 1)
                 {
-                    --skill.skillLevel;                   
+                    --skill.skillLevel;
+                    // skill init as level X
+
                     ++HeroController.mainHero.freeSkillPoints;
                     skillToolTip.setToolTipGeneratedValue(false);
                     skillToolTip.generateToolTip(skill, "LoadPreviousLevel");

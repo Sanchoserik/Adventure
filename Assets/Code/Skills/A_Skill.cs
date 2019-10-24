@@ -8,6 +8,7 @@ using Assets.Code.Skills.Assassin;
 using Assets.Code.Skills.Bruiser;
 using Assets.Code.Skills.Tactics;
 using Assets.Code.Skills.Warrior;
+using Assets.Code.SystemScripts.DataStructures;
 using Assets.PlayerController;
 using UnityEngine;
 
@@ -86,26 +87,19 @@ namespace Assets.Code.Skills
         public string skillUnlocker;
         public string[] skillsToUnlock;
 
-        public A_Skill(string _name, string _skillUnlocker,string[] _skillsToUnlock, bool _isAvailableForLearning)
+        //skill level 0 initialization
+        public A_Skill(string sName, string sUnlocker, string[] sToUnlock, bool isAvbForLearning)
         {
-            skillName = _name;
+            skillName = sName;         
             isLearned = false;
-            isAvailableForLearning = _isAvailableForLearning;
+            isAvailableForLearning = isAvbForLearning;
             skillLevel = 0;
-            skillUnlocker = _skillUnlocker;
-            skillsToUnlock = _skillsToUnlock;
-
-
+            skillUnlocker = sUnlocker;
+            skillsToUnlock = sToUnlock;
         }
 
-        public A_Skill() { }
-
+        public abstract void levelXInit(SkillsData sData, int level);
         public abstract void callSkill(C_Hero user);
         //TO DO - add other signatures for callSkipll like (C_Monster user) etc.
-
-        public static void bindSkillData()
-        {
-            // 
-        }
     }
 }

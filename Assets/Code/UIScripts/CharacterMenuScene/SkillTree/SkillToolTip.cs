@@ -148,7 +148,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
             }
         }
 
-        private string getLocalisedText(SkillsLocalisationData localisation, SkillsData data, short skillLevel)
+        private string getLocalisedText(SkillsLocalisationData localisation, SkillsData data, int skillLevel)
         {
             string fullDescription = localisation.skillLocalisedLevelDescription[skillLevel-1];
             foreach (KeyValuePair<string, string> pair in data.skillValues[skillLevel-1])
@@ -160,7 +160,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
         }
 
         private string getLocalisedTextForNextLevel(SkillsLocalisationData localisation, SkillsData data,
-            short skillCurrentLevel, short skillAnotherLevel, string textColor)
+            short skillCurrentLevel, int skillAnotherLevel, string textColor)
         {
             string fullCurrentLevelDescription = localisation.skillLocalisedLevelDescription[skillCurrentLevel];
             string fullAnotherLevelDescription = localisation.skillLocalisedLevelDescription[skillAnotherLevel];
