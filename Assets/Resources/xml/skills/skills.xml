@@ -561,14 +561,14 @@
  <v name = "Time">3</v>
  <v name = "Targets">Self</v>
  </l>
- <l pEne = "130" pAP = "2">
- <v name = "DeffIgnoreVal" scd = "3">2</v>
+ <l pEne = "130" pAP = "2" scd = "3">
+ <v name = "DeffIgnoreVal">2</v>
  <v name = "Time">3</v>
  <v name = "Targets">Self</v>
  </l>
  </skill>
  <skill name = "Assassination" levels = "5" scname = "as_Assassination">
- <l pEne = "90" pAP = "2" scd = "02>
+ <l pEne = "90" pAP = "2" scd = "2">
  <v name = "PhysDmg">120</v>
  <v name = "HPrecoveryOnKill">30</v>
  <v name = "addDmgModOnKill">10</v>
@@ -682,25 +682,25 @@
  </skill>
  <skill name = "FasterThanLight" levels = "3" scname = "as_FasterThanLight">
  <l pEne = "150" pAP = "2" scd = "4">
- <v name ="AtkEvasionIncr">10</v>
- <v name = "SKillEvasionIncr">7</v>
- <v name ="AllDefDecr">3</v>
+ <v name = "AtkEvasionIncr">10</v>
+ <v name = "SkillEvasionIncr">7</v>
+ <v name = "AllDefDecr">3</v>
  <v name = "CrStrikeChancePlus">10</v>
  <v name = "Time">3</v>
  <v name = "Targets">Self</v>
  </l>
  <l pEne = "200" pAP = "2" scd = "4">
- <v name ="AtkEvasionIncr">15</v>
- <v name = "SKillEvasionIncr">11</v>
- <v name ="AllDefDecr">3</v>
+ <v name = "AtkEvasionIncr">15</v>
+ <v name = "SkillEvasionIncr">11</v>
+ <v name = "AllDefDecr">3</v>
  <v name = "CrStrikeChancePlus">15</v>
  <v name = "Time">3</v>
  <v name = "Targets">Self</v>
  </l>
  <l pEne = "250" pAP = "2" scd = "4">
- <v name ="AtkEvasionIncr">20</v>
- <v name = "SKillEvasionIncr">15</v>
- <v name ="AllDefDecr">2</v>
+ <v name = "AtkEvasionIncr">20</v>
+ <v name = "SkillEvasionIncr">15</v>
+ <v name = "AllDefDecr">2</v>
  <v name = "CrStrikeChancePlus">20</v>
  <v name = "Time">3</v>
  <v name = "Targets">Self</v>
@@ -740,19 +740,19 @@
  </skill>
  <skill name = "Burnout" levels = "3" scname = "as_Burnout">
  <l pEne = "80" pAP = "2" scd = "4">
- <v name ="HPDamage">5</v>
+ <v name = "HPDamage">5</v>
  <v name = "FireDmgMod">10</v>
  <v name = "Time">3</v>
  <v name = "Targets">Self</v>
  </l>
  <l pEne = "120" pAP = "2" scd = "4">
- <v name ="HPDamage">10</v>
+ <v name = "HPDamage">10</v>
  <v name = "FireDmgMod">20</v>
  <v name = "Time">3</v>
  <v name = "Targets">Self</v>
  </l>
  <l pEne = "160" pAP = "1" scd = "4">
- <v name ="HPDamage">15</v>
+ <v name = "HPDamage">15</v>
  <v name = "FireDmgMod">40</v>
  <v name = "Time">3</v>
  <v name = "Targets">Self</v>
@@ -918,13 +918,13 @@
  <skill name = "Devouring" levels  = "2" scname = "as_Devouring">
  <l pEne = "100" pAP = "3" scd = "4">
  <v name = "PhysDmg">180</v>
- <v name = "SteallAllDef">True</v>
+ <v name = "SteallAllDef">true</v>
  <v name = "Time">3</v>
  <v name = "Targets">One Enemy</v>
  </l>
  <l pEne = "140" pAP = "2" scd = "4">
-  <v name = "PhysDmg">220</v>
- <v name = "SteallAllDef">True</v>
+ <v name = "PhysDmg">220</v>
+ <v name = "SteallAllDef">true</v>
  <v name = "Time">3</v>
  <v name = "Targets">One Enemy</v>
  </l>
@@ -983,7 +983,7 @@
  </skill>
  <skill name = "DeathSign" levels = "3" scname = "as_DeathSign">
  <l pEne = "50" pAP = "1" scd = "2">
- <v name = "AtkDect">10</v>
+ <v name = "AtkDecr">10</v>
  <v name = "DeathDefDecr">1</v>
  <v name = "DarknessDefDecr">1</v>
  <v name = "LightDefDecr">1</v>
@@ -991,7 +991,7 @@
  <v name = "Targets">One Enemy</v>
  </l>
  <l pEne = "70" pAP = "1" scd = "2"> 
- <v name = "AtkDect">15</v>
+ <v name = "AtkDecr">15</v>
  <v name = "DeathDefDecr">1</v>
  <v name = "DarknessDefDecr">1</v>
  <v name = "LightDefDecr">1</v>
@@ -999,7 +999,7 @@
  <v name = "Targets">One Enemy</v>
  </l>
  <l pEne = "100" pAP = "1" scd = "2">
- <v name = "AtkDect">20</v>
+ <v name = "AtkDecr">20</v>
  <v name = "DeathDefDecr">2</v>
  <v name = "DarknessDefDecr">1</v>
  <v name = "LightDefDecr">2</v>
@@ -1036,7 +1036,7 @@
  <v name = "Regeneration">90</v>
  <v name = "DeathDef">2</v>
  <v name = "PhysDef">1</v>
- <v name = "LihtDef">1</v>
+ <v name = "LightDef">1</v>
  <v name = "WaterDef">1</v>
  <v name = "Time">3</v>
  <v name = "Targets">Self</v>
@@ -1046,7 +1046,7 @@
  <v name = "Regeneration">110</v>
  <v name = "DeathDef">2</v>
  <v name = "PhysDef">1</v>
- <v name = "LihtDef">1</v>
+ <v name = "LightDef">1</v>
  <v name = "WaterDef">1</v>
  <v name = "Time">3</v>
  <v name = "Targets">Self</v>
@@ -1056,7 +1056,7 @@
  <v name = "Regeneration">130</v>
  <v name = "DeathDef">2</v>
  <v name = "PhysDef">1</v>
- <v name = "LihtDef">1</v>
+ <v name = "LightDef">1</v>
  <v name = "WaterDef">1</v>
  <v name = "Time">3</v>
  <v name = "Targets">Self</v>
@@ -1066,7 +1066,7 @@
  <v name = "Regeneration">150</v>
  <v name = "DeathDef">2</v>
  <v name = "PhysDef">1</v>
- <v name = "LihtDef">1</v>
+ <v name = "LightDef">1</v>
  <v name = "WaterDef">1</v>
  <v name = "Time">3</v>
  <v name = "Targets">Self</v>
@@ -1076,7 +1076,7 @@
  <v name = "Regeneration">170</v>
  <v name = "DeathDef">2</v>
  <v name = "PhysDef">2</v>
- <v name = "LihtDef">2</v>
+ <v name = "LightDef">2</v>
  <v name = "WaterDef">1</v>
  <v name = "FireDef">1</v>
  <v name = "Time">4</v>

@@ -222,9 +222,9 @@
  </skill>
  <skill name = "FasterThanLight" locname = "Швидше світла" 
  descr = "Збільшує шанс ухилення і шанс критичної атаки але зменшує всі резісти">
- <l lTarget = "Герой">Ухилення від атак +$AtkEvasionIncr$% Ухилення від скілів +$SKillEvasionIncr$% Шанс критичної атаки +$AllDefDecr$% Всі резісти -$CrStrikeChancePlus$</l>
- <l lTarget = "Герой">Ухилення від атак +$AtkEvasionIncr$% Ухилення від скілів +$SKillEvasionIncr$% Шанс критичної атаки +$AllDefDecr$% Всі резісти -$CrStrikeChancePlus$</l>
- <l lTarget = "Герой">Ухилення від атак +$AtkEvasionIncr$% Ухилення від скілів +$SKillEvasionIncr$% Шанс критичної атаки +$AllDefDecr$% Всі резісти -$CrStrikeChancePlus$</l>
+ <l lTarget = "Герой">Ухилення від атак +$AtkEvasionIncr$% Ухилення від скілів +$SkillEvasionIncr$% Шанс критичної атаки +$AllDefDecr$% Всі резісти -$CrStrikeChancePlus$</l>
+ <l lTarget = "Герой">Ухилення від атак +$AtkEvasionIncr$% Ухилення від скілів +$SkillEvasionIncr$% Шанс критичної атаки +$AllDefDecr$% Всі резісти -$CrStrikeChancePlus$</l>
+ <l lTarget = "Герой">Ухилення від атак +$AtkEvasionIncr$% Ухилення від скілів +$SkillEvasionIncr$% Шанс критичної атаки +$AllDefDecr$% Всі резісти -$CrStrikeChancePlus$</l>
  </skill>
  <skill name = "FireClaw" locname = "Вогняний кіготь" 
  descr = "Атака вогнем з підпалом">
@@ -305,9 +305,9 @@
  </skill>
  <skill name = "DeathSign" locname = "Мітка смерті"
  descr = "Накладає на ворога мітку яка ослабляє його атаку і резісти">
- <l lTarget = "Один ворог">Атака -$AtkDect$% Смерть - $DeathDefDecr$ Темрява -$DarknessDefDecr$ Світло -$LightDefDecr$</l>
- <l lTarget = "Один ворог">Атака -$AtkDect$% Смерть - $DeathDefDecr$ Темрява -$DarknessDefDecr$ Світло -$LightDefDecr$</l>
- <l lTarget = "Один ворог">Атака -$AtkDect$% Смерть - $DeathDefDecr$ Темрява -$DarknessDefDecr$ Світло -$LightDefDecr$ Фізичний -$PhysDefDecr$</l>
+ <l lTarget = "Один ворог">Атака -$AtkDecr$% Смерть - $DeathDefDecr$ Темрява -$DarknessDefDecr$ Світло -$LightDefDecr$</l>
+ <l lTarget = "Один ворог">Атака -$AtkDecr$% Смерть - $DeathDefDecr$ Темрява -$DarknessDefDecr$ Світло -$LightDefDecr$</l>
+ <l lTarget = "Один ворог">Атака -$AtkDecr$% Смерть - $DeathDefDecr$ Темрява -$DarknessDefDecr$ Світло -$LightDefDecr$ Фізичний -$PhysDefDecr$</l>
  </skill>
  <skill name = "DelayedDeath" locname = "Відкладена смерть"
  descr = "Під кінець часу дії ворог вмирає атакуючи всіх навколо енергією смерті">
@@ -318,11 +318,11 @@
  </skill>
  <skill name = "FaceOfDeath" locname = "Лик смерті" 
  descr = "Збільшення деяких резістів регенерація і пошкодження смертю всіх ворогів протягом часу дії">
- <l lTarget = "Герой">Пошкодження $DeathDmg$ Смерть; Смерть +$DeathDef$ Фізичний +$PhysDef$ Світло +$LihtDef$ Вода + $WaterDef$; Регенерація $Regeneration$</l>
- <l lTarget = "Герой">Пошкодження $DeathDmg$ Смерть; Смерть +$DeathDef$ Фізичний +$PhysDef$ Світло +$LihtDef$ Вода + $WaterDef$; Регенерація $Regeneration$</l>
- <l lTarget = "Герой">Пошкодження $DeathDmg$ Смерть; Смерть +$DeathDef$ Фізичний +$PhysDef$ Світло +$LihtDef$ Вода + $WaterDef$; Регенерація $Regeneration$</l>
- <l lTarget = "Герой">Пошкодження $DeathDmg$ Смерть; Смерть +$DeathDef$ Фізичний +$PhysDef$ Світло +$LihtDef$ Вода + $WaterDef$; Регенерація $Regeneration$</l>
- <l lTarget = "Герой">Пошкодження $DeathDmg$ Смерть; Смерть +$DeathDef$ Фізичний +$PhysDef$ Світло +$LihtDef$ Вода + $WaterDef$ Вогонь +$FireDef$ ; Регенерація $Regeneration$</l>
+ <l lTarget = "Герой">Пошкодження $DeathDmg$ Смерть; Смерть +$DeathDef$ Фізичний +$PhysDef$ Світло +$LightDef$ Вода + $WaterDef$; Регенерація $Regeneration$</l>
+ <l lTarget = "Герой">Пошкодження $DeathDmg$ Смерть; Смерть +$DeathDef$ Фізичний +$PhysDef$ Світло +$LightDef$ Вода + $WaterDef$; Регенерація $Regeneration$</l>
+ <l lTarget = "Герой">Пошкодження $DeathDmg$ Смерть; Смерть +$DeathDef$ Фізичний +$PhysDef$ Світло +$LightDef$ Вода + $WaterDef$; Регенерація $Regeneration$</l>
+ <l lTarget = "Герой">Пошкодження $DeathDmg$ Смерть; Смерть +$DeathDef$ Фізичний +$PhysDef$ Світло +$LightDef$ Вода + $WaterDef$; Регенерація $Regeneration$</l>
+ <l lTarget = "Герой">Пошкодження $DeathDmg$ Смерть; Смерть +$DeathDef$ Фізичний +$PhysDef$ Світло +$LightDef$ Вода + $WaterDef$ Вогонь +$FireDef$ ; Регенерація $Regeneration$</l>
  </skill>
  <skill name = "LightningChain" locname = "Ланцюгова блискавка"
  descr = "атакує декілька цілей але кожній цілі наноситься менші пошкодження">
