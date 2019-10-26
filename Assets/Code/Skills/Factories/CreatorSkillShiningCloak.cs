@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Assets.Code.Skills.Factories
 {
-    public class CreatorSkillAssasination : ISkillFactory
+    public class CreatorSkillShiningCloak : ISkillFactory
     {
         public A_Skill createSkill()
-       => new SkillAssassination("Assassination", "PiercingStrike", new string[] { "LethalTempo" }, false);
+       => new SkillShiningCloak("ShiningCloak", "PiercingLight", new string[] { "FasterThanLight" }, false);
     }
 }

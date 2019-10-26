@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Assets.Code.Skills.Factories
 {
-    public class CreatorSkillSynchronisation : ISkillFactory
+    public class CreatorSkillSynchronization : ISkillFactory
     {
         public A_Skill createSkill()
      => new SkillSynchronization("Synchronization", "CriticalBalance", new string[] { "" }, false);
