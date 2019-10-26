@@ -9,7 +9,7 @@ namespace Assets.Code.Skills.Factories
 {
     public class CreatorSkillBurnout : ISkillFactory
     {
-        public A_Skill createSkill(string sName, string sUnlocker, string[] sToUnlock, bool isAvailablefroLearning)
+        public A_Skill createSkill()
         => new SkillBurnout("Burnout", "FireClaw", new string[] { "Gehena" }, false);
     }
 }

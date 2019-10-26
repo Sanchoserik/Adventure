@@ -9,7 +9,7 @@ namespace Assets.Code.Skills.Factories
 {
     public class CreatorSkillIronDefence : ISkillFactory
     {
-        public A_Skill createSkill(string sName, string sUnlocker, string[] sToUnlock, bool isAvailablefroLearning)
+        public A_Skill createSkill()
         => new SkillIronDefence("IronDefence", "TacticalSwap", new string[] { "" }, false);
     }
 }

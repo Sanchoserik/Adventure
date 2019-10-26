@@ -9,7 +9,7 @@ namespace Assets.Code.Skills.Factories
 {
     public class CreatorSkillLightningChain : ISkillFactory
     {
-        public A_Skill createSkill(string sName, string sUnlocker, string[] sToUnlock, bool isAvailablefroLearning)
+        public A_Skill createSkill()
        => new SkillLightningChain("LightningChain", "Blocking", new string[] { "Electrification" }, false);
     }
 }

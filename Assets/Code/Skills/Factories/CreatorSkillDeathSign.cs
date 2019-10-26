@@ -9,7 +9,7 @@ namespace Assets.Code.Skills.Factories
 {
     public class CreatorSkillDeathSign : ISkillFactory
     {
-        public A_Skill createSkill(string sName, string sUnlocker, string[] sToUnlock, bool isAvailablefroLearning)
+        public A_Skill createSkill()
       => new SkillDeathSign("DeathSign", "Blocking", new string[] { "DelayedDeath" }, false);
     }
 }

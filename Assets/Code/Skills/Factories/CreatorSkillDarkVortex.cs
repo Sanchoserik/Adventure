@@ -9,7 +9,7 @@ namespace Assets.Code.Skills.Factories
 {
     public class CreatorSkillDarkVortex : ISkillFactory
     {
-        public A_Skill createSkill(string sName, string sUnlocker, string[] sToUnlock, bool isAvailablefroLearning)
+        public A_Skill createSkill()
         => new SkillDarkVortex("DarkVortex", "CounterAttack", new string[] { "AbsoluteDarkness" }, false);
     }
 }

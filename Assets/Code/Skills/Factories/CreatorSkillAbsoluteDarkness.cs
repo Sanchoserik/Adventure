@@ -9,7 +9,7 @@ namespace Assets.Code.Skills.Factories
 {
     public class CreatorSkillAbsoluteDarkness : ISkillFactory
     {
-        public A_Skill createSkill(string sName, string sUnlocker, string[] sToUnlock, bool isAvailablefroLearning) => new
+        public A_Skill createSkill() => new
             SkillAbsoluteDarkness("AbsoluteDarkness", "DarkVortex", new string[] { "DarkDemon" }, false);
 
     }

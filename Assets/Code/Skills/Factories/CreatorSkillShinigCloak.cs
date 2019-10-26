@@ -9,7 +9,7 @@ namespace Assets.Code.Skills.Factories
 {
     public class CreatorSkillShinigCloak : ISkillFactory
     {
-        public A_Skill createSkill(string sName, string sUnlocker, string[] sToUnlock, bool isAvailablefroLearning)
+        public A_Skill createSkill()
        => new SkillShiningCloak("ShiningCloak", "PiercingLight", new string[] { "FasterThanLight" }, false);
     }
 }

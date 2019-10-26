@@ -1,4 +1,5 @@
-﻿using Assets.Code.Skills.Warrior;
+﻿using Assets.Code.Skills.Tactics;
+using Assets.Code.Skills.Warrior;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace Assets.Code.Skills.Factories
 {
     public class CreatorSkillSynchronisation : ISkillFactory
     {
-        public A_Skill createSkill(string sName, string sUnlocker, string[] sToUnlock, bool isAvailablefroLearning)
+        public A_Skill createSkill()
      => new SkillSynchronization("Synchronization", "CriticalBalance", new string[] { "" }, false);
     }
 }

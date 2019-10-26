@@ -9,7 +9,7 @@ namespace Assets.Code.Skills.Factories
 {
     public class CreatorSkillEvasion : ISkillFactory
     {
-        public A_Skill createSkill(string sName, string sUnlocker, string[] sToUnlock, bool isAvailablefroLearning)
+        public A_Skill createSkill()
         => new SkillEvasion("Evasion", "Rearm", new string[] { "DoubleStrike", "PiercingLight", "FireClaw", "WindBlade" }, false);
     }
 }

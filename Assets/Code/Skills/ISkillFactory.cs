@@ -9,6 +9,6 @@ namespace Assets.Code.Skills
 {
     public interface ISkillFactory
     {
-        A_Skill createSkill(string sName, string sUnlocker, string[] sToUnlock, bool isAvailablefroLearning);
+        A_Skill createSkill();
     }
 }

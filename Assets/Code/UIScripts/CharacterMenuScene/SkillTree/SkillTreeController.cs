@@ -20,7 +20,7 @@ namespace Assets.Code.UIScripts.CharacterMenuScene.SkillTree
 
         private void Start()
         {
-            skillTree = HeroController.mainHero.heroSkills.skillsList;
+            skillTree = HeroController.mainHero.heroSkills.heroSkillsList;
             initializeSkills(skillTrees);
         }
   

@@ -9,8 +9,8 @@ namespace Assets.Code.UIScripts.SkillTreeScene
     public class SkillDataStorage
     {
         //skill main data
-        public short skillLevels; 
-        public short skillCurentLevel; 
+        public int skillLevels; 
+        public int skillCurentLevel; 
         public string skillName; 
         public string skillScriptName; 
         public Dictionary<int, string> skillAPCost; 

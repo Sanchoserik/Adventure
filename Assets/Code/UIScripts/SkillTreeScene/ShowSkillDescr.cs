@@ -33,7 +33,7 @@ namespace Assets.Code.UIScripts.SkillTreeScene
 
         void Start()
         {         
-            skillTree =  HeroController.mainHero.heroSkills.skillsList;
+            skillTree =  HeroController.mainHero.heroSkills.heroSkillsList;
             //data = HeroController.skillDataStorage; // 
             loadSkillLevels(skillTreeParent);
             heroSkillPoints.text = HeroController.mainHero.freeSkillPoints.ToString();         
