@@ -499,6 +499,62 @@
     <Compile Include="Assets\Code\Skills\Bruiser\SkillLightningChain.cs" />
     <Compile Include="Assets\Code\Skills\Bruiser\SkillThunderstorm.cs" />
     <Compile Include="Assets\Code\Skills\Bruiser\SkillWideSwing.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillAbsoluteDarkness.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillAllIn.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillAnarchy.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillAssasination.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillBlocking.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillBurnout.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillComboCharge.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillCounterAnalysis.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillCounterAttack.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillCriticalBalance.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillCursedSign.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillDarkDemon.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillDarkVortex.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillDeathBlossom.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillDeathSign.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillDelayedDeath.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillDestruction.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillDevouring.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillDoubleStrike.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillEarthDestruction.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillElectrification.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillEvasion.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillEvolution.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillFaceOfDeath.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillFasterThanLight.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillFinnishingBlow.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillFireClaw.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillGehena.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillHarvesting.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillIronDefence.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillLethalTempo.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillLifeDrain.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillLightningChain.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillOvercharge.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillPerfectWarrior.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillPiercingLight.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillPiercingStrike.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillRearm.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillRegeneration.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillReleasedStream.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillRicochet.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillShinigCloak.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillStoneSkin.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillSynchronisation.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillTacticalPreparation.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillTacticalRecharge.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillTacticalRetreat.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillTacticalSwap.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillThunderstorm.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillTornado.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillTripleCut.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillTsunami.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillWaterPrison.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillWideSwing.cs" />
+    <Compile Include="Assets\Code\Skills\Factories\CreatorSkillWindBlade.cs" />
+    <Compile Include="Assets\Code\Skills\ISkillFactory.cs" />
     <Compile Include="Assets\Code\Skills\SkillFactory.cs" />
     <Compile Include="Assets\Code\Skills\SkillTargets.cs" />
     <Compile Include="Assets\Code\Skills\Tactics\SkillAllIn.cs" />
@@ -1168,9 +1224,7 @@
       <HintPath>F:/Unity 2019/2019.3.0a8/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Assets\Code\Skills\Factories\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
