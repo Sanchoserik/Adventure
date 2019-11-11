@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assets.Code.UIScripts.BattleArenaScene
 {
-    class BASystemController
+    public class BASystemController
     {
     }
 }
