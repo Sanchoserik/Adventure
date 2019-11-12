@@ -195,6 +195,224 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 157620441}
   m_CullTransparentMesh: 0
+--- !u!1 &248994240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 248994241}
+  - component: {fileID: 248994242}
+  m_Layer: 0
+  m_Name: BAController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &248994241
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248994240}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1934219661}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &248994242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248994240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d06fdc4a7bd931b478cf4b226f1f189e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battlefieldTilemap: {fileID: 1370395232}
+  enemySpritePrefab: {fileID: 4213911986972975436, guid: d027df464ca1ce44c8fef0c7f4ecf002,
+    type: 3}
+  mainHero:
+    baseHP: 200
+    baseMaxHP: 0
+    bonusHPValue: 0
+    bonusHPPercent: 0
+    totalMaxHP: 0
+    currentHP: 200
+    baseENE: 100
+    baseMaxENE: 0
+    bonusENEValue: 0
+    bonusENEPercent: 0
+    totalMaxENE: 0
+    currentENE: 100
+    physDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    fireDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    airDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    lightningDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    earthDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    waterDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    lifeDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    deathDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    lightDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    darknessDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    bonusPhysDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    bonusFireDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    bonusAirDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    bonusLightningDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    bonusEarthDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    bonusWaterDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    bonusLifeDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    bonusDeathDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    bonusLightDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    bonusDarknessDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    totalPhysDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    totalFireDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    totalAirDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    totalLightningDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    totalEarthDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    totalWaterDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    totalLifeDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    totalDeathDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    totalLightDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    totalDarknessDef:
+      strValue: n
+      intValue: 0
+      shortValue: 0
+    baseStrength: 0
+    baseEndurance: 0
+    baseKnowledge: 0
+    baseCharisma: 0
+    bonusStrength: 0
+    bonusEndurance: 0
+    bonusKnowledge: 0
+    bonusCharisma: 0
+    bonusStrengthPercent: 0
+    bonusEndurancePercent: 0
+    bonusKnowledgePercent: 0
+    bonusCharismaPercent: 0
+    totalStrength: 0
+    totalEndurance: 0
+    totalKnowledge: 0
+    totalCharisma: 0
+    basePhysAtk: 25
+    bonusPhysAtk: 0
+    bonusPhysAtkPercent: 0
+    totalPhysAtk: 0
+    bonusMagAtkValue: 0
+    bonusMagAtkPercent: 0
+    bonusTalismanPower: 0
+    bonusTalismanPowerPercent: 0
+    baseCritChance: 1
+    bonusCritChance: 0
+    totalCritChance: 0
+    critDamageMod: 2
+    bonusCritDamagePercent: 0
+    baseAP: 4
+    bonusAP: 0
+    totalAP: 0
+    currentAP: 0
+    money: 0
+    freeSkillPoints: 1
+    freeAttributePoints: 4
+    level: 0
+    currExp: 0
+    nextLevelExp: 100
 --- !u!1 &343688678
 GameObject:
   m_ObjectHideFlags: 0
@@ -1114,8 +1332,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1431572845
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.16000003, y: 0, z: 0}
@@ -1316,8 +1534,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 4, y: -6, z: 0}
     second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -1415,8 +1633,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 4, y: -5, z: 0}
     second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -1514,8 +1732,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 4, y: -4, z: 0}
     second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -1613,8 +1831,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 4, y: -3, z: 0}
     second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -1712,8 +1930,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 4, y: -2, z: 0}
     second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -1811,8 +2029,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 4, y: -1, z: 0}
     second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -1910,8 +2128,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 4, y: 0, z: 0}
     second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -2009,8 +2227,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 4, y: 1, z: 0}
     second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -2108,8 +2326,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 4, y: 2, z: 0}
     second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -2207,8 +2425,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 4, y: 3, z: 0}
     second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -2306,8 +2524,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 4, y: 4, z: 0}
     second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -2405,8 +2623,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 4, y: 5, z: 0}
     second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -2504,8 +2722,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 4, y: 6, z: 0}
     second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -2522,14 +2740,14 @@ Tilemap:
       m_ColliderType: 1
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 104
+  - m_RefCount: 117
     m_Data: {fileID: 11400000, guid: 1373ef9560952e2459676edd1c374e1d, type: 2}
-  - m_RefCount: 50
+  - m_RefCount: 37
     m_Data: {fileID: 11400000, guid: 8be98454503633441a85a5d9c95002f8, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 104
+  - m_RefCount: 117
     m_Data: {fileID: 21300000, guid: e467d30bb4d4f1c478c991d3d3b8cb05, type: 3}
-  - m_RefCount: 50
+  - m_RefCount: 37
     m_Data: {fileID: 21300000, guid: 250458e5b7688c240811ba74226aa96f, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 154
@@ -2651,3 +2869,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1861295026}
   m_CullTransparentMesh: 0
+--- !u!1 &1934219660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1934219661}
+  m_Layer: 0
+  m_Name: Controllers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1934219661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934219660}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.22462992, y: 0.47336656, z: -14.373913}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 248994241}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
