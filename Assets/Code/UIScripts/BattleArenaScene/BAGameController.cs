@@ -1,4 +1,5 @@
 ﻿using Assets.Code.BattleArena;
+using Assets.Code.Monsters;
 using Assets.PlayerController;
 using System;
 using System.Collections.Generic;
@@ -15,27 +16,25 @@ namespace Assets.Code.UIScripts.BattleArenaScene
         public Tilemap battlefieldTilemap;
 
         public GameObject enemySpritePrefab;
-        
+
+        public GameObject[] arenaPrefabs;
+
         public C_Hero mainHero;
         public Battlefield arenaField;
+        public PackController monsterPackControler;
 
         public void Start()
-        {
-            Grid grid = battlefieldTilemap.layoutGrid;
-
-            TileBase tile = battlefieldTilemap.GetTile(new Vector3Int(3,3,1));
-
-            BoundsInt mbounds = battlefieldTilemap.cellBounds;
-
-            Instantiate(enemySpritePrefab, new Vector3(0, 0, 1),new Quaternion(), battlefieldTilemap.transform);
-            Instantiate(enemySpritePrefab, new Vector3(1, 0, 1), new Quaternion(), battlefieldTilemap.transform);
-            Instantiate(enemySpritePrefab, new Vector3(1, 1, 1), new Quaternion(), battlefieldTilemap.transform);
-            Instantiate(enemySpritePrefab, new Vector3(-2, 2, 1), new Quaternion(), battlefieldTilemap.transform);
-            Instantiate(enemySpritePrefab, new Vector3(3, 0, 1), new Quaternion(), battlefieldTilemap.transform);
-            Instantiate(enemySpritePrefab, new Vector3(0, 3, 1), new Quaternion(), battlefieldTilemap.transform);
-
-            int xx = 20;
+        {         
+         
         }
-
+ 
+        public void Update()
+        {       
+                Vector3 point = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Vector3Int tileCor = battlefieldTilemap.WorldToCell(point);
+                battlefieldTilemap.SetTileFlags(tileCor, TileFlags.None);
+                battlefieldTilemap.SetColor(tileCor, Color.black);
+                Debug.Log("Done"+ tileCor);
+        }
     }
 }
