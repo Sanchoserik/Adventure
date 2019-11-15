@@ -2,6 +2,7 @@
 <monsters>
 <monster name = "nativeAir">
 <el name = "mName">nativeAir</el>
+<el name = "mType">Fighter</el>
 <el name = "mPrice">10</el >
 <el name = "mRank">1</el>
 <el name = "mHP">75</el>
@@ -18,6 +19,7 @@
 </monster>
 <monster name = "nativeLightning">
 <el name = "mName">nativeLightning</el>
+<el name = "mType">Fighter</el>
 <el name = "mPrice">10</el >
 <el name = "mRank">1</el>
 <el name = "mHP">75</el>
@@ -34,6 +36,7 @@
 </monster>
 <monster name = "nativeEarth">
 <el name = "mName">nativeEarth</el>
+<el name = "mType">Fighter</el>
 <el name = "mPrice">10</el >
 <el name = "mRank">1</el>
 <el name = "mHP">75</el>
@@ -50,6 +53,7 @@
 </monster>
 <monster name = "nativeWater">
 <el name = "mName">nativeWater</el>
+<el name = "mType">Fighter</el>
 <el name = "mPrice">10</el >
 <el name = "mRank">1</el>
 <el name = "mHP">75</el>
@@ -66,6 +70,7 @@
 </monster>
 <monster name = "nativeFire">
 <el name = "mName">nativeFire</el>
+<el name = "mType">Fighter</el>
 <el name = "mPrice">10</el >
 <el name = "mRank">1</el>
 <el name = "mHP">75</el>
@@ -82,6 +87,7 @@
 </monster>
 <monster name = "nativePhys">
 <el name = "mName">nativePhys</el>
+<el name = "mType">Fighter</el>
 <el name = "mPrice">14</el >
 <el name = "mRank">1</el>
 <el name = "mHP">100</el>
@@ -98,6 +104,7 @@
 </monster>
 <monster name = "nativeLife">
 <el name = "mName">nativeLife</el>
+<el name = "mType">Caster</el>
 <el name = "mPrice">16</el >
 <el name = "mRank">1</el>
 <el name = "mHP">125</el>
@@ -115,6 +122,7 @@
 </monster>
 <monster name = "nativeDeath">
 <el name = "mName">nativeDeath</el>
+<el name = "mType">Caster</el>
 <el name = "mPrice">16</el >
 <el name = "mRank">1</el>
 <el name = "mHP">95</el>
@@ -132,6 +140,7 @@
 </monster>
 <monster name = "nativeLight">
 <el name = "mName">nativeLight</el>
+<el name = "mType">Caster</el>
 <el name = "mPrice">16</el >
 <el name = "mRank">1</el>
 <el name = "mHP">100</el>
@@ -150,6 +159,7 @@
 </monster>
 <monster name = "nativeDarkness">
 <el name = "mName">nativeDarkness</el>
+<el name = "mType">Caster</el>
 <el name = "mPrice">16</el >
 <el name = "mRank">1</el>
 <el name = "mHP">90</el>
