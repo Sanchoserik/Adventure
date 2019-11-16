@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <monsters>
-<monster name = "nativeAir">
-<el name = "mName">nativeAir</el>
+<monster name = "NativeAirR1">
+<el name = "mName">NativeAir</el>
 <el name = "mType">Fighter</el>
 <el name = "mPrice">10</el >
 <el name = "mRank">1</el>
@@ -17,8 +17,8 @@
  <act name = "smallAirAttack">airAttack</act>
  </el>
 </monster>
-<monster name = "nativeLightning">
-<el name = "mName">nativeLightning</el>
+<monster name = "NativeLightningR1">
+<el name = "mName">NativeLightning</el>
 <el name = "mType">Fighter</el>
 <el name = "mPrice">10</el >
 <el name = "mRank">1</el>
@@ -34,8 +34,8 @@
  <act name = "smallLightningAttack">lightningAttack</act>
  </el>
 </monster>
-<monster name = "nativeEarth">
-<el name = "mName">nativeEarth</el>
+<monster name = "NativeEarthR1">
+<el name = "mName">NativeEarth</el>
 <el name = "mType">Fighter</el>
 <el name = "mPrice">10</el >
 <el name = "mRank">1</el>
@@ -51,8 +51,8 @@
  <act name = "smallEarthAttack">earthAttack</act>
  </el>
 </monster>
-<monster name = "nativeWater">
-<el name = "mName">nativeWater</el>
+<monster name = "NativeWaterR1">
+<el name = "mName">NativeWater</el>
 <el name = "mType">Fighter</el>
 <el name = "mPrice">10</el >
 <el name = "mRank">1</el>
@@ -68,8 +68,8 @@
  <act name = "smallWaterAttack">waterAttack</act>
  </el>
 </monster>
-<monster name = "nativeFire">
-<el name = "mName">nativeFire</el>
+<monster name = "NativeFireR1">
+<el name = "mName">NativeFire</el>
 <el name = "mType">Fighter</el>
 <el name = "mPrice">10</el >
 <el name = "mRank">1</el>
@@ -85,8 +85,8 @@
  <act name = "smallFireAttack">fireAttack</act>
  </el>
 </monster>
-<monster name = "nativePhys">
-<el name = "mName">nativePhys</el>
+<monster name = "NativePhysR1">
+<el name = "mName">NativePhys</el>
 <el name = "mType">Fighter</el>
 <el name = "mPrice">14</el >
 <el name = "mRank">1</el>
@@ -102,8 +102,8 @@
  <act name = "smallPhyscharge">physcharge</act>
  </el>
 </monster>
-<monster name = "nativeLife">
-<el name = "mName">nativeLife</el>
+<monster name = "NativeLifeR1">
+<el name = "mName">NativeLife</el>
 <el name = "mType">Caster</el>
 <el name = "mPrice">16</el >
 <el name = "mRank">1</el>
@@ -120,8 +120,8 @@
  <act name = "smallHealing">smallHealing</act>
  </el>
 </monster>
-<monster name = "nativeDeath">
-<el name = "mName">nativeDeath</el>
+<monster name = "NativeDeathR1">
+<el name = "mName">NativeDeath</el>
 <el name = "mType">Caster</el>
 <el name = "mPrice">16</el >
 <el name = "mRank">1</el>
@@ -138,8 +138,8 @@
  <act name = "smallDeathPoisonCurse">smallDeathPoisonCurse</act>
  </el>
 </monster>
-<monster name = "nativeLight">
-<el name = "mName">nativeLight</el>
+<monster name = "NativeLightR1">
+<el name = "mName">NativeLight</el>
 <el name = "mType">Caster</el>
 <el name = "mPrice">16</el >
 <el name = "mRank">1</el>
@@ -157,8 +157,8 @@
  <act name = "smallLightDefBless">smallLightDefBless</act>
  </el>
 </monster>
-<monster name = "nativeDarkness">
-<el name = "mName">nativeDarkness</el>
+<monster name = "NativeDarknessR1">
+<el name = "mName">NativeDarkness</el>
 <el name = "mType">Caster</el>
 <el name = "mPrice">16</el >
 <el name = "mRank">1</el>

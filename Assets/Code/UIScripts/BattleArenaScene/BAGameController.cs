@@ -24,17 +24,18 @@ namespace Assets.Code.UIScripts.BattleArenaScene
         public PackController monsterPackControler;
 
         public void Start()
-        {         
-         
+        {
+            PackGenerator packGen = new PackGenerator();
+            packGen.generatePack(100, PackGenerator.PackTypes.Fighters, 1, 0,0);
         }
  
         public void Update()
         {       
-                Vector3 point = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                Vector3Int tileCor = battlefieldTilemap.WorldToCell(point);
-                battlefieldTilemap.SetTileFlags(tileCor, TileFlags.None);
-                battlefieldTilemap.SetColor(tileCor, Color.black);
-                Debug.Log("Done"+ tileCor);
+                //Vector3 point = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                //Vector3Int tileCor = battlefieldTilemap.WorldToCell(point);
+                //battlefieldTilemap.SetTileFlags(tileCor, TileFlags.None);
+                //battlefieldTilemap.SetColor(tileCor, Color.black);
+                //Debug.Log("Done"+ tileCor);
         }
     }
 }

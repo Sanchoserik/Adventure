@@ -24,8 +24,11 @@ namespace Assets.Code.Monsters
         private readonly Dictionary<MonstersList, IMonsterFactory> mFactories;      
         private readonly List<MonstersData> monstersDataList = ResourcesManager.monstersData;
 
+        public List<A_Monster> generatedPack;
+
         public PackGenerator()
         {
+            generatedPack = new List<A_Monster>();
             mFactories = new Dictionary<MonstersList, IMonsterFactory>();
 
             foreach (MonstersList monst in Enum.GetValues(typeof(MonstersList)))
@@ -70,13 +73,15 @@ namespace Assets.Code.Monsters
 
                 if (packCost >= mPrice)
                 {
-                    
+                    MonstersList s1 = (MonstersList)Enum.Parse(typeof(MonstersList), selectedMTypes[randIndex].monsterName);
+
                     generatedMosters.Add(mFactories[(MonstersList)Enum.Parse(typeof(MonstersList), 
                         selectedMTypes[randIndex].monsterName)].createMonster(selectedMTypes[randIndex])); 
                     packCost -= mPrice;
                 }
+                
             }
-
+            generatedPack = generatedMosters;
         }
 
         private List<MonstersData> selectMTypes(int maxRank, PackTypes packType)
