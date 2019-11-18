@@ -27,4 +27,45 @@
 Лвл 1 - 100
 Лвл 2 - ЛВЛ1Досвід * 20% - 120
 
-Предмети
+
+Генерація Паків
+Монстри в паках генеруються за рахунок значення ціни яка дається на їх генерацію
+Співвідношення ціни на кожен рівень і тип монстрів визначається типом паках
+
+Типи паків 
+            Low level
+            Fighters, Casters,
+            FightersSupCasters - 80% Rank1 Fighters 20% Rank1 Casters
+			CastersSupFighters - 80% Rank1 Casters 20% Rank1 Fighters
+			Balanced - 50% Rank1 Casters 50% Rank1 Fighters
+            //low middle level
+            FightersSupAdcancedFighters - 80% Rank1 Fighters 20% Rank2 Fighters
+			FightersSupAdvancedCasters - 80% Rank1 Fighters 20% Rank2 Casters
+            CastersSupAdvancedCasters - 80% Rank1 Casters 20% Rank2 Casters
+			CastersSupAdvancedFighters - 80% Rank1 Casters 20% Rank2 Fighters
+            MoreLowLessAdvancedBalanced - 35% Rank1 Fighters 35% Rank1 Casters 15% Rank2 Fighters 15% Rank2 Casters
+            //middle level
+            AdvancedFighters, AdvancedCasters,
+            AdvancedFightersSupCasters - 80% Rank2 Fighters 20% Rank2 Casters
+			AdvancedCastersSupFighters - 80% Rank2 Casters 20% Rank2 Fighters
+			AdvancedBalanced - 50% Rank2 Casters 50% Rank2 Fighters
+            AdvancedFightersSupLowCasters - 80% Rank2 Fighters 20% Rank1 Casters
+			AdvancedCastersSupLowFighters - 80% Rank2 Casters 20% Rank1 Fighters
+			MoreAdvancedLessLowBalanced - 35% Rank2 Fighters 35% Rank2 Casters 15% Rank1 Fighters 15% Rank1 Casters
+            AdvancedFightersSupLowFighters - 80% Rank2 Fighters 20% Rank1 Fighters
+			AdvancedCastersSupLowCasters - 80% Rank2 Casters 20% Rank1 Casters
+            //high middle level
+            AdvancedFightersSupEliteFighters - 80% Rank2 Fighters 20% Rank3 Fighters
+			AdvancedFightersSupEliteCasters - 80% Rank2 Fighters 20% Rank3 Casters
+            AdvancedCastersSupEliteCasters - 80% Rank2 Casters 20% Rank3 Casters 
+			AdvancedCastersSupEliteFighters - 80% Rank2 Casters 20% Rank3 Fighters
+            MoreAdvancedLessEliteBalanced - 35% Rank2 Fighters 35% Rank2 Casters 15% Rank3 Fighters 15% Rank3 Casters 
+            // high level
+            EliteFighters, EliteCasters,           
+			EliteBalanced - 50% Rank3 Casters 50% Rank3 Fighters
+            EliteFightersSupAdvancedCasters - 80% Rank3 Fighters 20% Rank2 Casters 
+			EliteCastersSupAdvancedFighters - 80% Rank3 Casters 20% Rank2 Fighters
+			MoreEliteLessAdvancedBalanced - 35% Rank3 Fighters 35% Rank3 Casters 15% Rank2 Fighters 15% Rank2 Casters 
+            EliteFightersSupAdvancedFighters -  80% Rank3 Fighters 20% Rank2 Fighters
+			EliteCastersSupAdvancedCasters - 80% Rank3 Casters 20% Rank3 Casters
+

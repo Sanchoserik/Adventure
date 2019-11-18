@@ -18,7 +18,30 @@ namespace Assets.Code.Monsters
 
         public enum PackTypes
         { 
-           Fighters, Casters, Balanced, Boss  
+            //Low level
+            Fighters, Casters,
+            FightersSupCasters, CastersSupFighters, Balanced,
+            //low middle level
+            FightersSupAdcancedFighters, FightersSupAdvancedCasters,
+            CastersSupAdvancedCasters, CastersSupAdvancedFighters,
+            MoreLowLessAdvancedBalanced,
+            //middle level
+            AdvancedFighters, AdvancedCasters,
+            AdvancedFightersSupCasters, AdvancedCastersSupFighters, AdvancedBalanced, 
+            AdvancedFightersSupLowCasters, AdvancedCastersSupLowFighters, MoreAdvancedLessLowBalanced,
+            AdvancedFightersSupLowFighters, AdvancedCastersSupLowCasters,
+            //high middle level
+            AdvancedFightersSupEliteFighters, AdvancedFightersSupEliteCasters,
+            AdvancedCastersSupEliteCasters, AdvancedCastersSupEliteFighters,
+            MoreAdvancedLessEliteBalanced,
+            // high level
+            EliteFighters, EliteCasters,
+            EliteBalanced,
+            EliteFightersSupAdvancedCasters, EliteCastersSupAdvancedFighters, MoreEliteLessAdvancedBalanced,
+            EliteFightersSupAdvancedFighters, EliteCastersSupAdvancedCasters,
+
+            Boss
+                // For bosses: later there will be concrette pregenerated packs  
         }
 
         private readonly Dictionary<MonstersList, IMonsterFactory> mFactories;      
@@ -43,17 +66,12 @@ namespace Assets.Code.Monsters
             int battlefieldSizeX, int battlefieldSizeY 
             )
         {
-            switch (packType.ToString())
-            {
-                case "Fighters": {
-                        List<MonstersData> selectedMTypes = selectMTypes(maxRank, packType);
-                        generateFightersPack(packCost, battlefieldSizeX, battlefieldSizeY, selectedMTypes);
-                        break;
-                    }
-            }
+            List<MonstersData> selectedMTypes = selectMTypes(maxRank, packType);                     
+            generatePack(packCost, battlefieldSizeX, battlefieldSizeY, selectedMTypes);
+
         }
 
-        private void generateFightersPack(int packCost, int battlefieldSizeX, int battlefieldSizeY, List<MonstersData> selectedMTypes)
+        private void generatePack(int packCost, int battlefieldSizeX, int battlefieldSizeY, List<MonstersData> selectedMTypes)
         {
             Random random = new Random();
             
@@ -90,10 +108,27 @@ namespace Assets.Code.Monsters
 
             foreach (MonstersData data in monstersDataList)
             {
-                if (Convert.ToInt32(data.monsterParameters["mRank"]) <= maxRank &&
-                    data.monsterParameters["mType"].Equals("Fighter"))
+                if (packType == PackTypes.Fighters || packType == PackTypes.Casters)
                 {
-                    mData.Add(data);
+                    if (Convert.ToInt32(data.monsterParameters["mRank"]) <= maxRank &&
+                        data.monsterParameters["mType"].Equals(packType.ToString()))
+                    {
+                        mData.Add(data);
+                    }
+                }
+                else
+                    if (packType == PackTypes.Balanced)
+                {
+                    if (Convert.ToInt32(data.monsterParameters["mRank"]) <= maxRank &&
+                        data.monsterParameters["mType"].Equals(packType.ToString()))
+                    {
+                        mData.Add(data);
+                    }
+                }
+                else
+                    if (packType == PackTypes.Boss)
+                { 
+                
                 }
             }
 
