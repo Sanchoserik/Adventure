@@ -61,80 +61,101 @@ namespace Assets.Code.Monsters
             }
         }
            
-        public void generatePack(int packCost,
-            PackTypes packType,  int maxRank, 
-            int battlefieldSizeX, int battlefieldSizeY 
+        public void getPack(int packCost,
+            PackTypes packType, int battlefieldSizeX, int battlefieldSizeY 
             )
         {
-            List<MonstersData> selectedMTypes = selectMTypes(maxRank, packType);                     
-            generatePack(packCost, battlefieldSizeX, battlefieldSizeY, selectedMTypes);
-
-        }
-
-        private void generatePack(int packCost, int battlefieldSizeX, int battlefieldSizeY, List<MonstersData> selectedMTypes)
-        {
-            Random random = new Random();
+            List<MonstersData> selectedMTypes = selectMTypes(packType);          
             
-            List<A_Monster> generatedMosters = new List<A_Monster>();
-
-            int minumumCost = Convert.ToInt32(selectedMTypes[0].monsterParameters["mPrice"]);
+            int minimumCost = Convert.ToInt32(selectedMTypes[0].monsterParameters["mPrice"]);
+            
             foreach (MonstersData data in selectedMTypes)
             {
-                if (minumumCost > Convert.ToInt32(data.monsterParameters["mPrice"]))
-                    minumumCost = Convert.ToInt32(data.monsterParameters["mPrice"]);
+                if (minimumCost > Convert.ToInt32(data.monsterParameters["mPrice"]))
+                    minimumCost = Convert.ToInt32(data.monsterParameters["mPrice"]);
+            }
+             
+            generatedPack = generatePack(packCost, minimumCost, selectedMTypes, packType);
+        }
+
+        private List<MonstersData> selectMTypes(PackTypes packType)
+        {
+            List<MonstersData> mData = new List<MonstersData>();
+
+            if (packType == PackTypes.Fighters || packType == PackTypes.Casters)
+            {
+                foreach (MonstersData data in monstersDataList)
+                {
+                    if (data.monsterParameters["mType"].Equals(packType.ToString()))
+                    {
+                        mData.Add(data);
+                    }
+                }
+            }
+            else            
+            if (packType == PackTypes.Balanced || packType == PackTypes.CastersSupFighters
+                || packType == PackTypes.FightersSupCasters)
+            {
+                foreach (MonstersData data in monstersDataList)
+                    mData.Add(data);
+            }
+            else
+            if (packType == PackTypes.Boss)
+            {
+
             }
 
-            while (packCost >= minumumCost)
+            //remove wrong ranks 
+            checkMranks(mData, packType);
+
+            return mData;
+        }
+
+        private void checkMranks(List<MonstersData> mData, PackTypes packType)
+        {
+            switch (packType)
+            {
+                case PackTypes.Fighters: { removeRanks(new int[] { 2, 3 }, mData); break; }
+                case PackTypes.Casters: { removeRanks(new int[] { 2, 3 }, mData); break; }
+                case PackTypes.Balanced: { removeRanks(new int[] { 2, 3 }, mData); break; }
+                case PackTypes.FightersSupCasters: { removeRanks(new int[] { 2, 3 }, mData); break; }
+                case PackTypes.CastersSupFighters: { removeRanks(new int[] { 2, 3 }, mData); break; }
+            }
+        }
+
+        private void removeRanks(int[] ranks, List<MonstersData> mData)
+        {
+                foreach (int notAllowedRank in ranks)
+                {
+                 mData.RemoveAll(data => Convert.ToInt32(data.monsterParameters["mRank"]) == notAllowedRank);
+                }           
+        }
+
+        private List<A_Monster> generatePack(int packCost, int minimumCost, List<MonstersData> selectedMTypes, PackTypes packType)
+        {
+            List<A_Monster> generatedMonsters = new List<A_Monster>();
+            Random random = new Random();
+
+            int castersPrice;
+            int fightersPrice;
+
+
+
+            while (packCost >= minimumCost)
             {
                 int randIndex = random.Next(0, selectedMTypes.Count - 1);
                 int mPrice = Convert.ToInt32(selectedMTypes[randIndex].monsterParameters["mPrice"]);
 
                 if (packCost >= mPrice)
-                {
-                    MonstersList s1 = (MonstersList)Enum.Parse(typeof(MonstersList), selectedMTypes[randIndex].monsterName);
-
-                    generatedMosters.Add(mFactories[(MonstersList)Enum.Parse(typeof(MonstersList), 
-                        selectedMTypes[randIndex].monsterName)].createMonster(selectedMTypes[randIndex])); 
+                {                  
+                    generatedMonsters.Add(mFactories[(MonstersList)Enum.Parse(typeof(MonstersList),
+                        selectedMTypes[randIndex].monsterName)].createMonster(selectedMTypes[randIndex]));
                     packCost -= mPrice;
                 }
-                
+
             }
-            generatedPack = generatedMosters;
-        }
-
-        private List<MonstersData> selectMTypes(int maxRank, PackTypes packType)
-        {
-            List<MonstersData> mData = new List<MonstersData>();
-
-            foreach (MonstersData data in monstersDataList)
-            {
-                if (packType == PackTypes.Fighters || packType == PackTypes.Casters)
-                {
-                    if (Convert.ToInt32(data.monsterParameters["mRank"]) <= maxRank &&
-                        data.monsterParameters["mType"].Equals(packType.ToString()))
-                    {
-                        mData.Add(data);
-                    }
-                }
-                else
-                    if (packType == PackTypes.Balanced)
-                {
-                    if (Convert.ToInt32(data.monsterParameters["mRank"]) <= maxRank &&
-                        data.monsterParameters["mType"].Equals(packType.ToString()))
-                    {
-                        mData.Add(data);
-                    }
-                }
-                else
-                    if (packType == PackTypes.Boss)
-                { 
-                
-                }
-            }
-
-            return mData;
-        }
-
+            return generatedMonsters;
+        }  
 
         private A_Monster addMonster(MonstersList monster, MonstersData mData) => mFactories[monster].createMonster(mData);
 
