@@ -10,6 +10,27 @@ namespace Assets.Code.Monsters
 {
     public class PackGenerator
     {
+        private struct diversityValues
+        {
+            public int fightersR1;
+            public int fightersR2;
+            public int fightersR3;
+
+            public int castersR1;
+            public int castersR2;
+            public int castersR3;
+
+            public diversityValues(int f1, int f2, int f3, int c1, int c2, int c3)
+            {
+                fightersR1 = f1;
+                fightersR2 = f2;
+                fightersR3 = f3;
+
+                castersR1 = c1;
+                castersR2 = c2;
+                castersR3 = c3;
+            }
+        }
         private enum MonstersList
         {
             NativeAirR1, NativeDarknessR1, NativeDeathR1, NativeEarthR1, NativeFireR1, 
@@ -65,27 +86,19 @@ namespace Assets.Code.Monsters
             PackTypes packType, int battlefieldSizeX, int battlefieldSizeY 
             )
         {
-            List<MonstersData> selectedMTypes = selectMTypes(packType);          
-            
-            int minimumCost = Convert.ToInt32(selectedMTypes[0].monsterParameters["mPrice"]);
-            
-            foreach (MonstersData data in selectedMTypes)
-            {
-                if (minimumCost > Convert.ToInt32(data.monsterParameters["mPrice"]))
-                    minimumCost = Convert.ToInt32(data.monsterParameters["mPrice"]);
-            }
-             
-            generatedPack = generatePack(packCost, minimumCost, selectedMTypes, packType);
+            List<MonstersData> selectedMTypes = selectMTypes(packType);                          
+            generatedPack = generatePack(packCost, selectedMTypes, packType);         
         }
 
         private List<MonstersData> selectMTypes(PackTypes packType)
         {
             List<MonstersData> mData = new List<MonstersData>();
-
+         
             if (packType == PackTypes.Fighters || packType == PackTypes.Casters)
             {
                 foreach (MonstersData data in monstersDataList)
                 {
+
                     if (data.monsterParameters["mType"].Equals(packType.ToString()))
                     {
                         mData.Add(data);
@@ -131,32 +144,121 @@ namespace Assets.Code.Monsters
                 }           
         }
 
-        private List<A_Monster> generatePack(int packCost, int minimumCost, List<MonstersData> selectedMTypes, PackTypes packType)
+        private List<A_Monster> generatePack(int packCost, List<MonstersData> selectedMTypes, PackTypes packType)
         {
-            List<A_Monster> generatedMonsters = new List<A_Monster>();
-            Random random = new Random();
+            List<A_Monster> generatedMonsters = new List<A_Monster>();           
+            diversityValues divValues = getDiversityValues(packType);
 
-            int castersPrice;
-            int fightersPrice;
+            diversityValues actualCostValues = new diversityValues(
+                getSubPackCost(packCost, divValues.fightersR1), getSubPackCost(packCost, divValues.fightersR2), getSubPackCost(packCost, divValues.fightersR3),
+                getSubPackCost(packCost, divValues.castersR1), getSubPackCost(packCost, divValues.castersR2), getSubPackCost(packCost, divValues.castersR3));
 
+            int[] costValuesArray = new int[6] {
+                actualCostValues.fightersR1, actualCostValues.fightersR2, actualCostValues.fightersR3,
+                actualCostValues.castersR1, actualCostValues.castersR2, actualCostValues.castersR3
+            };
 
-
-            while (packCost >= minimumCost)
+            for (int i = 0; i < costValuesArray.Length; ++i)
             {
-                int randIndex = random.Next(0, selectedMTypes.Count - 1);
-                int mPrice = Convert.ToInt32(selectedMTypes[randIndex].monsterParameters["mPrice"]);
-
-                if (packCost >= mPrice)
-                {                  
-                    generatedMonsters.Add(mFactories[(MonstersList)Enum.Parse(typeof(MonstersList),
-                        selectedMTypes[randIndex].monsterName)].createMonster(selectedMTypes[randIndex]));
-                    packCost -= mPrice;
-                }
+                if (costValuesArray[i] > 0)
+                    generateToCost(i, costValuesArray[i], selectedMTypes, generatedMonsters);
 
             }
             return generatedMonsters;
-        }  
+        }
 
+        private void generateToCost(int selectionIndex, int subPackCost, List<MonstersData> mData, List<A_Monster> generatedMonsters)
+        {
+            Random random = new Random();            
+            List<MonstersData> subMData = selectSubPackData(selectionIndex, mData);
+            int minimumCost = Convert.ToInt32(subMData[0].monsterParameters["mPrice"]);
+
+            foreach (MonstersData data in subMData)
+            {
+                if (minimumCost > Convert.ToInt32(data.monsterParameters["mPrice"]))
+                    minimumCost = Convert.ToInt32(data.monsterParameters["mPrice"]);
+            }
+
+            if (subPackCost >= minimumCost)
+            {
+                while (subPackCost >= minimumCost)
+                {
+                    int randIndex = random.Next(0, subMData.Count - 1);
+                    int mPrice = Convert.ToInt32(subMData[randIndex].monsterParameters["mPrice"]);
+                    if (subPackCost >= mPrice)
+                    {
+                        generatedMonsters.Add(mFactories[(MonstersList)Enum.Parse(typeof(MonstersList),
+                            subMData[randIndex].monsterName)].createMonster(subMData[randIndex]));
+                        subPackCost -= mPrice;
+                    }
+
+                }
+            }
+            else // if val < minimum price generate one random enemy
+            {
+                int randIndex = random.Next(0, subMData.Count - 1);
+                generatedMonsters.Add(mFactories[(MonstersList)Enum.Parse(typeof(MonstersList),
+                            subMData[randIndex].monsterName)].createMonster(subMData[randIndex]));
+            }
+        }
+
+        private List<MonstersData> selectSubPackData(int selectionIndex, List<MonstersData> mData)
+        {         
+            string rankToSelect = "";
+            string typeToSelect = "";
+            switch (selectionIndex)
+            {
+                case 0: {
+                        rankToSelect = "1";
+                        typeToSelect = "Fighters"; break;
+                    }
+                case 1:
+                    {
+                        rankToSelect = "2";
+                        typeToSelect = "Fighters"; break;
+                    }
+                case 2:
+                    {
+                        rankToSelect = "3";
+                        typeToSelect = "Fighters"; break;
+                    }
+                case 3:
+                    {
+                        rankToSelect = "1";
+                        typeToSelect = "Casters"; break;
+                    }
+                case 4:
+                    {
+                        rankToSelect = "2";
+                        typeToSelect = "Casters"; break;
+                    }
+                case 5:
+                    {
+                        rankToSelect = "3";
+                        typeToSelect = "Casters"; break;
+                    }                
+            }
+            return (from data in mData
+                    where data.monsterParameters["mRank"].Equals(rankToSelect)
+                    where data.monsterParameters["mType"].Equals(typeToSelect)
+                    select data).ToList();
+        }
+
+        private int getSubPackCost(int totalCost, int subPackPercent)
+            => totalCost * subPackPercent>0 ? totalCost * subPackPercent/ 100 : 0;
+   
+        private diversityValues getDiversityValues(PackTypes packType)
+        {
+            switch (packType)
+            {
+                case PackTypes.Fighters: { return new diversityValues(100, 0, 0, 0, 0, 0); }
+                case PackTypes.Casters: { return new diversityValues(0, 0, 0, 100, 0, 0); }
+                case PackTypes.Balanced: { return new diversityValues(50, 0, 0, 50, 0, 0); }
+                case PackTypes.FightersSupCasters: { return new diversityValues(80, 0, 0, 20, 0, 0); }
+                case PackTypes.CastersSupFighters: { return new diversityValues(20, 0, 0, 80, 0, 0); }
+                default: return new diversityValues(0, 0, 0, 0, 0, 0);
+            }          
+        }
         private A_Monster addMonster(MonstersList monster, MonstersData mData) => mFactories[monster].createMonster(mData);
 
     }

@@ -2,7 +2,7 @@
 <monsters>
 <monster name = "NativeAirR1">
 <el name = "mName">NativeAir</el>
-<el name = "mType">Fighter</el>
+<el name = "mType">Fighters</el>
 <el name = "mPrice">10</el >
 <el name = "mRank">1</el>
 <el name = "mHP">75</el>
@@ -19,7 +19,7 @@
 </monster>
 <monster name = "NativeLightningR1">
 <el name = "mName">NativeLightning</el>
-<el name = "mType">Fighter</el>
+<el name = "mType">Fighters</el>
 <el name = "mPrice">10</el >
 <el name = "mRank">1</el>
 <el name = "mHP">75</el>
@@ -36,7 +36,7 @@
 </monster>
 <monster name = "NativeEarthR1">
 <el name = "mName">NativeEarth</el>
-<el name = "mType">Fighter</el>
+<el name = "mType">Fighters</el>
 <el name = "mPrice">10</el >
 <el name = "mRank">1</el>
 <el name = "mHP">75</el>
@@ -53,7 +53,7 @@
 </monster>
 <monster name = "NativeWaterR1">
 <el name = "mName">NativeWater</el>
-<el name = "mType">Fighter</el>
+<el name = "mType">Fighters</el>
 <el name = "mPrice">10</el >
 <el name = "mRank">1</el>
 <el name = "mHP">75</el>
@@ -70,7 +70,7 @@
 </monster>
 <monster name = "NativeFireR1">
 <el name = "mName">NativeFire</el>
-<el name = "mType">Fighter</el>
+<el name = "mType">Fighters</el>
 <el name = "mPrice">10</el >
 <el name = "mRank">1</el>
 <el name = "mHP">75</el>
@@ -87,7 +87,7 @@
 </monster>
 <monster name = "NativePhysR1">
 <el name = "mName">NativePhys</el>
-<el name = "mType">Fighter</el>
+<el name = "mType">Fighters</el>
 <el name = "mPrice">14</el >
 <el name = "mRank">1</el>
 <el name = "mHP">100</el>
@@ -104,7 +104,7 @@
 </monster>
 <monster name = "NativeLifeR1">
 <el name = "mName">NativeLife</el>
-<el name = "mType">Caster</el>
+<el name = "mType">Casters</el>
 <el name = "mPrice">16</el >
 <el name = "mRank">1</el>
 <el name = "mHP">125</el>
@@ -122,7 +122,7 @@
 </monster>
 <monster name = "NativeDeathR1">
 <el name = "mName">NativeDeath</el>
-<el name = "mType">Caster</el>
+<el name = "mType">Casters</el>
 <el name = "mPrice">16</el >
 <el name = "mRank">1</el>
 <el name = "mHP">95</el>
@@ -140,7 +140,7 @@
 </monster>
 <monster name = "NativeLightR1">
 <el name = "mName">NativeLight</el>
-<el name = "mType">Caster</el>
+<el name = "mType">Casters</el>
 <el name = "mPrice">16</el >
 <el name = "mRank">1</el>
 <el name = "mHP">100</el>
@@ -159,7 +159,7 @@
 </monster>
 <monster name = "NativeDarknessR1">
 <el name = "mName">NativeDarkness</el>
-<el name = "mType">Caster</el>
+<el name = "mType">Casters</el>
 <el name = "mPrice">16</el >
 <el name = "mRank">1</el>
 <el name = "mHP">90</el>

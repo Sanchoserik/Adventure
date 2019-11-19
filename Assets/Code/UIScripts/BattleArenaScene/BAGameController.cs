@@ -26,7 +26,7 @@ namespace Assets.Code.UIScripts.BattleArenaScene
         public void Start()
         {
             PackGenerator packGen = new PackGenerator();
-            packGen.generatePack(100, PackGenerator.PackTypes.Fighters, 1, 0,0);
+            packGen.getPack(100, PackGenerator.PackTypes.Casters, 0,0);
         }
  
         public void Update()
