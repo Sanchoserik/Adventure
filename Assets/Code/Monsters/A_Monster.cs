@@ -11,7 +11,7 @@ namespace Assets.Code.Monsters
     public abstract class A_Monster
     {
         public string name;
-        public string rank; //minion -1  adept -2 elite -3 lord -4 prince -5
+        public string rank; 
 
         public int monsterPrice;
 
@@ -73,6 +73,9 @@ namespace Assets.Code.Monsters
         public int currentAP;
 
         public List<A_MonsterAction> actionList;
+
+        public int positionX;
+        public int positionY;
 
         public A_Monster(string mName, string mRank, int mPrice)
         {

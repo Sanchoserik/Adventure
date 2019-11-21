@@ -82,8 +82,7 @@ namespace Assets.Code.Monsters
             }
         }
            
-        public void getPack(int packCost,
-            PackTypes packType, int battlefieldSizeX, int battlefieldSizeY 
+        public void getPack(int packCost, PackTypes packType 
             )
         {
             List<MonstersData> selectedMTypes = selectMTypes(packType);                          

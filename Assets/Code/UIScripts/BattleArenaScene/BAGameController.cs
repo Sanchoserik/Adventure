@@ -26,7 +26,9 @@ namespace Assets.Code.UIScripts.BattleArenaScene
         public void Start()
         {
             PackGenerator packGen = new PackGenerator();
-            packGen.getPack(100, PackGenerator.PackTypes.Casters, 0,0);
+            packGen.getPack(100, PackGenerator.PackTypes.Casters);
+            arenaField = new Battlefield("testArena", "4x4", 4, 4); // test manual init
+            arenaField.setupMonstersOnBattlefield(packGen.generatedPack);
         }
  
         public void Update()
