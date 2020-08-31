@@ -40,30 +40,26 @@ namespace Assets.PlayerController
             {
                 case "str":
                     {
-                            hero.baseStrength--;
-                            hero.freeAttributePoints++;
+                            hero.baseStrength--;                       
                         break;
                     }
                 case "end":
                     {                   
-                            hero.baseEndurance--;
-                            hero.freeAttributePoints++;                 
+                            hero.baseEndurance--;                                     
                         break;
                     }
                 case "knd":
                     {
-                            hero.baseKnowledge--;
-                            hero.freeAttributePoints++;
-
+                            hero.baseKnowledge--;                        
                         break;
                     }
                 case "chr":
                     {
-                            hero.baseCharisma--;
-                            hero.freeAttributePoints++;
+                            hero.baseCharisma--;                           
                         break;
                     }
             }
+            hero.freeAttributePoints++;
             updateAttributes();
         }
 
