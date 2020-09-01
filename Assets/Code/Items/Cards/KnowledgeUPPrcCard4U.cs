@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assets.Code.Items.Cards
 {
-    class KnowledgeUPPrcCard4U
+    class KnowledgeUpPrcCard4U
     {
     }
 }

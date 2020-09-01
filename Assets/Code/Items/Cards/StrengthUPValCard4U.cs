@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assets.Code.Items.Cards
 {
-    class StrengthUPValCard4U
+    class StrengthUpValCard4U
     {
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assets.Code.Items.Cards
 {
-    class AirDefUPCard3G
+    class AirDefUpCard3G
     {
     }
 }

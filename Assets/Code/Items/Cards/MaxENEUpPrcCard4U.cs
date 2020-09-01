@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assets.Code.Items.Cards
 {
-    class MaxHPValCard3G
+    class MaxENEUpPrcCard4U
     {
     }
 }

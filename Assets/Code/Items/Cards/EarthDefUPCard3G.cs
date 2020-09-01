@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assets.Code.Items.Cards
 {
-    class EarthDefUPCard3G
+    class EarthDefUpCard3G
     {
     }
 }

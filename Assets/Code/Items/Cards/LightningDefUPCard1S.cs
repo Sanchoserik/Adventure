@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assets.Code.Items.Cards
 {
-    class LightningDefUPCard1S
+    class LightningDefUpCard1S
     {
     }
 }

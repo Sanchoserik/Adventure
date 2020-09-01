@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assets.Code.Items.Cards
 {
-    class CharismaUPPrcCard2M
+    class CharismaUpPrcCard2M
     {
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Assets.Code.Items.Cards
 {
-    class EnduranceUPPrcCard3G
+    class EnduranceUpPrcCard3G
     {
     }
 }
