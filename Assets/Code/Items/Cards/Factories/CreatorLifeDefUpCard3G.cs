@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assets.Code.Items.Cards
+namespace Assets.Code.Items.Cards.Factories
 {
-    class MaxENEValUpCard2M
+    class CreatorLifeDefUpCard3G
     {
     }
 }

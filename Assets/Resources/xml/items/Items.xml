@@ -552,4 +552,757 @@
 <val name = "sellPrice">3000</val>
 </item>
 
+<!--CARDS-->
+
+  <item name = "AirDefUpCard1S">
+    <val name = "val">1</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">8000</val>
+    <val name = "sellPrice">4000</val>
+  </item>
+  <item name = "AirDefUpCard2M">
+    <val name = "val">2</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">14000</val>
+    <val name = "sellPrice">7000</val>
+  </item>
+  <item name = "AirDefUpCard3G">
+    <val name = "val">3</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">22000</val>
+    <val name = "sellPrice">11000</val>
+  </item>
+  <item name = "AirDefUpCard4U">
+    <val name = "val">4</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">28000</val>
+    <val name = "sellPrice">14000</val>
+  </item>
+
+  <item name = "DarknessDefUpCard1S">
+    <val name = "val">1</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">8000</val>
+    <val name = "sellPrice">4000</val>
+  </item>
+  <item name = "DarknessDefUpCard2M">
+    <val name = "val">2</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">14000</val>
+    <val name = "sellPrice">7000</val>
+  </item>
+  <item name = "DarknessDefUpCard3G">
+    <val name = "val">3</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">22000</val>
+    <val name = "sellPrice">11000</val>
+  </item>
+  <item name = "DarknessDefUpCard4U">
+    <val name = "val">4</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">28000</val>
+    <val name = "sellPrice">14000</val>
+  </item>
+
+  <item name = "DeathDefUpCard1S">
+    <val name = "val">1</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">8000</val>
+    <val name = "sellPrice">4000</val>
+  </item>
+  <item name = "DeathDefUpCard2M">
+    <val name = "val">2</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">14000</val>
+    <val name = "sellPrice">7000</val>
+  </item>
+  <item name = "DeathDefUpCard3G">
+    <val name = "val">3</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">22000</val>
+    <val name = "sellPrice">11000</val>
+  </item>
+  <item name = "DeathDefUpCard4U">
+    <val name = "val">4</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">28000</val>
+    <val name = "sellPrice">14000</val>
+  </item>
+
+  <item name = "EarthDefUpCard1S">
+    <val name = "val">1</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">8000</val>
+    <val name = "sellPrice">4000</val>
+  </item>
+  <item name = "EarthDefUpCard2M">
+    <val name = "val">2</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">14000</val>
+    <val name = "sellPrice">7000</val>
+  </item>
+  <item name = "EarthDefUpCard3G">
+    <val name = "val">3</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">22000</val>
+    <val name = "sellPrice">11000</val>
+  </item>
+  <item name = "EarthDefUpCard4U">
+    <val name = "val">4</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">28000</val>
+    <val name = "sellPrice">14000</val>
+  </item>
+
+  <item name = "FireDefUpCard1S">
+    <val name = "val">1</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">8000</val>
+    <val name = "sellPrice">4000</val>
+  </item>
+  <item name = "FireDefUpCard2M">
+    <val name = "val">2</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">14000</val>
+    <val name = "sellPrice">7000</val>
+  </item>
+  <item name = "FireDefUpCard3G">
+    <val name = "val">3</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">22000</val>
+    <val name = "sellPrice">11000</val>
+  </item>
+  <item name = "FireDefUpCard4U">
+  <val name = "val"></val>
+    <val name = "val">4</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">28000</val>
+    <val name = "sellPrice">14000</val>
+  </item>
+
+  <item name = "LifeDefUpCard1S">
+    <val name = "val">1</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">8000</val>
+    <val name = "sellPrice">4000</val>
+  </item>
+  <item name = "LifeDefUpCard2M">
+    <val name = "val">2</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">14000</val>
+    <val name = "sellPrice">7000</val>
+  </item>
+  <item name = "LifeDefUpCard3G">
+    <val name = "val">3</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">22000</val>
+    <val name = "sellPrice">11000</val>
+  </item>
+  <item name = "LifeDefUpCard4U">
+    <val name = "val">4</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">28000</val>
+    <val name = "sellPrice">14000</val>
+  </item>
+
+  <item name = "LightDefUpCard1S">
+    <val name = "val">1</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">8000</val>
+    <val name = "sellPrice">4000</val>
+  </item>
+  <item name = "LightDefUpCard2M">
+    <val name = "val">2</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">14000</val>
+    <val name = "sellPrice">7000</val>
+  </item>
+  <item name = "LightDefUpCard3G">
+    <val name = "val">3</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">22000</val>
+    <val name = "sellPrice">11000</val>
+  </item>
+  <item name = "LightDefUpCard4U">
+    <val name = "val">4</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">28000</val>
+    <val name = "sellPrice">14000</val>
+  </item>
+
+  <item name = "LightningDefUpCard1S">
+    <val name = "val">1</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">8000</val>
+    <val name = "sellPrice">4000</val>
+  </item>
+  <item name = "LightningDefUpCard2M">
+    <val name = "val">2</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">14000</val>
+    <val name = "sellPrice">7000</val>
+  </item>
+  <item name = "LightningDefUpCard3G">
+    <val name = "val">3</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">22000</val>
+    <val name = "sellPrice">11000</val>
+  </item>
+  <item name = "LightningDefUpCard4U">
+    <val name = "val">4</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">28000</val>
+    <val name = "sellPrice">14000</val>
+  </item>
+
+  <item name = "WaterDefUpCard1S">
+    <val name = "val">1</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">8000</val>
+    <val name = "sellPrice">4000</val>
+  </item>
+  <item name = "WaterDefUpCard2M">
+    <val name = "val">2</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">14000</val>
+    <val name = "sellPrice">7000</val>
+  </item>
+  <item name = "WaterDefUpCard3G">
+    <val name = "val">3</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">22000</val>
+    <val name = "sellPrice">11000</val>
+  </item>
+  <item name = "WaterDefUpCard4U">
+    <val name = "val">4</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">28000</val>
+    <val name = "sellPrice">14000</val>
+  </item>
+
+  <item name = "PhysDefUpCard1S">
+    <val name = "val">1</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">8000</val>
+    <val name = "sellPrice">4000</val>
+  </item>
+  <item name = "PhysDefUpCard2M">
+    <val name = "val">2</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">14000</val>
+    <val name = "sellPrice">7000</val>
+  </item>
+  <item name = "PhysDefUpCard3G">
+    <val name = "val">3</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">22000</val>
+    <val name = "sellPrice">11000</val>
+  </item>
+  <item name = "PhysDefUpCard4U">
+    <val name = "val">4</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">28000</val>
+    <val name = "sellPrice">14000</val>
+  </item>
+
+  <item name = "APUpCard1S">
+    <val name = "val">1</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">10000</val>
+    <val name = "sellPrice">5000</val>
+  </item>
+  <item name = "APUpCard2M">
+    <val name = "val">2</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">22000</val>
+    <val name = "sellPrice">11000</val>
+  </item>
+  <item name = "APUpCard3G">
+    <val name = "val">3</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">35000</val>
+    <val name = "sellPrice">17500</val>
+  </item>
+  <item name = "APUpCard4U">
+    <val name = "val">4</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">50000</val>
+    <val name = "sellPrice">25000</val>
+  </item>
+
+  <item name = "MaxHPUpPrcCard1S">
+    <val name = "val">20</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">1500</val>
+    <val name = "sellPrice">750</val>
+  </item>
+  <item name = "MaxHPUpPrcCard2M">
+    <val name = "val">50</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">6000</val>
+    <val name = "sellPrice">3000</val>
+  </item>
+  <item name = "MaxHPUpPrcCard3G">
+    <val name = "val">80</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">12000</val>
+    <val name = "sellPrice">6000</val>
+  </item>
+  <item name = "MaxHPUpPrcCard4U">
+    <val name = "val">100</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">20000</val>
+    <val name = "sellPrice">10000</val>
+  </item>
+
+  <item name = "MaxENEUpPrcCard1S">
+    <val name = "val">20</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">1500</val>
+    <val name = "sellPrice">750</val>
+  </item>
+  <item name = "MaxENEUpPrcCard2M">
+    <val name = "val">50</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">6000</val>
+    <val name = "sellPrice">3000</val>
+  </item>
+  <item name = "MaxENEUpPrcCard3G">
+    <val name = "val">80</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">12000</val>
+    <val name = "sellPrice">6000</val>
+  </item>
+  <item name = "MaxENEUpPrcCard4U">
+    <val name = "val">100</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">20000</val>
+    <val name = "sellPrice">10000</val>
+  </item>
+
+  <item name = "MaxHPUpValCard1S">
+    <val name = "val">150</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">1500</val>
+    <val name = "sellPrice">750</val>
+  </item>
+  <item name = "MaxHPUpValCard2M">
+    <val name = "val">300</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">6000</val>
+    <val name = "sellPrice">3000</val>
+  </item>
+  <item name = "MaxHPUpValCard3G">
+    <val name = "val">600</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">12000</val>
+    <val name = "sellPrice">6000</val>
+  </item>
+  <item name = "MaxHPUpValCard4U">
+    <val name = "val">1200</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">20000</val>
+    <val name = "sellPrice">10000</val>
+  </item>
+
+  <item name = "MaxENEUpValCard1S">
+    <val name = "val">150</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">1500</val>
+    <val name = "sellPrice">750</val>
+  </item>
+  <item name = "MaxENEUpValCard2M">
+    <val name = "val">300</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">6000</val>
+    <val name = "sellPrice">3000</val>
+  </item>
+  <item name = "MaxENEUpValCard3G">
+    <val name = "val">600</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">12000</val>
+    <val name = "sellPrice">6000</val>
+  </item>
+  <item name = "MaxENEUpValCard4U">
+    <val name = "val">1200</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">20000</val>
+    <val name = "sellPrice">10000</val>
+  </item>
+  
+  <item name = "CritChanceUpValCard1S">
+    <val name = "val">2</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">3000</val>
+    <val name = "sellPrice">1500</val>
+  </item>
+  <item name = "CritChanceUpValCard12M">
+    <val name = "val">4</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">8000</val>
+    <val name = "sellPrice">4000</val>
+  </item>
+  <item name = "CritChanceUpValCard3G">
+    <val name = "val">7</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">15000</val>
+    <val name = "sellPrice">7500</val>
+  </item>
+  <item name = "CritChanceUpValCard4U">
+    <val name = "val">10</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">27000</val>
+    <val name = "sellPrice">13500</val>
+  </item>
+
+  <item name = "CritDmgUpPrcCard1S">
+    <val name = "val">20</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">5000</val>
+    <val name = "sellPrice">2500</val>
+  </item>
+  <item name = "CritDmgUpPrcCard1S">
+    <val name = "val">50</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">12000</val>
+    <val name = "sellPrice">6000</val>
+  </item>
+  <item name = "CritDmgUpPrcCard1S">
+    <val name = "val">80</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">20000</val>
+    <val name = "sellPrice">10000</val>
+  </item>
+  <item name = "CritDmgUpPrcCard1S">
+    <val name = "val">100</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">32000</val>
+    <val name = "sellPrice">16000</val>
+  </item>
+
+  <item name = "PhysAtkUpPrcCard1S">
+    <val name = "val">20</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">5000</val>
+    <val name = "sellPrice">2500</val>
+  </item>
+  <item name = "PhysAtkUpPrcCard2M">
+    <val name = "val">50</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">12000</val>
+    <val name = "sellPrice">6000</val>
+  </item>
+  <item name = "PhysAtkUpPrcCard3G">
+    <val name = "val">80</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">20000</val>
+    <val name = "sellPrice">10000</val>
+  </item>
+  <item name = "PhysAtkUpPrcCard4U">
+    <val name = "val">100</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">32000</val>
+    <val name = "sellPrice">16000</val>
+  </item>
+
+  <item name = "MagAtkUpPrcCard1S">
+    <val name = "val">10</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">5000</val>
+    <val name = "sellPrice">2500</val>
+  </item>
+  <item name = "MagAtkUpPrcCard2M">
+    <val name = "val">20</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">12000</val>
+    <val name = "sellPrice">6000</val>
+  </item>
+  <item name = "MagAtkUpPrcCard3G">
+    <val name = "val">35</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">20000</val>
+    <val name = "sellPrice">10000</val>
+  </item>
+  <item name = "MagAtkUpPrcCard4U">
+    <val name = "val">50</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">32000</val>
+    <val name = "sellPrice">16000</val>
+  </item>
+
+  <item name = "CritDmgUpValCard1S">
+    <val name = "val">40</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">2500</val>
+    <val name = "sellPrice">1250</val>
+  </item>
+  <item name = "CritDmgUpValCard1S">
+    <val name = "val">80</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">6000</val>
+    <val name = "sellPrice">3000</val>
+  </item>
+  <item name = "CritDmgUpValCard1S">
+    <val name = "val">160</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">10000</val>
+    <val name = "sellPrice">5000</val>
+  </item>
+  <item name = "CritDmgUpValCard1S">
+    <val name = "val">320</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">16000</val>
+    <val name = "sellPrice">8000</val>
+  </item>
+
+  <item name = "PhysAtkUpValCard1S">
+    <val name = "val">30</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">2500</val>
+    <val name = "sellPrice">1250</val>
+  </item>
+  <item name = "PhysAtkUpValCard2M">
+    <val name = "val">75</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">6000</val>
+    <val name = "sellPrice">3000</val>
+  </item>
+  <item name = "PhysAtkUpValCard3G">
+    <val name = "val">125</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">10000</val>
+    <val name = "sellPrice">5000</val>
+  </item>
+  <item name = "PhysAtkUpValCard4U">
+    <val name = "val">250</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">16000</val>
+    <val name = "sellPrice">8000</val>
+  </item>
+
+  <item name = "MagAtkUpValCard1S">
+    <val name = "val">15</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">2500</val>
+    <val name = "sellPrice">1250</val>
+  </item>
+  <item name = "MagAtkUpValCard2M">
+    <val name = "val">50</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">6000</val>
+    <val name = "sellPrice">3000</val>
+  </item>
+  <item name = "MagAtkUpValCard3G">
+    <val name = "val">100</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">10000</val>
+    <val name = "sellPrice">5000</val>
+  </item>
+  <item name = "MagAtkUpValCard4U">
+    <val name = "val">150</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">16000</val>
+    <val name = "sellPrice">8000</val>
+  </item>
+
+  <item name = "StrengthUpValCard1S">
+    <val name = "val">15</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">2500</val>
+    <val name = "sellPrice">1250</val>
+  </item>
+  <item name = "StrengthUpValCard2M">
+    <val name = "val">30</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">6000</val>
+    <val name = "sellPrice">3000</val>
+  </item>
+  <item name = "StrengthUpValCard3G">
+    <val name = "val">45</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">10000</val>
+    <val name = "sellPrice">5000</val>
+  </item>
+  <item name = "StrengthUpValCard4U">
+    <val name = "val">60</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">16000</val>
+    <val name = "sellPrice">8000</val>
+  </item>
+
+  <item name = "EnduranceUpValCard1S">
+    <val name = "val">15</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">2500</val>
+    <val name = "sellPrice">1250</val>
+  </item>
+  <item name = "EnduranceUpValCard2M">
+    <val name = "val">30</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">6000</val>
+    <val name = "sellPrice">3000</val>
+  </item>
+  <item name = "EnduranceUpValCard3G">
+    <val name = "val">45</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">10000</val>
+    <val name = "sellPrice">5000</val>
+  </item>
+  <item name = "EnduranceUpValCard4U">
+    <val name = "val">60</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">16000</val>
+    <val name = "sellPrice">8000</val>
+  </item>
+
+  <item name = "KnowledgeUpValCard1S">
+    <val name = "val">15</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">2500</val>
+    <val name = "sellPrice">1250</val>
+  </item>
+  <item name = "KnowledgeUpValCard2M">
+    <val name = "val">30</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">6000</val>
+    <val name = "sellPrice">3000</val>
+  </item>
+  <item name = "KnowledgeUpValCard3G">
+    <val name = "val">45</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">10000</val>
+    <val name = "sellPrice">5000</val>
+  </item>
+  <item name = "KnowledgeUpValCard4U">
+    <val name = "val">60</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">16000</val>
+    <val name = "sellPrice">8000</val>
+  </item>
+
+  <item name = "CharismaUpValCard1S">
+    <val name = "val">15</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">2500</val>
+    <val name = "sellPrice">1250</val>
+  </item>
+  <item name = "CharismaUpValCard2M">
+    <val name = "val">30</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">6000</val>
+    <val name = "sellPrice">3000</val>
+  </item>
+  <item name = "CharismaUpValCard3G">
+    <val name = "val">45</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">10000</val>
+    <val name = "sellPrice">5000</val>
+  </item>
+  <item name = "CharismaUpValCard4U">
+    <val name = "val">60</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">16000</val>
+    <val name = "sellPrice">8000</val>
+  </item>
+
+  <item name = "StrengthUpPrcCard1S">
+    <val name = "val">10</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">5000</val>
+    <val name = "sellPrice">2500</val>
+  </item>
+  <item name = "StrengthUpPrcCard2M">
+    <val name = "val">15</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">12000</val>
+    <val name = "sellPrice">6000</val>
+  </item>
+  <item name = "StrengthUpPrcCard3G">
+    <val name = "val">20</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">20000</val>
+    <val name = "sellPrice">10000</val>
+  </item>
+  <item name = "StrengthUpPrcCard4U">
+    <val name = "val">25</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">32000</val>
+    <val name = "sellPrice">16000</val>
+  </item>
+
+  <item name = "EnduranceUpPrcCard1S">
+    <val name = "val">10</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">5000</val>
+    <val name = "sellPrice">2500</val>
+  </item>
+  <item name = "EnduranceUpPrcCard2M">
+    <val name = "val">15</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">12000</val>
+    <val name = "sellPrice">6000</val>
+  </item>
+  <item name = "EnduranceUpPrcCard3G">
+    <val name = "val">20</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">20000</val>
+    <val name = "sellPrice">10000</val>
+  </item>
+  <item name = "EnduranceUpPrcCard4U">
+    <val name = "val">25</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">32000</val>
+    <val name = "sellPrice">16000</val>
+  </item>
+
+  <item name = "KnowledgeUpPrcCard1S">
+    <val name = "val">10</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">5000</val>
+    <val name = "sellPrice">2500</val>
+  </item>
+  <item name = "KnowledgeUpPrcCard2M">
+    <val name = "val">15</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">12000</val>
+    <val name = "sellPrice">6000</val>
+  </item>
+  <item name = "KnowledgeUpPrcCard3G">
+    <val name = "val">20</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">20000</val>
+    <val name = "sellPrice">10000</val>
+  </item>
+  <item name = "KnowledgeUpPrcCard4U">
+    <val name = "val">25</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">32000</val>
+    <val name = "sellPrice">16000</val>
+  </item>
+  
+  <item name = "CharismaUpPrcCard1S">
+    <val name = "val">10</val>
+    <val name = "timeBattles">4</val>
+    <val name = "buyPrice">5000</val>
+    <val name = "sellPrice">2500</val>
+  </item>
+  <item name = "CharismaUpPrcCard2M">
+    <val name = "val">15</val>
+    <val name = "timeBattles">3</val>
+    <val name = "buyPrice">12000</val>
+    <val name = "sellPrice">6000</val>
+  </item>
+  <item name = "CharismaUpPrcCard3G">
+    <val name = "val">20</val>
+    <val name = "timeBattles">2</val>
+    <val name = "buyPrice">20000</val>
+    <val name = "sellPrice">10000</val>
+  </item>
+  <item name = "CharismaUpPrcCard4U">
+    <val name = "val">25</val>
+    <val name = "timeBattles">1</val>
+    <val name = "buyPrice">32000</val>
+    <val name = "sellPrice">16000</val>
+  </item>
+  
 </items>
