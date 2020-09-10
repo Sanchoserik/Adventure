@@ -240,172 +240,684 @@
 
 <item name = "DefAir1S">
 <LocName name = "LocName">Малий талісман повітря</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії повітря велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії повітря величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefAir2M">
 <LocName name = "LocName">Середній талісман повітря</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії повітря велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії повітря величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefAir3G">
 <LocName name = "LocName">Великий талісман повітря</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії повітря велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії повітря величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefAir4U">
 <LocName name = "LocName">Ультра талісман повітря</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії повітря велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії повітря величиною в $maxEne$.</LocDescr>
 </item>
 
 <item name = "DefDarkness1S">
 <LocName name = "LocName">Малий талісман темряви</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії темряви велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії темряви величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefDarkness2M">
 <LocName name = "LocName">Середній талісман темряви</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії темряви велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії темряви величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefDarkness3G">
 <LocName name = "LocName">Великий талісман темряви</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії темряви велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії темряви величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefDarkness4U">
 <LocName name = "LocName">Ультра талісман темряви</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії темряви велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії темряви величиною в $maxEne$.</LocDescr>
 </item>
 
 <item name = "DefDeath1S">
 <LocName name = "LocName">Малий талісман смерті</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії смерті велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії смерті величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefDeath2M">
 <LocName name = "LocName">Середній талісман смерті</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії смерті велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії смерті величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefDeath3G">
 <LocName name = "LocName">Великий талісман смерті</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії смерті велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії смерті величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefDeath4U">
 <LocName name = "LocName">Ультра талісман смерті</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії смерті велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії смерті величиною в $maxEne$.</LocDescr>
 </item>
 
 <item name = "DefEarth1S">
 <LocName name = "LocName">Малий талісман землі</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії землі велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії землі величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefEarth2M">
 <LocName name = "LocName">Середній талісман землі</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії землі велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії землі величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefEarth3G">
 <LocName name = "LocName">Великий талісман землі</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії землі велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії землі величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefEarth4U">
 <LocName name = "LocName">Ультра талісман землі</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії землі велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії землі величиною в $maxEne$.</LocDescr>
 </item>
 
 <item name = "DefFire1S">
 <LocName name = "LocName">Малий талісман вогню</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії вогню велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії вогню величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefFire2M">
 <LocName name = "LocName">Середній талісман вогню</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії вогню велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії вогню величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefFire3G">
 <LocName name = "LocName">Великий талісман вогню</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії вогню велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії вогню величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefFire4U">
 <LocName name = "LocName">Ультра талісман вогню</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії вогню велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії вогню величиною в $maxEne$.</LocDescr>
 </item>
 
 <item name = "DefLife1S">
 <LocName name = "LocName">Малий талісман життя</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії життя велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії життя величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefLife2M">
 <LocName name = "LocName">Середній талісман життя</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії життя велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії життя величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefLife3G">
 <LocName name = "LocName">Великий талісман життя</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії життя велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії життя величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefLife4U">
 <LocName name = "LocName">Ультра талісман життя</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії життя велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії життя величиною в $maxEne$.</LocDescr>
 </item>
 
 <item name = "DefLight1S">
 <LocName name = "LocName">Малий талісман світла</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії світла велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії світла величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefLight2M">
 <LocName name = "LocName">Середній талісман світла</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії світла велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії світла величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefLight3G">
 <LocName name = "LocName">Великий талісман світла</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії світла велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії світла величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefLight4U">
 <LocName name = "LocName">Ультра талісман світла</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії світла велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії світла величиною в $maxEne$.</LocDescr>
 </item>
 
 <item name = "DefLightning1S">
 <LocName name = "LocName">Малий талісман блискавки</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії блискавки велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії блискавки величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefLightning2M">
 <LocName name = "LocName">Середній талісман блискавки</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії блискавки велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії блискавки величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefLightning3G">
 <LocName name = "LocName">Великий талісман блискавки</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії блискавки велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії блискавки величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefLightning4U">
 <LocName name = "LocName">Ультра талісман блискавки</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії блискавки велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії блискавки величиною в $maxEne$.</LocDescr>
 </item>
 
 <item name = "DefWater1S">
 <LocName name = "LocName">Малий талісман води</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії води велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії води величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefWater2M">
 <LocName name = "LocName">Середній талісман води</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії води велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії води величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefWater3G">
 <LocName name = "LocName">Великий талісман води</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії води велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії води величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefWater4U">
 <LocName name = "LocName">Ультра талісман води</LocName>
-<LocDescr name = "LocDescr">Дає захист від атак магії води велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від атак магії води величиною в $maxEne$.</LocDescr>
 </item>
 
 <item name = "DefPhys1S">
 <LocName name = "LocName">Малий талісман фізичного захисту</LocName>
-<LocDescr name = "LocDescr">Дає захист від фізичних атак велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від фізичних атак величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefPhys2M">
 <LocName name = "LocName">Середній талісман фізичного захисту</LocName>
-<LocDescr name = "LocDescr">Дає захист від фізичних атак велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від фізичних атак величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefPhys3G">
 <LocName name = "LocName">Великий талісман фізичного захисту</LocName>
-<LocDescr name = "LocDescr">Дає захист від фізичних атак велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від фізичних атак величиною в $maxEne$.</LocDescr>
 </item>
 <item name = "DefPhys4U">
 <LocName name = "LocName">Ультра талісман фізичного захисту</LocName>
-<LocDescr name = "LocDescr">Дає захист від фізичних атак велечиною в $maxEne$.</LocDescr>
+<LocDescr name = "LocDescr">Дає захист від фізичних атак величиною в $maxEne$.</LocDescr>
 </item>
+
+  <item name = "AirDefUpCard1S">
+    <LocName name = "LocName">Мала карта повітря</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак повітря величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "AirDefUpCard2M">
+    <LocName name = "LocName">Середня карта повітря</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак повітря величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "AirDefUpCard3G">
+    <LocName name = "LocName">Велика карта повітря</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак повітря величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "AirDefUpCard4U">
+    <LocName name = "LocName">Ультра карта повітря</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак повітря величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "DarknessDefUpCard1S">
+    <LocName name = "LocName">Мала карта темряви</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак темряви величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "DarknessDefUpCard2M">
+    <LocName name = "LocName">Середня карта темряви</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак темряви величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "DarknessDefUpCard3G">
+    <LocName name = "LocName">Велика карта темряви</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак темряви величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "DarknessDefUpCard4U">
+    <LocName name = "LocName">Ультра карта темряви</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак темряви величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "DeathDefUpCard1S">
+    <LocName name = "LocName">Мала карта смерті</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак смерті величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "DeathDefUpCard2M">
+    <LocName name = "LocName">Середня карта смерті</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак смерті величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "DeathDefUpCard3G">
+    <LocName name = "LocName">Велика карта смерті</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак смерті величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "DeathDefUpCard4U">
+    <LocName name = "LocName">Ультра карта смерті</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак смерті величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "EarthDefUpCard1S">
+    <LocName name = "LocName">Мала карта повітря</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак землі величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "EarthDefUpCard2M">
+    <LocName name = "LocName">Середня карта повітря</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак землі величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "EarthDefUpCard3G">
+    <LocName name = "LocName">Велика карта повітря</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак землі величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "EarthDefUpCard4U">
+    <LocName name = "LocName">Ультра карта землі</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак землі величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "FireDefUpCard1S">
+    <LocName name = "LocName">Мала карта вогню</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак вогню величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "FireDefUpCard2M">
+    <LocName name = "LocName">Середня карта повітря</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак вогню величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "FireDefUpCard3G">
+    <LocName name = "LocName">Велика карта повітря</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак вогню величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "FireDefUpCard4U">
+    <LocName name = "LocName">Ультра карта повітря</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак вогню величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "LifeDefUpCard1S">
+    <LocName name = "LocName">Мала карта життя</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак життя величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "LifeDefUpCard2M">
+    <LocName name = "LocName">Середня карта життя</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак життя величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "LifeDefUpCard3G">
+    <LocName name = "LocName">Велика карта життя</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак життя величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "LifeDefUpCard4U">
+    <LocName name = "LocName">Ультра карта життя</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак життя величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "LightDefUpCard1S">
+    <LocName name = "LocName">Мала карта світла</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак блискавки величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "LightDefUpCard2M">
+    <LocName name = "LocName">Середня карта світла</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак блискавки величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "LightDefUpCard3G">
+    <LocName name = "LocName">Велика карта світла</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак блискавки величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "LightDefUpCard4U">
+    <LocName name = "LocName">Ультра карта світла</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак блискавки величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "LightningDefUpCard1S">
+    <LocName name = "LocName">Мала карта блискавки</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак блискавки величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "LightningDefUpCard2M">
+    <LocName name = "LocName">Середня карта блискавки</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак блискавки величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "LightningDefUpCard3G">
+    <LocName name = "LocName">Велика карта блискавки</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак блискавки величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "LightningDefUpCard4U">
+    <LocName name = "LocName">Ультра карта блискавки</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак блискавки величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "WaterDefUpCard1S">
+    <LocName name = "LocName">Мала карта води</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак води величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "WaterDefUpCard2M">
+    <LocName name = "LocName">Середня карта води</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак води величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "WaterDefUpCard3G">
+    <LocName name = "LocName">Велика карта води</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак води величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "WaterDefUpCard4U">
+    <LocName name = "LocName">Ультра карта води</LocName>
+    <LocDescr name = "LocDescr">Дає захист від атак води величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "PhysDefUpCard1S">
+    <LocName name = "LocName">Мала карта повітря</LocName>
+    <LocDescr name = "LocDescr">Дає захист від фізичних атак величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "PhysDefUpCard2M">
+    <LocName name = "LocName">Середня карта повітря</LocName>
+    <LocDescr name = "LocDescr">Дає захист від фізичних атак величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "PhysDefUpCard3G">
+    <LocName name = "LocName">Велика карта повітря</LocName>
+    <LocDescr name = "LocDescr">Дає захист від фізичних атак величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "PhysDefUpCard4U">
+    <LocName name = "LocName">Ультра карта фізичного захисту</LocName>
+    <LocDescr name = "LocDescr">Дає захист від фізичних атак величиною в $Val$ протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "APUpCard1S">
+    <LocName name = "LocName">Мала карта дії</LocName>
+    <LocDescr name = "LocDescr">Дає $Val$ очків дії протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "APUpCard2M">
+    <LocName name = "LocName">Середня карта дії</LocName>
+    <LocDescr name = "LocDescr">Дає $Val$ очків дії протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "APUpCard3G">
+    <LocName name = "LocName">Велика карта дії</LocName>
+    <LocDescr name = "LocDescr">Дає $Val$ очків дії протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "APUpCard4U">
+    <LocName name = "LocName">Ультра карта дії</LocName>
+    <LocDescr name = "LocDescr">Дає $Val$ очків дії протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "MaxHPUpPrcCard1S">
+    <LocName name = "LocName">Мала карта ХП%</LocName>
+    <LocDescr name = "LocDescr">Дає $Val$% максимального ХП протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "MaxHPUpPrcCard2M">
+    <LocName name = "LocName">Середня карта ХП%</LocName>
+    <LocDescr name = "LocDescr">Дає $Val$% максимального ХП протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "MaxHPUpPrcCard3G">
+    <LocName name = "LocName">Велика карта ХП%</LocName>
+    <LocDescr name = "LocDescr">Дає $Val$% максимального ХП протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "MaxHPUpPrcCard4U">
+    <LocName name = "LocName">Ультра карта ХП%</LocName>
+    <LocDescr name = "LocDescr">Дає $Val$% максимального ХП протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "MaxENEUpPrcCard1S">
+    <LocName name = "LocName">Мала карта Енергії%</LocName>
+    <LocDescr name = "LocDescr">Дає $Val$% максимальної Енергії протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "MaxENEUpPrcCard2M">
+    <LocName name = "LocName">Середня карта Енергії%</LocName>
+    <LocDescr name = "LocDescr">Дає $Val$% максимальної Енергії протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "MaxENEUpPrcCard3G">
+    <LocName name = "LocName">велика карта Енергії%</LocName>
+    <LocDescr name = "LocDescr">Дає $Val$% максимальної Енергії протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "MaxENEUpPrcCard4U">
+    <LocName name = "LocName">Ультра карта Енергії%</LocName>
+    <LocDescr name = "LocDescr">Дає $Val$% максимальної Енергії протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "MaxHPUpValCard1S">
+    <LocName name = "LocName">Мала карта ХП</LocName>
+    <LocDescr name = "LocDescr">Дає $Val$ максимального ХП протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "MaxHPUpValCard2M">
+    <LocName name = "LocName">Середня карта ХП</LocName>
+    <LocDescr name = "LocDescr">Дає $Val$ максимального ХП протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "MaxHPUpValCard3G">
+    <LocName name = "LocName">Велика карта ХП</LocName>
+    <LocDescr name = "LocDescr">Дає $Val$ максимального ХП протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "MaxHPUpValCard4U">
+    <LocName name = "LocName">Ультра карта ХП</LocName>
+    <LocDescr name = "LocDescr">Дає $Val$ максимального ХП протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "MaxENEUpValCard1S">
+    <LocName name = "LocName">Мала карта Енергії</LocName>
+    <LocDescr name = "LocDescr">Дає $Val$ максимальної Енергії протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "MaxENEUpValCard2M">
+    <LocName name = "LocName">Мала карта Енергії</LocName>
+    <LocDescr name = "LocDescr">Дає $Val$ максимальної Енергії протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "MaxENEUpValCard3G">
+    <LocName name = "LocName">Мала карта Енергії</LocName>
+    <LocDescr name = "LocDescr">Дає $Val$ максимальної Енергії протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "MaxENEUpValCard4U">
+    <LocName name = "LocName">Мала карта Енергії</LocName>
+    <LocDescr name = "LocDescr">Дає $Val$ максимальної Енергії протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "CritChanceUpValCard1S">
+    <LocName name = "LocName">Мала карта Критичного шансу%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$% шансу до критичного удару протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "CritChanceUpValCard12M">
+    <LocName name = "LocName">Середня карта Критичного шансу%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$% шансу до критичного удару протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "CritChanceUpValCard3G">
+    <LocName name = "LocName">Велика карта Критичного шансу%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$% шансу до критичного удару протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "CritChanceUpValCard4U">
+    <LocName name = "LocName">Ультра карта Критичного шансу%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$% шансу до критичного удару протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "CritDmgUpPrcCard1S">
+    <LocName name = "LocName">Мала карта Критичних пошкодженьу%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$% до критичних пошкоджень протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "CritDmgUpPrcCard1S">
+    <LocName name = "LocName">Середня карта Критичних пошкодженьу%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$% до критичних пошкоджень протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "CritDmgUpPrcCard1S">
+    <LocName name = "LocName">Велика карта Критичних пошкодженьу%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$% до критичних пошкоджень протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "CritDmgUpPrcCard1S">
+    <LocName name = "LocName">Ультра карта Критичних пошкодженьу%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$% до критичних пошкоджень протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "PhysAtkUpPrcCard1S">
+    <LocName name = "LocName">Мала карта фізичної атаки%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$% до фізичних пошкоджень протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "PhysAtkUpPrcCard2M">
+    <LocName name = "LocName">Середня карта фізичної атаки%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$% до фізичних пошкоджень протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "PhysAtkUpPrcCard3G">
+    <LocName name = "LocName">Велика карта фізичної атаки%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$% до фізичних пошкоджень протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "PhysAtkUpPrcCard4U">
+    <LocName name = "LocName">Ультра карта фізичної атаки%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$% до фізичних пошкоджень протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "MagAtkUpPrcCard1S">
+    <LocName name = "LocName">Мала карта магічної атаки%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$% до магічних пошкоджень протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "MagAtkUpPrcCard2M">
+    <LocName name = "LocName">Середня карта магічної атаки%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$% до магічних пошкоджень протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "MagAtkUpPrcCard3G">
+    <LocName name = "LocName">Велика карта магічної атаки%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$% до магічних пошкоджень протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "MagAtkUpPrcCard4U">
+    <LocName name = "LocName">Ультра карта магічної атаки%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$% до магічних пошкоджень протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "CritDmgUpValCard1S">
+    <LocName name = "LocName">Мала карта Критичних пошкодженьу</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ до критичних пошкоджень протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "CritDmgUpValCard1S">
+    <LocName name = "LocName">Середня карта Критичних пошкодженьу</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ до критичних пошкоджень протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "CritDmgUpValCard1S">
+    <LocName name = "LocName">Велика карта Критичних пошкодженьу</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ до критичних пошкоджень протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "CritDmgUpValCard1S">
+    <LocName name = "LocName">Ультра карта Критичних пошкодженьу</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ до критичних пошкоджень протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "PhysAtkUpValCard1S">
+    <LocName name = "LocName">Мала карта фізичної атаки</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ до фізичних пошкоджень протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "PhysAtkUpValCard2M">
+    <LocName name = "LocName">Середня карта фізичної атаки</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ до фізичних пошкоджень протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "PhysAtkUpValCard3G">
+    <LocName name = "LocName">Велика карта фізичної атаки</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ до фізичних пошкоджень протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "PhysAtkUpValCard4U">
+    <LocName name = "LocName">Ультра карта фізичної атаки</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ до фізичних пошкоджень протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "MagAtkUpValCard1S">
+    <LocName name = "LocName">Мала карта магічної атаки</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ до магічних пошкоджень протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "MagAtkUpValCard2M">
+    <LocName name = "LocName">Середня карта магічної атаки</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ до магічних пошкоджень протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "MagAtkUpValCard3G">
+    <LocName name = "LocName">Велика карта магічної атаки</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ до магічних пошкоджень протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "MagAtkUpValCard4U">
+    <LocName name = "LocName">Ультра карта магічної атаки</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ до магічних пошкоджень протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "StrengthUpValCard1S">
+    <LocName name = "LocName">Мала карта сили</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ сили протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "StrengthUpValCard2M">
+    <LocName name = "LocName">Середня карта сили</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ сили протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "StrengthUpValCard3G">
+    <LocName name = "LocName">Велика карта сили</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ сили протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "StrengthUpValCard4U">
+    <LocName name = "LocName">Ультра карта сили</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ сили протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "EnduranceUpValCard1S">
+    <LocName name = "LocName">Мала карта витривалості</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ витривалості протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "EnduranceUpValCard2M">
+    <LocName name = "LocName">Середня карта витривалості</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ витривалості протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "EnduranceUpValCard3G">
+    <LocName name = "LocName">Велика карта витривалості</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ витривалості протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "EnduranceUpValCard4U">
+    <LocName name = "LocName">Ультра карта витривалості</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ витривалості протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "KnowledgeUpValCard1S">
+    <LocName name = "LocName">Мала карта знань</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ знань протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "KnowledgeUpValCard2M">
+    <LocName name = "LocName">Середня карта знань</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ знань протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "KnowledgeUpValCard3G">
+    <LocName name = "LocName">Велика карта знань</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ знань протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "KnowledgeUpValCard4U">
+    <LocName name = "LocName">Ультра карта знань</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ знань протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "CharismaUpValCard1S">
+    <LocName name = "LocName">Мала карта харизми</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ харизми протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "CharismaUpValCard2M">
+    <LocName name = "LocName">Середня карта харизми</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ харизми протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "CharismaUpValCard3G">
+    <LocName name = "LocName">Велика карта харизми</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ харизми протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "CharismaUpValCard4U">
+    <LocName name = "LocName">Ультра карта харизми</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ харизми протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "StrengthUpPrcCard1S">
+    <LocName name = "LocName">Мала карта сили%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ сили% протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "StrengthUpPrcCard2M">
+    <LocName name = "LocName">Середня карта сили%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ сили% протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "StrengthUpPrcCard3G">
+    <LocName name = "LocName">Велика карта сили%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ сили% протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "StrengthUpPrcCard4U">
+    <LocName name = "LocName">Ультра карта сили%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ сили% протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "EnduranceUpPrcCard1S">
+    <LocName name = "LocName">Мала карта витривалості%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$% витривалості протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "EnduranceUpPrcCard2M">
+    <LocName name = "LocName">Середня карта витривалості%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$% витривалості протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "EnduranceUpPrcCard3G">
+    <LocName name = "LocName">Велика карта витривалості%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$% витривалості протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "EnduranceUpPrcCard4U">
+    <LocName name = "LocName">Ультра карта витривалості%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$% витривалості протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "KnowledgeUpPrcCard1S">
+    <LocName name = "LocName">Мала карта знань%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$% знань протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "KnowledgeUpPrcCard2M">
+    <LocName name = "LocName">Середня карта знань%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$% знань протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "KnowledgeUpPrcCard3G">
+    <LocName name = "LocName">Велика карта знань%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$% знань протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "KnowledgeUpPrcCard4U">
+    <LocName name = "LocName">Ультра карта знань%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$% знань протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+  <item name = "CharismaUpPrcCard1S">
+    <LocName name = "LocName">Мала карта харизми%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ харизми% протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "CharismaUpPrcCard2M">
+    <LocName name = "LocName">Середня карта харизми%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ харизми% протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "CharismaUpPrcCard3G">
+    <LocName name = "LocName">Велика карта харизми%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ харизми% протягом $Bdur$ боїв.</LocDescr>
+  </item>
+  <item name = "CharismaUpPrcCard4U">
+    <LocName name = "LocName">Ультра карта харизми%</LocName>
+    <LocDescr name = "LocDescr">Дає +$Val$ харизми% протягом $Bdur$ боїв.</LocDescr>
+  </item>
+
+
 
 </items>

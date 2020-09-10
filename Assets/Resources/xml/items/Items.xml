@@ -673,7 +673,6 @@
     <val name = "sellPrice">11000</val>
   </item>
   <item name = "FireDefUpCard4U">
-  <val name = "val"></val>
     <val name = "val">4</val>
     <val name = "timeBattles">1</val>
     <val name = "buyPrice">28000</val>
